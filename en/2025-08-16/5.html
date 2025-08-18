@@ -1,0 +1,602 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Divergent International Perspectives on the Gaza Conflict and Its Humanitarian Consequences</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css"> 
+    <link href="/assets/css/all.min.css" rel="stylesheet">
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+    <script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<!-- comon header  -->
+<header>  
+  <div class="middle-section py-3">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+             <div class="col order-3 order-lg-1">
+              <a href="/index.html" class="logo  d-table"> <img src="/assets/images/logo-3-50.png" alt="logo"> </a>
+
+             </div>
+            <div class="col order-1 order-lg-2">
+              
+            </div>
+            <div class="col d-flex justify-content-center justify-content-lg-end order-2 order-lg-3 my-4 mt-lg-0">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/fra.svg" alt="Français" title="Français" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/en', '/fr');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>               
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<!-- comon header ends  -->
+
+  <div class="main-menu">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div id="menu-id">
+        <div class="container">
+          <a class="navbar-brand d-block d-none" href="/index.html">Navbar</a>
+          <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+            <span>
+              <i class="fas fa-bars"></i>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Divergent International Perspectives on the Gaza Conflict and Its Humanitarian Consequences</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-08-16</span> • <span>64 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-08-16/2025-08-16-5.jpg" alt="Divergent International Perspectives on the Gaza Conflict and Its Humanitarian Consequences" class="main-image">
+                <p style="margin:0">The news articles reveal a highly complex Gaza conflict marked by intense Israeli military operations, severe humanitarian crises, and international diplomatic efforts. Some countries and organizations condemn Israel&#39;s military actions and blockade, accusing it of using starvation and aid restrictions as weapons, while others emphasize Israeli security concerns related to Hamas&#39; tactics. Discussions about relocating Gaza residents to countries like South Sudan have emerged amid the worsening humanitarian situation, provoking mixed reactions. Multiple reports highlight the high death toll among Palestinians attempting to access aid, clashes impacting civilians and journalists, and growing international calls for ceasefire and humanitarian access. Overall, the global response is polarized, reflecting geopolitical alliances, humanitarian priorities, and differing views on the causes and resolution of the conflict.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div class="key-points">
+        <h2>Countries covering this topic</h2>
+    </div>
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Critical Opposition to Israeli Military Actions and Humanitarian Blockade</h3>
+        <p class="cluster-description">Countries in this group strongly condemn Israel&#39;s military operations and blockade in Gaza, highlighting the catastrophic humanitarian consequences including mass civilian casualties, use of starvation as a weapon, and severe restrictions on aid delivery. They accuse Israel of violating international law, perpetuating suffering, and call for urgent international intervention to cease hostilities and improve humanitarian access. These nations emphasize the protection of Palestinian civilians and call for sanctions or diplomatic pressure on Israel to end aggressive policies and uphold human rights. Their stance often includes support for Palestinian self-determination and criticism of Israel&#39;s strategic and military decisions.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden" style="padding-bottom: 15px;">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/qat.svg" alt="Qatar" title="Qatar" class="flag-icon">
+                            <a href="https://dohanews.co/category/news/" target="_blank" class="article-link">Will leave Gaza only for paradise: Anas Al-Sharif declined invitation to move to Qatar</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/qat.svg" alt="Qatar" title="Qatar" class="flag-icon">
+                            <a href="https://www.al-watan.com/%D8%B9%D8%B1%D8%A8%D9%8A-%D9%88%D8%AF%D9%88%D9%84%D9%8A" target="_blank" class="article-link">Dozens of Martyrs in Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/qat.svg" alt="Qatar" title="Qatar" class="flag-icon">
+                            <a href="https://www.al-watan.com/%D8%B9%D8%B1%D8%A8%D9%8A-%D9%88%D8%AF%D9%88%D9%84%D9%8A" target="_blank" class="article-link">102 International Organizations Call to Stop Using Aid as a Weapon in Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mus.svg" alt="Mauritius" title="Mauritius" class="flag-icon">
+                            <a href="https://lexpress.mu/international" target="_blank" class="article-link">Israeli-Palestinian Conflict: Gaza Civil Defense Reports 17 Dead in Israeli Air Raids</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cub.svg" alt="Cuba" title="Cuba" class="flag-icon">
+                            <a href="http://www.juventudrebelde.cu/internacionales/" target="_blank" class="article-link">Declaration by the Cuban UN Association on the Israeli cabinet plan to militarily occupy Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cub.svg" alt="Cuba" title="Cuba" class="flag-icon">
+                            <a href="http://www.juventudrebelde.cu/internacionales/" target="_blank" class="article-link">More than 100,000 people protest in Israel</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dza.svg" alt="Algeria" title="Algeria" class="flag-icon">
+                            <a href="https://www.tsa-algerie.com/international/" target="_blank" class="article-link">At the UN, Algeria Demands Sanctions Against Israel over Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dza.svg" alt="Algeria" title="Algeria" class="flag-icon">
+                            <a href="https://www.tsa-algerie.com/international/" target="_blank" class="article-link">Al Jazeera Journalist Anas al-Sharif, the &#34;Voice of Gaza,&#34; Killed by Israel</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dza.svg" alt="Algeria" title="Algeria" class="flag-icon">
+                            <a href="https://www.tsa-algerie.com/international/" target="_blank" class="article-link">Western Selective Sympathy Highlighted by Horrifying Images of Famine in Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dza.svg" alt="Algeria" title="Algeria" class="flag-icon">
+                            <a href="https://www.aps.dz/monde" target="_blank" class="article-link">Zionist aggression against Gaza: death toll rises to 61,827 martyrs and 155,275 injured</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dza.svg" alt="Algeria" title="Algeria" class="flag-icon">
+                            <a href="https://www.aps.dz/monde" target="_blank" class="article-link">Nutritional status of Gaza children continues to deteriorate</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dza.svg" alt="Algeria" title="Algeria" class="flag-icon">
+                            <a href="https://www.aps.dz/monde" target="_blank" class="article-link">Zionist aggression: One hundred humanitarian organizations demand better access to Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dza.svg" alt="Algeria" title="Algeria" class="flag-icon">
+                            <a href="https://www.aps.dz/monde" target="_blank" class="article-link">Humanitarian situation in Gaza &#39;exceeds all legal and moral limits&#39;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mrt.svg" alt="Mauritania" title="Mauritania" class="flag-icon">
+                            <a href="https://cridem.org/" target="_blank" class="article-link">Gaza Wounded, Gaza Subjected to a Genocide</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dji.svg" alt="Djibouti" title="Djibouti" class="flag-icon">
+                            <a href="https://adi.dj/index.php/site/Rubrique/GENERAL" target="_blank" class="article-link">Editorial: Gaza besieged, Gaza starving, Gaza martyred</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72bbe5; padding: 8px 16px; border-radius: 4px;">Support for Israeli Security Measures and Emphasis on Counterterrorism</h3>
+        <p class="cluster-description">This viewpoint supports Israel&#39;s military operations as necessary defensive actions to combat Hamas terrorism and ensure national security. Countries expressing this perspective highlight Hamas&#39; use of underground tunnels and militant tactics, justifying Israel&#39;s offensive campaigns and restrictions on aid as security measures to prevent misuse and protect civilians. They acknowledge the humanitarian crisis but frame it as a consequence of Hamas&#39; aggression, and stress Israel&#39;s efforts to minimize civilian harm. Diplomatic initiatives tend to focus on negotiation terms favoring Israeli conditions, with emphasis on dismantling Hamas capabilities.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden" style="padding-bottom: 15px;">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kor.svg" alt="South Korea" title="South Korea" class="flag-icon">
+                            <a href="https://www.koreaherald.com/World" target="_blank" class="article-link">Foreign NGOs say new Israeli rules keep them from delivering Gaza aid</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svk.svg" alt="Slovakia" title="Slovakia" class="flag-icon">
+                            <a href="https://spravy.pravda.sk/svet/" target="_blank" class="article-link">Israeli Army Blocked 7-Kilometer Hamas Tunnel in Gaza Strip</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ton.svg" alt="Tonga" title="Tonga" class="flag-icon">
+                            <a href="https://tongaindependent.com/politics/" target="_blank" class="article-link">Israeli Prime Minister Vows to Increase Military Offensive and Enforce ‘Voluntary Migration’ Plan Backed by US President Donald Trump</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kwt.svg" alt="Kuwait" title="Kuwait" class="flag-icon">
+                            <a href="https://www.aljarida.com/%D8%AF%D9%88%D9%84%D9%8A%D8%A7%D8%AA" target="_blank" class="article-link">Israeli army closes Hamas tunnel in Gaza, 7 kilometers long</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/isr.svg" alt="Israel" title="Israel" class="flag-icon">
+                            <a href="https://www.haaretz.com/world-news" target="_blank" class="article-link">UN Blacklists Hamas for Sexual Violence in October 7 Attack</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #8d72e5; padding: 8px 16px; border-radius: 4px;">Calls for Diplomatic Solutions and Humanitarian Engagement</h3>
+        <p class="cluster-description">This cluster centers on nations promoting diplomatic negotiations and humanitarian relief without overtly taking sides. They highlight mediators&#39; efforts to expedite peace talks between Israel and Hamas and express concern over escalating violence and humanitarian needs. Countries here stress the importance of securing safe humanitarian corridors and increasing aid deliveries while encouraging restraint and compromise from all parties involved. They often report on UN findings regarding civilian casualties and the need for balanced international involvement.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden" style="padding-bottom: 15px;">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fra.svg" alt="France" title="France" class="flag-icon">
+                            <a href="https://www.lefigaro.fr/international/" target="_blank" class="article-link">War in Gaza: Netanyahu is &#39;a problem in himself,&#39; says Danish Prime Minister</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/yem.svg" alt="Yemen" title="Yemen" class="flag-icon">
+                            <a href="https://www.ypagency.net/" target="_blank" class="article-link">Hebrew Media: Efforts by Mediators to Accelerate Talks Between Hamas and Israel</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ita.svg" alt="Italy" title="Italy" class="flag-icon">
+                            <a href="https://www.repubblica.it/esteri/" target="_blank" class="article-link">Israel-Gaza war news. Controversy over Ben Gvir&#39;s provocation in prison against Palestinian leader</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nor.svg" alt="Norway" title="Norway" class="flag-icon">
+                            <a href="https://www.aftenposten.no/verden" target="_blank" class="article-link">Israel Negotiates Resettlement of Palestinians Amid Gaza Conflict</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nor.svg" alt="Norway" title="Norway" class="flag-icon">
+                            <a href="https://www.aftenposten.no/verden" target="_blank" class="article-link">UN Reports at Least 1760 Killed in Gaza Attempts to Reach Aid Since May</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jor.svg" alt="Jordan" title="Jordan" class="flag-icon">
+                            <a href="https://www.jordannews.jo/Category/18/Global" target="_blank" class="article-link">Reuters: Mossad Chief Visits Qatar to Revive Gaza Talks</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e572da; padding: 8px 16px; border-radius: 4px;">Controversial Discussion on Resettlement of Gaza Palestinians</h3>
+        <p class="cluster-description">This perspective covers various countries reporting or involved in discussions about relocating Palestinian residents from Gaza to other nations, particularly South Sudan. The dialogues reflect Israel&#39;s strategic consideration to reduce the Gaza population amid conflict. While Israel and some states acknowledge these talks as preliminary or humanitarian in nature, the broader international and Palestinian responses are highly cautious or outright opposed due to humanitarian, political, and ethical concerns. This cluster reflects the geopolitical complexity surrounding displacement and demographic issues in the conflict.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden" style="padding-bottom: 15px;">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgd.svg" alt="Bangladesh" title="Bangladesh" class="flag-icon">
+                            <a href="https://bdnews24.com/world" target="_blank" class="article-link">Israel discusses resettling Gazans in South Sudan: sources</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aut.svg" alt="Austria" title="Austria" class="flag-icon">
+                            <a href="https://www.diepresse.com/ausland" target="_blank" class="article-link">Israel Considers Resettlement of Palestinians from Gaza to South Sudan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/guy.svg" alt="Guyana" title="Guyana" class="flag-icon">
+                            <a href="https://www.stabroeknews.com/news/world/" target="_blank" class="article-link">Israel in talks to resettle Gaza Palestinians in South Sudan, sources say</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/idn.svg" alt="Indonesia" title="Indonesia" class="flag-icon">
+                            <a href="https://www.thejakartapost.com/world" target="_blank" class="article-link">Israel in talks to resettle Gaza Palestinians in South Sudan, sources say</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/deu.svg" alt="Germany" title="Germany" class="flag-icon">
+                            <a href="https://www.welt.de/politik/ausland/" target="_blank" class="article-link">Israel allegedly discusses resettlement of Palestinians from Gaza to South Sudan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pse.svg" alt="Palestine" title="Palestine" class="flag-icon">
+                            <a href="http://www.al-ayyam.ps/" target="_blank" class="article-link">Netanyahu outlines five principles to end the war</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pse.svg" alt="Palestine" title="Palestine" class="flag-icon">
+                            <a href="http://www.al-ayyam.ps/" target="_blank" class="article-link">Israel holds talks with five countries about receiving Gaza residents</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e57276; padding: 8px 16px; border-radius: 4px;">Focus on Humanitarian Challenges and NGO Operations Amid Conflict</h3>
+        <p class="cluster-description">This group stresses the difficulties faced by humanitarian organizations in delivering aid to Gaza due to Israeli security conditions and alleged restrictions. They highlight tensions between aid groups and Israeli authorities, accusations of aid weaponization, looting of aid supplies, and efforts by NGOs to improve access amid dire conditions. The viewpoint underscores the severe humanitarian crisis, including malnutrition, displacement, and civilian casualties, while calling for depoliticizing aid and protecting humanitarian workers and infrastructure.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden" style="padding-bottom: 15px;">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kor.svg" alt="South Korea" title="South Korea" class="flag-icon">
+                            <a href="https://www.koreaherald.com/World" target="_blank" class="article-link">Foreign NGOs say new Israeli rules keep them from delivering Gaza aid</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cub.svg" alt="Cuba" title="Cuba" class="flag-icon">
+                            <a href="http://www.juventudrebelde.cu/internacionales/" target="_blank" class="article-link">Declaration by the Cuban UN Association on the Israeli cabinet plan to militarily occupy Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pak.svg" alt="Pakistan" title="Pakistan" class="flag-icon">
+                            <a href="https://www.dawn.com/world" target="_blank" class="article-link">Israeli strikes kill 8 Palestinians, injure dozens across Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gha.svg" alt="Ghana" title="Ghana" class="flag-icon">
+                            <a href="https://www.modernghana.com/ghanahome/world/" target="_blank" class="article-link">NGOs accuse Israel of &#39;weaponising&#39; aid to Gaza as France prepares new airlift</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ago.svg" alt="Angola" title="Angola" class="flag-icon">
+                            <a href="https://www.opais.ao/categoria/mundo/" target="_blank" class="article-link">Israel accuses NGOs of not meeting security requirements to deliver aid in Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Ireland" title="Ireland" class="flag-icon">
+                            <a href="https://www.independent.ie/world-news/" target="_blank" class="article-link">Dispatch from Gaza: Starving children have forgotten how fruit looks, never mind how it tastes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cpv.svg" alt="Cape Verde" title="Cape Verde" class="flag-icon">
+                            <a href="https://expressodasilhas.cv/mundo" target="_blank" class="article-link">Israel threatens to ban international organizations from delivering aid to Gaza</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Concern Over Media Freedom and Information Control</h3>
+        <p class="cluster-description">Some countries and media outlets express serious concerns over the targeting of journalists reporting from Gaza, censorship, and alleged smear campaigns orchestrated by Israeli military units. They emphasize the dangers faced by media personnel, citing specific incidents such as journalist deaths and campaigns to discredit Gaza-based reporting. This cluster underlines the broader struggle over narrative control and the importance of press freedom within the conflict&#39;s information warfare.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden" style="padding-bottom: 15px;">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/moz.svg" alt="Mozambique" title="Mozambique" class="flag-icon">
+                            <a href="https://cartamz.com/" target="_blank" class="article-link">Al-Jazeera Calls for International Solidarity After Journalist Massacre in Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irn.svg" alt="Iran" title="Iran" class="flag-icon">
+                            <a href="https://ifpnews.com/category/news/world/" target="_blank" class="article-link">Israeli military unit ‘tasked with smearing and targeting Gaza journalists’</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dza.svg" alt="Algeria" title="Algeria" class="flag-icon">
+                            <a href="https://www.tsa-algerie.com/international/" target="_blank" class="article-link">Al Jazeera Journalist Anas al-Sharif, the &#34;Voice of Gaza,&#34; Killed by Israel</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<footer class="mt-5">
+  <div class="container">
+     <p class="text-center"> 2025-2026 © Planet Pulse.</p>
+  </div>
+</footer>
+
+<div class="offcanvas offcanvas-start" id="mobilemenu">
+  <!-- Mobile menu -->
+</div>
+
+    <script>
+        anychart.onDocumentReady(function() {
+            var map = anychart.map();
+            map.geoData('anychart.maps.world');
+            map.interactivity().selectionMode('none');
+            
+            // Configurer les régions non couvertes
+            map.unboundRegions()
+                .enabled(true)
+                .fill('#f0f0f0')
+                .stroke({
+                    color: '#000000',
+                    thickness: 0.5,
+                    lineJoin: 'round'
+                });
+                
+             // Construire les données des séries dynamiquement à partir des clusters
+            var seriesData = [
+            
+                {
+                    name: "Critical Opposition to Israeli Military Actions and Humanitarian Blockade",
+                    color: "#72e5ac",
+                    data: [
+                        
+                            {"id": "CU", "value": 1, "name": "CU"},
+                        
+                            {"id": "DJ", "value": 1, "name": "DJ"},
+                        
+                            {"id": "DZ", "value": 1, "name": "DZ"},
+                        
+                            {"id": "MR", "value": 1, "name": "MR"},
+                        
+                            {"id": "MU", "value": 1, "name": "MU"},
+                        
+                            {"id": "QA", "value": 1, "name": "QA"}
+                        
+                    ]
+                },
+            
+                {
+                    name: "Support for Israeli Security Measures and Emphasis on Counterterrorism",
+                    color: "#72bbe5",
+                    data: [
+                        
+                            {"id": "IL", "value": 1, "name": "IL"},
+                        
+                            {"id": "KR", "value": 1, "name": "KR"},
+                        
+                            {"id": "KW", "value": 1, "name": "KW"},
+                        
+                            {"id": "SK", "value": 1, "name": "SK"},
+                        
+                            {"id": "TO", "value": 1, "name": "TO"}
+                        
+                    ]
+                },
+            
+                {
+                    name: "Calls for Diplomatic Solutions and Humanitarian Engagement",
+                    color: "#8d72e5",
+                    data: [
+                        
+                            {"id": "FR", "value": 1, "name": "FR"},
+                        
+                            {"id": "IT", "value": 1, "name": "IT"},
+                        
+                            {"id": "JO", "value": 1, "name": "JO"},
+                        
+                            {"id": "NO", "value": 1, "name": "NO"},
+                        
+                            {"id": "YE", "value": 1, "name": "YE"}
+                        
+                    ]
+                },
+            
+                {
+                    name: "Controversial Discussion on Resettlement of Gaza Palestinians",
+                    color: "#e572da",
+                    data: [
+                        
+                            {"id": "AT", "value": 1, "name": "AT"},
+                        
+                            {"id": "BD", "value": 1, "name": "BD"},
+                        
+                            {"id": "DE", "value": 1, "name": "DE"},
+                        
+                            {"id": "GY", "value": 1, "name": "GY"},
+                        
+                            {"id": "ID", "value": 1, "name": "ID"},
+                        
+                            {"id": "PS", "value": 1, "name": "PS"}
+                        
+                    ]
+                },
+            
+                {
+                    name: "Focus on Humanitarian Challenges and NGO Operations Amid Conflict",
+                    color: "#e57276",
+                    data: [
+                        
+                            {"id": "AO", "value": 1, "name": "AO"},
+                        
+                            {"id": "CU", "value": 1, "name": "CU"},
+                        
+                            {"id": "CV", "value": 1, "name": "CV"},
+                        
+                            {"id": "GH", "value": 1, "name": "GH"},
+                        
+                            {"id": "IE", "value": 1, "name": "IE"},
+                        
+                            {"id": "KR", "value": 1, "name": "KR"},
+                        
+                            {"id": "PK", "value": 1, "name": "PK"}
+                        
+                    ]
+                },
+            
+                {
+                    name: "Concern Over Media Freedom and Information Control",
+                    color: "#e5d272",
+                    data: [
+                        
+                            {"id": "DZ", "value": 1, "name": "DZ"},
+                        
+                            {"id": "IR", "value": 1, "name": "IR"},
+                        
+                            {"id": "MZ", "value": 1, "name": "MZ"}
+                        
+                    ]
+                }
+            
+            ];
+            
+            // Créer une série pour chaque cluster
+            seriesData.forEach(function(seriesInfo) {
+                var series = map.choropleth(seriesInfo.data);
+                series.name(seriesInfo.name);
+                series.geoIdField('id');
+                series.fill(seriesInfo.color);
+                series.stroke('#000000', 0.5, 'round');
+                
+                // Configuration du hover
+                series.hovered()
+                    .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+                
+                // Configuration des tooltips
+                series.tooltip().format(function() {
+                    // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                    return this.series.name()
+                });
+            });
+            
+            // Désactiver la légende
+            map.legend(false);
+            
+            // Rendre la carte
+            map.container('map-container');
+            map.draw();
+        });
+
+        function toggleSources(button) {
+            var content = button.nextElementSibling;
+            var isHidden = content.classList.contains('hidden');
+            
+            content.classList.toggle('hidden');
+            button.innerHTML = isHidden ? 'Hide sources ▲' : 'Show sources ▼';
+        }
+    </script>
+
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

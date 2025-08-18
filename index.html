@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Redirection instantanée vers /fr/index.html -->
+    <meta http-equiv="refresh" content="0; url=en/" />
+
+    <!-- Pour les navigateurs qui interprètent les liens -->
+    <link rel="canonical" href="en/" />
+    <title>Redirection…</title>
+    <script>
+      /* Recours JavaScript si le méta-refresh était bloqué */
+      window.location.replace("en/");
+    </script>
+  </head>
+  <body>
+    <!-- Fallback pour les très vieux navigateurs ou si JS + meta désactivés -->
+    <p>
+If you are not redirected automatically,
+<a href="en/">click here</a>.
+    </p>
+  </body>
+</html>

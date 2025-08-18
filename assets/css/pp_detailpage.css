@@ -1,0 +1,260 @@
+
+body {
+    font-family: Garamond, serif;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+    background-color: #f8f9fa;
+}
+
+.menu {
+    background-color: #000;
+    color: white;
+    padding: 15px 0;
+    margin: 0;
+    width: 100%;
+}
+
+.menu-content {
+    padding: 0 20px;
+}
+
+.back-link {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 0;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.header {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+}
+
+.header-inner {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-content {
+    width: 100%;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.key-points {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+    font-family: Garamond, serif;
+    background-color: #f8f9fa;
+}
+
+.key-points h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0 0 10px 22px;
+    background-color: #f8f9fa;
+    font-family: Garamond, serif;
+}
+
+.content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.map-section {
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 0; 
+    margin: 0;
+}
+
+#map-container {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.main-image {
+    width: 300px;
+    height: 300px;
+    float: left;
+    border-radius: 8px;
+    margin: 0 20px 0 0;
+}
+.metadata {
+    color: #666;
+    font-size: 0.9em;
+}
+.key-points {
+    background-color: #ffffff;
+    padding: 0px;
+    border-radius: 8px;
+}
+.back-link {
+    display: inline-block;
+    margin-bottom: 0px;
+    color: #0066cc;
+    text-decoration: none;
+}
+.flags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 0px;
+}
+.flag-icon {
+    width: 30px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+.flag-link {
+    transition: transform 0.2s;
+}
+.flag-link:hover {
+    transform: scale(1.1);
+}
+.article-summary {
+    font-family: Georgia, serif;
+    line-height: 1.5;
+    margin: 0 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.cluster-section {
+    margin-bottom: 0px;
+    padding: 0px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+.cluster-description {
+    font-family: Georgia, serif;
+    line-height: 1.5;
+    margin: 0 0 0 0;
+}
+.cluster-title {
+    font-family: Garamond, serif;
+    margin: 10px 0 15px 0;
+    font-size: 1.2em;
+    color: #333;
+    display: inline-block;
+}
+.country-section {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.country-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.country-name {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #333;
+}
+.article-list {
+    list-style: none;
+    padding-left: 40px;
+    margin: 0;
+}
+.article-link {
+    color: #0066cc;
+    text-decoration: none;
+    line-height: 1.4;
+}
+.article-link:hover {
+    text-decoration: underline;
+}
+.sources-section {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-top: 10px;
+}
+
+.expand-button {
+    background: none;
+    border: none;
+    color: #0066cc;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.expand-button:hover {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+.sources-content {
+    margin-top: 5px;
+    padding-bottom: 20px; 
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+    max-height: 1000px;  
+}
+
+.hidden {
+    max-height: 0;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;  
+    opacity: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+.sources-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.source-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.flag-icon {
+    width: 24px;
+    height: 16px;
+    object-fit: cover;
+    border-radius: 2px;
+    border: 1px solid #ddd;
+    flex-shrink: 0;
+}
+
+.article-link {
+    color: #0066cc;
+    text-decoration: none;
+    line-height: 1.4;
+    flex-grow: 1;
+    font-size: 12px;
+}
+
+.article-link:hover {
+    text-decoration: underline;
+}

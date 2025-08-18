@@ -1,0 +1,1473 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Perspectives internationales divergentes sur le conflit Russie-Ukraine et perspectives de paix</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css"> 
+    <link href="/assets/css/all.min.css" rel="stylesheet">
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+    <script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<!-- comon header  -->
+<header>  
+  <div class="middle-section py-3">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+             <div class="col order-3 order-lg-1">
+              <a href="/index.html" class="logo  d-table"> <img src="/assets/images/logo-3-50.png" alt="logo"> </a>
+
+             </div>
+            <div class="col order-1 order-lg-2">
+              
+            </div>
+            <div class="col d-flex justify-content-center justify-content-lg-end order-2 order-lg-3 my-4 mt-lg-0">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" alt="English" title="English" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/fr', '/en');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>             
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<!-- comon header ends  -->
+
+  <div class="main-menu">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div id="menu-id">
+        <div class="container">
+          <a class="navbar-brand d-block d-none" href="/index.html">Navbar</a>
+          <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+            <span>
+              <i class="fas fa-bars"></i>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/fr/index.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/fr/index.html">A propos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Perspectives internationales divergentes sur le conflit Russie-Ukraine et perspectives de paix</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-08-17</span> • <span>205 articles au total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-08-17/2025-08-17-1.jpg" alt="Perspectives internationales divergentes sur le conflit Russie-Ukraine et perspectives de paix" class="main-image">
+                <p style="margin:0">Les articles analysés révèlent un discours international multiforme entourant le conflit Russie-Ukraine, mettant en évidence les engagements militaires en cours et les négociations diplomatiques complexes. La Russie affirme des gains territoriaux dans l&#39;est de l&#39;Ukraine, notamment dans la région du Donbass, tandis que l&#39;Ukraine, soutenue par ses alliés occidentaux, résiste à toute concession territoriale et accuse la Russie d&#39;entraver les efforts de cessez-le-feu. L&#39;ancien président américain Donald Trump émerge comme une figure importante prônant des plans de paix qui s&#39;alignent souvent sur les revendications territoriales russes, face à l&#39;opposition de l&#39;Ukraine et d&#39;une grande partie de l&#39;Europe. Les pays européens et l&#39;OTAN insistent sur un soutien ferme à la souveraineté et à la sécurité de l&#39;Ukraine, en insistant sur des négociations inclusives et en rejetant le veto russe sur les ambitions d&#39;intégration occidentale de l&#39;Ukraine. Les préoccupations humanitaires, notamment concernant les prisonniers et les victimes civiles, soulignent la nécessité urgente d&#39;une résolution diplomatique face à la violence continue et aux tensions géopolitiques.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div class="key-points">
+        <h2>Les pays qui en parlent</h2>
+    </div>
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Perspectives pro-russes et alignées sur la Russie aux États-Unis prônant des concessions territoriales</h3>
+        <p class="cluster-description">Ce point de vue, partagé principalement par des sources russes et le cercle de l&#39;ancien président américain Donald Trump, promeut des plans de paix impliquant que l&#39;Ukraine cède le contrôle de territoires clés à l&#39;est, notamment la région du Donbass comprenant Donetsk et Luhansk. Le récit souligne la représentation de la Russie d&#39;une victoire militaire imminente, avec des propositions centrées sur des échanges de terres contre la paix, l&#39;abandon des ambitions de l&#39;OTAN par l&#39;Ukraine, et le gel des lignes de front du conflit sous réserve de concessions territoriales. Les partisans présentent ces propositions comme des mesures pragmatiques pour mettre fin aux hostilités, bien qu&#39;elles soient souvent rejetées par l&#39;Ukraine et les gouvernements occidentaux. La diplomatie selon cette perspective privilégie les négociations directes impliquant la Russie, l&#39;Ukraine et les États-Unis, y compris des sommets trilatéraux proposés et la marginalisation de coalitions internationales plus larges. Ils voient les cessez-le-feu avec scepticisme, favorisant des accords politiques globaux qui officialisent les changements territoriaux pour stabiliser la région.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Voir les sources ▼
+            </button>
+            <div class="sources-content hidden" style="padding-bottom: 15px;">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/geo.svg" alt="Géorgie" title="Géorgie" class="flag-icon">
+                            <a href="http://georgiatoday.ge/news" target="_blank" class="article-link">La Russie revendique la capture de deux villages dans l&#39;Est de l&#39;Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bhr.svg" alt="Bahreïn" title="Bahreïn" class="flag-icon">
+                            <a href="https://akhbar-alkhaleej.com/news/section/WORL" target="_blank" class="article-link">Trump exclut un cessez-le-feu immédiat en Ukraine, pousse directement pour un accord de paix</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bra.svg" alt="Brésil" title="Brésil" class="flag-icon">
+                            <a href="https://www1.folha.uol.com.br/mundo/" target="_blank" class="article-link">Trump adopte les conditions de Poutine pour discuter de la paix en Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/est.svg" alt="Estonie" title="Estonie" class="flag-icon">
+                            <a href="https://maailm.postimees.ee/" target="_blank" class="article-link">1271e jour de guerre en Ukraine : Trump a dit à Zelensky son désir d&#39;une réunion tripartite avec Poutine le 22 août</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/est.svg" alt="Estonie" title="Estonie" class="flag-icon">
+                            <a href="https://www.delfi.ee/kategooria/123/maailm" target="_blank" class="article-link">NYT : Donbass à la Russie – Trump a ignoré les promesses antérieures et a discuté de la cession de territoires ukrainiens avec Poutine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gtm.svg" alt="Guatemala" title="Guatemala" class="flag-icon">
+                            <a href="https://www.prensalibre.com/internacional/" target="_blank" class="article-link">Trump soutient apparemment le plan territorial de Poutine pour que l&#39;Ukraine cède Donetsk et Louhansk</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gtm.svg" alt="Guatemala" title="Guatemala" class="flag-icon">
+                            <a href="https://lahora.gt/internacionales/" target="_blank" class="article-link">Avant la réunion avec Zelensky, Trump espère que la Russie et l&#39;Ukraine parviendront à un accord de paix direct</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gtm.svg" alt="Guatemala" title="Guatemala" class="flag-icon">
+                            <a href="https://lahora.gt/internacionales/" target="_blank" class="article-link">Lettre de Melania Trump à Poutine : un appel à la paix et à la protection des enfants en pleine guerre en Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mco.svg" alt="Monaco" title="Monaco" class="flag-icon">
+                            <a href="https://www.monacomatin.mc/" target="_blank" class="article-link">Ukraine : les alliés de Kyiv discutent du plan de paix proposé par Trump</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mco.svg" alt="Monaco" title="Monaco" class="flag-icon">
+                            <a href="https://www.monacomatin.mc/" target="_blank" class="article-link">Trump abandonne le cessez-le-feu en Ukraine après l&#39;échec des négociations</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ben.svg" alt="Bénin" title="Bénin" class="flag-icon">
+                            <a href="https://lanouvelletribune.info/rubrique/politique/" target="_blank" class="article-link">États-Unis et Russie : vers un compromis sur le Donbass ?</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ben.svg" alt="Bénin" title="Bénin" class="flag-icon">
+                            <a href="https://lematinal.bj/category/inter/" target="_blank" class="article-link">Guerre en Ukraine : Rencontre annoncée entre Trump et Zelensky après le sommet de l&#39;Alaska</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ind.svg" alt="Inde" title="Inde" class="flag-icon">
+                            <a href="https://www.thehindu.com/news/international/" target="_blank" class="article-link">Le Premier ministre britannique Starmer rejoint les discussions de la « Coalition des volontaires » sur le conflit Russie-Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aut.svg" alt="Autriche" title="Autriche" class="flag-icon">
+                            <a href="https://www.diepresse.com/ausland" target="_blank" class="article-link">Voici l&#39;offre de paix de Poutine pour l&#39;Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/guy.svg" alt="Guyana" title="Guyana" class="flag-icon">
+                            <a href="https://www.stabroeknews.com/news/world/" target="_blank" class="article-link">Émergence d&#39;un plan de Poutine pour mettre fin à sa guerre en Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/grc.svg" alt="Grèce" title="Grèce" class="flag-icon">
+                            <a href="https://www.tovima.gr/category/world/" target="_blank" class="article-link">Le plan de paix de Poutine et l&#39;accord « silencieux » de Trump</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mne.svg" alt="Monténégro" title="Monténégro" class="flag-icon">
+                            <a href="https://www.vijesti.me/svijet" target="_blank" class="article-link">Trump a dit à Zelensky que Poutine a proposé de geler la plupart des lignes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nzl.svg" alt="Nouvelle-Zélande" title="Nouvelle-Zélande" class="flag-icon">
+                            <a href="https://www.nzherald.co.nz/world/" target="_blank" class="article-link">« Servir l&#39;humanité » : l&#39;appel à la paix de Melania à Poutine révélé</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nzl.svg" alt="Nouvelle-Zélande" title="Nouvelle-Zélande" class="flag-icon">
+                            <a href="https://www.nzherald.co.nz/world/" target="_blank" class="article-link">« Demandes de facto » : Trump soutient le plan de Poutine pour le Donbass en Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nzl.svg" alt="Nouvelle-Zélande" title="Nouvelle-Zélande" class="flag-icon">
+                            <a href="https://www.rnz.co.nz/news/world" target="_blank" class="article-link">Trump dit à Zelensky que la Russie est une « très grande puissance » et que l&#39;Ukraine ne l&#39;est pas</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/per.svg" alt="Pérou" title="Pérou" class="flag-icon">
+                            <a href="https://elcomercio.pe/mundo/" target="_blank" class="article-link">Trump inverse son appel à un cessez-le-feu en Ukraine comme condition pour le dialogue</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ita.svg" alt="Italie" title="Italie" class="flag-icon">
+                            <a href="https://www.corriere.it/esteri/" target="_blank" class="article-link">Markov, ancien conseiller du Kremlin : &#34;Maintenant, les États-Unis s&#39;alignent avec nous. Rencontre Trump-Poutine-Zelensky ? Cela se produira, mais la guerre ne se terminera pas : voici pourquoi&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ita.svg" alt="Italie" title="Italie" class="flag-icon">
+                            <a href="https://www.corriere.it/esteri/" target="_blank" class="article-link">Poutine : &#39;Proche de la victoire en Ukraine&#39;. Planification des prochaines étapes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fra.svg" alt="France" title="France" class="flag-icon">
+                            <a href="https://www.lefigaro.fr/international/" target="_blank" class="article-link">Guerre en Ukraine : la réunion de la &#39;Coalition des volontaires&#39; dimanche</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fra.svg" alt="France" title="France" class="flag-icon">
+                            <a href="https://www.lefigaro.fr/international/" target="_blank" class="article-link">Guerre en Ukraine : Von der Leyen et d&#39;autres dirigeants européens rencontreront Zelensky à Washington lundi</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fra.svg" alt="France" title="France" class="flag-icon">
+                            <a href="https://www.lefigaro.fr/international/" target="_blank" class="article-link">Guerre en Ukraine : Trump soutiendrait la proposition de Poutine d&#39;échanger Donbass contre un gel sur une partie du front</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kor.svg" alt="Corée du Sud" title="Corée du Sud" class="flag-icon">
+                            <a href="https://www.koreaherald.com/World" target="_blank" class="article-link">Poutine obtient des concessions en Ukraine en Alaska mais n&#39;a pas obtenu tout ce qu&#39;il voulait</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kor.svg" alt="Corée du Sud" title="Corée du Sud" class="flag-icon">
+                            <a href="https://www.koreaherald.com/World" target="_blank" class="article-link">Dans une lettre à Poutine, la Première dame des États-Unis lui demande de penser aux enfants dans la poussée pour mettre fin à la guerre en Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgd.svg" alt="Bangladesh" title="Bangladesh" class="flag-icon">
+                            <a href="https://bdnews24.com/world" target="_blank" class="article-link">Émergence d&#39;un plan de l&#39;offre de Poutine pour mettre fin à la guerre en Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/eth.svg" alt="Éthiopie" title="Éthiopie" class="flag-icon">
+                            <a href="https://www.ena.et/web/eng/politics" target="_blank" class="article-link">Zelensky d&#39;Ukraine dit qu&#39;il rencontrera Trump à Washington lundi</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pri.svg" alt="PRI" title="PRI" class="flag-icon">
+                            <a href="https://www.elnuevodia.com/noticias/mundo/" target="_blank" class="article-link">Aucun accord conclu : Zelenskyy doit rencontrer Trump après le sommet avec Poutine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pri.svg" alt="PRI" title="PRI" class="flag-icon">
+                            <a href="https://www.primerahora.com/noticias/mundo/" target="_blank" class="article-link">Poutine souhaite que Donetsk et Louhansk mettent fin à la guerre, selon le Financial Times</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pri.svg" alt="PRI" title="PRI" class="flag-icon">
+                            <a href="https://www.primerahora.com/noticias/mundo/" target="_blank" class="article-link">Zelensky soutient la proposition pour un sommet trilatéral avec Poutine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svk.svg" alt="Slovaquie" title="Slovaquie" class="flag-icon">
+                            <a href="https://spravy.pravda.sk/svet/" target="_blank" class="article-link">Poutine prêt à arrêter les troupes dans les régions de Kherson et de Zaporizhzhia ; déclare que les exigences pour mettre fin à la guerre sont en place</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ukr.svg" alt="Ukraine" title="Ukraine" class="flag-icon">
+                            <a href="https://www.kyivpost.com/category/world" target="_blank" class="article-link">Offre de Poutine à Trump : l&#39;Ukraine doit céder l&#39;Est, abandonner l&#39;objectif de l&#39;OTAN, la Russie doit rendre de petites poches</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ukr.svg" alt="Ukraine" title="Ukraine" class="flag-icon">
+                            <a href="https://www.kyivpost.com/category/world" target="_blank" class="article-link">De l&#39;Alaska à Washington, la pression se tourne maintenant vers Zelensky après que Poutine ait gagné le jeu d&#39;images</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ukr.svg" alt="Ukraine" title="Ukraine" class="flag-icon">
+                            <a href="https://kyivindependent.com/" target="_blank" class="article-link">L&#39;Ukraine sanctionne des entreprises russes, chinoises et biélorusses fournissant la technologie des drones</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ukr.svg" alt="Ukraine" title="Ukraine" class="flag-icon">
+                            <a href="https://kyivindependent.com/" target="_blank" class="article-link">Le refus de la Russie de déclarer un cessez-le-feu jette le doute sur le processus de paix, dit Zelensky avant les discussions à la Maison Blanche</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pol.svg" alt="Pologne" title="Pologne" class="flag-icon">
+                            <a href="https://wyborcza.pl/0,0.html?disableRedirects=true" target="_blank" class="article-link">Trump est prêt à donner le Donbass à Poutine. Zelensky : pas de consentement</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pol.svg" alt="Pologne" title="Pologne" class="flag-icon">
+                            <a href="https://wyborcza.pl/0,0.html?disableRedirects=true" target="_blank" class="article-link">&#34;Kiev n&#39;a pas le choix&#34;. Que peut faire l&#39;Ukraine après la rencontre Trump-Poutine ?</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pol.svg" alt="Pologne" title="Pologne" class="flag-icon">
+                            <a href="https://www.rp.pl/temat/swiat" target="_blank" class="article-link">Zelensky acceptera-t-il la proposition de Poutine ? Réaction du président ukrainien</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hkg.svg" alt="HKG" title="HKG" class="flag-icon">
+                            <a href="https://www.scmp.com/news/world" target="_blank" class="article-link">Royaume-Uni, France, Allemagne pour accueillir une réunion des alliés de l&#39;Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hkg.svg" alt="HKG" title="HKG" class="flag-icon">
+                            <a href="https://www.scmp.com/news/world" target="_blank" class="article-link">L&#39;échange de terres Ukraine-Russie « largement convenu », dit Trump après le sommet avec Poutine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svn.svg" alt="Slovénie" title="Slovénie" class="flag-icon">
+                            <a href="https://www.delo.si/novice/svet" target="_blank" class="article-link">Guerre en Ukraine : Trump soutient apparemment un plan pour que l&#39;Ukraine cède du territoire à la Russie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hrv.svg" alt="Croatie" title="Croatie" class="flag-icon">
+                            <a href="https://www.jutarnji.hr/vijesti/svijet" target="_blank" class="article-link">Trump a accepté</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hrv.svg" alt="Croatie" title="Croatie" class="flag-icon">
+                            <a href="https://www.jutarnji.hr/vijesti/svijet" target="_blank" class="article-link">Les dirigeants européens confirment au NY Times : Trump a soutenu l&#39;idée de Poutine de mettre fin à la guerre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hrv.svg" alt="Croatie" title="Croatie" class="flag-icon">
+                            <a href="https://www.vecernji.hr/vijesti/svijet" target="_blank" class="article-link">Le haut représentant de l&#39;UE avertit : « La dure réalité est que la Russie n&#39;a pas l&#39;intention de mettre fin à cette guerre bientôt »</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/idn.svg" alt="Indonésie" title="Indonésie" class="flag-icon">
+                            <a href="https://www.kompas.com/global" target="_blank" class="article-link">Poutine confiant qu&#39;il n&#39;y aurait pas de guerre en Ukraine si Trump avait gagné l&#39;élection de 2020</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pak.svg" alt="Pakistan" title="Pakistan" class="flag-icon">
+                            <a href="https://www.thenews.com.pk/latest/category/world" target="_blank" class="article-link">Zelensky se rend à Washington sous pression des États-Unis pour une résolution rapide de la guerre en Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pak.svg" alt="Pakistan" title="Pakistan" class="flag-icon">
+                            <a href="https://www.thenews.com.pk/latest/category/world" target="_blank" class="article-link">Trump exclut un cessez-le-feu immédiat, pousse pour un accord de paix</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/prt.svg" alt="Portugal" title="Portugal" class="flag-icon">
+                            <a href="https://www.publico.pt/mundo" target="_blank" class="article-link">Putin cherche un « accord global, pas un cessez-le-feu », déclare Trump ; Zelensky doit se rendre à Washington</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/prt.svg" alt="Portugal" title="Portugal" class="flag-icon">
+                            <a href="https://expresso.pt/" target="_blank" class="article-link">Putin veut que la région ukrainienne de Donetsk en échange du gel des lignes de front, rapporte Reuters</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/srb.svg" alt="Serbie" title="Serbie" class="flag-icon">
+                            <a href="https://www.politika.rs/scc/svet" target="_blank" class="article-link">Trump souhaite une rencontre avec Poutine et Zelensky le 22 août</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/srb.svg" alt="Serbie" title="Serbie" class="flag-icon">
+                            <a href="https://www.blic.rs/vesti/svet" target="_blank" class="article-link">Trump approuve le plan de Poutine en pleine éventualité de fin de la guerre en Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cri.svg" alt="Costa Rica" title="Costa Rica" class="flag-icon">
+                            <a href="https://www.nacion.com/el-mundo/" target="_blank" class="article-link">Donald Trump surprend le monde avec un changement radical dans son plan de paix pour l&#39;Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jpn.svg" alt="Japon" title="Japon" class="flag-icon">
+                            <a href="https://www.yomiuri.co.jp/world/" target="_blank" class="article-link">Trump soutient un plan pour mettre fin à l&#39;invasion si la région du Donbass est remise ; Poutine pourrait exiger que le russe soit la langue officielle</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jpn.svg" alt="Japon" title="Japon" class="flag-icon">
+                            <a href="https://www.yomiuri.co.jp/world/" target="_blank" class="article-link">Trump dit avoir réalisé certains progrès, discute d&#39;échanges de territoires ; Poutine pourrait être prêt à geler les lignes de front si Donetsk est remis</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kna.svg" alt="Saint-Christophe-et-Niévès" title="Saint-Christophe-et-Niévès" class="flag-icon">
+                            <a href="https://www.thestkittsnevisobserver.com/category/news/world-news/" target="_blank" class="article-link">Trump change pour le plan B concernant la guerre en Ukraine après un sommet infructueux</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/rou.svg" alt="Roumanie" title="Roumanie" class="flag-icon">
+                            <a href="https://jurnalul.ro/stiri/externe/" target="_blank" class="article-link">Trump soutient apparemment la proposition de Poutine concernant la reddition du Donbass ; Zelensky refuse les concessions territoriales</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cyp.svg" alt="Chypre" title="Chypre" class="flag-icon">
+                            <a href="https://www.philenews.com/kosmos/" target="_blank" class="article-link">Ce que Poutine cherche et offre pour mettre fin à la guerre en Ukraine – Sa proposition (vidéo)</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cyp.svg" alt="Chypre" title="Chypre" class="flag-icon">
+                            <a href="https://www.philenews.com/kosmos/" target="_blank" class="article-link">La Russie « complique » la fin de la guerre, dit Zelensky – Trump insiste pour accepter le plan de Poutine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cyp.svg" alt="Chypre" title="Chypre" class="flag-icon">
+                            <a href="https://cyprus-mail.com/category/world/" target="_blank" class="article-link">Une attaque de drone en Ukraine blesse un employé de la gare à Voronej, selon le gouverneur</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #7279e5; padding: 8px 16px; border-radius: 4px;">Coalition occidentale et européenne soutenant la souveraineté de l&#39;Ukraine et rejetant les concessions territoriales</h3>
+        <p class="cluster-description">Cette perspective est soutenue par l&#39;Union européenne, les États membres de l&#39;OTAN, le Royaume-Uni, le Canada et la coalition internationale plus large qui soutient l&#39;intégrité territoriale de Kyiv. Ils rejettent catégoriquement toute proposition obligeant l&#39;Ukraine à céder des terres souveraines à la Russie, qualifiant ces demandes d&#39;inacceptables et de coercitives. Ces pays mettent en avant leur solidarité avec l&#39;Ukraine par un soutien militaire, financier et diplomatique substantiel, tout en plaidant pour des négociations de paix inclusives impliquant l&#39;Ukraine et les partenaires européens. Ils expriment leur scepticisme face aux propositions de paix russes, en soulignant les hostilités en cours et le refus de la Russie d&#39;accepter des cessez-le-feu. Les efforts se concentrent sur le renforcement de la défense de l&#39;Ukraine, la coordination des réponses alliées et la pression diplomatique et économique sur Moscou, en mettant en avant les préoccupations humanitaires et en condamnant l&#39;agression russe comme illégitime.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Voir les sources ▼
+            </button>
+            <div class="sources-content hidden" style="padding-bottom: 15px;">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lux.svg" alt="Luxembourg" title="Luxembourg" class="flag-icon">
+                            <a href="https://www.wort.lu/fr/international" target="_blank" class="article-link">Ukraine : Les alliés de Kiev se réunissent pour discuter du plan de paix de Trump</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lux.svg" alt="Luxembourg" title="Luxembourg" class="flag-icon">
+                            <a href="https://www.tageblatt.lu/headlines/" target="_blank" class="article-link">Après le sommet de l&#39;Alaska - Zelensky doit se rendre à Washington lundi</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lux.svg" alt="Luxembourg" title="Luxembourg" class="flag-icon">
+                            <a href="https://www.tageblatt.lu/headlines/" target="_blank" class="article-link">Guerre en Ukraine - Moscou et Kiev poursuivent les frappes aériennes malgré le sommet de l&#39;Alaska</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lux.svg" alt="Luxembourg" title="Luxembourg" class="flag-icon">
+                            <a href="https://www.tageblatt.lu/headlines/" target="_blank" class="article-link">Ligne rouge claire avant le sommet de l&#39;Alaska : la majorité des Ukrainiens rejettent les concessions territoriales</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/som.svg" alt="Somalie" title="Somalie" class="flag-icon">
+                            <a href="https://www.radiodalsan.com/category/news-in-english/" target="_blank" class="article-link">Zelensky peut-il résister à la pression des États-Unis pour céder du territoire dans le conflit avec la Russie ?</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/est.svg" alt="Estonie" title="Estonie" class="flag-icon">
+                            <a href="https://maailm.postimees.ee/" target="_blank" class="article-link">Politico : L&#39;Europe envoie Stubbs à la Maison Blanche aux côtés de Zelensky</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/est.svg" alt="Estonie" title="Estonie" class="flag-icon">
+                            <a href="https://www.delfi.ee/kategooria/123/maailm" target="_blank" class="article-link">Melania Trump dans une lettre à Poutine : Vous seul pouvez restaurer le rire mélodieux des enfants</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/est.svg" alt="Estonie" title="Estonie" class="flag-icon">
+                            <a href="https://www.delfi.ee/kategooria/123/maailm" target="_blank" class="article-link">Déclaration conjointe des dirigeants européens : les discussions avec Zelensky doivent suivre le sommet de l&#39;Alaska</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gtm.svg" alt="Guatemala" title="Guatemala" class="flag-icon">
+                            <a href="https://www.prensalibre.com/internacional/" target="_blank" class="article-link">Les États-Unis proposent des garanties de sécurité pour l&#39;Ukraine similaires à l&#39;OTAN mais sans adhésion</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ind.svg" alt="Inde" title="Inde" class="flag-icon">
+                            <a href="https://www.thehindu.com/news/international/" target="_blank" class="article-link">Le Premier ministre britannique Starmer rejoint les discussions de la &#39;Coalition des volontaires&#39; sur le conflit Russie-Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/alb.svg" alt="Albanie" title="Albanie" class="flag-icon">
+                            <a href="http://www.gsh.al/category/bota/" target="_blank" class="article-link">Les dirigeants de l&#39;UE prennent des mesures pour renforcer la position de Zelensky - Politico</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/alb.svg" alt="Albanie" title="Albanie" class="flag-icon">
+                            <a href="https://www.panorama.com.al/category/bota-rajoni/" target="_blank" class="article-link">Les dirigeants de l&#39;UE prennent des mesures pour renforcer la position de Zelensky : les &#34;amis&#34; de Donald Trump devraient accompagner le président ukrainien à Washington</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aut.svg" alt="Autriche" title="Autriche" class="flag-icon">
+                            <a href="https://kurier.at/politik/ausland" target="_blank" class="article-link">Sommet en Ukraine : les tactiques de l&#39;Europe avant la réunion Trump-Zelensky</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fro.svg" alt="FRO" title="FRO" class="flag-icon">
+                            <a href="https://www.in.fo/" target="_blank" class="article-link">La majorité au Parlement soutient la mise sur liste noire des navires russes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fro.svg" alt="FRO" title="FRO" class="flag-icon">
+                            <a href="https://www.in.fo/" target="_blank" class="article-link">Les pays nordiques et baltes ne peuvent pas faire confiance à Poutine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fro.svg" alt="FRO" title="FRO" class="flag-icon">
+                            <a href="https://www.in.fo/" target="_blank" class="article-link">Zelensky remercie Trump pour la lettre de Melania concernant les enfants volés</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/grl.svg" alt="GRL" title="GRL" class="flag-icon">
+                            <a href="https://sermitsiaq.ag/" target="_blank" class="article-link">Le chef de la diplomatie de l&#39;UE exige l&#39;inclusion de l&#39;UE et de l&#39;Ukraine dans l&#39;accord de paix</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/grc.svg" alt="Grèce" title="Grèce" class="flag-icon">
+                            <a href="https://www.kathimerini.gr/world" target="_blank" class="article-link">Plan Portin, position de Trump et réponse de Zelensky</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fin.svg" alt="Finlande" title="Finlande" class="flag-icon">
+                            <a href="https://www.hs.fi/ulkomaat/" target="_blank" class="article-link">Zelensky d&#39;Ukraine revient à une réunion à la Maison Blanche avec des enjeux importants</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kaz.svg" alt="Kazakhstan" title="Kazakhstan" class="flag-icon">
+                            <a href="https://tengrinews.kz/news/" target="_blank" class="article-link">Reuters a publié un &#34;plan de paix&#34; pour l&#39;Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mne.svg" alt="Monténégro" title="Monténégro" class="flag-icon">
+                            <a href="https://www.vijesti.me/svijet" target="_blank" class="article-link">Trump a dit à Zelensky que Poutine a proposé de geler la plupart des lignes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mne.svg" alt="Monténégro" title="Monténégro" class="flag-icon">
+                            <a href="https://www.vijesti.me/svijet" target="_blank" class="article-link">Zelensky : le refus de négocier un cessez-le-feu par la Russie complique la situation</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/npl.svg" alt="Népal" title="Népal" class="flag-icon">
+                            <a href="https://ekantipur.com/world" target="_blank" class="article-link">Le président de l&#39;Ukraine en visite aux États-Unis après des discussions infructueuses entre Trump et Poutine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/npl.svg" alt="Népal" title="Népal" class="flag-icon">
+                            <a href="https://thehimalayantimes.com/category/world/" target="_blank" class="article-link">Les dirigeants européens se rassemblent derrière l&#39;Ukraine avant la réunion Trump-Poutine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nzl.svg" alt="Nouvelle-Zélande" title="Nouvelle-Zélande" class="flag-icon">
+                            <a href="https://www.rnz.co.nz/news/world" target="_blank" class="article-link">Trump dit à Zelensky que la Russie est une &#34;très grande puissance&#34; et que l&#39;Ukraine ne l&#39;est pas</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/yem.svg" alt="Yémen" title="Yémen" class="flag-icon">
+                            <a href="https://www.saba.ye" target="_blank" class="article-link">Les forces russes détruisent le site de stockage de missiles ukrainien &#34;Sapsan&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ita.svg" alt="Italie" title="Italie" class="flag-icon">
+                            <a href="https://www.corriere.it/esteri/" target="_blank" class="article-link">Poutine : &#34;Près de la victoire en Ukraine&#34;. Maintenant, planification des prochaines étapes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ita.svg" alt="Italie" title="Italie" class="flag-icon">
+                            <a href="https://www.repubblica.it/esteri/" target="_blank" class="article-link">Guerre en Ukraine : dernières nouvelles : Von der Leyen à Washington pour la réunion Trump-Zelensky</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ita.svg" alt="Italie" title="Italie" class="flag-icon">
+                            <a href="https://www.repubblica.it/esteri/" target="_blank" class="article-link">La lauréate du prix Nobel de la paix Oleksandra Matviichuk : &#34;Le dictateur légitimé et nous continuerons à souffrir&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fra.svg" alt="France" title="France" class="flag-icon">
+                            <a href="https://www.lefigaro.fr/international/" target="_blank" class="article-link">Guerre en Ukraine : la réunion de la &#34;Coalition des volontaires&#34; dimanche</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fra.svg" alt="France" title="France" class="flag-icon">
+                            <a href="https://www.lefigaro.fr/international/" target="_blank" class="article-link">Guerre en Ukraine : Von der Leyen et d&#39;autres dirigeants européens rencontrent Zelensky à Washington lundi</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kor.svg" alt="Corée du Sud" title="Corée du Sud" class="flag-icon">
+                            <a href="https://www.koreaherald.com/World" target="_blank" class="article-link">Dans une lettre à Poutine, la Première dame des États-Unis lui demande de considérer les enfants dans la poussée pour mettre fin à la guerre en Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aze.svg" alt="Azerbaïdjan" title="Azerbaïdjan" class="flag-icon">
+                            <a href="https://www.azernews.az/region/" target="_blank" class="article-link">Kallas de l&#39;UE exhorte à faire pression sur la Russie pour engager de véritables négociations</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aze.svg" alt="Azerbaïdjan" title="Azerbaïdjan" class="flag-icon">
+                            <a href="https://en.trend.az/world/" target="_blank" class="article-link">Zelensky confirme une rencontre à Washington avec Trump sur les efforts de paix</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgd.svg" alt="Bangladesh" title="Bangladesh" class="flag-icon">
+                            <a href="https://bdnews24.com/world" target="_blank" class="article-link">Émergence d&#39;un aperçu de l&#39;offre de Poutine pour mettre fin à la guerre en Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/eth.svg" alt="Éthiopie" title="Éthiopie" class="flag-icon">
+                            <a href="https://www.ena.et/web/eng/politics" target="_blank" class="article-link">Zelensky d&#39;Ukraine dit qu&#39;il rencontrera Trump à Washington lundi</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mmr.svg" alt="Birmanie" title="Birmanie" class="flag-icon">
+                            <a href="https://elevenmyanmar.com/world" target="_blank" class="article-link">La Chine dit qu&#39;elle suit de près la situation en Ukraine après l&#39;escalade</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pri.svg" alt="PRI" title="PRI" class="flag-icon">
+                            <a href="https://www.elnuevodia.com/noticias/mundo/" target="_blank" class="article-link">Aucun accord conclu : Zelensky doit rencontrer Trump après le sommet avec Poutine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svk.svg" alt="Slovaquie" title="Slovaquie" class="flag-icon">
+                            <a href="https://spravy.pravda.sk/svet/" target="_blank" class="article-link">Poutine prêt à arrêter les troupes dans les régions de Kherson et Zaporizhzhia ; déclare que ses exigences pour la fin de la guerre sont en place</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/che.svg" alt="Suisse" title="Suisse" class="flag-icon">
+                            <a href="https://www.letemps.ch/monde" target="_blank" class="article-link">Les dirigeants français, britanniques et allemands tiendront une réunion alliée sur l&#39;Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gha.svg" alt="Ghana" title="Ghana" class="flag-icon">
+                            <a href="https://www.modernghana.com/ghanahome/world/" target="_blank" class="article-link">Zelensky doit rencontrer Trump alors que Macron et les dirigeants de l&#39;UE discutent de la guerre en Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irn.svg" alt="Iran" title="Iran" class="flag-icon">
+                            <a href="https://ifpnews.com/category/news/world/" target="_blank" class="article-link">Trump a dit aux Européens que Poutine veut tout le Donbass en échange de la fin de la guerre en Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irn.svg" alt="Iran" title="Iran" class="flag-icon">
+                            <a href="https://ifpnews.com/category/news/world/" target="_blank" class="article-link">Les dirigeants européens invités à la Maison Blanche pour la réunion Trump-Zelensky</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irn.svg" alt="Iran" title="Iran" class="flag-icon">
+                            <a href="https://ifpnews.com/category/news/world/" target="_blank" class="article-link">Les dirigeants européens réaffirment leur soutien à l&#39;Ukraine après la rencontre Trump-Poutine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pol.svg" alt="Pologne" title="Pologne" class="flag-icon">
+                            <a href="https://wyborcza.pl/0,0.html?disableRedirects=true" target="_blank" class="article-link">Trump est prêt à donner le Donbass à Poutine. Zelensky : Pas de consentement</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pol.svg" alt="Pologne" title="Pologne" class="flag-icon">
+                            <a href="https://www.rp.pl/temat/swiat" target="_blank" class="article-link"> Zelensky acceptera-t-il la proposition de Poutine ? Réaction du président ukrainien</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hkg.svg" alt="HKG" title="HKG" class="flag-icon">
+                            <a href="https://www.scmp.com/news/world" target="_blank" class="article-link">Royaume-Uni, France, Allemagne pour accueillir une réunion des alliés de l&#39;Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hkg.svg" alt="HKG" title="HKG" class="flag-icon">
+                            <a href="https://www.scmp.com/news/world" target="_blank" class="article-link">L&#39;échange de terres entre l&#39;Ukraine et la Russie « largement convenu », déclare Trump après le sommet avec Poutine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bih.svg" alt="Bosnie-Herzégovine" title="Bosnie-Herzégovine" class="flag-icon">
+                            <a href="https://avaz.ba/vijesti" target="_blank" class="article-link">La proposition de Poutine pour mettre fin à la guerre, rapportée en détail par Reuters</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cze.svg" alt="République tchèque" title="République tchèque" class="flag-icon">
+                            <a href="https://www.idnes.cz/zpravy/zahranicni" target="_blank" class="article-link">Trump : l&#39;Ukraine n&#39;est pas une grande puissance, doit parvenir à un accord avec la Russie. Il a révélé ce que Poutine lui a dit</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fra.svg" alt="France" title="France" class="flag-icon">
+                            <a href="https://www.lemonde.fr/international/" target="_blank" class="article-link">En direct : guerre en Ukraine - les pays de la &#34;coalition de volontaires&#34; alliés à Kyiv se rencontrent</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pry.svg" alt="Paraguay" title="Paraguay" class="flag-icon">
+                            <a href="https://www.ultimahora.com/noticias/mundo/" target="_blank" class="article-link">Poutine veut que Donetsk et Louhansk mettent fin à la guerre, selon le Financial Times</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tur.svg" alt="Turquie" title="Turquie" class="flag-icon">
+                            <a href="http://www.milliyet.com.tr/dunya/" target="_blank" class="article-link">Déclaration conjointe des dirigeants de l&#39;UE : notre soutien à l&#39;Ukraine se poursuivra</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tur.svg" alt="Turquie" title="Turquie" class="flag-icon">
+                            <a href="http://www.milliyet.com.tr/dunya/" target="_blank" class="article-link">Zelenskiy annonce des discussions en face-à-face avec Trump à Washington</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/can.svg" alt="Canada" title="Canada" class="flag-icon">
+                            <a href="https://www.theglobeandmail.com/world/" target="_blank" class="article-link">Trump dit à Zelensky que Poutine exige plus de contrôle sur l&#39;Ukraine, et exhorte Kyiv à conclure un accord</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/can.svg" alt="Canada" title="Canada" class="flag-icon">
+                            <a href="https://www.theglobeandmail.com/world/" target="_blank" class="article-link">Carney accueille favorablement les discussions américaines pour créer un accord de paix Russie-Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/can.svg" alt="Canada" title="Canada" class="flag-icon">
+                            <a href="https://www.theglobeandmail.com/world/" target="_blank" class="article-link">Zelensky rencontrera Trump lundi après l&#39;échec du sommet États-Unis-Russie à obtenir un cessez-le-feu</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ca-qc.svg" alt="CA-QC" title="CA-QC" class="flag-icon">
+                            <a href="https://www.journaldequebec.com/actualite/monde" target="_blank" class="article-link">Les États-Unis proposent des garanties de sécurité inspirées de l&#39;OTAN à l&#39;Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/chl.svg" alt="Chili" title="Chili" class="flag-icon">
+                            <a href="https://www.latercera.com/categoria/mundo/" target="_blank" class="article-link">Zelensky affirme que le rejet du cessez-le-feu par la Russie complique les négociations de paix</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/chl.svg" alt="Chili" title="Chili" class="flag-icon">
+                            <a href="https://www.latercera.com/categoria/mundo/" target="_blank" class="article-link">Le Haut Représentant de l&#39;UE déclare que la Russie n&#39;a pas l&#39;intention de mettre fin à la guerre en Ukraine prochainement</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/chl.svg" alt="Chili" title="Chili" class="flag-icon">
+                            <a href="https://www.latercera.com/categoria/mundo/" target="_blank" class="article-link">Trump dit que Poutine voulait plus de territoire ukrainien après l&#39;échec du sommet en Alaska</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hrv.svg" alt="Croatie" title="Croatie" class="flag-icon">
+                            <a href="https://www.jutarnji.hr/vijesti/svijet" target="_blank" class="article-link">Manœuvre diplomatique : l&#39;Europe prépare un nouveau coup contre Poutine, discute de solutions pour l&#39;Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hrv.svg" alt="Croatie" title="Croatie" class="flag-icon">
+                            <a href="https://www.jutarnji.hr/vijesti/svijet" target="_blank" class="article-link">Révolte à Kiev : « Fatigant, embarrassant et inutile. Assez des falsifications de Poutine, peut-être est-il temps de répandre cette idée dans le monde entier »</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hrv.svg" alt="Croatie" title="Croatie" class="flag-icon">
+                            <a href="https://www.jutarnji.hr/vijesti/svijet" target="_blank" class="article-link">Les dirigeants européens confirment au NY Times : Trump soutenait l&#39;idée de Poutine de mettre fin à la guerre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hrv.svg" alt="Croatie" title="Croatie" class="flag-icon">
+                            <a href="https://www.vecernji.hr/vijesti/svijet" target="_blank" class="article-link">Le Haut Représentant de l&#39;UE avertit : « La dure réalité est que la Russie n&#39;a pas l&#39;intention de mettre fin à cette guerre bientôt »</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sau.svg" alt="Arabie Saoudite" title="Arabie Saoudite" class="flag-icon">
+                            <a href="https://saudigazette.com.sa/World" target="_blank" class="article-link">Zelensky rencontrera Trump à Washington après le sommet en Alaska</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sau.svg" alt="Arabie Saoudite" title="Arabie Saoudite" class="flag-icon">
+                            <a href="https://saudigazette.com.sa/World" target="_blank" class="article-link">Macron appelle à une paix durable en Ukraine soutenue par de solides garanties de sécurité</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sau.svg" alt="Arabie Saoudite" title="Arabie Saoudite" class="flag-icon">
+                            <a href="https://saudigazette.com.sa/World" target="_blank" class="article-link">Les dirigeants européens soutiennent la démarche de paix de Trump pour l&#39;Ukraine, appuient les négociations trilatérales avec Zelenskyy</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ltu.svg" alt="Lituanie" title="Lituanie" class="flag-icon">
+                            <a href="https://www.lrytas.lt/pasaulis" target="_blank" class="article-link">L&#39;Europe a choisi qui envoyer à Washington pour soutenir V. Zelenskiy : peur d&#39;un nouveau scandale</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ltu.svg" alt="Lituanie" title="Lituanie" class="flag-icon">
+                            <a href="https://www.delfi.lt/news/daily/world/" target="_blank" class="article-link">Guerre en Ukraine : Politico - L&#39;Europe va envoyer le favori de Trump aux négociations avec Zelenskiy</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nor.svg" alt="Norvège" title="Norvège" class="flag-icon">
+                            <a href="https://www.aftenposten.no/verden" target="_blank" class="article-link">Zelensky arrive à Bruxelles aujourd&#39;hui - plusieurs dirigeants européens rejoignent la réunion de Trump lundi</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nor.svg" alt="Norvège" title="Norvège" class="flag-icon">
+                            <a href="https://www.vg.no/nyheter/utenriks" target="_blank" class="article-link">Von der Leyen accompagne Zelensky à la Maison Blanche</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nor.svg" alt="Norvège" title="Norvège" class="flag-icon">
+                            <a href="https://www.vg.no/nyheter/utenriks" target="_blank" class="article-link">Zelensky : le rejet d&#39;un cessez-le-feu par la Russie complique la situation</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/are.svg" alt="Émirats arabes unis" title="Émirats arabes unis" class="flag-icon">
+                            <a href="https://www.thenationalnews.com/international" target="_blank" class="article-link">Zelensky se rend à Washington pour un affrontement crucial avec Trump</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/esp.svg" alt="Espagne" title="Espagne" class="flag-icon">
+                            <a href="https://elpais.com/internacional/" target="_blank" class="article-link">L&#39;Europe applaudit les garanties de sécurité des États-Unis à l&#39;Ukraine et rejette le veto russe sur l&#39;adhésion à l&#39;UE et à l&#39;OTAN</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/esp.svg" alt="Espagne" title="Espagne" class="flag-icon">
+                            <a href="https://www.elmundo.es/internacional.html" target="_blank" class="article-link">Les principaux dirigeants européens s&#39;accordent sur leur position après un sommet infructueux</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gbr.svg" alt="Royaume-Uni" title="Royaume-Uni" class="flag-icon">
+                            <a href="https://news.sky.com/world" target="_blank" class="article-link">Zelensky amènera des alliés clés aux discussions cruciales à la Maison Blanche</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gbr.svg" alt="Royaume-Uni" title="Royaume-Uni" class="flag-icon">
+                            <a href="https://news.sky.com/world" target="_blank" class="article-link">Zelensky amènera von der Leyen à la réunion avec Trump à Washington</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gbr.svg" alt="Royaume-Uni" title="Royaume-Uni" class="flag-icon">
+                            <a href="https://news.sky.com/world" target="_blank" class="article-link">La Russie affirme que ses forces ont détruit 300 drones ukrainiens pendant la nuit</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gbr.svg" alt="Royaume-Uni" title="Royaume-Uni" class="flag-icon">
+                            <a href="https://news.sky.com/world" target="_blank" class="article-link">Poutine exige des régions clés de l&#39;Ukraine en échange de la paix</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/isl.svg" alt="Islande" title="Islande" class="flag-icon">
+                            <a href="https://www.mbl.is/frettir/erlent/" target="_blank" class="article-link">Censé soutenir la proposition de Poutine pour l&#39;annexion</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ken.svg" alt="Kenya" title="Kenya" class="flag-icon">
+                            <a href="https://nation.africa/kenya/news/world" target="_blank" class="article-link">Émergence d&#39;un plan de Poutine pour mettre fin à sa guerre en Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nga.svg" alt="Nigeria" title="Nigeria" class="flag-icon">
+                            <a href="https://guardian.ng/category/world/" target="_blank" class="article-link">La Russie revendique plus de villages, l&#39;Ukraine parle d&#39;une attaque repoussée</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/khm.svg" alt="Cambodge" title="Cambodge" class="flag-icon">
+                            <a href="https://cambodianess.com/world" target="_blank" class="article-link">L&#39;Europe va réfléchir à un plan de paix en Ukraine après le sommet Trump-Poutine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lbn.svg" alt="Liban" title="Liban" class="flag-icon">
+                            <a href="https://www.lorientlejour.com/rubrique/7-moyen-orient-et-monde" target="_blank" class="article-link">Trump cherche un plan de paix pour l&#39;Ukraine après l&#39;échec à obtenir un cessez-le-feu</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/swe.svg" alt="Suède" title="Suède" class="flag-icon">
+                            <a href="https://www.dn.se/varlden/" target="_blank" class="article-link">Starmer et les dirigeants de l&#39;UE se rencontrent pour discuter de la prochaine visite de Zelensky aux États-Unis</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/swe.svg" alt="Suède" title="Suède" class="flag-icon">
+                            <a href="https://www.dn.se/varlden/" target="_blank" class="article-link">L&#39;Europe exige des garanties de sécurité strictes pour l&#39;Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/swe.svg" alt="Suède" title="Suède" class="flag-icon">
+                            <a href="https://www.svd.se/" target="_blank" class="article-link">Von der Leyen accompagnera Zelenskyy à la Maison Blanche</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dnk.svg" alt="Danemark" title="Danemark" class="flag-icon">
+                            <a href="https://nyheder.tv2.dk/udland" target="_blank" class="article-link">Le rejet de la Russie complique la situation, déclare Zelenskyy</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/idn.svg" alt="Indonésie" title="Indonésie" class="flag-icon">
+                            <a href="https://www.kompas.com/global" target="_blank" class="article-link">Poutine est confiant qu&#39;il n&#39;y aurait pas eu de guerre en Ukraine si Trump avait gagné l&#39;élection de 2020</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sgp.svg" alt="Singapour" title="Singapour" class="flag-icon">
+                            <a href="https://www.straitstimes.com/global" target="_blank" class="article-link">Les dirigeants européens se réunissent sur l&#39;Ukraine alors que Zelenskiy se prépare à affronter Trump</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sgp.svg" alt="Singapour" title="Singapour" class="flag-icon">
+                            <a href="https://www.businesstimes.com.sg/international" target="_blank" class="article-link">Trump organise une rencontre avec Zelensky alors que Poutine renouvelle ses demandes territoriales</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ven.svg" alt="Venezuela" title="Venezuela" class="flag-icon">
+                            <a href="https://www.elnacional.com/mundo/" target="_blank" class="article-link">Financial Times : Poutine a exigé que les régions de Donetsk et de Louhansk mettent fin à la guerre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/deu.svg" alt="Allemagne" title="Allemagne" class="flag-icon">
+                            <a href="https://www.sueddeutsche.de/news/politik/" target="_blank" class="article-link">L&#39;Europe a dépassé les États-Unis en aide militaire à l&#39;Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mkd.svg" alt="Macédoine du Nord" title="Macédoine du Nord" class="flag-icon">
+                            <a href="https://www.novamakedonija.com.mk/" target="_blank" class="article-link">Zelensky condamne l&#39;échec de la Russie à mettre en œuvre un cessez-le-feu</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mkd.svg" alt="Macédoine du Nord" title="Macédoine du Nord" class="flag-icon">
+                            <a href="https://www.novamakedonija.com.mk/" target="_blank" class="article-link">Les dirigeants européens doivent décider s&#39;ils accompagneront Zelensky à Washington</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pak.svg" alt="Pakistan" title="Pakistan" class="flag-icon">
+                            <a href="https://www.thenews.com.pk/latest/category/world" target="_blank" class="article-link">Zelensky se rend à Washington sous pression des États-Unis pour une résolution rapide du conflit en Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/prt.svg" alt="Portugal" title="Portugal" class="flag-icon">
+                            <a href="https://www.publico.pt/mundo" target="_blank" class="article-link">Poutine cherche un « accord global, pas un cessez-le-feu », déclare Trump ; Zelensky doit se rendre à Washington</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/prt.svg" alt="Portugal" title="Portugal" class="flag-icon">
+                            <a href="https://expresso.pt/" target="_blank" class="article-link">Poutine souhaite que la région ukrainienne de Donetsk soit échangée contre le gel des lignes de front, rapporte Reuters</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mng.svg" alt="Mongolie" title="Mongolie" class="flag-icon">
+                            <a href="https://montsame.mn/mn/more/17" target="_blank" class="article-link">Les dirigeants européens réaffirment leur soutien continu à l&#39;Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tls.svg" alt="Timor oriental" title="Timor oriental" class="flag-icon">
+                            <a href="https://www.noticiasaominuto.com/mundo" target="_blank" class="article-link">Cessez-le-feu ? &#34;La Russie n&#39;a pas encore décidé quand elle mettra fin aux tueries&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vnm.svg" alt="Viêt Nam" title="Viêt Nam" class="flag-icon">
+                            <a href="https://tuoitre.vn/the-gioi.htm" target="_blank" class="article-link">M. Zelensky rend visite à la Maison Blanche pour rencontrer M. Trump le 18 août : opportunité ou pression ?</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vnm.svg" alt="Viêt Nam" title="Viêt Nam" class="flag-icon">
+                            <a href="https://tuoitre.vn/the-gioi.htm" target="_blank" class="article-link">M. Trump dit que M. Poutine veut des terres pour la paix, M. Zelensky refuse</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hun.svg" alt="Hongrie" title="Hongrie" class="flag-icon">
+                            <a href="https://magyarnemzet.hu/" target="_blank" class="article-link">Szijjártó Péter : Nous plaidons pour un cessez-le-feu et des négociations de paix depuis plus de trois ans</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hun.svg" alt="Hongrie" title="Hongrie" class="flag-icon">
+                            <a href="https://magyarnemzet.hu/" target="_blank" class="article-link">L&#39;Ukraine a attaqué plusieurs régions russes pendant la nuit</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hun.svg" alt="Hongrie" title="Hongrie" class="flag-icon">
+                            <a href="https://magyarnemzet.hu/" target="_blank" class="article-link">Soutien sans précédent de l&#39;Occident à Kyiv – cela a aussi un coût</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hun.svg" alt="Hongrie" title="Hongrie" class="flag-icon">
+                            <a href="https://nepszava.hu/tag/kulfold/" target="_blank" class="article-link">Vladimir Poutine exige que l&#39;Ukraine cède un autre territoire de la taille du comté de Pest à la Russie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Irlande" title="Irlande" class="flag-icon">
+                            <a href="https://www.irishtimes.com/news/world" target="_blank" class="article-link">La proposition de Poutine pour mettre fin à la guerre en Ukraine inclut des transferts de terres, un assouplissement des sanctions et plus encore, selon des sources</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Irlande" title="Irlande" class="flag-icon">
+                            <a href="https://www.irishtimes.com/news/world" target="_blank" class="article-link">Trump abandonne la demande de cessez-le-feu en Ukraine et suggère que le plan de Poutine pourrait apporter la paix</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Irlande" title="Irlande" class="flag-icon">
+                            <a href="https://www.independent.ie/world-news/" target="_blank" class="article-link">Vladimir Poutine propose de geler les lignes de front avec l&#39;Ukraine s&#39;il reçoit Donetsk, mais rejette le cessez-le-feu préalable</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kwt.svg" alt="Koweït" title="Koweït" class="flag-icon">
+                            <a href="https://kuwaittimes.com/world/" target="_blank" class="article-link">Trump pousse pour un accord de paix entre la Russie et l&#39;Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nic.svg" alt="Nicaragua" title="Nicaragua" class="flag-icon">
+                            <a href="https://www.laprensani.com/internacionales" target="_blank" class="article-link">Zelensky déclare que le rejet du cessez-le-feu par la Russie complique les négociations de paix</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/col.svg" alt="Colombie" title="Colombie" class="flag-icon">
+                            <a href="https://www.eltiempo.com/mundo" target="_blank" class="article-link">Poutine veut que Donetsk et Louhansk mettent fin à la guerre, selon le Financial Times</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jor.svg" alt="Jordanie" title="Jordanie" class="flag-icon">
+                            <a href="https://www.jordantimes.com/news/world" target="_blank" class="article-link">Les États-Unis ont proposé des garanties de défense communes à la style de l&#39;OTAN pour Kyiv - source</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/srb.svg" alt="Serbie" title="Serbie" class="flag-icon">
+                            <a href="https://www.politika.rs/scc/svet" target="_blank" class="article-link">L&#39;ONU soutient tous les efforts pour parvenir à la paix en Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/srb.svg" alt="Serbie" title="Serbie" class="flag-icon">
+                            <a href="https://www.blic.rs/vesti/svet" target="_blank" class="article-link">Trump approuve le plan de Poutine face à une fin potentielle de la guerre en Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cog.svg" alt="République du Congo" title="République du Congo" class="flag-icon">
+                            <a href="https://www.mediacongo.net/articles-actualite-27_monde.html" target="_blank" class="article-link">Le refus de Moscou de négocier un cessez-le-feu en Ukraine &#34;complicates la situation&#34;, déclare Zelensky</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cog.svg" alt="République du Congo" title="République du Congo" class="flag-icon">
+                            <a href="https://www.mediacongo.net/articles-actualite-27_monde.html" target="_blank" class="article-link">Guerre Russie-Ukraine : de Minsk à l&#39;Alaska, dix ans de négociations de paix</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/rou.svg" alt="Roumanie" title="Roumanie" class="flag-icon">
+                            <a href="https://jurnalul.ro/stiri/externe/" target="_blank" class="article-link">Zelensky accuse la Russie de refuser un cessez-le-feu et met en garde contre les difficultés du plan de paix proposé par Trump</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cyp.svg" alt="Chypre" title="Chypre" class="flag-icon">
+                            <a href="https://www.philenews.com/kosmos/" target="_blank" class="article-link">La Russie &#34;complicates&#34; la fin de la guerre, déclare Zelensky – Trump insiste pour accepter le plan de Poutine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cyp.svg" alt="Chypre" title="Chypre" class="flag-icon">
+                            <a href="https://cyprus-mail.com/category/world/" target="_blank" class="article-link">Les dirigeants européens se réunissent sur l&#39;Ukraine alors que Zelenskiy se prépare à affronter Trump</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mda.svg" alt="Moldavie" title="Moldavie" class="flag-icon">
+                            <a href="https://www.zdg.md/" target="_blank" class="article-link">La Russie poursuit ses attaques contre la région de Kherson. Guerre en Ukraine, jour 1271</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mda.svg" alt="Moldavie" title="Moldavie" class="flag-icon">
+                            <a href="https://www.zdg.md/" target="_blank" class="article-link">Déclaration de Poutine après les discussions en Alaska : &#34;Nous nous sommes concentrés sur la recherche d&#39;une solution équitable à la crise ukrainienne&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mda.svg" alt="Moldavie" title="Moldavie" class="flag-icon">
+                            <a href="https://www.zdg.md/" target="_blank" class="article-link">L&#39;Allemagne promet 500 millions de dollars pour la fourniture d&#39;armes américaines à l&#39;Ukraine. Guerre en Ukraine, jour 1267</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e572b8; padding: 8px 16px; border-radius: 4px;">Positions neutres ou prudemment observatrices mettant l&#39;accent sur la surveillance et l&#39;engagement limité</h3>
+        <p class="cluster-description">Certaines nations et acteurs adoptent des positions prudentes ou neutres, en insistant sur une surveillance étroite des développements sans prendre ouvertement parti. La Chine illustre ce point de vue, prônant la paix et la stabilité dans la région tout en évitant une implication ou une condamnation directe. Cette approche reflète des intérêts stratégiques visant à maintenir des relations équilibrées et à éviter l&#39;enchevêtrement dans le conflit. De même, certaines agences internationales et États neutres appellent à une attention humanitaire et à des efforts de paix sans s&#39;aligner explicitement avec l&#39;une ou l&#39;autre partie. Cette position souligne la reconnaissance de la complexité et le désir d&#39;éviter d&#39;aggraver les tensions tout en soutenant le dialogue.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Voir les sources ▼
+            </button>
+            <div class="sources-content hidden" style="padding-bottom: 15px;">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mmr.svg" alt="Birmanie" title="Birmanie" class="flag-icon">
+                            <a href="https://elevenmyanmar.com/world" target="_blank" class="article-link">La Chine dit &#39;surveiller de près&#39; la situation en Ukraine après l&#39;escalade</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/srb.svg" alt="Serbie" title="Serbie" class="flag-icon">
+                            <a href="https://www.politika.rs/scc/svet" target="_blank" class="article-link">L&#39;ONU soutient tous les efforts pour parvenir à la paix en Ukraine</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Focus humanitaire et société civile mettant en lumière le coût humain de la guerre et les enjeux liés aux droits</h3>
+        <p class="cluster-description">Cette perspective, exprimée par des défenseurs des droits de l&#39;homme, des lauréats du prix Nobel et des organisations humanitaires principalement d&#39;Ukraine et de ses alliés, appelle une attention internationale urgente sur la souffrance humaine résultant du conflit. L&#39;accent est mis sur les prisonniers, les personnes déplacées, les victimes civiles, ainsi que sur les impacts psychologiques et sociaux de la guerre. Elle souligne la nécessité de corridors humanitaires, la protection des populations vulnérables, en particulier des enfants, et la sensibilisation contre les violations des droits de l&#39;homme. Ces voix remettent souvent en question les récits politiques et militaires en insistant sur le coût humain de la guerre et en appelant à la responsabilité et à des mesures de secours immédiates.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Voir les sources ▼
+            </button>
+            <div class="sources-content hidden" style="padding-bottom: 15px;">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/geo.svg" alt="Géorgie" title="Géorgie" class="flag-icon">
+                            <a href="http://georgiatoday.ge/news" target="_blank" class="article-link">&#34;Les 24 heures les plus longues de l&#39;histoire&#34; : le lauréat du prix Nobel appelle à se concentrer sur les prisonniers oubliés en Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lva.svg" alt="Lettonie" title="Lettonie" class="flag-icon">
+                            <a href="https://www.diena.lv/raksts/pasaule" target="_blank" class="article-link">Nombre record de civils évacués de la région de Donetsk en une journée</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/alb.svg" alt="Albanie" title="Albanie" class="flag-icon">
+                            <a href="http://www.gsh.al/category/bota/" target="_blank" class="article-link">Les dirigeants de l&#39;UE prennent des mesures pour renforcer la position de Zelensky - Politico</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ita.svg" alt="Italie" title="Italie" class="flag-icon">
+                            <a href="https://www.repubblica.it/esteri/" target="_blank" class="article-link">Lauréate du prix Nobel de la paix Oleksandra Matviichuk : &#34;Le dictateur légitimé et nous continuerons à souffrir&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aze.svg" alt="Azerbaïdjan" title="Azerbaïdjan" class="flag-icon">
+                            <a href="https://www.azernews.az/region/" target="_blank" class="article-link">Kallas de l&#39;UE appelle à faire pression sur la Russie pour engager de véritables négociations</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgd.svg" alt="Bangladesh" title="Bangladesh" class="flag-icon">
+                            <a href="https://bdnews24.com/world" target="_blank" class="article-link">Émergence d&#39;un plan de Poutine pour mettre fin à la guerre en Ukraine</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<footer class="mt-5">
+  <div class="container">
+     <p class="text-center"> 2025-2026 © Planet Pulse.</p>
+  </div>
+</footer>
+
+<div class="offcanvas offcanvas-start" id="mobilemenu">
+  <!-- Mobile menu -->
+</div>
+
+    <script>
+        anychart.onDocumentReady(function() {
+            var map = anychart.map();
+            map.geoData('anychart.maps.world');
+            map.interactivity().selectionMode('none');
+            
+            // Configurer les régions non couvertes
+            map.unboundRegions()
+                .enabled(true)
+                .fill('#f0f0f0')
+                .stroke({
+                    color: '#000000',
+                    thickness: 0.5,
+                    lineJoin: 'round'
+                });
+                
+             // Construire les données des séries dynamiquement à partir des clusters
+            var seriesData = [
+            
+                {
+                    name: "Perspectives pro-russes et align\u00e9es sur la Russie aux \u00c9tats-Unis pr\u00f4nant des concessions territoriales",
+                    color: "#72e5ac",
+                    data: [
+                        
+                            {"id": "AT", "value": 1, "name": "AT"},
+                        
+                            {"id": "BD", "value": 1, "name": "BD"},
+                        
+                            {"id": "BH", "value": 1, "name": "BH"},
+                        
+                            {"id": "BJ", "value": 1, "name": "BJ"},
+                        
+                            {"id": "BR", "value": 1, "name": "BR"},
+                        
+                            {"id": "CR", "value": 1, "name": "CR"},
+                        
+                            {"id": "CY", "value": 1, "name": "CY"},
+                        
+                            {"id": "EE", "value": 1, "name": "EE"},
+                        
+                            {"id": "ET", "value": 1, "name": "ET"},
+                        
+                            {"id": "FR", "value": 1, "name": "FR"},
+                        
+                            {"id": "GE", "value": 1, "name": "GE"},
+                        
+                            {"id": "GR", "value": 1, "name": "GR"},
+                        
+                            {"id": "GT", "value": 1, "name": "GT"},
+                        
+                            {"id": "GY", "value": 1, "name": "GY"},
+                        
+                            {"id": "HK", "value": 1, "name": "HK"},
+                        
+                            {"id": "HR", "value": 1, "name": "HR"},
+                        
+                            {"id": "ID", "value": 1, "name": "ID"},
+                        
+                            {"id": "IN", "value": 1, "name": "IN"},
+                        
+                            {"id": "IT", "value": 1, "name": "IT"},
+                        
+                            {"id": "JP", "value": 1, "name": "JP"},
+                        
+                            {"id": "KN", "value": 1, "name": "KN"},
+                        
+                            {"id": "KR", "value": 1, "name": "KR"},
+                        
+                            {"id": "MC", "value": 1, "name": "MC"},
+                        
+                            {"id": "ME", "value": 1, "name": "ME"},
+                        
+                            {"id": "NZ", "value": 1, "name": "NZ"},
+                        
+                            {"id": "PE", "value": 1, "name": "PE"},
+                        
+                            {"id": "PK", "value": 1, "name": "PK"},
+                        
+                            {"id": "PL", "value": 1, "name": "PL"},
+                        
+                            {"id": "PR", "value": 1, "name": "PR"},
+                        
+                            {"id": "PT", "value": 1, "name": "PT"},
+                        
+                            {"id": "RO", "value": 1, "name": "RO"},
+                        
+                            {"id": "RS", "value": 1, "name": "RS"},
+                        
+                            {"id": "SI", "value": 1, "name": "SI"},
+                        
+                            {"id": "SK", "value": 1, "name": "SK"},
+                        
+                            {"id": "UA", "value": 1, "name": "UA"}
+                        
+                    ]
+                },
+            
+                {
+                    name: "Coalition occidentale et europ\u00e9enne soutenant la souverainet\u00e9 de l\u0027Ukraine et rejetant les concessions territoriales",
+                    color: "#7279e5",
+                    data: [
+                        
+                            {"id": "", "value": 1, "name": ""},
+                        
+                            {"id": "AE", "value": 1, "name": "AE"},
+                        
+                            {"id": "AL", "value": 1, "name": "AL"},
+                        
+                            {"id": "AT", "value": 1, "name": "AT"},
+                        
+                            {"id": "AZ", "value": 1, "name": "AZ"},
+                        
+                            {"id": "BA", "value": 1, "name": "BA"},
+                        
+                            {"id": "BD", "value": 1, "name": "BD"},
+                        
+                            {"id": "CA", "value": 1, "name": "CA"},
+                        
+                            {"id": "CG", "value": 1, "name": "CG"},
+                        
+                            {"id": "CH", "value": 1, "name": "CH"},
+                        
+                            {"id": "CL", "value": 1, "name": "CL"},
+                        
+                            {"id": "CO", "value": 1, "name": "CO"},
+                        
+                            {"id": "CY", "value": 1, "name": "CY"},
+                        
+                            {"id": "CZ", "value": 1, "name": "CZ"},
+                        
+                            {"id": "DE", "value": 1, "name": "DE"},
+                        
+                            {"id": "DK", "value": 1, "name": "DK"},
+                        
+                            {"id": "EE", "value": 1, "name": "EE"},
+                        
+                            {"id": "ES", "value": 1, "name": "ES"},
+                        
+                            {"id": "ET", "value": 1, "name": "ET"},
+                        
+                            {"id": "FI", "value": 1, "name": "FI"},
+                        
+                            {"id": "FO", "value": 1, "name": "FO"},
+                        
+                            {"id": "FR", "value": 1, "name": "FR"},
+                        
+                            {"id": "GB", "value": 1, "name": "GB"},
+                        
+                            {"id": "GH", "value": 1, "name": "GH"},
+                        
+                            {"id": "GL", "value": 1, "name": "GL"},
+                        
+                            {"id": "GR", "value": 1, "name": "GR"},
+                        
+                            {"id": "GT", "value": 1, "name": "GT"},
+                        
+                            {"id": "HK", "value": 1, "name": "HK"},
+                        
+                            {"id": "HR", "value": 1, "name": "HR"},
+                        
+                            {"id": "HU", "value": 1, "name": "HU"},
+                        
+                            {"id": "ID", "value": 1, "name": "ID"},
+                        
+                            {"id": "IE", "value": 1, "name": "IE"},
+                        
+                            {"id": "IN", "value": 1, "name": "IN"},
+                        
+                            {"id": "IR", "value": 1, "name": "IR"},
+                        
+                            {"id": "IS", "value": 1, "name": "IS"},
+                        
+                            {"id": "IT", "value": 1, "name": "IT"},
+                        
+                            {"id": "JO", "value": 1, "name": "JO"},
+                        
+                            {"id": "KE", "value": 1, "name": "KE"},
+                        
+                            {"id": "KH", "value": 1, "name": "KH"},
+                        
+                            {"id": "KR", "value": 1, "name": "KR"},
+                        
+                            {"id": "KW", "value": 1, "name": "KW"},
+                        
+                            {"id": "KZ", "value": 1, "name": "KZ"},
+                        
+                            {"id": "LB", "value": 1, "name": "LB"},
+                        
+                            {"id": "LT", "value": 1, "name": "LT"},
+                        
+                            {"id": "LU", "value": 1, "name": "LU"},
+                        
+                            {"id": "MD", "value": 1, "name": "MD"},
+                        
+                            {"id": "ME", "value": 1, "name": "ME"},
+                        
+                            {"id": "MK", "value": 1, "name": "MK"},
+                        
+                            {"id": "MM", "value": 1, "name": "MM"},
+                        
+                            {"id": "MN", "value": 1, "name": "MN"},
+                        
+                            {"id": "NG", "value": 1, "name": "NG"},
+                        
+                            {"id": "NI", "value": 1, "name": "NI"},
+                        
+                            {"id": "NO", "value": 1, "name": "NO"},
+                        
+                            {"id": "NP", "value": 1, "name": "NP"},
+                        
+                            {"id": "NZ", "value": 1, "name": "NZ"},
+                        
+                            {"id": "PK", "value": 1, "name": "PK"},
+                        
+                            {"id": "PL", "value": 1, "name": "PL"},
+                        
+                            {"id": "PR", "value": 1, "name": "PR"},
+                        
+                            {"id": "PT", "value": 1, "name": "PT"},
+                        
+                            {"id": "PY", "value": 1, "name": "PY"},
+                        
+                            {"id": "RO", "value": 1, "name": "RO"},
+                        
+                            {"id": "RS", "value": 1, "name": "RS"},
+                        
+                            {"id": "SA", "value": 1, "name": "SA"},
+                        
+                            {"id": "SE", "value": 1, "name": "SE"},
+                        
+                            {"id": "SG", "value": 1, "name": "SG"},
+                        
+                            {"id": "SK", "value": 1, "name": "SK"},
+                        
+                            {"id": "SO", "value": 1, "name": "SO"},
+                        
+                            {"id": "TL", "value": 1, "name": "TL"},
+                        
+                            {"id": "TR", "value": 1, "name": "TR"},
+                        
+                            {"id": "VE", "value": 1, "name": "VE"},
+                        
+                            {"id": "VN", "value": 1, "name": "VN"},
+                        
+                            {"id": "YE", "value": 1, "name": "YE"}
+                        
+                    ]
+                },
+            
+                {
+                    name: "Positions neutres ou prudemment observatrices mettant l\u0027accent sur la surveillance et l\u0027engagement limit\u00e9",
+                    color: "#e572b8",
+                    data: [
+                        
+                            {"id": "MM", "value": 1, "name": "MM"},
+                        
+                            {"id": "RS", "value": 1, "name": "RS"}
+                        
+                    ]
+                },
+            
+                {
+                    name: "Focus humanitaire et soci\u00e9t\u00e9 civile mettant en lumi\u00e8re le co\u00fbt humain de la guerre et les enjeux li\u00e9s aux droits",
+                    color: "#e5d272",
+                    data: [
+                        
+                            {"id": "AL", "value": 1, "name": "AL"},
+                        
+                            {"id": "AZ", "value": 1, "name": "AZ"},
+                        
+                            {"id": "BD", "value": 1, "name": "BD"},
+                        
+                            {"id": "GE", "value": 1, "name": "GE"},
+                        
+                            {"id": "IT", "value": 1, "name": "IT"},
+                        
+                            {"id": "LV", "value": 1, "name": "LV"}
+                        
+                    ]
+                }
+            
+            ];
+            
+            // Créer une série pour chaque cluster
+            seriesData.forEach(function(seriesInfo) {
+                var series = map.choropleth(seriesInfo.data);
+                series.name(seriesInfo.name);
+                series.geoIdField('id');
+                series.fill(seriesInfo.color);
+                series.stroke('#000000', 0.5, 'round');
+                
+                // Configuration du hover
+                series.hovered()
+                    .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+                
+                // Configuration des tooltips
+                series.tooltip().format(function() {
+                    // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                    return this.series.name()
+                });
+            });
+            
+            // Désactiver la légende
+            map.legend(false);
+            
+            // Rendre la carte
+            map.container('map-container');
+            map.draw();
+        });
+
+        function toggleSources(button) {
+            var content = button.nextElementSibling;
+            var isHidden = content.classList.contains('hidden');
+            
+            content.classList.toggle('hidden');
+            button.innerHTML = isHidden ? 'Masquer les sources ▲' : 'Voir les sources ▼';
+        }
+    </script>
+
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
