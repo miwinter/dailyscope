@@ -1,0 +1,637 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diverse National Perspectives on Natural Disasters: Hurricanes, Floods, and Wildfires</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css"> 
+    <link href="/assets/css/all.min.css" rel="stylesheet">
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+    <script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<!-- comon header  -->
+<header>  
+  <div class="middle-section py-3">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+             <div class="col order-3 order-lg-1">
+              <a href="/index.html" class="logo  d-table"> <img src="/assets/images/logo-3-50.png" alt="logo"> </a>
+
+             </div>
+            <div class="col order-1 order-lg-2">
+              
+            </div>
+            <div class="col d-flex justify-content-center justify-content-lg-end order-2 order-lg-3 my-4 mt-lg-0">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/fra.svg" alt="Français" title="Français" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/en', '/fr');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>               
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<!-- comon header ends  -->
+
+  <div class="main-menu">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div id="menu-id">
+        <div class="container">
+          <a class="navbar-brand d-block d-none" href="/index.html">Navbar</a>
+          <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+            <span>
+              <i class="fas fa-bars"></i>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/en/about.html">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Diverse National Perspectives on Natural Disasters: Hurricanes, Floods, and Wildfires</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-08-19</span> • <span>44 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-08-19/2025-08-19-5.jpg" alt="Diverse National Perspectives on Natural Disasters: Hurricanes, Floods, and Wildfires" class="main-image">
+                <p style="margin:0">The analyzed articles reveal a broad spectrum of natural disasters including devastating floods in South Asia, historic wildfires in southern Europe, and a powerful hurricane threatening the Caribbean and US East Coast. Countries affected by floods, particularly Pakistan and neighboring India, emphasize the humanitarian crisis, large death tolls, and ongoing rescue efforts, stressing vulnerability and the need for aid. The Iberian Peninsula, mainly Spain and Portugal, focus on battling unprecedented wildfires exacerbated by extreme heat and drought, highlighting cross-border cooperation and emergency mobilization. Meanwhile, Caribbean and US-related reports on Hurricane Erin warn of escalating storm intensity, extensive evacuations and the importance of preparedness, with regional bodies also linking such disasters to climate change impacts. These viewpoints collectively stress the urgent need for improved disaster readiness, climate finance, and international collaboration to mitigate future risks.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div class="key-points">
+        <h2>Countries covering this topic</h2>
+    </div>
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Humanitarian Crisis and Rescue Efforts Following Severe Floods in South Asia</h3>
+        <p class="cluster-description">Countries reporting on flooding disasters in Pakistan and India emphasize the extensive loss of life, displacement, and destruction of infrastructure caused by heavy monsoon rains and cloudbursts. The narratives focus on the ongoing challenges of rescue and relief operations exacerbated by persistent adverse weather conditions, highlighting the acute vulnerability of these populations to climate-induced extreme weather events. These articles portray the floods as a severe humanitarian emergency demanding continuous domestic and international assistance. The critical tone underlines the escalating human cost and the pressing need for robust disaster response frameworks.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden" style="padding-bottom: 15px;">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dnk.svg" alt="Denmark" title="Denmark" class="flag-icon">
+                            <a href="https://politiken.dk/udland/" target="_blank" class="article-link">At least 150 still missing after floods in Pakistan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vat.svg" alt="Holy See" title="Holy See" class="flag-icon">
+                            <a href="https://www.osservatoreromano.va/it/sections/internazionale.html" target="_blank" class="article-link">Pakistan and India devastated by floods: hundreds dead and thousands displaced</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lao.svg" alt="Laos" title="Laos" class="flag-icon">
+                            <a href="http://kpl.gov.la/En/" target="_blank" class="article-link">Survivors claw through rubble after deadly Pakistan cloudburst</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cog.svg" alt="Republic of the Congo" title="Republic of the Congo" class="flag-icon">
+                            <a href="https://www.mediacongo.net/articles-actualite-27_monde.html" target="_blank" class="article-link">Pakistan: death toll from monsoon surpasses 350</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/brn.svg" alt="Brunei" title="Brunei" class="flag-icon">
+                            <a href="https://www.rtbnews.rtb.gov.bn/Lists/News%202018/Category_International.aspx" target="_blank" class="article-link">Flash floods devastate Buner, Pakistan after rare cloudburst kills hundreds</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Ireland" title="Ireland" class="flag-icon">
+                            <a href="https://www.independent.ie/world-news/" target="_blank" class="article-link">‘Everybody is scared’ – Pakistanis afraid to return to homes as death toll after flood hits 340</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jor.svg" alt="Jordan" title="Jordan" class="flag-icon">
+                            <a href="https://www.jordantimes.com/news/world" target="_blank" class="article-link">Hopes for survivors wane after Pakistan flooding kills hundreds</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/srb.svg" alt="Serbia" title="Serbia" class="flag-icon">
+                            <a href="https://www.politika.rs/scc/svet" target="_blank" class="article-link">Heavy Rains Hit India, Over 250 Flights Delayed</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kaz.svg" alt="Kazakhstan" title="Kazakhstan" class="flag-icon">
+                            <a href="https://kazpravda.kz/r/v-mire/" target="_blank" class="article-link">Pakistani Authorities Expand Flood Rescue Operations</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mne.svg" alt="Montenegro" title="Montenegro" class="flag-icon">
+                            <a href="https://www.cdm.me/svijet/planeta/" target="_blank" class="article-link">Over 200 missing in flooded region in Pakistan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/npl.svg" alt="Nepal" title="Nepal" class="flag-icon">
+                            <a href="https://thehimalayantimes.com/category/world/" target="_blank" class="article-link">A week of heavy rains and floods across Pakistan kills 46 people including 13 family members</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72a2e5; padding: 8px 16px; border-radius: 4px;">Urgent Response and Collective Action Against Historic Wildfires in Iberia</h3>
+        <p class="cluster-description">Spain and Portugal, along with supportive European neighbors, present a perspective centered on combating historic and record-setting wildfires fueled by heatwaves and drought conditions. These countries highlight large-scale evacuations, deployment of additional troops, and international cooperation involving firefighting resources and diplomatic advisories. The discourse reflects concern over environmental damage, climate change implications, and the escalating difficulty of wildfire containment. It points toward a multilateral and coordinated response rooted in resilience and preparedness amidst worsening fire seasons.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden" style="padding-bottom: 15px;">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dnk.svg" alt="Denmark" title="Denmark" class="flag-icon">
+                            <a href="https://politiken.dk/udland/" target="_blank" class="article-link">Rare phenomenon observed in Portugal&#39;s severe wildfires</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ven.svg" alt="Venezuela" title="Venezuela" class="flag-icon">
+                            <a href="https://www.elnacional.com/mundo/" target="_blank" class="article-link">Spain and Portugal Suffer Historic Wildfires with Several Dead</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pol.svg" alt="Poland" title="Poland" class="flag-icon">
+                            <a href="https://wyborcza.pl/0,0.html?disableRedirects=true" target="_blank" class="article-link">Fires in Spain: Minister Says the Blaze Cannot Be Contained Yet</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/brn.svg" alt="Brunei" title="Brunei" class="flag-icon">
+                            <a href="https://www.rtbnews.rtb.gov.bn/Lists/News%202018/Category_International.aspx" target="_blank" class="article-link">Spain battles 20 major wildfires amid scorching heat, deploys more troops</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mar.svg" alt="Morocco" title="Morocco" class="flag-icon">
+                            <a href="https://lematin.ma/monde" target="_blank" class="article-link">Wildfires ravage over 343,000 hectares in Spain in 2025</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mar.svg" alt="Morocco" title="Morocco" class="flag-icon">
+                            <a href="https://lematin.ma/monde" target="_blank" class="article-link">Six dead in wildfires affecting Spain and Portugal</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mar.svg" alt="Morocco" title="Morocco" class="flag-icon">
+                            <a href="https://leconomiste.com/flash-infos" target="_blank" class="article-link">Spain: Wildfires reach new record in burned areas</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mar.svg" alt="Morocco" title="Morocco" class="flag-icon">
+                            <a href="https://leconomiste.com/flash-infos" target="_blank" class="article-link">Spain and Portugal: Wildfires cause six deaths</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cpv.svg" alt="Cape Verde" title="Cape Verde" class="flag-icon">
+                            <a href="https://expressodasilhas.cv/mundo" target="_blank" class="article-link">Seven EU countries send aid to Spain facing 23 large wildfires</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/geo.svg" alt="Georgia" title="Georgia" class="flag-icon">
+                            <a href="http://georgiatoday.ge/news" target="_blank" class="article-link">Georgian Embassy in Spain urges citizens to follow fire safety rules amid wildfires</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lux.svg" alt="Luxembourg" title="Luxembourg" class="flag-icon">
+                            <a href="https://www.tageblatt.lu/headlines/" target="_blank" class="article-link">Ongoing wildfires in Spain and Portugal destroy record land areas</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jor.svg" alt="Jordan" title="Jordan" class="flag-icon">
+                            <a href="https://www.jordantimes.com/news/world" target="_blank" class="article-link">Spain wildfires burn record territory this year — monitor</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #bf72e5; padding: 8px 16px; border-radius: 4px;">Preparedness and Climate Awareness Amidst Hurricane Erin’s Threat in the Caribbean and United States</h3>
+        <p class="cluster-description">Caribbean nations and the United States focus on the advancing threat posed by Hurricane Erin, emphasizing strong storm intensification, extensive evacuations, infrastructure impacts, and the necessity of vigilant preparedness. This viewpoint stresses meteorological monitoring, public warnings, and emergency response activation to minimize damage and protect lives. Additionally, regional entities such as the Alliance of Small Island States highlight the exacerbating role of climate change, advocating for increased climate finance to assist vulnerable small island developing states. This integrated stance combines immediate disaster action with long-term climate resilience and international support calls.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden" style="padding-bottom: 15px;">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pak.svg" alt="Pakistan" title="Pakistan" class="flag-icon">
+                            <a href="https://www.thenews.com.pk/latest/category/world" target="_blank" class="article-link">Hurricane Erin batters Caribbean, threatens US East Coast with floods</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bel.svg" alt="Belgium" title="Belgium" class="flag-icon">
+                            <a href="https://www.lalibre.be/international" target="_blank" class="article-link">Hurricane Erin Advances in the Caribbean Threatening US East Coast</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mex.svg" alt="Mexico" title="Mexico" class="flag-icon">
+                            <a href="https://www.eluniversal.com.mx/mundo" target="_blank" class="article-link">Erin hits the Caribbean; threatens US east coast</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ca-qc.svg" alt="CA-QC" title="CA-QC" class="flag-icon">
+                            <a href="https://www.journaldequebec.com/actualite/monde" target="_blank" class="article-link">Hurricane Erin progresses in the Caribbean</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hrv.svg" alt="Croatia" title="Croatia" class="flag-icon">
+                            <a href="https://www.jutarnji.hr/vijesti/svijet" target="_blank" class="article-link">Hurricane Erin intensifies with devastating impact, evacuations begin in the United States</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jam.svg" alt="Jamaica" title="Jamaica" class="flag-icon">
+                            <a href="http://www.jamaicaobserver.com/news/" target="_blank" class="article-link">Hurricane Erin drenches Caribbean islands, threatens US coast</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/atg.svg" alt="Antigua and Barbuda" title="Antigua and Barbuda" class="flag-icon">
+                            <a href="https://antiguaobserver.com/category/international_news/" target="_blank" class="article-link">Unprecedented Caribbean hurricane highlights urgent need for climate finance says AOSIS Chairman</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hnd.svg" alt="Honduras" title="Honduras" class="flag-icon">
+                            <a href="https://www.elheraldo.hn/mundo" target="_blank" class="article-link">United States orders evacuations in North Carolina due to escalating Hurricane Erin</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cpv.svg" alt="Cape Verde" title="Cape Verde" class="flag-icon">
+                            <a href="https://expressodasilhas.cv/mundo" target="_blank" class="article-link">Hurricane Erin regains strength approaching the Bahamas</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gtm.svg" alt="Guatemala" title="Guatemala" class="flag-icon">
+                            <a href="https://lahora.gt/internacionales/" target="_blank" class="article-link">United States: Hurricane Erin reaches category 4 and forces evacuations in North Carolina</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sxm.svg" alt="SXM" title="SXM" class="flag-icon">
+                            <a href="https://www.sxm-talks.com/" target="_blank" class="article-link">PM Urges Vigilance: Preparedness Key as Storms Can Rapidly Intensify</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sxm.svg" alt="SXM" title="SXM" class="flag-icon">
+                            <a href="https://www.sxm-talks.com/" target="_blank" class="article-link">ODM: New Tropical Wave Warrants Attention. Continue to Remain Vigilant and Prepared</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vnm.svg" alt="Vietnam" title="Vietnam" class="flag-icon">
+                            <a href="https://tuoitre.vn/the-gioi.htm" target="_blank" class="article-link">Discovery of massive tsunami traces in southern Java, risk of recurrence</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/srb.svg" alt="Serbia" title="Serbia" class="flag-icon">
+                            <a href="https://www.politika.rs/scc/svet" target="_blank" class="article-link">Meteorologists: Hurricane Erin Threatens Dangerous Ocean Conditions</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/srb.svg" alt="Serbia" title="Serbia" class="flag-icon">
+                            <a href="https://www.politika.rs/scc/svet" target="_blank" class="article-link">Heavy Rains Hit India, Over 250 Flights Delayed</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hti.svg" alt="Haiti" title="Haiti" class="flag-icon">
+                            <a href="https://lenouvelliste.com/international" target="_blank" class="article-link">Hurricane Erin strengthens and moves towards the Bahamas</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dom.svg" alt="Dominican Republic" title="Dominican Republic" class="flag-icon">
+                            <a href="https://listindiario.com/las-mundiales" target="_blank" class="article-link">Hurricane Erin leaves more than 150,000 people without electricity in Puerto Rico</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5728f; padding: 8px 16px; border-radius: 4px;">Scientific Discoveries and Risk Awareness of Geological and Meteorological Threats</h3>
+        <p class="cluster-description">Several articles from diverse countries highlight scientific findings and risk assessments related to natural disasters, including the discovery of a ‘breathing’ magma cap beneath Yellowstone potentially regulating volcanic eruptions, ancient tsunami evidence in Indonesia, and earthquake occurrences. While these reports do not focus on immediate humanitarian or emergency responses, they emphasize improved understanding, preparedness, and the importance of revising risk management strategies in light of new geological insights. This viewpoint underscores a preventive and research-oriented approach to natural disasters in various global regions.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden" style="padding-bottom: 15px;">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tun.svg" alt="Tunisia" title="Tunisia" class="flag-icon">
+                            <a href="http://www.tunisiesoir.com/category/international/" target="_blank" class="article-link">A ‘Breathing’ Magma Cap Beneath Yellowstone Could Be Preventing a Catastrophic Eruption</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mar.svg" alt="Morocco" title="Morocco" class="flag-icon">
+                            <a href="https://lematin.ma/monde" target="_blank" class="article-link">Magnitude 5.8 earthquake strikes eastern Indonesia</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vnm.svg" alt="Vietnam" title="Vietnam" class="flag-icon">
+                            <a href="https://tuoitre.vn/the-gioi.htm" target="_blank" class="article-link">Discovery of massive tsunami traces in southern Java, risk of recurrence</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Flood Management and Weather Warnings in East Asia and Africa</h3>
+        <p class="cluster-description">Reports from China and Cape Verde focus on flood events and rainfall warnings, highlighting governmental alerts, rising death tolls, infrastructure damage, and emergency response efforts. These countries frame their narratives around the need for timely weather warnings, public preparedness, and effective disaster management to mitigate impacts. The perspective reveals growing concerns about rainfall extremes and the importance of early warning systems in densely populated and vulnerable regions.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden" style="padding-bottom: 15px;">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/zmb.svg" alt="Zambia" title="Zambia" class="flag-icon">
+                            <a href="https://www.zambiamonitor.com/category/international/" target="_blank" class="article-link">Cape Verde declares state of emergency after deadly floods, nine confirmed dead</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/omn.svg" alt="Oman" title="Oman" class="flag-icon">
+                            <a href="https://www.omanobserver.om/world" target="_blank" class="article-link">More rain in northern China takes death toll in floods to 13</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bhr.svg" alt="Bahrain" title="Bahrain" class="flag-icon">
+                            <a href="https://akhbar-alkhaleej.com/news/section/WORL" target="_blank" class="article-link">Beijing Raises Rainstorm Warning to Third Highest Level</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<footer class="mt-5">
+  <div class="container">
+     <p class="text-center"> 2025-2026 © Planet Pulse.</p>
+  </div>
+</footer>
+
+<!-- Mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="close-menu text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+      Close <i class="fas fa-long-arrow-alt-left"></i>
+    </button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li class="active-m">
+               <a href="/">Home </a>
+            </li>
+            <li>
+              <a href="/en/about.html">About </a>
+            </li>
+            <li>
+              <a href="/">Contact</a>
+           </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+    <script>
+        anychart.onDocumentReady(function() {
+            var map = anychart.map();
+            map.geoData('anychart.maps.world');
+            map.interactivity().selectionMode('none');
+            
+            // Configurer les régions non couvertes
+            map.unboundRegions()
+                .enabled(true)
+                .fill('#f0f0f0')
+                .stroke({
+                    color: '#000000',
+                    thickness: 0.5,
+                    lineJoin: 'round'
+                });
+                
+             // Construire les données des séries dynamiquement à partir des clusters
+            var seriesData = [
+            
+                {
+                    name: "Humanitarian Crisis and Rescue Efforts Following Severe Floods in South Asia",
+                    color: "#72e5ac",
+                    data: [
+                        
+                            {"id": "BN", "value": 1, "name": "BN"},
+                        
+                            {"id": "CG", "value": 1, "name": "CG"},
+                        
+                            {"id": "DK", "value": 1, "name": "DK"},
+                        
+                            {"id": "IE", "value": 1, "name": "IE"},
+                        
+                            {"id": "JO", "value": 1, "name": "JO"},
+                        
+                            {"id": "KZ", "value": 1, "name": "KZ"},
+                        
+                            {"id": "LA", "value": 1, "name": "LA"},
+                        
+                            {"id": "ME", "value": 1, "name": "ME"},
+                        
+                            {"id": "NP", "value": 1, "name": "NP"},
+                        
+                            {"id": "RS", "value": 1, "name": "RS"},
+                        
+                            {"id": "VA", "value": 1, "name": "VA"}
+                        
+                    ]
+                },
+            
+                {
+                    name: "Urgent Response and Collective Action Against Historic Wildfires in Iberia",
+                    color: "#72a2e5",
+                    data: [
+                        
+                            {"id": "BN", "value": 1, "name": "BN"},
+                        
+                            {"id": "CV", "value": 1, "name": "CV"},
+                        
+                            {"id": "DK", "value": 1, "name": "DK"},
+                        
+                            {"id": "GE", "value": 1, "name": "GE"},
+                        
+                            {"id": "JO", "value": 1, "name": "JO"},
+                        
+                            {"id": "LU", "value": 1, "name": "LU"},
+                        
+                            {"id": "MA", "value": 1, "name": "MA"},
+                        
+                            {"id": "PL", "value": 1, "name": "PL"},
+                        
+                            {"id": "VE", "value": 1, "name": "VE"}
+                        
+                    ]
+                },
+            
+                {
+                    name: "Preparedness and Climate Awareness Amidst Hurricane Erin\u2019s Threat in the Caribbean and United States",
+                    color: "#bf72e5",
+                    data: [
+                        
+                            {"id": "", "value": 1, "name": ""},
+                        
+                            {"id": "AG", "value": 1, "name": "AG"},
+                        
+                            {"id": "BE", "value": 1, "name": "BE"},
+                        
+                            {"id": "CV", "value": 1, "name": "CV"},
+                        
+                            {"id": "DO", "value": 1, "name": "DO"},
+                        
+                            {"id": "GT", "value": 1, "name": "GT"},
+                        
+                            {"id": "HN", "value": 1, "name": "HN"},
+                        
+                            {"id": "HR", "value": 1, "name": "HR"},
+                        
+                            {"id": "HT", "value": 1, "name": "HT"},
+                        
+                            {"id": "JM", "value": 1, "name": "JM"},
+                        
+                            {"id": "MX", "value": 1, "name": "MX"},
+                        
+                            {"id": "PK", "value": 1, "name": "PK"},
+                        
+                            {"id": "RS", "value": 1, "name": "RS"},
+                        
+                            {"id": "SX", "value": 1, "name": "SX"},
+                        
+                            {"id": "VN", "value": 1, "name": "VN"}
+                        
+                    ]
+                },
+            
+                {
+                    name: "Scientific Discoveries and Risk Awareness of Geological and Meteorological Threats",
+                    color: "#e5728f",
+                    data: [
+                        
+                            {"id": "MA", "value": 1, "name": "MA"},
+                        
+                            {"id": "TN", "value": 1, "name": "TN"},
+                        
+                            {"id": "VN", "value": 1, "name": "VN"}
+                        
+                    ]
+                },
+            
+                {
+                    name: "Flood Management and Weather Warnings in East Asia and Africa",
+                    color: "#e5d272",
+                    data: [
+                        
+                            {"id": "BH", "value": 1, "name": "BH"},
+                        
+                            {"id": "OM", "value": 1, "name": "OM"},
+                        
+                            {"id": "ZM", "value": 1, "name": "ZM"}
+                        
+                    ]
+                }
+            
+            ];
+            
+            // Créer une série pour chaque cluster
+            seriesData.forEach(function(seriesInfo) {
+                var series = map.choropleth(seriesInfo.data);
+                series.name(seriesInfo.name);
+                series.geoIdField('id');
+                series.fill(seriesInfo.color);
+                series.stroke('#000000', 0.5, 'round');
+                
+                // Configuration du hover
+                series.hovered()
+                    .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+                
+                // Configuration des tooltips
+                series.tooltip().format(function() {
+                    // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                    return this.series.name()
+                });
+            });
+            
+            // Désactiver la légende
+            map.legend(false);
+            
+            // Rendre la carte
+            map.container('map-container');
+            map.draw();
+        });
+
+        function toggleSources(button) {
+            var content = button.nextElementSibling;
+            var isHidden = content.classList.contains('hidden');
+            
+            content.classList.toggle('hidden');
+            button.innerHTML = isHidden ? 'Hide sources ▲' : 'Show sources ▼';
+        }
+    </script>
+
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

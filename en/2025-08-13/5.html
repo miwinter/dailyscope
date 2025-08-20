@@ -1,0 +1,724 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diverse African Perspectives on Conflict, Economic Sovereignty, and Regional Cooperation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css"> 
+    <link href="/assets/css/all.min.css" rel="stylesheet">
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+    <script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<!-- comon header  -->
+<header>  
+  <div class="middle-section py-3">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+             <div class="col order-3 order-lg-1">
+              <a href="/index.html" class="logo  d-table"> <img src="/assets/images/logo-3-50.png" alt="logo"> </a>
+
+             </div>
+            <div class="col order-1 order-lg-2">
+              
+            </div>
+            <div class="col d-flex justify-content-center justify-content-lg-end order-2 order-lg-3 my-4 mt-lg-0">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/fra.svg" alt="Français" title="Français" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/en', '/fr');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>               
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<!-- comon header ends  -->
+
+  <div class="main-menu">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div id="menu-id">
+        <div class="container">
+          <a class="navbar-brand d-block d-none" href="/index.html">Navbar</a>
+          <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+            <span>
+              <i class="fas fa-bars"></i>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Diverse African Perspectives on Conflict, Economic Sovereignty, and Regional Cooperation</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-08-13</span> • <span>68 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-08-13/2025-08-13-5.jpg" alt="Diverse African Perspectives on Conflict, Economic Sovereignty, and Regional Cooperation" class="main-image">
+                <p style="margin:0">The analyzed articles depict a continent grappling with multifaceted challenges including political instability, security threats, economic development initiatives, and regional cooperation efforts. Several countries in West and Central Africa, notably Mali and Sudan, face ongoing violent conflicts and political upheavals characterized by coups, arrests, and rebel insurgencies. Other states emphasize economic sovereignty through initiatives like nationalizing natural resources, fostering regional investments, and boosting technological advancements. Simultaneously, regional bodies such as SADC and the African Union show active engagement in peacebuilding, political mediation, and promoting youth and economic integration. These narratives reflect divergent national priorities shaped by internal security concerns, economic aspirations, and diplomatic collaborations.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div class="key-points">
+        <h2>Countries covering this topic</h2>
+    </div>
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Security and Political Instability Focus in West and Central Africa</h3>
+        <p class="cluster-description">Countries in this cluster emphasize acute political instability and security challenges marked by coups, anti-junta crackdowns, opposition repression, and rebel insurgencies. Mali, Chad, Guinea, and Sudan report ongoing military arrests, detention of political leaders, violent rebel activities, and allegations of foreign mercenary involvement. This viewpoint highlights the fragility of governance, the persistence of armed conflicts, and the erosion of democratic norms. These countries view internal crises as dominant factors shaping their politics and regional security concerns, advocating for strong measures to maintain control and stability amidst these pressures.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden" style="padding-bottom: 15px;">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ago.svg" alt="Angola" title="Angola" class="flag-icon">
+                            <a href="https://www.opais.ao/categoria/mundo/" target="_blank" class="article-link">Niger announces nationalization of the gold mining company SML</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nam.svg" alt="Namibia" title="Namibia" class="flag-icon">
+                            <a href="https://neweralive.na/category/international/" target="_blank" class="article-link">Malian army roots out alleged anti-junta plotters</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tcd.svg" alt="Chad" title="Chad" class="flag-icon">
+                            <a href="https://www.alwihdainfo.com/Monde_r39.html" target="_blank" class="article-link">Mali: Former Prime Minister Choguel Kokalla Maïga Placed Under Custody (Lawyer)</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gin.svg" alt="Guinea" title="Guinea" class="flag-icon">
+                            <a href="https://guineematin.com/category/international/" target="_blank" class="article-link">Burkina Faso: life imprisonment for 13 people convicted of terrorism acts</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gin.svg" alt="Guinea" title="Guinea" class="flag-icon">
+                            <a href="https://guineematin.com/category/international/" target="_blank" class="article-link">Bissau: President Embalo officially announces independent candidacy for presidency</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mdg.svg" alt="Madagascar" title="Madagascar" class="flag-icon">
+                            <a href="https://newsmada.com/    " target="_blank" class="article-link">TICAD 9: Madagascar Present in Yokohama</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/che.svg" alt="Switzerland" title="Switzerland" class="flag-icon">
+                            <a href="https://www.letemps.ch/monde" target="_blank" class="article-link">Violent Clashes Between Army and M23 Erupt in Eastern DRC</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/zmb.svg" alt="Zambia" title="Zambia" class="flag-icon">
+                            <a href="https://zambianobserver.com/category/world/" target="_blank" class="article-link">Chad Opposition Leader Success Masra Sentenced to 20 Years</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/zmb.svg" alt="Zambia" title="Zambia" class="flag-icon">
+                            <a href="https://www.zambiamonitor.com/category/international/" target="_blank" class="article-link">Sudan accuses UAE of deploying Colombian mercenaries to back Rapid Support Forces in civil war</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/can.svg" alt="Canada" title="Canada" class="flag-icon">
+                            <a href="https://www.theglobeandmail.com/world/" target="_blank" class="article-link">Sudan’s paramilitary forces kill 40 in attack on North Darfur displacement camp</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mli.svg" alt="Mali" title="Mali" class="flag-icon">
+                            <a href="https://bamada.net/category/international" target="_blank" class="article-link">UN Calls for ECOWAS and AES Collaboration on Terrorism</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mli.svg" alt="Mali" title="Mali" class="flag-icon">
+                            <a href="https://www.maliweb.net/category/international" target="_blank" class="article-link">Consolidation of peace in West Africa: Setting aside differences</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mli.svg" alt="Mali" title="Mali" class="flag-icon">
+                            <a href="https://www.maliweb.net/category/international" target="_blank" class="article-link">Ivory Coast: Gbagbo’s party condemns two new arrests among its officials</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mli.svg" alt="Mali" title="Mali" class="flag-icon">
+                            <a href="https://www.maliweb.net/category/international" target="_blank" class="article-link">Guinea: Tensions around constitutional referendum, opposition calls for protests starting September 5</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sdn.svg" alt="Sudan" title="Sudan" class="flag-icon">
+                            <a href="https://www.dabangasudan.org/ar/all-news/category/news/politics" target="_blank" class="article-link">Death of a Citizen at Cattle Market in Al Qallabat in a New Incursion by Ethiopian Militias</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mrt.svg" alt="Mauritania" title="Mauritania" class="flag-icon">
+                            <a href="https://cridem.org/" target="_blank" class="article-link">Mali: Former Civil Prime Minister of the Junta, Choguel Kokalla Maïga, in Custody</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/rwa.svg" alt="Rwanda" title="Rwanda" class="flag-icon">
+                            <a href="https://www.newtimes.co.rw/international" target="_blank" class="article-link">Dozens of soldiers arrested in Mali over alleged coup plot</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bfa.svg" alt="Burkina Faso" title="Burkina Faso" class="flag-icon">
+                            <a href="https://www.burkina24.com/category/international/" target="_blank" class="article-link">Former Malian Prime Minister Choguel Kokalla Maïga placed under house arrest</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ben.svg" alt="Benin" title="Benin" class="flag-icon">
+                            <a href="https://lanouvelletribune.info/rubrique/politique/" target="_blank" class="article-link">DRC – Rwanda: already a failure for Trump?</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ben.svg" alt="Benin" title="Benin" class="flag-icon">
+                            <a href="https://lematinal.bj/category/inter/" target="_blank" class="article-link">Mali: Former Prime Minister Choguel Maïga placed under police custody</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/civ.svg" alt="Côte d&#39;Ivoire" title="Côte d&#39;Ivoire" class="flag-icon">
+                            <a href="https://www.fratmat.info/etranger" target="_blank" class="article-link">Mali: Toward an open war &#34;Assimi Goïta against Sadio Camara and Ismaël Wagué&#34;?</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gnq.svg" alt="Equatorial Guinea" title="Equatorial Guinea" class="flag-icon">
+                            <a href="http://www.ahoraeg.com/" target="_blank" class="article-link">Over 40 soldiers, including two generals, arrested for alleged coup attempt in Mali</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gnq.svg" alt="Equatorial Guinea" title="Equatorial Guinea" class="flag-icon">
+                            <a href="http://www.ahoraeg.com/" target="_blank" class="article-link">Sudan shoots down UAE plane killing at least 40 Colombian mercenaries on board</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/moz.svg" alt="Mozambique" title="Mozambique" class="flag-icon">
+                            <a href="https://opais.co.mz/internacional/" target="_blank" class="article-link">Congo accuses M23 of violating ceasefire in DR Congo</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/moz.svg" alt="Mozambique" title="Mozambique" class="flag-icon">
+                            <a href="https://opais.co.mz/internacional/" target="_blank" class="article-link">Reduced violence in DR Congo leads displaced people to return home</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72bbe5; padding: 8px 16px; border-radius: 4px;">Humanitarian Crisis and Protection Urgency in Sudan and Surrounding Areas</h3>
+        <p class="cluster-description">This group centers around the humanitarian crisis and civilian vulnerability in Sudan’s conflict-ridden areas, particularly Darfur and displacement camps. International and regional actors, including the United Nations and Vatican sources, highlight brutal attacks on camps, sieges, hunger crises, and calls for urgent intervention. The perspective underscores the critical need for protection of displaced persons and civilian populations, as well as intensified humanitarian aid and political dialogue to prevent further suffering. It often criticizes the violence impacting vulnerable groups and calls for global and African Union involvement in peace efforts.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden" style="padding-bottom: 15px;">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nam.svg" alt="Namibia" title="Namibia" class="flag-icon">
+                            <a href="https://www.namibian.com.na/category/news/politics/" target="_blank" class="article-link">Dozens killed in attack on Sudan camp for people who had fled war</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kos.svg" alt="KOS" title="KOS" class="flag-icon">
+                            <a href="https://www.rtklive.com/sq/news-category.php?CatID=10" target="_blank" class="article-link">Dozens killed in attack on displaced persons camp in Sudan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vat.svg" alt="Holy See" title="Holy See" class="flag-icon">
+                            <a href="https://www.vaticannews.va/it/mondo.html" target="_blank" class="article-link">Sudan, the UN denunciation: in one week hunger causes 60 deaths</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vat.svg" alt="Holy See" title="Holy See" class="flag-icon">
+                            <a href="https://www.osservatoreromano.va/it/sections/internazionale.html" target="_blank" class="article-link">The African Union tries to revive dialogue to resolve the crisis in South Sudan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/usa.svg" alt="United States" title="United States" class="flag-icon">
+                            <a href="https://abcnews.go.com/International" target="_blank" class="article-link">UN condemns deadly attack on famine-hit camp in Darfur</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/qat.svg" alt="Qatar" title="Qatar" class="flag-icon">
+                            <a href="https://www.al-watan.com/%D8%B9%D8%B1%D8%A8%D9%8A-%D9%88%D8%AF%D9%88%D9%84%D9%8A" target="_blank" class="article-link">Sudanese City of El Fasher Under Siege, Urgent Calls for Intervention</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #8d72e5; padding: 8px 16px; border-radius: 4px;">Promotion of Economic Sovereignty and Regional Development</h3>
+        <p class="cluster-description">This viewpoint favors leveraging natural resources, technological innovations, and coordinated regional economic initiatives to foster sovereignty and growth. Countries like Niger, Angola, Ivory Coast, Burkina Faso, and Madagascar focus on nationalizing resources, developing mining and energy projects, encouraging technological investment (e.g., AI), and enhancing regional economic collaboration within frameworks like SADC and AES. The emphasis lies on increasing national benefit from wealth, promoting investment, trade, and infrastructure, and strengthening financial and business integration among African states. This group also highlights leadership roles in coordinating regional development agendas and promoting entrepreneurship.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden" style="padding-bottom: 15px;">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ago.svg" alt="Angola" title="Angola" class="flag-icon">
+                            <a href="https://www.opais.ao/categoria/mundo/" target="_blank" class="article-link">Niger announces nationalization of the gold mining company SML</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cpv.svg" alt="Cape Verde" title="Cape Verde" class="flag-icon">
+                            <a href="https://www.anacao.cv/categoria/mundo/" target="_blank" class="article-link">Angola: Taxi Strike Ends with 22 Deaths and Over One Thousand Arrests Following Clashes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gin.svg" alt="Guinea" title="Guinea" class="flag-icon">
+                            <a href="https://guineematin.com/category/international/" target="_blank" class="article-link">Ivory Coast: Amadou Tidiane Diallo, a Guinean entrepreneur heading a cocoa cooperative in Hiré</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gin.svg" alt="Guinea" title="Guinea" class="flag-icon">
+                            <a href="https://guineematin.com/category/international/" target="_blank" class="article-link">Burkina Faso: life imprisonment for 13 people convicted of terrorism acts</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mar.svg" alt="Morocco" title="Morocco" class="flag-icon">
+                            <a href="https://leconomiste.com/flash-infos" target="_blank" class="article-link">Africa: Artificial Intelligence Could Inject Over 16 Billion USD by 2030</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mar.svg" alt="Morocco" title="Morocco" class="flag-icon">
+                            <a href="https://leconomiste.com/flash-infos" target="_blank" class="article-link">Consortium of Investors Acquires Société Générale Mauritania</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mdg.svg" alt="Madagascar" title="Madagascar" class="flag-icon">
+                            <a href="https://www.lexpress.mg/" target="_blank" class="article-link">SADC - Madagascar Voices Island States</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mdg.svg" alt="Madagascar" title="Madagascar" class="flag-icon">
+                            <a href="https://newsmada.com/    " target="_blank" class="article-link">SADC Council of Ministers: Rasata Rafaravavitafika Assumes the Presidency</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mdg.svg" alt="Madagascar" title="Madagascar" class="flag-icon">
+                            <a href="https://newsmada.com/    " target="_blank" class="article-link">SADC Ministers Council: Madagascar Takes Over Management</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mdg.svg" alt="Madagascar" title="Madagascar" class="flag-icon">
+                            <a href="https://newsmada.com/    " target="_blank" class="article-link">SADC Regional Market: Focus on Money and Investment</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bfa.svg" alt="Burkina Faso" title="Burkina Faso" class="flag-icon">
+                            <a href="https://www.sidwaya.info/bfcategories/international/" target="_blank" class="article-link">AES Confederation: Niger Presents a Coal Complex Project to Captain Ibrahim Traoré</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e572da; padding: 8px 16px; border-radius: 4px;">Regional Cooperation and Political Dialogue Advocates</h3>
+        <p class="cluster-description">This cluster conveys support for regional integration, peacebuilding, political dialogue, and diplomatic engagement to resolve conflicts and foster development. Countries and regional organizations including Ethiopia, Ghana, Uganda, South Africa, and SADC members push for permanent ceasefires, inclusive political talks, election facilitation, joint security efforts, and youth empowerment. The African Union and other entities advocate coordinated actions to achieve stability in conflict zones like South Sudan and West Africa. There is a call to transcend political differences and emphasize unity to face common challenges such as terrorism and economic development.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden" style="padding-bottom: 15px;">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dza.svg" alt="Algeria" title="Algeria" class="flag-icon">
+                            <a href="https://www.aps.dz/monde" target="_blank" class="article-link">AU: Haddadi Advocates for Strengthening the Role of African Youth</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/zmb.svg" alt="Zambia" title="Zambia" class="flag-icon">
+                            <a href="https://zambianobserver.com/category/world/" target="_blank" class="article-link">South Africa’s Unemployment Surges to 33.2% in Q2 2025</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mli.svg" alt="Mali" title="Mali" class="flag-icon">
+                            <a href="https://bamada.net/category/international" target="_blank" class="article-link">UN Calls for ECOWAS and AES Collaboration on Terrorism</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mli.svg" alt="Mali" title="Mali" class="flag-icon">
+                            <a href="https://www.maliweb.net/category/international" target="_blank" class="article-link">Consolidation of peace in West Africa: Setting aside differences</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ben.svg" alt="Benin" title="Benin" class="flag-icon">
+                            <a href="https://lanouvelletribune.info/rubrique/politique/" target="_blank" class="article-link">DRC – Rwanda: already a failure for Trump?</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/eth.svg" alt="Ethiopia" title="Ethiopia" class="flag-icon">
+                            <a href="https://www.ena.et/web/eng/politics" target="_blank" class="article-link">Ghanaian Vice President Calls for Democracy That Delivers “Food, Not Just Ballots”</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/eth.svg" alt="Ethiopia" title="Ethiopia" class="flag-icon">
+                            <a href="https://www.ena.et/web/eng/politics" target="_blank" class="article-link">AU Calls for Permanent Ceasefire, Full Implementation of Revitalized Peace Deal in South Sudan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/eth.svg" alt="Ethiopia" title="Ethiopia" class="flag-icon">
+                            <a href="https://www.ena.et/web/eng/politics" target="_blank" class="article-link">AU Peace &amp; Security Council Conducting Field Mission in South Sudan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/eth.svg" alt="Ethiopia" title="Ethiopia" class="flag-icon">
+                            <a href="https://www.ena.et/web/eng/politics" target="_blank" class="article-link">South Sudanese President, Ugandan Defense Chief Hold Talks to Ease Border Tensions</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e57276; padding: 8px 16px; border-radius: 4px;">Economic and Diplomatic Growth Through Partnerships and Infrastructure</h3>
+        <p class="cluster-description">Countries in this category highlight strengthening bilateral and multilateral relations to enhance trade, infrastructure, and development cooperation. Examples include Egypt-Uganda’s business forum, Togo’s Africa-Europe partnership meeting, and transport and energy agreements between Zambia and Zimbabwe. Also featured are regional convergence efforts in air transport and parliamentary cooperation with external partners such as China and Japan through TICAD venues. The perspective underlines the significance of diplomatic ties and strategic collaborations to improve economic outlook and connectivity within Africa.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden" style="padding-bottom: 15px;">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mdg.svg" alt="Madagascar" title="Madagascar" class="flag-icon">
+                            <a href="https://newsmada.com/    " target="_blank" class="article-link">TICAD 9: Madagascar Present in Yokohama</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/com.svg" alt="Comoros" title="Comoros" class="flag-icon">
+                            <a href="https://lagazettedescomores.com/" target="_blank" class="article-link">China-Comoros cooperation aims for enhanced parliamentary partnership</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/zwe.svg" alt="Zimbabwe" title="Zimbabwe" class="flag-icon">
+                            <a href="https://www.newsday.co.zw/world/" target="_blank" class="article-link">Zambia and Zimbabwe Boost Cooperation with New Energy Agreement</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/rwa.svg" alt="Rwanda" title="Rwanda" class="flag-icon">
+                            <a href="https://www.newtimes.co.rw/international" target="_blank" class="article-link">Dozens of soldiers arrested in Mali over alleged coup plot</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/egy.svg" alt="Egypt" title="Egypt" class="flag-icon">
+                            <a href="https://www.dailynewsegypt.com/category/politics/" target="_blank" class="article-link">Egyptian, Ugandan Presidents open business forum to boost trade</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gnq.svg" alt="Equatorial Guinea" title="Equatorial Guinea" class="flag-icon">
+                            <a href="http://www.ahoraeg.com/" target="_blank" class="article-link">Gabonese company Afrijet launches direct route from Douala to Johannesburg with two weekly flights</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gnq.svg" alt="Equatorial Guinea" title="Equatorial Guinea" class="flag-icon">
+                            <a href="https://www.guineaecuatorialpress.com/" target="_blank" class="article-link">The Head of State receives Moussa Batraki, Secretary General of the OEACP</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gnq.svg" alt="Equatorial Guinea" title="Equatorial Guinea" class="flag-icon">
+                            <a href="https://www.guineaecuatorialpress.com/" target="_blank" class="article-link">Guinea Equatorial confirms its participation in the ninth International Tokyo Conference on African Development</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/caf.svg" alt="Central African Republic" title="Central African Republic" class="flag-icon">
+                            <a href="https://www.journaldebangui.com/international/" target="_blank" class="article-link">Togo Hosts Meeting to Strengthen Africa-Europe Partnership in Lomé</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Calls for Transparency, Accountability, and Civil Society Empowerment</h3>
+        <p class="cluster-description">This viewpoint stresses the importance of governance reforms, anti-corruption measures, youth mobilization, and civil society participation in advancing African development. Botswana’s forensic audit initiative and AU calls for youth volunteerism exemplify efforts to enhance accountability and empower populations. Additionally, protests against rural land grabbing by women from multiple countries underscore grassroots activism against economic marginalization. This cluster reflects a demand for greater transparency in governance and inclusive development strategies.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden" style="padding-bottom: 15px;">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dza.svg" alt="Algeria" title="Algeria" class="flag-icon">
+                            <a href="https://www.aps.dz/monde" target="_blank" class="article-link">AU: Haddadi Advocates for Strengthening the Role of African Youth</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/civ.svg" alt="Côte d&#39;Ivoire" title="Côte d&#39;Ivoire" class="flag-icon">
+                            <a href="https://www.aip.ci/category/international/" target="_blank" class="article-link">African Women Gathered in Cameroon Protest Against Rural Land Grabbing</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bwa.svg" alt="Botswana" title="Botswana" class="flag-icon">
+                            <a href="http://www.mmegi.bw/index.php?sid=1" target="_blank" class="article-link">Forensic auditors red flag 30 entities</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<footer class="mt-5">
+  <div class="container">
+     <p class="text-center"> 2025-2026 © Planet Pulse.</p>
+  </div>
+</footer>
+
+<div class="offcanvas offcanvas-start" id="mobilemenu">
+  <!-- Mobile menu -->
+</div>
+
+    <script>
+        anychart.onDocumentReady(function() {
+            var map = anychart.map();
+            map.geoData('anychart.maps.world');
+            map.interactivity().selectionMode('none');
+            
+            // Configurer les régions non couvertes
+            map.unboundRegions()
+                .enabled(true)
+                .fill('#f0f0f0')
+                .stroke({
+                    color: '#000000',
+                    thickness: 0.5,
+                    lineJoin: 'round'
+                });
+                
+             // Construire les données des séries dynamiquement à partir des clusters
+            var seriesData = [
+            
+                {
+                    name: "Security and Political Instability Focus in West and Central Africa",
+                    color: "#72e5ac",
+                    data: [
+                        
+                            {"id": "AO", "value": 1, "name": "AO"},
+                        
+                            {"id": "BF", "value": 1, "name": "BF"},
+                        
+                            {"id": "BJ", "value": 1, "name": "BJ"},
+                        
+                            {"id": "CA", "value": 1, "name": "CA"},
+                        
+                            {"id": "CH", "value": 1, "name": "CH"},
+                        
+                            {"id": "CI", "value": 1, "name": "CI"},
+                        
+                            {"id": "GN", "value": 1, "name": "GN"},
+                        
+                            {"id": "GQ", "value": 1, "name": "GQ"},
+                        
+                            {"id": "MG", "value": 1, "name": "MG"},
+                        
+                            {"id": "ML", "value": 1, "name": "ML"},
+                        
+                            {"id": "MR", "value": 1, "name": "MR"},
+                        
+                            {"id": "MZ", "value": 1, "name": "MZ"},
+                        
+                            {"id": "NA", "value": 1, "name": "NA"},
+                        
+                            {"id": "RW", "value": 1, "name": "RW"},
+                        
+                            {"id": "SD", "value": 1, "name": "SD"},
+                        
+                            {"id": "TD", "value": 1, "name": "TD"},
+                        
+                            {"id": "ZM", "value": 1, "name": "ZM"}
+                        
+                    ]
+                },
+            
+                {
+                    name: "Humanitarian Crisis and Protection Urgency in Sudan and Surrounding Areas",
+                    color: "#72bbe5",
+                    data: [
+                        
+                            {"id": "NA", "value": 1, "name": "NA"},
+                        
+                            {"id": "QA", "value": 1, "name": "QA"},
+                        
+                            {"id": "US", "value": 1, "name": "US"},
+                        
+                            {"id": "VA", "value": 1, "name": "VA"},
+                        
+                            {"id": "XK", "value": 1, "name": "XK"}
+                        
+                    ]
+                },
+            
+                {
+                    name: "Promotion of Economic Sovereignty and Regional Development",
+                    color: "#8d72e5",
+                    data: [
+                        
+                            {"id": "AO", "value": 1, "name": "AO"},
+                        
+                            {"id": "BF", "value": 1, "name": "BF"},
+                        
+                            {"id": "CV", "value": 1, "name": "CV"},
+                        
+                            {"id": "GN", "value": 1, "name": "GN"},
+                        
+                            {"id": "MA", "value": 1, "name": "MA"},
+                        
+                            {"id": "MG", "value": 1, "name": "MG"}
+                        
+                    ]
+                },
+            
+                {
+                    name: "Regional Cooperation and Political Dialogue Advocates",
+                    color: "#e572da",
+                    data: [
+                        
+                            {"id": "BJ", "value": 1, "name": "BJ"},
+                        
+                            {"id": "DZ", "value": 1, "name": "DZ"},
+                        
+                            {"id": "ET", "value": 1, "name": "ET"},
+                        
+                            {"id": "ML", "value": 1, "name": "ML"},
+                        
+                            {"id": "ZM", "value": 1, "name": "ZM"}
+                        
+                    ]
+                },
+            
+                {
+                    name: "Economic and Diplomatic Growth Through Partnerships and Infrastructure",
+                    color: "#e57276",
+                    data: [
+                        
+                            {"id": "CF", "value": 1, "name": "CF"},
+                        
+                            {"id": "EG", "value": 1, "name": "EG"},
+                        
+                            {"id": "GQ", "value": 1, "name": "GQ"},
+                        
+                            {"id": "KM", "value": 1, "name": "KM"},
+                        
+                            {"id": "MG", "value": 1, "name": "MG"},
+                        
+                            {"id": "RW", "value": 1, "name": "RW"},
+                        
+                            {"id": "ZW", "value": 1, "name": "ZW"}
+                        
+                    ]
+                },
+            
+                {
+                    name: "Calls for Transparency, Accountability, and Civil Society Empowerment",
+                    color: "#e5d272",
+                    data: [
+                        
+                            {"id": "BW", "value": 1, "name": "BW"},
+                        
+                            {"id": "CI", "value": 1, "name": "CI"},
+                        
+                            {"id": "DZ", "value": 1, "name": "DZ"}
+                        
+                    ]
+                }
+            
+            ];
+            
+            // Créer une série pour chaque cluster
+            seriesData.forEach(function(seriesInfo) {
+                var series = map.choropleth(seriesInfo.data);
+                series.name(seriesInfo.name);
+                series.geoIdField('id');
+                series.fill(seriesInfo.color);
+                series.stroke('#000000', 0.5, 'round');
+                
+                // Configuration du hover
+                series.hovered()
+                    .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+                
+                // Configuration des tooltips
+                series.tooltip().format(function() {
+                    // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                    return this.series.name()
+                });
+            });
+            
+            // Désactiver la légende
+            map.legend(false);
+            
+            // Rendre la carte
+            map.container('map-container');
+            map.draw();
+        });
+
+        function toggleSources(button) {
+            var content = button.nextElementSibling;
+            var isHidden = content.classList.contains('hidden');
+            
+            content.classList.toggle('hidden');
+            button.innerHTML = isHidden ? 'Hide sources ▲' : 'Show sources ▼';
+        }
+    </script>
+
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
