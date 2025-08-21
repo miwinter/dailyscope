@@ -1,0 +1,631 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Perspectives diverses sur les partenariats et la coopération en développement international</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/fr', '/en');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>                 
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Perspectives diverses sur les partenariats et la coopération en développement international</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-08-21</span> • <span>45 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-08-21/2025-08-21-5.jpg" alt="Perspectives diverses sur les partenariats et la coopération en développement international" class="main-image">
+                <p style="margin:0">Les articles décrivent collectivement un paysage multifacette du développement international, mettant en évidence une coopération active principalement entre les pays africains et des partenaires mondiaux tels que le Japon, la Chine, l&#39;Union européenne et les organisations régionales. Le Japon apparaît comme un partenaire clé du développement à travers TICAD, favorisant la croissance durable, les infrastructures et l&#39;innovation sur le continent africain, tandis que la Chine poursuit un engagement économique accru via l&#39;Initiative Belt and Road, en se concentrant sur les infrastructures et les ressources naturelles. Les nations africaines soulignent l&#39;importance du multilatéralisme, des solutions dirigées par l&#39;Afrique et de la mobilisation du secteur privé pour assurer un développement durable et la paix, appelant souvent à des réformes dans la gouvernance mondiale et les systèmes financiers. Les États régionaux et insulaires plus petits montrent une ouverture aux partenariats qui répondent à leurs défis de développement uniques, soulignant la dimension mondiale de la coopération au développement.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div class="key-points">
+        <h2>Countries covering this topic</h2>
+    </div>
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Partenariat de développement Afrique-Japon Plaide</h3>
+        <p class="cluster-description">Les pays de ce groupe considèrent le Japon comme un partenaire essentiel et stratégique dans le développement durable de l&#39;Afrique. Ils mettent l&#39;accent sur le renforcement des relations Afrique-Japon à travers des conférences comme le TICAD, en se concentrant sur l&#39;infrastructure, le progrès technologique, l&#39;autonomisation des jeunes et l&#39;intégration régionale. Ces pays soulignent la nécessité d&#39;une croissance collaborative et inclusive qui s&#39;aligne sur les agendas de développement africains tels que l&#39;Agenda 2063 et l&#39;Agenda 2030 de l&#39;ONU. Il y a également une insistance sur la mobilisation du capital privé et de l&#39;innovation, avec des appels au multilatéralisme et aux partenariats internationaux pour atteindre une paix et une prospérité durables.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden" style="padding-bottom: 15px;">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/caf.svg" alt="République centrafricaine" title="République centrafricaine" class="flag-icon">
+                            <a href="https://www.journaldebangui.com/international/" target="_blank" class="article-link">La République centrafricaine lance un appel à financement pour le développement à Madrid</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/caf.svg" alt="République centrafricaine" title="République centrafricaine" class="flag-icon">
+                            <a href="https://www.journaldebangui.com/international/" target="_blank" class="article-link">Togo : réunion pour renforcer le partenariat Afrique-Europe à Lomé</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gnq.svg" alt="Guinée équatoriale" title="Guinée équatoriale" class="flag-icon">
+                            <a href="https://www.guineaecuatorialpress.com/" target="_blank" class="article-link">Cérémonie d&#39;ouverture de la 9e Conférence internationale de Tokyo sur le développement africain</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/eth.svg" alt="Éthiopie" title="Éthiopie" class="flag-icon">
+                            <a href="https://www.ena.et/web/eng/politics" target="_blank" class="article-link">L&#39;Afrique est prête pour le progrès, déclare Guterres lors de la conférence sur le développement au Japon</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/eth.svg" alt="Éthiopie" title="Éthiopie" class="flag-icon">
+                            <a href="https://www.ena.et/web/eng/politics" target="_blank" class="article-link">Le président de l&#39;Union africaine appelle les participants à TICAD 9 à innover et à mobiliser le capital privé</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/eth.svg" alt="Éthiopie" title="Éthiopie" class="flag-icon">
+                            <a href="https://www.ena.et/web/eng/politics" target="_blank" class="article-link">L&#39;Éthiopie souligne la nécessité de solutions africaines dirigées par l&#39;Afrique, soutenues par des partenaires internationaux, pour assurer une paix durable</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/eth.svg" alt="Éthiopie" title="Éthiopie" class="flag-icon">
+                            <a href="https://www.ena.et/web/eng/politics" target="_blank" class="article-link">Les dirigeants africains réunis au Japon lors de la conférence TICAD 9 pour discuter du renforcement du développement durable</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tgo.svg" alt="Togo" title="Togo" class="flag-icon">
+                            <a href="http://www.togopresse.tg/" target="_blank" class="article-link">TICAD9 : le Togo engagé pour un partenariat renforcé entre l&#39;Afrique et le Japon</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tgo.svg" alt="Togo" title="Togo" class="flag-icon">
+                            <a href="http://www.togopresse.tg/" target="_blank" class="article-link">TICAD9 : le président du Conseil est arrivé au Japon pour représenter la voix du Togo</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tgo.svg" alt="Togo" title="Togo" class="flag-icon">
+                            <a href="http://www.togopresse.tg/" target="_blank" class="article-link">Pour une Afrique sans visa d&#39;ici 2023 : une campagne « Tourisme et unité panafricaine » lancée à Accra</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tgo.svg" alt="Togo" title="Togo" class="flag-icon">
+                            <a href="http://www.togopresse.tg/" target="_blank" class="article-link">La Banque de la CEDEAO obtient un crédit commercial de 40 millions de dollars américains auprès de la Banque Exim d&#39;Inde</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tgo.svg" alt="Togo" title="Togo" class="flag-icon">
+                            <a href="https://www.republicoftogo.com/" target="_blank" class="article-link">Un dialogue renforcé en marge du TICAD 9</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mrt.svg" alt="Mauritanie" title="Mauritanie" class="flag-icon">
+                            <a href="https://www.journaltahalil.com/category/international/" target="_blank" class="article-link">ATIDI, MUFG et NEXI organisent un événement parallèle de haut niveau lors du TICAD9 à Tokyo pour promouvoir les opportunités d&#39;investissement japonaises en Afrique</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mrt.svg" alt="Mauritanie" title="Mauritanie" class="flag-icon">
+                            <a href="https://www.journaltahalil.com/category/international/" target="_blank" class="article-link">Ouverture de la 9e édition du Forum international de Tokyo sur le développement africain à Yokohama</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mrt.svg" alt="Mauritanie" title="Mauritanie" class="flag-icon">
+                            <a href="https://cridem.org/" target="_blank" class="article-link">Mauritanie-Japon : signature d&#39;un protocole d&#39;accord pour la construction d&#39;une usine de dessalement à Nouadhibou</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/zwe.svg" alt="Zimbabwe" title="Zimbabwe" class="flag-icon">
+                            <a href="https://www.newsday.co.zw/world/" target="_blank" class="article-link">Le Zimbabwe se tourne vers le Japon pour des investissements dans l&#39;énergie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lbr.svg" alt="Libéria" title="Libéria" class="flag-icon">
+                            <a href="https://www.liberianobserver.com/news/" target="_blank" class="article-link">Libéria va exploiter l&#39;expertise du Japon dans la fourniture de soins de santé</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lbr.svg" alt="Libéria" title="Libéria" class="flag-icon">
+                            <a href="https://www.liberianobserver.com/news/" target="_blank" class="article-link">Les Comores recherchent une coopération dans la pêche avec le Libéria</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/rwa.svg" alt="Rwanda" title="Rwanda" class="flag-icon">
+                            <a href="https://www.newtimes.co.rw/international" target="_blank" class="article-link">Nduhungirehe au Japon pour une rencontre clé sur le développement africain</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bfa.svg" alt="Burkina Faso" title="Burkina Faso" class="flag-icon">
+                            <a href="https://www.sidwaya.info/bfcategories/international/" target="_blank" class="article-link">Coopération bilatérale Burkina Faso-Pays-Bas : revue des principales actions passées</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/khm.svg" alt="Cambodge" title="Cambodge" class="flag-icon">
+                            <a href="https://cambodianess.com/world" target="_blank" class="article-link">Le Japon accueille des dirigeants africains pour la conférence sur le développement</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mng.svg" alt="Mongolie" title="Mongolie" class="flag-icon">
+                            <a href="https://montsame.mn/mn/more/17" target="_blank" class="article-link">La 9e Conférence internationale de Tokyo sur le développement de l&#39;Afrique s&#39;ouvre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/slb.svg" alt="Îles Salomon" title="Îles Salomon" class="flag-icon">
+                            <a href="https://theislandsun.com.sb/category/news/" target="_blank" class="article-link">Les boursiers JDS rendent visite au consul honoraire des Îles Salomon à Tokyo</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72d7e5; padding: 8px 16px; border-radius: 4px;">Le rôle croissant de la Chine dans le développement par l&#39;infrastructure et l&#39;investissement</h3>
+        <p class="cluster-description">Ce cluster inclut des pays adoptant l&#39;initiative Belt and Road de la Chine et la coopération bilatérale comme une voie majeure pour le développement des infrastructures, l&#39;expansion commerciale et l&#39;intégration économique. Ils mettent en avant l&#39;accent de la Chine sur la croissance agro-industrielle, la connectivité régionale et le développement des ressources, y compris le recentrage des investissements vers la valorisation locale des minéraux en Afrique. Ces pays s&#39;engagent activement avec la Chine pour accélérer la reconstruction, mettre en œuvre des projets industriels durables et approfondir les liens sino-africains. Ils considèrent le rôle de la Chine comme complémentaire aux partenariats existants et crucial pour diversifier le financement et l&#39;expertise en développement.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden" style="padding-bottom: 15px;">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/uzb.svg" alt="Ouzbékistan" title="Ouzbékistan" class="flag-icon">
+                            <a href="https://kun.uz/news/category/jahon" target="_blank" class="article-link">La Chine a proposé à l&#39;Afghanistan de rejoindre l&#39;initiative &#34;Belt and Road&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gnq.svg" alt="Guinée équatoriale" title="Guinée équatoriale" class="flag-icon">
+                            <a href="https://www.guineaecuatorialpress.com/" target="_blank" class="article-link">Guinée équatoriale et Chine renforcent leur coopération dans le secteur agro-industriel</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lbr.svg" alt="Libéria" title="Libéria" class="flag-icon">
+                            <a href="https://www.liberianobserver.com/news/" target="_blank" class="article-link">Communication internationale porte-à-porte, amitié sino-africaine de cœur à cœur</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/zaf.svg" alt="Afrique du Sud" title="Afrique du Sud" class="flag-icon">
+                            <a href="https://mg.co.za/section/news/" target="_blank" class="article-link">La Ceinture et la Route de la Chine se tourne vers l&#39;Afrique avec des investissements record</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #7290e5; padding: 8px 16px; border-radius: 4px;">Partisans du multilatéralisme et du développement durable dirigé par l&#39;Afrique</h3>
+        <p class="cluster-description">Les pays de ce groupe privilégient la coopération multilatérale et le leadership africain dans la résolution des défis de développement du continent. Ils insistent sur l&#39;importance des réformes dans la gouvernance mondiale, une meilleure représentation de l&#39;Afrique dans les institutions internationales, et la mobilisation collective des ressources privées et publiques pour la croissance. Cette perspective appelle à renforcer l&#39;intégration régionale, la prévention des conflits, et à adopter des approches innovantes pour faire face au changement climatique, à la sécurité et à l&#39;inclusion sociale. L&#39;accent est notamment mis sur la paix durable, considérée comme indissociable du développement, avec une insistance sur le soutien des partenaires internationaux sous la gouvernance africaine.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden" style="padding-bottom: 15px;">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/caf.svg" alt="République centrafricaine" title="République centrafricaine" class="flag-icon">
+                            <a href="https://www.journaldebangui.com/international/" target="_blank" class="article-link">La République centrafricaine lance un appel au financement du développement à Madrid</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/eth.svg" alt="Éthiopie" title="Éthiopie" class="flag-icon">
+                            <a href="https://www.ena.et/web/eng/politics" target="_blank" class="article-link">L&#39;Afrique est prête pour le progrès, déclare Guterres lors de la conférence sur le développement au Japon</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/eth.svg" alt="Éthiopie" title="Éthiopie" class="flag-icon">
+                            <a href="https://www.ena.et/web/eng/politics" target="_blank" class="article-link">L&#39;Éthiopie souligne la nécessité de solutions africaines dirigées par l&#39;Afrique, soutenues par des partenaires internationaux pour assurer une paix durable</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cpv.svg" alt="Cap-Vert" title="Cap-Vert" class="flag-icon">
+                            <a href="https://expressodasilhas.cv/mundo" target="_blank" class="article-link">\&#34;Il n&#39;y a pas d&#39;alternative au multilatéralisme\&#34; - Union africaine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dza.svg" alt="Algérie" title="Algérie" class="flag-icon">
+                            <a href="https://www.aps.dz/monde" target="_blank" class="article-link">La République arabe sahraouie démocratique participe à la TICAD 9</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/rwa.svg" alt="Rwanda" title="Rwanda" class="flag-icon">
+                            <a href="https://www.newtimes.co.rw/international" target="_blank" class="article-link">Nduhungirehe au Japon pour une réunion clé sur le développement africain</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #9b72e5; padding: 8px 16px; border-radius: 4px;">Initiatives de développement régional et des petites îles et partenariats émergents</h3>
+        <p class="cluster-description">Ce groupe se compose de petits États et d&#39;acteurs régionaux mettant en avant des préoccupations de développement de niche telles que la pêche, l&#39;extraction de ressources maritimes, la résilience climatique et la coopération économique adaptées à leurs contextes spécifiques. Ils font preuve d&#39;ouverture envers de nouveaux partenariats, y compris avec des donateurs non traditionnels comme l&#39;Arabie Saoudite et l&#39;Inde, pour renforcer le commerce, la mobilité du travail et les projets d&#39;infrastructure. Leur approche souligne l&#39;importance de politiques inclusives, d&#39;approches de développement transformatrices et de la coopération au sein des communautés linguistiques ou régionales pour répondre aux vulnérabilités uniques auxquelles sont confrontés les petits États insulaires et en développement.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden" style="padding-bottom: 15px;">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dom.svg" alt="République dominicaine" title="République dominicaine" class="flag-icon">
+                            <a href="https://www.diariolibre.com/mundo" target="_blank" class="article-link">L&#39;OEA propose un plan de 2,6 milliards de dollars pour stabiliser Haïti</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hti.svg" alt="Haïti" title="Haïti" class="flag-icon">
+                            <a href="https://www.haitilibre.com/cat-actualites-internationales.html" target="_blank" class="article-link">Concours de l&#39;Académie diplomatique Jean Price-Mars et financement du référendum</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/asm.svg" alt="ASM" title="ASM" class="flag-icon">
+                            <a href="http://www.samoanews.com/" target="_blank" class="article-link">Les îles Cook &#39; ouvertes à tout &#39; pour des partenariats d&#39;exploitation des fonds marins</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bhs.svg" alt="Bahamas" title="Bahamas" class="flag-icon">
+                            <a href="http://www.tribune242.com/news/" target="_blank" class="article-link">Prêt de 30 millions de dollars de la BID pour aider l&#39;économie bleue</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/slb.svg" alt="Îles Salomon" title="Îles Salomon" class="flag-icon">
+                            <a href="https://www.solomontimes.com/" target="_blank" class="article-link">Les îles Salomon et le Fonds saoudien concluent un accord historique</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/slb.svg" alt="Îles Salomon" title="Îles Salomon" class="flag-icon">
+                            <a href="https://www.solomontimes.com/" target="_blank" class="article-link">Les îles Salomon et la FSM explorent la coopération commerciale et la mobilité de la main-d&#39;œuvre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/slb.svg" alt="Îles Salomon" title="Îles Salomon" class="flag-icon">
+                            <a href="https://theislandsun.com.sb/category/news/" target="_blank" class="article-link">Les boursiers JDS rendent visite au consul honoraire des îles Salomon à Tokyo</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/atg.svg" alt="Antigua-et-Barbuda" title="Antigua-et-Barbuda" class="flag-icon">
+                            <a href="https://antiguaobserver.com/category/international_news/" target="_blank" class="article-link">La société civile des Caraïbes appelle à un développement transformateur lors du SIDS4</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/stp.svg" alt="Sao Tomé-et-Principe" title="Sao Tomé-et-Principe" class="flag-icon">
+                            <a href="http://www.stp-press.st/category/internacional/" target="_blank" class="article-link">São Tomé et Príncipe accueillera le forum Caritas de la CPLP</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e272e5; padding: 8px 16px; border-radius: 4px;">Union Européenne et donateurs occidentaux axés sur la stabilité et la gouvernance</h3>
+        <p class="cluster-description">Les pays ou organisations de ce groupe mettent en avant le rôle de l&#39;aide au développement menée par l&#39;Occident, axée sur les réformes de gouvernance, la stabilisation des crises et le soutien à la sécurité. L&#39;implication de l&#39;UE se concentre sur le maintien des missions dans des contextes fragiles, tandis que la coopération bilatérale avec les pays européens souligne les initiatives de développement bilatérales. L&#39;objectif global est de renforcer le progrès démocratique, la stabilité politique et des environnements sécurisés pour permettre à l développement de s&#39;ancrer, reflétant une approche centrée sur la gouvernance en matière de coopération économique.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden" style="padding-bottom: 15px;">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aze.svg" alt="Azerbaïdjan" title="Azerbaïdjan" class="flag-icon">
+                            <a href="https://en.trend.az/world/" target="_blank" class="article-link">Commentaires de l&#39;UE sur les activités futures de sa mission en Arménie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bfa.svg" alt="Burkina Faso" title="Burkina Faso" class="flag-icon">
+                            <a href="https://www.sidwaya.info/bfcategories/international/" target="_blank" class="article-link">Coopération bilatérale Burkina Faso-Néerlands : Les principales actions passées examinées</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e572a1; padding: 8px 16px; border-radius: 4px;">Défis du développement international et préoccupations de sécurité</h3>
+        <p class="cluster-description">Ce groupe met en évidence les risques et défis auxquels sont confrontants les acteurs humanitaires et de développement à l’échelle mondiale, notamment l’augmentation de la violence et de l’instabilité dans les contextes fragiles. Les rapports soulignent la hausse des victimes parmi les travailleurs humanitaires et la nécessité d’améliorer les mécanismes de protection. Ces préoccupations reflètent une perspective centrée sur la sécurité qui met l’accent sur la préservation de l’espace humanitaire comme préalable à un développement efficace et à la livraison de l’aide.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden" style="padding-bottom: 15px;">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nga.svg" alt="Nigeria" title="Nigeria" class="flag-icon">
+                            <a href="https://guardian.ng/category/world/" target="_blank" class="article-link">Nombre record de travailleurs humanitaires tués en 2024, selon l&#39;ONU</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e58b72; padding: 8px 16px; border-radius: 4px;">Les initiatives économiques stratégiques du Japon pour contrebalancer l&#39;influence croissante</h3>
+        <p class="cluster-description">Ce point de vue souligne les initiatives stratégiques du Japon, telles que la proposition de nouvelles zones économiques reliant l&#39;Afrique et la région de l&#39;océan Indien, afin d&#39;approfondir les relations économiques et la coopération au développement en tant que contrepoids à l&#39;influence croissante de la Chine. Le Japon vise à tirer parti de son aide au développement et de la promotion des investissements pour renforcer les liens et favoriser la croissance économique dans plusieurs régions. L&#39;accent est mis sur les efforts internationaux coordonnés et sur l&#39;exploitation de la position du Japon pour améliorer les perspectives de développement de l&#39;Afrique et l&#39;intégration régionale.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden" style="padding-bottom: 15px;">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/idn.svg" alt="Indonésie" title="Indonésie" class="flag-icon">
+                            <a href="https://www.thejakartapost.com/world" target="_blank" class="article-link">Le Premier ministre du Japon propose une initiative de zone économique pour l&#39;Afrique</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Coopération et renforcement des capacités des petits États insulaires du Pacifique</h3>
+        <p class="cluster-description">Les pays insulaires du Pacifique se concentrent sur l&#39;amélioration du commerce, de la mobilité du travail et du renforcement des capacités par le biais de partenariats avec les voisins régionaux et les donateurs internationaux. Ils privilégient la promotion d&#39;opportunités économiques pour stimuler le développement tout en maintenant des liens culturels et diplomatiques, notamment avec le Japon et l&#39;Arabie Saoudite. Leur position souligne l&#39;importance de programmes de développement adaptés qui répondent aux besoins spécifiques de la région et favorisent une intégration économique durable.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden" style="padding-bottom: 15px;">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/asm.svg" alt="ASM" title="ASM" class="flag-icon">
+                            <a href="http://www.samoanews.com/" target="_blank" class="article-link">Les îles Cook &#39;sont ouvertes à tout&#39; pour des partenariats d&#39;exploitation minière en mer</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/slb.svg" alt="Îles Salomon" title="Îles Salomon" class="flag-icon">
+                            <a href="https://www.solomontimes.com/" target="_blank" class="article-link">Les îles Salomon et la FSM explorent la coopération commerciale et la mobilité de la main-d&#39;œuvre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/slb.svg" alt="Îles Salomon" title="Îles Salomon" class="flag-icon">
+                            <a href="https://theislandsun.com.sb/category/news/" target="_blank" class="article-link">Les boursiers JDS rendent visite au consul honoraire des îles Salomon à Tokyo</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Partenariat de d\u00e9veloppement Afrique-Japon Plaide",
+                color: "#72e5ac",
+                data: [ {"id": "BF"},  {"id": "CF"},  {"id": "ET"},  {"id": "GQ"},  {"id": "KH"},  {"id": "LR"},  {"id": "MN"},  {"id": "MR"},  {"id": "RW"},  {"id": "SB"},  {"id": "TG"},  {"id": "ZW"} ]
+            },
+        
+            {
+                name: "Le r\u00f4le croissant de la Chine dans le d\u00e9veloppement par l\u0027infrastructure et l\u0027investissement",
+                color: "#72d7e5",
+                data: [ {"id": "GQ"},  {"id": "LR"},  {"id": "UZ"},  {"id": "ZA"} ]
+            },
+        
+            {
+                name: "Partisans du multilat\u00e9ralisme et du d\u00e9veloppement durable dirig\u00e9 par l\u0027Afrique",
+                color: "#7290e5",
+                data: [ {"id": "CF"},  {"id": "CV"},  {"id": "DZ"},  {"id": "ET"},  {"id": "RW"} ]
+            },
+        
+            {
+                name: "Initiatives de d\u00e9veloppement r\u00e9gional et des petites \u00eeles et partenariats \u00e9mergents",
+                color: "#9b72e5",
+                data: [ {"id": "AG"},  {"id": "AS"},  {"id": "BS"},  {"id": "DO"},  {"id": "HT"},  {"id": "SB"},  {"id": "ST"} ]
+            },
+        
+            {
+                name: "Union Europ\u00e9enne et donateurs occidentaux ax\u00e9s sur la stabilit\u00e9 et la gouvernance",
+                color: "#e272e5",
+                data: [ {"id": "AZ"},  {"id": "BF"} ]
+            },
+        
+            {
+                name: "D\u00e9fis du d\u00e9veloppement international et pr\u00e9occupations de s\u00e9curit\u00e9",
+                color: "#e572a1",
+                data: [ {"id": "NG"} ]
+            },
+        
+            {
+                name: "Les initiatives \u00e9conomiques strat\u00e9giques du Japon pour contrebalancer l\u0027influence croissante",
+                color: "#e58b72",
+                data: [ {"id": "ID"} ]
+            },
+        
+            {
+                name: "Coop\u00e9ration et renforcement des capacit\u00e9s des petits \u00c9tats insulaires du Pacifique",
+                color: "#e5d272",
+                data: [ {"id": "AS"},  {"id": "SB"} ]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Masquer les sources ▲' : 'Montrer les sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="close-menu text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+      Close <i class="fas fa-long-arrow-alt-left"></i>
+    </button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li class="active-m">
+               <a href="/">Accueil </a>
+            </li>
+            <li>
+              <a href="/en/about.html">A Propos </a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
