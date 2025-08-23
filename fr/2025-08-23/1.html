@@ -1,0 +1,934 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Perspectives internationales sur la famine à Gaza et l&#39;escalade du conflit</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/fr', '/en');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>                 
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Perspectives internationales sur la famine à Gaza et l&#39;escalade du conflit</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-08-23</span> • <span>158 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-08-23/2025-08-23-1.jpg" alt="Perspectives internationales sur la famine à Gaza et l&#39;escalade du conflit" class="main-image">
+                <p style="margin:0">Les Nations Unies et de nombreuses agences internationales ont officiellement déclaré une famine à Gaza, marquant une crise humanitaire historique et grave affectant plus de 500 000 personnes dans un contexte de conflit et de blocus en cours. De nombreux pays et organisations condamnent les opérations militaires et le blocus d&#39;Israël comme causes de pénuries alimentaires sévères et de pertes civiles, appelant à un accès humanitaire urgent et à des négociations de cessez-le-feu. Inversement, Israël et ses alliés nient largement les allégations de famine, attribuant la crise au Hamas et contestant les rapports humanitaires tout en mettant en avant des préoccupations de sécurité et en justifiant les actions militaires. Les efforts diplomatiques régionaux et mondiaux oscillent entre avertissements d&#39;escalade, appels à une intervention internationale et tentatives de cessez-le-feu négocié, dans un contexte de violence et de tensions politiques continues.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div class="key-points">
+        <h2>Les pays qui en parlent</h2>
+    </div>
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Soutien humanitaire et critique du blocus et des actions militaires israéliennes</h3>
+        <p class="cluster-description">Les pays de ce groupe mettent en évidence la crise humanitaire catastrophique à Gaza, reconnaissant officiellement les conditions de famine et attribuant les graves pénuries alimentaires et souffrances principalement au blocus israélien et aux opérations militaires. Ils appellent à une intervention internationale urgente, à un accès humanitaire sans entrave et à des accords de cessez-le-feu pour prévenir de nouvelles pertes civiles et la famine. Cette perspective présente les politiques et actions militaires d&#39;Israël comme les principaux moteurs de la crise et souligne la nécessité urgente d&#39;efforts humanitaires mondiaux coordonnés et de responsabilité.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden" style="padding-bottom: 15px;">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cri.svg" alt="Costa Rica" title="Costa Rica" class="flag-icon">
+                            <a href="https://www.nacion.com/el-mundo/" target="_blank" class="article-link">L&#39;ONU déclare officiellement la famine à Gaza et dans les régions environnantes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/imn.svg" alt="IMN" title="IMN" class="flag-icon">
+                            <a href="https://www.manxradio.com/news/" target="_blank" class="article-link">Israël est accusé de laisser la famine s&#39;aggraver à Gaza et la condamnation mondiale est assourdissante</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mar.svg" alt="Maroc" title="Maroc" class="flag-icon">
+                            <a href="https://lematin.ma/monde" target="_blank" class="article-link">L&#39;ONU déclare la famine à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mar.svg" alt="Maroc" title="Maroc" class="flag-icon">
+                            <a href="https://leconomiste.com/flash-infos" target="_blank" class="article-link">L&#39;ONU déclare la famine à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Irlande" title="Irlande" class="flag-icon">
+                            <a href="https://www.irishtimes.com/news/world" target="_blank" class="article-link">Les conditions de famine à Gaza risquent de s&#39;étendre, selon l&#39;agence de lutte contre la faim soutenue par l&#39;ONU</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kwt.svg" alt="Koweït" title="Koweït" class="flag-icon">
+                            <a href="https://kuwaittimes.com/world/" target="_blank" class="article-link">Les Nations Unies déclarent officiellement la famine à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kwt.svg" alt="Koweït" title="Koweït" class="flag-icon">
+                            <a href="https://www.aljarida.com/%D8%AF%D9%88%D9%84%D9%8A%D8%A7%D8%AA" target="_blank" class="article-link">Conférence sur Gaza à Istanbul : face à la catastrophe la plus grave de l&#39;histoire humaine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kwt.svg" alt="Koweït" title="Koweït" class="flag-icon">
+                            <a href="https://www.aljarida.com/%D8%AF%D9%88%D9%84%D9%8A%D8%A7%D8%AA" target="_blank" class="article-link">Le CCG appelle à une action internationale pour livrer de l&#39;aide à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pse.svg" alt="Palestine" title="Palestine" class="flag-icon">
+                            <a href="https://www.alquds.com/" target="_blank" class="article-link">L&#39;UNRWA appelle à inonder Gaza d&#39;aide pour arrêter la famine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pse.svg" alt="Palestine" title="Palestine" class="flag-icon">
+                            <a href="https://www.alquds.com/" target="_blank" class="article-link">L&#39;ONU décrit la famine à Gaza comme un échec de l&#39;humanité</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pse.svg" alt="Palestine" title="Palestine" class="flag-icon">
+                            <a href="https://www.alquds.com/" target="_blank" class="article-link">L&#39;ONU avertit que moitié d&#39;un million de personnes à Gaza souffrent de famine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pse.svg" alt="Palestine" title="Palestine" class="flag-icon">
+                            <a href="http://www.al-ayyam.ps/" target="_blank" class="article-link">Des dizaines de milliers de personnes manifestent au Yémen et en Mauritanie en solidarité avec Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bhr.svg" alt="Bahreïn" title="Bahreïn" class="flag-icon">
+                            <a href="https://akhbar-alkhaleej.com/news/section/WORL" target="_blank" class="article-link">L&#39;Organisation des Nations Unies déclare officiellement la famine à Gaza ; Guterres : La catastrophe ne peut pas continuer sans punition</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bhr.svg" alt="Bahreïn" title="Bahreïn" class="flag-icon">
+                            <a href="https://www.alayam.com/online/international" target="_blank" class="article-link">Arabie Saoudite : Déclarer la famine à Gaza est un crime de génocide nécessitant une intervention internationale urgente</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bra.svg" alt="Brésil" title="Brésil" class="flag-icon">
+                            <a href="https://www1.folha.uol.com.br/mundo/" target="_blank" class="article-link">Après des mois de crise humanitaire, l&#39;Organisation des Nations Unies déclare la famine à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bra.svg" alt="Brésil" title="Brésil" class="flag-icon">
+                            <a href="https://oglobo.globo.com/mundo/" target="_blank" class="article-link">L&#39;ONU confirme la famine à Gaza et dans les zones environnantes avec 500 000 personnes en « conditions catastrophiques »</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/isr.svg" alt="Israël" title="Israël" class="flag-icon">
+                            <a href="https://www.haaretz.com/world-news" target="_blank" class="article-link">Le ministre des Affaires étrangères néerlandais quitte le cabinet intérimaire en raison de la politique d&#39;Israël sur Gaza et la Cisjordanie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sen.svg" alt="Sénégal" title="Sénégal" class="flag-icon">
+                            <a href="https://www.senenews.com/category/actualites/international" target="_blank" class="article-link">L&#39;ONU déclare officiellement l&#39;état de famine à Gaza le vendredi 21 août 2025</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/guy.svg" alt="Guyana" title="Guyana" class="flag-icon">
+                            <a href="https://www.kaieteurnewsonline.com/category/news/world-news/" target="_blank" class="article-link">Israël utilise la famine comme arme de guerre ; l&#39;ONU déclare la famine à Gaza alors que au moins 65 personnes ont été tuées</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mex.svg" alt="Mexique" title="Mexique" class="flag-icon">
+                            <a href="https://www.jornada.com.mx/categoria/mundo" target="_blank" class="article-link">Israël doit lever le blocus humanitaire après que l&#39;ONU a déclaré la famine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/are.svg" alt="Émirats arabes unis" title="Émirats arabes unis" class="flag-icon">
+                            <a href="https://www.thenationalnews.com/international" target="_blank" class="article-link">L&#39;envoy de l&#39;ONU pour la Palestine appelle à une force internationale pour arrêter l&#39;offensive à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/are.svg" alt="Émirats arabes unis" title="Émirats arabes unis" class="flag-icon">
+                            <a href="https://www.thenationalnews.com/international" target="_blank" class="article-link">L&#39;ONU déclare la famine à Gaza dans un contexte de conflit croissant</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/esp.svg" alt="Espagne" title="Espagne" class="flag-icon">
+                            <a href="https://elpais.com/internacional/" target="_blank" class="article-link">La ville de Gaza entre officiellement en famine à la veille de l&#39;invasion de l&#39;armée israélienne</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/isl.svg" alt="Islande" title="Islande" class="flag-icon">
+                            <a href="https://www.mbl.is/frettir/erlent/" target="_blank" class="article-link">Famine confirmée à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/isl.svg" alt="Islande" title="Islande" class="flag-icon">
+                            <a href="https://www.frettabladid.is/frettir/" target="_blank" class="article-link">Déclarer l&#39;urgence de la faim à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tur.svg" alt="Turquie" title="Turquie" class="flag-icon">
+                            <a href="http://www.hurriyet.com.tr/dunya/" target="_blank" class="article-link">L&#39;ONU déclare officiellement la famine à Gaza : 132 000 enfants en danger</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tur.svg" alt="Turquie" title="Turquie" class="flag-icon">
+                            <a href="http://www.milliyet.com.tr/dunya/" target="_blank" class="article-link">Le Secrétaire général de l&#39;ONU qualifie la famine à Gaza de catastrophe humaine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hrv.svg" alt="Croatie" title="Croatie" class="flag-icon">
+                            <a href="https://www.vecernji.hr/vijesti/svijet" target="_blank" class="article-link">Israël et les États-Unis négocient avec la Libye sur la relocalisation des Palestiniens de Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sau.svg" alt="Arabie Saoudite" title="Arabie Saoudite" class="flag-icon">
+                            <a href="https://saudigazette.com.sa/World" target="_blank" class="article-link">Famine confirmée à Gaza, selon une initiative soutenue par l&#39;ONU</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gha.svg" alt="Ghana" title="Ghana" class="flag-icon">
+                            <a href="https://www.modernghana.com/ghanahome/world/" target="_blank" class="article-link">L&#39;ONU déclare la famine à Gaza, la première jamais enregistrée au Moyen-Orient</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irn.svg" alt="Iran" title="Iran" class="flag-icon">
+                            <a href="https://ifpnews.com/category/news/world/" target="_blank" class="article-link">Famine officiellement déclarée dans la bande de Gaza par le moniteur mondial de la faim soutenu par l&#39;ONU</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nld.svg" alt="Pays-Bas" title="Pays-Bas" class="flag-icon">
+                            <a href="https://www.telegraaf.nl/nieuws/buitenland" target="_blank" class="article-link">Israël corrige Trump : &#34;Aucun otage supplémentaire n&#39;est décédé&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pol.svg" alt="Pologne" title="Pologne" class="flag-icon">
+                            <a href="https://wyborcza.pl/0,0.html?disableRedirects=true" target="_blank" class="article-link">Les experts de l&#39;ONU reconnaissent la famine dans la ville de Gaza pour la première fois</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vat.svg" alt="Saint-Siège" title="Saint-Siège" class="flag-icon">
+                            <a href="https://www.vaticannews.va/it/mondo.html" target="_blank" class="article-link">Nouvelles raids sur la ville de Gaza, accuse l&#39;ONU : &#34;La famine est entièrement causée par l&#39;homme&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vat.svg" alt="Saint-Siège" title="Saint-Siège" class="flag-icon">
+                            <a href="https://www.vaticannews.va/it/mondo.html" target="_blank" class="article-link">Opérations militaires à Gaza en cours. L&#39;ONU dénonce la famine causée par Israël</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/afg.svg" alt="Afghanistan" title="Afghanistan" class="flag-icon">
+                            <a href="https://tolonews.com/world" target="_blank" class="article-link">Le Moniteur mondial déclare la ville de Gaza en famine alors que la faim s&#39;aggrave</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dza.svg" alt="Algérie" title="Algérie" class="flag-icon">
+                            <a href="https://www.tsa-algerie.com/international/" target="_blank" class="article-link">Gaza : l&#39;ONU déclare officiellement l&#39;état de famine et accuse Israël</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dza.svg" alt="Algérie" title="Algérie" class="flag-icon">
+                            <a href="https://www.aps.dz/monde" target="_blank" class="article-link">Gaza : des maladies ordinaires deviennent mortelles en raison de la famine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dza.svg" alt="Algérie" title="Algérie" class="flag-icon">
+                            <a href="https://www.aps.dz/monde" target="_blank" class="article-link">Les organisations de l&#39;ONU avertissent de la situation catastrophique à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dza.svg" alt="Algérie" title="Algérie" class="flag-icon">
+                            <a href="https://www.aps.dz/monde" target="_blank" class="article-link">Famine à Gaza : le Secrétaire général de l&#39;ONU la qualifie de catastrophe humaine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aus.svg" alt="Australie" title="Australie" class="flag-icon">
+                            <a href="https://www.smh.com.au/world" target="_blank" class="article-link">Macron riposte à Netanyahu alors qu&#39;Israël prépare une attaque contre Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aus.svg" alt="Australie" title="Australie" class="flag-icon">
+                            <a href="https://www.abc.net.au/news/world" target="_blank" class="article-link">Famine officiellement déclarée à Gaza pour la première fois par un groupe soutenu par l&#39;ONU</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cze.svg" alt="République tchèque" title="République tchèque" class="flag-icon">
+                            <a href="https://www.idnes.cz/zpravy/zahranicni" target="_blank" class="article-link">L&#39;ONU déclare la famine dans la bande de Gaza ; Israël nie cette affirmation</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fra.svg" alt="France" title="France" class="flag-icon">
+                            <a href="https://www.lemonde.fr/international/" target="_blank" class="article-link">L&#39;ONU déclare la famine à Gaza, tandis qu&#39;Israël dénonce une campagne antisémite orchestrée</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mus.svg" alt="Maurice" title="Maurice" class="flag-icon">
+                            <a href="https://lexpress.mu/international" target="_blank" class="article-link">L&#39;ONU déclare officiellement l&#39;état de famine à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nzl.svg" alt="Nouvelle-Zélande" title="Nouvelle-Zélande" class="flag-icon">
+                            <a href="https://www.rnz.co.nz/news/world" target="_blank" class="article-link">Save the Children NZ appelle à la fin du blocus de Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nzl.svg" alt="Nouvelle-Zélande" title="Nouvelle-Zélande" class="flag-icon">
+                            <a href="https://www.rnz.co.nz/news/world" target="_blank" class="article-link">Famine officiellement déclarée à Gaza pour la première fois</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/usa.svg" alt="États-Unis" title="États-Unis" class="flag-icon">
+                            <a href="https://edition.cnn.com/world" target="_blank" class="article-link">Ce à quoi ressemble le blocus de Gaza à travers les yeux des conducteurs de camions égyptiens et des travailleurs humanitaires</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/yem.svg" alt="Yémen" title="Yémen" class="flag-icon">
+                            <a href="https://www.ypagency.net/" target="_blank" class="article-link">Un responsable de l&#39;ONU appelle à des mesures urgentes concernant la famine à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/yem.svg" alt="Yémen" title="Yémen" class="flag-icon">
+                            <a href="https://www.saba.ye" target="_blank" class="article-link">La déclaration de famine de l&#39;ONU à Gaza confirme les avertissements précédents</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dom.svg" alt="République dominicaine" title="République dominicaine" class="flag-icon">
+                            <a href="https://www.diariolibre.com/mundo" target="_blank" class="article-link">L&#39;ONU Déclare un État de Famine à Gaza, Netanyahu le Dénonce comme une &#34;Mensonge&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/civ.svg" alt="Côte d&#39;Ivoire" title="Côte d&#39;Ivoire" class="flag-icon">
+                            <a href="https://www.aip.ci/category/international/" target="_blank" class="article-link">L&#39;Organisation des Nations Unies Déclare Officiellement la Famine à Gaza, une Première dans la Région</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pan.svg" alt="Panama" title="Panama" class="flag-icon">
+                            <a href="https://www.laestrella.com.pa/mundo" target="_blank" class="article-link">L&#39;ONU Déclare la Famine à Gaza Malgré la Montée des Tensions avec Israël</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/syr.svg" alt="Syrie" title="Syrie" class="flag-icon">
+                            <a href="https://sana.sy/en/?cat=3" target="_blank" class="article-link">Mansour : Un million de Palestiniens à Gaza font face à une menace existentielle pour leur vie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/syr.svg" alt="Syrie" title="Syrie" class="flag-icon">
+                            <a href="https://sana.sy/en/?cat=3" target="_blank" class="article-link">La Ligue Islamique Mondiale appelle à une action immédiate pour arrêter la famine à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/syr.svg" alt="Syrie" title="Syrie" class="flag-icon">
+                            <a href="https://sana.sy/en/?cat=3" target="_blank" class="article-link">Le nombre de morts atteint 62 263 depuis le début de l&#39;agression israélienne à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/uzb.svg" alt="Ouzbékistan" title="Ouzbékistan" class="flag-icon">
+                            <a href="https://www.gazeta.uz/ru/world/" target="_blank" class="article-link">Les Organisations Humanitaires Confirment Officiellement la Famine dans la Province de Gaza</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #7279e5; padding: 8px 16px; border-radius: 4px;">Refus de la famine par Israël et insistance sur la sécurité et la nécessité militaire</h3>
+        <p class="cluster-description">Ce cluster regroupe des pays et des sources alignés ou sympathisants avec la position officielle d&#39;Israël. Ils nient catégoriquement l&#39;existence de famine à Gaza, qualifiant les déclarations de l&#39;ONU et les rapports humanitaires de fausses, manipulées ou de propagande. Israël et ses alliés insistent sur leur obligation de protéger la sécurité nationale et affirment que les opérations militaires ciblent les militants, non les civils. Ils rejettent les accusations d&#39;utiliser la famine comme arme et présentent le Hamas comme responsable des souffrances, tandis que certains mettent en avant des efforts diplomatiques en cours ou planifiés pour des cessez-le-feu et des négociations pour les otages.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden" style="padding-bottom: 15px;">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tls.svg" alt="Timor oriental" title="Timor oriental" class="flag-icon">
+                            <a href="https://www.noticiasaominuto.com/mundo" target="_blank" class="article-link">Israël nie la famine alors que des habitants de Gaza rapportent de graves pénuries alimentaires</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/arg.svg" alt="Argentine" title="Argentine" class="flag-icon">
+                            <a href="https://www.lanacion.com.ar/el-mundo" target="_blank" class="article-link">Un officiel de l&#39;ONU déclare officiellement la famine dans le nord de Gaza ; Netanyahu la dénonce comme un &#34;mensonge flagrant&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nam.svg" alt="Namibie" title="Namibie" class="flag-icon">
+                            <a href="https://neweralive.na/category/international/" target="_blank" class="article-link">L&#39;offensive israélienne à Gaza est &#34;intolérable&#34; - Croix-Rouge</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dnk.svg" alt="Danemark" title="Danemark" class="flag-icon">
+                            <a href="https://nyheder.tv2.dk/udland" target="_blank" class="article-link">Israël nie les allégations de famine, les qualifiant de &#34;totalement grotesques&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/deu.svg" alt="Allemagne" title="Allemagne" class="flag-icon">
+                            <a href="https://www.welt.de/politik/ausland/" target="_blank" class="article-link">L&#39;ONU déclare la famine dans la région de Gaza au milieu du conflit avec Israël</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pak.svg" alt="Pakistan" title="Pakistan" class="flag-icon">
+                            <a href="https://www.dawn.com/world" target="_blank" class="article-link">Les attaques israéliennes à Gaza tuent au moins 24 Palestiniens aujourd&#39;hui</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/prt.svg" alt="Portugal" title="Portugal" class="flag-icon">
+                            <a href="https://www.publico.pt/mundo" target="_blank" class="article-link">L&#39;ONU déclare officiellement la famine à Gaza au milieu de la misère et de morts évitables</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/prt.svg" alt="Portugal" title="Portugal" class="flag-icon">
+                            <a href="https://expresso.pt/" target="_blank" class="article-link">L&#39;ambassadeur d&#39;Israël au Portugal rejette le rapport de l&#39;UNRWA affirmant la famine à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bel.svg" alt="Belgique" title="Belgique" class="flag-icon">
+                            <a href="https://www.lalibre.be/international" target="_blank" class="article-link">Plus de huit personnes sur dix tuées à Gaza sont des civils</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bol.svg" alt="Bolivie" title="Bolivie" class="flag-icon">
+                            <a href="https://eldeber.com.bo/seccion/mundo/" target="_blank" class="article-link">La faim se répand à Gaza alors qu&#39;Israël se prépare à attaquer la plus grande ville de la bande</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cpv.svg" alt="Cap-Vert" title="Cap-Vert" class="flag-icon">
+                            <a href="https://expressodasilhas.cv/mundo" target="_blank" class="article-link">Le ministre israélien menace de détruire la ville de Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kos.svg" alt="KOS" title="KOS" class="flag-icon">
+                            <a href="https://www.rtklive.com/sq/news-category.php?CatID=10" target="_blank" class="article-link">L&#39;ONU déclare la famine à Gaza ; Netanyahu la qualifie de &#34;pure mensonge&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kos.svg" alt="KOS" title="KOS" class="flag-icon">
+                            <a href="https://www.rtklive.com/sq/news-category.php?CatID=10" target="_blank" class="article-link">Chef de l&#39;ONU : Gaza connaît une faim catastrophique</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lux.svg" alt="Luxembourg" title="Luxembourg" class="flag-icon">
+                            <a href="https://www.tageblatt.lu/headlines/" target="_blank" class="article-link">L&#39;ONU déclare une crise de faim officielle à Gaza ; Israël rejette les allégations</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bhr.svg" alt="Bahreïn" title="Bahreïn" class="flag-icon">
+                            <a href="https://akhbar-alkhaleej.com/news/section/WORL" target="_blank" class="article-link">L&#39;Organisation des Nations Unies déclare officiellement la famine à Gaza ; Guterres : La catastrophe ne peut pas continuer sans punition</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/isr.svg" alt="Israël" title="Israël" class="flag-icon">
+                            <a href="https://www.haaretz.com/world-news" target="_blank" class="article-link">Le ministre des Affaires étrangères néerlandais quitte le cabinet de transition à cause de la politique d&#39;Israël sur Gaza et la Cisjordanie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mlt.svg" alt="Malte" title="Malte" class="flag-icon">
+                            <a href="https://www.maltatoday.com.mt/news/world/" target="_blank" class="article-link">Israël mobilise 60 000 réservistes avant l&#39;offensive sur la ville de Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sxm.svg" alt="SXM" title="SXM" class="flag-icon">
+                            <a href="https://www.thedailyherald.sx/" target="_blank" class="article-link">Netanyahu dit qu&#39;Israël reprendra les négociations avec Gaza pour mettre fin à la guerre, libérer les otages</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/are.svg" alt="Émirats arabes unis" title="Émirats arabes unis" class="flag-icon">
+                            <a href="https://www.thenationalnews.com/international" target="_blank" class="article-link">L&#39;envoyé de l&#39;ONU pour la Palestine appelle à une force internationale pour arrêter l&#39;offensive à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/are.svg" alt="Émirats arabes unis" title="Émirats arabes unis" class="flag-icon">
+                            <a href="https://www.thenationalnews.com/international" target="_blank" class="article-link">Israël menace de reprendre Gaza avec ou sans cessefire de Hamas</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/esp.svg" alt="Espagne" title="Espagne" class="flag-icon">
+                            <a href="https://www.elmundo.es/internacional.html" target="_blank" class="article-link">Netanyahu met en garde contre l&#39;apaisement du Hamas alors que l&#39;ONU déclare officiellement la famine à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gbr.svg" alt="Royaume-Uni" title="Royaume-Uni" class="flag-icon">
+                            <a href="https://news.sky.com/world" target="_blank" class="article-link">Les plans israéliens d&#39;occuper Gaza avancent - alors que des enfants parmi 19 Palestiniens tués depuis l&#39;aube</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gbr.svg" alt="Royaume-Uni" title="Royaume-Uni" class="flag-icon">
+                            <a href="https://news.sky.com/world" target="_blank" class="article-link">Israël va entamer des négociations pour libérer les otages - mais l&#39;offensive sur Gaza doit continuer malgré l&#39;indignation</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/chn.svg" alt="Chine" title="Chine" class="flag-icon">
+                            <a href="https://www.chinadaily.com.cn/world" target="_blank" class="article-link">Israël exhorté à abandonner le plan pour Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lbn.svg" alt="Liban" title="Liban" class="flag-icon">
+                            <a href="https://www.lorientlejour.com/rubrique/7-moyen-orient-et-monde" target="_blank" class="article-link">L&#39;ONU déclare la famine à Gaza, Netanyahu dénonce un &#34;mensonge&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lie.svg" alt="Liechtenstein" title="Liechtenstein" class="flag-icon">
+                            <a href="https://www.vaterland.li/" target="_blank" class="article-link">Pétition pour Gaza : 547 personnes disent que le gouvernement en fait trop peu</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pry.svg" alt="Paraguay" title="Paraguay" class="flag-icon">
+                            <a href="https://www.ultimahora.com/noticias/mundo/" target="_blank" class="article-link">L&#39;ONU déclare l&#39;état de famine à Gaza, Israël nie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svn.svg" alt="Slovénie" title="Slovénie" class="flag-icon">
+                            <a href="https://www.delo.si/novice/svet" target="_blank" class="article-link">Famine officiellement déclarée la plus froide à Gaza et dans les régions environnantes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/can.svg" alt="Canada" title="Canada" class="flag-icon">
+                            <a href="https://www.theglobeandmail.com/world/" target="_blank" class="article-link">Netanyahu affirme qu&#39;Israël commencera des négociations de cessez-le-feu à Gaza pour mettre fin à la guerre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ca-qc.svg" alt="CA-QC" title="CA-QC" class="flag-icon">
+                            <a href="https://www.journaldequebec.com/actualite/monde" target="_blank" class="article-link">L&#39;ONU déclare la première famine au Moyen-Orient à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nld.svg" alt="Pays-Bas" title="Pays-Bas" class="flag-icon">
+                            <a href="https://www.telegraaf.nl/nieuws/buitenland" target="_blank" class="article-link">Israël corrige Trump : « Aucun otage supplémentaire n&#39;est mort »</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nld.svg" alt="Pays-Bas" title="Pays-Bas" class="flag-icon">
+                            <a href="https://nos.nl/" target="_blank" class="article-link">Les données internes de l&#39;armée israélienne révèlent que plus de 80 % des victimes à Gaza sont des civils</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nld.svg" alt="Pays-Bas" title="Pays-Bas" class="flag-icon">
+                            <a href="https://nos.nl/" target="_blank" class="article-link">La majorité du parlement israélien appelle à la destruction du Hamas après le débat sur Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/qat.svg" alt="Qatar" title="Qatar" class="flag-icon">
+                            <a href="https://dohanews.co/category/news/" target="_blank" class="article-link">Les États-Unis licencient un officiel pour ses condoléances aux journalistes de Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/qat.svg" alt="Qatar" title="Qatar" class="flag-icon">
+                            <a href="https://www.al-watan.com/%D8%B9%D8%B1%D8%A8%D9%8A-%D9%88%D8%AF%D9%88%D9%84%D9%8A" target="_blank" class="article-link">Un ministre israélien menace d&#39;anéantir Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/alb.svg" alt="Albanie" title="Albanie" class="flag-icon">
+                            <a href="https://www.panorama.com.al/category/bota-rajoni/" target="_blank" class="article-link">Israël rejette l&#39;évaluation de l&#39;IPC sur la faim dans certaines parties de Gaza, Netanyahu : Un mensonge complet</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lka.svg" alt="Sri Lanka" title="Sri Lanka" class="flag-icon">
+                            <a href="https://www.dailymirror.lk/world-news/213" target="_blank" class="article-link">Faciliter l&#39;occupation : la prise de Gaza par Israël et la complicité des États-Unis</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pan.svg" alt="Panama" title="Panama" class="flag-icon">
+                            <a href="https://www.laestrella.com.pa/mundo" target="_blank" class="article-link">L&#39;ONU déclare la famine à Gaza alors que les tensions avec Israël montent</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/grl.svg" alt="GRL" title="GRL" class="flag-icon">
+                            <a href="https://sermitsiaq.ag/" target="_blank" class="article-link">Netanyahu qualifie le rapport sur la famine de mensonge direct</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/guy.svg" alt="Guyana" title="Guyana" class="flag-icon">
+                            <a href="https://www.stabroeknews.com/news/world/" target="_blank" class="article-link">La ville de Gaza officiellement en famine, la faim se répand, selon le monitor mondial de la faim</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e572b8; padding: 8px 16px; border-radius: 4px;">Pays prônant le cessez-le-feu, les négociations et la résolution diplomatique face à l&#39;escalade</h3>
+        <p class="cluster-description">Ce point de vue inclut des pays axés sur les efforts diplomatiques et de maintien de la paix, appelant à la cessation des hostilités et à la promotion du dialogue entre Israël et les factions palestiniennes. Tout en reconnaissant la crise humanitaire, ils mettent l&#39;accent sur les négociations pour des cessez-le-feu, la libération des otages et la désescalade du conflit comme des approches nécessaires. Certains de ces pays jouent un rôle de médiation et soulignent la complexité de concilier les préoccupations de sécurité avec les impératifs humanitaires.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden" style="padding-bottom: 15px;">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jor.svg" alt="Jordanie" title="Jordanie" class="flag-icon">
+                            <a href="https://www.jordannews.jo/Category/18/Global" target="_blank" class="article-link">Les médias hébreux rapportent une possible délégation israélienne à Doha pour des négociations sur Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jor.svg" alt="Jordanie" title="Jordanie" class="flag-icon">
+                            <a href="https://www.jordannews.jo/Category/18/Global" target="_blank" class="article-link">Le bilan des morts à Gaza atteint 62 192 au milieu de l&#39;agression israélienne</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sxm.svg" alt="SXM" title="SXM" class="flag-icon">
+                            <a href="https://www.thedailyherald.sx/" target="_blank" class="article-link">Netanyahu déclare qu&#39;Israël reprendra les négociations sur Gaza pour mettre fin à la guerre, libérer les otages</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/can.svg" alt="Canada" title="Canada" class="flag-icon">
+                            <a href="https://www.theglobeandmail.com/world/" target="_blank" class="article-link">Netanyahu dit qu&#39;Israël commencera les négociations de cessez-le-feu à Gaza pour mettre fin à la guerre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fji.svg" alt="Fidji" title="Fidji" class="flag-icon">
+                            <a href="https://www.fijitimes.com/category/world/" target="_blank" class="article-link">Netanyahu affirme qu&#39;Israël entamera des négociations de cessez-le-feu à Gaza pour mettre fin à la guerre, libérer les otages</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mrt.svg" alt="Mauritanie" title="Mauritanie" class="flag-icon">
+                            <a href="https://cridem.org/" target="_blank" class="article-link">L&#39;ONU déclare officiellement l&#39;état de famine à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ca-qc.svg" alt="CA-QC" title="CA-QC" class="flag-icon">
+                            <a href="https://www.journaldequebec.com/actualite/monde" target="_blank" class="article-link">L&#39;ONU déclare la première famine au Moyen-Orient à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nld.svg" alt="Pays-Bas" title="Pays-Bas" class="flag-icon">
+                            <a href="https://www.telegraaf.nl/nieuws/buitenland" target="_blank" class="article-link">Israël corrige Trump : &#34;Aucun otage supplémentaire n&#39;est décédé&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/afg.svg" alt="Afghanistan" title="Afghanistan" class="flag-icon">
+                            <a href="https://tolonews.com/world" target="_blank" class="article-link">Israël commence une occupation à grande échelle de Gaza, provoquant une alarme mondiale</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/afg.svg" alt="Afghanistan" title="Afghanistan" class="flag-icon">
+                            <a href="https://tolonews.com/world" target="_blank" class="article-link">Israël étudie la réponse du Hamas à la proposition de cessez-le-feu à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aus.svg" alt="Australie" title="Australie" class="flag-icon">
+                            <a href="https://www.smh.com.au/world" target="_blank" class="article-link">Macron riposte à Netanyahu alors qu&#39;Israël prépare une attaque contre Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cze.svg" alt="République tchèque" title="République tchèque" class="flag-icon">
+                            <a href="https://www.lidovky.cz/svet" target="_blank" class="article-link">Netanyahu veut négocier la fin de la guerre. L&#39;armée israélienne est déjà en périphérie de Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pri.svg" alt="PRI" title="PRI" class="flag-icon">
+                            <a href="https://www.elnuevodia.com/noticias/mundo/" target="_blank" class="article-link">Israël mobilise 60 000 réservistes en prévision d&#39;une opération élargie à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/qat.svg" alt="Qatar" title="Qatar" class="flag-icon">
+                            <a href="https://dohanews.co/category/news/" target="_blank" class="article-link">Les États-Unis licencient un officiel pour ses condoléances aux journalistes de Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/qat.svg" alt="Qatar" title="Qatar" class="flag-icon">
+                            <a href="https://www.al-watan.com/%D8%B9%D8%B1%D8%A8%D9%8A-%D9%88%D8%AF%D9%88%D9%84%D9%8A" target="_blank" class="article-link">L&#39;OCI tiendra une réunion d&#39;urgence pour aborder l&#39;occupation de Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/qat.svg" alt="Qatar" title="Qatar" class="flag-icon">
+                            <a href="https://www.al-watan.com/%D8%B9%D8%B1%D8%A8%D9%8A-%D9%88%D8%AF%D9%88%D9%84%D9%8A" target="_blank" class="article-link">L&#39;Égypte condamne l&#39;escalade israélienne en Cisjordanie et à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/qat.svg" alt="Qatar" title="Qatar" class="flag-icon">
+                            <a href="https://www.al-watan.com/%D8%B9%D8%B1%D8%A8%D9%8A-%D9%88%D8%AF%D9%88%D9%84%D9%8A" target="_blank" class="article-link">L&#39;armée israélienne accélère ses plans d&#39;invasion de Gaza</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Solidarité régionale et islamique avec Gaza et condamnation des actions israéliennes</h3>
+        <p class="cluster-description">Les pays du monde islamique et leurs alliés régionaux expriment une forte solidarité avec Gaza, condamnant les actions militaires israéliennes comme disproportionnées et constituant des crimes contre l&#39;humanité, y compris des accusations de génocide. Ils exigent la levée des blocus, l&#39;ouverture de corridors humanitaires et une intervention internationale pour soulager la famine et la souffrance. Ce groupe appelle à une réponse unifiée musulmane et internationale face à la crise, en soulignant la responsabilité collective et les droits de l&#39;homme.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden" style="padding-bottom: 15px;">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kwt.svg" alt="Koweït" title="Koweït" class="flag-icon">
+                            <a href="https://www.aljarida.com/%D8%AF%D9%88%D9%84%D9%8A%D8%A7%D8%AA" target="_blank" class="article-link">Le CCG appelle à une action internationale pour fournir une aide à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/omn.svg" alt="Oman" title="Oman" class="flag-icon">
+                            <a href="https://www.omanobserver.om/world" target="_blank" class="article-link">Hamas exige l&#39;ouverture des passages de Gaza après l&#39;alerte de famine de l&#39;ONU</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/omn.svg" alt="Oman" title="Oman" class="flag-icon">
+                            <a href="https://www.omanobserver.om/world" target="_blank" class="article-link">Famine à Gaza, causée par Israël</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bhr.svg" alt="Bahreïn" title="Bahreïn" class="flag-icon">
+                            <a href="https://www.alayam.com/online/international" target="_blank" class="article-link">Arabie Saoudite : Déclarer la famine à Gaza est un crime de génocide nécessitant une intervention internationale urgente</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/are.svg" alt="Émirats arabes unis" title="Émirats arabes unis" class="flag-icon">
+                            <a href="https://www.thenationalnews.com/international" target="_blank" class="article-link">L&#39;ONU déclare la famine à Gaza dans un contexte de conflit croissant</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dza.svg" alt="Algérie" title="Algérie" class="flag-icon">
+                            <a href="https://www.aps.dz/monde" target="_blank" class="article-link">Les organisations de l&#39;ONU avertissent de la situation catastrophique à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aus.svg" alt="Australie" title="Australie" class="flag-icon">
+                            <a href="https://www.smh.com.au/world" target="_blank" class="article-link">Macron riposte à Netanyahu alors qu&#39;Israël prépare une attaque contre la ville de Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/qat.svg" alt="Qatar" title="Qatar" class="flag-icon">
+                            <a href="https://www.al-watan.com/%D8%B9%D8%B1%D8%A8%D9%8A-%D9%88%D8%AF%D9%88%D9%84%D9%8A" target="_blank" class="article-link">L&#39;OCI tiendra une réunion d&#39;urgence pour aborder l&#39;occupation de Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/qat.svg" alt="Qatar" title="Qatar" class="flag-icon">
+                            <a href="https://www.al-watan.com/%D8%B9%D8%B1%D8%A8%D9%8A-%D9%88%D8%AF%D9%88%D9%84%D9%8A" target="_blank" class="article-link">L&#39;Égypte condamne l&#39;escalade israélienne en Cisjordanie et à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/yem.svg" alt="Yémen" title="Yémen" class="flag-icon">
+                            <a href="https://www.ypagency.net/" target="_blank" class="article-link">Un responsable de l&#39;ONU appelle à des mesures urgentes concernant la famine à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/yem.svg" alt="Yémen" title="Yémen" class="flag-icon">
+                            <a href="https://www.ypagency.net/" target="_blank" class="article-link">Organisation Internationale des Droits de l&#39;Homme Confirme le Génocide contre les Palestiniens à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/yem.svg" alt="Yémen" title="Yémen" class="flag-icon">
+                            <a href="https://www.saba.ye" target="_blank" class="article-link">Déclaration de Famine de l&#39;ONU à Gaza Confirme les Avertissements Précédents</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/syr.svg" alt="Syrie" title="Syrie" class="flag-icon">
+                            <a href="https://sana.sy/en/?cat=3" target="_blank" class="article-link">Ligue Musulmane Mondiale appelle à une action immédiate pour arrêter la famine à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/syr.svg" alt="Syrie" title="Syrie" class="flag-icon">
+                            <a href="https://sana.sy/en/?cat=3" target="_blank" class="article-link">Le nombre de morts atteint 62 263 depuis le début de l&#39;agression israélienne à Gaza</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Soutien humanitaire et critique du blocus et des actions militaires isra\u00e9liennes",
+                color: "#72e5ac",
+                data: [ {"id": "AE"},  {"id": "AF"},  {"id": "AU"},  {"id": "BH"},  {"id": "BR"},  {"id": "CI"},  {"id": "CR"},  {"id": "CZ"},  {"id": "DO"},  {"id": "DZ"},  {"id": "ES"},  {"id": "FR"},  {"id": "GH"},  {"id": "GY"},  {"id": "HR"},  {"id": "IE"},  {"id": "IL"},  {"id": "IM"},  {"id": "IR"},  {"id": "IS"},  {"id": "KW"},  {"id": "MA"},  {"id": "MU"},  {"id": "MX"},  {"id": "NL"},  {"id": "NZ"},  {"id": "PA"},  {"id": "PL"},  {"id": "PS"},  {"id": "SA"},  {"id": "SN"},  {"id": "SY"},  {"id": "TR"},  {"id": "US"},  {"id": "UZ"},  {"id": "VA"},  {"id": "YE"} ]
+            },
+        
+            {
+                name: "Refus de la famine par Isra\u00ebl et insistance sur la s\u00e9curit\u00e9 et la n\u00e9cessit\u00e9 militaire",
+                color: "#7279e5",
+                data: [ {"id": ""},  {"id": "AE"},  {"id": "AL"},  {"id": "AR"},  {"id": "BE"},  {"id": "BH"},  {"id": "BO"},  {"id": "CA"},  {"id": "CN"},  {"id": "CV"},  {"id": "DE"},  {"id": "DK"},  {"id": "ES"},  {"id": "GB"},  {"id": "GL"},  {"id": "GY"},  {"id": "IL"},  {"id": "LB"},  {"id": "LI"},  {"id": "LK"},  {"id": "LU"},  {"id": "MT"},  {"id": "NA"},  {"id": "NL"},  {"id": "PA"},  {"id": "PK"},  {"id": "PT"},  {"id": "PY"},  {"id": "QA"},  {"id": "SI"},  {"id": "SX"},  {"id": "TL"},  {"id": "XK"} ]
+            },
+        
+            {
+                name: "Pays pr\u00f4nant le cessez-le-feu, les n\u00e9gociations et la r\u00e9solution diplomatique face \u00e0 l\u0027escalade",
+                color: "#e572b8",
+                data: [ {"id": ""},  {"id": "AF"},  {"id": "AU"},  {"id": "CA"},  {"id": "CZ"},  {"id": "FJ"},  {"id": "JO"},  {"id": "MR"},  {"id": "NL"},  {"id": "PR"},  {"id": "QA"},  {"id": "SX"} ]
+            },
+        
+            {
+                name: "Solidarit\u00e9 r\u00e9gionale et islamique avec Gaza et condamnation des actions isra\u00e9liennes",
+                color: "#e5d272",
+                data: [ {"id": "AE"},  {"id": "AU"},  {"id": "BH"},  {"id": "DZ"},  {"id": "KW"},  {"id": "OM"},  {"id": "QA"},  {"id": "SY"},  {"id": "YE"} ]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Masquer les sources ▲' : 'Montrer les sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="close-menu text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+      Close <i class="fas fa-long-arrow-alt-left"></i>
+    </button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li class="active-m">
+               <a href="/">Accueil </a>
+            </li>
+            <li>
+              <a href="/en/about.html">A Propos </a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
