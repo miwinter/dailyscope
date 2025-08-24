@@ -1,0 +1,556 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Perspectives mondiales sur les catastrophes naturelles et les impacts climatiques</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/fr', '/en');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>                 
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Perspectives mondiales sur les catastrophes naturelles et les impacts climatiques</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-08-24</span> • <span>32 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/assets/images/dailyscope-square-2.jpg" alt="Perspectives mondiales sur les catastrophes naturelles et les impacts climatiques" class="main-image">
+                <p style="margin:0">Les articles de presse présentent un large éventail de catastrophes naturelles, notamment des tremblements de terre, des inondations, des ouragans, des incendies de forêt, des vagues de chaleur et des typhons, affectant différentes régions du monde. De nombreux pays rapportent des événements météorologiques extrêmes entraînant des évacuations, des pertes humaines et des appels à une meilleure préparation aux catastrophes et à la coopération internationale. Alors que certains nations mettent l&#39;accent sur la réponse d&#39;urgence immédiate et les efforts de sauvetage, d&#39;autres soulignent l&#39;influence croissante du changement climatique sur la fréquence et l&#39;intensité de ces catastrophes. De plus, il y a des appels à augmenter le financement climatique, à renforcer la coopération régionale et à améliorer les stratégies d&#39;atténuation pour renforcer la résilience face aux risques naturels futurs.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div class="key-points">
+        <h2>Les pays qui en parlent</h2>
+    </div>
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Changement climatique et appels urgents à l&#39;adaptation et au financement</h3>
+        <p class="cluster-description">Les pays de ce groupe se concentrent sur les implications à long terme du changement climatique en tant que moteur principal de l&#39;augmentation de l&#39;intensité et de la fréquence des catastrophes naturelles telles que les ouragans, les vagues de chaleur et les incendies de forêt. Ils soulignent la nécessité urgente d&#39;une coopération internationale, d&#39;un financement climatique accru et d&#39;accords mondiaux pour soutenir les nations vulnérables, en particulier les petits États insulaires et les régions gravement touchées par les changements environnementaux. Ces points de vue reflètent une position proactive priorisant l&#39;atténuation, l&#39;adaptation et la responsabilité mondiale pour faire face aux risques futurs.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/atg.svg" alt="Antigua-et-Barbuda" title="Antigua-et-Barbuda" class="flag-icon">
+                            <a href="https://antiguaobserver.com/category/international_news/" target="_blank" class="article-link">Un ouragan sans précédent dans les Caraïbes met en lumière le besoin urgent de financement climatique, selon le président de l&#39;AOSIS</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/chn.svg" alt="Chine" title="Chine" class="flag-icon">
+                            <a href="https://www.chinadaily.com.cn/world" target="_blank" class="article-link">Les incendies de forêt en Espagne signalent des risques climatiques croissants pour l&#39;Europe, avertit un expert</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lux.svg" alt="Luxembourg" title="Luxembourg" class="flag-icon">
+                            <a href="https://www.wort.lu/fr/international" target="_blank" class="article-link">Pourquoi les avions de Cargolux ne combattent-ils pas les incendies de forêt au Portugal ?</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mco.svg" alt="Monaco" title="Monaco" class="flag-icon">
+                            <a href="https://www.monacomatin.mc/" target="_blank" class="article-link">La récente vague de chaleur a été la plus intense jamais enregistrée</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fra.svg" alt="France" title="France" class="flag-icon">
+                            <a href="https://www.lefigaro.fr/international/" target="_blank" class="article-link">Espagne : La récente vague de chaleur a été la plus intense jamais enregistrée dans le pays</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72d7e5; padding: 8px 16px; border-radius: 4px;">Réponse d&#39;urgence immédiate et préparation à l&#39;évacuation en Asie</h3>
+        <p class="cluster-description">Ce groupe met l&#39;accent sur des plans d&#39;évacuation rapides et une gestion proactive des catastrophes en prévision des typhons et des intempéries sévères, soulignant les réponses coordonnées entre des pays voisins comme le Vietnam et la Chine. Leur perspective révèle une approche opérationnelle axée sur la protection des vies par des évacuations massives et la fermeture des villes, soulignant l&#39;importance d&#39;une action rapide face aux menaces naturelles imminentes. Ces pays illustrent une approche pragmatique centrée sur la minimisation des pertes humaines par la préparation et la communication transfrontalière.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sgp.svg" alt="Singapour" title="Singapour" class="flag-icon">
+                            <a href="https://www.straitstimes.com/global" target="_blank" class="article-link">Vietnam prévoit une évacuation massive, Sanya en Chine ferme ses portes alors que le typhon Kajiki s&#39;intensifie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sgp.svg" alt="Singapour" title="Singapour" class="flag-icon">
+                            <a href="https://www.straitstimes.com/global" target="_blank" class="article-link">Comment le centre humanitaire de l&#39;ASEAN a joué un rôle vital après le tremblement de terre en Myanmar</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tha.svg" alt="Thaïlande" title="Thaïlande" class="flag-icon">
+                            <a href="https://www.nationthailand.com/news/world" target="_blank" class="article-link">Vietnam prévoit une évacuation massive, Sanya en Chine ferme ses portes alors que le typhon Kajiki s&#39;intensifie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/omn.svg" alt="Oman" title="Oman" class="flag-icon">
+                            <a href="https://www.omanobserver.om/world" target="_blank" class="article-link">Vietnam prévoit une évacuation massive alors que le typhon Kajiki s&#39;intensifie, Sanya en Chine ferme ses portes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mys.svg" alt="Malaisie" title="Malaisie" class="flag-icon">
+                            <a href="https://www.malaymail.com/news/world" target="_blank" class="article-link">Vietnam prévoit une évacuation massive, Sanya en Chine ferme ses portes alors que le typhon Kajiki s&#39;intensifie</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #7290e5; padding: 8px 16px; border-radius: 4px;">Focus sur la crise des incendies de forêt et la coopération transfrontalière en Europe</h3>
+        <p class="cluster-description">Pays européens tels que l&#39;Espagne et le Portugal signalent des incendies de forêt graves avec des coûts humains et environnementaux importants, accompagnés d&#39;efforts de lutte contre l&#39;incendie en cours et de mesures législatives pour atténuer les risques futurs. Il y a une emphase claire sur la tragédie et l&#39;héroïsme liés à la lutte contre les incendies, ainsi que sur les questions internationales concernant le partage des ressources et le soutien aérien pour la lutte contre les incendies. Le point de vue reflète une préoccupation à la fois pour la gestion immédiate des dégâts et pour la nécessité d&#39;améliorer les cadres de collaboration et de prévention.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/brn.svg" alt="Brunei" title="Brunei" class="flag-icon">
+                            <a href="https://www.rtbnews.rtb.gov.bn/Lists/News%202018/Category_International.aspx" target="_blank" class="article-link">Pompiers blessé dans un incendie au Portugal alors que l&#39;équipe fuit un mur de feu</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mar.svg" alt="Maroc" title="Maroc" class="flag-icon">
+                            <a href="https://lematin.ma/monde" target="_blank" class="article-link">Espagne : La récente vague de chaleur a été la plus intense jamais enregistrée</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mar.svg" alt="Maroc" title="Maroc" class="flag-icon">
+                            <a href="https://lematin.ma/monde" target="_blank" class="article-link">Espagne : Les incendies de forêt sont sur le point d&#39;être maîtrisés (Protection civile)</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jor.svg" alt="Jordanie" title="Jordanie" class="flag-icon">
+                            <a href="https://www.jordantimes.com/news/world" target="_blank" class="article-link">Les incendies de forêt en Espagne presque vaincus — officiel</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/esp.svg" alt="Espagne" title="Espagne" class="flag-icon">
+                            <a href="https://elpais.com/internacional/" target="_blank" class="article-link">20 ans après l&#39;ouragan Katrina : héros, activistes du climat et musiciens se souviennent de la façon dont la catastrophe a changé leur vie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/isl.svg" alt="Islande" title="Islande" class="flag-icon">
+                            <a href="https://www.mbl.is/frettir/erlent/" target="_blank" class="article-link">La dernière vague de chaleur en Espagne est la plus intense jamais enregistrée</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lux.svg" alt="Luxembourg" title="Luxembourg" class="flag-icon">
+                            <a href="https://www.wort.lu/fr/international" target="_blank" class="article-link">Pourquoi les avions de Cargolux ne combattent-ils pas les incendies de forêt au Portugal ?</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mco.svg" alt="Monaco" title="Monaco" class="flag-icon">
+                            <a href="https://www.monacomatin.mc/" target="_blank" class="article-link">Amélioration de la situation des incendies de forêt en Espagne, un pompier meurt au Portugal</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cze.svg" alt="République tchèque" title="République tchèque" class="flag-icon">
+                            <a href="https://www.lidovky.cz/svet" target="_blank" class="article-link">Les incendies de forêt ravagent l&#39;Espagne et le Portugal, le nombre de victimes augmente</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dom.svg" alt="République dominicaine" title="République dominicaine" class="flag-icon">
+                            <a href="https://www.diariolibre.com/mundo" target="_blank" class="article-link">Le président du Portugal adopte une loi avec des mesures pour atténuer les effets des incendies de forêt</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #9b72e5; padding: 8px 16px; border-radius: 4px;">Inondations graves et tragédie humaine en Asie du Sud</h3>
+        <p class="cluster-description">Pays touchés par de fortes pluies de mousson et des inondations éclair en Asie du Sud mettent en évidence les coûts humains dévastateurs, les déplacements massifs et les mesures urgentes de secours et de sécurité. Cette perspective souligne la vulnérabilité des populations face aux inondations induites par le climat et les défis persistants dans la gestion et l&#39;atténuation de ces catastrophes fréquentes. L&#39;accent est mis sur la gestion des crises humanitaires et les systèmes d&#39;alerte pour prévenir de nouvelles victimes.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/brn.svg" alt="Brunei" title="Brunei" class="flag-icon">
+                            <a href="https://www.rtbnews.rtb.gov.bn/Lists/News%202018/Category_International.aspx" target="_blank" class="article-link">Inondations au Pakistan : les célébrations de mariage se sont transformées en 24 funérailles</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aus.svg" alt="Australie" title="Australie" class="flag-icon">
+                            <a href="https://www.smh.com.au/world" target="_blank" class="article-link">Inondations tuent plus de 360 personnes au Pakistan et en Inde</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/npl.svg" alt="Népal" title="Népal" class="flag-icon">
+                            <a href="https://ekantipur.com/world" target="_blank" class="article-link">Crise de la mousson : plus de 19 000 personnes évacuées en toute sécurité au Pakistan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/npl.svg" alt="Népal" title="Népal" class="flag-icon">
+                            <a href="https://thehimalayantimes.com/category/world/" target="_blank" class="article-link">Une semaine de fortes pluies et d&#39;inondations à travers le Pakistan fait 46 morts, dont 13 membres d&#39;une même famille</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e272e5; padding: 8px 16px; border-radius: 4px;">Surveillance de l&#39;activité sismique et gestion des risques régionaux</h3>
+        <p class="cluster-description">Ce groupe privilégie la surveillance de l&#39;activité sismique et la gestion des risques sismiques, décrivant des événements allant de séismes forts déclenchant des alertes au tsunami à des tremblements de terre causant peu de dégâts mais nécessitant une vigilance. Les pays mettent l&#39;accent sur la diffusion d&#39;alertes précoces, les évaluations d&#39;impact et l&#39;observation continue des répliques, reflétant une approche scientifique et prudente de la gestion des risques naturels.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cri.svg" alt="Costa Rica" title="Costa Rica" class="flag-icon">
+                            <a href="https://www.diarioextra.com/categoria/internacionales/" target="_blank" class="article-link">Alerte tsunami émise après un séisme de magnitude 7,5 frappe la côte chilienne</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aze.svg" alt="Azerbaïdjan" title="Azerbaïdjan" class="flag-icon">
+                            <a href="https://en.trend.az/world/" target="_blank" class="article-link">La Banque mondiale soutient les efforts d&#39;İstanbul pour faire face aux risques naturels</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pri.svg" alt="PRI" title="PRI" class="flag-icon">
+                            <a href="https://www.elnuevodia.com/noticias/mundo/" target="_blank" class="article-link">Séisme de magnitude 6,0 secoue le Guatemala et le Salvador</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pri.svg" alt="PRI" title="PRI" class="flag-icon">
+                            <a href="https://www.primerahora.com/noticias/mundo/" target="_blank" class="article-link">Un puissant tremblement de terre secoue l&#39;Argentine et le Chili</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e572a1; padding: 8px 16px; border-radius: 4px;">Sécurité des voyageurs et opérations de sauvetage face à des conditions météorologiques difficiles</h3>
+        <p class="cluster-description">Certains pays mettent l&#39;accent sur les conseils pour la sécurité des voyageurs et les récits d&#39;opérations de sauvetage dans un contexte de conditions météorologiques qui se détériorent rapidement, telles que tempêtes, brouillard soudain et dangers en montagne. Ce point de vue souligne l&#39;importance des avertissements publics, des réponses d&#39;urgence et de la réduction des risques pour les personnes prises dans des environnements dangereux. Ces articles montrent une attention aux responsabilités nationales dans la protection des citoyens et des voyageurs.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/smr.svg" alt="Saint-Marin" title="Saint-Marin" class="flag-icon">
+                            <a href="http://www.sanmarinortv.sm/news/attualita-c4" target="_blank" class="article-link">Mauvais temps sur le Gran Sasso, deux jeunes randonneurs de Saint-Marin sauvés</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/rou.svg" alt="Roumanie" title="Roumanie" class="flag-icon">
+                            <a href="https://adevarul.ro/news/eveniment/" target="_blank" class="article-link">Avertissement de voyage émis par le MFA roumain : inondations graves et météo extrême dans plusieurs régions d&#39;Italie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/blr.svg" alt="Biélorussie" title="Biélorussie" class="flag-icon">
+                            <a href="https://www.belta.by/" target="_blank" class="article-link">Quatre personnes sont mortes et onze ont été blessées dans les montagnes roumaines</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e58b72; padding: 8px 16px; border-radius: 4px;">Perspectives scientifiques et préparation stratégique aux risques urbains</h3>
+        <p class="cluster-description">Dans ce cluster, la recherche scientifique sur l&#39;activité volcanique et l&#39;aide financière pour la réduction des risques de catastrophes urbaines sont mises en avant. Ces points de vue soulignent l&#39;importance des avancées scientifiques pour la maîtrise des dangers et le rôle des institutions internationales telles que la Banque mondiale dans le renforcement de la résilience des villes. L&#39;approche combine innovation technique et collaboration institutionnelle comme moyens de réduire la vulnérabilité aux catastrophes.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tun.svg" alt="Tunisie" title="Tunisie" class="flag-icon">
+                            <a href="http://www.tunisiesoir.com/category/international/" target="_blank" class="article-link">A’Breathing’ Magma Cap Beneath Yellowstone Could Be Preventing a Catastrophic Eruption</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aze.svg" alt="Azerbaïdjan" title="Azerbaïdjan" class="flag-icon">
+                            <a href="https://en.trend.az/world/" target="_blank" class="article-link">World Bank supports Istanbul’s efforts to tackle natural hazards</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Réflexion et Commémoration des Catastrophes Historiques Majeures</h3>
+        <p class="cluster-description">Cette perspective revient sur les grandes catastrophes naturelles passées, en mettant l&#39;accent sur les impacts sociaux et culturels à long terme, la résilience des communautés, ainsi que les rôles des activistes et des leaders dans la récupération. Elle reflète sur les histoires humaines derrière les catastrophes et les leçons tirées au fil des décennies, encourageant le souvenir et la vigilance continue.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/esp.svg" alt="Espagne" title="Espagne" class="flag-icon">
+                            <a href="https://elpais.com/internacional/" target="_blank" class="article-link">20 ans après l&#39;ouragan Katrina : héros, activistes du climat et musiciens se souviennent de la façon dont la catastrophe a changé leur vie</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Changement climatique et appels urgents \u00e0 l\u0027adaptation et au financement",
+                color: "#72e5ac",
+                data: [ {"id": "AG"},  {"id": "CN"},  {"id": "FR"},  {"id": "LU"},  {"id": "MC"} ]
+            },
+        
+            {
+                name: "R\u00e9ponse d\u0027urgence imm\u00e9diate et pr\u00e9paration \u00e0 l\u0027\u00e9vacuation en Asie",
+                color: "#72d7e5",
+                data: [ {"id": "MY"},  {"id": "OM"},  {"id": "SG"},  {"id": "TH"} ]
+            },
+        
+            {
+                name: "Focus sur la crise des incendies de for\u00eat et la coop\u00e9ration transfrontali\u00e8re en Europe",
+                color: "#7290e5",
+                data: [ {"id": "BN"},  {"id": "CZ"},  {"id": "DO"},  {"id": "ES"},  {"id": "IS"},  {"id": "JO"},  {"id": "LU"},  {"id": "MA"},  {"id": "MC"} ]
+            },
+        
+            {
+                name: "Inondations graves et trag\u00e9die humaine en Asie du Sud",
+                color: "#9b72e5",
+                data: [ {"id": "AU"},  {"id": "BN"},  {"id": "NP"} ]
+            },
+        
+            {
+                name: "Surveillance de l\u0027activit\u00e9 sismique et gestion des risques r\u00e9gionaux",
+                color: "#e272e5",
+                data: [ {"id": "AZ"},  {"id": "CR"},  {"id": "PR"} ]
+            },
+        
+            {
+                name: "S\u00e9curit\u00e9 des voyageurs et op\u00e9rations de sauvetage face \u00e0 des conditions m\u00e9t\u00e9orologiques difficiles",
+                color: "#e572a1",
+                data: [ {"id": "BY"},  {"id": "RO"},  {"id": "SM"} ]
+            },
+        
+            {
+                name: "Perspectives scientifiques et pr\u00e9paration strat\u00e9gique aux risques urbains",
+                color: "#e58b72",
+                data: [ {"id": "AZ"},  {"id": "TN"} ]
+            },
+        
+            {
+                name: "R\u00e9flexion et Comm\u00e9moration des Catastrophes Historiques Majeures",
+                color: "#e5d272",
+                data: [ {"id": "ES"} ]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Masquer les sources ▲' : 'Montrer les sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="close-menu text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+      Close <i class="fas fa-long-arrow-alt-left"></i>
+    </button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li class="active-m">
+               <a href="/">Accueil </a>
+            </li>
+            <li>
+              <a href="/en/about.html">A Propos </a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

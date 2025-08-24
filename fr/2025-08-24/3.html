@@ -1,0 +1,441 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Perspectives divergentes sur les escalades militaires et les tensions dans la péninsule coréenne</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/fr', '/en');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>                 
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Perspectives divergentes sur les escalades militaires et les tensions dans la péninsule coréenne</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-08-24</span> • <span>34 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/assets/images/dailyscope-square-2.jpg" alt="Perspectives divergentes sur les escalades militaires et les tensions dans la péninsule coréenne" class="main-image">
+                <p style="margin:0">Les événements récents dans la péninsule coréenne révèlent une interaction complexe entre les avancées militaires de la Corée du Nord et l&#39;aggravation des tensions frontalières entre le Nord et le Sud. La Corée du Nord a effectué plusieurs tests de nouveaux systèmes de missiles sous la supervision directe de Kim Jong Un, soulignant son objectif d&#39;améliorer ses capacités militaires face aux préoccupations de sécurité régionales. Par ailleurs, des incidents impliquant des soldats nord-coréens franchissant la frontière sud-coréenne ont entraîné des tirs d&#39;avertissement de Séoul, Pyongyang condamnant ces actions comme des provocations. Si les acteurs internationaux reconnaissent ces développements militaires et la montée des tensions, ils diffèrent dans leur insistance sur la condamnation, les appels à la diplomatie ou la mise en avant des préoccupations sécuritaires liées aux activités militaires des États-Unis et de la région.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div class="key-points">
+        <h2>Les pays qui en parlent</h2>
+    </div>
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Concentration sur les avancées militaires de la Corée du Nord au milieu des tensions régionales</h3>
+        <p class="cluster-description">Les pays de ce groupe mettent en avant les essais de missiles en cours en Corée du Nord et les efforts de modernisation militaire comme des développements importants qui accentuent les tensions de sécurité régionales. Leur couverture rapporte généralement les lancements de missiles comme des démonstrations des capacités de défense avancées de Pyongyang, mentionnant souvent la supervision directe de Kim Jong Un. Tout en reconnaissant la montée des tensions, ces pays tendent à adopter un ton neutre sans politiser ouvertement les événements ni attribuer la responsabilité des incidents frontaliers. Ils soulignent la surveillance internationale et les implications de ces activités militaires sur la sécurité en Asie de l&#39;Est.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jpn.svg" alt="Japon" title="Japon" class="flag-icon">
+                            <a href="https://www.yomiuri.co.jp/world/" target="_blank" class="article-link">La Corée du Nord teste deux nouveaux types de missiles avec inspection de Kim Jong Un</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgr.svg" alt="Bulgarie" title="Bulgarie" class="flag-icon">
+                            <a href="https://www.24chasa.bg/mezhdunarodni" target="_blank" class="article-link">Le leader nord-coréen Kim Jong Un observe le lancement de nouveaux missiles de défense aérienne</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kwt.svg" alt="Koweït" title="Koweït" class="flag-icon">
+                            <a href="https://www.aljarida.com/%D8%AF%D9%88%D9%84%D9%8A%D8%A7%D8%AA" target="_blank" class="article-link">La Corée du Nord teste de nouveaux missiles de défense aérienne sous la supervision du &#34;Chef&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/arg.svg" alt="Argentine" title="Argentine" class="flag-icon">
+                            <a href="https://www.clarin.com/mundo/" target="_blank" class="article-link">La Corée du Nord teste deux nouveaux missiles de défense aérienne dans un contexte de tensions croissantes à la frontière</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/srb.svg" alt="Serbie" title="Serbie" class="flag-icon">
+                            <a href="https://www.politika.rs/scc/svet" target="_blank" class="article-link">Kim Jong Un supervise le lancement de nouveaux missiles de défense anti-aérienne</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/idn.svg" alt="Indonésie" title="Indonésie" class="flag-icon">
+                            <a href="https://www.kompas.com/global" target="_blank" class="article-link">Kim Jong Un supervise le test du nouveau missile de défense aérienne de la Corée du Nord</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mkd.svg" alt="Macédoine du Nord" title="Macédoine du Nord" class="flag-icon">
+                            <a href="https://www.novamakedonija.com.mk/" target="_blank" class="article-link">La Corée du Nord teste de nouveaux missiles</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bel.svg" alt="Belgique" title="Belgique" class="flag-icon">
+                            <a href="https://www.lalibre.be/international" target="_blank" class="article-link">La Corée du Nord teste deux missiles de défense aérienne &#34;nouveaux&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/khm.svg" alt="Cambodge" title="Cambodge" class="flag-icon">
+                            <a href="https://cambodianess.com/world" target="_blank" class="article-link">La Corée du Nord tire deux nouveaux missiles de défense aérienne : KCNA</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/can.svg" alt="Canada" title="Canada" class="flag-icon">
+                            <a href="https://www.thestar.com/news/world.html" target="_blank" class="article-link">Le leader nord-coréen Kim Jong Un supervise le test de nouveaux missiles anti-aériens</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/chl.svg" alt="Chili" title="Chili" class="flag-icon">
+                            <a href="https://www.latercera.com/categoria/mundo/" target="_blank" class="article-link">La Corée du Nord annonce le lancement de deux nouveaux types de missiles sous la supervision de Kim Jong-un</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/est.svg" alt="Estonie" title="Estonie" class="flag-icon">
+                            <a href="https://www.delfi.ee/kategooria/123/maailm" target="_blank" class="article-link">La Corée du Sud a tiré des coups de avertissement sur des forces nord-coréennes franchissant la frontière</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/isr.svg" alt="Israël" title="Israël" class="flag-icon">
+                            <a href="https://www.jpost.com/International" target="_blank" class="article-link">Le leader nord-coréen Kim supervise le tir de nouveaux missiles de défense aérienne, selon KCNA</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/che.svg" alt="Suisse" title="Suisse" class="flag-icon">
+                            <a href="https://www.nzz.ch/international" target="_blank" class="article-link">La Corée du Nord provoque à la frontière intercoréenne</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nld.svg" alt="Pays-Bas" title="Pays-Bas" class="flag-icon">
+                            <a href="https://www.telegraaf.nl/nieuws/buitenland" target="_blank" class="article-link">Kim Jong-un, le leader nord-coréen, assiste au test de nouveaux missiles &#34;supérieurs&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nld.svg" alt="Pays-Bas" title="Pays-Bas" class="flag-icon">
+                            <a href="https://nos.nl/" target="_blank" class="article-link">Le leader nord-coréen supervise un test de missile avec des &#34;capacités de combat supérieures&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aus.svg" alt="Australie" title="Australie" class="flag-icon">
+                            <a href="https://www.smh.com.au/world" target="_blank" class="article-link">Le leader nord-coréen Kim Jong-un supervise le test de nouveaux missiles anti-aériens</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aus.svg" alt="Australie" title="Australie" class="flag-icon">
+                            <a href="https://www.abc.net.au/news/world" target="_blank" class="article-link">Le leader nord-coréen Kim Jong Un supervise le test de nouveaux missiles anti-aériens</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cze.svg" alt="République tchèque" title="République tchèque" class="flag-icon">
+                            <a href="https://www.idnes.cz/zpravy/zahranicni" target="_blank" class="article-link">Le leader de la Corée du Nord regarde les lancements de nouveaux missiles anti-aériens</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/phl.svg" alt="Philippines" title="Philippines" class="flag-icon">
+                            <a href="https://www.philstar.com/world" target="_blank" class="article-link">La Corée du Nord teste deux nouveaux missiles de défense aérienne</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mne.svg" alt="Monténégro" title="Monténégro" class="flag-icon">
+                            <a href="https://www.cdm.me/svijet/planeta/" target="_blank" class="article-link">La Corée du Nord teste deux nouveaux missiles anti-aériens</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nzl.svg" alt="Nouvelle-Zélande" title="Nouvelle-Zélande" class="flag-icon">
+                            <a href="https://www.nzherald.co.nz/world/" target="_blank" class="article-link">Kim Jong Un supervise le test de nouveaux missiles de défense aérienne</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nzl.svg" alt="Nouvelle-Zélande" title="Nouvelle-Zélande" class="flag-icon">
+                            <a href="https://www.rnz.co.nz/news/world" target="_blank" class="article-link">Le leader nord-coréen Kim Jong Un supervise le tir de nouveaux missiles de défense aérienne</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aut.svg" alt="Autriche" title="Autriche" class="flag-icon">
+                            <a href="https://kurier.at/politik/ausland" target="_blank" class="article-link">Soldats nord-coréens traversent la frontière : la Corée du Sud tire des coups de avertissement</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #bf72e5; padding: 8px 16px; border-radius: 4px;">Condamnation des provocations et accent sur la sécurité frontalière par la Corée du Sud et ses alliés régionaux</h3>
+        <p class="cluster-description">Ce groupe se concentre sur les incidents frontaliers impliquant des soldats nord-coréens traversant en territoire sud-coréen et les tirs d&#39;avertissement ultérieurs par les forces sud-coréennes. Ces pays mettent en avant le caractère provocateur des actions de la Corée du Nord ou présentent ces événements comme des violations de sécurité importantes nécessitant des réponses défensives de Séoul. Ils évoquent souvent les efforts de la Corée du Sud pour dissuader les incursions tout en exprimant leur inquiétude face au risque d&#39;escalade. Certains rapports soulignent également les efforts diplomatiques et la fragilité de la relation inter-coréenne en raison de ces points de friction.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/twn.svg" alt="TWN" title="TWN" class="flag-icon">
+                            <a href="https://www.taipeitimes.com/News/world" target="_blank" class="article-link">Corée du Sud tire des coups d&#39;avertissement à la frontière</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dnk.svg" alt="Danemark" title="Danemark" class="flag-icon">
+                            <a href="https://nyheder.tv2.dk/udland" target="_blank" class="article-link">Des soldats tirent des coups à la frontière vers la Corée du Nord</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tza.svg" alt="Tanzanie" title="Tanzanie" class="flag-icon">
+                            <a href="https://dailynews.co.tz/category/world/" target="_blank" class="article-link">La Corée du Nord accuse les troupes sud-coréennes d&#39;avoir tiré des coups d&#39;avertissement près de la frontière</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/chl.svg" alt="Chili" title="Chili" class="flag-icon">
+                            <a href="https://www.latercera.com/categoria/mundo/" target="_blank" class="article-link">Environ 30 soldats nord-coréens franchissent la frontière en Corée du Sud, provoquant des tirs d&#39;avertissement</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/est.svg" alt="Estonie" title="Estonie" class="flag-icon">
+                            <a href="https://www.delfi.ee/kategooria/123/maailm" target="_blank" class="article-link">La Corée du Sud a tiré des coups d&#39;avertissement sur les forces nord-coréennes franchissant la frontière</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mne.svg" alt="Monténégro" title="Monténégro" class="flag-icon">
+                            <a href="https://www.cdm.me/svijet/planeta/" target="_blank" class="article-link">La Corée du Sud a tiré des coups d&#39;avertissement sur des soldats nord-coréens franchissant la frontière</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nzl.svg" alt="Nouvelle-Zélande" title="Nouvelle-Zélande" class="flag-icon">
+                            <a href="https://www.rnz.co.nz/news/world" target="_blank" class="article-link">La Corée du Sud tire des coups d&#39;avertissement après que des troupes nord-coréennes ont franchi la frontière</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Accent occidental sur l&#39;engagement diplomatique et les préoccupations de sécurité lors des exercices militaires</h3>
+        <p class="cluster-description">Les pays alignés avec les États-Unis et les efforts diplomatiques occidentaux mettent en évidence l&#39;influence combinée des essais de missiles de la Corée du Nord et des exercices militaires conjoints américano-sud-coréens sur l&#39;escalade des tensions. Leur point de vue souligne l&#39;importance d&#39;un dialogue renouvelé, de rencontres diplomatiques telles que celles impliquant l&#39;ancien président américain Trump et la direction sud-coréenne, ainsi que la nécessité cruciale de trouver un équilibre entre dissuasion et diplomatie. Ces pays présentent souvent la situation comme un environnement de sécurité volatile nécessitant à la fois vigilance et engagement pour prévenir toute détérioration supplémentaire.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sgp.svg" alt="Singapour" title="Singapour" class="flag-icon">
+                            <a href="https://www.straitstimes.com/global" target="_blank" class="article-link">Réunion avec la Corée du Sud, Trump pourrait envisager une nouvelle opportunité avec la Corée du Nord</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bra.svg" alt="Brésil" title="Brésil" class="flag-icon">
+                            <a href="https://oglobo.globo.com/mundo/" target="_blank" class="article-link">La Corée du Nord teste de nouveaux missiles anti-aériens en pleine crise militaire américano-sud-coréenne</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/usa.svg" alt="États-Unis" title="États-Unis" class="flag-icon">
+                            <a href="https://abcnews.go.com/International" target="_blank" class="article-link">La Corée du Nord tire deux nouveaux missiles en pleine manœuvre militaire américano-sud-coréenne</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Concentration sur les avanc\u00e9es militaires de la Cor\u00e9e du Nord au milieu des tensions r\u00e9gionales",
+                color: "#72e5ac",
+                data: [ {"id": "AR"},  {"id": "AT"},  {"id": "AU"},  {"id": "BE"},  {"id": "BG"},  {"id": "CA"},  {"id": "CH"},  {"id": "CL"},  {"id": "CZ"},  {"id": "EE"},  {"id": "ID"},  {"id": "IL"},  {"id": "JP"},  {"id": "KH"},  {"id": "KW"},  {"id": "ME"},  {"id": "MK"},  {"id": "NL"},  {"id": "NZ"},  {"id": "PH"},  {"id": "RS"} ]
+            },
+        
+            {
+                name: "Condamnation des provocations et accent sur la s\u00e9curit\u00e9 frontali\u00e8re par la Cor\u00e9e du Sud et ses alli\u00e9s r\u00e9gionaux",
+                color: "#bf72e5",
+                data: [ {"id": "CL"},  {"id": "DK"},  {"id": "EE"},  {"id": "ME"},  {"id": "NZ"},  {"id": "TW"},  {"id": "TZ"} ]
+            },
+        
+            {
+                name: "Accent occidental sur l\u0027engagement diplomatique et les pr\u00e9occupations de s\u00e9curit\u00e9 lors des exercices militaires",
+                color: "#e5d272",
+                data: [ {"id": "BR"},  {"id": "SG"},  {"id": "US"} ]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Masquer les sources ▲' : 'Montrer les sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="close-menu text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+      Close <i class="fas fa-long-arrow-alt-left"></i>
+    </button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li class="active-m">
+               <a href="/">Accueil </a>
+            </li>
+            <li>
+              <a href="/en/about.html">A Propos </a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
