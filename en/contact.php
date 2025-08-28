@@ -21,7 +21,7 @@ function render_page($title, $inner_html) {
 <link href="/assets/css/style.css" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
 <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
-  EOT;
+EOT;
 
   $header = <<<'EOT'
   <header>  
@@ -72,7 +72,7 @@ function render_page($title, $inner_html) {
     </div>
   </nav>
 </div>
-  EOT;
+EOT;
 
   $footer = <<<'EOT'
    <footer class="mt-5">
@@ -115,7 +115,7 @@ function render_page($title, $inner_html) {
 </div>
 
 <script src="/assets/js/bootstrap.bundle.min.js"></script>
-  EOT;
+EOT;
 
   echo '
 <!DOCTYPE html>
