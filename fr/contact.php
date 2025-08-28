@@ -21,7 +21,7 @@ function render_page($title, $inner_html) {
 <link href="/assets/css/style.css" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
 <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
-  EOT;
+EOT;
 
   $header = <<<'EOT'
   <header>  
@@ -66,13 +66,16 @@ function render_page($title, $inner_html) {
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/contact.html">Contact</a>
+            </li>
           </ul>
         </div>
       </div>
     </div>
   </nav>
 </div>
-  EOT;
+EOT;
 
   $footer = <<<'EOT'
    <footer class="mt-5">
@@ -90,9 +93,7 @@ function render_page($title, $inner_html) {
 
 <div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
   <div class="offcanvas-header">
-    <button type="button" class="close-menu text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
-      Close <i class="fas fa-long-arrow-alt-left"></i>
-    </button>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
   </div>
   <div class="offcanvas-body">
     <div class="head-contact">
@@ -103,10 +104,13 @@ function render_page($title, $inner_html) {
       <div class="mobile-menu-sec mt-3">
          <ul class="list-unstyled">
             <li class="active-m">
-               <a href="/">Accueil </a>
+               <a href="/">Accueil</a>
             </li>
             <li>
-              <a href="/en/about.html">A Propos </a>
+              <a href="/fr/about.html">A Propos</a>
+            </li>
+            <li>
+              <a href="/fr/contact.html">Contact</a>
             </li>
          </ul>
       </div>
@@ -115,13 +119,13 @@ function render_page($title, $inner_html) {
 </div>
 
 <script src="/assets/js/bootstrap.bundle.min.js"></script>
-  EOT;
+EOT;
 
   echo '
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>DailyScope.ai - About</title>
+<title>DailyScope.ai - Contact</title>
 '.$includes.'
 </head>
 <body>
@@ -130,9 +134,6 @@ function render_page($title, $inner_html) {
   <main class="conatct-page py-5">
     <div class="container" style="max-width: 860px;">
       '.$inner_html.'
-      <div class="mt-4">
-        <a href="/contact.html" class="btn btn-primary">Retour au formulaire</a>
-      </div>
     </div>
   </main>
 '.$footer.'

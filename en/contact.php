@@ -66,6 +66,9 @@ EOT;
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/en/about.html">About</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/contact.html">Contact</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -90,9 +93,7 @@ EOT;
 
 <div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
   <div class="offcanvas-header">
-    <button type="button" class="close-menu text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
-      Close <i class="fas fa-long-arrow-alt-left"></i>
-    </button>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
     <div class="head-contact">
@@ -106,7 +107,10 @@ EOT;
                <a href="/">Home </a>
             </li>
             <li>
-              <a href="/en/about.html">About </a>
+              <a href="/en/about.html">About</a>
+            </li>
+            <li>
+              <a href="/en/contact.html">Contact</a>
             </li>
          </ul>
       </div>
@@ -121,7 +125,7 @@ EOT;
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>DailyScope.ai - About</title>
+<title>DailyScope.ai - Contact</title>
 '.$includes.'
 </head>
 <body>
@@ -130,9 +134,6 @@ EOT;
   <main class="conatct-page py-5">
     <div class="container" style="max-width: 860px;">
       '.$inner_html.'
-      <div class="mt-4">
-        <a href="/contact.html" class="btn btn-primary">Retour au formulaire</a>
-      </div>
     </div>
   </main>
 '.$footer.'
@@ -144,14 +145,14 @@ exit;
 // --- TRAITEMENT UNIQUEMENT EN POST ---
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {
   render_page("Contact", '<div class="alert alert-warning" role="alert">
-    Accès direct à cette page. Veuillez utiliser le formulaire de contact.
+    Direct access to this page. Please use the contact form.
   </div>');
 }
 
 // --- ANTI-SPAM HONEYPOT ---
 if (!empty($_POST['company'])) {
   render_page("Contact", '<div class="alert alert-danger" role="alert">
-    Erreur : tentative de spam détectée.
+    Error: spam attempt detected.
   </div>');
 }
 
@@ -166,13 +167,13 @@ $captcha_expected = trim($_POST['captcha_expected'] ?? "");
 $errors = [];
 
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-  $errors[] = "Adresse email invalide.";
+  $errors[] = "Invalid email address.";
 }
 if ($subject === "" || $message === "") {
-  $errors[] = "Sujet et message sont obligatoires.";
+  $errors[] = "Subject and message are required.";
 }
 if ($captcha_answer === "" || $captcha_answer !== $captcha_expected) {
-  $errors[] = "Captcha incorrect.";
+  $errors[] = "Incorrect captcha.";
 }
 
 if ($errors) {
@@ -202,14 +203,14 @@ $body .= $message."\n";
 $ok = @mail($recipient, "[Contact] ".$clean_subject, $body, $headers);
 
 if ($ok) {
-  render_page("Contact — Merci", '<div class="alert alert-success" role="alert">
-    <h4 class="alert-heading">Merci !</h4>
-    <p class="mb-0">Votre message a bien été envoyé. Nous vous répondrons rapidement.</p>
+  render_page("Contact — Thank you!", '<div class="alert alert-success" role="alert">
+    <h4 class="alert-heading">Thank you!</h4>
+    <p class="mb-0">Your message has been sent. We will get back to you shortly.</p>
   </div>');
 } else {
-  render_page("Contact — Erreur technique", '<div class="alert alert-danger" role="alert">
-    <h4 class="alert-heading">Erreur technique</h4>
-    <p class="mb-0">Le message n’a pas pu être envoyé. Veuillez réessayer plus tard.</p>
+  render_page("Contact — Technical error", '<div class="alert alert-danger" role="alert">
+    <h4 class="alert-heading">Technical error</h4>
+    <p class="mb-0">Your message could not be sent. Please try again later.</p>
   </div>');
 }
 

@@ -1,0 +1,549 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Tensions commerciales mondiales et alignements économiques stratégiques face à la montée des tarifs douaniers et des changements d&#39;investissement</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/fr', '/en');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>                 
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Tensions commerciales mondiales et alignements économiques stratégiques face à la montée des tarifs douaniers et des changements d&#39;investissement</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-08-28</span> • <span>59 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-08-28/2025-08-28-5.jpg" alt="Tensions commerciales mondiales et alignements économiques stratégiques face à la montée des tarifs douaniers et des changements d&#39;investissement" class="main-image">
+                <p style="margin:0">Les articles examinés révèlent une escalade des tensions commerciales marquée notamment par les États-Unis imposant des tarifs élevés à l&#39;Inde, principalement en raison de l&#39;achat continu de pétrole russe par l&#39;Inde, ce qui a conduit New Delhi à rechercher des liens régionaux plus étroits et à insister sur l&#39;autosuffisance. Parallèlement, la Chine fait progresser ses ambitions technologiques et d&#39;investissement, notamment dans la production de puces pour l&#39;IA et des projets d&#39;infrastructure comme l&#39;Initiative Belt and Road, tout en développant des partenariats économiques stratégiques dans des régions telles que l&#39;Amérique latine et l&#39;Afrique. D&#39;autres pays, y compris des membres de l&#39;Union européenne, de l&#39;ASEAN et divers États africains, adoptent des réponses variées comprenant des ajustements tarifaires, la facilitation du commerce ou des réformes réglementaires, illustrant un environnement économique multipolaire. La scène mondiale souligne une interaction complexe entre protectionnisme, coopération régionale et efforts pour sécuriser des ressources critiques dans un contexte de rivalités géopolitiques et de changements d&#39;alliances.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div class="key-points">
+        <h2>Les pays qui en parlent</h2>
+    </div>
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Tensions commerciales entre les États-Unis et l&#39;Inde et la réponse de l&#39;Inde</h3>
+        <p class="cluster-description">Les pays de ce groupe se concentrent sur le conflit commercial en cours entre les États-Unis et l&#39;Inde, principalement centré sur l&#39;imposition de droits de douane élevés par les États-Unis sur les produits indiens en tant que sanction contre les importations soutenues de pétrole russe par l&#39;Inde. La position américaine met en avant l&#39;utilisation des droits de douane pour faire pression sur l&#39;Inde afin qu&#39;elle s&#39;aligne sur les sanctions occidentales plus larges et réduise sa dépendance au pétrole russe. La perspective de l&#39;Inde implique des contre-mesures telles que des réformes fiscales ambitieuses, le renforcement des liens diplomatiques régionaux (notamment en Asie) et des appels à l&#39;autosuffisance pour atténuer l&#39;impact économique du protectionnisme américain. Ce point de vue reflète des relations bilatérales tendues et un équilibre délicat de l&#39;Inde face aux pressions géopolitiques.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/are.svg" alt="Émirats arabes unis" title="Émirats arabes unis" class="flag-icon">
+                            <a href="https://gulfnews.com/world" target="_blank" class="article-link">L&#39;Inde s&#39;attaque aux droits de douane américains avec des réformes ambitieuses de la TPS</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ken.svg" alt="Kenya" title="Kenya" class="flag-icon">
+                            <a href="https://nation.africa/kenya/news/world" target="_blank" class="article-link">Chronologie : Comment des négociations hésitantes entre l&#39;Inde et les États-Unis ont conduit à des droits de douane élevés</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/png.svg" alt="Papouasie-Nouvelle-Guinée" title="Papouasie-Nouvelle-Guinée" class="flag-icon">
+                            <a href="https://postcourier.com.pg/category/world-news/" target="_blank" class="article-link">Le tarif de 50 % de Trump sur l&#39;Inde entre en vigueur</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sgp.svg" alt="Singapour" title="Singapour" class="flag-icon">
+                            <a href="https://www.straitstimes.com/global" target="_blank" class="article-link">Modi en Inde cherche à renforcer les liens lors de sa tournée en Asie pour compenser les retombées des droits de douane américains</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bel.svg" alt="Belgique" title="Belgique" class="flag-icon">
+                            <a href="https://www.lalibre.be/international" target="_blank" class="article-link">Les États-Unis augmentent les droits de douane sur les produits indiens à 50 %</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/zmb.svg" alt="Zambie" title="Zambie" class="flag-icon">
+                            <a href="https://zambianobserver.com/category/world/" target="_blank" class="article-link">AU MOMENT OÙ LES NOUVEAUX DROITS DE DOUANE AMÉRICAINS ENTRENT EN VIGUEUR, LA RUSSIE DIT À L&#39;INDE QU&#39;ELLE S&#39;ATTEND À CE QU&#39;ELLE CONTINUE D&#39;ACHETER DU PÉTROLE SANS RETARD</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pry.svg" alt="Paraguay" title="Paraguay" class="flag-icon">
+                            <a href="https://www.ultimahora.com/noticias/mundo/" target="_blank" class="article-link">Les États-Unis doublent les droits de douane sur l&#39;Inde en raison des achats de pétrole russe</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/imn.svg" alt="IMN" title="IMN" class="flag-icon">
+                            <a href="https://www.manxradio.com/news/" target="_blank" class="article-link">La poste suspend le service d&#39;envoi de marchandises vers les États-Unis à la suite des droits de douane</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/arg.svg" alt="Argentine" title="Argentine" class="flag-icon">
+                            <a href="https://www.lanacion.com.ar/el-mundo" target="_blank" class="article-link">Les droits de douane de 50 % imposés par Trump sur l&#39;Inde menacent des millions d&#39;exportations</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nam.svg" alt="Namibie" title="Namibie" class="flag-icon">
+                            <a href="https://www.namibian.com.na/category/news/politics/" target="_blank" class="article-link">Le tarif de 50 % de Trump sur l&#39;Inde entre en vigueur alors que Modi appelle à l&#39;autosuffisance</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/est.svg" alt="Estonie" title="Estonie" class="flag-icon">
+                            <a href="https://maailm.postimees.ee/" target="_blank" class="article-link">Les États-Unis imposent des tarifs douaniers stricts à l&#39;Inde pour l&#39;achat de pétrole russe</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kor.svg" alt="Corée du Sud" title="Corée du Sud" class="flag-icon">
+                            <a href="https://www.koreaherald.com/World" target="_blank" class="article-link">Le doublement des tarifs sur les importations indiennes par Trump entre en vigueur</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lva.svg" alt="Lettonie" title="Lettonie" class="flag-icon">
+                            <a href="https://www.diena.lv/raksts/pasaule" target="_blank" class="article-link">Les États-Unis sanctionnent l&#39;Inde pour ses achats de pétrole russe</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/npl.svg" alt="Népal" title="Népal" class="flag-icon">
+                            <a href="https://ekantipur.com/world" target="_blank" class="article-link">Les États-Unis imposent un tarif de 50 % sur les marchandises indiennes en pleine tension historique</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72a2e5; padding: 8px 16px; border-radius: 4px;">L&#39;expansion stratégique de la Chine et son autonomie technologique</h3>
+        <p class="cluster-description">Ce groupe met en évidence l&#39;accent de la Chine sur l&#39;expansion de son influence économique mondiale à travers des investissements importants, des projets de développement et l&#39;autosuffisance dans des technologies avancées comme les puces d&#39;IA. La Chine promeut des initiatives telles que la Belt and Road, des investissements en Amérique latine et en Afrique, ainsi que le soutien à ses partenaires régionaux, notamment les nations de l&#39;ASEAN, reflétant une stratégie pour contrer le protectionnisme dirigé par les États-Unis et la rivalité géopolitique. La Chine cherche à sécuriser ses ressources, à diversifier ses chaînes d&#39;approvisionnement et à renforcer ses partenariats économiques, se positionnant comme un acteur central dans l&#39;orchestration de voies commerciales et de développement alternatives à l&#39;échelle mondiale.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/guy.svg" alt="Guyana" title="Guyana" class="flag-icon">
+                            <a href="https://www.kaieteurnewsonline.com/category/news/world-news/" target="_blank" class="article-link">Entreprise chinoise annonce un bénéfice semestriel de plus de 200 millions de dollars américains provenant de la mine d&#39;or du Guyana</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/swz.svg" alt="Eswatini" title="Eswatini" class="flag-icon">
+                            <a href="https://swazidailynews.com/category/international/" target="_blank" class="article-link">La Chine vise à tripler la production de puces AI, réduisant sa dépendance à Nvidia</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/esp.svg" alt="Espagne" title="Espagne" class="flag-icon">
+                            <a href="https://elpais.com/internacional/" target="_blank" class="article-link">La Chine accélère ses investissements au Brésil pendant que les États-Unis la punissent avec des tarifs douaniers</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lao.svg" alt="Laos" title="Laos" class="flag-icon">
+                            <a href="http://kpl.gov.la/En/" target="_blank" class="article-link">La 22e Expo Chine-ASEAN se tiendra à Nanning</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgd.svg" alt="Bangladesh" title="Bangladesh" class="flag-icon">
+                            <a href="https://www.thedailystar.net/world" target="_blank" class="article-link">Malaisie affirme que la Chine est prête à fournir une assistance dans le traitement des terres rares</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ecu.svg" alt="Équateur" title="Équateur" class="flag-icon">
+                            <a href="https://rebelion.org/categoria/territorios/mundo/" target="_blank" class="article-link">L&#39;Initiative Belt and Road consolide son rôle en tant que moteur du développement eurasiatique face au protectionnisme américain</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mne.svg" alt="Monténégro" title="Monténégro" class="flag-icon">
+                            <a href="https://www.cdm.me/svijet/planeta/" target="_blank" class="article-link">La Chine prévoit de tripler la production de puces AI</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #bf72e5; padding: 8px 16px; border-radius: 4px;">Union Européenne et alliés naviguant dans les différends commerciaux et les sanctions</h3>
+        <p class="cluster-description">Les pays de ce groupe expriment des préoccupations concernant l&#39;intensification des différends commerciaux, principalement liés à l&#39;escalade tarifaire et aux réglementations sur le commerce numérique, tant avec les États-Unis qu&#39;avec la Russie. L&#39;UE montre des efforts pour gérer les tensions transatlantiques par le biais de négociations et de mesures de représailles sélectives, tout en coordonnant des sanctions contre la Russie et en discutant de sanctions secondaires pour renforcer la pression diplomatique. De plus, ce groupe aborde des questions telles que les désaccords douaniers et les conséquences des conflits commerciaux sur les industries et l&#39;emploi, illustrant une approche prudente et réglementaire de la gestion du commerce mondial.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/chn.svg" alt="Chine" title="Chine" class="flag-icon">
+                            <a href="https://www.chinadaily.com.cn/world" target="_blank" class="article-link">Les tensions commerciales entre l&#39;UE et les États-Unis s&#39;intensifient sur les règles numériques, les taxes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gum.svg" alt="GUM" title="GUM" class="flag-icon">
+                            <a href="https://www.guampdn.com/news/" target="_blank" class="article-link">L&#39;Australie et la Grande-Bretagne concluent un accord de libre-échange pour réduire de nombreux tarifs</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gha.svg" alt="Ghana" title="Ghana" class="flag-icon">
+                            <a href="https://www.modernghana.com/ghanahome/world/" target="_blank" class="article-link">Bayrou en France soumet la décision de la dette aux législateurs, risquant des retombées</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bih.svg" alt="Bosnie-Herzégovine" title="Bosnie-Herzégovine" class="flag-icon">
+                            <a href="https://avaz.ba/vijesti" target="_blank" class="article-link">L&#39;Union européenne prend une décision choquante concernant les marchandises américaines en matière de douane</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mng.svg" alt="Mongolie" title="Mongolie" class="flag-icon">
+                            <a href="https://news.mn/angilal/delhii/" target="_blank" class="article-link">La Russie bloquera les navires de pêche norvégiens dans ses eaux en raison des sanctions de l&#39;UE</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bhr.svg" alt="Bahreïn" title="Bahreïn" class="flag-icon">
+                            <a href="https://www.alayam.com/online/international" target="_blank" class="article-link">La Suède et les Pays-Bas appellent à la suspension du commerce avec Israël et à des sanctions contre les ministres</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/alb.svg" alt="Albanie" title="Albanie" class="flag-icon">
+                            <a href="https://www.panorama.com.al/category/bota-rajoni/" target="_blank" class="article-link">L&#39;industrie automobile allemande supprime plus de 51 000 emplois en raison du déclin des exportations en Chine et aux États-Unis</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/uzb.svg" alt="Ouzbékistan" title="Ouzbékistan" class="flag-icon">
+                            <a href="https://kun.uz/news/category/jahon" target="_blank" class="article-link">L&#39;UE discute de sanctions secondaires contre la Russie pour son soutien</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5728f; padding: 8px 16px; border-radius: 4px;">L&#39;engagement économique de l&#39;Afrique face à l&#39;intérêt mondial croissant</h3>
+        <p class="cluster-description">Ce groupe se concentre sur les nations africaines qui répondent aux influences économiques externes en attirant des investissements étrangers, en s&#39;engageant dans des partenariats stratégiques pour les ressources, et en naviguant dans des alliances changeantes. L&#39;engagement et l&#39;investissement accrus du programme de la Ceinture et la Route de la Chine en Afrique soulignent l&#39;importance stratégique du continent pour la sécurité des ressources, tandis que des pays comme le Sénégal et le Botswana recherchent activement des capitaux étrangers et une coopération commerciale. Ces perspectives illustrent le rôle pivot de l&#39;Afrique dans les réajustements économiques mondiaux, équilibrant entre partenaires occidentaux traditionnels et acteurs émergents tels que la Chine et les investisseurs du Golfe.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mli.svg" alt="Mali" title="Mali" class="flag-icon">
+                            <a href="https://www.maliweb.net/category/international" target="_blank" class="article-link">Sénégal : le président Diomaye Faye invite la communauté d&#39;affaires à investir</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mrt.svg" alt="Mauritanie" title="Mauritanie" class="flag-icon">
+                            <a href="https://cridem.org/" target="_blank" class="article-link">Washington compte sur le commerce pour reconstruire ses relations avec les juntas militaires du Sahel</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/zaf.svg" alt="Afrique du Sud" title="Afrique du Sud" class="flag-icon">
+                            <a href="https://mg.co.za/section/news/" target="_blank" class="article-link">La Ceinture et la Route de la Chine se tourne vers l&#39;Afrique avec des investissements record</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gab.svg" alt="Gabon" title="Gabon" class="flag-icon">
+                            <a href="https://info241.com/international,011" target="_blank" class="article-link">CEMAC : le 16e sommet des chefs d&#39;État reporté à septembre à la demande du Gabon</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bwa.svg" alt="Botswana" title="Botswana" class="flag-icon">
+                            <a href="http://www.mmegi.bw/index.php?sid=1" target="_blank" class="article-link">L&#39;OP insiste sur l&#39;absence de dépassement alors que le fils du président accueille des investisseurs</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Acteurs plus petits et régionaux ajustant leurs politiques commerciales et réglementaires</h3>
+        <p class="cluster-description">Les pays de ce groupe abordent les défis économiques et commerciaux localisés par le biais de réformes internes et d&#39;initiatives de coopération régionale. Parmi les exemples figurent la réglementation des marchés publics en Malaisie, la baisse des taux d&#39;intérêt clés aux Philippines pour s&#39;adapter à l&#39;inflation, l&#39;exploration des liens commerciaux et de main-d&#39;œuvre par les Îles Salomon et la FSM, ainsi que la collaboration du Kazakhstan avec la Jordanie sur des projets énergétiques stratégiques. De plus, les suspensions de services postaux par plusieurs nations plus petites mettent en évidence les impacts pratiques de différends tarifaires plus larges, soulignant l&#39;interconnexion des politiques commerciales mondiales avec la stabilité économique locale.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sgp.svg" alt="Singapour" title="Singapour" class="flag-icon">
+                            <a href="https://www.businesstimes.com.sg/international" target="_blank" class="article-link">Le parlement malaisien approuve une loi pour réglementer les marchés publics</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sgp.svg" alt="Singapour" title="Singapour" class="flag-icon">
+                            <a href="https://www.businesstimes.com.sg/international" target="_blank" class="article-link">Les Philippines réduisent à nouveau le taux clé alors que l&#39;inflation reste en dessous de la cible</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sgp.svg" alt="Singapour" title="Singapour" class="flag-icon">
+                            <a href="https://www.businesstimes.com.sg/international" target="_blank" class="article-link">Le Mexique augmentera les tarifs sur les importations en provenance de Chine après la pression des États-Unis</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/slb.svg" alt="Îles Salomon" title="Îles Salomon" class="flag-icon">
+                            <a href="https://www.solomontimes.com/" target="_blank" class="article-link">Les îles Salomon et la FSM explorent la coopération commerciale et la mobilité de la main-d&#39;œuvre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/smr.svg" alt="Saint-Marin" title="Saint-Marin" class="flag-icon">
+                            <a href="http://www.sanmarinortv.sm/news/attualita-c4" target="_blank" class="article-link">Expéditions vers les États-Unis suspendues. Le PDG de Poste San Marino : &#34;Nous attendons des clarifications&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mar.svg" alt="Maroc" title="Maroc" class="flag-icon">
+                            <a href="https://leconomiste.com/flash-infos" target="_blank" class="article-link">25 pays suspendent les services postaux vers les États-Unis en raison des droits de douane</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cpv.svg" alt="Cap-Vert" title="Cap-Vert" class="flag-icon">
+                            <a href="https://www.anacao.cv/categoria/mundo/" target="_blank" class="article-link">Les incertitudes persistent concernant la fermeture effective du détroit d&#39;Hormuz</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aze.svg" alt="Azerbaïdjan" title="Azerbaïdjan" class="flag-icon">
+                            <a href="https://www.azernews.az/region/" target="_blank" class="article-link">Le Kazakhstan et la Jordanie lanceront une coentreprise d&#39;uranium</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aze.svg" alt="Azerbaïdjan" title="Azerbaïdjan" class="flag-icon">
+                            <a href="https://www.azernews.az/region/" target="_blank" class="article-link">Le corridor de Zangazur comme multiplicateur géopolitique pour relier le commerce Est-Ouest et Nord-Sud</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pri.svg" alt="PRI" title="PRI" class="flag-icon">
+                            <a href="https://www.primerahora.com/noticias/mundo/" target="_blank" class="article-link">Le Mexique suspend temporairement les envois postaux et de colis vers les États-Unis</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Tensions commerciales entre les \u00c9tats-Unis et l\u0027Inde et la r\u00e9ponse de l\u0027Inde",
+                color: "#72e5ac",
+                data: [ {"id": "AE"},  {"id": "AR"},  {"id": "BE"},  {"id": "EE"},  {"id": "IM"},  {"id": "KE"},  {"id": "KR"},  {"id": "LV"},  {"id": "NA"},  {"id": "NP"},  {"id": "PG"},  {"id": "PY"},  {"id": "ZM"} ]
+            },
+        
+            {
+                name: "L\u0027expansion strat\u00e9gique de la Chine et son autonomie technologique",
+                color: "#72a2e5",
+                data: [ {"id": "BD"},  {"id": "EC"},  {"id": "ES"},  {"id": "GY"},  {"id": "LA"},  {"id": "ME"},  {"id": "SZ"} ]
+            },
+        
+            {
+                name: "Union Europ\u00e9enne et alli\u00e9s naviguant dans les diff\u00e9rends commerciaux et les sanctions",
+                color: "#bf72e5",
+                data: [ {"id": "AL"},  {"id": "BA"},  {"id": "BH"},  {"id": "CN"},  {"id": "GH"},  {"id": "GU"},  {"id": "MN"},  {"id": "UZ"} ]
+            },
+        
+            {
+                name: "L\u0027engagement \u00e9conomique de l\u0027Afrique face \u00e0 l\u0027int\u00e9r\u00eat mondial croissant",
+                color: "#e5728f",
+                data: [ {"id": "BW"},  {"id": "GA"},  {"id": "ML"},  {"id": "MR"},  {"id": "ZA"} ]
+            },
+        
+            {
+                name: "Acteurs plus petits et r\u00e9gionaux ajustant leurs politiques commerciales et r\u00e9glementaires",
+                color: "#e5d272",
+                data: [ {"id": "AZ"},  {"id": "CV"},  {"id": "MA"},  {"id": "PR"},  {"id": "SB"},  {"id": "SM"} ]
+            }
+        
+        
+            ,
+            {
+                name: "Plusieurs points de vue : \n- Tensions commerciales entre les \u00c9tats-Unis et l\u0027Inde et la r\u00e9ponse de l\u0027Inde\n- Acteurs plus petits et r\u00e9gionaux ajustant leurs politiques commerciales et r\u00e9glementaires",
+                color: "#AAAAAA",
+                data: [{"id": "SG"}]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Masquer les sources ▲' : 'Montrer les sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li class="active-m">
+               <a href="/">Accueil</a>
+            </li>
+            <li>
+              <a href="/fr/about.html">A Propos</a>
+            </li>
+            <li>
+              <a href="/fr/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
