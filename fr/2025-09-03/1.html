@@ -1,0 +1,940 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Crise humanitaire et réponses internationales face aux catastrophes naturelles dévastatrices en Afghanistan et au Soudan</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/fr', '/en');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>                 
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Crise humanitaire et réponses internationales face aux catastrophes naturelles dévastatrices en Afghanistan et au Soudan</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-09-03</span> • <span>111 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-09-03/2025-09-03-1.jpg" alt="Crise humanitaire et réponses internationales face aux catastrophes naturelles dévastatrices en Afghanistan et au Soudan" class="main-image">
+                <p style="margin:0">Une série de catastrophes naturelles dévastatrices ont récemment frappé l&#39;Afghanistan et le Soudan, avec un tremblement de terre mortel dans l&#39;est de l&#39;Afghanistan causant plus de 1 400 morts et des milliers de blessés, et un glissement de terrain massif dans l&#39;ouest du Soudan entraînant environ 1 000 décès. Les opérations de secours et d&#39;aide sont en cours dans un terrain difficile, avec des défis infrastructurels et des conflits en cours, ce qui complique l&#39;accès et la livraison de l&#39;aide. La communauté internationale, y compris les Nations Unies et divers pays, a promis une assistance humanitaire, tandis que les gouvernements et autorités affectés appellent d&#39;urgence à plus de soutien. Ces catastrophes soulignent la vulnérabilité des régions touchées par les conflits et sujettes aux catastrophes, mettant en évidence l&#39;importance de la solidarité mondiale et des efforts de secours coordonnés.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div class="key-points">
+        <h2>Les pays qui en parlent</h2>
+    </div>
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Solidarité internationale et aide humanitaire axées sur la crise sismique en Afghanistan</h3>
+        <p class="cluster-description">Les pays et les organisations internationales insistent fortement sur la solidarité humanitaire et le soutien à l&#39;Afghanistan suite au tremblement de terre dévastateur qui a causé plus de 1 400 morts. L&#39;accent est mis sur la mobilisation des opérations de secours, la fourniture d&#39;une aide d&#39;urgence et la prise en compte des vulnérabilités infrastructurelles importantes dans la région affectée par le conflit. De nombreux États, y compris les voisins régionaux et les acteurs mondiaux, promettent une assistance et expriment leurs condoléances, reconnaissant les difficultés accrues dues à l&#39;instabilité politique persistante et aux conditions géographiques difficiles. Ce point de vue souligne l&#39;appel urgent à la coopération mondiale et la nécessité critique d&#39;une aide immédiate et d&#39;un engagement humanitaire soutenu.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gnb.svg" alt="Guinée-Bissau" title="Guinée-Bissau" class="flag-icon">
+                            <a href="https://una-oic.org/News/all/" target="_blank" class="article-link">Les Nations Unies s&#39;engagent à fournir toute l&#39;aide possible aux victimes du tremblement de terre en Afghanistan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gnb.svg" alt="Guinée-Bissau" title="Guinée-Bissau" class="flag-icon">
+                            <a href="https://una-oic.org/News/all/" target="_blank" class="article-link">Le secrétaire général de l&#39;Organisation de la coopération islamique présente ses condoléances à l&#39;Afghanistan après le tremblement de terre à Kunar</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lva.svg" alt="Lettonie" title="Lettonie" class="flag-icon">
+                            <a href="https://www.diena.lv/raksts/pasaule" target="_blank" class="article-link">Le bilan du tremblement de terre en Afghanistan dépasse 1 400 morts</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/civ.svg" alt="Côte d&#39;Ivoire" title="Côte d&#39;Ivoire" class="flag-icon">
+                            <a href="https://www.fratmat.info/etranger" target="_blank" class="article-link">Afghanistan : plus de 800 morts dans un tremblement de terre qui secoue le pays oriental</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lka.svg" alt="Sri Lanka" title="Sri Lanka" class="flag-icon">
+                            <a href="https://sinhala.newsfirst.lk/world" target="_blank" class="article-link">Le nombre de morts suite au tremblement de terre en Afghanistan augmente</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/uzb.svg" alt="Ouzbékistan" title="Ouzbékistan" class="flag-icon">
+                            <a href="https://www.gazeta.uz/ru/world/" target="_blank" class="article-link">Le bilan du tremblement de terre en Afghanistan dépasse 1100</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/uzb.svg" alt="Ouzbékistan" title="Ouzbékistan" class="flag-icon">
+                            <a href="https://www.gazeta.uz/ru/world/" target="_blank" class="article-link">Plus de 800 morts dans un tremblement de terre en Afghanistan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fro.svg" alt="FRO" title="FRO" class="flag-icon">
+                            <a href="https://www.in.fo/" target="_blank" class="article-link">Au moins 1 100 morts après un tremblement de terre en Afghanistan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fro.svg" alt="FRO" title="FRO" class="flag-icon">
+                            <a href="https://www.in.fo/" target="_blank" class="article-link">Aide à l&#39;Afghanistan après le tremblement de terre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/moz.svg" alt="Mozambique" title="Mozambique" class="flag-icon">
+                            <a href="https://opais.co.mz/internacional/" target="_blank" class="article-link">Un tremblement de terre tue 800 personnes en Afghanistan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mus.svg" alt="Maurice" title="Maurice" class="flag-icon">
+                            <a href="https://lexpress.mu/international" target="_blank" class="article-link">Plus de 800 morts dans un tremblement de terre qui a secoué l&#39;est de l&#39;Afghanistan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mus.svg" alt="Maurice" title="Maurice" class="flag-icon">
+                            <a href="https://lexpress.mu/international" target="_blank" class="article-link">Plus de 600 morts et 1 500 blessés dans un tremblement de terre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kaz.svg" alt="Kazakhstan" title="Kazakhstan" class="flag-icon">
+                            <a href="https://kazpravda.kz/r/v-mire/" target="_blank" class="article-link">Le nombre de victimes du puissant tremblement de terre en Afghanistan dépasse mille</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/npl.svg" alt="Népal" title="Népal" class="flag-icon">
+                            <a href="https://ekantipur.com/world" target="_blank" class="article-link">Tremblement de terre en Afghanistan fait au moins 800 morts, plus de 2 500 blessés</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dom.svg" alt="République dominicaine" title="République dominicaine" class="flag-icon">
+                            <a href="https://listindiario.com/las-mundiales" target="_blank" class="article-link">Le bilan du tremblement de terre en Afghanistan dépasse 1 400</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mac.svg" alt="MAC" title="MAC" class="flag-icon">
+                            <a href="https://macaudailytimes.com.mo/category/world" target="_blank" class="article-link">Tremblement de terre détruit des villages et tue 800 personnes, avec 2 500 blessés</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pri.svg" alt="PRI" title="PRI" class="flag-icon">
+                            <a href="https://www.elnuevodia.com/noticias/mundo/" target="_blank" class="article-link">Le bilan du tremblement de terre en Afghanistan dépasse 1 400</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pri.svg" alt="PRI" title="PRI" class="flag-icon">
+                            <a href="https://www.primerahora.com/noticias/mundo/" target="_blank" class="article-link">Les sauveteurs recherchent des survivants du tremblement de terre en Afghanistan qui a tué plus de 1 400</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/qat.svg" alt="Qatar" title="Qatar" class="flag-icon">
+                            <a href="https://dohanews.co/category/news/" target="_blank" class="article-link">Le Qatar réaffirme son soutien à l&#39;Afghanistan après un tremblement de terre meurtrier, le bilan dépasse 1 400</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/qat.svg" alt="Qatar" title="Qatar" class="flag-icon">
+                            <a href="https://www.al-watan.com/%D8%B9%D8%B1%D8%A8%D9%8A-%D9%88%D8%AF%D9%88%D9%84%D9%8A" target="_blank" class="article-link">Le bilan du tremblement de terre en Afghanistan atteint 1 411</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kos.svg" alt="KOS" title="KOS" class="flag-icon">
+                            <a href="https://www.rtklive.com/sq/news-category.php?CatID=10" target="_blank" class="article-link">Afghanistan, 1 100 morts et 3 000 blessés après un tremblement de terre dévastateur</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lux.svg" alt="Luxembourg" title="Luxembourg" class="flag-icon">
+                            <a href="https://www.wort.lu/fr/international" target="_blank" class="article-link">Tremblement de terre en Afghanistan : plus de 800 morts et 2 700 blessés</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/omn.svg" alt="Oman" title="Oman" class="flag-icon">
+                            <a href="https://www.omanobserver.om/world" target="_blank" class="article-link">Nouveau séisme frappe l&#39;Afghanistan, alors que le bilan dépasse 1 400</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/som.svg" alt="Somalie" title="Somalie" class="flag-icon">
+                            <a href="https://www.radiodalsan.com/category/news-in-english/" target="_blank" class="article-link">Le nombre de morts du tremblement de terre en Afghanistan dépasse 800 alors que les talibans appellent à l&#39;aide</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tcd.svg" alt="Tchad" title="Tchad" class="flag-icon">
+                            <a href="https://tchadinfos.com/category/international/" target="_blank" class="article-link">Afghanistan : un tremblement de terre fait plus de 800 morts</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mng.svg" alt="Mongolie" title="Mongolie" class="flag-icon">
+                            <a href="https://montsame.mn/mn/more/17" target="_blank" class="article-link">Le bilan du tremblement de terre dévastateur en Afghanistan dépasse 1 400</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vnm.svg" alt="Viêt Nam" title="Viêt Nam" class="flag-icon">
+                            <a href="https://vietnamnews.vn/world" target="_blank" class="article-link">Le nombre de morts du tremblement de terre en Afghanistan dépasse 1 400, selon les autorités</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Irlande" title="Irlande" class="flag-icon">
+                            <a href="https://www.irishtimes.com/news/world" target="_blank" class="article-link">Tremblement de terre en Afghanistan : un nouveau séisme frappe le pays alors que le bilan continue de s&#39;alourdir</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kwt.svg" alt="Koweït" title="Koweït" class="flag-icon">
+                            <a href="https://kuwaittimes.com/world/" target="_blank" class="article-link">Tremblement de terre en Afghanistan : 800 morts</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nic.svg" alt="Nicaragua" title="Nicaragua" class="flag-icon">
+                            <a href="https://www.laprensani.com/internacionales" target="_blank" class="article-link">Plus de 1 400 morts après un tremblement de terre en Afghanistan ; l&#39;ONU met en garde contre un impact massif</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jor.svg" alt="Jordanie" title="Jordanie" class="flag-icon">
+                            <a href="https://www.jordantimes.com/news/world" target="_blank" class="article-link">Le bilan du tremblement de terre en Afghanistan s&#39;élève à plus de 900</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tjk.svg" alt="Tadjikistan" title="Tadjikistan" class="flag-icon">
+                            <a href="https://asiaplustj.info/tj/rubrics/world" target="_blank" class="article-link">Plus de 800 morts après le tremblement de terre d&#39;hier soir en Afghanistan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cri.svg" alt="Costa Rica" title="Costa Rica" class="flag-icon">
+                            <a href="https://www.nacion.com/el-mundo/" target="_blank" class="article-link">Tremblement de terre en Afghanistan laisse plus de 1 400 morts</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cri.svg" alt="Costa Rica" title="Costa Rica" class="flag-icon">
+                            <a href="https://www.diarioextra.com/categoria/internacionales/" target="_blank" class="article-link">Le nombre de morts du tremblement de terre en Afghanistan dépasse 1 400</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jpn.svg" alt="Japon" title="Japon" class="flag-icon">
+                            <a href="https://www.yomiuri.co.jp/world/" target="_blank" class="article-link">Tremblement de terre en Afghanistan laisse plus de 1 400 morts au milieu de la dévastation</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hnd.svg" alt="Honduras" title="Honduras" class="flag-icon">
+                            <a href="https://www.laprensa.hn/mundo/" target="_blank" class="article-link">Un nouveau tremblement de terre frappe la zone touchée par le tremblement de terre en Afghanistan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hnd.svg" alt="Honduras" title="Honduras" class="flag-icon">
+                            <a href="https://www.elheraldo.hn/mundo" target="_blank" class="article-link">Les morts dépassent 1 400 après le tremblement de terre en Afghanistan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/brn.svg" alt="Brunei" title="Brunei" class="flag-icon">
+                            <a href="https://www.rtbnews.rtb.gov.bn/Lists/News%202018/Category_International.aspx" target="_blank" class="article-link">Les survivants du tremblement de terre en Afghanistan creusent des tombes avec des piques alors que des ménages entiers sont anéantis</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/brn.svg" alt="Brunei" title="Brunei" class="flag-icon">
+                            <a href="https://www.rtbnews.rtb.gov.bn/Lists/News%202018/Category_International.aspx" target="_blank" class="article-link">Le tremblement de terre en Afghanistan fait 800 morts, en blesse 2 800, les talibans demandent de l&#39;aide au monde</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mar.svg" alt="Maroc" title="Maroc" class="flag-icon">
+                            <a href="https://lematin.ma/monde" target="_blank" class="article-link">Tremblement de terre en Afghanistan : le bilan des morts dépasse 1 400</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mar.svg" alt="Maroc" title="Maroc" class="flag-icon">
+                            <a href="https://lematin.ma/monde" target="_blank" class="article-link">Séisme en Afghanistan : l&#39;ONU débloque cinq millions de dollars d&#39;aide humanitaire</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mar.svg" alt="Maroc" title="Maroc" class="flag-icon">
+                            <a href="https://lematin.ma/monde" target="_blank" class="article-link">Plus de 800 morts et 2 700 blessés dans le séisme en Afghanistan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vat.svg" alt="Saint-Siège" title="Saint-Siège" class="flag-icon">
+                            <a href="https://www.vaticannews.va/it/mondo.html" target="_blank" class="article-link">Afghanistan : le bilan du séisme dépasse 1 400 morts avec plus de 3 200 blessés</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vat.svg" alt="Saint-Siège" title="Saint-Siège" class="flag-icon">
+                            <a href="https://www.osservatoreromano.va/it/sections/internazionale.html" target="_blank" class="article-link">Séisme en Afghanistan : plus de 1 400 morts et plus de 3 200 blessés</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kgz.svg" alt="Kirghizistan" title="Kirghizistan" class="flag-icon">
+                            <a href="https://www.vb.kg/" target="_blank" class="article-link">Séisme meurtrier en Afghanistan 2025 : dernières mises à jour</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ca-qc.svg" alt="CA-QC" title="CA-QC" class="flag-icon">
+                            <a href="https://www.journaldequebec.com/actualite/monde" target="_blank" class="article-link">Un second séisme de magnitude 5,2 frappe l&#39;Afghanistan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/rwa.svg" alt="Rwanda" title="Rwanda" class="flag-icon">
+                            <a href="https://www.newtimes.co.rw/international" target="_blank" class="article-link">Plus de 600 morts après un séisme en Afghanistan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/swz.svg" alt="Eswatini" title="Eswatini" class="flag-icon">
+                            <a href="http://www.times.co.sz/" target="_blank" class="article-link">Plus de 800 morts dans le séisme en Afghanistan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nga.svg" alt="Nigeria" title="Nigeria" class="flag-icon">
+                            <a href="https://guardian.ng/category/world/" target="_blank" class="article-link">Nouveau tremblement de terre frappe l&#39;Afghanistan frappé par la catastrophe, alors que le bilan dépasse 1 400</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/png.svg" alt="Papouasie-Nouvelle-Guinée" title="Papouasie-Nouvelle-Guinée" class="flag-icon">
+                            <a href="https://postcourier.com.pg/category/world-news/" target="_blank" class="article-link">Le séisme fait plus de 800 morts</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/chn.svg" alt="Chine" title="Chine" class="flag-icon">
+                            <a href="https://www.chinadaily.com.cn/world" target="_blank" class="article-link">La recherche de survivants se poursuit alors que le bilan du tremblement de terre en Afghanistan augmente</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dnk.svg" alt="Danemark" title="Danemark" class="flag-icon">
+                            <a href="https://politiken.dk/udland/" target="_blank" class="article-link">Le nombre de morts augmente après le tremblement de terre en Afghanistan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/idn.svg" alt="Indonésie" title="Indonésie" class="flag-icon">
+                            <a href="https://www.thejakartapost.com/world" target="_blank" class="article-link">Le bilan des morts du tremblement de terre en Afghanistan dépasse 1 400, selon les autorités</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72a2e5; padding: 8px 16px; border-radius: 4px;">Crise humanitaire et conflit compliquant les efforts de secours dans le glissement de terrain soudanais</h3>
+        <p class="cluster-description">Les pays rapportant sur le Soudan se concentrent sur le glissement de terrain catastrophique qui a causé environ 1 000 morts dans la région du Darfour, une zone en proie à des conflits et à la famine. Ces articles mettent en lumière les effets combinés des catastrophes naturelles et du conflit armé en cours, qui restreignent gravement l&#39;accès aux zones affectées, retardent l&#39;aide humanitaire et aggravent la souffrance. Les rapports soulignent le besoin urgent d&#39;une assistance internationale et les défis posés par les préoccupations de sécurité et le terrain difficile. Cette perspective insiste sur le fait que les catastrophes naturelles dans les régions affectées par l&#39;instabilité nécessitent des réponses humanitaires et de consolidation de la paix intégrées et urgentes.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ben.svg" alt="Bénin" title="Bénin" class="flag-icon">
+                            <a href="https://lematinal.bj/category/inter/" target="_blank" class="article-link">Soudan : Au moins 1000 morts dans un glissement de terrain dans la partie ouest du pays</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fro.svg" alt="FRO" title="FRO" class="flag-icon">
+                            <a href="https://www.in.fo/" target="_blank" class="article-link">Plus de 1 000 morts dans un glissement de terrain au Soudan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mus.svg" alt="Maurice" title="Maurice" class="flag-icon">
+                            <a href="https://lexpress.mu/international" target="_blank" class="article-link">Plus d&#39;un millier de morts dans un glissement de terrain, annonce un groupe armé</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/npl.svg" alt="Népal" title="Népal" class="flag-icon">
+                            <a href="https://ekantipur.com/world" target="_blank" class="article-link">Au moins 1000 morts dus aux glissements de terrain au Soudan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/usa.svg" alt="États-Unis" title="États-Unis" class="flag-icon">
+                            <a href="https://edition.cnn.com/world" target="_blank" class="article-link">Plus de 1 000 morts dans un glissement de terrain dans un village du Soudan occidental, selon un groupe armé</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pri.svg" alt="PRI" title="PRI" class="flag-icon">
+                            <a href="https://www.primerahora.com/noticias/mundo/" target="_blank" class="article-link">Environ mille personnes enterrées après un glissement de terrain au Soudan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/omn.svg" alt="Oman" title="Oman" class="flag-icon">
+                            <a href="https://www.omanobserver.om/world" target="_blank" class="article-link">Un glissement de terrain a aplati un village soudanais, tuant plus de 1 000 personnes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bhr.svg" alt="Bahreïn" title="Bahreïn" class="flag-icon">
+                            <a href="https://akhbar-alkhaleej.com/news/section/WORL" target="_blank" class="article-link">Plus d&#39;un millier de morts dans un glissement de terrain au Darfour, au Soudan occidental</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Irlande" title="Irlande" class="flag-icon">
+                            <a href="https://www.irishtimes.com/news/world" target="_blank" class="article-link">Un glissement de terrain au Soudan tue des centaines dans la région de Darfour frappée par la famine et la guerre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kwt.svg" alt="Koweït" title="Koweït" class="flag-icon">
+                            <a href="https://kuwaittimes.com/world/" target="_blank" class="article-link">Un glissement de terrain détruit un village au Soudan, tuant plus de 1 000 personnes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cri.svg" alt="Costa Rica" title="Costa Rica" class="flag-icon">
+                            <a href="https://www.nacion.com/el-mundo/" target="_blank" class="article-link">Un seul survivant : un glissement de terrain ensevelit plus de 1 000 personnes au Soudan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cri.svg" alt="Costa Rica" title="Costa Rica" class="flag-icon">
+                            <a href="https://www.diarioextra.com/categoria/internacionales/" target="_blank" class="article-link">Glissement de terrain détruit un village au Soudan : plus de mille morts</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/che.svg" alt="Suisse" title="Suisse" class="flag-icon">
+                            <a href="https://www.nzz.ch/international" target="_blank" class="article-link">Glissement de terrain au Soudan anéantit un village entier, l&#39;aide humanitaire peine à atteindre la zone</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pol.svg" alt="Pologne" title="Pologne" class="flag-icon">
+                            <a href="https://wyborcza.pl/0,0.html?disableRedirects=true" target="_blank" class="article-link">Un glissement de terrain a détruit tout un village au Soudan, un seul résident a survécu, des centaines sont morts</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vat.svg" alt="Saint-Siège" title="Saint-Siège" class="flag-icon">
+                            <a href="https://www.vaticannews.va/it/mondo.html" target="_blank" class="article-link">La tristesse du Pape pour la tragédie au Darfour, où un glissement de terrain a tué plus de mille personnes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svn.svg" alt="Slovénie" title="Slovénie" class="flag-icon">
+                            <a href="https://www.delo.si/novice/svet" target="_blank" class="article-link">Glissement de terrain au Darfour : une catastrophe naturelle horrible en pleine guerre brutale</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tza.svg" alt="Tanzanie" title="Tanzanie" class="flag-icon">
+                            <a href="https://www.thecitizen.co.tz/tanzania/news/world/" target="_blank" class="article-link">Plus de 1 000 morts alors qu&#39;un glissement de terrain détruit un village soudanais</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dnk.svg" alt="Danemark" title="Danemark" class="flag-icon">
+                            <a href="https://politiken.dk/udland/" target="_blank" class="article-link">Plus de 1 000 morts signalés dans un glissement de terrain dans un village soudanais ; un seul survivant</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dnk.svg" alt="Danemark" title="Danemark" class="flag-icon">
+                            <a href="https://nyheder.tv2.dk/udland" target="_blank" class="article-link">Mouvement rebelle au Soudan : plus de 1 000 morts dans un glissement de terrain</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mwi.svg" alt="Malawi" title="Malawi" class="flag-icon">
+                            <a href="https://www.maravipost.com/ " target="_blank" class="article-link">Soudan : des centaines craignent d&#39;être morts dans un glissement de terrain au Darfour</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #bf72e5; padding: 8px 16px; border-radius: 4px;">Appels à une aide internationale accrue face aux défis politiques et logistiques en Afghanistan</h3>
+        <p class="cluster-description">Plusieurs pays soulignent explicitement les difficultés logistiques, infrastructurelles et politiques entravant les opérations de secours et d&#39;aide en Afghanistan suite au tremblement de terre, notamment l&#39;impact des coupes de financement et la situation sécuritaire fragile sous le régime taliban. Ces articles mettent en évidence que, malgré les appels urgents à l&#39;aide, la réponse a été entravée par des problèmes d&#39;accès, une instabilité politique et des ressources insuffisantes. La position souligne la nécessité cruciale d&#39;un financement et d&#39;une coopération internationales soutenus et élargis pour répondre efficacement à l&#39;urgence humanitaire. Ce groupe plaide pour surmonter les barrières politiques et pratiques afin d&#39;assurer que l&#39;aide parvienne à ceux qui en ont besoin.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/usa.svg" alt="États-Unis" title="États-Unis" class="flag-icon">
+                            <a href="https://edition.cnn.com/world" target="_blank" class="article-link">Les talibans appellent à l&#39;aide étrangère après un tremblement de terre meurtrier en Afghanistan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/usa.svg" alt="États-Unis" title="États-Unis" class="flag-icon">
+                            <a href="https://abcnews.go.com/International" target="_blank" class="article-link">Comment aider ceux qui ont été touchés par le tremblement de terre en Afghanistan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bra.svg" alt="Brésil" title="Brésil" class="flag-icon">
+                            <a href="https://oglobo.globo.com/mundo/" target="_blank" class="article-link">Les talibans demandent une aide internationale après le tremblement de terre ; le bilan s&#39;élève à 1 400 morts</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/isr.svg" alt="Israël" title="Israël" class="flag-icon">
+                            <a href="https://www.haaretz.com/world-news" target="_blank" class="article-link">Tremblement de terre dans l&#39;Afghanistan en guerre, contrôlé par les talibans, fait 800 morts et 2 800 blessés</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sxm.svg" alt="SXM" title="SXM" class="flag-icon">
+                            <a href="https://www.thedailyherald.sx/" target="_blank" class="article-link">Le tremblement de terre en Afghanistan fait 800 morts, 2 800 blessés, les talibans demandent l&#39;aide du monde</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hun.svg" alt="Hongrie" title="Hongrie" class="flag-icon">
+                            <a href="https://nepszava.hu/tag/kulfold/" target="_blank" class="article-link">Plus de 1400 morts dans un tremblement de terre en Afghanistan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Irlande" title="Irlande" class="flag-icon">
+                            <a href="https://www.independent.ie/world-news/" target="_blank" class="article-link">Tremblement de terre en Afghanistan : le bilan va augmenter alors que les talibans demandent une aide étrangère</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cog.svg" alt="République du Congo" title="République du Congo" class="flag-icon">
+                            <a href="https://www.mediacongo.net/articles-actualite-27_monde.html" target="_blank" class="article-link">Afghanistan : plus de 800 morts dans un puissant tremblement de terre dans la région orientale</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mar.svg" alt="Maroc" title="Maroc" class="flag-icon">
+                            <a href="https://leconomiste.com/flash-infos" target="_blank" class="article-link">Afghanistan : plus de 800 morts dans un tremblement de terre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hkg.svg" alt="HKG" title="HKG" class="flag-icon">
+                            <a href="https://www.scmp.com/news/world" target="_blank" class="article-link">Russie et Asie centrale : un autre tremblement de terre frappe l&#39;Afghanistan, entravant les efforts alors que le bilan dépasse 1 400</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aus.svg" alt="Australie" title="Australie" class="flag-icon">
+                            <a href="https://www.smh.com.au/world" target="_blank" class="article-link">Le bilan des morts du tremblement de terre en Afghanistan dépasse 1400, selon les Talibans, alors que les sauveteurs recherchent des survivants</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/esp.svg" alt="Espagne" title="Espagne" class="flag-icon">
+                            <a href="https://www.elmundo.es/internacional.html" target="_blank" class="article-link">Les coupes internationales en Afghanistan ralentissent les secours après un tremblement de terre ayant tué plus de 1 400 personnes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bol.svg" alt="Bolivie" title="Bolivie" class="flag-icon">
+                            <a href="https://eldeber.com.bo/seccion/mundo/" target="_blank" class="article-link">Les morts du tremblement de terre en Afghanistan dépassent 1 400 et une réplique frappe la région</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5728f; padding: 8px 16px; border-radius: 4px;">Expressions régionales de condoléances et de soutien à l&#39;Afghanistan</h3>
+        <p class="cluster-description">Les pays voisins et de la région expriment principalement leurs condoléances et leur solidarité avec l&#39;Afghanistan tout en offrant une assistance humanitaire face à la crise sismique. Ces États mettent en avant l&#39;interconnexion régionale, la vulnérabilité partagée face à l&#39;activité sismique, et l&#39;importance du soutien mutuel lors des urgences. Le discours est généralement diplomatique et axé sur le soutien moral combiné à des engagements d&#39;aide pratique. Le point de vue reflète une réponse communautaire régionale valorisant la coopération et la compassion lors des catastrophes naturelles.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lka.svg" alt="Sri Lanka" title="Sri Lanka" class="flag-icon">
+                            <a href="https://www.dailymirror.lk/world-news/213" target="_blank" class="article-link">L&#39;Inde envoie une aide humanitaire en Afghanistan après un tremblement de terre massif</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/twn.svg" alt="TWN" title="TWN" class="flag-icon">
+                            <a href="https://www.taipeitimes.com/News/world" target="_blank" class="article-link">Les sauveteurs se précipitent pour atteindre les villages afghans</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tjk.svg" alt="Tadjikistan" title="Tadjikistan" class="flag-icon">
+                            <a href="https://avesta.tj/category/world/" target="_blank" class="article-link">Tadjikistan a présenté ses condoléances au peuple d&#39;Afghanistan après le tremblement de terre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cyp.svg" alt="Chypre" title="Chypre" class="flag-icon">
+                            <a href="https://www.philenews.com/kosmos/" target="_blank" class="article-link">Tremblement de terre en Afghanistan : la Chine apporte une aide alors que la recherche de survivants se poursuit</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kgz.svg" alt="Kirghizistan" title="Kirghizistan" class="flag-icon">
+                            <a href="http://www.kabar.kg/" target="_blank" class="article-link">Sadyr Japarov a présenté ses condoléances au peuple d&#39;Afghanistan suite à un tremblement de terre</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Reconnaissance d&#39;autres catastrophes naturelles régionales et événements liés au climat</h3>
+        <p class="cluster-description">Plusieurs articles rapportent des catastrophes naturelles et des événements météorologiques extrêmes en dehors de l&#39;Afghanistan et du Soudan, notamment des inondations au Pakistan et en Inde, une éruption volcanique à Hawaï, des incendies de forêt en Espagne, ainsi que des inondations au Canada et en Italie. Ces articles mettent en lumière le contexte plus large de l&#39;augmentation de la fréquence et de l&#39;intensité des catastrophes naturelles dans le monde, souvent liées à la variabilité climatique et aux changements des modèles météorologiques. Le point de vue est axé sur la sensibilisation, la préparation et la gestion continue des catastrophes au-delà des zones de conflit, illustrant la vulnérabilité mondiale face aux dangers environnementaux.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kaz.svg" alt="Kazakhstan" title="Kazakhstan" class="flag-icon">
+                            <a href="https://kazpravda.kz/r/v-mire/" target="_blank" class="article-link">Plus de 30 personnes sont mortes dans des inondations au Pakistan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/npl.svg" alt="Népal" title="Népal" class="flag-icon">
+                            <a href="https://thehimalayantimes.com/category/world/" target="_blank" class="article-link">Une semaine de fortes pluies et d&#39;inondations à travers le Pakistan tue 46 personnes, dont 13 membres de la famille</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tcd.svg" alt="Tchad" title="Tchad" class="flag-icon">
+                            <a href="https://tchadinfos.com/category/international/" target="_blank" class="article-link">Soudan : un glissement de terrain cause environ 1 000 morts au Darfour</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bhr.svg" alt="Bahreïn" title="Bahreïn" class="flag-icon">
+                            <a href="https://www.alayam.com/online/international" target="_blank" class="article-link">Le Royaume-Uni enregistre l&#39;été le plus chaud de 2025 depuis le début des enregistrements</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/twn.svg" alt="TWN" title="TWN" class="flag-icon">
+                            <a href="https://www.taipeitimes.com/News/world" target="_blank" class="article-link">Villages isolés après des inondations meurtrières dans le Pendjab indien</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mar.svg" alt="Maroc" title="Maroc" class="flag-icon">
+                            <a href="https://lematin.ma/monde" target="_blank" class="article-link">Espagne : la Protection Civile annonce la fin de la vague d&#39;incendies de forêt</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svn.svg" alt="Slovénie" title="Slovénie" class="flag-icon">
+                            <a href="https://www.delo.si/novice/svet" target="_blank" class="article-link">Les inondations ont transformé les rues de Trieste en rivières : 150 appels d&#39;urgence reçus</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/brb.svg" alt="Barbade" title="Barbade" class="flag-icon">
+                            <a href="https://nationnews.com/category/world/" target="_blank" class="article-link">La tempête tropicale Kiko se forme sur l&#39;océan Pacifique</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/brb.svg" alt="Barbade" title="Barbade" class="flag-icon">
+                            <a href="https://nationnews.com/category/world/" target="_blank" class="article-link">Plus de 600 morts dans un tremblement de terre en Afghanistan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/brb.svg" alt="Barbade" title="Barbade" class="flag-icon">
+                            <a href="https://www.nationnews.com/nationnews/section/NEWS" target="_blank" class="article-link">La tempête tropicale Kiko se forme sur l&#39;océan Pacifique</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tun.svg" alt="Tunisie" title="Tunisie" class="flag-icon">
+                            <a href="http://www.tunisiesoir.com/category/international/" target="_blank" class="article-link">Évacuation obligatoire à Deep Cove alors que l&#39;inondation déclenche l&#39;état d&#39;urgence</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tun.svg" alt="Tunisie" title="Tunisie" class="flag-icon">
+                            <a href="http://www.tunisiesoir.com/category/international/" target="_blank" class="article-link">Une rivière atmosphérique devrait apporter de fortes pluies et des inondations en Colombie-Baclie</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Solidarit\u00e9 internationale et aide humanitaire ax\u00e9es sur la crise sismique en Afghanistan",
+                color: "#72e5ac",
+                data: [ {"id": ""},  {"id": "BN"},  {"id": "CI"},  {"id": "CN"},  {"id": "DO"},  {"id": "GW"},  {"id": "HN"},  {"id": "ID"},  {"id": "JO"},  {"id": "JP"},  {"id": "LU"},  {"id": "LV"},  {"id": "MN"},  {"id": "MO"},  {"id": "MZ"},  {"id": "NG"},  {"id": "NI"},  {"id": "PG"},  {"id": "QA"},  {"id": "RW"},  {"id": "SO"},  {"id": "SZ"},  {"id": "UZ"},  {"id": "VN"},  {"id": "XK"} ]
+            },
+        
+            {
+                name: "Crise humanitaire et conflit compliquant les efforts de secours dans le glissement de terrain soudanais",
+                color: "#72a2e5",
+                data: [ {"id": "BJ"},  {"id": "CH"},  {"id": "MW"},  {"id": "PL"},  {"id": "TZ"} ]
+            },
+        
+            {
+                name: "Appels \u00e0 une aide internationale accrue face aux d\u00e9fis politiques et logistiques en Afghanistan",
+                color: "#bf72e5",
+                data: [ {"id": "AU"},  {"id": "BO"},  {"id": "BR"},  {"id": "CG"},  {"id": "ES"},  {"id": "HK"},  {"id": "HU"},  {"id": "IL"},  {"id": "SX"} ]
+            },
+        
+            {
+                name: "Expressions r\u00e9gionales de condol\u00e9ances et de soutien \u00e0 l\u0027Afghanistan",
+                color: "#e5728f",
+                data: [ {"id": "CY"} ]
+            },
+        
+            {
+                name: "Reconnaissance d\u0027autres catastrophes naturelles r\u00e9gionales et \u00e9v\u00e9nements li\u00e9s au climat",
+                color: "#e5d272",
+                data: [ {"id": "BB"},  {"id": "TN"} ]
+            }
+        
+        
+            ,
+            {
+                name: "Plusieurs points de vue : \n- Solidarit\u00e9 internationale et aide humanitaire ax\u00e9es sur la crise sismique en Afghanistan\n- Crise humanitaire et conflit compliquant les efforts de secours dans le glissement de terrain soudanais",
+                color: "#AAAAAA",
+                data: [{"id": "CR"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Solidarit\u00e9 internationale et aide humanitaire ax\u00e9es sur la crise sismique en Afghanistan\n- Crise humanitaire et conflit compliquant les efforts de secours dans le glissement de terrain soudanais",
+                color: "#AAAAAA",
+                data: [{"id": "DK"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Solidarit\u00e9 internationale et aide humanitaire ax\u00e9es sur la crise sismique en Afghanistan\n- Crise humanitaire et conflit compliquant les efforts de secours dans le glissement de terrain soudanais",
+                color: "#AAAAAA",
+                data: [{"id": "FO"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Solidarit\u00e9 internationale et aide humanitaire ax\u00e9es sur la crise sismique en Afghanistan\n- Crise humanitaire et conflit compliquant les efforts de secours dans le glissement de terrain soudanais\n- Appels \u00e0 une aide internationale accrue face aux d\u00e9fis politiques et logistiques en Afghanistan",
+                color: "#AAAAAA",
+                data: [{"id": "IE"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Solidarit\u00e9 internationale et aide humanitaire ax\u00e9es sur la crise sismique en Afghanistan\n- Expressions r\u00e9gionales de condol\u00e9ances et de soutien \u00e0 l\u0027Afghanistan",
+                color: "#AAAAAA",
+                data: [{"id": "KG"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Solidarit\u00e9 internationale et aide humanitaire ax\u00e9es sur la crise sismique en Afghanistan\n- Crise humanitaire et conflit compliquant les efforts de secours dans le glissement de terrain soudanais",
+                color: "#AAAAAA",
+                data: [{"id": "KW"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Solidarit\u00e9 internationale et aide humanitaire ax\u00e9es sur la crise sismique en Afghanistan\n- Reconnaissance d\u0027autres catastrophes naturelles r\u00e9gionales et \u00e9v\u00e9nements li\u00e9s au climat",
+                color: "#AAAAAA",
+                data: [{"id": "KZ"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Solidarit\u00e9 internationale et aide humanitaire ax\u00e9es sur la crise sismique en Afghanistan\n- Expressions r\u00e9gionales de condol\u00e9ances et de soutien \u00e0 l\u0027Afghanistan",
+                color: "#AAAAAA",
+                data: [{"id": "LK"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Solidarit\u00e9 internationale et aide humanitaire ax\u00e9es sur la crise sismique en Afghanistan\n- Appels \u00e0 une aide internationale accrue face aux d\u00e9fis politiques et logistiques en Afghanistan\n- Reconnaissance d\u0027autres catastrophes naturelles r\u00e9gionales et \u00e9v\u00e9nements li\u00e9s au climat",
+                color: "#AAAAAA",
+                data: [{"id": "MA"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Solidarit\u00e9 internationale et aide humanitaire ax\u00e9es sur la crise sismique en Afghanistan\n- Crise humanitaire et conflit compliquant les efforts de secours dans le glissement de terrain soudanais",
+                color: "#AAAAAA",
+                data: [{"id": "MU"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Solidarit\u00e9 internationale et aide humanitaire ax\u00e9es sur la crise sismique en Afghanistan\n- Crise humanitaire et conflit compliquant les efforts de secours dans le glissement de terrain soudanais\n- Reconnaissance d\u0027autres catastrophes naturelles r\u00e9gionales et \u00e9v\u00e9nements li\u00e9s au climat",
+                color: "#AAAAAA",
+                data: [{"id": "NP"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Solidarit\u00e9 internationale et aide humanitaire ax\u00e9es sur la crise sismique en Afghanistan\n- Crise humanitaire et conflit compliquant les efforts de secours dans le glissement de terrain soudanais",
+                color: "#AAAAAA",
+                data: [{"id": "OM"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Solidarit\u00e9 internationale et aide humanitaire ax\u00e9es sur la crise sismique en Afghanistan\n- Crise humanitaire et conflit compliquant les efforts de secours dans le glissement de terrain soudanais",
+                color: "#AAAAAA",
+                data: [{"id": "PR"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Solidarit\u00e9 internationale et aide humanitaire ax\u00e9es sur la crise sismique en Afghanistan\n- Reconnaissance d\u0027autres catastrophes naturelles r\u00e9gionales et \u00e9v\u00e9nements li\u00e9s au climat",
+                color: "#AAAAAA",
+                data: [{"id": "TD"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Solidarit\u00e9 internationale et aide humanitaire ax\u00e9es sur la crise sismique en Afghanistan\n- Expressions r\u00e9gionales de condol\u00e9ances et de soutien \u00e0 l\u0027Afghanistan",
+                color: "#AAAAAA",
+                data: [{"id": "TJ"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Solidarit\u00e9 internationale et aide humanitaire ax\u00e9es sur la crise sismique en Afghanistan\n- Crise humanitaire et conflit compliquant les efforts de secours dans le glissement de terrain soudanais",
+                color: "#AAAAAA",
+                data: [{"id": "VA"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Crise humanitaire et conflit compliquant les efforts de secours dans le glissement de terrain soudanais\n- Reconnaissance d\u0027autres catastrophes naturelles r\u00e9gionales et \u00e9v\u00e9nements li\u00e9s au climat",
+                color: "#AAAAAA",
+                data: [{"id": "BH"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Crise humanitaire et conflit compliquant les efforts de secours dans le glissement de terrain soudanais\n- Reconnaissance d\u0027autres catastrophes naturelles r\u00e9gionales et \u00e9v\u00e9nements li\u00e9s au climat",
+                color: "#AAAAAA",
+                data: [{"id": "SI"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Crise humanitaire et conflit compliquant les efforts de secours dans le glissement de terrain soudanais\n- Appels \u00e0 une aide internationale accrue face aux d\u00e9fis politiques et logistiques en Afghanistan",
+                color: "#AAAAAA",
+                data: [{"id": "US"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Expressions r\u00e9gionales de condol\u00e9ances et de soutien \u00e0 l\u0027Afghanistan\n- Reconnaissance d\u0027autres catastrophes naturelles r\u00e9gionales et \u00e9v\u00e9nements li\u00e9s au climat",
+                color: "#AAAAAA",
+                data: [{"id": "TW"}]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Masquer les sources ▲' : 'Montrer les sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li class="active-m">
+               <a href="/">Accueil</a>
+            </li>
+            <li>
+              <a href="/fr/about.html">A Propos</a>
+            </li>
+            <li>
+              <a href="/fr/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -910,7 +910,7 @@ footer hr{
 	align-items: center;
 }
 .breaking-news-divs .letf{
-	background-color: #90AEAD;
+	background-color: #E64833;
 	color: #fff;
 	width: 150px;
 	height: 40px;
@@ -6542,4 +6542,34 @@ button.close-menu{
 
 .breaking-news-divs .letf h5{
 	font-size: 16px;
+}
+
+/* ticker css ajouter par IA */
+
+.ticker-wrapper {
+    width: 100%;
+    overflow: hidden;
+    background: white;
+}
+
+.ticker {
+    display: inline-block;
+    white-space: nowrap;
+    animation: ticker 15s linear infinite;
+}
+
+.ticker span {
+    display: inline-block;
+    padding-right: 20px;
+    color: #090909;
+    text-decoration: none;
+}
+
+@keyframes ticker {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-50%, 0, 0);
+    }
 }
