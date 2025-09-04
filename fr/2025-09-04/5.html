@@ -1,0 +1,489 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Perspectives divergentes sur la coopération et l&#39;influence des organisations internationales</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/fr', '/en');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>                 
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Perspectives divergentes sur la coopération et l&#39;influence des organisations internationales</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-09-04</span> • <span>44 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-09-04/2025-09-04-5.jpg" alt="Perspectives divergentes sur la coopération et l&#39;influence des organisations internationales" class="main-image">
+                <p style="margin:0">Les articles reflètent un large spectre d&#39;engagements et de points de vue concernant les organisations internationales telles que l&#39;ONU, la SCO, la BAD, ainsi que des organismes régionaux comme l&#39;Union africaine et la Communauté d&#39;Afrique de l&#39;Est. Certains pays mettent l&#39;accent sur la coopération, l&#39;intégration et le leadership pour renforcer la stabilité régionale et mondiale, la croissance économique et le développement durable, comme en témoignent la SCO, les banques de développement africaines et les initiatives de l&#39;ONU. À l&#39;inverse, des tensions et des conflits apparaissent autour de jeux de pouvoir géopolitiques, de sanctions et de veto qui remettent en question les cadres de coopération, comme dans les tensions entre les États-Unis et la CPI, le veto de l&#39;Inde à la SCO concernant l&#39;Azerbaïdjan, et des messages critiques à l&#39;encontre de l&#39;influence occidentale. Par ailleurs, les pays adoptant une position intermédiaire se concentrent sur le développement, le renforcement des capacités et la gouvernance éthique, soulignant un engagement pragmatique avec les institutions multilatérales pour le progrès économique et social.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div class="key-points">
+        <h2>Les pays qui en parlent</h2>
+    </div>
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Partisans de la Coopération et de l&#39;Intégration Régionale</h3>
+        <p class="cluster-description">Les pays de ce groupe mettent l&#39;accent sur le renforcement de la coopération et de l&#39;intégration au sein des organisations régionales et internationales pour promouvoir la paix, la sécurité, le développement durable et la croissance économique. Ils soutiennent le leadership et le multilatéralisme comme moteurs clés pour la stabilité et la prospérité régionales, comme en témoigne l&#39;engagement des nations africaines en faveur du leadership de la BAD, des nominations à l&#39;ONU et des programmes collaboratifs avec l&#39;UNESCO et l&#39;OMS. L&#39;Organisation de coopération de Shanghai (OCS) et des entités similaires servent de plateformes essentielles pour ces pays afin de renforcer la confiance mutuelle, la collaboration économique et la coopération en matière de sécurité. Leur engagement envers des objectifs de développement communs et le multilatéralisme souligne leur position en faveur de la résolution collective des problèmes internationaux et de la solidarité diplomatique.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ben.svg" alt="Bénin" title="Bénin" class="flag-icon">
+                            <a href="https://lematinal.bj/category/inter/" target="_blank" class="article-link">Nations Unies : Diene Keita nommée Directrice Exécutive de l&#39;UNFPA</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/civ.svg" alt="Côte d&#39;Ivoire" title="Côte d&#39;Ivoire" class="flag-icon">
+                            <a href="https://www.fratmat.info/etranger" target="_blank" class="article-link">Communauté de Développement de l&#39;Afrique Australe : Cyril Ramaphosa soutient le homologue malgache Andry Rajoelina</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/civ.svg" alt="Côte d&#39;Ivoire" title="Côte d&#39;Ivoire" class="flag-icon">
+                            <a href="https://www.aip.ci/category/international/" target="_blank" class="article-link">Côte d&#39;Ivoire et UNESCO valident le programme de formation et de certification sur les valeurs, l&#39;éthique et l&#39;intégrité</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/syr.svg" alt="Syrie" title="Syrie" class="flag-icon">
+                            <a href="https://sana.sy/en/?cat=3" target="_blank" class="article-link">Le ministre des Affaires étrangères rencontre le Sous-Secrétaire Général de l&#39;ONU et le Secrétaire Exécutif de la CEA-ONU</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mhl.svg" alt="Îles Marshall" title="Îles Marshall" class="flag-icon">
+                            <a href="https://www.rnz.co.nz/international/pacific-news?tag=marshall-islands" target="_blank" class="article-link">Le chef de l&#39;ONU s&#39;adresse au parlement de Papouasie-Nouvelle-Guinée lors d&#39;une visite &#39;historique&#39;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cmr.svg" alt="Cameroun" title="Cameroun" class="flag-icon">
+                            <a href="https://actucameroun.com/category/international/" target="_blank" class="article-link">Sidi Ould Tah officiellement inauguré en tant que président de la BAD à Abidjan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cmr.svg" alt="Cameroun" title="Cameroun" class="flag-icon">
+                            <a href="https://www.journalducameroun.com/category/international/" target="_blank" class="article-link">Le nouveau président de la Banque africaine de développement prend ses fonctions à Abidjan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/eth.svg" alt="Éthiopie" title="Éthiopie" class="flag-icon">
+                            <a href="https://www.ena.et/web/eng/politics" target="_blank" class="article-link">Les ministres de la Communauté d&#39;Afrique de l&#39;Est se réunissent à Arusha pour élaborer une nouvelle stratégie d&#39;intégration régionale</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mac.svg" alt="MAC" title="MAC" class="flag-icon">
+                            <a href="https://macaudailytimes.com.mo/category/world" target="_blank" class="article-link">Le sommet de l&#39;Organisation de coopération de Shanghai pourrait éclairer les intentions des États membres</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tgo.svg" alt="Togo" title="Togo" class="flag-icon">
+                            <a href="http://www.togopresse.tg/" target="_blank" class="article-link">Xi Jinping appelle les membres de la SCO à poursuivre des bénéfices mutuels et des résultats gagnant-gagnant</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tgo.svg" alt="Togo" title="Togo" class="flag-icon">
+                            <a href="http://www.togopresse.tg/" target="_blank" class="article-link">Kodjo Sevon-Tépé Adedzé participe à la 6e Conférence mondiale des présidents de parlements en Suisse</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tgo.svg" alt="Togo" title="Togo" class="flag-icon">
+                            <a href="http://www.togopresse.tg/" target="_blank" class="article-link">Dr George Elombi nommé prochain président d&#39;Afreximbank</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bhr.svg" alt="Bahreïn" title="Bahreïn" class="flag-icon">
+                            <a href="https://akhbar-alkhaleej.com/news/section/WORL" target="_blank" class="article-link">Sommet de Tianjin : Nouvelles réformes et expansion dans la famille de l&#39;Organisation de coopération de Shanghai</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nam.svg" alt="Namibie" title="Namibie" class="flag-icon">
+                            <a href="https://neweralive.na/category/international/" target="_blank" class="article-link">Poutine atterrit à Tianjin pour le sommet organisé par la Chine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tjk.svg" alt="Tadjikistan" title="Tadjikistan" class="flag-icon">
+                            <a href="https://avesta.tj/category/world/" target="_blank" class="article-link">Secrétaires généraux de l&#39;OCS, de la CSTO et de la CEI approuvent la feuille de route du développement de la coopération</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tjk.svg" alt="Tadjikistan" title="Tadjikistan" class="flag-icon">
+                            <a href="https://avesta.tj/category/world/" target="_blank" class="article-link">Le Kirghizistan a accueilli la réunion du Conseil de la CSTO sur la biosécurité avec une délégation tadjike</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/atg.svg" alt="Antigua-et-Barbuda" title="Antigua-et-Barbuda" class="flag-icon">
+                            <a href="https://antiguaobserver.com/category/international_news/" target="_blank" class="article-link">La société civile des Caraïbes appelle à un développement transformateur lors du SIDS4</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/atg.svg" alt="Antigua-et-Barbuda" title="Antigua-et-Barbuda" class="flag-icon">
+                            <a href="https://antiguaobserver.com/category/international_news/" target="_blank" class="article-link">Le Secrétaire général du Commonwealth affirme que la coopération est le seul chemin pour protéger l&#39;humanité face aux crises en cours, lors du Sommet du Mouvement des non-alignés</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/atg.svg" alt="Antigua-et-Barbuda" title="Antigua-et-Barbuda" class="flag-icon">
+                            <a href="https://antiguaobserver.com/category/international_news/" target="_blank" class="article-link">Le Secrétaire général du Commonwealth assistera au Sommet du Mouvement des non-alignés en Ouganda</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cog.svg" alt="République du Congo" title="République du Congo" class="flag-icon">
+                            <a href="https://www.mediacongo.net/articles-actualite-27_monde.html" target="_blank" class="article-link">Les dirigeants de l&#39;Organisation de coopération de Shanghai s&#39;engagent à renforcer la coopération en matière de sécurité et d&#39;économie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lao.svg" alt="Laos" title="Laos" class="flag-icon">
+                            <a href="http://kpl.gov.la/En/" target="_blank" class="article-link">Sommet de l&#39;OCS marque une nouvelle ère de coopération mondiale</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lao.svg" alt="Laos" title="Laos" class="flag-icon">
+                            <a href="http://kpl.gov.la/En/" target="_blank" class="article-link">La République populaire démocratique lao devient un nouveau partenaire de dialogue de l&#39;OCS : élargissement de l&#34;esprit de Shanghai</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tza.svg" alt="Tanzanie" title="Tanzanie" class="flag-icon">
+                            <a href="https://dailynews.co.tz/category/world/" target="_blank" class="article-link">Collaboration en recherche agricole et en technologie dans le cadre des BRICS</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kgz.svg" alt="Kirghizistan" title="Kirghizistan" class="flag-icon">
+                            <a href="https://www.vb.kg/" target="_blank" class="article-link">Entretien avec Alikbek Dzhekshenkulov : l&#39;OCS et le Kirghizistan - de nouveaux horizons</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kgz.svg" alt="Kirghizistan" title="Kirghizistan" class="flag-icon">
+                            <a href="https://www.vb.kg/" target="_blank" class="article-link">L&#39;ancien ministre des Affaires étrangères du Kirghizistan évalue les résultats du sommet de l&#39;OCS à Tianjin</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kgz.svg" alt="Kirghizistan" title="Kirghizistan" class="flag-icon">
+                            <a href="https://www.vb.kg/" target="_blank" class="article-link">Des officiers des pays membres de l&#39;OTSC honorent la mémoire du soldat kirghiz mort pour la Biélorussie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kgz.svg" alt="Kirghizistan" title="Kirghizistan" class="flag-icon">
+                            <a href="http://www.kabar.kg/" target="_blank" class="article-link">L&#39;Ouzbékistan rejoint le Conseil anti-corruption de la CEI</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mrt.svg" alt="Mauritanie" title="Mauritanie" class="flag-icon">
+                            <a href="https://www.journaltahalil.com/category/international/" target="_blank" class="article-link">M. Sidi Ould Tah prend ses fonctions en tant que neuvième président du Groupe de la Banque africaine de développement</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/png.svg" alt="Papouasie-Nouvelle-Guinée" title="Papouasie-Nouvelle-Guinée" class="flag-icon">
+                            <a href="https://www.thenational.com.pg/category/international-news/" target="_blank" class="article-link">OMS : un effort unifié est nécessaire</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bfa.svg" alt="Burkina Faso" title="Burkina Faso" class="flag-icon">
+                            <a href="https://www.sidwaya.info/bfcategories/international/" target="_blank" class="article-link">Organisation de coopération de Shanghai : Xi Jinping appelle les États à renforcer la coopération</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lbn.svg" alt="Liban" title="Liban" class="flag-icon">
+                            <a href="https://www.annahar.com/International" target="_blank" class="article-link">Grossi annonce sa candidature au poste de Secrétaire général de l&#39;ONU</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lbr.svg" alt="Libéria" title="Libéria" class="flag-icon">
+                            <a href="https://www.liberianobserver.com/news/" target="_blank" class="article-link">Le SCO doit défendre « l&#39;Esprit de Shanghai » pour préserver la paix</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #bf72e5; padding: 8px 16px; border-radius: 4px;">Réalisme géopolitique et contestation dans les arènes multilatérales</h3>
+        <p class="cluster-description">Cette perspective reflète des pays engagés dans des dynamiques de pouvoir et des contestations géopolitiques au sein des organisations internationales, mettant souvent l&#39;accent sur la souveraineté, les intérêts stratégiques et défiant les puissances mondiales dominantes. Parmi les exemples figurent le veto de l&#39;Inde contre l&#39;adhésion de l&#39;Azerbaïdjan à l&#39;OCS, la critique du Sénégal à l&#39;encontre des sanctions américaines contre la Cour pénale internationale, et les messages délivrés lors des sommets de l&#39;OCS exprimant des ambitions pour un nouvel ordre mondial au-delà de l&#39;influence occidentale. Ces positions soulignent le scepticisme envers le multilatéralisme dirigé par l&#39;Occident et affirment des centres de pouvoir alternatifs cherchant à remodeler les structures de gouvernance régionales et mondiales. L&#39;accent est mis sur le maintien ou l&#39;expansion de l&#39;influence face à des rivalités diplomatiques complexes et une résistance stratégique.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gnq.svg" alt="Guinée équatoriale" title="Guinée équatoriale" class="flag-icon">
+                            <a href="http://www.ahoraeg.com/" target="_blank" class="article-link">Sénégal critique les sanctions américaines contre la Cour pénale internationale</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/arm.svg" alt="Arménie" title="Arménie" class="flag-icon">
+                            <a href="https://www.panarmenian.net/arm/world/" target="_blank" class="article-link">Inde bloque à nouveau la candidature de l&#39;Azerbaïdjan à l&#39;Organisation de coopération de Shanghai</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/prt.svg" alt="Portugal" title="Portugal" class="flag-icon">
+                            <a href="https://expresso.pt/" target="_blank" class="article-link">Sommet de l&#39;Organisation de coopération de Shanghai : messages à Trump sur la &#34;grande vitrine de la puissance&#34; et l&#39;ambition d&#39;un nouvel ordre mondial</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Groupes intermédiaires axés sur le développement et pragmatiques diplomatiquement</h3>
+        <p class="cluster-description">Ce point de vue se caractérise par des pays et des entités privilégiant la collaboration pratique sur le développement, le renforcement des capacités et la bonne gouvernance dans le cadre de forums internationaux sans confrontation politique ouverte. Des activités telles que l’aide financière de l’UE au Groenland, la coopération de la Côte d’Ivoire avec l’UNESCO, l’accent mis par Maurice et le Cameroun sur le leadership bancaire, et les engagements diplomatiques de la Macédoine du Nord mettent en évidence des efforts pour tirer parti des organisations internationales pour le progrès social et économique. De plus, la participation à des conférences et forums mondiaux visant la coopération législative et l’éthique témoigne d’une adoption pragmatique du multilatéralisme pour la construction d’institutions et le dialogue international.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/civ.svg" alt="Côte d&#39;Ivoire" title="Côte d&#39;Ivoire" class="flag-icon">
+                            <a href="https://www.aip.ci/category/international/" target="_blank" class="article-link">Comité International Olympique Invite à Créer des Médailles pour les Jeux Olympiques de la Jeunesse de Dakar 2026</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/grl.svg" alt="GRL" title="GRL" class="flag-icon">
+                            <a href="https://sermitsiaq.ag/" target="_blank" class="article-link">L&#39;UE Enverra Plus de Milliards au Groenland</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aze.svg" alt="Azerbaïdjan" title="Azerbaïdjan" class="flag-icon">
+                            <a href="https://en.trend.az/world/" target="_blank" class="article-link">Le ministre des Affaires étrangères de Macédoine du Nord Programme des Discussions sur les Droits à Genève lors de sa Visite</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/com.svg" alt="Comores" title="Comores" class="flag-icon">
+                            <a href="https://lagazettedescomores.com/" target="_blank" class="article-link">L&#39;OMI Reprend la Phase Finale de la Certification du Port de Mutsamudu</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kgz.svg" alt="Kirghizistan" title="Kirghizistan" class="flag-icon">
+                            <a href="https://www.vb.kg/" target="_blank" class="article-link">BRICS et CSTO : Choix Stratégique du Kirghizistan à Travers le Regard des Experts</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Partisans de la Coop\u00e9ration et de l\u0027Int\u00e9gration R\u00e9gionale",
+                color: "#72e5ac",
+                data: [ {"id": "AG"},  {"id": "BF"},  {"id": "BH"},  {"id": "BJ"},  {"id": "CG"},  {"id": "CM"},  {"id": "ET"},  {"id": "LA"},  {"id": "LB"},  {"id": "LR"},  {"id": "MH"},  {"id": "MO"},  {"id": "MR"},  {"id": "NA"},  {"id": "PG"},  {"id": "SY"},  {"id": "TG"},  {"id": "TJ"},  {"id": "TZ"} ]
+            },
+        
+            {
+                name: "R\u00e9alisme g\u00e9opolitique et contestation dans les ar\u00e8nes multilat\u00e9rales",
+                color: "#bf72e5",
+                data: [ {"id": "AM"},  {"id": "GQ"},  {"id": "PT"} ]
+            },
+        
+            {
+                name: "Groupes interm\u00e9diaires ax\u00e9s sur le d\u00e9veloppement et pragmatiques diplomatiquement",
+                color: "#e5d272",
+                data: [ {"id": "AZ"},  {"id": "GL"},  {"id": "KM"} ]
+            }
+        
+        
+            ,
+            {
+                name: "Plusieurs points de vue : \n- Partisans de la Coop\u00e9ration et de l\u0027Int\u00e9gration R\u00e9gionale\n- Groupes interm\u00e9diaires ax\u00e9s sur le d\u00e9veloppement et pragmatiques diplomatiquement",
+                color: "#AAAAAA",
+                data: [{"id": "CI"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Partisans de la Coop\u00e9ration et de l\u0027Int\u00e9gration R\u00e9gionale\n- Groupes interm\u00e9diaires ax\u00e9s sur le d\u00e9veloppement et pragmatiques diplomatiquement",
+                color: "#AAAAAA",
+                data: [{"id": "KG"}]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Masquer les sources ▲' : 'Montrer les sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li class="active-m">
+               <a href="/">Accueil</a>
+            </li>
+            <li>
+              <a href="/fr/about.html">A Propos</a>
+            </li>
+            <li>
+              <a href="/fr/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
