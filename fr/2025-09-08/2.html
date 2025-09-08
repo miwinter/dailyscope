@@ -1,0 +1,997 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Escalade et réponses internationales divisées face aux plus grandes frappes aériennes de la Russie en Ukraine</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/fr', '/en');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>                 
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Escalade et réponses internationales divisées face aux plus grandes frappes aériennes de la Russie en Ukraine</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-09-08</span> • <span>147 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-09-08/2025-09-08-2.jpg" alt="Escalade et réponses internationales divisées face aux plus grandes frappes aériennes de la Russie en Ukraine" class="main-image">
+                <p style="margin:0">Les articles analysés mettent en évidence une escalade massive récente dans le conflit Ukraine-Russie, marquée notamment par les plus grandes attaques de drones et de missiles de la Russie visant Kiev, y compris, pour la première fois, des bâtiments gouvernementaux ukrainiens. Les dirigeants ukrainiens, en particulier le président Zelensky, ont condamné ces attaques comme des efforts délibérés pour prolonger la guerre et ont appelé à des sanctions internationales plus strictes et à une aide militaire accrue. Les pays occidentaux, dirigés par les États-Unis et l&#39;Union européenne, ont exprimé une forte condamnation et ont menacé ou prévu de nouvelles mesures punitives contre la Russie, en insistant sur la pression diplomatique et économique. En revanche, la Russie a renforcé sa position en avertissant que les troupes étrangères en Ukraine sont des cibles légitimes et a critiqué le militarisme occidental, tandis que des pays comme la Chine maintiennent une surveillance prudente sans intervention directe, reflétant un paysage géopolitique complexe avec des points de vue contrastés sur le conflit et les perspectives de paix.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div class="key-points">
+        <h2>Les pays qui en parlent</h2>
+    </div>
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Pays occidentaux : Condamnation et appels à des sanctions contre la Russie</h3>
+        <p class="cluster-description">Nations occidentales, y compris les États-Unis, les membres de l&#39;Union européenne, le Canada, l&#39;Australie et d&#39;autres, condamnent fermement les récentes attaques massives de drones et de missiles de la Russie contre l&#39;Ukraine, en particulier la ciblage sans précédent des installations gouvernementales ukrainiennes. Elles considèrent ces frappes comme des escalades graves des hostilités et des violations des normes internationales, soulignant la nécessité de nouvelles sanctions ou de sanctions renforcées contre la Russie. De nombreux dirigeants occidentaux s&#39;engagent à fournir un soutien diplomatique, économique et militaire accru à l&#39;Ukraine et expriment leur scepticisme quant à la volonté de la Russie de participer à des pourparlers de paix constructifs. Ce point de vue souligne une stratégie consistant à appliquer une pression maximale sur la Russie pour arrêter l&#39;agression tout en renforçant les capacités de défense de l&#39;Ukraine.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mys.svg" alt="Malaisie" title="Malaisie" class="flag-icon">
+                            <a href="https://www.malaymail.com/news/world" target="_blank" class="article-link">Trump avertit la Russie de nouvelles sanctions après une attaque aérienne record sur l&#39;Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nzl.svg" alt="Nouvelle-Zélande" title="Nouvelle-Zélande" class="flag-icon">
+                            <a href="https://www.rnz.co.nz/news/world" target="_blank" class="article-link">La Russie frappe l&#39;Ukraine avec la plus grande attaque aérienne de la guerre, mettant le bâtiment du gouvernement en flammes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/per.svg" alt="Pérou" title="Pérou" class="flag-icon">
+                            <a href="https://elcomercio.pe/mundo/" target="_blank" class="article-link">Zelensky attend une &#34;réponse décisive&#34; des États-Unis après une attaque russe sans précédent</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/per.svg" alt="Pérou" title="Pérou" class="flag-icon">
+                            <a href="https://larepublica.pe/mundo/" target="_blank" class="article-link">La Russie bombarde pour la première fois le siège du gouvernement en Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/usa.svg" alt="États-Unis" title="États-Unis" class="flag-icon">
+                            <a href="https://edition.cnn.com/world" target="_blank" class="article-link">La Russie frappe pour la première fois un bâtiment du gouvernement ukrainien, lors de la plus grande attaque aérienne de la guerre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/usa.svg" alt="États-Unis" title="États-Unis" class="flag-icon">
+                            <a href="https://abcnews.go.com/International" target="_blank" class="article-link">L&#39;Ukraine affirme que la Russie a lancé la plus grande attaque de drones et de missiles de la guerre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dom.svg" alt="République dominicaine" title="République dominicaine" class="flag-icon">
+                            <a href="https://listindiario.com/las-mundiales" target="_blank" class="article-link">L&#39;offensive russe contre le siège du gouvernement ukrainien avec des drones et des missiles fait au moins cinq morts</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dom.svg" alt="République dominicaine" title="République dominicaine" class="flag-icon">
+                            <a href="https://www.diariolibre.com/mundo" target="_blank" class="article-link">La Russie frappe le siège du gouvernement ukrainien lors de la plus grande attaque de la guerre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ita.svg" alt="Italie" title="Italie" class="flag-icon">
+                            <a href="https://www.repubblica.it/esteri/" target="_blank" class="article-link">Guerre Ukraine-Russie - Nouvelles du 8 septembre : Trump prêt pour des sanctions contre la Russie, Bessent menace de faire s&#39;effondrer l&#39;économie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ita.svg" alt="Italie" title="Italie" class="flag-icon">
+                            <a href="https://www.repubblica.it/esteri/" target="_blank" class="article-link">Guerre Ukraine-Russie - Nouvelles du 8 septembre : Trump va bientôt s&#39;entretenir avec Poutine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/blr.svg" alt="Biélorussie" title="Biélorussie" class="flag-icon">
+                            <a href="https://euroradio.fm/cats/palityka" target="_blank" class="article-link">Ministre des Affaires étrangères tchèque : &#34;Poutine est un lâche qui attaque les femmes et les enfants&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ind.svg" alt="Inde" title="Inde" class="flag-icon">
+                            <a href="https://timesofindia.indiatimes.com/world" target="_blank" class="article-link">&#39;Poutine teste le monde&#39; : Zelenskyy appelle à des sanctions contre la Russie après une attaque massive en Ukraine ; les dirigeants européens se réuniront aux États-Unis cette semaine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lva.svg" alt="Lettonie" title="Lettonie" class="flag-icon">
+                            <a href="https://www.la.lv/rubrika/pasaule/" target="_blank" class="article-link">Trump commente la plus grande attaque de drones de la Russie contre l&#39;Ukraine et promet de prendre des mesures</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pan.svg" alt="Panama" title="Panama" class="flag-icon">
+                            <a href="https://www.laestrella.com.pa/mundo" target="_blank" class="article-link">La Russie bombarde le siège du gouvernement ukrainien</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aut.svg" alt="Autriche" title="Autriche" class="flag-icon">
+                            <a href="https://kurier.at/politik/ausland" target="_blank" class="article-link">Forte attaque russe : des bâtiments gouvernementaux à Kiev touchés</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aut.svg" alt="Autriche" title="Autriche" class="flag-icon">
+                            <a href="https://www.diepresse.com/ausland" target="_blank" class="article-link">Guerre en Ukraine : 823 drones russes utilisés en une seule nuit</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/egy.svg" alt="Égypte" title="Égypte" class="flag-icon">
+                            <a href="https://www.egyptindependent.com/category/world/" target="_blank" class="article-link">La Russie lance la plus grande attaque aérienne contre l&#39;Ukraine, frappe pour la première fois un bâtiment gouvernemental</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fra.svg" alt="France" title="France" class="flag-icon">
+                            <a href="https://www.lefigaro.fr/international/" target="_blank" class="article-link">Guerre en Ukraine : Donald Trump envisage de nouvelles sanctions contre la Russie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgd.svg" alt="Bangladesh" title="Bangladesh" class="flag-icon">
+                            <a href="https://www.thedailystar.net/world" target="_blank" class="article-link">Trump menace la Russie de sanctions après la plus grande attaque aérienne contre l&#39;Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hti.svg" alt="Haïti" title="Haïti" class="flag-icon">
+                            <a href="https://lenouvelliste.com/international" target="_blank" class="article-link">Trump dit que &#34;quelque chose se passera&#34; si Poutine ne répond pas à ses attentes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pri.svg" alt="PRI" title="PRI" class="flag-icon">
+                            <a href="https://www.primerahora.com/noticias/mundo/" target="_blank" class="article-link">Loin de la paix en Ukraine ; la Russie attaque avec plus de 800 drones et leurres</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svk.svg" alt="Slovaquie" title="Slovaquie" class="flag-icon">
+                            <a href="https://spravy.pravda.sk/svet/" target="_blank" class="article-link">EN LIGNE : Trump veut parler avec Poutine et les Européens. Telegraph : L&#39;Ukraine est seule, l&#39;Europe n&#39;envoie que des mots, pas d&#39;actions</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svn.svg" alt="Slovénie" title="Slovénie" class="flag-icon">
+                            <a href="https://www.delo.si/novice/svet" target="_blank" class="article-link">Trump prêt pour des sanctions plus sévères contre la Russie alors que les capitales européennes condamnent de grandes frappes aériennes sur l&#39;Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svn.svg" alt="Slovénie" title="Slovénie" class="flag-icon">
+                            <a href="https://www.dnevnik.si/svet" target="_blank" class="article-link">Trump prêt pour de nouvelles sanctions après l&#39;attaque contre Kiev</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tur.svg" alt="Turquie" title="Turquie" class="flag-icon">
+                            <a href="http://www.hurriyet.com.tr/dunya/" target="_blank" class="article-link">L&#39;Ukraine subit la plus grande frappe aérienne depuis le début de la guerre : drones et missiles frappent Kiev</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tur.svg" alt="Turquie" title="Turquie" class="flag-icon">
+                            <a href="http://www.milliyet.com.tr/dunya/" target="_blank" class="article-link">La Russie lance la plus grande attaque de drones contre l&#39;Ukraine avec plus de 800 UAV</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/can.svg" alt="Canada" title="Canada" class="flag-icon">
+                            <a href="https://www.theglobeandmail.com/world/" target="_blank" class="article-link">Un bâtiment gouvernemental endommagé à Kiev, selon des responsables ukrainiens, lors de la plus grande attaque russe depuis le début de la guerre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ca-qc.svg" alt="CA-QC" title="CA-QC" class="flag-icon">
+                            <a href="https://www.journaldequebec.com/actualite/monde" target="_blank" class="article-link">Nouveau record de frappe aérienne russe sur l&#39;Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/chl.svg" alt="Chili" title="Chili" class="flag-icon">
+                            <a href="https://www.latercera.com/categoria/mundo/" target="_blank" class="article-link">L&#39;Union européenne condamne l&#39;attaque de drones russes endommageant un bâtiment gouvernemental ukrainien</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sau.svg" alt="Arabie Saoudite" title="Arabie Saoudite" class="flag-icon">
+                            <a href="https://saudigazette.com.sa/World" target="_blank" class="article-link">La Russie frappe un bâtiment gouvernemental à Kiev</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/che.svg" alt="Suisse" title="Suisse" class="flag-icon">
+                            <a href="https://www.letemps.ch/monde" target="_blank" class="article-link">La Russie menacée de nouvelles sanctions après une vague d&#39;attaques contre son voisin</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irn.svg" alt="Iran" title="Iran" class="flag-icon">
+                            <a href="https://ifpnews.com/category/news/world/" target="_blank" class="article-link">Une attaque record de drones et de missiles russes tue au moins 3 personnes, en blesse des dizaines en Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pol.svg" alt="Pologne" title="Pologne" class="flag-icon">
+                            <a href="https://wyborcza.pl/0,0.html?disableRedirects=true" target="_blank" class="article-link">L&#39;offensive estivale russe se transforme en offensive d&#39;automne, le théâtre principal reste le Donbass</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vat.svg" alt="Saint-Siège" title="Saint-Siège" class="flag-icon">
+                            <a href="https://www.vaticannews.va/it/mondo.html" target="_blank" class="article-link">La pire attaque contre l&#39;Ukraine depuis le début de la guerre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aus.svg" alt="Australie" title="Australie" class="flag-icon">
+                            <a href="https://www.smh.com.au/world" target="_blank" class="article-link">« Fermez notre ciel » : l&#39;appel du Premier ministre ukrainien à ses alliés après une attaque record</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aus.svg" alt="Australie" title="Australie" class="flag-icon">
+                            <a href="https://www.smh.com.au/world" target="_blank" class="article-link">La Russie frappe pour la première fois un bâtiment gouvernemental ukrainien lors de la plus grande attaque aérienne de la guerre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cze.svg" alt="République tchèque" title="République tchèque" class="flag-icon">
+                            <a href="https://www.idnes.cz/zpravy/zahranicni" target="_blank" class="article-link">La Russie ne veut pas la paix, déclare l&#39;envoyé de Trump après la plus grande attaque de drones</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cze.svg" alt="République tchèque" title="République tchèque" class="flag-icon">
+                            <a href="https://www.lidovky.cz/svet" target="_blank" class="article-link">L&#39;envoyé de Trump reconnaît que la Russie ne veut pas la paix après la plus grande attaque de drones</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cze.svg" alt="République tchèque" title="République tchèque" class="flag-icon">
+                            <a href="https://www.lidovky.cz/svet" target="_blank" class="article-link">Les Ukrainiens frappent le oléoduc Druzhba la nuit, la Russie frappe pour la première fois un bureau gouvernemental ukrainien</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fra.svg" alt="France" title="France" class="flag-icon">
+                            <a href="https://www.lemonde.fr/international/" target="_blank" class="article-link">Des attaques massives mettent l&#39;Ukraine sous pression alors que les négociations piétinent</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dnk.svg" alt="Danemark" title="Danemark" class="flag-icon">
+                            <a href="https://nyheder.tv2.dk/udland" target="_blank" class="article-link">La Russie lance une attaque record contre l&#39;Ukraine – Trump hésite à punir Poutine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/idn.svg" alt="Indonésie" title="Indonésie" class="flag-icon">
+                            <a href="https://www.kompas.com/global" target="_blank" class="article-link">Trump : La Russie doit être punie, de nouvelles sanctions préparées après l&#39;attaque de Kiev</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sgp.svg" alt="Singapour" title="Singapour" class="flag-icon">
+                            <a href="https://www.straitstimes.com/global" target="_blank" class="article-link">La Russie frappe l&#39;Ukraine avec la plus grande attaque aérienne de la guerre, mettant le bâtiment du gouvernement en flammes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sgp.svg" alt="Singapour" title="Singapour" class="flag-icon">
+                            <a href="https://www.straitstimes.com/global" target="_blank" class="article-link">Trump prêt pour la « phase deux » des sanctions contre la Russie à cause de la guerre en Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/slv.svg" alt="Salvador" title="Salvador" class="flag-icon">
+                            <a href="https://diario.elmundo.sv/el-mundo" target="_blank" class="article-link">L&#39;Union européenne accuse la Russie de se moquer de la diplomatie après une nouvelle attaque massive contre l&#39;Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/slv.svg" alt="Salvador" title="Salvador" class="flag-icon">
+                            <a href="https://diario.elmundo.sv/el-mundo" target="_blank" class="article-link">La Russie intensifie ses attaques avec un nombre record de drones frappant le siège du gouvernement à Kiev</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/uga.svg" alt="Ouganda" title="Ouganda" class="flag-icon">
+                            <a href="https://www.monitor.co.ug/uganda/news/world/" target="_blank" class="article-link">La Russie frappe l&#39;Ukraine avec la plus grande attaque aérienne de la guerre, mettant le bâtiment du gouvernement en flammes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ven.svg" alt="Venezuela" title="Venezuela" class="flag-icon">
+                            <a href="https://www.elnacional.com/mundo/" target="_blank" class="article-link">La Russie attaque pour la première fois un bâtiment du gouvernement ukrainien au milieu d&#39;une nouvelle vague de bombardements massifs</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/deu.svg" alt="Allemagne" title="Allemagne" class="flag-icon">
+                            <a href="https://www.welt.de/politik/ausland/" target="_blank" class="article-link">La Russie montre son intention de détruire – Kiesewetter exhorte le gouvernement allemand à livrer des missiles Taurus</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/deu.svg" alt="Allemagne" title="Allemagne" class="flag-icon">
+                            <a href="https://www.sueddeutsche.de/news/politik/" target="_blank" class="article-link">Bombes sur Kiev : le rêve de paix de Wagenknecht &amp; Co. se révèle être un cauchemar</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/deu.svg" alt="Allemagne" title="Allemagne" class="flag-icon">
+                            <a href="https://www.sueddeutsche.de/news/politik/" target="_blank" class="article-link">Attaque russe contre l&#39;Ukraine : le siège du gouvernement à Kiev en flammes – l&#39;Ukraine parle d&#39;« escalade sévère »</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gum.svg" alt="GUM" title="GUM" class="flag-icon">
+                            <a href="https://www.guampdn.com/news/" target="_blank" class="article-link">La Russie lance le plus grand barrage aérien sur l&#39;Ukraine, frappe le complexe gouvernemental</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pak.svg" alt="Pakistan" title="Pakistan" class="flag-icon">
+                            <a href="https://www.dawn.com/world" target="_blank" class="article-link">La Russie frappe les bureaux du gouvernement ukrainien lors de la plus grande attaque aérienne de la guerre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pak.svg" alt="Pakistan" title="Pakistan" class="flag-icon">
+                            <a href="https://www.thenews.com.pk/latest/category/world" target="_blank" class="article-link">La Russie frappe l&#39;Ukraine avec la plus grande attaque aérienne de la guerre, mettant le bâtiment du gouvernement en flammes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/prt.svg" alt="Portugal" title="Portugal" class="flag-icon">
+                            <a href="https://expresso.pt/" target="_blank" class="article-link">La massive attaque de drones et de missiles de la Russie frappe un bâtiment gouvernemental à Kiev, tuant au moins trois personnes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bel.svg" alt="Belgique" title="Belgique" class="flag-icon">
+                            <a href="https://www.lavenir.net/actu/monde/" target="_blank" class="article-link">Plusieurs dirigeants européens aux États-Unis cette semaine pour discuter de l&#39;Ukraine, selon Trump</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bel.svg" alt="Belgique" title="Belgique" class="flag-icon">
+                            <a href="https://www.lavenir.net/actu/monde/" target="_blank" class="article-link">Guerre en Ukraine : des avions polonais et alliés ont été engagés pour défendre l&#39;espace aérien polonais</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bel.svg" alt="Belgique" title="Belgique" class="flag-icon">
+                            <a href="https://www.lavenir.net/actu/monde/" target="_blank" class="article-link">Le quartier général du gouvernement ukrainien incendié après des frappes russes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bel.svg" alt="Belgique" title="Belgique" class="flag-icon">
+                            <a href="https://www.lalibre.be/international" target="_blank" class="article-link">Un des banquiers les plus influents de Russie tire la sonnette d&#39;alarme : « L&#39;économie ralentit plus vite que prévu »</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bol.svg" alt="Bolivie" title="Bolivie" class="flag-icon">
+                            <a href="https://eldeber.com.bo/seccion/mundo/" target="_blank" class="article-link">La Russie attaque pour la première fois le bâtiment du Cabinet, le quartier général du gouvernement ukrainien, lors d&#39;une nouvelle vague de bombardements massifs</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mex.svg" alt="Mexique" title="Mexique" class="flag-icon">
+                            <a href="https://www.jornada.com.mx/categoria/mundo" target="_blank" class="article-link">La Russie lance une importante frappe aérienne sur l&#39;Ukraine ; un bâtiment gouvernemental en feu</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/esp.svg" alt="Espagne" title="Espagne" class="flag-icon">
+                            <a href="https://elpais.com/internacional/" target="_blank" class="article-link">La Russie lance sa plus grande attaque de drones dans la guerre, ciblant pour la première fois un bâtiment gouvernemental ukrainien à Kiev</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/esp.svg" alt="Espagne" title="Espagne" class="flag-icon">
+                            <a href="https://www.elmundo.es/internacional.html" target="_blank" class="article-link">La Russie lance sa plus grande frappe aérienne contre l&#39;Ukraine, enflamme un bâtiment gouvernemental</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/isl.svg" alt="Islande" title="Islande" class="flag-icon">
+                            <a href="https://www.mbl.is/frettir/erlent/" target="_blank" class="article-link">Les forces russes seraient en train de tester la réponse avec une attaque à grande échelle</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nga.svg" alt="Nigeria" title="Nigeria" class="flag-icon">
+                            <a href="https://guardian.ng/category/world/" target="_blank" class="article-link">Trump menace la Russie de sanctions après la plus grande attaque aérienne contre l&#39;Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lbn.svg" alt="Liban" title="Liban" class="flag-icon">
+                            <a href="https://www.lorientlejour.com/rubrique/7-moyen-orient-et-monde" target="_blank" class="article-link">Le siège du gouvernement en feu après une frappe aérienne record sur Kiev</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vnm.svg" alt="Viêt Nam" title="Viêt Nam" class="flag-icon">
+                            <a href="https://tuoitre.vn/the-gioi.htm" target="_blank" class="article-link">Renseignement ukrainien : la Russie a changé ses tactiques d&#39;attaque et utilise des armes modernes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hun.svg" alt="Hongrie" title="Hongrie" class="flag-icon">
+                            <a href="https://magyarnemzet.hu/" target="_blank" class="article-link">Officier militaire français : l&#39;Europe ne veut plus mourir pour l&#39;Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hun.svg" alt="Hongrie" title="Hongrie" class="flag-icon">
+                            <a href="https://nepszava.hu/tag/kulfold/" target="_blank" class="article-link">Une frappe russe touche pour la première fois un bâtiment gouvernemental à Kiev depuis le début de la guerre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hun.svg" alt="Hongrie" title="Hongrie" class="flag-icon">
+                            <a href="https://nepszava.hu/tag/kulfold/" target="_blank" class="article-link">Volodymyr Zelensky invite Vladimir Poutine à Kiev pour des négociations</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hun.svg" alt="Hongrie" title="Hongrie" class="flag-icon">
+                            <a href="https://nepszava.hu/tag/kulfold/" target="_blank" class="article-link">Les frappes de drone ciblent à nouveau le oléoduc Friendship dans la région de Bryansk, Russie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Irlande" title="Irlande" class="flag-icon">
+                            <a href="https://www.irishtimes.com/news/world" target="_blank" class="article-link">Kyiv chancelle après l&#39;attaque : « Une réalité surréaliste ... la mort et la violence font partie de la vie »</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Irlande" title="Irlande" class="flag-icon">
+                            <a href="https://www.irishtimes.com/news/world" target="_blank" class="article-link">Un bébé tué lors de l&#39;attaque de drone de la Russie sur Kyiv déclenche un incendie dans le bâtiment du gouvernement ukrainien</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Irlande" title="Irlande" class="flag-icon">
+                            <a href="https://www.independent.ie/world-news/" target="_blank" class="article-link">La Russie frappe l&#39;Ukraine avec la plus grande attaque aérienne de la guerre, mettant le bâtiment du gouvernement en flammes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kwt.svg" alt="Koweït" title="Koweït" class="flag-icon">
+                            <a href="https://www.aljarida.com/%D8%AF%D9%88%D9%84%D9%8A%D8%A7%D8%AA" target="_blank" class="article-link">La Russie lance la plus grande attaque aérienne contre l&#39;Ukraine, ciblant le siège du gouvernement</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pse.svg" alt="Palestine" title="Palestine" class="flag-icon">
+                            <a href="http://www.al-ayyam.ps/" target="_blank" class="article-link">La plus grande attaque aérienne russe depuis le début de la guerre endommage le siège du gouvernement ukrainien</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/arg.svg" alt="Argentine" title="Argentine" class="flag-icon">
+                            <a href="https://www.lanacion.com.ar/el-mundo" target="_blank" class="article-link">Une attaque massive de drones et de missiles russes sur Kyiv endommage le siège du gouvernement</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/arg.svg" alt="Argentine" title="Argentine" class="flag-icon">
+                            <a href="https://www.lanacion.com.ar/el-mundo" target="_blank" class="article-link">Changement stratégique ukrainien : miser sur l&#39;industrie locale d&#39;armement en pleine guerre prolongée</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jor.svg" alt="Jordanie" title="Jordanie" class="flag-icon">
+                            <a href="https://www.jordantimes.com/news/world" target="_blank" class="article-link">La Russie frappe le siège du gouvernement ukrainien lors de la plus grande attaque aérienne de la guerre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nam.svg" alt="Namibie" title="Namibie" class="flag-icon">
+                            <a href="https://www.namibian.com.na/category/news/politics/" target="_blank" class="article-link">Les dirigeants européens rendront visite aux États-Unis pour discuter de la guerre en Ukraine, selon Trump</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/srb.svg" alt="Serbie" title="Serbie" class="flag-icon">
+                            <a href="https://www.politika.rs/scc/svet" target="_blank" class="article-link">Les forces ukrainiennes attaquent Donetsk, des victimes sont signalées</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/srb.svg" alt="Serbie" title="Serbie" class="flag-icon">
+                            <a href="https://www.blic.rs/vesti/svet" target="_blank" class="article-link">Incident horrible à Kiev : une mère et son nouveau-né tués lors d&#39;une attaque russe ; une explosion les a projetés par la fenêtre, le père a survécu avec de graves blessures</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tjk.svg" alt="Tadjikistan" title="Tadjikistan" class="flag-icon">
+                            <a href="https://avesta.tj/category/world/" target="_blank" class="article-link">Zelensky d&#39;Ukraine propose une rencontre avec Poutine à Kiev</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cri.svg" alt="Costa Rica" title="Costa Rica" class="flag-icon">
+                            <a href="https://www.nacion.com/el-mundo/" target="_blank" class="article-link">La Russie lance la plus grande offensive aérienne contre l&#39;Ukraine depuis le début de la guerre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cri.svg" alt="Costa Rica" title="Costa Rica" class="flag-icon">
+                            <a href="https://www.diarioextra.com/categoria/internacionales/" target="_blank" class="article-link">La Russie lance le plus grand bombardement contre l&#39;Ukraine pendant la guerre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cog.svg" alt="République du Congo" title="République du Congo" class="flag-icon">
+                            <a href="https://www.mediacongo.net/articles-actualite-27_monde.html" target="_blank" class="article-link">Ukraine : une vague massive d&#39;attaques russes cause de multiples victimes et frappe le siège du gouvernement à Kiev</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/rou.svg" alt="Roumanie" title="Roumanie" class="flag-icon">
+                            <a href="https://adevarul.ro/news/eveniment/" target="_blank" class="article-link">Plusieurs drones détectés près de Sulina. Deux avions Eurofighter Typhoon patrouillaient près de la frontière ukrainienne</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mda.svg" alt="Moldavie" title="Moldavie" class="flag-icon">
+                            <a href="https://www.kp.md/daily/" target="_blank" class="article-link">Le président de Moldavie condamne l&#39;attaque nocturne par missile sur l&#39;Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mda.svg" alt="Moldavie" title="Moldavie" class="flag-icon">
+                            <a href="https://www.zdg.md/" target="_blank" class="article-link">Maia Sandu sur la plus grande attaque de la Russie contre l&#39;Ukraine : &#34;La Moldavie soutient l&#39;Ukraine contre ce terrorisme&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cpv.svg" alt="Cap-Vert" title="Cap-Vert" class="flag-icon">
+                            <a href="https://expressodasilhas.cv/mundo" target="_blank" class="article-link">L&#39;Europe condamne l&#39;attaque qui a frappé le gouvernement à Kiev</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kos.svg" alt="KOS" title="KOS" class="flag-icon">
+                            <a href="https://www.koha.net/bote" target="_blank" class="article-link">&#34;Échange de territoires&#34; qui n&#39;a pas eu lieu : Dans les coulisses de la course rapide de Trump pour la paix en Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kos.svg" alt="KOS" title="KOS" class="flag-icon">
+                            <a href="https://www.koha.net/bote" target="_blank" class="article-link">Bessent : La pression économique pourrait amener la Russie à la table des négociations</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kos.svg" alt="KOS" title="KOS" class="flag-icon">
+                            <a href="https://www.rtklive.com/sq/news-category.php?CatID=10" target="_blank" class="article-link">Après les attaques d&#39;aujourd&#39;hui - Trump : Prêt à imposer des sanctions à Moscou</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kos.svg" alt="KOS" title="KOS" class="flag-icon">
+                            <a href="https://www.rtklive.com/sq/news-category.php?CatID=10" target="_blank" class="article-link">La Russie attaque Kyiv avec des drones et des missiles, 4 morts</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lux.svg" alt="Luxembourg" title="Luxembourg" class="flag-icon">
+                            <a href="https://www.wort.lu/fr/international" target="_blank" class="article-link">Le quartier général du gouvernement ukrainien incendié après des frappes russes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lux.svg" alt="Luxembourg" title="Luxembourg" class="flag-icon">
+                            <a href="https://www.tageblatt.lu/headlines/" target="_blank" class="article-link">L&#39;Ukraine subit ses attaques de drones russes les plus violentes depuis le début de la guerre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bhr.svg" alt="Bahreïn" title="Bahreïn" class="flag-icon">
+                            <a href="https://akhbar-alkhaleej.com/news/section/WORL" target="_blank" class="article-link">Le quartier général du gouvernement ukrainien endommagé lors de la plus grande attaque aérienne russe depuis le début de la guerre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bra.svg" alt="Brésil" title="Brésil" class="flag-icon">
+                            <a href="https://www1.folha.uol.com.br/mundo/" target="_blank" class="article-link">La Russie lance la plus grande frappe aérienne de la guerre en Ukraine, touchant le quartier général du gouvernement ukrainien</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bra.svg" alt="Brésil" title="Brésil" class="flag-icon">
+                            <a href="https://oglobo.globo.com/mundo/" target="_blank" class="article-link">La Russie lance la plus grande attaque aérienne sur Kyiv depuis le début de la guerre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/est.svg" alt="Estonie" title="Estonie" class="flag-icon">
+                            <a href="https://maailm.postimees.ee/" target="_blank" class="article-link">1293e jour de la guerre en Ukraine : Zelensky dit que le soutien doit être suivi de décisions et d&#39;actions</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/est.svg" alt="Estonie" title="Estonie" class="flag-icon">
+                            <a href="https://maailm.postimees.ee/" target="_blank" class="article-link">La France ordonne aux hôpitaux de se préparer à la mobilisation de guerre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/est.svg" alt="Estonie" title="Estonie" class="flag-icon">
+                            <a href="https://maailm.postimees.ee/" target="_blank" class="article-link">Femme enceinte blessée lors d&#39;une attaque à Kyiv transportée d&#39;urgence à la maternité</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/est.svg" alt="Estonie" title="Estonie" class="flag-icon">
+                            <a href="https://www.delfi.ee/kategooria/123/maailm" target="_blank" class="article-link">Zelensky : Pour l&#39;Ukraine, la victoire signifie la survie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/est.svg" alt="Estonie" title="Estonie" class="flag-icon">
+                            <a href="https://www.delfi.ee/kategooria/123/maailm" target="_blank" class="article-link">Trump : Les dirigeants européens visiteront les États-Unis cette semaine pour discuter de la question de l&#39;Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/isr.svg" alt="Israël" title="Israël" class="flag-icon">
+                            <a href="https://www.jpost.com/International" target="_blank" class="article-link">Un bébé parmi trois tués lors d&#39;une attaque russe qui met le feu au siège du gouvernement ukrainien</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #7279e5; padding: 8px 16px; border-radius: 4px;">Perspective russe et alliée : justifier les actions militaires et avertir contre l&#39;intervention étrangère</h3>
+        <p class="cluster-description">La narration de la Russie, représentée par des déclarations officielles et des pays alliés comme la Biélorussie, met en avant la justification de ses opérations militaires comme étant nécessaires et présente le soutien militaire occidental à l&#39;Ukraine comme une agression déstabilisatrice. Les sources russes avertissent que les troupes ou forces militaires étrangères en Ukraine seront considérées comme des cibles légitimes, reflétant une position ferme contre l&#39;OTAN et l&#39;implication occidentale. De plus, la Russie critique le militarisme européen et accuse les pays occidentaux d&#39;entraver les solutions diplomatiques. Cette perspective cherche à légitimer sa campagne militaire et à présenter le conflit comme une réponse à des menaces extérieures, rejetant les propositions de paix perçues comme biaisées.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kaz.svg" alt="Kazakhstan" title="Kazakhstan" class="flag-icon">
+                            <a href="https://tengrinews.kz/news/" target="_blank" class="article-link">Zelensky : Rencontre avec Poutine Possible mais Seulement Hors de Russie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/npl.svg" alt="Népal" title="Népal" class="flag-icon">
+                            <a href="https://thehimalayantimes.com/category/world/" target="_blank" class="article-link">Les forces russes pénètrent dans une autre région de l&#39;Ukraine avec des efforts de paix bloqués</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/blr.svg" alt="Biélorussie" title="Biélorussie" class="flag-icon">
+                            <a href="https://www.belta.by/" target="_blank" class="article-link">Peskov : Le militarisme européen imprudent complique la résolution en Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lva.svg" alt="Lettonie" title="Lettonie" class="flag-icon">
+                            <a href="https://www.diena.lv/raksts/pasaule" target="_blank" class="article-link">Poutine avertit que les forces militaires étrangères en Ukraine seront considérées comme des cibles légitimes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gmb.svg" alt="Gambie" title="Gambie" class="flag-icon">
+                            <a href="https://alkambatimes.com/category/news/international-news/" target="_blank" class="article-link">Les troupes occidentales en Ukraine seraient des « cibles » pour les forces russes : Poutine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/can.svg" alt="Canada" title="Canada" class="flag-icon">
+                            <a href="https://www.theglobeandmail.com/world/" target="_blank" class="article-link">Les troupes étrangères déployées en Ukraine seraient des cibles légitimes, dit Poutine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/afg.svg" alt="Afghanistan" title="Afghanistan" class="flag-icon">
+                            <a href="https://www.pajhwok.com/en/world-news" target="_blank" class="article-link">Poutine : Les forces étrangères en Ukraine seront des cibles légitimes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/afg.svg" alt="Afghanistan" title="Afghanistan" class="flag-icon">
+                            <a href="https://tolonews.com/world" target="_blank" class="article-link">Poutine déclare que toute troupe occidentale en Ukraine serait une cible légitime</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hkg.svg" alt="HKG" title="HKG" class="flag-icon">
+                            <a href="https://www.scmp.com/news/world" target="_blank" class="article-link">Bâtiment du gouvernement ukrainien en flammes dans la plus grande attaque aérienne de la guerre en Russie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pak.svg" alt="Pakistan" title="Pakistan" class="flag-icon">
+                            <a href="https://www.thenews.com.pk/latest/category/world" target="_blank" class="article-link">Les troupes occidentales en Ukraine seraient des cibles légitimes : le président Poutine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/swz.svg" alt="Eswatini" title="Eswatini" class="flag-icon">
+                            <a href="http://www.times.co.sz/" target="_blank" class="article-link">Poutine rejette les propositions de sécurité occidentales dans le conflit en Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nga.svg" alt="Nigeria" title="Nigeria" class="flag-icon">
+                            <a href="https://guardian.ng/category/world/" target="_blank" class="article-link">La Russie frappe le siège du gouvernement ukrainien lors de la plus grande attaque aérienne de la guerre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/twn.svg" alt="TWN" title="TWN" class="flag-icon">
+                            <a href="https://www.taipeitimes.com/News/world" target="_blank" class="article-link">Poutine menace les troupes étrangères en Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jpn.svg" alt="Japon" title="Japon" class="flag-icon">
+                            <a href="https://www.yomiuri.co.jp/world/" target="_blank" class="article-link">L&#39;armée russe lance la plus grande attaque depuis l&#39;invasion, avec plus de 800 frappes de drones provoquant un incendie dans un bâtiment gouvernemental de Kiev</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/rou.svg" alt="Roumanie" title="Roumanie" class="flag-icon">
+                            <a href="https://adevarul.ro/news/eveniment/" target="_blank" class="article-link">Ionuț Moșteanu condamne la dernière attaque russe contre Kiev : « C&#39;est le vrai visage du régime de Poutine »</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/geo.svg" alt="Géorgie" title="Géorgie" class="flag-icon">
+                            <a href="https://civil.ge/categories/news/" target="_blank" class="article-link">Groupe pro-Kremlin de Géorgiens rencontre le chef des autorités d&#39;occupation de Donetsk en Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/omn.svg" alt="Oman" title="Oman" class="flag-icon">
+                            <a href="https://www.omanobserver.om/world" target="_blank" class="article-link">La Russie frappe le siège du gouvernement ukrainien lors de la plus grande attaque aérienne</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mco.svg" alt="Monaco" title="Monaco" class="flag-icon">
+                            <a href="https://www.monacomatin.mc/" target="_blank" class="article-link">Donald Trump menace la Russie de nouvelles sanctions après une attaque record contre l&#39;Ukraine</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e572b8; padding: 8px 16px; border-radius: 4px;">Observateurs neutres ou prudents : Appels à la désescalade et à la surveillance sans intervention directe</h3>
+        <p class="cluster-description">Certains pays, notamment la Chine et le Népal, adoptent une position plus prudente et neutre en mettant l&#39;accent sur une observation attentive et des appels à la désescalade sans condamnation ouverte ni implication directe. Ces nations se concentrent sur la surveillance de la situation en évolution et appellent à la retenue de toutes les parties, reflétant un désir d&#39;éviter un engagement plus profond et de maintenir la stabilité régionale sans prendre parti dans le conflit. Cette position met en lumière l&#39;équilibre diplomatique dans la gestion des relations avec la Russie et l&#39;Occident, tout en privilégiant la paix et la sécurité.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/npl.svg" alt="Népal" title="Népal" class="flag-icon">
+                            <a href="https://ekantipur.com/world" target="_blank" class="article-link">La plus grande frappe aérienne de la Russie jusqu&#39;à présent sur Kyiv, deux morts et des dégâts aux bâtiments gouvernementaux</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/npl.svg" alt="Népal" title="Népal" class="flag-icon">
+                            <a href="https://ekantipur.com/world" target="_blank" class="article-link">Le président ukrainien Zelensky rejette la proposition de Poutine pour une rencontre à Moscou</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/blr.svg" alt="Biélorussie" title="Biélorussie" class="flag-icon">
+                            <a href="https://euroradio.fm/cats/palityka" target="_blank" class="article-link">Les exercices militaires biélorusses menacent-ils les pays européens ? Kyiv répond</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mmr.svg" alt="Birmanie" title="Birmanie" class="flag-icon">
+                            <a href="https://elevenmyanmar.com/world" target="_blank" class="article-link">La Chine dit qu&#39;&#34;elle suit de près&#34; la situation en Ukraine après les développements récents</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Gouvernement ukrainien et alliés : Appels au soutien international et reconnaissance des crimes de guerre russes</h3>
+        <p class="cluster-description">Les responsables ukrainiens et leurs alliés se concentrent sur la dénonciation des attaques de la Russie comme des crimes de guerre délibérés destinés à prolonger le conflit et à démanteler la souveraineté ukrainienne. La direction ukrainienne appelle d&#39;urgence à une aide militaire accrue, à des sanctions et à une pression diplomatique sur la Russie pour restaurer la paix et assurer la survie. Ils mettent en avant l&#39;impact humanitaire et les pertes civiles, proposant des gestes symboliques tels que des propositions de pourparlers de paix sur un terrain neutre ou à Kyiv. Ce point de vue souligne la dépendance de l&#39;Ukraine à un soutien international soutenu et met en évidence la nécessité d&#39;une action mondiale coordonnée.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aze.svg" alt="Azerbaïdjan" title="Azerbaïdjan" class="flag-icon">
+                            <a href="https://www.azernews.az/region/" target="_blank" class="article-link">Zelensky qualifie les frappes russes de crime conscient et de tentative de prolonger la guerre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ukr.svg" alt="Ukraine" title="Ukraine" class="flag-icon">
+                            <a href="https://www.kyivpost.com/category/world" target="_blank" class="article-link">Le Premier ministre ukrainien montre les dégâts à l&#39;intérieur du QG du gouvernement de Kyiv après la recorde frappe aérienne russe</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ukr.svg" alt="Ukraine" title="Ukraine" class="flag-icon">
+                            <a href="https://kyivindependent.com/" target="_blank" class="article-link">L&#39;Ukraine attend une &#34;réaction forte de l&#39;Amérique&#34;, dit Zelensky après l&#39;attaque record de la Russie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ukr.svg" alt="Ukraine" title="Ukraine" class="flag-icon">
+                            <a href="https://kyivindependent.com/" target="_blank" class="article-link">La attaque massive de la Russie montre que le Kremlin n&#39;est pas intéressé à mettre fin à la guerre diplomatiquement, déclare l&#39;envoyé de l&#39;Ukraine de Trump</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ukr.svg" alt="Ukraine" title="Ukraine" class="flag-icon">
+                            <a href="https://kyivindependent.com/" target="_blank" class="article-link">&#34;C&#39;est la réponse de Poutine aux appels à la paix&#34; — les dirigeants européens condamnent la dernière attaque massive de la Russie contre l&#39;Ukraine</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Pays occidentaux : Condamnation et appels \u00e0 des sanctions contre la Russie",
+                color: "#72e5ac",
+                data: [ {"id": ""},  {"id": "AR"},  {"id": "AT"},  {"id": "AU"},  {"id": "BD"},  {"id": "BE"},  {"id": "BH"},  {"id": "BO"},  {"id": "BR"},  {"id": "CG"},  {"id": "CH"},  {"id": "CL"},  {"id": "CR"},  {"id": "CV"},  {"id": "CZ"},  {"id": "DE"},  {"id": "DK"},  {"id": "DO"},  {"id": "EE"},  {"id": "EG"},  {"id": "ES"},  {"id": "FR"},  {"id": "GU"},  {"id": "HT"},  {"id": "HU"},  {"id": "ID"},  {"id": "IE"},  {"id": "IL"},  {"id": "IN"},  {"id": "IR"},  {"id": "IS"},  {"id": "IT"},  {"id": "JO"},  {"id": "KW"},  {"id": "LB"},  {"id": "LU"},  {"id": "MD"},  {"id": "MX"},  {"id": "MY"},  {"id": "NA"},  {"id": "NZ"},  {"id": "PA"},  {"id": "PE"},  {"id": "PL"},  {"id": "PR"},  {"id": "PS"},  {"id": "PT"},  {"id": "RS"},  {"id": "SA"},  {"id": "SG"},  {"id": "SI"},  {"id": "SK"},  {"id": "SV"},  {"id": "TJ"},  {"id": "TR"},  {"id": "UG"},  {"id": "US"},  {"id": "VA"},  {"id": "VE"},  {"id": "VN"},  {"id": "XK"} ]
+            },
+        
+            {
+                name: "Perspective russe et alli\u00e9e : justifier les actions militaires et avertir contre l\u0027intervention \u00e9trang\u00e8re",
+                color: "#7279e5",
+                data: [ {"id": "AF"},  {"id": "GE"},  {"id": "GM"},  {"id": "HK"},  {"id": "JP"},  {"id": "KZ"},  {"id": "MC"},  {"id": "OM"},  {"id": "SZ"},  {"id": "TW"} ]
+            },
+        
+            {
+                name: "Observateurs neutres ou prudents : Appels \u00e0 la d\u00e9sescalade et \u00e0 la surveillance sans intervention directe",
+                color: "#e572b8",
+                data: [ {"id": "MM"} ]
+            },
+        
+            {
+                name: "Gouvernement ukrainien et alli\u00e9s : Appels au soutien international et reconnaissance des crimes de guerre russes",
+                color: "#e5d272",
+                data: [ {"id": "AZ"},  {"id": "UA"} ]
+            }
+        
+        
+            ,
+            {
+                name: "Plusieurs points de vue : \n- Pays occidentaux : Condamnation et appels \u00e0 des sanctions contre la Russie\n- Perspective russe et alli\u00e9e : justifier les actions militaires et avertir contre l\u0027intervention \u00e9trang\u00e8re\n- Observateurs neutres ou prudents : Appels \u00e0 la d\u00e9sescalade et \u00e0 la surveillance sans intervention directe",
+                color: "#AAAAAA",
+                data: [{"id": "BY"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Pays occidentaux : Condamnation et appels \u00e0 des sanctions contre la Russie\n- Perspective russe et alli\u00e9e : justifier les actions militaires et avertir contre l\u0027intervention \u00e9trang\u00e8re",
+                color: "#AAAAAA",
+                data: [{"id": "CA"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Pays occidentaux : Condamnation et appels \u00e0 des sanctions contre la Russie\n- Perspective russe et alli\u00e9e : justifier les actions militaires et avertir contre l\u0027intervention \u00e9trang\u00e8re",
+                color: "#AAAAAA",
+                data: [{"id": "LV"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Pays occidentaux : Condamnation et appels \u00e0 des sanctions contre la Russie\n- Perspective russe et alli\u00e9e : justifier les actions militaires et avertir contre l\u0027intervention \u00e9trang\u00e8re",
+                color: "#AAAAAA",
+                data: [{"id": "NG"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Pays occidentaux : Condamnation et appels \u00e0 des sanctions contre la Russie\n- Perspective russe et alli\u00e9e : justifier les actions militaires et avertir contre l\u0027intervention \u00e9trang\u00e8re",
+                color: "#AAAAAA",
+                data: [{"id": "PK"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Pays occidentaux : Condamnation et appels \u00e0 des sanctions contre la Russie\n- Perspective russe et alli\u00e9e : justifier les actions militaires et avertir contre l\u0027intervention \u00e9trang\u00e8re",
+                color: "#AAAAAA",
+                data: [{"id": "RO"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Perspective russe et alli\u00e9e : justifier les actions militaires et avertir contre l\u0027intervention \u00e9trang\u00e8re\n- Observateurs neutres ou prudents : Appels \u00e0 la d\u00e9sescalade et \u00e0 la surveillance sans intervention directe",
+                color: "#AAAAAA",
+                data: [{"id": "NP"}]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Masquer les sources ▲' : 'Montrer les sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li class="active-m">
+               <a href="/">Accueil</a>
+            </li>
+            <li>
+              <a href="/fr/about.html">A Propos</a>
+            </li>
+            <li>
+              <a href="/fr/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
