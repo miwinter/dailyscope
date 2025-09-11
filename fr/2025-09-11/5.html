@@ -1,0 +1,681 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Perspectives Diverses dans la Diplomatie Bilatérale au Milieu des Tensions et Coopérations Géopolitiques</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/fr', '/en');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>                 
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Perspectives Diverses dans la Diplomatie Bilatérale au Milieu des Tensions et Coopérations Géopolitiques</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-09-11</span> • <span>76 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-09-11/2025-09-11-5.jpg" alt="Perspectives Diverses dans la Diplomatie Bilatérale au Milieu des Tensions et Coopérations Géopolitiques" class="main-image">
+                <p style="margin:0">Les articles analysés révèlent un paysage complexe de relations diplomatiques bilatérales marqué par des critiques, de la coopération et des recalibrages stratégiques entre les pays. Des nations occidentales telles que la Suède, l&#39;Allemagne et les États-Unis expriment des préoccupations concernant les orientations politiques et la transparence électorale en Géorgie, ainsi que des tensions avec Israël et ses interactions régionales. Par ailleurs, d&#39;autres États mettent en avant un engagement diplomatique constructif à travers des rencontres de haut niveau, le renforcement des partenariats et la coopération internationale dans les domaines de la sécurité et de l&#39;humanitaire. Plusieurs pays, dont Cuba, la Chine et la Russie, promeuvent le multilatéralisme et défendent la souveraineté face à des pressions extérieures perçues, reflétant des récits géopolitiques concurrents et des stratégies régionales à l’échelle mondiale.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div class="key-points">
+        <h2>Les pays qui en parlent</h2>
+    </div>
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Critique occidentale et inquiétudes concernant les normes démocratiques et les alignements régionaux</h3>
+        <p class="cluster-description">Des pays comme la Suède, l&#39;Allemagne et les États-Unis adoptent une position critique en se concentrant sur les développements politiques perçus comme problématiques, notamment en Géorgie. Leur point de vue insiste sur le respect des normes démocratiques, la transparence et les standards de coopération internationale, tout en exprimant des préoccupations concernant le recentrage de la Géorgie sur son alignement extérieur, s&#39;éloignant des partenaires occidentaux traditionnels. Cette perspective inclut la défense publique des diplomates et la surveillance des changements de politique étrangère qui semblent remettre en question les alliances établies. Ces pays soulignent souvent les droits de l&#39;homme et les standards d&#39;observation électorale comme des aspects clés de leur approche diplomatique.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/geo.svg" alt="Géorgie" title="Géorgie" class="flag-icon">
+                            <a href="http://georgiatoday.ge/news" target="_blank" class="article-link">Le MFA suédois critique la Géorgie concernant l&#39;observation électorale de l&#39;OSCE/ODIHR</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/geo.svg" alt="Géorgie" title="Géorgie" class="flag-icon">
+                            <a href="http://georgiatoday.ge/news" target="_blank" class="article-link">Le ministre allemand exprime ses inquiétudes sur la direction de la Géorgie, déclare l&#39;ambassadeur</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/geo.svg" alt="Géorgie" title="Géorgie" class="flag-icon">
+                            <a href="http://georgiatoday.ge/news" target="_blank" class="article-link">La Commission Helsinki des États-Unis discutera du « virage anti-américain » de la Géorgie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/geo.svg" alt="Géorgie" title="Géorgie" class="flag-icon">
+                            <a href="https://civil.ge/categories/news/" target="_blank" class="article-link">L&#39;Allemagne défend son ambassadeur alors que le parti au pouvoir multiplie les accusations</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/geo.svg" alt="Géorgie" title="Géorgie" class="flag-icon">
+                            <a href="https://civil.ge/categories/news/" target="_blank" class="article-link">Le député Volski rencontre l&#39;ambassadeur britannique Gareth Ward</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72cbe5; padding: 8px 16px; border-radius: 4px;">Engagement diplomatique pragmatique et expansion de la coopération bilatérale</h3>
+        <p class="cluster-description">Plusieurs pays mettent en avant des relations diplomatiques pragmatiques et tournées vers l&#39;avenir à travers des rencontres, des accords et une aide au développement visant à renforcer les liens bilatéraux et la coopération régionale. Cela inclut des initiatives sur la sécurité, la gestion des catastrophes, les partenariats économiques et le dialogue politique sans critique ouverte. Ces États se concentrent sur le renforcement des intérêts mutuels, un dialogue stable et le développement des capacités, reflétant une approche qui privilégie la coopération plutôt que la confrontation. Parmi les exemples figurent les visites diplomatiques, les accords de visa et le soutien dans les secteurs de la santé ou de la sécurité.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/syr.svg" alt="Syrie" title="Syrie" class="flag-icon">
+                            <a href="https://sana.sy/en/?cat=3" target="_blank" class="article-link">Syrie, Japon discutent des moyens de renforcer la coopération en gestion des urgences et des catastrophes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/syr.svg" alt="Syrie" title="Syrie" class="flag-icon">
+                            <a href="https://sana.sy/en/?cat=3" target="_blank" class="article-link">Al-Shaibani : La relation entre la Syrie et la Croatie sera multifacette</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/egy.svg" alt="Égypte" title="Égypte" class="flag-icon">
+                            <a href="https://www.dailynewsegypt.com/category/politics/" target="_blank" class="article-link">Le président égyptien Al-Sissi rencontre le Premier ministre tunisien avant la séance du comité supérieur conjoint</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lao.svg" alt="Laos" title="Laos" class="flag-icon">
+                            <a href="http://www.vientianetimes.org.la/" target="_blank" class="article-link">Le ministre des Affaires étrangères par intérim tient des entretiens téléphoniques avec le ministre lao des Affaires étrangères</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tkm.svg" alt="Turkménistan" title="Turkménistan" class="flag-icon">
+                            <a href="http://www.turkmenistan.gov.tm/?cat=12" target="_blank" class="article-link">Table ronde sur l&#39;Année de la paix et de la confiance internationales tenue à Bichkek</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tkm.svg" alt="Turkménistan" title="Turkménistan" class="flag-icon">
+                            <a href="http://www.turkmenistan.gov.tm/?cat=12" target="_blank" class="article-link">Le représentant spécial de l&#39;OSCE en Finlande visite le Turkménistan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tkm.svg" alt="Turkménistan" title="Turkménistan" class="flag-icon">
+                            <a href="http://www.turkmenistan.gov.tm/?cat=12" target="_blank" class="article-link">Le président du Turkménistan félicite le président du Tadjikistan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/rwa.svg" alt="Rwanda" title="Rwanda" class="flag-icon">
+                            <a href="https://www.newtimes.co.rw/international" target="_blank" class="article-link">Le Rwanda et le Liberia signent des accords de dispense de visa et de coopération</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/rwa.svg" alt="Rwanda" title="Rwanda" class="flag-icon">
+                            <a href="https://www.newtimes.co.rw/international" target="_blank" class="article-link">Kagame, un responsable des Émirats arabes unis discutent de la coopération dans les médias</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/rwa.svg" alt="Rwanda" title="Rwanda" class="flag-icon">
+                            <a href="https://www.ktpress.rw/category/news/international/" target="_blank" class="article-link">Le Rwanda trace une &#39;ligne rouge&#39; à l&#39;ONU concernant les allégations de génocide en RDC</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/rwa.svg" alt="Rwanda" title="Rwanda" class="flag-icon">
+                            <a href="https://www.ktpress.rw/category/news/international/" target="_blank" class="article-link">Kagame, la délégation des Émirats Arabes Unis explore une coopération médiatique renforcée</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/swz.svg" alt="Eswatini" title="Eswatini" class="flag-icon">
+                            <a href="http://www.times.co.sz/" target="_blank" class="article-link">Parlements du Mozambique et d&#39;Eswatini signent un protocole d&#39;accord</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/com.svg" alt="Comores" title="Comores" class="flag-icon">
+                            <a href="http://alwatwan.net/index.php?home" target="_blank" class="article-link">Comores-France | Étienne Chapon reçu par le ministre des Affaires étrangères</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nam.svg" alt="Namibie" title="Namibie" class="flag-icon">
+                            <a href="https://neweralive.na/category/international/" target="_blank" class="article-link">Le ministre sud-coréen se rend aux États-Unis en pleine opération de raid migratoire</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #7279e5; padding: 8px 16px; border-radius: 4px;">Soutien à la souveraineté et au multilatéralisme face aux rivalités géopolitiques</h3>
+        <p class="cluster-description">Des pays comme la Chine, Cuba, la Russie et leurs alliés prônent la défense de la souveraineté nationale, la promotion d&#39;institutions multilatérales telles que l&#39;ONU, et s&#39;opposent aux interventions unilatérales ou à la présence militaire extérieure. Ce groupe remet généralement en question les politiques menées par l&#39;Occident et conteste les tentatives d&#39;encerclement ou d&#39;ingérence dans les affaires intérieures ou régionales. Leur position favorise les initiatives de gouvernance mondiale et les cadres de coopération visant à équilibrer le pouvoir et à réduire l&#39;escalade des conflits. Cette perspective s&#39;aligne souvent avec des partenariats stratégiques et une expansion de l&#39;influence régionale.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mac.svg" alt="MAC" title="MAC" class="flag-icon">
+                            <a href="https://www.macaubusiness.com/category/mna/international/" target="_blank" class="article-link">Cap-Vert : Coopération, Défendre le système international basé sur l&#39;ONU – Ambassadeur de Chine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ben.svg" alt="Bénin" title="Bénin" class="flag-icon">
+                            <a href="https://lanouvelletribune.info/rubrique/politique/" target="_blank" class="article-link">La Russie ajuste sa stratégie régionale entre l&#39;Algérie et le Maroc</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lby.svg" alt="Libye" title="Libye" class="flag-icon">
+                            <a href="https://www.libyaherald.com/category/news/" target="_blank" class="article-link">Libye et Russie célèbrent 70 ans de relations diplomatiques</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jpn.svg" alt="Japon" title="Japon" class="flag-icon">
+                            <a href="https://www.yomiuri.co.jp/world/" target="_blank" class="article-link">Les chefs de la défense américaines tiennent des discussions vidéo ; le secrétaire Austin déclare &#39;pas de désir de conflit&#39;, préparant le sommet</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jpn.svg" alt="Japon" title="Japon" class="flag-icon">
+                            <a href="https://www.asahi.com/ajw/" target="_blank" class="article-link">Le ministère des Affaires étrangères de Chine se plaint auprès du Japon du voyage de l&#39;ancien président taïwanais</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cub.svg" alt="Cuba" title="Cuba" class="flag-icon">
+                            <a href="http://fr.granma.cu/mundo" target="_blank" class="article-link">Cuba soutient l&#39;Initiative de gouvernance mondiale présentée par la Chine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cub.svg" alt="Cuba" title="Cuba" class="flag-icon">
+                            <a href="http://fr.granma.cu/mundo" target="_blank" class="article-link">Le déploiement des forces militaires américaines dans les Caraïbes sous des prétextes absurdes menace la région</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cub.svg" alt="Cuba" title="Cuba" class="flag-icon">
+                            <a href="http://fr.granma.cu/mundo" target="_blank" class="article-link">Pour le Venezuela, toute la solidarité de Cuba</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sgp.svg" alt="Singapour" title="Singapour" class="flag-icon">
+                            <a href="https://www.businesstimes.com.sg/international" target="_blank" class="article-link">Le ministre chinois de la Défense dit à son homologue américain que contenir la Chine est &#39;futile&#39;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/com.svg" alt="Comores" title="Comores" class="flag-icon">
+                            <a href="http://alwatwan.net/index.php?home" target="_blank" class="article-link">Coopération en matière de sécurité Chine-Comores : vers la signature d&#39;un protocole d&#39;accord</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/com.svg" alt="Comores" title="Comores" class="flag-icon">
+                            <a href="http://alwatwan.net/index.php?home" target="_blank" class="article-link">Coopération russo-comorienne | Vers le cinquantième anniversaire des relations diplomatiques</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mdv.svg" alt="Maldives" title="Maldives" class="flag-icon">
+                            <a href="https://sun.mv/world_news" target="_blank" class="article-link">Le Premier ministre indien a reçu une délégation du PCC</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #bf72e5; padding: 8px 16px; border-radius: 4px;">Les puissances moyennes face aux conflits régionaux et aux différends juridiques internationaux</h3>
+        <p class="cluster-description">Des pays comme Andorre, le Canada, la France et l&#39;Espagne adoptent des positions reflétant une navigation prudente face aux conflits régionaux et aux controverses juridiques, notamment en lien avec Israël et le Moyen-Orient. Ces États évitent d&#39;engager des actions judiciaires, réévaluent leurs liens diplomatiques ou critiquent ouvertement les politiques associées tout en équilibrant les préoccupations humanitaires. Leur approche révèle la complexité d&#39;aligner les impératifs politiques domestiques avec le droit international et les efforts de stabilité régionale. Cette perspective se manifeste dans les décisions concernant l&#39;implication de la CPI, les condamnations diplomatiques et la gestion des pressions multilatérales.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/and.svg" alt="Andorre" title="Andorre" class="flag-icon">
+                            <a href="https://www.altaveu.com/actualitat/afers-exteriors" target="_blank" class="article-link">Le gouvernement ferme la porte à la dénonciation de Netanyahu et de son cabinet à La Haye</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/isr.svg" alt="Israël" title="Israël" class="flag-icon">
+                            <a href="https://www.jpost.com/International" target="_blank" class="article-link">Le Canada évalue ses liens avec Israël après l&#39;attaque du Qatar, déclare le ministre des Affaires étrangères</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/can.svg" alt="Canada" title="Canada" class="flag-icon">
+                            <a href="https://www.theglobeandmail.com/world/" target="_blank" class="article-link">Le Canada « évalue » ses liens avec Israël après l&#39;attaque contre des dirigeants du Hamas au Qatar, dit Anand</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kgz.svg" alt="Kirghizistan" title="Kirghizistan" class="flag-icon">
+                            <a href="https://www.vb.kg/" target="_blank" class="article-link">Le Japon fait don d&#39;équipements médicaux d&#39;une valeur de 7,5 millions de dollars au Kirghizistan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sau.svg" alt="Arabie Saoudite" title="Arabie Saoudite" class="flag-icon">
+                            <a href="https://www.arabnews.com/international" target="_blank" class="article-link">Le Premier ministre britannique Starmer condamné pour avoir rencontré Herzog d&#39;Israël « alors que des enfants meurent de faim »</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/per.svg" alt="Pérou" title="Pérou" class="flag-icon">
+                            <a href="https://elcomercio.pe/mundo/" target="_blank" class="article-link">La crise diplomatique entre Israël et l&#39;Espagne s&#39;intensifie avec des veto mutuels entre ministres</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pse.svg" alt="Palestine" title="Palestine" class="flag-icon">
+                            <a href="https://www.alquds.com/" target="_blank" class="article-link">Confrontation violente entre le Premier ministre britannique et le leader de l&#39;occupation israélienne</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e572b8; padding: 8px 16px; border-radius: 4px;">Tensions géopolitiques et coopération en matière de sécurité dans les régions frontalières et conflictuelles</h3>
+        <p class="cluster-description">Plusieurs articles mettent en évidence des préoccupations sécuritaires actives, des tensions aux frontières et une recalibration stratégique par des États tels que la Pologne, la Biélorussie, l&#39;Azerbaïdjan, la Libye et le Venezuela. Ces pays se concentrent sur le contrôle des frontières, les processus de paix, la présence militaire et les réactions diplomatiques face à des conflits ou provocations régionaux. Leurs perspectives illustrent un équilibre entre postures défensives et efforts pour maintenir le dialogue ou la coopération avec les voisins et partenaires internationaux afin de réduire les escalades. Ce groupe reflète un environnement de sécurité dynamique où la souveraineté et la gestion des alliances restent primordiales.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aze.svg" alt="Azerbaïdjan" title="Azerbaïdjan" class="flag-icon">
+                            <a href="https://en.trend.az/world/" target="_blank" class="article-link">Les États-Unis engagés dans le processus de paix entre l&#39;Azerbaïdjan et l&#39;Arménie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svk.svg" alt="Slovaquie" title="Slovaquie" class="flag-icon">
+                            <a href="https://spravy.pravda.sk/svet/" target="_blank" class="article-link">La Pologne a apprécié l&#39;avertissement de la Biélorussie concernant la nuée de drones</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/blr.svg" alt="Biélorussie" title="Biélorussie" class="flag-icon">
+                            <a href="https://euroradio.fm/cats/palityka" target="_blank" class="article-link">La Pologne a-t-elle fermé la frontière de façon permanente ou seulement temporairement ? La clé est entre les mains de Loukachenko</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lby.svg" alt="Libye" title="Libye" class="flag-icon">
+                            <a href="https://www.libyaobserver.ly/world" target="_blank" class="article-link">La Libye et la Chine explorent de nouvelles voies de coopération diplomatique</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pan.svg" alt="Panama" title="Panama" class="flag-icon">
+                            <a href="https://www.prensa.com/mundo/" target="_blank" class="article-link">Les pilotes vénézuéliens de F-16 qui ont survolé des navires américains &#39;agiraient sous la menace de Maduro&#39;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ton.svg" alt="Tonga" title="Tonga" class="flag-icon">
+                            <a href="https://tongaindependent.com/politics/" target="_blank" class="article-link">La France accuse l&#39;Azerbaïdjan d&#39;ingérence en Nouvelle-Calédonie alors que le Premier ministre arrive pour des discussions sur le changement climatique</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ven.svg" alt="Venezuela" title="Venezuela" class="flag-icon">
+                            <a href="https://www.elnacional.com/mundo/" target="_blank" class="article-link">Le destroyer américain revient au Panama dans le cadre de la coopération en matière de sécurité</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ven.svg" alt="Venezuela" title="Venezuela" class="flag-icon">
+                            <a href="https://www.elnacional.com/mundo/" target="_blank" class="article-link">Tensions entre les États-Unis et le Venezuela : &#39;Les forces déployées par Trump sont capables d&#39;intervenir mais pas d&#39;occuper&#39;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/col.svg" alt="Colombie" title="Colombie" class="flag-icon">
+                            <a href="https://www.eltiempo.com/mundo" target="_blank" class="article-link">De nouvelles données contredisent la justification américaine pour l&#39;attaque contre un navire vénézuélien dans la mer des Caraïbes, quelles sont les implications ?</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e57f72; padding: 8px 16px; border-radius: 4px;">Nouvelles fondations diplomatiques et gestes symboliques dans les États émergents ou petits</h3>
+        <p class="cluster-description">Ce cluster concerne des États engageant dans l&#39;établissement ou la réaffirmation de relations diplomatiques, des récompenses symboliques ou la clarification du statut consulaire, souvent parmi des nations plus petites comme Saint-Marin, les Îles Salomon et le Kirghizistan. Ces actions soulignent la reconnaissance officielle, le renforcement des protocoles diplomatiques et la poursuite d&#39;une collaboration internationale pacifique. Leurs publications mettent en avant des succès administratifs et la reconnaissance des partenaires internationaux, reflétant l&#39;aspect routinier mais important de la diplomatie bilatérale au-delà des grandes puissances mondiales.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/slb.svg" alt="Îles Salomon" title="Îles Salomon" class="flag-icon">
+                            <a href="https://www.solomontimes.com/" target="_blank" class="article-link">Îles Salomon et Saint-Marin établissent des relations diplomatiques</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/smr.svg" alt="Saint-Marin" title="Saint-Marin" class="flag-icon">
+                            <a href="http://www.sanmarinortv.sm/news/attualita-c4" target="_blank" class="article-link">Qatar : un citoyen italien vivant à Doha se fait passer pour le consul honoraire de Saint-Marin</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/smr.svg" alt="Saint-Marin" title="Saint-Marin" class="flag-icon">
+                            <a href="http://www.sanmarinortv.sm/news/attualita-c4" target="_blank" class="article-link">Droits de l&#39;homme, le secrétaire d&#39;État Canti remet un prix à Rome</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kgz.svg" alt="Kirghizistan" title="Kirghizistan" class="flag-icon">
+                            <a href="http://www.kabar.kg/" target="_blank" class="article-link">Le président Sadyr Japarov a rencontré le vice-président du Sénat malaisien</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kaz.svg" alt="Kazakhstan" title="Kazakhstan" class="flag-icon">
+                            <a href="https://kazpravda.kz/r/v-mire/" target="_blank" class="article-link">Tokaïev décore le président congolais de l&#39;Ordre de Dostyk de degré I</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cub.svg" alt="Cuba" title="Cuba" class="flag-icon">
+                            <a href="http://www.juventudrebelde.cu/internacionales/" target="_blank" class="article-link">Cuba accueille favorablement la nomination du nouveau ministre des Affaires étrangères du Sénégal</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Dialogues diplomatiques régionaux pour répondre aux crises et promouvoir la paix</h3>
+        <p class="cluster-description">Les pays des régions confrontés à des crises politiques ou humanitaires s&#39;engagent dans des efforts de dialogue visant la stabilisation, la consolidation de la paix et le renforcement des partenariats régionaux. Des exemples incluent les discussions autour de la crise en Haïti, la feuille de route politique en Libye et les visites diplomatiques en République centrafricaine. Ce point de vue souligne l&#39;importance des consultations diplomatiques et de la coordination multilatérale pour médiatiser les conflits et gérer des défis régionaux complexes. De tels efforts mettent en avant la nécessité d&#39;une orchestration diplomatique dans des environnements délicats.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lby.svg" alt="Libye" title="Libye" class="flag-icon">
+                            <a href="https://www.libyaobserver.ly/world" target="_blank" class="article-link">Libye, Malte conviennent de discuter des frontières maritimes et d&#39;élargir les discussions pour inclure d&#39;autres parties</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lby.svg" alt="Libye" title="Libye" class="flag-icon">
+                            <a href="https://www.libyaobserver.ly/world" target="_blank" class="article-link">ONU, France discutent de la feuille de route politique pour la Libye</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gnq.svg" alt="Guinée équatoriale" title="Guinée équatoriale" class="flag-icon">
+                            <a href="https://www.guineaecuatorialpress.com/" target="_blank" class="article-link">Une délégation dirigée par le Président de la République se rend à Bangui</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dom.svg" alt="République dominicaine" title="République dominicaine" class="flag-icon">
+                            <a href="https://listindiario.com/las-mundiales" target="_blank" class="article-link">Danilo reçoit un rapport sur le dialogue de crise haïtien ; espère que cela bénéficiera au pays</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dom.svg" alt="République dominicaine" title="République dominicaine" class="flag-icon">
+                            <a href="https://www.diariolibre.com/mundo" target="_blank" class="article-link">Venezuela tient le Premier ministre trinidadien responsable de l&#39;attaque américaine contre un bateau</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Critique occidentale et inqui\u00e9tudes concernant les normes d\u00e9mocratiques et les alignements r\u00e9gionaux",
+                color: "#72e5ac",
+                data: [ {"id": "GE"} ]
+            },
+        
+            {
+                name: "Engagement diplomatique pragmatique et expansion de la coop\u00e9ration bilat\u00e9rale",
+                color: "#72cbe5",
+                data: [ {"id": "EG"},  {"id": "LA"},  {"id": "NA"},  {"id": "RW"},  {"id": "SY"},  {"id": "SZ"},  {"id": "TM"} ]
+            },
+        
+            {
+                name: "Soutien \u00e0 la souverainet\u00e9 et au multilat\u00e9ralisme face aux rivalit\u00e9s g\u00e9opolitiques",
+                color: "#7279e5",
+                data: [ {"id": "BJ"},  {"id": "JP"},  {"id": "MO"},  {"id": "MV"},  {"id": "SG"} ]
+            },
+        
+            {
+                name: "Les puissances moyennes face aux conflits r\u00e9gionaux et aux diff\u00e9rends juridiques internationaux",
+                color: "#bf72e5",
+                data: [ {"id": "AD"},  {"id": "CA"},  {"id": "IL"},  {"id": "PE"},  {"id": "PS"},  {"id": "SA"} ]
+            },
+        
+            {
+                name: "Tensions g\u00e9opolitiques et coop\u00e9ration en mati\u00e8re de s\u00e9curit\u00e9 dans les r\u00e9gions frontali\u00e8res et conflictuelles",
+                color: "#e572b8",
+                data: [ {"id": "AZ"},  {"id": "BY"},  {"id": "CO"},  {"id": "PA"},  {"id": "SK"},  {"id": "TO"},  {"id": "VE"} ]
+            },
+        
+            {
+                name: "Nouvelles fondations diplomatiques et gestes symboliques dans les \u00c9tats \u00e9mergents ou petits",
+                color: "#e57f72",
+                data: [ {"id": "KZ"},  {"id": "SB"},  {"id": "SM"} ]
+            },
+        
+            {
+                name: "Dialogues diplomatiques r\u00e9gionaux pour r\u00e9pondre aux crises et promouvoir la paix",
+                color: "#e5d272",
+                data: [ {"id": "DO"},  {"id": "GQ"} ]
+            }
+        
+        
+            ,
+            {
+                name: "Plusieurs points de vue : \n- Engagement diplomatique pragmatique et expansion de la coop\u00e9ration bilat\u00e9rale\n- Soutien \u00e0 la souverainet\u00e9 et au multilat\u00e9ralisme face aux rivalit\u00e9s g\u00e9opolitiques",
+                color: "#AAAAAA",
+                data: [{"id": "KM"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Soutien \u00e0 la souverainet\u00e9 et au multilat\u00e9ralisme face aux rivalit\u00e9s g\u00e9opolitiques\n- Nouvelles fondations diplomatiques et gestes symboliques dans les \u00c9tats \u00e9mergents ou petits",
+                color: "#AAAAAA",
+                data: [{"id": "CU"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Soutien \u00e0 la souverainet\u00e9 et au multilat\u00e9ralisme face aux rivalit\u00e9s g\u00e9opolitiques\n- Tensions g\u00e9opolitiques et coop\u00e9ration en mati\u00e8re de s\u00e9curit\u00e9 dans les r\u00e9gions frontali\u00e8res et conflictuelles\n- Dialogues diplomatiques r\u00e9gionaux pour r\u00e9pondre aux crises et promouvoir la paix",
+                color: "#AAAAAA",
+                data: [{"id": "LY"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Les puissances moyennes face aux conflits r\u00e9gionaux et aux diff\u00e9rends juridiques internationaux\n- Nouvelles fondations diplomatiques et gestes symboliques dans les \u00c9tats \u00e9mergents ou petits",
+                color: "#AAAAAA",
+                data: [{"id": "KG"}]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Masquer les sources ▲' : 'Montrer les sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li class="active-m">
+               <a href="/">Accueil</a>
+            </li>
+            <li>
+              <a href="/fr/about.html">A Propos</a>
+            </li>
+            <li>
+              <a href="/fr/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
