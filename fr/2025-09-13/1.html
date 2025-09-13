@@ -1,0 +1,648 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Réponses diplomatiques divergentes à l&#39;échelle internationale face aux défis de sécurité mondiale et aux conflits régionaux</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/fr', '/en');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>                 
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Réponses diplomatiques divergentes à l&#39;échelle internationale face aux défis de sécurité mondiale et aux conflits régionaux</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-09-13</span> • <span>101 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-09-13/2025-09-13-1.jpg" alt="Réponses diplomatiques divergentes à l&#39;échelle internationale face aux défis de sécurité mondiale et aux conflits régionaux" class="main-image">
+                <p style="margin:0">Les articles de presse révèlent un paysage complexe de diplomatie internationale où les pays réagissent de manière divergente face aux conflits régionaux, notamment les frappes israéliennes au Qatar, les tensions impliquant la Russie et l&#39;OTAN, ainsi que des enjeux plus larges de souveraineté et de négociations diplomatiques. Les nations occidentales et alliées condamnent généralement les actions agressives de la Russie et d&#39;Israël, en appelant à des sanctions et au respect du droit international. Par ailleurs, des pays du Moyen-Orient, d&#39;Afrique et d&#39;Asie mettent en avant la souveraineté, condamnent les frappes militaires et recherchent des solutions diplomatiques, souvent en prônant la solidarité régionale et la médiation. De plus, des mouvements géopolitiques stratégiques de pays comme la Biélorussie, la Chine et des membres des régions du Pacifique et turciques illustrent des efforts multifacettes pour équilibrer coopération internationale et intérêts régionaux dans un contexte de tensions mondiales croissantes.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div class="key-points">
+        <h2>Les pays qui en parlent</h2>
+    </div>
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Alliés occidentaux prônant des sanctions, la sécurité et la condamnation des actes agressifs</h3>
+        <p class="cluster-description">Ce groupe, principalement dirigé par des pays occidentaux tels que les États-Unis, les membres de l&#39;Union européenne (France, Royaume-Uni, Allemagne, Pologne) et des alliés comme le Japon et le Canada, condamne fermement les actions militaires agressives attribuées à la Russie et à Israël. Le point de vue insiste sur le respect du droit international, le soutien aux frontières de sécurité de l&#39;OTAN, la sanction des acteurs qui sapent la paix, et la promotion d&#39;un cessez-le-feu et de la retenue. Ces pays s&#39;engagent activement auprès des Nations Unies et d&#39;autres forums multilatéraux pour coordonner les réponses internationales, notamment en étendant les sanctions contre la Russie, en appelant Israël à arrêter ses offensives, et en exigeant la libération des détenus. Leur position reflète un engagement envers la sécurité collective, les droits de l&#39;homme et la pression diplomatique pour désescalader les conflits.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irq.svg" alt="Irak" title="Irak" class="flag-icon">
+                            <a href="https://www.shafaq.com/ar/%D8%B9%D8%B1%D8%A8%D9%8A-%D9%88%D8%AF%D9%88%D9%84%D9%8A" target="_blank" class="article-link">La France exige la libération immédiate et inconditionnelle de ses ressortissants détenus en Iran</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fra.svg" alt="France" title="France" class="flag-icon">
+                            <a href="https://www.lemonde.fr/international/" target="_blank" class="article-link">La Pologne et ses alliés condamnent les incursions de drones russes et appellent Moscou à cesser les provocations à l&#39;ONU</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bol.svg" alt="Bolivie" title="Bolivie" class="flag-icon">
+                            <a href="https://eldeber.com.bo/seccion/mundo/" target="_blank" class="article-link">Les États-Unis avertissent la Russie qu&#39;ils défendront chaque centimètre du territoire de l&#39;OTAN</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ltu.svg" alt="Lituanie" title="Lituanie" class="flag-icon">
+                            <a href="https://www.delfi.lt/news/daily/world/" target="_blank" class="article-link">Le Royaume-Uni annonce de nouvelles sanctions contre la Russie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aze.svg" alt="Azerbaïdjan" title="Azerbaïdjan" class="flag-icon">
+                            <a href="https://www.azernews.az/region/" target="_blank" class="article-link">Le Japon impose des sanctions à 52 entités russes et 10 individus</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gnb.svg" alt="Guinée-Bissau" title="Guinée-Bissau" class="flag-icon">
+                            <a href="https://una-oic.org/News/all/" target="_blank" class="article-link">Le Pakistan appelle à la responsabilité face à l&#39;agression provocatrice d&#39;Israël contre le Qatar</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gnb.svg" alt="Guinée-Bissau" title="Guinée-Bissau" class="flag-icon">
+                            <a href="https://una-oic.org/News/all/" target="_blank" class="article-link">Koweït, représentant le Conseil de coopération du Golfe au Conseil de sécurité de l&#39;ONU : la sécurité du Golfe est une ligne rouge</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/alb.svg" alt="Albanie" title="Albanie" class="flag-icon">
+                            <a href="https://www.panorama.com.al/category/bota-rajoni/" target="_blank" class="article-link">Plus de 40 pays, dont l&#39;Albanie, condamnent fermement les violations de l&#39;espace aérien polonais par des drones russes ; la Pologne demande une réunion urgente du Conseil de sécurité de l&#39;ONU</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svn.svg" alt="Slovénie" title="Slovénie" class="flag-icon">
+                            <a href="https://www.dnevnik.si/svet" target="_blank" class="article-link">L&#39;Allemagne, le Royaume-Uni et la France appellent Israël à arrêter l&#39;offensive à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tza.svg" alt="Tanzanie" title="Tanzanie" class="flag-icon">
+                            <a href="https://dailynews.co.tz/category/world/" target="_blank" class="article-link">Les États-Unis rejoignent la condamnation du Conseil de sécurité de l&#39;ONU des frappes israéliennes sur le Qatar</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mar.svg" alt="Maroc" title="Maroc" class="flag-icon">
+                            <a href="https://lematin.ma/monde" target="_blank" class="article-link">Le Secrétaire général de l&#39;ONU condamne l&#39;attaque israélienne comme une violation grave de la souveraineté du Qatar</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72bbe5; padding: 8px 16px; border-radius: 4px;">Pays du Moyen-Orient et Alliés mettant l&#39;accent sur la souveraineté, la condamnation des frappes israéliennes et la solidarité régionale</h3>
+        <p class="cluster-description">Ce point de vue englobe des pays du Moyen-Orient tels que le Qatar, le Pakistan, l&#39;Arabie saoudite, les Émirats arabes unis, ainsi que des nations africaines soutenues, notamment l&#39;Afrique du Sud, le Rwanda, et d&#39;autres qui condamnent fermement les actions militaires israéliennes, en particulier les frappes sur le Qatar. Ces pays appellent au respect de la souveraineté, à la paix régionale et à l&#39;engagement diplomatique, soulignant les effets déstabilisateurs de telles attaques sur les négociations de paix en cours. Ils insistent sur la coopération régionale pour prévenir toute escalade supplémentaire et collaborent souvent avec des partenaires internationaux comme les États-Unis et l&#39;ancien président Trump pour médiatiser les tensions. Leur approche privilégie la sécurité collective régionale, la condamnation des violations, le soutien à la Palestine, et le maintien ou la réévaluation des rôles de médiation pour gérer les conflits.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vat.svg" alt="Saint-Siège" title="Saint-Siège" class="flag-icon">
+                            <a href="https://www.vaticannews.va/it/mondo.html" target="_blank" class="article-link">Israël ouvre de nouveaux fronts au Yémen et au Liban ; le Parlement européen vote sur la Palestine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vat.svg" alt="Saint-Siège" title="Saint-Siège" class="flag-icon">
+                            <a href="https://www.osservatoreromano.va/it/sections/internazionale.html" target="_blank" class="article-link">L&#39;ONU condamne les attaques au Qatar sans nommer Israël</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/afg.svg" alt="Afghanistan" title="Afghanistan" class="flag-icon">
+                            <a href="https://www.pajhwok.com/en/world-news" target="_blank" class="article-link">Avec le soutien des États-Unis, le Conseil de sécurité condamne les frappes israéliennes sur Doha</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/afg.svg" alt="Afghanistan" title="Afghanistan" class="flag-icon">
+                            <a href="https://www.pajhwok.com/en/world-news" target="_blank" class="article-link">Le Conseil de sécurité doit se réunir aujourd&#39;hui pour discuter des frappes israéliennes au Qatar</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/afg.svg" alt="Afghanistan" title="Afghanistan" class="flag-icon">
+                            <a href="https://tolonews.com/world" target="_blank" class="article-link">Le Premier ministre du Qatar rencontrera les hauts responsables américains vendredi après l&#39;attaque israélienne à Doha</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dza.svg" alt="Algérie" title="Algérie" class="flag-icon">
+                            <a href="https://www.aps.dz/monde" target="_blank" class="article-link">Les parlements arabe et africain condamnent l&#39;agression sioniste contre le Qatar</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hkg.svg" alt="HKG" title="HKG" class="flag-icon">
+                            <a href="https://www.scmp.com/news/world" target="_blank" class="article-link">Le Premier ministre du Qatar a dîné avec Trump après les frappes israéliennes sur Doha</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tkm.svg" alt="Turkménistan" title="Turkménistan" class="flag-icon">
+                            <a href="http://www.turkmenistan.gov.tm/?cat=12" target="_blank" class="article-link">Turkménistan condamne les frappes de missiles d&#39;Israël sur la capitale du Qatar</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dnk.svg" alt="Danemark" title="Danemark" class="flag-icon">
+                            <a href="https://nyheder.tv2.dk/udland" target="_blank" class="article-link">Les attaques au Qatar étaient une attaque contre les négociations, selon un correspondant</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gmb.svg" alt="Gambie" title="Gambie" class="flag-icon">
+                            <a href="https://alkambatimes.com/category/news/international-news/" target="_blank" class="article-link">Risque dans la région du Golfe : le Qatar cherche une réponse collective à l&#39;attaque israélienne</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ukr.svg" alt="Ukraine" title="Ukraine" class="flag-icon">
+                            <a href="https://www.kyivpost.com/category/world" target="_blank" class="article-link">Trump aurait dit aux pays du G7 de punir la Chine et l&#39;Inde face à l&#39;escalade des tensions avec la Russie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/blr.svg" alt="Biélorussie" title="Biélorussie" class="flag-icon">
+                            <a href="https://www.belta.by/" target="_blank" class="article-link">L&#39;UE prolonge officiellement les sanctions contre la Russie pour six mois</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lca.svg" alt="Sainte-Lucie" title="Sainte-Lucie" class="flag-icon">
+                            <a href="https://www.thevoiceslu.com/category/news/" target="_blank" class="article-link">CELAC condamne la présence militaire dans la région</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mda.svg" alt="Moldavie" title="Moldavie" class="flag-icon">
+                            <a href="https://www.zdg.md/" target="_blank" class="article-link">Trump dit que sa patience avec Poutine &#34;s&#39;épuise rapidement&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mdg.svg" alt="Madagascar" title="Madagascar" class="flag-icon">
+                            <a href="https://newsmada.com/    " target="_blank" class="article-link">Assemblée générale des Nations Unies : Rajoelina représentera la région sud et la SADC</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #8d72e5; padding: 8px 16px; border-radius: 4px;">La Russie et ses alliés prônent la souveraineté et critiquent les politiques occidentales</h3>
+        <p class="cluster-description">La Russie et les pays alignés ou sympathisants, tels que la Biélorussie et certains États d&#39;Asie centrale et africains, expriment des préoccupations concernant les sanctions occidentales et les provocations militaires. Ils qualifient d&#39;infractions au droit international les actions des membres de l&#39;OTAN et d&#39;Israël, en insistant sur la souveraineté et en dénonçant les doubles standards perçus dans les politiques occidentales. Ces nations se concentrent sur la défense de leurs intérêts stratégiques, critiquent les sanctions économiques et diplomatiques, et promeuvent des organisations multilatérales alternatives (par exemple, BRICS, SCO) pour renforcer la coopération et résister à la domination occidentale. La communication de la Russie souligne un récit de défense de la souveraineté contre l&#39;ingérence extérieure dans un contexte de rivalités géopolitiques croissantes.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fra.svg" alt="France" title="France" class="flag-icon">
+                            <a href="https://www.lemonde.fr/international/" target="_blank" class="article-link">La Biélorussie obtient la levée des sanctions américaines en échange de la libération des prisonniers politiques</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mus.svg" alt="Maurice" title="Maurice" class="flag-icon">
+                            <a href="https://lexpress.mu/international" target="_blank" class="article-link">Diego Garcia reste une question divisive à Westminster</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kaz.svg" alt="Kazakhstan" title="Kazakhstan" class="flag-icon">
+                            <a href="https://tengrinews.kz/news/" target="_blank" class="article-link">Poutine a adressé un message à l&#39;Ukraine, à l&#39;Europe et à Trump - NYT</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/usa.svg" alt="États-Unis" title="États-Unis" class="flag-icon">
+                            <a href="https://edition.cnn.com/world" target="_blank" class="article-link">La Biélorussie gracie des dizaines de prisonniers « à la demande » de Trump, selon Lukashenko</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/swz.svg" alt="Eswatini" title="Eswatini" class="flag-icon">
+                            <a href="http://www.times.co.sz/" target="_blank" class="article-link">Poutine provoque l&#39;Occident</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mli.svg" alt="Mali" title="Mali" class="flag-icon">
+                            <a href="https://bamada.net/category/international" target="_blank" class="article-link">L&#39;attaque israélienne sur Doha : violation flagrante du droit international et de la Charte des Nations Unies – Ministère russe des Affaires étrangères</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kgz.svg" alt="Kirghizistan" title="Kirghizistan" class="flag-icon">
+                            <a href="http://www.kabar.kg/" target="_blank" class="article-link">Sadyr Japarov a rencontré les secrétaires des conseils de sécurité des États membres de l&#39;OTC</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kgz.svg" alt="Kirghizistan" title="Kirghizistan" class="flag-icon">
+                            <a href="http://www.kabar.kg/" target="_blank" class="article-link">L&#39;Azerbaïdjan assume la présidence de l&#39;Organisation des États turcs</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jpn.svg" alt="Japon" title="Japon" class="flag-icon">
+                            <a href="https://www.asahi.com/ajw/" target="_blank" class="article-link">Le Japon condamne l&#39;attaque israélienne sur le Qatar, appelle à reprendre les pourparlers de cessez-le-feu</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e572da; padding: 8px 16px; border-radius: 4px;">L&#39;accent diplomatique de la Chine sur la souveraineté, la coopération économique et l&#39;opposition aux sanctions unilatérales</h3>
+        <p class="cluster-description">La Chine prône le respect de la souveraineté et s&#39;oppose aux sanctions unilatérales et aux mesures extraterritoriales, critiquant notamment les actions américaines ciblant des entreprises chinoises liées à des entités yéménites. Ses efforts diplomatiques se concentrent sur le renforcement des liens multilatéraux dans des forums tels que les BRICS et l&#39;Organisation de coopération de Shanghai, ainsi que sur la promotion de la coopération économique avec des partenaires du monde entier. La position de la Chine privilégie le dialogue, le respect mutuel et des résolutions coopératives face aux défis, en s&#39;opposant aux mesures unilatérales déstabilisatrices qu&#39;elle considère comme nuisibles au commerce et à la diplomatie internationaux.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/yem.svg" alt="Yémen" title="Yémen" class="flag-icon">
+                            <a href="https://www.saba.ye" target="_blank" class="article-link">La Chine s&#39;oppose fermement à l&#39;inclusion des entreprises chinoises sur la liste des sanctions américaines pour les entités yéménites</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/uga.svg" alt="Ouganda" title="Ouganda" class="flag-icon">
+                            <a href="https://www.pmldaily.com/category/news/world" target="_blank" class="article-link">Xi rencontre le Premier ministre portugais</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/uga.svg" alt="Ouganda" title="Ouganda" class="flag-icon">
+                            <a href="https://www.pmldaily.com/category/news/world" target="_blank" class="article-link">Xi formule trois propositions lors du sommet virtuel des BRICS pour renforcer la solidarité et faire avancer la coopération</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/uga.svg" alt="Ouganda" title="Ouganda" class="flag-icon">
+                            <a href="https://www.pmldaily.com/category/news/world" target="_blank" class="article-link">Texte intégral de la déclaration de Xi lors du sommet virtuel des BRICS</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/uga.svg" alt="Ouganda" title="Ouganda" class="flag-icon">
+                            <a href="https://www.pmldaily.com/category/news/world" target="_blank" class="article-link">Commentaire de Xinhua : Le monde bénéficie d&#39;une solidarité et d&#39;une coopération plus étroites des BRICS</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bfa.svg" alt="Burkina Faso" title="Burkina Faso" class="flag-icon">
+                            <a href="https://www.sidwaya.info/bfcategories/international/" target="_blank" class="article-link">Sommet de l&#39;Organisation de coopération de Shanghai à Tianjin : Wang Yi et le Secrétaire général discutent</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tgo.svg" alt="Togo" title="Togo" class="flag-icon">
+                            <a href="http://www.togopresse.tg/" target="_blank" class="article-link">Forum des médias et des think tanks en Chine : Le travail commence samedi à Kunming</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svn.svg" alt="Slovénie" title="Slovénie" class="flag-icon">
+                            <a href="https://www.delo.si/novice/svet" target="_blank" class="article-link">La mission de la Chine contre les tarifs douaniers et une autre tentative de compréhension</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e57276; padding: 8px 16px; border-radius: 4px;">Organisations régionales et États plus petits favorisant la paix, la stabilité et le développement</h3>
+        <p class="cluster-description">Nations insulaires du Pacifique, blocs régionaux africains (par exemple, CEMAC, ECCAS) et pays plus petits mettent en avant l&#39;unité régionale, la paix, la résilience environnementale et la coopération internationale pour relever les défis liés aux conflits et au développement. Ils soutiennent des initiatives telles que l&#39;Océan de la Paix, le Fonds de résilience du Pacifique et les sommets sur le climat, reflétant une préférence pour l&#39;engagement multilatéral et l&#39;ordre basé sur des règles adapté aux besoins régionaux. Leur perspective diplomatique insiste sur l&#39;évitement de l&#39;ingérence extérieure, le renforcement de la coopération interne et la prise en compte des enjeux socio-économiques en parallèle des questions de sécurité, adoptant une approche holistique de la diplomatie internationale.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/caf.svg" alt="République centrafricaine" title="République centrafricaine" class="flag-icon">
+                            <a href="https://www.journaldebangui.com/international/" target="_blank" class="article-link">Togo organise une réunion pour renforcer le partenariat Afrique-Europe à Lomé</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/caf.svg" alt="République centrafricaine" title="République centrafricaine" class="flag-icon">
+                            <a href="https://www.journaldebangui.com/international/" target="_blank" class="article-link">CEMAC : Faustin-Archange Touadéra remet la présidence à Denis Sassou-Nguesso</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/caf.svg" alt="République centrafricaine" title="République centrafricaine" class="flag-icon">
+                            <a href="https://www.journaldebangui.com/international/" target="_blank" class="article-link">Congo : Ludovic Ngatsé assume la présidence tournante du Conseil des ministres de la CEEAC</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vut.svg" alt="Vanuatu" title="Vanuatu" class="flag-icon">
+                            <a href="https://dailypost.vu/news/" target="_blank" class="article-link">Les dirigeants du PIF vont approuver le Fonds de résilience du Pacifique et la Déclaration de l&#39;Océan de Paix</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ner.svg" alt="Niger" title="Niger" class="flag-icon">
+                            <a href="https://www.journalduniger.com/category/politique/diplomatie/" target="_blank" class="article-link">Niger et ONU forment un partenariat pour la transformation nationale</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bfa.svg" alt="Burkina Faso" title="Burkina Faso" class="flag-icon">
+                            <a href="https://www.sidwaya.info/bfcategories/international/" target="_blank" class="article-link">Guinée-Bissau : Signes de bonne volonté</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pan.svg" alt="Panama" title="Panama" class="flag-icon">
+                            <a href="https://www.laestrella.com.pa/mundo" target="_blank" class="article-link">Crise en Haïti : 34 pays de l&#39;OEA demandent une assistance coordonnée de l&#39;ONU</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gnq.svg" alt="Guinée équatoriale" title="Guinée équatoriale" class="flag-icon">
+                            <a href="https://www.guineaecuatorialpress.com/" target="_blank" class="article-link">Le Ministre délégué à l&#39;Agriculture représente le Chef de l&#39;État lors du deuxième Sommet africain sur le climat</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gnq.svg" alt="Guinée équatoriale" title="Guinée équatoriale" class="flag-icon">
+                            <a href="https://www.guineaecuatorialpress.com/" target="_blank" class="article-link">Une délégation dirigée par le Président de la République se rend à Bangui</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gnq.svg" alt="Guinée équatoriale" title="Guinée équatoriale" class="flag-icon">
+                            <a href="https://www.guineaecuatorialpress.com/" target="_blank" class="article-link">Le nouveau Président de la Commission de la CEEAC prête serment devant S.E. Obiang Nguema Mbasogo</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/slb.svg" alt="Îles Salomon" title="Îles Salomon" class="flag-icon">
+                            <a href="https://www.solomontimes.com/" target="_blank" class="article-link">Un ordre basé sur des règles dans le Pacifique Bleu : « Notre maison, nos règles »</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/slb.svg" alt="Îles Salomon" title="Îles Salomon" class="flag-icon">
+                            <a href="https://theislandsun.com.sb/category/news/" target="_blank" class="article-link">Le Pacifique ne doit jamais être considéré comme une arène pour les autres, déclare le Premier ministre Manele</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/slb.svg" alt="Îles Salomon" title="Îles Salomon" class="flag-icon">
+                            <a href="https://theislandsun.com.sb/category/news/" target="_blank" class="article-link">L&#39;océan de paix exige une plus grande unité, paix et sécurité pour le Pacifique, déclare le Premier ministre fidjien</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Pays critiquant les doubles standards internationaux et appelant à des politiques équilibrées</h3>
+        <p class="cluster-description">Des pays comme la Hongrie et d&#39;autres expriment leur frustration face à ce qu&#39;ils perçoivent comme des doubles standards en politique internationale, notamment en ce qui concerne les politiques de l&#39;UE et les actions diplomatiques plus larges de l&#39;Occident. Cette perspective appelle à l&#39;égalité entre les nations dans le traitement diplomatique et à une application équitable des règles et politiques internationales. Ils prônent une approche équilibrée qui évite l&#39;hypocrisie et favorise des normes cohérentes en matière de gouvernance mondiale et de sécurité.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mkd.svg" alt="Macédoine du Nord" title="Macédoine du Nord" class="flag-icon">
+                            <a href="https://www.novamakedonija.com.mk/" target="_blank" class="article-link">Szijjártó : Bruxelles doit mettre fin aux doubles standards</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Alli\u00e9s occidentaux pr\u00f4nant des sanctions, la s\u00e9curit\u00e9 et la condamnation des actes agressifs",
+                color: "#72e5ac",
+                data: [ {"id": "AL"},  {"id": "AZ"},  {"id": "BO"},  {"id": "GW"},  {"id": "IQ"},  {"id": "LT"},  {"id": "MA"},  {"id": "TZ"} ]
+            },
+        
+            {
+                name: "Pays du Moyen-Orient et Alli\u00e9s mettant l\u0027accent sur la souverainet\u00e9, la condamnation des frappes isra\u00e9liennes et la solidarit\u00e9 r\u00e9gionale",
+                color: "#72bbe5",
+                data: [ {"id": "AF"},  {"id": "BY"},  {"id": "DK"},  {"id": "DZ"},  {"id": "GM"},  {"id": "HK"},  {"id": "LC"},  {"id": "MD"},  {"id": "MG"},  {"id": "TM"},  {"id": "UA"},  {"id": "VA"} ]
+            },
+        
+            {
+                name: "La Russie et ses alli\u00e9s pr\u00f4nent la souverainet\u00e9 et critiquent les politiques occidentales",
+                color: "#8d72e5",
+                data: [ {"id": "JP"},  {"id": "KG"},  {"id": "KZ"},  {"id": "ML"},  {"id": "MU"},  {"id": "SZ"},  {"id": "US"} ]
+            },
+        
+            {
+                name: "L\u0027accent diplomatique de la Chine sur la souverainet\u00e9, la coop\u00e9ration \u00e9conomique et l\u0027opposition aux sanctions unilat\u00e9rales",
+                color: "#e572da",
+                data: [ {"id": "TG"},  {"id": "UG"},  {"id": "YE"} ]
+            },
+        
+            {
+                name: "Organisations r\u00e9gionales et \u00c9tats plus petits favorisant la paix, la stabilit\u00e9 et le d\u00e9veloppement",
+                color: "#e57276",
+                data: [ {"id": "CF"},  {"id": "GQ"},  {"id": "NE"},  {"id": "PA"},  {"id": "SB"},  {"id": "VU"} ]
+            },
+        
+            {
+                name: "Pays critiquant les doubles standards internationaux et appelant \u00e0 des politiques \u00e9quilibr\u00e9es",
+                color: "#e5d272",
+                data: [ {"id": "MK"} ]
+            }
+        
+        
+            ,
+            {
+                name: "Plusieurs points de vue : \n- Alli\u00e9s occidentaux pr\u00f4nant des sanctions, la s\u00e9curit\u00e9 et la condamnation des actes agressifs\n- La Russie et ses alli\u00e9s pr\u00f4nent la souverainet\u00e9 et critiquent les politiques occidentales",
+                color: "#AAAAAA",
+                data: [{"id": "FR"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Alli\u00e9s occidentaux pr\u00f4nant des sanctions, la s\u00e9curit\u00e9 et la condamnation des actes agressifs\n- L\u0027accent diplomatique de la Chine sur la souverainet\u00e9, la coop\u00e9ration \u00e9conomique et l\u0027opposition aux sanctions unilat\u00e9rales",
+                color: "#AAAAAA",
+                data: [{"id": "SI"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- L\u0027accent diplomatique de la Chine sur la souverainet\u00e9, la coop\u00e9ration \u00e9conomique et l\u0027opposition aux sanctions unilat\u00e9rales\n- Organisations r\u00e9gionales et \u00c9tats plus petits favorisant la paix, la stabilit\u00e9 et le d\u00e9veloppement",
+                color: "#AAAAAA",
+                data: [{"id": "BF"}]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Masquer les sources ▲' : 'Montrer les sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li class="active-m">
+               <a href="/">Accueil</a>
+            </li>
+            <li>
+              <a href="/fr/about.html">A Propos</a>
+            </li>
+            <li>
+              <a href="/fr/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
