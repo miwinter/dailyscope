@@ -1,0 +1,645 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Perspectives internationales sur le conflit israélo-palestinien : solution à deux États et exclusion du Hamas</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/fr', '/en');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>                 
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Perspectives internationales sur le conflit israélo-palestinien : solution à deux États et exclusion du Hamas</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-09-14</span> • <span>65 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-09-14/2025-09-14-5.webp" alt="Perspectives internationales sur le conflit israélo-palestinien : solution à deux États et exclusion du Hamas" class="main-image">
+                <p style="margin:0">Les articles analysés illustrent un large consensus international en faveur d&#39;une solution à deux États au conflit israélo-palestinien, avec de nombreuses résolutions de l&#39;Assemblée générale de l&#39;ONU soutenant cette approche. De nombreux pays soulignent la nécessité d&#39;une coexistence pacifique, de négociations diplomatiques renouvelées, et de l&#39;exclusion ou du désarmement du Hamas du cadre de gouvernance palestinien comme condition préalable à la paix. Inversement, Israël adopte une position ferme en se concentrant sur la cible de la direction du Hamas, mise en évidence par des opérations militaires au Qatar et des réponses caractérisées par des représailles contre le Hamas et ses soutiens. Les réactions régionales varient considérablement, les pays arabes et musulmans condamnant les attaques israéliennes, notamment les frappes contre les dirigeants du Hamas au Qatar, tandis que les puissances occidentales et plusieurs acteurs mondiaux appellent à des stratégies diplomatiques mettant l&#39;accent sur la souveraineté sans l&#39;implication du Hamas.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div class="key-points">
+        <h2>Les pays qui en parlent</h2>
+    </div>
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Soutien à la solution à deux États avec exclusion du Hamas : Appel à une résolution diplomatique</h3>
+        <p class="cluster-description">Ce groupe comprend des pays et des acteurs internationaux soutenant la solution à deux États comme cadre principal pour résoudre le conflit israélo-palestinien. Leur position favorise une coexistence pacifique entre Israël et un État palestinien indépendant, tout en insistant sur l&#39;exclusion du Hamas du processus politique en raison de ses activités militantes et de sa gouvernance à Gaza. Ces pays mettent en avant le dialogue, la reconnaissance mutuelle, ainsi que des sanctions ou le désarmement du Hamas comme étapes essentielles. Ils représentent une majorité importante à l&#39;Assemblée générale des Nations Unies, et nombreux sont ceux qui soutiennent des résolutions telles que la &#39;Déclaration de New York&#39; qui appuient la souveraineté palestinienne sans l&#39;influence du Hamas, cherchant une voie diplomatique tout en condamnant la violence.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mng.svg" alt="Mongolie" title="Mongolie" class="flag-icon">
+                            <a href="https://montsame.mn/mn/more/17" target="_blank" class="article-link">L&#39;Assemblée générale de l&#39;ONU adopte une résolution soutenant la solution à deux États</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hun.svg" alt="Hongrie" title="Hongrie" class="flag-icon">
+                            <a href="https://nepszava.hu/tag/kulfold/" target="_blank" class="article-link">L&#39;Assemblée générale de l&#39;ONU reconnaît l&#39;État palestinien sans Hamas</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pse.svg" alt="Palestine" title="Palestine" class="flag-icon">
+                            <a href="http://www.al-ayyam.ps/" target="_blank" class="article-link">L&#39;Assemblée générale adopte la &#34;Déclaration de New York&#34; à la majorité écrasante en faveur de la solution à deux États</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tjk.svg" alt="Tadjikistan" title="Tadjikistan" class="flag-icon">
+                            <a href="https://asiaplustj.info/tj/rubrics/world" target="_blank" class="article-link">L&#39;Assemblée générale de l&#39;ONU soutient la création de l&#39;État palestinien avec la &#34;Déclaration de New York&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jpn.svg" alt="Japon" title="Japon" class="flag-icon">
+                            <a href="https://www.yomiuri.co.jp/world/" target="_blank" class="article-link">La Déclaration de New York en faveur de la coexistence israélo-palestinienne adoptée par 142 pays, dont le Japon, le Royaume-Uni, la France ; 10 nations s&#39;opposent, y compris les États-Unis</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/are.svg" alt="Émirats arabes unis" title="Émirats arabes unis" class="flag-icon">
+                            <a href="https://www.thenationalnews.com/international" target="_blank" class="article-link">L&#39;Assemblée générale de l&#39;ONU vote en faveur d&#39;un futur État palestinien sans Hamas</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/omn.svg" alt="Oman" title="Oman" class="flag-icon">
+                            <a href="https://www.omanobserver.om/world" target="_blank" class="article-link">Un État palestinien sans Hamas reçoit le soutien de l&#39;ONU</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/and.svg" alt="Andorre" title="Andorre" class="flag-icon">
+                            <a href="https://www.altaveu.com/actualitat/afers-exteriors" target="_blank" class="article-link">Andorre vote à l&#39;ONU en faveur de la création d&#39;un futur État de Palestine sans Hamas</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/est.svg" alt="Estonie" title="Estonie" class="flag-icon">
+                            <a href="https://maailm.postimees.ee/" target="_blank" class="article-link">L&#39;Assemblée générale des Nations Unies déclare son soutien à un État de Palestine sans Hamas</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/est.svg" alt="Estonie" title="Estonie" class="flag-icon">
+                            <a href="https://www.delfi.ee/kategooria/123/maailm" target="_blank" class="article-link">L&#39;ONU approuve massivement la déclaration en faveur de la solution à deux États condamnant Hamas</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/idn.svg" alt="Indonésie" title="Indonésie" class="flag-icon">
+                            <a href="https://www.thejakartapost.com/world" target="_blank" class="article-link">L&#39;ONU approuve massivement la déclaration en faveur d&#39;une solution à deux États qui condamne le Hamas</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/idn.svg" alt="Indonésie" title="Indonésie" class="flag-icon">
+                            <a href="https://www.thejakartapost.com/world" target="_blank" class="article-link">L&#39;Assemblée générale de l&#39;ONU doit voter sur un État palestinien sans Hamas</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bel.svg" alt="Belgique" title="Belgique" class="flag-icon">
+                            <a href="https://www.lalibre.be/international" target="_blank" class="article-link">L&#39;Assemblée générale de l&#39;ONU appelle à une solution à deux États excluant le Hamas</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/blr.svg" alt="Biélorussie" title="Biélorussie" class="flag-icon">
+                            <a href="https://euroradio.fm/cats/palityka" target="_blank" class="article-link">L&#39;Assemblée générale de l&#39;ONU soutient la création de deux États pour Israël et la Palestine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/alb.svg" alt="Albanie" title="Albanie" class="flag-icon">
+                            <a href="https://www.panorama.com.al/category/bota-rajoni/" target="_blank" class="article-link">L&#39;Assemblée générale de l&#39;ONU appelle à mettre fin au régime du Hamas et soutient la solution à deux États ; Israël rejette la proposition</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/uzb.svg" alt="Ouzbékistan" title="Ouzbékistan" class="flag-icon">
+                            <a href="https://www.gazeta.uz/ru/world/" target="_blank" class="article-link">L&#39;Assemblée générale de l&#39;ONU a soutenu la création de l&#39;État de Palestine avec exclusion du Hamas</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pry.svg" alt="Paraguay" title="Paraguay" class="flag-icon">
+                            <a href="https://www.ultimahora.com/noticias/mundo/" target="_blank" class="article-link">L&#39;Assemblée générale de l&#39;ONU soutient un État palestinien sans Hamas</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mrt.svg" alt="Mauritanie" title="Mauritanie" class="flag-icon">
+                            <a href="https://cridem.org/" target="_blank" class="article-link">L&#39;Assemblée générale de l&#39;ONU soutient la solution à deux États pour la Palestine en excluant le Hamas</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sau.svg" alt="Arabie Saoudite" title="Arabie Saoudite" class="flag-icon">
+                            <a href="https://saudigazette.com.sa/World" target="_blank" class="article-link">L&#39;Assemblée générale de l&#39;ONU approuve à la majorité une planification à deux États</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/che.svg" alt="Suisse" title="Suisse" class="flag-icon">
+                            <a href="https://www.letemps.ch/monde" target="_blank" class="article-link">L&#39;Assemblée générale de l&#39;ONU soutient un futur État palestinien, en excluant le Hamas</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dza.svg" alt="Algérie" title="Algérie" class="flag-icon">
+                            <a href="https://www.aps.dz/monde" target="_blank" class="article-link">Assemblée générale de l&#39;ONU : la Palestine accueille favorablement l&#39;adoption de la résolution soutenant la solution à deux États</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hkg.svg" alt="HKG" title="HKG" class="flag-icon">
+                            <a href="https://www.scmp.com/news/world" target="_blank" class="article-link">L&#39;Assemblée générale de l&#39;ONU vote pour un État palestinien sans Hamas</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/zmb.svg" alt="Zambie" title="Zambie" class="flag-icon">
+                            <a href="https://zambianobserver.com/category/world/" target="_blank" class="article-link">L&#39;Assemblée générale de l&#39;ONU a massivement approuvé une résolution visant à relancer la solution à deux États entre Israël et la Palestine</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72a2e5; padding: 8px 16px; border-radius: 4px;">Position ferme d&#39;Israël en matière de sécurité et actions militaires contre le Hamas</h3>
+        <p class="cluster-description">Articles provenant d&#39;Israël et de pays alliés ou sympathisants reflètent une politique centrée sur une action militaire contre la direction du Hamas, y compris des frappes ciblées dans des lieux tels que Doha, Qatar. Israël maintient que l&#39;élimination des dirigeants du Hamas est essentielle pour mettre fin à la violence et sécuriser l&#39;État. Les autorités israéliennes répondent fermement aux attaques par des saisies de maisons et des opérations de sécurité, rejetant les résolutions diplomatiques perçues comme insuffisantes ou biaisées. La direction israélienne, y compris le Premier ministre Netanyahu, met en avant une campagne stratégique pour démanteler la direction du Hamas à l&#39;étranger, réaffirmant que cette pression militaire vise à assurer la sécurité et la paix à long terme, basées sur la défaite des factions militantes plutôt que sur le compromis.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mdv.svg" alt="Maldives" title="Maldives" class="flag-icon">
+                            <a href="https://mihaaru.com/world" target="_blank" class="article-link">Le territoire palestinien ne sera pas divisé Khalid Mashal</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mdv.svg" alt="Maldives" title="Maldives" class="flag-icon">
+                            <a href="https://mihaaru.com/world" target="_blank" class="article-link">L&#39;État palestinien et le soulèvement sont toujours vivants, Natanyahu</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pse.svg" alt="Palestine" title="Palestine" class="flag-icon">
+                            <a href="https://www.alquds.com/" target="_blank" class="article-link">La police réprime les manifestations ; Netanyahu dit que tuer les dirigeants du Hamas met fin à la guerre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/srb.svg" alt="Serbie" title="Serbie" class="flag-icon">
+                            <a href="https://www.politika.rs/scc/svet" target="_blank" class="article-link">L&#39;IDF a saisi les maisons des Palestiniens responsables de l&#39;attaque à Jérusalem</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mac.svg" alt="MAC" title="MAC" class="flag-icon">
+                            <a href="https://macaudailytimes.com.mo/category/world" target="_blank" class="article-link">L&#39;attaque israélienne contre les dirigeants du Hamas à Doha choque les alliés du Golfe, met à l&#39;épreuve les liens avec les États-Unis</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pri.svg" alt="PRI" title="PRI" class="flag-icon">
+                            <a href="https://www.elnuevodia.com/noticias/mundo/" target="_blank" class="article-link">L&#39;attaque contre les dirigeants du Hamas au Qatar affaiblit la position mondiale d&#39;Israël</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/rou.svg" alt="Roumanie" title="Roumanie" class="flag-icon">
+                            <a href="https://jurnalul.ro/stiri/externe/" target="_blank" class="article-link">Le Premier ministre Netanyahu affirme que le retrait des dirigeants du Hamas au Qatar pourrait mettre fin à la guerre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/plw.svg" alt="Palaos" title="Palaos" class="flag-icon">
+                            <a href="https://islandtimes.org/category/world-news/" target="_blank" class="article-link">Israël promet d&#39;autres attaques si les dirigeants du Hamas ont survécu à l&#39;attaque au Qatar</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/omn.svg" alt="Oman" title="Oman" class="flag-icon">
+                            <a href="https://www.omanobserver.om/world" target="_blank" class="article-link">Après l&#39;attaque du Qatar, Israël menace de frapper partout</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mlt.svg" alt="Malte" title="Malte" class="flag-icon">
+                            <a href="https://www.maltatoday.com.mt/news/world/" target="_blank" class="article-link">Israël frappe une délégation du Hamas à Doha, le Qatar condamne l&#39;attaque</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/swe.svg" alt="Suède" title="Suède" class="flag-icon">
+                            <a href="https://www.dn.se/varlden/" target="_blank" class="article-link">Sources : le Mossad a refusé d&#39;attaquer le Hamas au Qatar</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/usa.svg" alt="États-Unis" title="États-Unis" class="flag-icon">
+                            <a href="https://abcnews.go.com/International" target="_blank" class="article-link">Netanyahu a pris un risque en ciblant les dirigeants du Hamas au Qatar. Il semble que cela ait tourné au fiasco</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cub.svg" alt="Cuba" title="Cuba" class="flag-icon">
+                            <a href="http://www.juventudrebelde.cu/internacionales/" target="_blank" class="article-link">Israël lance des attaques contre le Hamas à Doha</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irn.svg" alt="Iran" title="Iran" class="flag-icon">
+                            <a href="https://ifpnews.com/category/news/world/" target="_blank" class="article-link">Sondage : 75 % des Israéliens approuvent les attaques ciblant le Hamas au Qatar</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irn.svg" alt="Iran" title="Iran" class="flag-icon">
+                            <a href="https://ifpnews.com/category/news/world/" target="_blank" class="article-link">L&#39;Assemblée générale de l&#39;ONU soutient la démarche en faveur de deux États pour Israël et la Palestine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cze.svg" alt="République tchèque" title="République tchèque" class="flag-icon">
+                            <a href="https://www.idnes.cz/zpravy/zahranicni" target="_blank" class="article-link">Israël a attaqué le Hamas au Qatar avec des missiles balistiques lancés depuis la mer Rouge</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cze.svg" alt="République tchèque" title="République tchèque" class="flag-icon">
+                            <a href="https://www.lidovky.cz/svet" target="_blank" class="article-link">Israël a attaqué le Hamas au Qatar avec des missiles balistiques tirés depuis la mer Rouge</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #bf72e5; padding: 8px 16px; border-radius: 4px;">Pays arabes et musulmans condamnant les actions militaires israéliennes</h3>
+        <p class="cluster-description">Ce cluster reflète la condamnation unifiée par les pays arabes et musulmans des actions militaires israéliennes, notamment les frappes ciblées contre les dirigeants du Hamas sur le territoire qatari. Ces nations soulignent la violation de la souveraineté et l&#39;aggravation des tensions régionales par les tactiques agressives d&#39;Israël. Elles mettent l&#39;accent sur la solidarité avec les Palestiniens et le soutien au Hamas en tant qu&#39;entité de résistance légitime, se rassemblant dans des forums diplomatiques pour contester les opérations israéliennes et appeler à une intervention internationale. Les perspectives soulignent les divisions géopolitiques régionales, mettant en évidence l&#39;opposition aux mesures militaires unilatérales d&#39;Israël et les appels à une responsabilité internationale plus large.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/khm.svg" alt="Cambodge" title="Cambodge" class="flag-icon">
+                            <a href="https://cambodianess.com/world" target="_blank" class="article-link">Leaders arabes et musulmans se réuniront au Qatar pour dénoncer l&#39;attaque israélienne</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lbn.svg" alt="Liban" title="Liban" class="flag-icon">
+                            <a href="https://www.lorientlejour.com/rubrique/7-moyen-orient-et-monde" target="_blank" class="article-link">Les leaders arabes et musulmans se rencontrent au Qatar pour condamner l&#39;attaque israélienne</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bhr.svg" alt="Bahreïn" title="Bahreïn" class="flag-icon">
+                            <a href="https://akhbar-alkhaleej.com/news/section/WORL" target="_blank" class="article-link">L&#39;armée libanaise reçoit une nouvelle cargaison d&#39;armes provenant des camps palestiniens</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gnb.svg" alt="Guinée-Bissau" title="Guinée-Bissau" class="flag-icon">
+                            <a href="https://una-oic.org/News/all/" target="_blank" class="article-link">Une solidarité mondiale sans précédent avec le Qatar reflète sa position régionale et internationale en réponse à l&#39;agression israélienne</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aut.svg" alt="Autriche" title="Autriche" class="flag-icon">
+                            <a href="https://www.diepresse.com/ausland" target="_blank" class="article-link">L&#39;attaque d&#39;Israël contre le Qatar : qui accorde désormais l&#39;asile à Hamas ?</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ca-qc.svg" alt="CA-QC" title="CA-QC" class="flag-icon">
+                            <a href="https://www.journaldequebec.com/actualite/monde" target="_blank" class="article-link">Leaders arabes et musulmans se réuniront à Doha pour condamner la frappe israélienne contre des membres du Hamas au Qatar</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5728f; padding: 8px 16px; border-radius: 4px;">Puissances occidentales et internationales prônant une approche diplomatique équilibrée</h3>
+        <p class="cluster-description">Ce groupe inclut les démocraties occidentales et les organisations internationales favorisant les efforts diplomatiques multilatéraux pour résoudre le conflit israélo-palestinien tout en adoptant des positions prudentes concernant la reconnaissance de l&#39;État palestinien et du Hamas. Bien qu&#39;ils soutiennent une solution à deux États et condamnent le Hamas, ils mettent souvent l&#39;accent sur le calendrier et les conditions de reconnaissance, prônant le dialogue et la négociation plutôt que des actions unilatérales ou une escalade militaire. Ces pays appellent à des considérations humanitaires et à des sanctions contre la violence, et certains encouragent des sanctions contre des responsables israéliens en raison des impacts civils. Leur position reflète une approche pragmatique équilibrant le soutien à la sécurité d&#39;Israël avec la défense des droits palestiniens et la résolution pacifique du conflit.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pak.svg" alt="Pakistan" title="Pakistan" class="flag-icon">
+                            <a href="https://www.dawn.com/world" target="_blank" class="article-link">Les législateurs de l&#39;UE appellent à des sanctions contre les ministres israéliens</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bel.svg" alt="Belgique" title="Belgique" class="flag-icon">
+                            <a href="https://www.lavenir.net/actu/monde/" target="_blank" class="article-link">Conflit israélo-palestinien : l&#39;Assemblée générale de l&#39;ONU soutient un futur État palestinien, la Belgique a voté en faveur</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/guy.svg" alt="Guyana" title="Guyana" class="flag-icon">
+                            <a href="https://www.stabroeknews.com/news/world/" target="_blank" class="article-link">L&#39;ONU approuve massivement une déclaration sur la solution à deux États qui condamne le Hamas</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/guy.svg" alt="Guyana" title="Guyana" class="flag-icon">
+                            <a href="https://www.stabroeknews.com/news/world/" target="_blank" class="article-link">L&#39;Allemagne dit qu&#39;elle soutiendra la résolution de l&#39;ONU pour une solution à deux États au conflit israélo-palestinien</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irq.svg" alt="Irak" title="Irak" class="flag-icon">
+                            <a href="https://www.shafaq.com/ar/%D8%B9%D8%B1%D8%A8%D9%8A-%D9%88%D8%AF%D9%88%D9%84%D9%8A" target="_blank" class="article-link">L&#39;ONU vote en faveur de la solution à deux États à la majorité</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vat.svg" alt="Saint-Siège" title="Saint-Siège" class="flag-icon">
+                            <a href="https://www.vaticannews.va/it/mondo.html" target="_blank" class="article-link">L&#39;ONU approuve la solution à deux États mais exclut le Hamas ; Israël qualifie cette décision de honteuse</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vat.svg" alt="Saint-Siège" title="Saint-Siège" class="flag-icon">
+                            <a href="https://www.osservatoreromano.va/it/sections/internazionale.html" target="_blank" class="article-link">L&#39;Assemblée générale de l&#39;ONU vote en faveur de la solution à deux États pour Israël et la Palestine</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Rapports neutres ou contextuels sur le conflit et la violence en cours</h3>
+        <p class="cluster-description">Ces articles fournissent principalement des comptes factuels ou d&#39;intérêt humain sur la violence et les tensions en cours, sans exprimer de positions politiques ouvertes. Ils décrivent des incidents tels que des raids domiciliaires, des fusillades, des occupations militaires ou les réactions des populations locales et des personnes affectées par le conflit. Ce cluster offre une perspective au niveau du terrain révélant les conséquences humaines et sociétales du conflit plutôt qu&#39;une analyse géopolitique ou des positions diplomatiques.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kor.svg" alt="Corée du Sud" title="Corée du Sud" class="flag-icon">
+                            <a href="https://www.koreaherald.com/World" target="_blank" class="article-link">Le réalisateur palestinien oscarisé Basel Adra dit que sa maison en Cisjordanie a été perquisitionnée par des soldats israéliens</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mex.svg" alt="Mexique" title="Mexique" class="flag-icon">
+                            <a href="https://www.jornada.com.mx/categoria/mundo" target="_blank" class="article-link">Netanyahu menace de &#34;se débarrasser&#34; des dirigeants du Hamas au Qatar</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mlt.svg" alt="Malte" title="Malte" class="flag-icon">
+                            <a href="https://www.maltatoday.com.mt/news/world/" target="_blank" class="article-link">Six morts, d&#39;autres blessés dans une fusillade à Jérusalem</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pry.svg" alt="Paraguay" title="Paraguay" class="flag-icon">
+                            <a href="https://www.ultimahora.com/noticias/mundo/" target="_blank" class="article-link">L&#39;armée israélienne occupe la maison du réalisateur palestinien oscarisé</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/can.svg" alt="Canada" title="Canada" class="flag-icon">
+                            <a href="https://www.thestar.com/news/world.html" target="_blank" class="article-link">Des factions palestiniennes remettent des cargaisons d&#39;armes dans le plus grand camp de réfugiés du Liban</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/chl.svg" alt="Chili" title="Chili" class="flag-icon">
+                            <a href="https://www.latercera.com/categoria/mundo/" target="_blank" class="article-link">Le réalisateur palestinien oscarisé dit que des soldats israéliens ont perquisitionné sa maison en Cisjordanie</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Soutien \u00e0 la solution \u00e0 deux \u00c9tats avec exclusion du Hamas : Appel \u00e0 une r\u00e9solution diplomatique",
+                color: "#72e5ac",
+                data: [ {"id": "AD"},  {"id": "AE"},  {"id": "AL"},  {"id": "BY"},  {"id": "CH"},  {"id": "DZ"},  {"id": "EE"},  {"id": "HK"},  {"id": "HU"},  {"id": "ID"},  {"id": "JP"},  {"id": "MN"},  {"id": "MR"},  {"id": "SA"},  {"id": "TJ"},  {"id": "UZ"},  {"id": "ZM"} ]
+            },
+        
+            {
+                name: "Position ferme d\u0027Isra\u00ebl en mati\u00e8re de s\u00e9curit\u00e9 et actions militaires contre le Hamas",
+                color: "#72a2e5",
+                data: [ {"id": "CU"},  {"id": "CZ"},  {"id": "IR"},  {"id": "MO"},  {"id": "MV"},  {"id": "PR"},  {"id": "PW"},  {"id": "RO"},  {"id": "RS"},  {"id": "SE"},  {"id": "US"} ]
+            },
+        
+            {
+                name: "Pays arabes et musulmans condamnant les actions militaires isra\u00e9liennes",
+                color: "#bf72e5",
+                data: [ {"id": ""},  {"id": "AT"},  {"id": "BH"},  {"id": "GW"},  {"id": "KH"},  {"id": "LB"} ]
+            },
+        
+            {
+                name: "Puissances occidentales et internationales pr\u00f4nant une approche diplomatique \u00e9quilibr\u00e9e",
+                color: "#e5728f",
+                data: [ {"id": "GY"},  {"id": "IQ"},  {"id": "PK"},  {"id": "VA"} ]
+            },
+        
+            {
+                name: "Rapports neutres ou contextuels sur le conflit et la violence en cours",
+                color: "#e5d272",
+                data: [ {"id": "CA"},  {"id": "CL"},  {"id": "KR"},  {"id": "MX"} ]
+            }
+        
+        
+            ,
+            {
+                name: "Plusieurs points de vue : \n- Soutien \u00e0 la solution \u00e0 deux \u00c9tats avec exclusion du Hamas : Appel \u00e0 une r\u00e9solution diplomatique\n- Puissances occidentales et internationales pr\u00f4nant une approche diplomatique \u00e9quilibr\u00e9e",
+                color: "#AAAAAA",
+                data: [{"id": "BE"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Soutien \u00e0 la solution \u00e0 deux \u00c9tats avec exclusion du Hamas : Appel \u00e0 une r\u00e9solution diplomatique\n- Position ferme d\u0027Isra\u00ebl en mati\u00e8re de s\u00e9curit\u00e9 et actions militaires contre le Hamas",
+                color: "#AAAAAA",
+                data: [{"id": "OM"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Soutien \u00e0 la solution \u00e0 deux \u00c9tats avec exclusion du Hamas : Appel \u00e0 une r\u00e9solution diplomatique\n- Position ferme d\u0027Isra\u00ebl en mati\u00e8re de s\u00e9curit\u00e9 et actions militaires contre le Hamas",
+                color: "#AAAAAA",
+                data: [{"id": "PS"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Soutien \u00e0 la solution \u00e0 deux \u00c9tats avec exclusion du Hamas : Appel \u00e0 une r\u00e9solution diplomatique\n- Rapports neutres ou contextuels sur le conflit et la violence en cours",
+                color: "#AAAAAA",
+                data: [{"id": "PY"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Position ferme d\u0027Isra\u00ebl en mati\u00e8re de s\u00e9curit\u00e9 et actions militaires contre le Hamas\n- Rapports neutres ou contextuels sur le conflit et la violence en cours",
+                color: "#AAAAAA",
+                data: [{"id": "MT"}]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Masquer les sources ▲' : 'Montrer les sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li class="active-m">
+               <a href="/">Accueil</a>
+            </li>
+            <li>
+              <a href="/fr/about.html">A Propos</a>
+            </li>
+            <li>
+              <a href="/fr/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
