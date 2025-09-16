@@ -1,0 +1,720 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Perspectives Diverses et Alignements Stratégiques dans la Diplomatie Bilatérale Contemporaine</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/fr', '/en');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>                 
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Perspectives Diverses et Alignements Stratégiques dans la Diplomatie Bilatérale Contemporaine</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-09-16</span> • <span>80 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-09-16/2025-09-16-3.webp" alt="Perspectives Diverses et Alignements Stratégiques dans la Diplomatie Bilatérale Contemporaine" class="main-image">
+                <p style="margin:0">Les articles examinés illustrent collectivement la nature multifacette de la diplomatie bilatérale moderne, englobant la coopération militaire, les partenariats économiques, les visites politiques et les réponses aux conflits régionaux. Les dynamiques clés incluent le renforcement des liens de défense et de stratégie entre des alliés traditionnels tels que les États-Unis et les pays de l&#39;OTAN, des accords en plein essor visant à équilibrer l&#39;influence des superpuissances, notamment dans les régions Asie-Pacifique et Moyen-Orient, ainsi que des tensions diplomatiques découlant de questions géopolitiques, historiques ou liées aux conflits. Les puissances émergentes et les nations plus petites poursuivent activement une coopération indépendante ou régionale, repoussant souvent toute ingérence extérieure. Dans l&#39;ensemble, ces interactions diplomatiques révèlent des efforts continus pour gérer la sécurité, le développement économique et l&#39;influence politique dans un contexte de changements dans les structures de pouvoir mondiales.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div class="key-points">
+        <h2>Les pays qui en parlent</h2>
+    </div>
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Les alliés occidentaux renforcent leurs liens militaires et stratégiques</h3>
+        <p class="cluster-description">Ce groupe comprend des articles provenant de pays occidentaux et de leurs partenaires alliés mettant en avant la coopération en matière de défense, les ventes d&#39;armes et les visites stratégiques pour renforcer les partenariats de sécurité. Les États-Unis jouent un rôle central en approuvant les ventes d&#39;armes, en signant des accords de défense conjoints, notamment avec des voisins du Pacifique comme l&#39;Australie et la Papouasie-Nouvelle-Guinée, et en maintenant des liens étroits avec des alliés européens et du Moyen-Orient. Les visites et les engagements diplomatiques soulignent l&#39;engagement envers la défense collective dans le cadre de structures telles que l&#39;OTAN, ainsi que la gestion des menaces et crises régionales émergentes. La position est proactive, visant à renforcer les capacités militaires et à consolider les alliances face aux instabilités mondiales et régionales.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/blr.svg" alt="Biélorussie" title="Biélorussie" class="flag-icon">
+                            <a href="https://www.belta.by/" target="_blank" class="article-link">Les États-Unis ont approuvé la vente de bombes aériennes à la Belgique et à la Norvège, selon le Pentagone</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/idn.svg" alt="Indonésie" title="Indonésie" class="flag-icon">
+                            <a href="https://www.kompas.com/global" target="_blank" class="article-link">Australie et Papouasie-Nouvelle-Guinée vont signer un accord de défense, Pacte de défense mutuelle</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/idn.svg" alt="Indonésie" title="Indonésie" class="flag-icon">
+                            <a href="https://www.thejakartapost.com/world" target="_blank" class="article-link">Australie et Papouasie-Nouvelle-Guinée vont signer un accord de défense &#34;historique&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ca-qc.svg" alt="CA-QC" title="CA-QC" class="flag-icon">
+                            <a href="https://www.journaldequebec.com/actualite/monde" target="_blank" class="article-link">Australie et Papouasie-Nouvelle-Guinée signent un accord de défense sans précédent pour contrer l&#39;influence chinoise</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mhl.svg" alt="Îles Marshall" title="Îles Marshall" class="flag-icon">
+                            <a href="https://www.rnz.co.nz/international/pacific-news?tag=marshall-islands" target="_blank" class="article-link">Australie et Papouasie-Nouvelle-Guinée vont &#34;intégrer totalement&#34; l&#39;armée dans le traité de défense, déclare le ministre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cog.svg" alt="République du Congo" title="République du Congo" class="flag-icon">
+                            <a href="https://www.mediacongo.net/articles-actualite-27_monde.html" target="_blank" class="article-link">Le secrétaire d&#39;État américain Marco Rubio rend visite à Israël après les frappes israéliennes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lbn.svg" alt="Liban" title="Liban" class="flag-icon">
+                            <a href="https://www.annahar.com/International" target="_blank" class="article-link">Australie et Papouasie-Nouvelle-Guinée vont signer un accord de défense conjoint mercredi</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5e3; padding: 8px 16px; border-radius: 4px;">Focus sur la diplomatie technologique et économique entre les États-Unis et la Chine face à la rivalité</h3>
+        <p class="cluster-description">Ces articles mettent en lumière les négociations bilatérales cruciales entre les États-Unis et la Chine concernant la technologie, le commerce et la souveraineté numérique, en particulier autour de la question de la propriété de TikTok. Les deux parties poursuivent un accord-cadre destiné à stabiliser les aspects contentieux de leur relation, en équilibrant la coopération économique et les préoccupations de sécurité nationale. Les discussions incluent l&#39;engagement de dirigeants de haut niveau, témoignant d&#39;efforts diplomatiques pour gérer la rivalité sans l&#39;escalader ; cela reflète une collaboration prudente malgré la compétition sous-jacente. Ce point de vue montre que les deux puissances cherchent des solutions pratiques à des interdépendances complexes dans les secteurs technologiques tout en maintenant une vigilance stratégique.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/uzb.svg" alt="Ouzbékistan" title="Ouzbékistan" class="flag-icon">
+                            <a href="https://www.gazeta.uz/ru/world/" target="_blank" class="article-link">États-Unis et Chine parviennent à un accord-cadre sur la vente de TikTok</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/grl.svg" alt="GRL" title="GRL" class="flag-icon">
+                            <a href="https://sermitsiaq.ag/" target="_blank" class="article-link">Trump va parler avec Xi Jinping de Chine après l&#39;accord TikTok</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svn.svg" alt="Slovénie" title="Slovénie" class="flag-icon">
+                            <a href="https://www.dnevnik.si/svet" target="_blank" class="article-link">États-Unis et Chine parviennent à un accord-cadre sur le réseau TikTok</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/grc.svg" alt="Grèce" title="Grèce" class="flag-icon">
+                            <a href="https://www.tovima.gr/category/world/" target="_blank" class="article-link">Accord USA-Chine sur TikTok en attente du dernier appel Trump-Xi</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jpn.svg" alt="Japon" title="Japon" class="flag-icon">
+                            <a href="https://www.yomiuri.co.jp/world/" target="_blank" class="article-link">Trump doit tenir des entretiens avec Xi Jinping de Chine le 19 septembre, dans le but de formaliser un sommet en personne</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mac.svg" alt="MAC" title="MAC" class="flag-icon">
+                            <a href="https://www.macaubusiness.com/category/mna/international/" target="_blank" class="article-link">Les États-Unis déclarent qu&#39;un accord &#39;cadre&#39; avec la Chine sur la propriété de TikTok a été conclu</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/esp.svg" alt="Espagne" title="Espagne" class="flag-icon">
+                            <a href="https://elpais.com/internacional/" target="_blank" class="article-link">Trump annonce un accord pour maintenir TikTok en activité aux États-Unis et affirme que les discussions avec la Chine à Madrid se sont très bien déroulées</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/chn.svg" alt="Chine" title="Chine" class="flag-icon">
+                            <a href="https://www.chinadaily.com.cn/world" target="_blank" class="article-link">La Chine et les États-Unis concluent des discussions &#39;constructives&#39; à Madrid</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72b0e5; padding: 8px 16px; border-radius: 4px;">Coordination de la sécurité au Moyen-Orient et alliance stratégique États-Unis-Israël</h3>
+        <p class="cluster-description">Les articles de ce cluster portent sur la coopération diplomatique et militaire étroite entre les États-Unis et Israël, centrée sur le partage de renseignements, les frappes régionales et les réunions de haut niveau en réponse aux crises régionales avec le Hamas et le Qatar. Des responsables américains, dont le sénateur Rubio, affirment leur soutien indéfectible à Israël face à l&#39;escalade du conflit. La coordination politique précède les actions militaires, indiquant un partenariat stratégique étroit. La position est celle d&#39;une alliance solide et d&#39;un soutien mutuel visant à contrer les menaces et à maintenir l&#39;influence régionale en période de forte tension.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/alb.svg" alt="Albanie" title="Albanie" class="flag-icon">
+                            <a href="https://www.panorama.com.al/category/bota-rajoni/" target="_blank" class="article-link">Les médias américains : Netanyahu a informé Trump de l&#39;attaque contre les dirigeants du Hamas au Qatar quelques minutes avant les frappes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/zmb.svg" alt="Zambie" title="Zambie" class="flag-icon">
+                            <a href="https://zambianobserver.com/category/world/" target="_blank" class="article-link">Rubio et Netanyahu montrent leur alliance au Mur des Lamentations dans un contexte diplomatique tendu</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/usa.svg" alt="États-Unis" title="États-Unis" class="flag-icon">
+                            <a href="https://abcnews.go.com/International" target="_blank" class="article-link">Ce que la rencontre de Rubio avec Netanyahu signifie pour la crise au Moyen-Orient</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgr.svg" alt="Bulgarie" title="Bulgarie" class="flag-icon">
+                            <a href="https://www.24chasa.bg/mezhdunarodni" target="_blank" class="article-link">Netanyahu a informé Trump avant les frappes sur le Qatar</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pri.svg" alt="PRI" title="PRI" class="flag-icon">
+                            <a href="https://www.primerahora.com/noticias/mundo/" target="_blank" class="article-link">Israël exhorte les législateurs américains à adopter des lois contre les boycotts économiques</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kos.svg" alt="KOS" title="KOS" class="flag-icon">
+                            <a href="https://www.koha.net/bote" target="_blank" class="article-link">Rubio rencontre Netanyahu pour discuter des conséquences de l&#39;attaque israélienne sur le Qatar</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kos.svg" alt="KOS" title="KOS" class="flag-icon">
+                            <a href="https://www.rtklive.com/sq/news-category.php?CatID=10" target="_blank" class="article-link">Rubio rencontre Netanyahu après l&#39;attaque israélienne au Qatar</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/omn.svg" alt="Oman" title="Oman" class="flag-icon">
+                            <a href="https://www.omanobserver.om/world" target="_blank" class="article-link">Rubio promet un soutien &#39;inébranlable&#39; à Israël lors de sa visite</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #7279e5; padding: 8px 16px; border-radius: 4px;">Engagement diplomatique entre le Royaume-Uni et les États-Unis et implications politiques des visites de Trump</h3>
+        <p class="cluster-description">Ce groupe se concentre sur les visites d&#39;État historiquement significatives de l&#39;ancien président américain Donald Trump au Royaume-Uni, qui servent de symboles des relations anglo-américaines durables. Ces visites interviennent dans un contexte de tensions politiques internes au Royaume-Uni et mettent à l&#39;épreuve l&#39;unité des alliés sur des questions telles que la politique envers la Russie. Les invitations répétées et les honneurs cérémoniels soulignent la relation personnelle et les liens stratégiques au-delà de la politique, tout en révélant également des différences d&#39;approche au sein des États alliés de l&#39;OTAN. Le point de vue dépeint des relations diplomatiques imbriquées dans des développements politiques et médiatisées par des figures politiques de haut niveau.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ind.svg" alt="Inde" title="Inde" class="flag-icon">
+                            <a href="https://www.thehindu.com/news/international/" target="_blank" class="article-link">Trump doit arriver pour une visite d&#39;État au Royaume-Uni alors que le leadership de Starmer est mis à l&#39;épreuve</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aut.svg" alt="Autriche" title="Autriche" class="flag-icon">
+                            <a href="https://www.diepresse.com/ausland" target="_blank" class="article-link">Trump visite le Royaume-Uni pour une deuxième visite d&#39;État</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ca-qc.svg" alt="CA-QC" title="CA-QC" class="flag-icon">
+                            <a href="https://www.journaldequebec.com/actualite/monde" target="_blank" class="article-link">Trump invité par le roi Charles III pour une visite d&#39;État</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/chl.svg" alt="Chili" title="Chili" class="flag-icon">
+                            <a href="https://www.latercera.com/categoria/mundo/" target="_blank" class="article-link">La visite d&#39;État sans précédent de Trump pour la deuxième fois au Royaume-Uni</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kor.svg" alt="Corée du Sud" title="Corée du Sud" class="flag-icon">
+                            <a href="https://www.chosun.com/international/" target="_blank" class="article-link">La deuxième visite d&#39;État de Trump au Royaume-Uni : « Je suis fan du roi Charles »</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ukr.svg" alt="Ukraine" title="Ukraine" class="flag-icon">
+                            <a href="https://www.kyivpost.com/category/world" target="_blank" class="article-link">La diplomatie &#39;Vous d&#39;abord&#39; : la visite de Trump au Royaume-Uni met à l&#39;épreuve l&#39;unité transatlantique sur la Russie</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #a372e5; padding: 8px 16px; border-radius: 4px;">L&#39;affirmation de soi de la Chine et sa riposte face à l&#39;ingérence extérieure en Amérique latine</h3>
+        <p class="cluster-description">La position de la Chine, telle que reflétée dans ces articles, met l&#39;accent sur la protection de ses intérêts d&#39;investissement en Amérique latine contre toute ingérence extérieure perçue, principalement de la part des pays occidentaux. La communication diplomatique chinoise appelle à des conditions équitables pour les investissements chinois et suggère une sensibilité à la compétition géopolitique dans la région. Ce point de vue illustre l&#39;empreinte croissante de la Chine sur la scène mondiale et sa défense active de son influence économique et politique dans des espaces traditionnellement dominés par l&#39;Occident, tout en signalant les tensions inhérentes à cette expansion.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pan.svg" alt="Panama" title="Panama" class="flag-icon">
+                            <a href="https://www.prensa.com/mundo/" target="_blank" class="article-link">Le représentant de la Chine pour l&#39;Amérique latine critique « l&#39;ingérence extérieure » et exige des conditions équitables pour les investissements au Panama</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/arg.svg" alt="Argentine" title="Argentine" class="flag-icon">
+                            <a href="https://www.clarin.com/mundo/" target="_blank" class="article-link">La Chine et les États-Unis parviennent à un accord sur la propriété de TikTok à Madrid</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #da72e5; padding: 8px 16px; border-radius: 4px;">Coopération régionale et gestion des conflits dans les contextes eurasiens et d&#39;Asie centrale</h3>
+        <p class="cluster-description">Les pays d&#39;Asie centrale et d&#39;Europe de l&#39;Est se concentrent sur des rencontres bilatérales pragmatiques et des engagements diplomatiques visant la résolution des conflits, les questions migratoires et la coopération transfrontalière. La tentative de l&#39;Allemagne de négocier avec des responsables talibans, les rencontres diplomatiques du Tadjikistan avec le Qatar et l&#39;Iran, ainsi que le dialogue entre le Kosovo et la Serbie illustrent un engagement à traiter des questions régionales sensibles par la négociation et le dialogue diplomatique plutôt que par l&#39;escalade. Ces pays privilégient la stabilité, la sécurité et le développement économique face à des défis locaux et régionaux complexes.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/alb.svg" alt="Albanie" title="Albanie" class="flag-icon">
+                            <a href="http://www.gsh.al/category/bota/" target="_blank" class="article-link">L&#39;Allemagne appelle à la coopération, non à l&#39;escalade, alors que les institutions de santé serbes ferment au Kosovo</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irn.svg" alt="Iran" title="Iran" class="flag-icon">
+                            <a href="https://ifpnews.com/category/news/world/" target="_blank" class="article-link">L&#39;Allemagne cherche un accord majeur avec les Taliban : Bild</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kgz.svg" alt="Kirghizistan" title="Kirghizistan" class="flag-icon">
+                            <a href="http://www.kabar.kg/" target="_blank" class="article-link">Nurlanbek Turgunbek uulu rencontre Rustam Emomali ; discussions sur les questions bilatérales</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tjk.svg" alt="Tadjikistan" title="Tadjikistan" class="flag-icon">
+                            <a href="https://avesta.tj/category/world/" target="_blank" class="article-link">Emomali Rahmon a discuté du développement de la coopération et de la situation régionale avec l&#39;émir du Qatar</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tjk.svg" alt="Tadjikistan" title="Tadjikistan" class="flag-icon">
+                            <a href="https://avesta.tj/category/world/" target="_blank" class="article-link">Emomali Rahmon a rencontré le président iranien Masoud Pezeshkian à Doha</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e572b8; padding: 8px 16px; border-radius: 4px;">Tensions et différends reflétant des frictions historiques et politiques</h3>
+        <p class="cluster-description">Ce cluster rassemble des articles mettant en lumière des tensions diplomatiques en cours, enracinées dans des différends historiques, des controverses politiques ou des intérêts nationaux divergents. Les enjeux vont de l&#39;annulation par l&#39;Espagne de contrats d&#39;armement avec Israël liés aux tensions au Moyen-Orient, aux divisions persistantes entre le Japon et la Corée du Sud concernant la esclavage sexuel pendant la guerre, aux critiques adressées à la France par le Niger, ainsi qu&#39;aux disputes publiques entre le Venezuela et Trinité-et-Tobago. Les récits mettent en avant des griefs non résolus et des frictions diplomatiques, compliquant souvent la coopération plus large et l&#39;harmonie régionale. Ces perspectives soulignent comment la mémoire historique et le conflit politique restent des défis diplomatiques importants.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irq.svg" alt="Irak" title="Irak" class="flag-icon">
+                            <a href="https://www.shafaq.com/ar/%D8%B9%D8%B1%D8%A8%D9%8A-%D9%88%D8%AF%D9%88%D9%84%D9%8A" target="_blank" class="article-link">L&#39;Espagne annule un contrat d&#39;armement massif avec Israël, le second ce mois-ci</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jam.svg" alt="Jamaïque" title="Jamaïque" class="flag-icon">
+                            <a href="http://www.jamaicaobserver.com/news/" target="_blank" class="article-link">L&#39;escalade de la guerre de mots entre le Venezuela et Trinité-et-Tobago</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nld.svg" alt="Pays-Bas" title="Pays-Bas" class="flag-icon">
+                            <a href="https://nos.nl/" target="_blank" class="article-link">L&#39;Union cycliste internationale et le ministre israélien critiquent le Premier ministre espagnol pour son soutien aux manifestants</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/can.svg" alt="Canada" title="Canada" class="flag-icon">
+                            <a href="https://www.thestar.com/news/world.html" target="_blank" class="article-link">Le Japon et la Corée du Sud montrent une fracture persistante sur la question de l&#39;esclavage sexuel dans des lettres à l&#39;ONU</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mli.svg" alt="Mali" title="Mali" class="flag-icon">
+                            <a href="https://bamada.net/category/international" target="_blank" class="article-link">Le Niger se moque de Macron et des troubles politiques en France</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/twn.svg" alt="TWN" title="TWN" class="flag-icon">
+                            <a href="https://www.taipeitimes.com/News/world" target="_blank" class="article-link">La fracture sur l&#39;esclavage sexuel entre Tokyo et Séoul perdure</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bra.svg" alt="Brésil" title="Brésil" class="flag-icon">
+                            <a href="https://www1.folha.uol.com.br/mundo/" target="_blank" class="article-link">L&#39;Espagne annule l&#39;achat de lance-roquettes en provenance d&#39;Israël en pleine crise diplomatique</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e57281; padding: 8px 16px; border-radius: 4px;">Relations diplomatiques émergentes et engagements des nations plus petites ou en développement</h3>
+        <p class="cluster-description">Ce point de vue inclut des articles couvrant des activités diplomatiques nouvelles ou routinières impliquant des pays plus petits ou en développement, tels que l&#39;établissement de nouvelles relations diplomatiques (Îles Salomon et Saint-Marin), visites de condoléances (Libéria vers États-Unis), accords de coopération éducative (Comores avec les États-Unis), nominations diplomatiques (Bahreïn au Turkménistan), et engagements de coopération axés sur le développement (Maroc et République centrafricaine). Ces interactions reflètent la normalisation des relations entre États, le renforcement des capacités et la diplomatie orientée vers le développement. La position est constructive et coopérative, visant à renforcer les liens bilatéraux par la présence diplomatique, l&#39;échange culturel ou le soutien économique.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tkm.svg" alt="Turkménistan" title="Turkménistan" class="flag-icon">
+                            <a href="http://www.turkmenistan.gov.tm/?cat=12" target="_blank" class="article-link">Le nouvel ambassadeur extraordinaire et plénipotentiaire de Bahreïn commence à travailler au Turkménistan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lbr.svg" alt="Libéria" title="Libéria" class="flag-icon">
+                            <a href="https://frontpageafricaonline.com/category/news/" target="_blank" class="article-link">Le président Boakai console la famille du défunt ministre Sylvester Grigsby lors de sa visite aux États-Unis</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/com.svg" alt="Comores" title="Comores" class="flag-icon">
+                            <a href="http://alwatwan.net/index.php?home" target="_blank" class="article-link">L&#39;Université des Comores signe un protocole d&#39;accord avec l&#39;ambassadeur des États-Unis</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/com.svg" alt="Comores" title="Comores" class="flag-icon">
+                            <a href="http://alwatwan.net/index.php?home" target="_blank" class="article-link">Relations France-Comores : Étienne Chapon, le nouveau ambassadeur français, prend ses fonctions</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/slb.svg" alt="Îles Salomon" title="Îles Salomon" class="flag-icon">
+                            <a href="https://www.solomontimes.com/" target="_blank" class="article-link">Îles Salomon et Saint-Marin établissent des relations diplomatiques</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e59b72; padding: 8px 16px; border-radius: 4px;">Réponse des États-Unis aux préoccupations relatives aux droits humains et à la gouvernance politique à l&#39;étranger</h3>
+        <p class="cluster-description">Ce groupe inclut des rapports sur les actions législatives et diplomatiques des États-Unis visant les questions de droits humains et de gouvernance dans d&#39;autres pays, illustrés par la proposition de sanctions bipartites contre des responsables pakistanais et les expressions publiques de préoccupation concernant des incidents affectant des travailleurs sud-coréens. Ces initiatives indiquent la volonté des États-Unis de lier leurs relations diplomatiques à la responsabilité en matière de gouvernance et de droits, en projetant leur influence par des moyens législatifs et des communications diplomatiques. L&#39;approche est ferme mais calibrée dans le cadre d&#39;engagements plus larges.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pak.svg" alt="Pakistan" title="Pakistan" class="flag-icon">
+                            <a href="https://www.dawn.com/world" target="_blank" class="article-link">Projet de loi bipartite américain visant des sanctions contre des responsables pakistanais pour violations des droits</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/brn.svg" alt="Brunei" title="Brunei" class="flag-icon">
+                            <a href="https://www.rtbnews.rtb.gov.bn/Lists/News%202018/Category_International.aspx" target="_blank" class="article-link">Le diplomate américain exprime ses regrets suite à une descente de police sur des travailleurs coréens, selon la Corée du Sud</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Efforts diplomatiques pour renforcer les partenariats économiques et de développement bilatéraux</h3>
+        <p class="cluster-description">Plusieurs articles se concentrent sur la diplomatie économique et développementale, comme la recherche du Bangladesh d&#39;accords prolongés sur le partage de l&#39;eau avec l&#39;Inde, l&#39;Azerbaïdjan et les États-Unis discutant de projets d&#39;infrastructures, et les Émirats renforçant leur connectivité aérienne avec Madagascar. L&#39;engagement du secteur privé et les plans de développement illustrent davantage la coopération économique comme un pilier central des relations bilatérales. Ces perspectives reflètent une diplomatie pragmatique motivée par des bénéfices économiques mutuels et des objectifs de développement durable, favorisant la stabilité et la croissance.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vnm.svg" alt="Viêt Nam" title="Viêt Nam" class="flag-icon">
+                            <a href="https://vietnamnews.vn/world" target="_blank" class="article-link">Bangladesh cherche un traité à plus long terme sur le Gange avec l&#39;Inde</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mar.svg" alt="Maroc" title="Maroc" class="flag-icon">
+                            <a href="https://leconomiste.com/flash-infos" target="_blank" class="article-link">République centrafricaine : le secteur privé marocain s&#39;engage à soutenir la mise en œuvre du PND</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mdg.svg" alt="Madagascar" title="Madagascar" class="flag-icon">
+                            <a href="https://www.lexpress.mg/" target="_blank" class="article-link">Émirats transportent cinquante-trois mille passagers en un an</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/arm.svg" alt="Arménie" title="Arménie" class="flag-icon">
+                            <a href="https://www.panarmenian.net/arm/world/" target="_blank" class="article-link">Azerbaïdjan et les États-Unis discutent de projets d&#39;investissement et du &#34;corridor de Zangezur&#34;</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Les alli\u00e9s occidentaux renforcent leurs liens militaires et strat\u00e9giques",
+                color: "#72e5ac",
+                data: [ {"id": "BY"},  {"id": "CG"},  {"id": "ID"},  {"id": "LB"},  {"id": "MH"} ]
+            },
+        
+            {
+                name: "Focus sur la diplomatie technologique et \u00e9conomique entre les \u00c9tats-Unis et la Chine face \u00e0 la rivalit\u00e9",
+                color: "#72e5e3",
+                data: [ {"id": "CN"},  {"id": "ES"},  {"id": "GL"},  {"id": "GR"},  {"id": "JP"},  {"id": "MO"},  {"id": "SI"},  {"id": "UZ"} ]
+            },
+        
+            {
+                name: "Coordination de la s\u00e9curit\u00e9 au Moyen-Orient et alliance strat\u00e9gique \u00c9tats-Unis-Isra\u00ebl",
+                color: "#72b0e5",
+                data: [ {"id": "BG"},  {"id": "OM"},  {"id": "PR"},  {"id": "US"},  {"id": "XK"},  {"id": "ZM"} ]
+            },
+        
+            {
+                name: "Engagement diplomatique entre le Royaume-Uni et les \u00c9tats-Unis et implications politiques des visites de Trump",
+                color: "#7279e5",
+                data: [ {"id": "AT"},  {"id": "CL"},  {"id": "IN"},  {"id": "KR"},  {"id": "UA"} ]
+            },
+        
+            {
+                name: "L\u0027affirmation de soi de la Chine et sa riposte face \u00e0 l\u0027ing\u00e9rence ext\u00e9rieure en Am\u00e9rique latine",
+                color: "#a372e5",
+                data: [ {"id": "AR"},  {"id": "PA"} ]
+            },
+        
+            {
+                name: "Coop\u00e9ration r\u00e9gionale et gestion des conflits dans les contextes eurasiens et d\u0027Asie centrale",
+                color: "#da72e5",
+                data: [ {"id": "IR"},  {"id": "KG"},  {"id": "TJ"} ]
+            },
+        
+            {
+                name: "Tensions et diff\u00e9rends refl\u00e9tant des frictions historiques et politiques",
+                color: "#e572b8",
+                data: [ {"id": "BR"},  {"id": "CA"},  {"id": "IQ"},  {"id": "JM"},  {"id": "ML"},  {"id": "NL"},  {"id": "TW"} ]
+            },
+        
+            {
+                name: "Relations diplomatiques \u00e9mergentes et engagements des nations plus petites ou en d\u00e9veloppement",
+                color: "#e57281",
+                data: [ {"id": "KM"},  {"id": "LR"},  {"id": "SB"},  {"id": "TM"} ]
+            },
+        
+            {
+                name: "R\u00e9ponse des \u00c9tats-Unis aux pr\u00e9occupations relatives aux droits humains et \u00e0 la gouvernance politique \u00e0 l\u0027\u00e9tranger",
+                color: "#e59b72",
+                data: [ {"id": "BN"},  {"id": "PK"} ]
+            },
+        
+            {
+                name: "Efforts diplomatiques pour renforcer les partenariats \u00e9conomiques et de d\u00e9veloppement bilat\u00e9raux",
+                color: "#e5d272",
+                data: [ {"id": "AM"},  {"id": "MA"},  {"id": "MG"},  {"id": "VN"} ]
+            }
+        
+        
+            ,
+            {
+                name: "Plusieurs points de vue : \n- Les alli\u00e9s occidentaux renforcent leurs liens militaires et strat\u00e9giques\n- Engagement diplomatique entre le Royaume-Uni et les \u00c9tats-Unis et implications politiques des visites de Trump",
+                color: "#AAAAAA",
+                data: [{"id": ""}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Coordination de la s\u00e9curit\u00e9 au Moyen-Orient et alliance strat\u00e9gique \u00c9tats-Unis-Isra\u00ebl\n- Coop\u00e9ration r\u00e9gionale et gestion des conflits dans les contextes eurasiens et d\u0027Asie centrale",
+                color: "#AAAAAA",
+                data: [{"id": "AL"}]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Masquer les sources ▲' : 'Montrer les sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li class="active-m">
+               <a href="/">Accueil</a>
+            </li>
+            <li>
+              <a href="/fr/about.html">A Propos</a>
+            </li>
+            <li>
+              <a href="/fr/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
