@@ -1,0 +1,669 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Regional Natural Disasters: Earthquakes and Storms Impact Southeast Asia and Beyond</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/fra.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="Français" title="Français" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/en', '/fr');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>              
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Regional Natural Disasters: Earthquakes and Storms Impact Southeast Asia and Beyond</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-10-01</span> • <span>87 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-10-01/2025-10-01-2.webp" alt="Regional Natural Disasters: Earthquakes and Storms Impact Southeast Asia and Beyond" class="main-image">
+                <p style="margin:0">Multiple powerful natural disasters including a devastating 6.9-magnitude earthquake in the Philippines and severe storms such as Typhoon Bualoi have recently affected Southeast Asia, causing significant loss of life, widespread destruction, and overwhelming emergency response systems. The Philippine earthquake alone resulted in death tolls ranging from 5 to nearly 70, with extensive damage to infrastructure, displacement of communities, and ongoing rescue operations. Typhoon Bualoi and other storms have brought flooding and fatalities impacting neighboring countries including Vietnam, Laos, and Taiwan, emphasizing the region’s vulnerability to successive natural calamities. Additionally, other regions such as Namibia, the Caribbean, and Spain reported significant environmental disasters, mainly wildfires and flooding, amplifying the global challenge of managing extreme weather and seismic events.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div class="key-points">
+        <h2>Countries covering this topic</h2>
+    </div>
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Focus on Philippine Earthquake Crisis and Rescue Efforts</h3>
+        <p class="cluster-description">This group of articles predominantly emanates from countries and sources focused heavily on the tragic human toll and infrastructural devastation caused by the 6.9-magnitude earthquake in the Philippines. They emphasize casualty figures, scope of damage, ongoing rescue and relief operations, and the declaration of a state of calamity, highlighting the urgency and scale of the disaster response. These sources typically provide frequent updates on fatalities, hospitals overwhelmed by injured persons, and coordinated efforts by local authorities to manage aftershocks and aid distribution. The viewpoint reflects concern for humanitarian impacts and underlines the significant challenge the Philippines faces in recovery and rebuilding.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nor.svg" alt="Norway" title="Norway" class="flag-icon">
+                            <a href="https://www.vg.no/nyheter/utenriks" target="_blank" class="article-link">At least 69 people died after earthquake in the Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/are.svg" alt="United Arab Emirates" title="United Arab Emirates" class="flag-icon">
+                            <a href="https://gulfnews.com/world" target="_blank" class="article-link">Philippines earthquake: Cebu declares state of calamity</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/are.svg" alt="United Arab Emirates" title="United Arab Emirates" class="flag-icon">
+                            <a href="https://gulfnews.com/world" target="_blank" class="article-link">Philippines earthquake: Death toll rises to 60</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/are.svg" alt="United Arab Emirates" title="United Arab Emirates" class="flag-icon">
+                            <a href="https://www.thenationalnews.com/international" target="_blank" class="article-link">Strong earthquake kills 60 people in central Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gbr.svg" alt="United Kingdom" title="United Kingdom" class="flag-icon">
+                            <a href="https://news.sky.com/world" target="_blank" class="article-link">At least 31 dead as earthquake strikes Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nga.svg" alt="Nigeria" title="Nigeria" class="flag-icon">
+                            <a href="https://guardian.ng/category/world/" target="_blank" class="article-link">Philippines quake death toll nears 60 as injured overwhelm hospitals</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/khm.svg" alt="Cambodia" title="Cambodia" class="flag-icon">
+                            <a href="https://cambodianess.com/world" target="_blank" class="article-link">Strong Quake In Central Philippines Kills 31 As Search Ongoing</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/grc.svg" alt="Greece" title="Greece" class="flag-icon">
+                            <a href="https://www.kathimerini.gr/world" target="_blank" class="article-link">Philippines: Powerful 6.9 Magnitude Earthquake Causes Deaths and Damage</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/grc.svg" alt="Greece" title="Greece" class="flag-icon">
+                            <a href="https://www.tovima.gr/category/world/" target="_blank" class="article-link">6.9 Magnitude Earthquake in the Philippines Causes Five Deaths</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fin.svg" alt="Finland" title="Finland" class="flag-icon">
+                            <a href="https://www.hs.fi/ulkomaat/" target="_blank" class="article-link">At least 31 dead in earthquake in the Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kaz.svg" alt="Kazakhstan" title="Kazakhstan" class="flag-icon">
+                            <a href="https://kazpravda.kz/r/v-mire/" target="_blank" class="article-link">Destructive Earthquake in the Philippines Claims Dozens of Lives</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mne.svg" alt="Montenegro" title="Montenegro" class="flag-icon">
+                            <a href="https://www.vijesti.me/svijet" target="_blank" class="article-link">Earthquake in the Philippines kills five</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mys.svg" alt="Malaysia" title="Malaysia" class="flag-icon">
+                            <a href="https://www.malaymail.com/news/world" target="_blank" class="article-link">At least 22 dead after major earthquake hits Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nzl.svg" alt="New Zealand" title="New Zealand" class="flag-icon">
+                            <a href="https://www.nzherald.co.nz/world/" target="_blank" class="article-link">Toll near 60 after 6.9 quake hits Philippines&#39; Cebu, injured overwhelm hospitals</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nzl.svg" alt="New Zealand" title="New Zealand" class="flag-icon">
+                            <a href="https://www.rnz.co.nz/news/world" target="_blank" class="article-link">At least 22 dead after powerful Philippines quake</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/usa.svg" alt="United States" title="United States" class="flag-icon">
+                            <a href="https://abcnews.go.com/International" target="_blank" class="article-link">Strong earthquake kills 31 people in central Philippine region hit by deadly storm just days ago</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dom.svg" alt="Dominican Republic" title="Dominican Republic" class="flag-icon">
+                            <a href="https://www.diariolibre.com/mundo" target="_blank" class="article-link">At least 26 dead after earthquake in central Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgd.svg" alt="Bangladesh" title="Bangladesh" class="flag-icon">
+                            <a href="https://www.thedailystar.net/world" target="_blank" class="article-link">Philippines quake death toll nears 60 as injured overwhelm hospitals</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgd.svg" alt="Bangladesh" title="Bangladesh" class="flag-icon">
+                            <a href="https://bdnews24.com/world" target="_blank" class="article-link">Magnitude 6.9 earthquake strikes Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/che.svg" alt="Switzerland" title="Switzerland" class="flag-icon">
+                            <a href="https://www.letemps.ch/monde" target="_blank" class="article-link">Rescue Efforts Underway Following Deadly Earthquake in the Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irq.svg" alt="Iraq" title="Iraq" class="flag-icon">
+                            <a href="https://www.shafaq.com/ar/%D8%B9%D8%B1%D8%A8%D9%8A-%D9%88%D8%AF%D9%88%D9%84%D9%8A" target="_blank" class="article-link">6.7 magnitude earthquake shakes the Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jam.svg" alt="Jamaica" title="Jamaica" class="flag-icon">
+                            <a href="http://www.jamaicaobserver.com/news/" target="_blank" class="article-link">Strong quake in central Philippines kills 26 as search ongoing</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pol.svg" alt="Poland" title="Poland" class="flag-icon">
+                            <a href="https://www.rp.pl/temat/swiat" target="_blank" class="article-link">Earthquake on the Philippines. Many Victims. State of Calamity Declared</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aus.svg" alt="Australia" title="Australia" class="flag-icon">
+                            <a href="https://www.abc.net.au/news/world" target="_blank" class="article-link">At least 69 dead after powerful Philippines quake</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/blr.svg" alt="Belarus" title="Belarus" class="flag-icon">
+                            <a href="https://www.belta.by/" target="_blank" class="article-link">Powerful earthquake of magnitude 6.7 strikes central Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ind.svg" alt="India" title="India" class="flag-icon">
+                            <a href="https://timesofindia.indiatimes.com/world" target="_blank" class="article-link">Philippines earthquake: Powerful quake kills 60, destroys homes and infrastructure in Cebu</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ind.svg" alt="India" title="India" class="flag-icon">
+                            <a href="https://www.thehindu.com/news/international/" target="_blank" class="article-link">At least 22 people killed after strong earthquake in central Philippines damages building</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/syr.svg" alt="Syria" title="Syria" class="flag-icon">
+                            <a href="https://sana.sy/en/?cat=3" target="_blank" class="article-link">6.9 magnitude earthquake jolts central Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svn.svg" alt="Slovenia" title="Slovenia" class="flag-icon">
+                            <a href="https://www.dnevnik.si/svet" target="_blank" class="article-link">Strong earthquake shakes the Philippines, at least five dead</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/can.svg" alt="Canada" title="Canada" class="flag-icon">
+                            <a href="https://www.thestar.com/news/world.html" target="_blank" class="article-link">Strong earthquake kills 20 people in a central Philippine region hit by deadly storm just days ago</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kgz.svg" alt="Kyrgyzstan" title="Kyrgyzstan" class="flag-icon">
+                            <a href="http://www.kabar.kg/" target="_blank" class="article-link">Death toll from earthquake in the Philippines reaches 26</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ca-qc.svg" alt="CA-QC" title="CA-QC" class="flag-icon">
+                            <a href="https://www.lesoleil.com/actualite/le-monde" target="_blank" class="article-link">A Violent Earthquake Kills 31 in a Central Region of the Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cri.svg" alt="Costa Rica" title="Costa Rica" class="flag-icon">
+                            <a href="https://www.nacion.com/el-mundo/" target="_blank" class="article-link">Earthquake in the Philippines Leaves at Least 20 Dead</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/imn.svg" alt="IMN" title="IMN" class="flag-icon">
+                            <a href="https://www.manxradio.com/news/" target="_blank" class="article-link">At least 31 dead as earthquake strikes Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jpn.svg" alt="Japan" title="Japan" class="flag-icon">
+                            <a href="https://www.asahi.com/ajw/" target="_blank" class="article-link">Strong earthquake kills 31 people in a central Philippine region hit by deadly storm just days ago</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mar.svg" alt="Morocco" title="Morocco" class="flag-icon">
+                            <a href="https://lematin.ma/monde" target="_blank" class="article-link">Magnitude 4.9 earthquake shakes southern Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/swe.svg" alt="Sweden" title="Sweden" class="flag-icon">
+                            <a href="https://www.svd.se/" target="_blank" class="article-link">Death toll rises after earthquake in the Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/idn.svg" alt="Indonesia" title="Indonesia" class="flag-icon">
+                            <a href="https://www.kompas.com/global" target="_blank" class="article-link">6.9 Magnitude Earthquake Strikes the Philippines, Buildings Collapse, 8 Dead</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/idn.svg" alt="Indonesia" title="Indonesia" class="flag-icon">
+                            <a href="https://www.kompas.com/global" target="_blank" class="article-link">Update on Philippines Earthquake: 26 Dead, 147 Injured, 22 Buildings Damaged</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sgp.svg" alt="Singapore" title="Singapore" class="flag-icon">
+                            <a href="https://www.straitstimes.com/global" target="_blank" class="article-link">Death toll from earthquake in Cebu in the Philippines rises to 69, official says</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/slv.svg" alt="El Salvador" title="El Salvador" class="flag-icon">
+                            <a href="https://diario.elmundo.sv/el-mundo" target="_blank" class="article-link">6.9 Magnitude Earthquake Strikes the Philippines Triggering Tsunami Alert</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/deu.svg" alt="Germany" title="Germany" class="flag-icon">
+                            <a href="https://www.sueddeutsche.de/news/politik/" target="_blank" class="article-link">Earthquake in Southeast Asia Kills at Least 60 in the Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pak.svg" alt="Pakistan" title="Pakistan" class="flag-icon">
+                            <a href="https://www.thenews.com.pk/latest/category/world" target="_blank" class="article-link">Death toll rises to 27 after powerful quake hits central Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/prt.svg" alt="Portugal" title="Portugal" class="flag-icon">
+                            <a href="https://expresso.pt/" target="_blank" class="article-link">Filipino earthquake causes at least 20 deaths and over 30 injuries</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/est.svg" alt="Estonia" title="Estonia" class="flag-icon">
+                            <a href="https://www.delfi.ee/kategooria/123/maailm" target="_blank" class="article-link">Powerful 6.9 magnitude earthquake hits central Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mng.svg" alt="Mongolia" title="Mongolia" class="flag-icon">
+                            <a href="https://montsame.mn/mn/more/17" target="_blank" class="article-link">Strong Earthquake Hits Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vnm.svg" alt="Vietnam" title="Vietnam" class="flag-icon">
+                            <a href="https://vietnamnews.vn/world" target="_blank" class="article-link">6.9-magnitude earthquake kills 26, damages heritage churches in Philippines’ Cebu</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Ireland" title="Ireland" class="flag-icon">
+                            <a href="https://www.irishtimes.com/news/world" target="_blank" class="article-link">At least 20 dead and dozens injured in Philippines earthquake</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Ireland" title="Ireland" class="flag-icon">
+                            <a href="https://www.independent.ie/world-news/" target="_blank" class="article-link">At least 20 people dead after powerful Philippines earthquake</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mdv.svg" alt="Maldives" title="Maldives" class="flag-icon">
+                            <a href="https://sun.mv/world_news" target="_blank" class="article-link">6.9 magnitude earthquake hits Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/arg.svg" alt="Argentina" title="Argentina" class="flag-icon">
+                            <a href="https://www.lanacion.com.ar/el-mundo" target="_blank" class="article-link">Powerful Earthquake Strikes the Philippines: At Least 30 Dead and 150 Injured</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/arg.svg" alt="Argentina" title="Argentina" class="flag-icon">
+                            <a href="https://www.clarin.com/mundo/" target="_blank" class="article-link">A 6.9 magnitude earthquake shakes central Philippines: at least 60 dead and damages to homes and roads</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/col.svg" alt="Colombia" title="Colombia" class="flag-icon">
+                            <a href="https://www.eltiempo.com/mundo" target="_blank" class="article-link">Powerful 6.9 magnitude earthquake strikes Philippines leaving at least 26 dead and 147 injured</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #bf72e5; padding: 8px 16px; border-radius: 4px;">Emphasis on Typhoon Bualoi and Regional Storm Impact</h3>
+        <p class="cluster-description">Articles from this cluster reflect concerns centered on the flooding, evacuations, and death tolls caused by Typhoon Bualoi and other storms in Southeast Asia, particularly in Thailand, Vietnam, the Philippines, and Taiwan. These sources highlight cross-border effects of severe weather, the large number of people affected, and proactive evacuation measures. They focus on the challenges posed by natural disasters other than earthquakes, stressing infrastructure damage, agriculture losses, and emergency preparedness. The narrative underscores the compounded vulnerability of affected populations and the importance of early warning and coordinated response in reducing casualties.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tha.svg" alt="Thailand" title="Thailand" class="flag-icon">
+                            <a href="https://www.nationthailand.com/news/world" target="_blank" class="article-link">Storm Bualoi leaves 17 provinces flooded, 269,351 affected, 7 dead</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mys.svg" alt="Malaysia" title="Malaysia" class="flag-icon">
+                            <a href="https://www.thestar.com.my/news/world" target="_blank" class="article-link">Typhoon Bualoi death toll rises, many missing in Vietnam</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/usa.svg" alt="United States" title="United States" class="flag-icon">
+                            <a href="https://abcnews.go.com/International" target="_blank" class="article-link">Heavy rains and flooding after Typhoon Bualoi raise death toll to 19 in Vietnam</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kor.svg" alt="South Korea" title="South Korea" class="flag-icon">
+                            <a href="https://www.koreaherald.com/World" target="_blank" class="article-link">2 killed in Cuba as Tropical Storm Imelda and Hurricane Humberto threaten Bahamas and Bermuda</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/phl.svg" alt="Philippines" title="Philippines" class="flag-icon">
+                            <a href="https://www.philstar.com/world" target="_blank" class="article-link">Vietnam to evacuate 250,000 from coast ahead of Typhoon Bualoi</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/phl.svg" alt="Philippines" title="Philippines" class="flag-icon">
+                            <a href="https://www.philstar.com/world" target="_blank" class="article-link">Typhoon Ragasa slams into south China after killing 14 in Taiwan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/guy.svg" alt="Guyana" title="Guyana" class="flag-icon">
+                            <a href="https://www.stabroeknews.com/news/world/" target="_blank" class="article-link">Vietnam evacuates thousands, shuts airports as Typhoon Bualoi nears</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cri.svg" alt="Costa Rica" title="Costa Rica" class="flag-icon">
+                            <a href="https://www.diarioextra.com/categoria/internacionales/" target="_blank" class="article-link">At least 3 dead and 400,000 evacuated due to storm in the Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/brn.svg" alt="Brunei" title="Brunei" class="flag-icon">
+                            <a href="https://www.rtbnews.rtb.gov.bn/Lists/News%202018/Category_International.aspx" target="_blank" class="article-link">Rains from Typhoon Bualoi flood homes in Hanoi, disrupt transport</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Global and Regional Response to Diverse Natural Disasters Beyond Southeast Asia</h3>
+        <p class="cluster-description">This viewpoint clusters articles covering natural disasters outside the Philippines and Southeast Asia, focusing on environmental crises including wildfires in Namibia and flood events in Spanish and African regions. These sources discuss military involvement in fire containment and public health risks from flooding, expressing concern about disaster preparedness, environmental protection, and humanitarian aid. They also highlight new initiatives for disaster management, such as shelter coordination in the Caribbean, as well as government responses to minimize damage and support affected communities. This perspective situates natural disasters within a broader global context highlighting environmental vulnerability and cross-national cooperative responses.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lbn.svg" alt="Lebanon" title="Lebanon" class="flag-icon">
+                            <a href="https://www.annahar.com/International" target="_blank" class="article-link">Nearly 100 Students Trapped Under School Rubble in Indonesia</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gha.svg" alt="Ghana" title="Ghana" class="flag-icon">
+                            <a href="https://ghanaiantimes.com.gh/category/tie-world/" target="_blank" class="article-link">Army sent to battle fire in Namibia tourist hotspot</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/civ.svg" alt="Côte d&#39;Ivoire" title="Côte d&#39;Ivoire" class="flag-icon">
+                            <a href="https://www.aip.ci/category/international/" target="_blank" class="article-link">Namibia Deploys 500 Soldiers to Contain Major Fire at Etosha National Park</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svn.svg" alt="Slovenia" title="Slovenia" class="flag-icon">
+                            <a href="https://www.delo.si/novice/svet" target="_blank" class="article-link">Red Alert: Severe Flooding in Ibiza Prompts Military Emergency Response</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sdn.svg" alt="Sudan" title="Sudan" class="flag-icon">
+                            <a href="https://www.dabangasudan.org/ar/all-news/category/news/politics" target="_blank" class="article-link">Nile Floods Invade Areas in Five States Amid Conflicting Opinions on the Impact of the Renaissance Dam</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ca-qc.svg" alt="CA-QC" title="CA-QC" class="flag-icon">
+                            <a href="https://www.journaldequebec.com/actualite/monde" target="_blank" class="article-link">Strengthening Hurricane Imelda Prompts US Coast Preparations</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cyp.svg" alt="Cyprus" title="Cyprus" class="flag-icon">
+                            <a href="https://cyprus-mail.com/category/world/" target="_blank" class="article-link">Powerful 6.9 magnitude earthquake in Philippines causes damage, power outages</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bel.svg" alt="Belgium" title="Belgium" class="flag-icon">
+                            <a href="https://www.lavenir.net/actu/monde/" target="_blank" class="article-link">Heavy Rainfall Floods Spanish Islands of Ibiza and Formentera</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kos.svg" alt="KOS" title="KOS" class="flag-icon">
+                            <a href="https://www.koha.net/bote" target="_blank" class="article-link">Ibiza Hit by Floods</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lux.svg" alt="Luxembourg" title="Luxembourg" class="flag-icon">
+                            <a href="https://www.wort.lu/fr/international" target="_blank" class="article-link">Heavy rains cause red alert flooding risk in Valencia, Spain</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dma.svg" alt="DMA" title="DMA" class="flag-icon">
+                            <a href="https://emonewsdm.com/category/world/" target="_blank" class="article-link">Caribbean Launches First-Ever Shelter Working Group to Boost Disaster Preparedness</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Focus on Philippine Earthquake Crisis and Rescue Efforts",
+                color: "#72e5ac",
+                data: [ {"id": "AE"},  {"id": "AR"},  {"id": "AU"},  {"id": "BD"},  {"id": "BY"},  {"id": "CA"},  {"id": "CH"},  {"id": "CO"},  {"id": "DE"},  {"id": "DO"},  {"id": "EE"},  {"id": "FI"},  {"id": "GB"},  {"id": "GR"},  {"id": "ID"},  {"id": "IE"},  {"id": "IM"},  {"id": "IN"},  {"id": "IQ"},  {"id": "JM"},  {"id": "JP"},  {"id": "KG"},  {"id": "KH"},  {"id": "KZ"},  {"id": "MA"},  {"id": "ME"},  {"id": "MN"},  {"id": "MV"},  {"id": "NG"},  {"id": "NO"},  {"id": "NZ"},  {"id": "PK"},  {"id": "PL"},  {"id": "PT"},  {"id": "SE"},  {"id": "SG"},  {"id": "SV"},  {"id": "SY"},  {"id": "VN"} ]
+            },
+        
+            {
+                name: "Emphasis on Typhoon Bualoi and Regional Storm Impact",
+                color: "#bf72e5",
+                data: [ {"id": "BN"},  {"id": "GY"},  {"id": "KR"},  {"id": "PH"},  {"id": "TH"} ]
+            },
+        
+            {
+                name: "Global and Regional Response to Diverse Natural Disasters Beyond Southeast Asia",
+                color: "#e5d272",
+                data: [ {"id": "BE"},  {"id": "CI"},  {"id": "CY"},  {"id": "DM"},  {"id": "GH"},  {"id": "LB"},  {"id": "LU"},  {"id": "SD"},  {"id": "XK"} ]
+            }
+        
+        
+            ,
+            {
+                name: "Different perspectives:\n- Focus on Philippine Earthquake Crisis and Rescue Efforts\n- Global and Regional Response to Diverse Natural Disasters Beyond Southeast Asia",
+                color: "#AAAAAA",
+                data: [{"id": ""}]
+            },
+            {
+                name: "Different perspectives:\n- Focus on Philippine Earthquake Crisis and Rescue Efforts\n- Emphasis on Typhoon Bualoi and Regional Storm Impact",
+                color: "#AAAAAA",
+                data: [{"id": "CR"}]
+            },
+            {
+                name: "Different perspectives:\n- Focus on Philippine Earthquake Crisis and Rescue Efforts\n- Emphasis on Typhoon Bualoi and Regional Storm Impact",
+                color: "#AAAAAA",
+                data: [{"id": "MY"}]
+            },
+            {
+                name: "Different perspectives:\n- Focus on Philippine Earthquake Crisis and Rescue Efforts\n- Global and Regional Response to Diverse Natural Disasters Beyond Southeast Asia",
+                color: "#AAAAAA",
+                data: [{"id": "SI"}]
+            },
+            {
+                name: "Different perspectives:\n- Focus on Philippine Earthquake Crisis and Rescue Efforts\n- Emphasis on Typhoon Bualoi and Regional Storm Impact",
+                color: "#AAAAAA",
+                data: [{"id": "US"}]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Hide sources ▲' : 'Show sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li class="active-m">
+               <a href="/">Home </a>
+            </li>
+            <li>
+              <a href="/en/about.html">About</a>
+            </li>
+            <li>
+              <a href="/en/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
