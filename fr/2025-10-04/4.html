@@ -1,0 +1,609 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Perspectives multipolaires et escalade de la violence dans le conflit israélo-palestinien</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/fr', '/en');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>                 
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Perspectives multipolaires et escalade de la violence dans le conflit israélo-palestinien</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-10-04</span> • <span>52 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-10-04/2025-10-04-4.webp" alt="Perspectives multipolaires et escalade de la violence dans le conflit israélo-palestinien" class="main-image">
+                <p style="margin:0">Le conflit israélo-palestinien reste très volatile, avec des opérations militaires israéliennes intensifiées à Gaza provoquant d&#39;importantes pertes civiles et des crises humanitaires. Israël, soutenu parfois par les États-Unis, poursuit des mesures agressives incluant des offensives militaires et des ordres d&#39;évacuation, tout en mettant en avant des préoccupations de sécurité et en niant toute concession sur la souveraineté palestinienne. Des acteurs régionaux comme l&#39;Égypte se positionnent comme médiateurs clés en appelant à la paix et à la retenue, contrastant avec l&#39;Iran et plusieurs nations qui prônent la souveraineté palestinienne et la reconnaissance de l&#39;État par des instances internationales. Par ailleurs, de nombreuses sources occidentales et internationales soulignent l&#39;escalade de la destruction, appellent à un cessez-le-feu, et révèlent des complexités telles que des réseaux d&#39;aide clandestins et des dynamiques géopolitiques en évolution impactant les efforts de paix.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div class="key-points">
+        <h2>Les pays qui en parlent</h2>
+    </div>
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Position ferme de soutien d&#39;Israël et des États-Unis</h3>
+        <p class="cluster-description">Ce point de vue reflète l&#39;approche ferme axée sur la sécurité d&#39;Israël face au conflit, caractérisée par une intensification des offensives militaires à Gaza, des évacuations sélectives et un déni explicite de concessions sur la souveraineté palestinienne. Les États-Unis, tout en exprimant certains appels à la retenue et des préoccupations humanitaires, soutiennent en grande partie la stratégie militaire et les initiatives d&#39;Israël. La position générale privilégie la lutte contre le terrorisme et les actions militaires stratégiques plutôt que des compromis diplomatiques immédiats, considérant les groupes militants comme des obstacles centraux à la paix.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ton.svg" alt="Tonga" title="Tonga" class="flag-icon">
+                            <a href="https://tongaindependent.com/politics/" target="_blank" class="article-link">Le Premier Ministre d&#39;Israël promet d&#39;augmenter l&#39;offensive militaire et d&#39;appliquer le plan de &#34;Migration Volontaire&#34; soutenu par le président américain Donald Trump</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/swe.svg" alt="Suède" title="Suède" class="flag-icon">
+                            <a href="https://www.svd.se/" target="_blank" class="article-link">Israël prépare la première étape</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/swe.svg" alt="Suède" title="Suède" class="flag-icon">
+                            <a href="https://www.svd.se/" target="_blank" class="article-link">Sources : Netanyahu a approuvé l&#39;attaque contre la colonne de Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/uzb.svg" alt="Ouzbékistan" title="Ouzbékistan" class="flag-icon">
+                            <a href="https://kun.uz/news/category/jahon" target="_blank" class="article-link">Israël ordonne à ses troupes de réduire les attaques à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/est.svg" alt="Estonie" title="Estonie" class="flag-icon">
+                            <a href="https://www.delfi.ee/kategooria/123/maailm" target="_blank" class="article-link">Israël ordonne aux Palestiniens de quitter la ville de Gaza, avertit que ceux qui restent seront considérés comme des terroristes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kor.svg" alt="Corée du Sud" title="Corée du Sud" class="flag-icon">
+                            <a href="https://www.koreaherald.com/World" target="_blank" class="article-link">Tous les Palestiniens doivent quitter la ville de Gaza : Israël</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pri.svg" alt="PRI" title="PRI" class="flag-icon">
+                            <a href="https://www.primerahora.com/noticias/mundo/" target="_blank" class="article-link">Israël ordonne l&#39;évacuation de la ville de Gaza</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72d7e5; padding: 8px 16px; border-radius: 4px;">L&#39;Égypte en tant que médiateur régional prônant la paix et la stabilité</h3>
+        <p class="cluster-description">L&#39;Égypte émerge comme un acteur régional clé, mettant en avant l&#39;engagement diplomatique et le soutien humanitaire visant à désescalader la situation. Sa direction prône des accords de paix tout en responsabilisant les factions palestiniennes, en particulier le Hamas, pour agir, équilibrant ainsi les préoccupations pour le bien-être palestinien et la stabilité régionale. La position de l&#39;Égypte reflète également son intérêt géopolitique à maintenir son influence et à prévenir les conflits de débordement.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mli.svg" alt="Mali" title="Mali" class="flag-icon">
+                            <a href="https://bamada.net/category/international" target="_blank" class="article-link">Crise de Gaza : l&#39;Égypte en première ligne</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mli.svg" alt="Mali" title="Mali" class="flag-icon">
+                            <a href="https://www.maliweb.net/category/international" target="_blank" class="article-link">Crise de Gaza : l&#39;Égypte en première ligne</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Irlande" title="Irlande" class="flag-icon">
+                            <a href="https://www.independent.ie/world-news/" target="_blank" class="article-link">Ça va au-delà de la revanche, c&#39;est assez à suffire – l&#39;Égypte appelle à un accord de paix, mais dit que la balle est maintenant dans le camp du Hamas</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #7290e5; padding: 8px 16px; border-radius: 4px;">Iran et ses alliés prônant la souveraineté et la reconnaissance de l&#39;État palestinien</h3>
+        <p class="cluster-description">Des pays comme l&#39;Iran soutiennent fermement la reconnaissance de l&#39;État palestinien et appellent à une légitimation internationale par le biais d&#39;institutions telles que l&#39;ONU. Leur rhétorique condamne les actions militaires israéliennes et encadre le conflit comme une lutte contre l&#39;occupation et l&#39;injustice, plaidant pour un soutien mondial accru à la Palestine et s&#39;opposant aux politiques israéliennes perçues comme agressives ou colonisatrices.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irn.svg" alt="Iran" title="Iran" class="flag-icon">
+                            <a href="https://ifpnews.com/category/news/world/" target="_blank" class="article-link">L&#39;Iran exhorte le Conseil de sécurité de l&#39;ONU à approuver la souveraineté palestinienne</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tjk.svg" alt="Tadjikistan" title="Tadjikistan" class="flag-icon">
+                            <a href="https://asiaplustj.info/tj/rubrics/world" target="_blank" class="article-link">Le &#34;Qatar&#34; des reconnaissances sauvera-t-il la Palestine du &#34;piège&#34; d&#39;Israël ? Pourquoi le premier mot est dit par les États-Unis</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/zaf.svg" alt="Afrique du Sud" title="Afrique du Sud" class="flag-icon">
+                            <a href="https://mg.co.za/section/news/" target="_blank" class="article-link">Ramaphosa affirme que le Conseil de sécurité de l&#39;ONU est inefficace dans sa forme actuelle alors que le génocide de Gaza persiste</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #9b72e5; padding: 8px 16px; border-radius: 4px;">Pays occidentaux soutenant la reconnaissance de l&#39;État palestinien malgré les appels à la retenue</h3>
+        <p class="cluster-description">Plusieurs nations occidentales, dont la France, le Royaume-Uni, le Canada et l&#39;Australie, ont officiellement reconnu la souveraineté palestinienne en tant qu&#39;étape vers la paix, tout en exprimant de graves préoccupations concernant l&#39;impact humanitaire des opérations militaires israéliennes. Ces pays prônent des solutions diplomatiques, une implication internationale et la retenue, critiquant les réponses disproportionnées mais maintenant des liens diplomatiques étroits avec Israël.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aus.svg" alt="Australie" title="Australie" class="flag-icon">
+                            <a href="https://www.abc.net.au/news/world" target="_blank" class="article-link">Les images satellites montrent l&#39;étendue de l&#39;attaque d&#39;Israël sur Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ago.svg" alt="Angola" title="Angola" class="flag-icon">
+                            <a href="https://www.opais.ao/categoria/mundo/" target="_blank" class="article-link">Le ministre des Affaires étrangères d&#39;Italie dit que la réponse d&#39;Israël à l&#39;attaque du Hamas a dépassé la légitime défense</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/prt.svg" alt="Portugal" title="Portugal" class="flag-icon">
+                            <a href="https://expresso.pt/" target="_blank" class="article-link">Les activistes portugais détenus en Israël acceptent une déportation immédiate ; l&#39;ambassadeur du Portugal présente une protestation officielle</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/arm.svg" alt="Arménie" title="Arménie" class="flag-icon">
+                            <a href="https://www.panarmenian.net/arm/world/" target="_blank" class="article-link">La France reconnaît l&#39;État de Palestine, dit Macron que c&#39;est pour la paix</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/arm.svg" alt="Arménie" title="Arménie" class="flag-icon">
+                            <a href="https://www.panarmenian.net/arm/world/" target="_blank" class="article-link">Royaume-Uni, Canada et Australie reconnaissent l&#39;État de Palestine, Israël condamne</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e272e5; padding: 8px 16px; border-radius: 4px;">Perspectives humanitaires internationales et de l&#39;ONU appelant à un cessez-le-feu et à la responsabilité</h3>
+        <p class="cluster-description">Organisations internationales et groupes humanitaires, y compris les Nations Unies et Médecins Sans Frontières, soulignent le lourd bilan civil et accusent Israël d&#39;actions équivalant à un génocide ou à des crimes de guerre, appelant à des cessez-le-feu immédiats et à la protection des civils. Les responsables de l&#39;ONU saluent les progrès des négociations mais insistent sur l&#39;urgence de mettre fin aux hostilités et d&#39;assurer l&#39;accès humanitaire. Ces perspectives soulignent les préoccupations critiques en matière de droits humains et de légalité liées au conflit.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/srb.svg" alt="Serbie" title="Serbie" class="flag-icon">
+                            <a href="https://www.politika.rs/scc/svet" target="_blank" class="article-link">Au moins 60 Palestiniens tués à Gaza aujourd&#39;hui</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/npl.svg" alt="Népal" title="Népal" class="flag-icon">
+                            <a href="https://thehimalayantimes.com/category/world/" target="_blank" class="article-link">Les frappes israéliennes tuent au moins 17 Palestiniens à Gaza alors que la pression internationale pour un cessez-le-feu augmente</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/per.svg" alt="Pérou" title="Pérou" class="flag-icon">
+                            <a href="https://elcomercio.pe/mundo/" target="_blank" class="article-link">Le Secrétaire général de l&#39;ONU loue les progrès dans les négociations entre Israël et le Hamas</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/yem.svg" alt="Yémen" title="Yémen" class="flag-icon">
+                            <a href="https://www.saba.ye" target="_blank" class="article-link">52 Palestiniens tués dans des massacres israéliens à Gaza depuis l&#39;aube aujourd&#39;hui</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/grl.svg" alt="GRL" title="GRL" class="flag-icon">
+                            <a href="https://sermitsiaq.ag/" target="_blank" class="article-link">Le chef de l&#39;ONU appelle Israël à arrêter le bain de sang à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/omn.svg" alt="Oman" title="Oman" class="flag-icon">
+                            <a href="https://www.omanobserver.om/world" target="_blank" class="article-link">33 tués dans des attaques israéliennes sur la bande de Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/are.svg" alt="Émirats arabes unis" title="Émirats arabes unis" class="flag-icon">
+                            <a href="https://www.thenationalnews.com/international" target="_blank" class="article-link">Le directeur de MSF : Gaza est ce à quoi ressemble un génocide &#34;fort et clair&#34;</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e572a1; padding: 8px 16px; border-radius: 4px;">Positions palestiniennes et pro-palestiniennes insistant sur la résistance et l&#39;autodétermination</h3>
+        <p class="cluster-description">Déclarations de responsables palestiniens et de sources associées soulignant la souveraineté palestinienne, rejetant la gestion extérieure des affaires de Gaza, et appelant à la fin de la violence tout en exprimant leur volonté de négocier sur les conditions. Ces points de vue prônent l&#39;agence palestinienne dans la gouvernance et les processus de paix, en présentant le conflit comme une résistance et une autodétermination contre l&#39;occupation et l&#39;ingérence extérieure.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/yem.svg" alt="Yémen" title="Yémen" class="flag-icon">
+                            <a href="https://www.saba.ye" target="_blank" class="article-link">Osama Hamdan : Aucun parti autre que les Palestiniens ne sera autorisé à gérer les affaires de Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/yem.svg" alt="Yémen" title="Yémen" class="flag-icon">
+                            <a href="https://www.saba.ye" target="_blank" class="article-link">Chef du Hamas : La priorité est d&#39;arrêter la guerre et les massacres à Gaza ; prêt à négocier toutes les questions</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/yem.svg" alt="Yémen" title="Yémen" class="flag-icon">
+                            <a href="https://www.saba.ye" target="_blank" class="article-link">15 Palestiniens tués dans des bombardements israéliens dans le centre de Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/uzb.svg" alt="Ouzbékistan" title="Ouzbékistan" class="flag-icon">
+                            <a href="https://kun.uz/news/category/jahon" target="_blank" class="article-link">HAMAS déclare sa disponibilité à libérer tous les otages à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fro.svg" alt="FRO" title="FRO" class="flag-icon">
+                            <a href="https://www.in.fo/" target="_blank" class="article-link">Le Hamas demande plus de temps pour la proposition de plan pour Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hnd.svg" alt="Honduras" title="Honduras" class="flag-icon">
+                            <a href="https://www.elheraldo.hn/mundo" target="_blank" class="article-link">Le Hamas accepte de libérer tous les otages et appelle à des négociations sur les conditions du plan de paix</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e58b72; padding: 8px 16px; border-radius: 4px;">Exposition critique du soutien clandestin et des complexités du conflit interne</h3>
+        <p class="cluster-description">Les enquêtes approfondies révèlent des actions contradictoires et clandestines telles que le soutien présumé d&#39;Israël à des milices armées à Gaza, compliquant la représentation du conflit et soulevant des questions sur l&#39;utilisation finale de l&#39;aide étrangère. Les décisions juridiques et les analyses sociales de la société israélienne reflètent des impacts psychologiques et politiques profonds, ainsi que des débats sur l&#39;orientation du conflit et la légitimité des divers acteurs impliqués.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gnb.svg" alt="Guinée-Bissau" title="Guinée-Bissau" class="flag-icon">
+                            <a href="https://una-oic.org/News/all/" target="_blank" class="article-link">Les forces israéliennes sécurisent les raids des colons à la mosquée Al-Aqsa et transforment Jérusalem en une grande prison sous prétexte des fêtes juives</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aut.svg" alt="Autriche" title="Autriche" class="flag-icon">
+                            <a href="https://www.diepresse.com/ausland" target="_blank" class="article-link">Deux ans après le massacre du 7 octobre : « Les blessures intérieures ne se cicatrisent pas facilement »</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aut.svg" alt="Autriche" title="Autriche" class="flag-icon">
+                            <a href="https://www.diepresse.com/ausland" target="_blank" class="article-link">Quoi, à part la mort et la destruction, le 7 octobre a-t-il apporté aux Palestiniens ?</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aut.svg" alt="Autriche" title="Autriche" class="flag-icon">
+                            <a href="https://www.diepresse.com/ausland" target="_blank" class="article-link">Israël passe-t-il du statut de « modèle » à celui de « figure marginale » ?</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/isr.svg" alt="Israël" title="Israël" class="flag-icon">
+                            <a href="https://www.jpost.com/International" target="_blank" class="article-link">Un juge rejette une plainte accusant l&#39;UNRWA d&#39;aider le Hamas lors des attaques du 7 octobre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/imn.svg" alt="IMN" title="IMN" class="flag-icon">
+                            <a href="https://www.manxradio.com/news/" target="_blank" class="article-link">Armes, argent et aide américaine : une enquête révèle le soutien d&#39;Israël aux milices de Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gbr.svg" alt="Royaume-Uni" title="Royaume-Uni" class="flag-icon">
+                            <a href="https://news.sky.com/world" target="_blank" class="article-link">Armes, argent et aide américaine : une enquête révèle le soutien d&#39;Israël aux milices de Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgd.svg" alt="Bangladesh" title="Bangladesh" class="flag-icon">
+                            <a href="https://bdnews24.com/world" target="_blank" class="article-link">Corps sans vie d&#39;une université américaine utilisé pour « former l&#39;armée israélienne »</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Observateurs mondiaux soulignant l&#39;urgence des négociations et de l&#39;aide humanitaire</h3>
+        <p class="cluster-description">Les correspondants internationaux et les observateurs diplomatiques notent l&#39;état fragile du conflit, appelant à des efforts de désescalade urgents et soulignant les moments décisifs à venir. Ces voix insistent sur la nécessité de diplomatie, de négociation et d&#39;une assistance humanitaire globale pour prévenir de nouvelles victimes.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dnk.svg" alt="Danemark" title="Danemark" class="flag-icon">
+                            <a href="https://nyheder.tv2.dk/udland" target="_blank" class="article-link">Les prochaines 24 heures seront cruciales, selon le correspondant</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/isl.svg" alt="Islande" title="Islande" class="flag-icon">
+                            <a href="https://www.mbl.is/frettir/erlent/" target="_blank" class="article-link">Les dirigeants réagissent à la déclaration du Hamas</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Position ferme de soutien d\u0027Isra\u00ebl et des \u00c9tats-Unis",
+                color: "#72e5ac",
+                data: [ {"id": "EE"},  {"id": "KR"},  {"id": "PR"},  {"id": "SE"},  {"id": "TO"} ]
+            },
+        
+            {
+                name: "L\u0027\u00c9gypte en tant que m\u00e9diateur r\u00e9gional pr\u00f4nant la paix et la stabilit\u00e9",
+                color: "#72d7e5",
+                data: [ {"id": "IE"},  {"id": "ML"} ]
+            },
+        
+            {
+                name: "Iran et ses alli\u00e9s pr\u00f4nant la souverainet\u00e9 et la reconnaissance de l\u0027\u00c9tat palestinien",
+                color: "#7290e5",
+                data: [ {"id": "IR"},  {"id": "TJ"},  {"id": "ZA"} ]
+            },
+        
+            {
+                name: "Pays occidentaux soutenant la reconnaissance de l\u0027\u00c9tat palestinien malgr\u00e9 les appels \u00e0 la retenue",
+                color: "#9b72e5",
+                data: [ {"id": "AM"},  {"id": "AO"},  {"id": "AU"},  {"id": "PT"} ]
+            },
+        
+            {
+                name: "Perspectives humanitaires internationales et de l\u0027ONU appelant \u00e0 un cessez-le-feu et \u00e0 la responsabilit\u00e9",
+                color: "#e272e5",
+                data: [ {"id": "AE"},  {"id": "GL"},  {"id": "NP"},  {"id": "OM"},  {"id": "PE"},  {"id": "RS"} ]
+            },
+        
+            {
+                name: "Positions palestiniennes et pro-palestiniennes insistant sur la r\u00e9sistance et l\u0027autod\u00e9termination",
+                color: "#e572a1",
+                data: [ {"id": "FO"},  {"id": "HN"} ]
+            },
+        
+            {
+                name: "Exposition critique du soutien clandestin et des complexit\u00e9s du conflit interne",
+                color: "#e58b72",
+                data: [ {"id": "AT"},  {"id": "BD"},  {"id": "GB"},  {"id": "GW"},  {"id": "IL"},  {"id": "IM"} ]
+            },
+        
+            {
+                name: "Observateurs mondiaux soulignant l\u0027urgence des n\u00e9gociations et de l\u0027aide humanitaire",
+                color: "#e5d272",
+                data: [ {"id": "DK"},  {"id": "IS"} ]
+            }
+        
+        
+            ,
+            {
+                name: "Plusieurs points de vue : \n- Position ferme de soutien d\u0027Isra\u00ebl et des \u00c9tats-Unis\n- Positions palestiniennes et pro-palestiniennes insistant sur la r\u00e9sistance et l\u0027autod\u00e9termination",
+                color: "#AAAAAA",
+                data: [{"id": "UZ"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Perspectives humanitaires internationales et de l\u0027ONU appelant \u00e0 un cessez-le-feu et \u00e0 la responsabilit\u00e9\n- Positions palestiniennes et pro-palestiniennes insistant sur la r\u00e9sistance et l\u0027autod\u00e9termination",
+                color: "#AAAAAA",
+                data: [{"id": "YE"}]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Masquer les sources ▲' : 'Montrer les sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li class="active-m">
+               <a href="/">Accueil</a>
+            </li>
+            <li>
+              <a href="/fr/about.html">A Propos</a>
+            </li>
+            <li>
+              <a href="/fr/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
