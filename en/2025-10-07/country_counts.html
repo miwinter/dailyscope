@@ -1,0 +1,658 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title></title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+
+<style>
+    /* ===== Bandes plein écran ===== */
+    .band { width: 100%; margin: 0; padding: 0; }
+    .band--title { background: #f8f9fa; border-top: 1px solid #eee; }
+    .band--chart { background: #fff; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
+
+    /* Coquille commune pour aligner les titres et centrer les contenus */
+    .content-shell {
+      width: 100%;
+      max-width: 1400px;     /* largeur max sur grands écrans */
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+    /* Padding spécifique des sections */
+    .band--title .content-shell { padding: 28px 16px 18px; }
+    .band--chart .content-shell--wide    { padding: 20px 16px 40px; }
+    .band--chart .content-shell--history { padding: 20px 16px 40px; }
+
+    /* Titre : aligné à gauche dans la coquille (avec marge intérieure) */
+    .section-title {
+      margin: 0;
+      font: 600 20px/1.3 system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial;
+      text-align: left;
+    }
+    .section-subtitle {
+      margin: 8px 0 0 0;
+      color: #666;
+      font: 400 14px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial;
+      text-align: left;
+    }
+
+    /* ===== Containers charts ===== */
+    /* MAP : pleine largeur dans la coquille */
+    .content-shell--wide { width: 100%; }
+    #map-container     { width: 100%; height: 520px; }
+
+    /* HISTORY : 60% avec bornes, centré */
+    .content-shell--history { width: clamp(520px, 60vw, 1200px); margin-left: auto; margin-right: auto; }
+    #history-container { width: 100%; height: 420px; }
+
+    /* (Optionnel) légère respiration entre sections adjacentes de titre */
+    .band--title + .band--title { border-top: none; }
+  </style>
+
+
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/fra.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="Français" title="Français" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/en', '/fr');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>              
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- ===== SECTION 1 : TITRE (fond gris clair) ===== -->
+  <section class="band band--title">
+    <div class="content-shell">
+      <h2 class="section-title">Top Mentioned Countries</h2>
+      <p class="section-subtitle">Most-cited countries in the latest crawl (choropleth map).</p>
+      <span>2025-10-07</span> • <span>1736 mentions in total</span>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 1 : CHART (bande blanche) ===== -->
+  <section class="band band--chart">
+    <div class="content-shell content-shell--wide">
+      <div id="map-container"></div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 2 : TITRE (fond gris clair) ===== -->
+  <section class="band band--title">
+    <div class="content-shell">
+      <h2 class="section-title">Historical Distribution</h2>
+      <p class="section-subtitle">Daily mentions for the top countries (stacked columns).</p>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 2 : CHART (bande blanche, 60%) ===== -->
+  <section class="band band--chart">
+    <div class="content-shell content-shell--history">
+      <div id="history-container"></div>
+    </div>
+  </section>
+
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+            
+        // Préparer les données pour la carte
+        var seriesData = [
+            
+            {
+                name: "1–55 mentions",
+                color: "#FBE9D0",
+                data: [
+                
+                { id: "EU", name: "46" },
+                
+                { id: "CN", name: "39" },
+                
+                { id: "VE", name: "36" },
+                
+                { id: "GB", name: "33" },
+                
+                { id: "NP", name: "23" },
+                
+                { id: "JP", name: "18" },
+                
+                { id: "IR", name: "18" },
+                
+                { id: "DE", name: "16" },
+                
+                { id: "SY", name: "15" },
+                
+                { id: "BR", name: "14" },
+                
+                { id: "UN", name: "14" },
+                
+                { id: "IN", name: "14" },
+                
+                { id: "SD", name: "13" },
+                
+                { id: "KP", name: "13" },
+                
+                { id: "ID", name: "12" },
+                
+                { id: "AU", name: "11" },
+                
+                { id: "MA", name: "10" },
+                
+                { id: "GR", name: "10" },
+                
+                { id: "PL", name: "10" },
+                
+                { id: "AF", name: "9" },
+                
+                { id: "NL", name: "9" },
+                
+                { id: "ZA", name: "8" },
+                
+                { id: "CZ", name: "8" },
+                
+                { id: "SA", name: "8" },
+                
+                { id: "PK", name: "7" },
+                
+                { id: "CA", name: "7" },
+                
+                { id: "SK", name: "7" },
+                
+                { id: "AR", name: "6" },
+                
+                { id: "ML", name: "6" },
+                
+                { id: "YE", name: "6" },
+                
+                { id: "EC", name: "6" },
+                
+                { id: "LB", name: "6" },
+                
+                { id: "AL", name: "5" },
+                
+                { id: "QA", name: "5" },
+                
+                { id: "TR", name: "5" },
+                
+                { id: "WS", name: "5" },
+                
+                { id: "LT", name: "5" },
+                
+                { id: "MG", name: "5" },
+                
+                { id: "SN", name: "5" },
+                
+                { id: "MX", name: "5" },
+                
+                { id: "SE", name: "5" },
+                
+                { id: "ES", name: "5" },
+                
+                { id: "CO", name: "5" },
+                
+                { id: "CU", name: "4" },
+                
+                { id: "CD", name: "4" },
+                
+                { id: "PG", name: "4" },
+                
+                { id: "NZ", name: "4" },
+                
+                { id: "IT", name: "4" },
+                
+                { id: "VA", name: "4" },
+                
+                { id: "EE", name: "4" },
+                
+                { id: "BY", name: "4" },
+                
+                { id: "FI", name: "4" },
+                
+                { id: "GE", name: "4" },
+                
+                { id: "KH", name: "4" },
+                
+                { id: "CM", name: "3" },
+                
+                { id: "CF", name: "3" },
+                
+                { id: "DZ", name: "3" },
+                
+                { id: "KZ", name: "3" },
+                
+                { id: "AZ", name: "3" },
+                
+                { id: "NG", name: "3" },
+                
+                { id: "BF", name: "3" },
+                
+                { id: "NE", name: "3" },
+                
+                { id: "TG", name: "3" },
+                
+                { id: "KW", name: "3" },
+                
+                { id: "NO", name: "3" },
+                
+                { id: "CI", name: "3" },
+                
+                { id: "HT", name: "3" },
+                
+                { id: "AS", name: "3" },
+                
+                { id: "LV", name: "3" },
+                
+                { id: "KR", name: "3" },
+                
+                { id: "PA", name: "3" },
+                
+                { id: "SG", name: "3" },
+                
+                { id: "IQ", name: "2" },
+                
+                { id: "UZ", name: "2" },
+                
+                { id: "VC", name: "2" },
+                
+                { id: "GY", name: "2" },
+                
+                { id: "LR", name: "2" },
+                
+                { id: "MR", name: "2" },
+                
+                { id: "GM", name: "2" },
+                
+                { id: "AE", name: "2" },
+                
+                { id: "OM", name: "2" },
+                
+                { id: "DK", name: "2" },
+                
+                { id: "GA", name: "2" },
+                
+                { id: "TZ", name: "2" },
+                
+                { id: "JO", name: "2" },
+                
+                { id: "MU", name: "2" },
+                
+                { id: "BE", name: "2" },
+                
+                { id: "BB", name: "2" },
+                
+                { id: "TH", name: "2" },
+                
+                { id: "GT", name: "2" },
+                
+                { id: "MW", name: "2" },
+                
+                { id: "AO", name: "2" },
+                
+                { id: "NC", name: "2" },
+                
+                { id: "TW", name: "2" },
+                
+                { id: "PH", name: "2" },
+                
+                { id: "RW", name: "1" },
+                
+                { id: "CH", name: "1" },
+                
+                { id: "LY", name: "1" },
+                
+                { id: "ZM", name: "1" },
+                
+                { id: "TO", name: "1" },
+                
+                { id: "MY", name: "1" },
+                
+                { id: "BD", name: "1" },
+                
+                { id: "DM", name: "1" },
+                
+                { id: "BJ", name: "1" },
+                
+                { id: "GW", name: "1" },
+                
+                { id: "BH", name: "1" },
+                
+                { id: "IS", name: "1" },
+                
+                { id: "CY", name: "1" },
+                
+                { id: "VG", name: "1" },
+                
+                { id: "GH", name: "1" },
+                
+                { id: "SL", name: "1" },
+                
+                { id: "CG", name: "1" },
+                
+                { id: "TD", name: "1" },
+                
+                { id: "BI", name: "1" },
+                
+                { id: "ST", name: "1" },
+                
+                { id: "GQ", name: "1" },
+                
+                { id: "VN", name: "1" },
+                
+                { id: "SM", name: "1" },
+                
+                { id: "SV", name: "1" },
+                
+                { id: "PY", name: "1" },
+                
+                { id: "BG", name: "1" },
+                
+                { id: "MD", name: "1" },
+                
+                { id: "ZW", name: "1" },
+                
+                { id: "ET", name: "1" },
+                
+                { id: "AG", name: "1" },
+                
+                { id: "BZ", name: "1" },
+                
+                { id: "WB", name: "1" },
+                
+                { id: "PT", name: "1" },
+                
+                { id: "CR", name: "1" },
+                
+                { id: "WW", name: "1" },
+                
+                { id: "KE", name: "1" },
+                
+                { id: "UG", name: "1" },
+                
+                { id: "BO", name: "1" },
+                
+                { id: "SZ", name: "1" },
+                
+                { id: "LN", name: "1" },
+                
+                { id: "NA", name: "1" },
+                
+                { id: "MN", name: "1" },
+                
+                { id: "RO", name: "1" },
+                
+                { id: "RS", name: "1" },
+                
+                { id: "SO", name: "1" },
+                
+                { id: "MZ", name: "1" },
+                
+                { id: "NI", name: "1" },
+                
+                { id: "BT", name: "1" },
+                
+                { id: "LK", name: "1" },
+                
+                { id: "HU", name: "1" },
+                
+                { id: "TJ", name: "1" },
+                
+                { id: "AM", name: "1" },
+                
+                { id: "ME", name: "1" },
+                
+                { id: "DO", name: "1" },
+                
+                { id: "HN", name: "1" },
+                
+                { id: "PE", name: "1" },
+                
+                { id: "KG", name: "1" },
+                
+                { id: "TM", name: "1" }
+                
+                ]
+            },
+            
+            {
+                name: "56–110 mentions",
+                color: "#F8CEB6",
+                data: [
+                
+                { id: "FR", name: "87" },
+                
+                { id: "UA", name: "75" },
+                
+                { id: "EG", name: "73" }
+                
+                ]
+            },
+            
+            {
+                name: "111–165 mentions",
+                color: "#F4B39C",
+                data: [
+                
+                { id: "PS", name: "164" },
+                
+                { id: "RU", name: "127" }
+                
+                ]
+            },
+            
+            {
+                name: "221–274 mentions",
+                color: "#ED7E67",
+                data: [
+                
+                { id: "US", name: "274" },
+                
+                { id: "IL", name: "221" }
+                
+                ]
+            }
+            
+            ];
+
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.color(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten("#000", 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.getData('name') + " mentions";
+            });
+        });
+        
+        // affichage de la legende
+        map.legend()
+            .enabled(true)
+            .position('right')
+            .itemsLayout('vertical')
+            .align('center')
+            .padding(0, 0, 100, 0)
+            .fontSize(12)
+            .margin(0,0,0,0)
+
+            
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+</script>
+
+<script>
+    anychart.onDocumentReady(function () {
+        var rawData = [["EU", 46, 39, 41, 50, 106], ["FR", 87, 48, 0, 50, 45], ["IL", 221, 235, 261, 238, 192], ["PS", 164, 215, 208, 218, 131], ["RU", 127, 127, 125, 122, 170], ["UA", 75, 101, 94, 86, 97], ["US", 274, 282, 303, 372, 285]];
+        var dates = ["2025-10-07", "2025-10-06", "2025-10-05", "2025-10-04", "2025-10-03"];
+
+        // Create the chart
+        var chart = anychart.column();
+        chart.yScale().stackMode('value');
+
+        // Add series
+        for (var i = 0; i < rawData.length; i++) {
+            var country = rawData[i][0];
+            var countryData = [];
+            for (var j = 0; j < dates.length; j++) {
+                countryData.push({ x: dates[j], value: rawData[i][j + 1] });
+            }
+            var series = chart.column(countryData);
+            series.name(country)
+                  .stroke('2 #fff 1');
+        }
+
+        // Configure chart
+        chart.legend()
+            .enabled(true)
+            .position('right')
+            .itemsLayout('vertical')
+            .padding([20,0,0,0])
+            .fontSize(13);
+
+        chart.tooltip()
+            .displayMode('union')
+            .titleFormat(function(){ 
+                return this.x + ' - Total: ' + this.points[0].getStat('categoryYSum'); 
+            })
+            .format(function(){ 
+                return this.seriesName + ': ' + this.value + ' mentions'; 
+            });
+
+        chart.title()
+            .enabled(false);  // Title already in header
+
+        chart.xAxis().labels().rotation(-45);
+        chart.yAxis().title('Number of mentions');
+
+        // Render chart
+        chart.container('history-container');
+        chart.draw();
+    });
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li class="active-m">
+               <a href="/">Home </a>
+            </li>
+            <li>
+              <a href="/en/about.html">About</a>
+            </li>
+            <li>
+              <a href="/en/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
