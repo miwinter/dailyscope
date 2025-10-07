@@ -1,0 +1,571 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Natural Disasters Across Asia, Africa, and Beyond: Impact, Rescue Efforts, and Regional Disputes</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/fra.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="Français" title="Français" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/en', '/fr');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>              
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Natural Disasters Across Asia, Africa, and Beyond: Impact, Rescue Efforts, and Regional Disputes</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-10-07</span> • <span>40 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-10-07/2025-10-07-5.webp" alt="Natural Disasters Across Asia, Africa, and Beyond: Impact, Rescue Efforts, and Regional Disputes" class="main-image">
+                <p style="margin:0">The region spanning Nepal, India, and neighboring countries has been severely affected by heavy monsoon rains leading to devastating landslides, floods, and flash floods, resulting in a high death toll exceeding 70 and widespread displacement. Rescue and relief operations are ongoing, but damaged infrastructure and harsh weather conditions complicate efforts. High-altitude regions around Mount Everest faced extreme blizzards and storms, stranding hundreds of climbers and prompting international rescue missions. In East Africa and the Nile basin, flooding has exacerbated regional tensions, notably between Egypt, Sudan, and Ethiopia, due to disputes over water management linked to the Ethiopian mega-dam project. Other natural disasters include typhoons in China provoking mass evacuations, earthquakes in the Philippines and Afghanistan, and severe storms across Europe and the US causing fatalities and extensive damage.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div class="key-points">
+        <h2>Countries covering this topic</h2>
+    </div>
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">South Asian Focus on Monsoon-Induced Floods and Landslide Tragedies</h3>
+        <p class="cluster-description">Articles from Nepal, India, Tanzania, Denmark, Bangladesh, Philippines, Maldives, Ireland, and Kosovo emphasize the catastrophic impact of monsoon rains causing floods and landslides in Nepal, India, and surrounding regions. These countries highlight the immense human toll, disruptions to infrastructure, and the urgent need for coordinated rescue and relief operations amid ongoing adverse weather. The consistent reporting underscores the persistent vulnerability of the region to seasonal climate extremes and the challenges faced by national and international agencies in managing these disasters effectively.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tza.svg" alt="Tanzania" title="Tanzania" class="flag-icon">
+                            <a href="https://dailynews.co.tz/category/world/" target="_blank" class="article-link">Nepal: Deadly landslides, flash floods kill many</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/can.svg" alt="Canada" title="Canada" class="flag-icon">
+                            <a href="https://www.theglobeandmail.com/world/" target="_blank" class="article-link">Floods leave 44 dead in Nepal as villages are swept away</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ind.svg" alt="India" title="India" class="flag-icon">
+                            <a href="https://www.thehindu.com/news/international/" target="_blank" class="article-link">Nepal’s death toll due to landslides and floods reaches 60</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/egy.svg" alt="Egypt" title="Egypt" class="flag-icon">
+                            <a href="https://www.egyptindependent.com/category/world/" target="_blank" class="article-link">Nepalese villages are swept away by heavy rainfall and landslides, leaving at least 44 dead</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/brn.svg" alt="Brunei" title="Brunei" class="flag-icon">
+                            <a href="https://www.rtbnews.rtb.gov.bn/Lists/News%202018/Category_International.aspx" target="_blank" class="article-link">Heavy rains kill at least 47 in Nepal, block roads</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dnk.svg" alt="Denmark" title="Denmark" class="flag-icon">
+                            <a href="https://politiken.dk/udland/" target="_blank" class="article-link">At Least 62 Dead After Severe Rainfall in India and Nepal</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kaz.svg" alt="Kazakhstan" title="Kazakhstan" class="flag-icon">
+                            <a href="https://kazpravda.kz/r/v-mire/" target="_blank" class="article-link">Around Fifty People Dead in Nepal Landslides</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/npl.svg" alt="Nepal" title="Nepal" class="flag-icon">
+                            <a href="https://thehimalayantimes.com/category/world/" target="_blank" class="article-link">A week of heavy rains and floods across Pakistan kills 46 people including 13 family members</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/phl.svg" alt="Philippines" title="Philippines" class="flag-icon">
+                            <a href="https://www.philstar.com/world" target="_blank" class="article-link">Landslides and floods kill 63 in Nepal and India</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgd.svg" alt="Bangladesh" title="Bangladesh" class="flag-icon">
+                            <a href="https://www.thedailystar.net/world" target="_blank" class="article-link">Nepal, India floods / Rescuers scramble to deliver aid; more than 70 killed</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Ireland" title="Ireland" class="flag-icon">
+                            <a href="https://www.independent.ie/world-news/" target="_blank" class="article-link">At least 60 dead after India and Nepal hit by monsoon flooding</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mdv.svg" alt="Maldives" title="Maldives" class="flag-icon">
+                            <a href="https://sun.mv/world_news" target="_blank" class="article-link">Nine People Killed in India After Landslide</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jor.svg" alt="Jordan" title="Jordan" class="flag-icon">
+                            <a href="https://www.jordantimes.com/news/world" target="_blank" class="article-link">Rescuers scramble to deliver aid after deadly Nepal, India floods</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72cbe5; padding: 8px 16px; border-radius: 4px;">Mount Everest Blizzard and Storm Crisis: Multinational Rescue Challenges</h3>
+        <p class="cluster-description">Countries including the Isle of Man, Bahrain, Kosovo, Denmark, Germany, Australia, Taiwan, and Kazakhstan focus on the severe weather events trapping hundreds of climbers on Mount Everest. These articles detail the dangerous blizzards and storms in the high Himalayas resulting in fatalities, efforts to evacuate stranded hikers, and the logistical difficulties hampering rescue missions. The shared narrative reflects the international dimension of mountaineering disasters and the urgent humanitarian response required in extreme mountain environments.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/imn.svg" alt="IMN" title="IMN" class="flag-icon">
+                            <a href="https://www.iomtoday.co.im/news/" target="_blank" class="article-link">Storm Amy causes widespread disruption with 89mph gusts</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/imn.svg" alt="IMN" title="IMN" class="flag-icon">
+                            <a href="https://www.manxradio.com/news/" target="_blank" class="article-link">Stranded Mount Everest hikers being evacuated</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/brn.svg" alt="Brunei" title="Brunei" class="flag-icon">
+                            <a href="https://www.rtbnews.rtb.gov.bn/Lists/News%202018/Category_International.aspx" target="_blank" class="article-link">Hundreds of trekkers escape from blizzard-struck Everest in Tibet</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kos.svg" alt="KOS" title="KOS" class="flag-icon">
+                            <a href="https://www.rtklive.com/sq/news-category.php?CatID=10" target="_blank" class="article-link">One dead and 200 trapped by storm on Mount Everest</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/deu.svg" alt="Germany" title="Germany" class="flag-icon">
+                            <a href="https://www.sueddeutsche.de/news/politik/" target="_blank" class="article-link">Blizzard traps hundreds on Tibet side of Mount Everest; rescue underway</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kaz.svg" alt="Kazakhstan" title="Kazakhstan" class="flag-icon">
+                            <a href="https://kazpravda.kz/r/v-mire/" target="_blank" class="article-link">About a Thousand People Trapped on Everest</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kaz.svg" alt="Kazakhstan" title="Kazakhstan" class="flag-icon">
+                            <a href="https://tengrinews.kz/news/" target="_blank" class="article-link">Hundreds of Tourists Stranded on Everest Due to Snowstorm, Evacuation Underway</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aus.svg" alt="Australia" title="Australia" class="flag-icon">
+                            <a href="https://www.smh.com.au/world" target="_blank" class="article-link">Blizzard traps hundreds of hikers on Mount Everest</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aus.svg" alt="Australia" title="Australia" class="flag-icon">
+                            <a href="https://www.abc.net.au/news/world" target="_blank" class="article-link">Hundreds of hikers still missing after Mount Everest blizzard</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/twn.svg" alt="TWN" title="TWN" class="flag-icon">
+                            <a href="https://www.taipeitimes.com/News/world" target="_blank" class="article-link">Snowstorm traps about 350 hikers on Mt Everest</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #7279e5; padding: 8px 16px; border-radius: 4px;">China’s Typhoon Matmo: Massive Preparations and Evacuations</h3>
+        <p class="cluster-description">Chinese and Kazakhstani sources report extensively on Typhoon Matmo’s impact in southern China, highlighting large-scale evacuations, emergency preparedness, and infrastructure damage. These articles stress government responsiveness and proactive measures to minimize human casualties and property loss, showcasing China’s heightened disaster management capabilities amid increasingly severe tropical storms.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kaz.svg" alt="Kazakhstan" title="Kazakhstan" class="flag-icon">
+                            <a href="https://kazpravda.kz/r/v-mire/" target="_blank" class="article-link">New Typhoon Hits China</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dom.svg" alt="Dominican Republic" title="Dominican Republic" class="flag-icon">
+                            <a href="https://www.diariolibre.com/mundo" target="_blank" class="article-link">China declares maximum alert for typhoon Matmo, evacuates over 150,000 people</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tha.svg" alt="Thailand" title="Thailand" class="flag-icon">
+                            <a href="https://www.nationthailand.com/news/world" target="_blank" class="article-link">Typhoon Matmo batters Guangdong, leaving widespread power outages</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/khm.svg" alt="Cambodia" title="Cambodia" class="flag-icon">
+                            <a href="https://cambodianess.com/world" target="_blank" class="article-link">Typhoon Matmo Prompts Mass Evacuations in South China</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lao.svg" alt="Laos" title="Laos" class="flag-icon">
+                            <a href="http://kpl.gov.la/En/" target="_blank" class="article-link">China Activates Emergency Response as Typhoon Matmo Batters Coastal Regions</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #bf72e5; padding: 8px 16px; border-radius: 4px;">Eastern Africa and Nile Basin Flooding Fuel Geopolitical Water Disputes</h3>
+        <p class="cluster-description">Articles from Bahrain, Bangladesh, and Senegal stress the compounded effects of floods along the Nile affecting Egypt, Sudan, and West African nations, spotlighting humanitarian challenges and infrastructural damage. Central to this viewpoint is the escalating dispute between Egypt and Ethiopia over the Ethiopian mega-dam’s role in altering river flows and possibly intensifying floods, reflecting how environmental disasters intertwine with regional politics and resource competitions.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/brn.svg" alt="Brunei" title="Brunei" class="flag-icon">
+                            <a href="https://www.rtbnews.rtb.gov.bn/Lists/News%202018/Category_International.aspx" target="_blank" class="article-link">Surging Nile waters inundate Egypt and Sudan, revive dispute over Ethiopian mega-dam</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgd.svg" alt="Bangladesh" title="Bangladesh" class="flag-icon">
+                            <a href="https://bdnews24.com/world" target="_blank" class="article-link">Surging Nile waters inundate Egypt, Sudan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gab.svg" alt="Gabon" title="Gabon" class="flag-icon">
+                            <a href="https://info241.com/international,011" target="_blank" class="article-link">Senegal: Over 3,800 displaced after floods in the east</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e572b8; padding: 8px 16px; border-radius: 4px;">Isolated Seismic and Weather Events with Local Impact</h3>
+        <p class="cluster-description">Various countries including Belarus, Afghanistan, the Philippines, Serbia, and the United States report isolated but impactful natural disasters such as earthquakes in Kamchatka, Afghanistan, and the Philippines, as well as a deadly tornado striking North Dakota. These reports center on the immediate effects of these events, casualty counts, and emergency responses, illustrating the diverse nature of natural disasters worldwide and regional-specific challenges in preparedness and recovery.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/blr.svg" alt="Belarus" title="Belarus" class="flag-icon">
+                            <a href="https://www.belta.by/" target="_blank" class="article-link">Quake Magnitude 5.5 Occurred in Kamchatka</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/are.svg" alt="United Arab Emirates" title="United Arab Emirates" class="flag-icon">
+                            <a href="https://gulfnews.com/world" target="_blank" class="article-link">Earthquake of magnitude 4.1 strikes Afghanistan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vnm.svg" alt="Vietnam" title="Vietnam" class="flag-icon">
+                            <a href="https://vietnamnews.vn/world" target="_blank" class="article-link">6.9-magnitude quake kills 26, damages heritage churches in Philippines’ Cebu</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/srb.svg" alt="Serbia" title="Serbia" class="flag-icon">
+                            <a href="https://www.blic.rs/vesti/svet" target="_blank" class="article-link">Winds of 338 km/h hit North Dakota; deadly tornado claims three lives, leaving a trail over 19 kilometers long</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e57f72; padding: 8px 16px; border-radius: 4px;">Regional Initiatives to Enhance Disaster Preparedness</h3>
+        <p class="cluster-description">The Caribbean’s initiative to establish the first regional Shelter Working Group reflects a proactive and collaborative approach to boosting disaster preparedness and shelter infrastructure across multiple islands. This viewpoint underscores the importance of regional coordination in managing natural disasters effectively and protecting vulnerable populations from future climatic hazards.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dma.svg" alt="DMA" title="DMA" class="flag-icon">
+                            <a href="https://emonewsdm.com/category/world/" target="_blank" class="article-link">Caribbean Launches First-Ever Shelter Working Group to Boost Disaster Preparedness</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Moderate Weather Warnings and Minimal Impact Assessments</h3>
+        <p class="cluster-description">An article from Guam&#39;s National Weather Service provides updated forecasts about a tropical disturbance expected to pass with minimal impacts. This viewpoint offers a contrast to other reports by conveying preparedness alongside reassurance that severe consequences are unlikely, highlighting the variability in natural disaster severity.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gum.svg" alt="GUM" title="GUM" class="flag-icon">
+                            <a href="https://www.guampdn.com/news/" target="_blank" class="article-link">NWS: Tropical disturbance to pass through Marianas Tuesday, no significant impacts expected</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "South Asian Focus on Monsoon-Induced Floods and Landslide Tragedies",
+                color: "#72e5ac",
+                data: [ {"id": "CA"},  {"id": "DK"},  {"id": "EG"},  {"id": "IE"},  {"id": "IN"},  {"id": "JO"},  {"id": "MV"},  {"id": "NP"},  {"id": "PH"},  {"id": "TZ"} ]
+            },
+        
+            {
+                name: "Mount Everest Blizzard and Storm Crisis: Multinational Rescue Challenges",
+                color: "#72cbe5",
+                data: [ {"id": "AU"},  {"id": "DE"},  {"id": "IM"},  {"id": "TW"},  {"id": "XK"} ]
+            },
+        
+            {
+                name: "China\u2019s Typhoon Matmo: Massive Preparations and Evacuations",
+                color: "#7279e5",
+                data: [ {"id": "DO"},  {"id": "KH"},  {"id": "LA"},  {"id": "TH"} ]
+            },
+        
+            {
+                name: "Eastern Africa and Nile Basin Flooding Fuel Geopolitical Water Disputes",
+                color: "#bf72e5",
+                data: [ {"id": "GA"} ]
+            },
+        
+            {
+                name: "Isolated Seismic and Weather Events with Local Impact",
+                color: "#e572b8",
+                data: [ {"id": "AE"},  {"id": "BY"},  {"id": "RS"},  {"id": "VN"} ]
+            },
+        
+            {
+                name: "Regional Initiatives to Enhance Disaster Preparedness",
+                color: "#e57f72",
+                data: [ {"id": "DM"} ]
+            },
+        
+            {
+                name: "Moderate Weather Warnings and Minimal Impact Assessments",
+                color: "#e5d272",
+                data: [ {"id": "GU"} ]
+            }
+        
+        
+            ,
+            {
+                name: "Different perspectives:\n- South Asian Focus on Monsoon-Induced Floods and Landslide Tragedies\n- Eastern Africa and Nile Basin Flooding Fuel Geopolitical Water Disputes",
+                color: "#AAAAAA",
+                data: [{"id": "BD"}]
+            },
+            {
+                name: "Different perspectives:\n- South Asian Focus on Monsoon-Induced Floods and Landslide Tragedies\n- Mount Everest Blizzard and Storm Crisis: Multinational Rescue Challenges\n- Eastern Africa and Nile Basin Flooding Fuel Geopolitical Water Disputes",
+                color: "#AAAAAA",
+                data: [{"id": "BN"}]
+            },
+            {
+                name: "Different perspectives:\n- South Asian Focus on Monsoon-Induced Floods and Landslide Tragedies\n- Mount Everest Blizzard and Storm Crisis: Multinational Rescue Challenges\n- China\u2019s Typhoon Matmo: Massive Preparations and Evacuations",
+                color: "#AAAAAA",
+                data: [{"id": "KZ"}]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Hide sources ▲' : 'Show sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li class="active-m">
+               <a href="/">Home </a>
+            </li>
+            <li>
+              <a href="/en/about.html">About</a>
+            </li>
+            <li>
+              <a href="/en/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
