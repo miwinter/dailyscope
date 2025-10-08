@@ -1,0 +1,1353 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Diplomatie complexe et perspectives internationales diverses dans le contexte du conflit à Gaza</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/fr', '/en');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>                 
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Diplomatie complexe et perspectives internationales diverses dans le contexte du conflit à Gaza</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-10-08</span> • <span>190 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-10-08/2025-10-08-1.jpg" alt="Diplomatie complexe et perspectives internationales diverses dans le contexte du conflit à Gaza" class="main-image">
+                <p style="margin:0">Le conflit en cours à Gaza marque son deuxième anniversaire avec des conséquences humanitaires dévastatrices des deux côtés, notamment un grand nombre de victimes, des otages pris par le Hamas, et une destruction sévère des infrastructures à Gaza. Les négociations pour un cessez-le-feu et la paix, principalement centrées sur un plan négocié par les États-Unis proposé par l&#39;ancien président Donald Trump, sont activement en cours avec la médiation d&#39;acteurs régionaux tels que l&#39;Égypte, le Qatar et la Turquie. Les points de vue divergent fortement : Israël et ses alliés proches mettent l&#39;accent sur les objectifs militaires et les préoccupations de sécurité, le Hamas et certains soutiens régionaux exigent des garanties et des conditions pour la paix, tandis que de nombreux groupes internationaux et activistes condamnent la crise humanitaire et appellent à un cessez-le-feu urgent et à un accès humanitaire. La communauté internationale reste divisée, certains pays privilégiant le dialogue diplomatique, d&#39;autres condamnant la violence en cours et dénonçant d&#39;éventuels crimes de guerre et les impacts du blocus.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div class="key-points">
+        <h2>Les pays qui en parlent</h2>
+    </div>
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Perspectives sécuritaires israéliennes et militaires dures</h3>
+        <p class="cluster-description">Ce groupe reflète le point de vue d&#39;Israël et de ses principaux alliés soulignant la poursuite des opérations militaires jusqu&#39;à la neutralisation du Hamas, avec un fort accent sur la sécurité, l&#39;élimination des menaces et le retour des otages. Les commémorations des attaques du Hamas renforcent leur récit de victimisation et de justification des actions militaires. L&#39;implication des États-Unis, notamment sous l&#39;ancien président Donald Trump, soutient les efforts de négociation conditionnés à la conformité du Hamas mais appuie également les réponses militaires d&#39;Israël. Ces pays soutiennent les pourparlers diplomatiques en cours tout en insistant sur la responsabilité du Hamas et en exigeant des garanties de sécurité, s&#39;opposant souvent à des cessez-le-feu sans termes concrets.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jpn.svg" alt="Japon" title="Japon" class="flag-icon">
+                            <a href="https://www.yomiuri.co.jp/world/" target="_blank" class="article-link">Le Premier ministre israélien Netanyahu promet de poursuivre les actions jusqu&#39;à la destruction du Hamas lors d&#39;un grand service commémoratif</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hnd.svg" alt="Honduras" title="Honduras" class="flag-icon">
+                            <a href="https://www.elheraldo.hn/mundo" target="_blank" class="article-link">Israël commémore les victimes de l&#39;attaque du Hamas dont les enfants ont été enlevés</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/rou.svg" alt="Roumanie" title="Roumanie" class="flag-icon">
+                            <a href="https://adevarul.ro/news/eveniment/" target="_blank" class="article-link">Nicusor Dan appelle à un cessez-le-feu et à la libération des otages deux ans après les attaques du Hamas contre Israël</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ven.svg" alt="Venezuela" title="Venezuela" class="flag-icon">
+                            <a href="https://www.elnacional.com/mundo/" target="_blank" class="article-link">« Nous sommes dans des jours décisifs » : Netanyahu deux ans après les attaques du Hamas</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tza.svg" alt="Tanzanie" title="Tanzanie" class="flag-icon">
+                            <a href="https://dailynews.co.tz/category/world/" target="_blank" class="article-link">L&#39;image publique d&#39;Israël endommagée par la guerre à Gaza – Rubio</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/can.svg" alt="Canada" title="Canada" class="flag-icon">
+                            <a href="https://www.theglobeandmail.com/world/" target="_blank" class="article-link">Les Israéliens marquent le deuxième anniversaire de l&#39;attaque du 7 octobre alors que la guerre à Gaza se poursuit</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/can.svg" alt="Canada" title="Canada" class="flag-icon">
+                            <a href="https://www.theglobeandmail.com/world/" target="_blank" class="article-link">Israël et le Hamas entament des négociations en Égypte pour mettre fin à la guerre de Gaza de deux ans</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/can.svg" alt="Canada" title="Canada" class="flag-icon">
+                            <a href="https://www.thestar.com/news/world.html" target="_blank" class="article-link">Les pourparlers de paix à Gaza entrent dans leur deuxième jour à l&#39;occasion de l&#39;anniversaire de la guerre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/chl.svg" alt="Chili" title="Chili" class="flag-icon">
+                            <a href="https://www.latercera.com/categoria/mundo/" target="_blank" class="article-link">Deux ans après les attaques du Hamas : Israël plus fort mais « isolé » et Gaza totalement dévastée</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hrv.svg" alt="Croatie" title="Croatie" class="flag-icon">
+                            <a href="https://www.vecernji.hr/vijesti/svijet" target="_blank" class="article-link">Israël et le Hamas parviennent à un « progrès » lors des premiers jours des négociations de guerre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kor.svg" alt="Corée du Sud" title="Corée du Sud" class="flag-icon">
+                            <a href="https://www.chosun.com/international/" target="_blank" class="article-link">Général à la retraite sauve son fils piégé dans une zone contrôlée par le Hamas, armé comme dans le film &#34;Taken&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bra.svg" alt="Brésil" title="Brésil" class="flag-icon">
+                            <a href="https://oglobo.globo.com/mundo/" target="_blank" class="article-link">Israël commémore deux ans depuis l&#39;attaque alors que le Hamas exige le retrait militaire de Gaza et la libération du dernier otage</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/est.svg" alt="Estonie" title="Estonie" class="flag-icon">
+                            <a href="https://maailm.postimees.ee/" target="_blank" class="article-link">Israël commémore les atrocités du Hamas, Gaza attend le cessez-le-feu</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/est.svg" alt="Estonie" title="Estonie" class="flag-icon">
+                            <a href="https://maailm.postimees.ee/" target="_blank" class="article-link">Israël et Gaza : espoir de résolution dans les prochains jours</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/est.svg" alt="Estonie" title="Estonie" class="flag-icon">
+                            <a href="https://www.delfi.ee/kategooria/123/maailm" target="_blank" class="article-link">Les négociations se poursuivent en Égypte sur l&#39;accord de paix à Gaza ; Trump dit que les perspectives d&#39;accord sont très bonnes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/moz.svg" alt="Mozambique" title="Mozambique" class="flag-icon">
+                            <a href="https://opais.co.mz/internacional/" target="_blank" class="article-link">Israël et le Hamas tiendront des pourparlers en Égypte</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/per.svg" alt="Pérou" title="Pérou" class="flag-icon">
+                            <a href="https://larepublica.pe/mundo/" target="_blank" class="article-link">La bande de Gaza reste en ruines deux ans après la guerre alors qu&#39;Israël et le Hamas négocient le plan de paix de Trump</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/usa.svg" alt="États-Unis" title="États-Unis" class="flag-icon">
+                            <a href="https://abcnews.go.com/International" target="_blank" class="article-link">Les frères et sœurs des otages israéliens se battent pour leur retour lors de la commémoration de deux ans du 7 octobre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/usa.svg" alt="États-Unis" title="États-Unis" class="flag-icon">
+                            <a href="https://abcnews.go.com/International" target="_blank" class="article-link">Des pourparlers de paix en cours pour mettre fin à la guerre à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/col.svg" alt="Colombie" title="Colombie" class="flag-icon">
+                            <a href="https://www.eltiempo.com/mundo" target="_blank" class="article-link">Israël et le Hamas négocient la fin de la guerre à Gaza en Égypte selon le plan de Trump : y aura-t-il un accord ?</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jor.svg" alt="Jordanie" title="Jordanie" class="flag-icon">
+                            <a href="https://www.jordannews.jo/Category/18/Global" target="_blank" class="article-link">Égypte : Les négociations à Gaza incluent des garanties pour le retrait israélien, la fin de la guerre et l&#39;entrée de l&#39;aide</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gnb.svg" alt="Guinée-Bissau" title="Guinée-Bissau" class="flag-icon">
+                            <a href="https://una-oic.org/News/all/" target="_blank" class="article-link">La Jordanie agit comme pilier humanitaire et diplomatique soutenant Gaza depuis le début de l&#39;agression</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ind.svg" alt="Inde" title="Inde" class="flag-icon">
+                            <a href="https://timesofindia.indiatimes.com/world" target="_blank" class="article-link">Donald Trump dit que l&#39;accord de paix à Gaza est « très proche » ; les négociations pourraient remodeler la région plus large</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/alb.svg" alt="Albanie" title="Albanie" class="flag-icon">
+                            <a href="http://www.gsh.al/category/bota/" target="_blank" class="article-link">Israël et le Hamas entament des pourparlers de paix à Sharm el-Sheikh axés sur un cessez-le-feu et la libération des prisonniers</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lka.svg" alt="Sri Lanka" title="Sri Lanka" class="flag-icon">
+                            <a href="https://sinhala.newsfirst.lk/world" target="_blank" class="article-link">La guerre entre Israël et le Hamas atteint deux ans</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aut.svg" alt="Autriche" title="Autriche" class="flag-icon">
+                            <a href="https://kurier.at/politik/ausland" target="_blank" class="article-link">Aucun progrès lors du deuxième jour de négociations à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aut.svg" alt="Autriche" title="Autriche" class="flag-icon">
+                            <a href="https://www.diepresse.com/ausland" target="_blank" class="article-link">Le Hamas abandonnera-t-il ses armes lourdes ?</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aut.svg" alt="Autriche" title="Autriche" class="flag-icon">
+                            <a href="https://www.diepresse.com/ausland" target="_blank" class="article-link">Deux ans après le massacre du 7 octobre : « Les blessures intérieures ne cicatrisent pas facilement »</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/egy.svg" alt="Égypte" title="Égypte" class="flag-icon">
+                            <a href="https://www.dailynewsegypt.com/category/politics/" target="_blank" class="article-link">Opinion | Hamas, Trump, et l&#39;avenir de Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/guy.svg" alt="Guyana" title="Guyana" class="flag-icon">
+                            <a href="https://www.stabroeknews.com/news/world/" target="_blank" class="article-link">Les négociations à Gaza se concentrent sur les points de friction clés entre Israël et le Hamas</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/are.svg" alt="Émirats arabes unis" title="Émirats arabes unis" class="flag-icon">
+                            <a href="https://www.thenationalnews.com/international" target="_blank" class="article-link">Négociations indirectes à Charm el-Cheikh largement considérées comme les plus prometteuses pour mettre fin à la guerre à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/isl.svg" alt="Islande" title="Islande" class="flag-icon">
+                            <a href="https://www.frettabladid.is/frettir/" target="_blank" class="article-link">Magga Stína navigue toujours avec la Flottille de la Liberté vers Gaza – pourrait être arrêtée par Israël demain</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/chn.svg" alt="Chine" title="Chine" class="flag-icon">
+                            <a href="https://www.globaltimes.cn/world/" target="_blank" class="article-link">Le Premier ministre israélien espère ramener tous les otages dans les jours qui viennent alors que l&#39;Égypte doit accueillir des pourparlers sur la proposition de cessez-le-feu des États-Unis</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lbn.svg" alt="Liban" title="Liban" class="flag-icon">
+                            <a href="https://www.lorientlejour.com/rubrique/7-moyen-orient-et-monde" target="_blank" class="article-link">Hamas exige des « garanties de Trump » pour un accord à Gaza, Netanyahu promet « le retour de tous les otages »</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lbn.svg" alt="Liban" title="Liban" class="flag-icon">
+                            <a href="https://www.annahar.com/International" target="_blank" class="article-link">Israël après deux ans de guerre : puissance militaire, isolement international et division interne</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/che.svg" alt="Suisse" title="Suisse" class="flag-icon">
+                            <a href="https://www.letemps.ch/monde" target="_blank" class="article-link">En direct, Moyen-Orient – Renforts diplomatiques envoyés en Égypte pour faire avancer un accord sur Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vat.svg" alt="Saint-Siège" title="Saint-Siège" class="flag-icon">
+                            <a href="https://www.vaticannews.va/it/mondo.html" target="_blank" class="article-link">Israël commémore les victimes du 7 octobre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vat.svg" alt="Saint-Siège" title="Saint-Siège" class="flag-icon">
+                            <a href="https://www.vaticannews.va/it/mondo.html" target="_blank" class="article-link">Gaza, deuxième cycle de négociations en Égypte. Trump : « Climat positif »</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hkg.svg" alt="HKG" title="HKG" class="flag-icon">
+                            <a href="https://www.scmp.com/news/world" target="_blank" class="article-link">Trump dit qu&#39;il y a une « vraie chance » de mettre fin à la guerre à Gaza, Hamas cherche des garanties américaines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aus.svg" alt="Australie" title="Australie" class="flag-icon">
+                            <a href="https://www.smh.com.au/world" target="_blank" class="article-link">Deux ans après l&#39;attaque du 7 octobre, Israël est en guerre avec lui-même</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72bbe5; padding: 8px 16px; border-radius: 4px;">Hamas et ses alliés régionaux prônent des négociations avec conditions</h3>
+        <p class="cluster-description">Ce cluster regroupe des articles de représentants du Hamas et de leurs alliés régionaux tels que le Qatar, la Turquie et certains pays arabes, axés sur les demandes de négociation, y compris des garanties pour la paix, la libération d&#39;otages, l&#39;assouplissement des blocus et des cessez-le-feu conditionnels. Le Hamas exprime sa volonté de négocier mais insiste sur des conditions et garanties fermes, notamment le désarmement et les échanges de prisonniers. Les médiateurs régionaux participent activement à la médiation de ces discussions, le Hamas cherchant à obtenir une légitimité et des assurances de sécurité par le biais d&#39;acteurs externes, tout en soulignant les violations d&#39;Israël comme des obstacles à la paix. Le discours équilibre les appels à la négociation avec une rhétorique qui encadre la résistance et les revendications de légitimité.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgr.svg" alt="Bulgarie" title="Bulgarie" class="flag-icon">
+                            <a href="https://www.24chasa.bg/mezhdunarodni" target="_blank" class="article-link">Le chef de la délégation du Hamas en Égypte exige des garanties de paix de la part de Trump pour Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgr.svg" alt="Bulgarie" title="Bulgarie" class="flag-icon">
+                            <a href="https://www.24chasa.bg/mezhdunarodni" target="_blank" class="article-link">Le Premier ministre turc participera aux négociations de paix pour Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cyp.svg" alt="Chypre" title="Chypre" class="flag-icon">
+                            <a href="https://www.philenews.com/kosmos/" target="_blank" class="article-link">Hamas : Voici les principales demandes lors des négociations au Caire</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cyp.svg" alt="Chypre" title="Chypre" class="flag-icon">
+                            <a href="https://cyprus-mail.com/category/world/" target="_blank" class="article-link">Hamas déclare, à l&#39;occasion de l&#39;anniversaire de la guerre, qu&#39;il est prêt à conclure un accord pour Gaza, mais que les conditions restent en place</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sgp.svg" alt="Singapour" title="Singapour" class="flag-icon">
+                            <a href="https://www.straitstimes.com/global" target="_blank" class="article-link">Hamas déclare, à l&#39;occasion de l&#39;anniversaire de la guerre, qu&#39;il est sérieux quant à l&#39;accord pour Gaza, mais que les conditions restent en place</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gum.svg" alt="GUM" title="GUM" class="flag-icon">
+                            <a href="https://www.guampdn.com/news/" target="_blank" class="article-link">Qatar, Turquie : participation au troisième jour de pourparlers de paix à Gaza en Égypte</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svn.svg" alt="Slovénie" title="Slovénie" class="flag-icon">
+                            <a href="https://www.delo.si/novice/svet" target="_blank" class="article-link">L&#39;Allemagne espère réussir les négociations sur la guerre à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ton.svg" alt="Tonga" title="Tonga" class="flag-icon">
+                            <a href="https://tongaindependent.com/politics/" target="_blank" class="article-link">Le Premier ministre israélien promet d&#39;intensifier l&#39;offensive militaire et d&#39;appliquer le plan de &#39;migration volontaire&#39; soutenu par le président américain Donald Trump</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kos.svg" alt="KOS" title="KOS" class="flag-icon">
+                            <a href="https://www.rtklive.com/sq/news-category.php?CatID=10" target="_blank" class="article-link">Hamas prêt pour la paix à Gaza, mais avec des conditions claires</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lux.svg" alt="Luxembourg" title="Luxembourg" class="flag-icon">
+                            <a href="https://www.wort.lu/fr/international" target="_blank" class="article-link">Gaza : Trump dit que Hamas &#34;a accepté des choses très importantes&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bhr.svg" alt="Bahreïn" title="Bahreïn" class="flag-icon">
+                            <a href="https://akhbar-alkhaleej.com/news/section/WORL" target="_blank" class="article-link">Hamas : « Al-Aqsa Flood » est une réponse historique aux conspirations visant à liquider la cause palestinienne</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bhr.svg" alt="Bahreïn" title="Bahreïn" class="flag-icon">
+                            <a href="https://akhbar-alkhaleej.com/news/section/WORL" target="_blank" class="article-link">Qatar : Israël aurait dû arrêter de tirer selon le plan de Trump</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sxm.svg" alt="SXM" title="SXM" class="flag-icon">
+                            <a href="https://www.thedailyherald.sx/" target="_blank" class="article-link">Hamas déclare à l&#39;occasion de l&#39;anniversaire de la guerre qu&#39;il est prêt à parvenir à un accord à Gaza, mais les conditions restent</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/grc.svg" alt="Grèce" title="Grèce" class="flag-icon">
+                            <a href="https://www.tovima.gr/category/world/" target="_blank" class="article-link">Flottille Sumud mondiale : cri de détresse pour les prisonniers restants</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/grc.svg" alt="Grèce" title="Grèce" class="flag-icon">
+                            <a href="https://www.tovima.gr/category/world/" target="_blank" class="article-link">Gaza : négociateurs de haut niveau en Égypte - Hamas cherche des garanties de Trump</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cub.svg" alt="Cuba" title="Cuba" class="flag-icon">
+                            <a href="http://www.juventudrebelde.cu/internacionales/" target="_blank" class="article-link">Hamas relève le défi des États-Unis</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cub.svg" alt="Cuba" title="Cuba" class="flag-icon">
+                            <a href="http://www.juventudrebelde.cu/internacionales/" target="_blank" class="article-link">Dialogue indirect entre Hamas et Israël en Égypte</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kwt.svg" alt="Koweït" title="Koweït" class="flag-icon">
+                            <a href="https://kuwaittimes.com/world/" target="_blank" class="article-link">Le blocus de l&#39;entité sioniste oblige les bébés de Gaza à partager des masques à oxygène</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kwt.svg" alt="Koweït" title="Koweït" class="flag-icon">
+                            <a href="https://www.aljarida.com/%D8%AF%D9%88%D9%84%D9%8A%D8%A7%D8%AA" target="_blank" class="article-link">Trump voit une réelle opportunité pour un accord de paix à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mdv.svg" alt="Maldives" title="Maldives" class="flag-icon">
+                            <a href="https://mihaaru.com/world" target="_blank" class="article-link">Trump offre une opportunité pour un accord à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mdv.svg" alt="Maldives" title="Maldives" class="flag-icon">
+                            <a href="https://mihaaru.com/world" target="_blank" class="article-link">Hamas rejette les propositions de cessez-le-feu</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pse.svg" alt="Palestine" title="Palestine" class="flag-icon">
+                            <a href="http://www.al-ayyam.ps/" target="_blank" class="article-link">Trump menace Hamas, dit que les négociations à Gaza pourraient durer &#34;quelques jours&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/arg.svg" alt="Argentine" title="Argentine" class="flag-icon">
+                            <a href="https://www.clarin.com/mundo/" target="_blank" class="article-link">Hamas affirme être prêt pour des pourparlers de paix à Gaza, exige des garanties</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/blr.svg" alt="Biélorussie" title="Biélorussie" class="flag-icon">
+                            <a href="https://www.belta.by/" target="_blank" class="article-link">Hamas déclare que sa priorité est le cessez-le-feu à Gaza et l&#39;échange d&#39;otages</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/esp.svg" alt="Espagne" title="Espagne" class="flag-icon">
+                            <a href="https://elpais.com/internacional/" target="_blank" class="article-link">Hamas exige des garanties pour la paix à Gaza et Trump s&#39;engage à faire &#34;tout son possible&#34; pour assurer le respect</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/esp.svg" alt="Espagne" title="Espagne" class="flag-icon">
+                            <a href="https://www.elmundo.es/internacional.html" target="_blank" class="article-link">Hamas accepte de remettre des armes à un comité égypto-palestinien</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nga.svg" alt="Nigeria" title="Nigeria" class="flag-icon">
+                            <a href="https://guardian.ng/category/world/" target="_blank" class="article-link">Israël et Hamas entament des négociations indirectes à Gaza en Égypte</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/chn.svg" alt="Chine" title="Chine" class="flag-icon">
+                            <a href="https://www.chinadaily.com.cn/world" target="_blank" class="article-link">La Chine condamne le veto des États-Unis à l&#39;ONU sur la résolution concernant Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lbn.svg" alt="Liban" title="Liban" class="flag-icon">
+                            <a href="https://www.lorientlejour.com/rubrique/7-moyen-orient-et-monde" target="_blank" class="article-link">Offensives meurtrières, assassinats lors de la distribution d&#39;aide, famine : le coût humain de deux ans d&#39;opérations israéliennes à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fra.svg" alt="France" title="France" class="flag-icon">
+                            <a href="https://www.lemonde.fr/international/" target="_blank" class="article-link">Hamas exige des &#34;garanties&#34; de Donald Trump en cas d&#39;accord de paix à Gaza</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #8d72e5; padding: 8px 16px; border-radius: 4px;">Perspective humanitaire et activiste internationale condamnant la violence et les blocus</h3>
+        <p class="cluster-description">Les pays et acteurs internationaux opérant d&#39;un point de vue humanitaire condamnent la violence en cours, soulignant les pertes civiles, les restrictions d&#39;accès humanitaire, les violations présumées des droits de l&#39;homme et la détérioration des conditions de vie à Gaza. Des figures activistes comme Greta Thunberg et les participants à la flottille rapportent des mauvais traitements par les autorités israéliennes et appellent à une protection et une assistance immédiates pour la population de Gaza. Cette perspective critique fortement à la fois les opérations militaires d&#39;Israël et le blocus, en qualifiant la situation de crise humanitaire ou même de génocide, et appelle à une intervention internationale, des cessez-le-feu et le respect des droits de l&#39;homme.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/idn.svg" alt="Indonésie" title="Indonésie" class="flag-icon">
+                            <a href="https://www.thejakartapost.com/world" target="_blank" class="article-link">&#39;Nous avons été traités comme des animaux&#39;, disent les activistes de la flottille de Gaza expulsés</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sgp.svg" alt="Singapour" title="Singapour" class="flag-icon">
+                            <a href="https://www.straitstimes.com/global" target="_blank" class="article-link">Greta Thunberg accuse de torture en détention israélienne après l&#39;arrestation lors de la flottille de Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sau.svg" alt="Arabie Saoudite" title="Arabie Saoudite" class="flag-icon">
+                            <a href="https://www.arabnews.com/international" target="_blank" class="article-link">La flottille d&#39;aide à Gaza affirme que les forces israéliennes ont attaqué le convoi, interceptant plusieurs bateaux</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sau.svg" alt="Arabie Saoudite" title="Arabie Saoudite" class="flag-icon">
+                            <a href="https://www.arabnews.com/international" target="_blank" class="article-link">Un Palestinien détenu sans inculpation meurt en détention israélienne</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lux.svg" alt="Luxembourg" title="Luxembourg" class="flag-icon">
+                            <a href="https://www.wort.lu/fr/international" target="_blank" class="article-link">Gaza : des négociations indirectes en Égypte commencent pour mettre fin à la guerre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Irlande" title="Irlande" class="flag-icon">
+                            <a href="https://www.independent.ie/world-news/" target="_blank" class="article-link">Des milliers d&#39;Israéliens pleurent les victimes lors de l&#39;anniversaire de l&#39;attaque du Hamas</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/arg.svg" alt="Argentine" title="Argentine" class="flag-icon">
+                            <a href="https://www.lanacion.com.ar/el-mundo" target="_blank" class="article-link">Réponse historique : Israël évoque l&#39;horreur de l&#39;attaque du 7 octobre face à un message défiant du Hamas et aux négociations de paix</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gnb.svg" alt="Guinée-Bissau" title="Guinée-Bissau" class="flag-icon">
+                            <a href="https://una-oic.org/News/all/" target="_blank" class="article-link">29 paramédics du Croissant-Rouge palestinien morts à Gaza depuis le début de la guerre d&#39;extermination</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aut.svg" alt="Autriche" title="Autriche" class="flag-icon">
+                            <a href="https://kurier.at/politik/ausland" target="_blank" class="article-link">Les activistes autrichiens de la flotte d&#39;aide à Gaza sont retournés à Vienne</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ltu.svg" alt="Lituanie" title="Lituanie" class="flag-icon">
+                            <a href="https://www.lrytas.lt/pasaulis" target="_blank" class="article-link">Deuxième anniversaire de la guerre entre le Hamas et Israël : Gaza détruite, ombre de génocide et nouvel espoir</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/chn.svg" alt="Chine" title="Chine" class="flag-icon">
+                            <a href="https://www.chinadaily.com.cn/world" target="_blank" class="article-link">Condamnation de l&#39;interception de la flottille de Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pol.svg" alt="Pologne" title="Pologne" class="flag-icon">
+                            <a href="https://wyborcza.pl/0,0.html?disableRedirects=true" target="_blank" class="article-link">Le Premier ministre britannique exhorte les étudiants à ne pas manifester pour la Palestine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pol.svg" alt="Pologne" title="Pologne" class="flag-icon">
+                            <a href="https://www.rp.pl/temat/swiat" target="_blank" class="article-link">Deux ans de guerre à Gaza : Beniamin Netanyahu paiera, le karma lui reviendra</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cze.svg" alt="République tchèque" title="République tchèque" class="flag-icon">
+                            <a href="https://www.idnes.cz/zpravy/zahranicni" target="_blank" class="article-link">Israël a expulsé une citoyenne tchèque de la flottille détenue, la Jordanie l&#39;a prise en charge à la frontière</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cze.svg" alt="République tchèque" title="République tchèque" class="flag-icon">
+                            <a href="https://www.lidovky.cz/svet" target="_blank" class="article-link">Israël expulse une femme tchèque de la flottille détenue, la Jordanie prend la garde à la frontière</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e572da; padding: 8px 16px; border-radius: 4px;">Médiation active et soutien stratégique des États-Unis</h3>
+        <p class="cluster-description">Les États-Unis, en particulier sous l&#39;influence de l&#39;ancien président Donald Trump, agissent comme un médiateur proactif, en promouvant des initiatives de paix et des propositions de cessez-le-feu entre Israël et le Hamas tout en fournissant une aide militaire substantielle à Israël. La rhétorique de Trump met l&#39;accent sur l&#39;optimisme quant à la conclusion d&#39;un accord de paix et exerce une pression sur les dirigeants israéliens et du Hamas pour qu&#39;ils se conforment aux négociations. La participation de la délégation américaine aux pourparlers souligne un rôle stratégique visant à gérer les hostilités, à sécuriser la libération des otages et à stabiliser la dynamique régionale. Il est également reconnu qu&#39;il existe des divisions politiques en Israël influencées par les plans de paix américains et les réactions internationales à l&#39;implication américaine.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/imn.svg" alt="IMN" title="IMN" class="flag-icon">
+                            <a href="https://www.manxradio.com/news/" target="_blank" class="article-link">Trump optimiste concernant l&#39;accord de paix à Gaza - alors que les Israéliens commémorent le anniversaire du 7 octobre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/idn.svg" alt="Indonésie" title="Indonésie" class="flag-icon">
+                            <a href="https://www.kompas.com/global" target="_blank" class="article-link">Donald Trump dit qu&#39;il y a une vraie chance de mettre fin à la guerre à Gaza alors qu&#39;Israël marque le 7 octobre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bel.svg" alt="Belgique" title="Belgique" class="flag-icon">
+                            <a href="https://www.lalibre.be/international" target="_blank" class="article-link">Trump voit une &#34;vraie chance&#34; de conclure un accord de paix pour Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bel.svg" alt="Belgique" title="Belgique" class="flag-icon">
+                            <a href="https://www.lalibre.be/international" target="_blank" class="article-link">Négociations sur Gaza : la délégation américaine, dirigée par Witkoff, rejoindra les discussions mercredi</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sau.svg" alt="Arabie Saoudite" title="Arabie Saoudite" class="flag-icon">
+                            <a href="https://saudigazette.com.sa/World" target="_blank" class="article-link">Trump dit que la nouvelle équipe américaine rejoint les discussions sur Gaza, exprimant l&#39;espoir d&#39;un accord de paix imminent</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgd.svg" alt="Bangladesh" title="Bangladesh" class="flag-icon">
+                            <a href="https://bdnews24.com/world" target="_blank" class="article-link">Trump dit qu&#39;il est optimiste quant à un accord à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hti.svg" alt="Haïti" title="Haïti" class="flag-icon">
+                            <a href="https://lenouvelliste.com/international" target="_blank" class="article-link">Points clés du plan de Trump pour le conflit à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mac.svg" alt="MAC" title="MAC" class="flag-icon">
+                            <a href="https://macaudailytimes.com.mo/category/world" target="_blank" class="article-link">Netanyahu espère annoncer la libération de tous les otages de Gaza &#34;dans les prochains jours&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mac.svg" alt="MAC" title="MAC" class="flag-icon">
+                            <a href="https://www.macaubusiness.com/category/mna/international/" target="_blank" class="article-link">Trump dit qu&#39;il y a une &#34;vraie chance&#34; de mettre fin à la guerre à Gaza alors qu&#39;Israël marque l&#39;anniversaire des attaques</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/qat.svg" alt="Qatar" title="Qatar" class="flag-icon">
+                            <a href="https://www.al-watan.com/%D8%B9%D8%B1%D8%A8%D9%8A-%D9%88%D8%AF%D9%88%D9%84%D9%8A" target="_blank" class="article-link">Human Rights Watch appelle à une action immédiate pour protéger Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svk.svg" alt="Slovaquie" title="Slovaquie" class="flag-icon">
+                            <a href="https://spravy.pravda.sk/svet/" target="_blank" class="article-link">Israël marque le deuxième anniversaire de l&#39;attaque sans précédent du Hamas</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lux.svg" alt="Luxembourg" title="Luxembourg" class="flag-icon">
+                            <a href="https://www.tageblatt.lu/headlines/" target="_blank" class="article-link">Israël commémore les victimes de l&#39;attaque du Hamas il y a deux ans - la poursuite des négociations sur Gaza est attendue</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/omn.svg" alt="Oman" title="Oman" class="flag-icon">
+                            <a href="https://www.omanobserver.om/world" target="_blank" class="article-link">33 morts dans les attaques israéliennes sur la bande de Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/omn.svg" alt="Oman" title="Oman" class="flag-icon">
+                            <a href="https://www.omanobserver.om/world" target="_blank" class="article-link">Les forces israéliennes bombardent Gaza à l&#39;occasion de l&#39;anniversaire de la guerre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/som.svg" alt="Somalie" title="Somalie" class="flag-icon">
+                            <a href="https://www.radiodalsan.com/category/news-in-english/" target="_blank" class="article-link">Sommet pour la paix sur Gaza s&#39;ouvre en Égypte dans un contexte de relance des efforts pour un cessez-le-feu négocié par les États-Unis</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/isr.svg" alt="Israël" title="Israël" class="flag-icon">
+                            <a href="https://www.jpost.com/International" target="_blank" class="article-link">Les dirigeants mondiaux marquent le deuxième anniversaire du 7 octobre, appellent à la fin de la guerre et à la libération des otages</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/moz.svg" alt="Mozambique" title="Mozambique" class="flag-icon">
+                            <a href="https://opais.co.mz/internacional/" target="_blank" class="article-link">L&#39;armée israélienne va poursuivre la proposition de cessez-le-feu à Gaza soutenue par les États-Unis</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kaz.svg" alt="Kazakhstan" title="Kazakhstan" class="flag-icon">
+                            <a href="https://kazpravda.kz/r/v-mire/" target="_blank" class="article-link">La première ronde de négociations sur le cessez-le-feu à Gaza se termine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mne.svg" alt="Monténégro" title="Monténégro" class="flag-icon">
+                            <a href="https://www.vijesti.me/svijet" target="_blank" class="article-link">Netanyahu a promis le retour de tous les « otages » de Gaza, Hamas demande des garanties de Trump pour un accord</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/npl.svg" alt="Népal" title="Népal" class="flag-icon">
+                            <a href="https://ekantipur.com/world" target="_blank" class="article-link">Des négociations indirectes entre Israël et le Hamas en cours en Égypte pour mettre fin à la guerre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nzl.svg" alt="Nouvelle-Zélande" title="Nouvelle-Zélande" class="flag-icon">
+                            <a href="https://www.nzherald.co.nz/world/" target="_blank" class="article-link">L&#39;administration Trump intervient pour secourir une femme à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nzl.svg" alt="Nouvelle-Zélande" title="Nouvelle-Zélande" class="flag-icon">
+                            <a href="https://www.rnz.co.nz/news/world" target="_blank" class="article-link">Les forces israéliennes bombardent Gaza à l&#39;occasion de l&#39;anniversaire de la guerre, le Hamas et Israël discutent du plan de Trump</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nzl.svg" alt="Nouvelle-Zélande" title="Nouvelle-Zélande" class="flag-icon">
+                            <a href="https://www.rnz.co.nz/news/world" target="_blank" class="article-link">Des négociations indirectes entre Israël et le Hamas sont en cours</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/per.svg" alt="Pérou" title="Pérou" class="flag-icon">
+                            <a href="https://elcomercio.pe/mundo/" target="_blank" class="article-link">Le plan de Trump pour Gaza est décidé en Égypte : quels sont les enjeux les plus difficiles pour Israël et le Hamas ?</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/usa.svg" alt="États-Unis" title="États-Unis" class="flag-icon">
+                            <a href="https://edition.cnn.com/world" target="_blank" class="article-link">Mises à jour en direct : 7 octobre 2025 - Guerre Israël-Hamas</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mng.svg" alt="Mongolie" title="Mongolie" class="flag-icon">
+                            <a href="https://montsame.mn/mn/more/17" target="_blank" class="article-link">Les pourparlers sur la question du gaz montrent des progrès positifs</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/alb.svg" alt="Albanie" title="Albanie" class="flag-icon">
+                            <a href="http://www.gsh.al/category/bota/" target="_blank" class="article-link">Négociations de cessez-le-feu critiques à Gaza, délégation israélienne en Égypte ; Trump appelle à une résolution rapide</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lka.svg" alt="Sri Lanka" title="Sri Lanka" class="flag-icon">
+                            <a href="https://sinhala.newsfirst.lk/world" target="_blank" class="article-link">Le président américain met en garde l&#39;organisation Hamas</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/grl.svg" alt="GRL" title="GRL" class="flag-icon">
+                            <a href="https://sermitsiaq.ag/" target="_blank" class="article-link">Trump loue les négociations à Gaza : le Hamas a accepté des points importants</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/guy.svg" alt="Guyana" title="Guyana" class="flag-icon">
+                            <a href="https://www.kaieteurnewsonline.com/category/news/world-news/" target="_blank" class="article-link">Israël tue 10 Palestiniens à Gaza alors que les négociations de cessez-le-feu commencent en Égypte</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/esp.svg" alt="Espagne" title="Espagne" class="flag-icon">
+                            <a href="https://www.elmundo.es/internacional.html" target="_blank" class="article-link">Israël pleure les victimes du 7 octobre et fait confiance à Trump pour le retour imminent des otages</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lbn.svg" alt="Liban" title="Liban" class="flag-icon">
+                            <a href="https://www.lorientlejour.com/rubrique/7-moyen-orient-et-monde" target="_blank" class="article-link">Les négociations indirectes pour mettre fin à la guerre à Gaza commencent en Égypte</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irn.svg" alt="Iran" title="Iran" class="flag-icon">
+                            <a href="https://ifpnews.com/category/news/world/" target="_blank" class="article-link">La première journée des pourparlers de cessez-le-feu à Gaza se termine sur une note « positive » en Égypte</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/afg.svg" alt="Afghanistan" title="Afghanistan" class="flag-icon">
+                            <a href="https://www.pajhwok.com/en/world-news" target="_blank" class="article-link">Les frappes israéliennes tuent 70 Palestiniens malgré l&#39;appel à la trêve de Trump</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hkg.svg" alt="HKG" title="HKG" class="flag-icon">
+                            <a href="https://www.scmp.com/news/world" target="_blank" class="article-link">Israël bombarde Gaza à l&#39;occasion de l&#39;anniversaire de la guerre, au milieu des discussions avec le Hamas sur le plan de Trump</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e57276; padding: 8px 16px; border-radius: 4px;">Position Mixte des Pays Européens et Occidentaux : Commémoration, Diplomatie et Préoccupations relatives aux Droits Humains</h3>
+        <p class="cluster-description">Les nations européennes et occidentales adoptent une position multifacette impliquant la commémoration des victimes des attaques du Hamas, le soutien aux efforts diplomatiques souvent médiés par l&#39;Égypte et les États-Unis, la condamnation de la violence des deux côtés, et la levée de préoccupations relatives aux droits humains, y compris l&#39;opposition aux blocus et les allégations de crimes de guerre. Des pays comme la Suède, la Belgique et l&#39;Espagne mettent en avant des enjeux humanitaires et appellent à des cessez-le-feu, tout en maintenant des alliances avec Israël ou en insistant sur une diplomatie équilibrée. L&#39;activisme de la société civile, les protestations pro-palestiniennes et les voix critiques concernant les actions d&#39;Israël apparaissent de manière proéminente aux côtés des interventions diplomatiques menées par les gouvernements.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/swe.svg" alt="Suède" title="Suède" class="flag-icon">
+                            <a href="https://www.dn.se/varlden/" target="_blank" class="article-link">Nouveau convoi de Gaza apparemment attaqué par Israël</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/swe.svg" alt="Suède" title="Suède" class="flag-icon">
+                            <a href="https://www.svd.se/" target="_blank" class="article-link">Nouveau convoi de Gaza apparemment attaqué par Israël</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/swe.svg" alt="Suède" title="Suède" class="flag-icon">
+                            <a href="https://www.svd.se/" target="_blank" class="article-link">Violentes manifestations contre Israël à Athènes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bel.svg" alt="Belgique" title="Belgique" class="flag-icon">
+                            <a href="https://www.lavenir.net/actu/monde/" target="_blank" class="article-link">4 Belges libérés après la participation à la flottille de Gaza, en route vers la Grèce</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/can.svg" alt="Canada" title="Canada" class="flag-icon">
+                            <a href="https://www.theglobeandmail.com/world/" target="_blank" class="article-link">Greta Thunberg affirme avoir été torturée en prison israélienne lors de la détention lors de la flottille de Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/can.svg" alt="Canada" title="Canada" class="flag-icon">
+                            <a href="https://www.thestar.com/news/world.html" target="_blank" class="article-link">Protestations pro-Palestine lors du deuxième anniversaire de l&#39;attaque du Hamas contre Israël</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kos.svg" alt="KOS" title="KOS" class="flag-icon">
+                            <a href="https://www.koha.net/bote" target="_blank" class="article-link">Deux ans : comment Israël a détruit Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kos.svg" alt="KOS" title="KOS" class="flag-icon">
+                            <a href="https://www.koha.net/bote" target="_blank" class="article-link">Deux ans de guerre israélienne ont tué un enfant toutes les 52 minutes à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kos.svg" alt="KOS" title="KOS" class="flag-icon">
+                            <a href="https://www.rtklive.com/sq/news-category.php?CatID=10" target="_blank" class="article-link">Les États-Unis appellent à un cessez-le-feu à Gaza, Beilin exprime son espoir</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kos.svg" alt="KOS" title="KOS" class="flag-icon">
+                            <a href="https://www.rtklive.com/sq/news-category.php?CatID=10" target="_blank" class="article-link">Israël et le Hamas entament des négociations au Caire</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/npl.svg" alt="Népal" title="Népal" class="flag-icon">
+                            <a href="https://thehimalayantimes.com/category/world/" target="_blank" class="article-link">Les frappes israéliennes tuent au moins 17 Palestiniens à Gaza alors que la pression internationale pour un cessez-le-feu augmente</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nzl.svg" alt="Nouvelle-Zélande" title="Nouvelle-Zélande" class="flag-icon">
+                            <a href="https://www.rnz.co.nz/news/world" target="_blank" class="article-link">Israël expulse Greta Thunberg et 170 autres activistes de la flottille</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/yem.svg" alt="Yémen" title="Yémen" class="flag-icon">
+                            <a href="https://www.ypagency.net/" target="_blank" class="article-link">Un expert économique révèle des signes d&#39;effondrement dans les secteurs vitaux de l&#39;&#34;occupation&#34; après deux ans</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dom.svg" alt="République dominicaine" title="République dominicaine" class="flag-icon">
+                            <a href="https://listindiario.com/las-mundiales" target="_blank" class="article-link">Des familles tourmentées à la recherche des disparus depuis le début de la guerre à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ita.svg" alt="Italie" title="Italie" class="flag-icon">
+                            <a href="https://www.repubblica.it/esteri/" target="_blank" class="article-link">Israël - Gaza, les nouvelles. Nouvelle flottille abordée, ministre israélien : « Tout le monde en garde à vue et en sécurité »</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ita.svg" alt="Italie" title="Italie" class="flag-icon">
+                            <a href="https://www.repubblica.it/esteri/" target="_blank" class="article-link">Israël - Gaza, les nouvelles. Trump reçoit les familles des otages : « Hamas sera détruit »</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Irlande" title="Irlande" class="flag-icon">
+                            <a href="https://www.irishtimes.com/news/world" target="_blank" class="article-link">Les négociations entre Israël et le Hamas commencent en Égypte sur le plan de Trump pour un cessez-le-feu à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mdv.svg" alt="Maldives" title="Maldives" class="flag-icon">
+                            <a href="https://sun.mv/world_news" target="_blank" class="article-link">Israël attaque apparemment le Hamas pour la deuxième année consécutive</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/arg.svg" alt="Argentine" title="Argentine" class="flag-icon">
+                            <a href="https://www.clarin.com/mundo/" target="_blank" class="article-link">Israël-Hamas : Les chiffres glaçants de deux ans de guerre dévastant la vie des Palestiniens à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/grl.svg" alt="GRL" title="GRL" class="flag-icon">
+                            <a href="https://sermitsiaq.ag/" target="_blank" class="article-link">Le chef des droits de l&#39;homme de l&#39;ONU exhorte Israël à arrêter le bain de sang à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nor.svg" alt="Norvège" title="Norvège" class="flag-icon">
+                            <a href="https://www.aftenposten.no/verden" target="_blank" class="article-link">Les sources de Hamas décrivent les discussions à Gaza comme positives</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/esp.svg" alt="Espagne" title="Espagne" class="flag-icon">
+                            <a href="https://elpais.com/internacional/" target="_blank" class="article-link">La thèse selon laquelle Israël commet un génocide à Gaza gagne du terrain dans le monde académique après deux ans d&#39;offensive</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Pays du Sud global et en développement critiques à l&#39;égard des politiques israéliennes</h3>
+        <p class="cluster-description">De nombreux pays du Sud global, notamment en Afrique, en Asie et en Amérique latine, se concentrent sur la mise en évidence du désastre humanitaire à Gaza, accusant Israël de crimes de guerre, de génocide et de nettoyage ethnique. Ces pays soulignent les effets désastreux du blocus, les pertes massives en vies humaines, la dévastation économique, et appellent à une action internationale immédiate pour protéger les civils palestiniens. Leurs gouvernements et acteurs civils montrent souvent leur solidarité avec la Palestine, condamnent les actions militaires israéliennes et prônent un cessez-le-feu immédiat ainsi que la levée des blocus. Ils critiquent également la dynamique du Conseil de sécurité de l&#39;ONU et les réponses internationales qu&#39;ils considèrent comme biaisées.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cog.svg" alt="République du Congo" title="République du Congo" class="flag-icon">
+                            <a href="https://www.mediacongo.net/articles-actualite-27_monde.html" target="_blank" class="article-link">Plan de paix pour Gaza : Israël et le Hamas attendus au Caire lundi pour des négociations indirectes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/zaf.svg" alt="Afrique du Sud" title="Afrique du Sud" class="flag-icon">
+                            <a href="https://mg.co.za/section/news/" target="_blank" class="article-link">Condamnation généralisée alors que de nombreux individus seraient enlevés alors qu&#39;Israël intercepte la Flottille Global Sumud</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/zaf.svg" alt="Afrique du Sud" title="Afrique du Sud" class="flag-icon">
+                            <a href="https://mg.co.za/section/news/" target="_blank" class="article-link">La flottille de Gaza continue de naviguer malgré les attaques</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/zaf.svg" alt="Afrique du Sud" title="Afrique du Sud" class="flag-icon">
+                            <a href="https://mg.co.za/section/news/" target="_blank" class="article-link">Ramaphosa déclare que le Conseil de sécurité de l&#39;ONU est inefficace dans sa forme actuelle alors que le génocide à Gaza persiste</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgd.svg" alt="Bangladesh" title="Bangladesh" class="flag-icon">
+                            <a href="https://www.thedailystar.net/world" target="_blank" class="article-link">Le génocide d&#39;Israël à Gaza / Pas seulement des chiffres</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgd.svg" alt="Bangladesh" title="Bangladesh" class="flag-icon">
+                            <a href="https://www.thedailystar.net/world" target="_blank" class="article-link">Le Premier ministre espagnol appelle à mettre fin au « génocide » à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/qat.svg" alt="Qatar" title="Qatar" class="flag-icon">
+                            <a href="https://www.al-watan.com/%D8%B9%D8%B1%D8%A8%D9%8A-%D9%88%D8%AF%D9%88%D9%84%D9%8A" target="_blank" class="article-link">Deux ans de dévastation à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/qat.svg" alt="Qatar" title="Qatar" class="flag-icon">
+                            <a href="https://www.al-watan.com/%D8%B9%D8%B1%D8%A8%D9%8A-%D9%88%D8%AF%D9%88%D9%84%D9%8A" target="_blank" class="article-link">Deux ans de morts et de déplacements à Gaza, avertit la Croix-Rouge</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svk.svg" alt="Slovaquie" title="Slovaquie" class="flag-icon">
+                            <a href="https://spravy.pravda.sk/svet/" target="_blank" class="article-link">Massacre, famine et 70 000 morts. La guerre à Gaza dure depuis deux ans</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cpv.svg" alt="Cap-Vert" title="Cap-Vert" class="flag-icon">
+                            <a href="https://expressodasilhas.cv/mundo" target="_blank" class="article-link">Israël a approuvé moins de la moitié des missions humanitaires à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cpv.svg" alt="Cap-Vert" title="Cap-Vert" class="flag-icon">
+                            <a href="https://expressodasilhas.cv/mundo" target="_blank" class="article-link">Israël a expulsé plus de 171 activistes de la flottille, dont Greta Thunberg</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bhr.svg" alt="Bahreïn" title="Bahreïn" class="flag-icon">
+                            <a href="https://akhbar-alkhaleej.com/news/section/WORL" target="_blank" class="article-link">Madrid appelle Netanyahu à arrêter le &#34;génocide&#34; à Gaza et condamne toutes les formes de &#34;terrorisme&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/usa.svg" alt="États-Unis" title="États-Unis" class="flag-icon">
+                            <a href="https://edition.cnn.com/world" target="_blank" class="article-link">Les activistes de la flottille de Gaza qui reviennent dénoncent un mauvais traitement en détention israélienne, craignant pour les prisonniers restants</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/yem.svg" alt="Yémen" title="Yémen" class="flag-icon">
+                            <a href="https://www.ypagency.net/" target="_blank" class="article-link">Hamas : le nombre croissant de martyrs prisonniers exige une action internationale urgente</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/yem.svg" alt="Yémen" title="Yémen" class="flag-icon">
+                            <a href="https://www.saba.ye" target="_blank" class="article-link">Vague de colère et condamnations internationales larges contre la piraterie israélienne contre la Flottille de la Liberté</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dom.svg" alt="République dominicaine" title="République dominicaine" class="flag-icon">
+                            <a href="https://www.diariolibre.com/mundo" target="_blank" class="article-link">Des Mexicains détenus en Israël pour avoir participé à la flottille humanitaire commencent leur rapatriement</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vnm.svg" alt="Viêt Nam" title="Viêt Nam" class="flag-icon">
+                            <a href="https://tuoitre.vn/the-gioi.htm" target="_blank" class="article-link">Qatar : Israël aurait dû cesser le feu à Gaza selon le plan de paix de Trump</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Irlande" title="Irlande" class="flag-icon">
+                            <a href="https://www.irishtimes.com/news/world" target="_blank" class="article-link">Les membres de la flottille de Gaza « enlevés et torturés » par l&#39;armée israélienne, selon Greta Thunberg</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Irlande" title="Irlande" class="flag-icon">
+                            <a href="https://www.irishtimes.com/news/world" target="_blank" class="article-link">Hamas affirme qu&#39;il est sérieux au sujet de l&#39;accord de paix à Gaza lors du deuxième anniversaire de l&#39;attaque contre Israël</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kwt.svg" alt="Koweït" title="Koweït" class="flag-icon">
+                            <a href="https://kuwaittimes.com/world/" target="_blank" class="article-link">Des milliers de personnes manifestent au Royaume-Uni à l&#39;occasion de l&#39;anniversaire de la guerre à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kwt.svg" alt="Koweït" title="Koweït" class="flag-icon">
+                            <a href="https://kuwaittimes.com/world/" target="_blank" class="article-link">Gaza : 2 ans de génocide, crimes de guerre, nettoyage ethnique, déplacement forcé</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pse.svg" alt="Palestine" title="Palestine" class="flag-icon">
+                            <a href="https://www.alquds.com/" target="_blank" class="article-link">L&#39;Algérie annonce l&#39;évacuation de 11 citoyens participant à la &#34;Flotte de la Fermeté&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pse.svg" alt="Palestine" title="Palestine" class="flag-icon">
+                            <a href="http://www.al-ayyam.ps/" target="_blank" class="article-link">Zamir : Pas de cessez-le-feu, la situation opérationnelle évolue</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gnb.svg" alt="Guinée-Bissau" title="Guinée-Bissau" class="flag-icon">
+                            <a href="https://una-oic.org/News/all/" target="_blank" class="article-link">507 000 travailleurs palestiniens arrêtés depuis le début de la guerre d&#39;extermination ; pertes économiques dépassant 9 milliards de dollars</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/egy.svg" alt="Égypte" title="Égypte" class="flag-icon">
+                            <a href="https://www.dailynewsegypt.com/category/politics/" target="_blank" class="article-link">Les discussions de Sharm El-Sheikh montrent des progrès alors que le plan de Trump gagne du terrain pour mettre fin à la guerre à Gaza</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Perspectives s\u00e9curitaires isra\u00e9liennes et militaires dures",
+                color: "#72e5ac",
+                data: [ {"id": "AE"},  {"id": "AU"},  {"id": "BR"},  {"id": "CH"},  {"id": "CL"},  {"id": "CO"},  {"id": "EE"},  {"id": "HN"},  {"id": "HR"},  {"id": "IN"},  {"id": "IS"},  {"id": "JO"},  {"id": "JP"},  {"id": "KR"},  {"id": "RO"},  {"id": "TZ"},  {"id": "VA"},  {"id": "VE"} ]
+            },
+        
+            {
+                name: "Hamas et ses alli\u00e9s r\u00e9gionaux pr\u00f4nent des n\u00e9gociations avec conditions",
+                color: "#72bbe5",
+                data: [ {"id": "BG"},  {"id": "BY"},  {"id": "CU"},  {"id": "CY"},  {"id": "FR"},  {"id": "GR"},  {"id": "GU"},  {"id": "NG"},  {"id": "SI"},  {"id": "SX"},  {"id": "TO"} ]
+            },
+        
+            {
+                name: "Perspective humanitaire et activiste internationale condamnant la violence et les blocus",
+                color: "#8d72e5",
+                data: [ {"id": "CZ"},  {"id": "LT"},  {"id": "PL"} ]
+            },
+        
+            {
+                name: "M\u00e9diation active et soutien strat\u00e9gique des \u00c9tats-Unis",
+                color: "#e572da",
+                data: [ {"id": "AF"},  {"id": "HT"},  {"id": "IL"},  {"id": "IM"},  {"id": "IR"},  {"id": "KZ"},  {"id": "ME"},  {"id": "MN"},  {"id": "MO"},  {"id": "OM"},  {"id": "SO"} ]
+            },
+        
+            {
+                name: "Position Mixte des Pays Europ\u00e9ens et Occidentaux : Comm\u00e9moration, Diplomatie et Pr\u00e9occupations relatives aux Droits Humains",
+                color: "#e57276",
+                data: [ {"id": "IT"},  {"id": "NO"},  {"id": "SE"} ]
+            },
+        
+            {
+                name: "Pays du Sud global et en d\u00e9veloppement critiques \u00e0 l\u0027\u00e9gard des politiques isra\u00e9liennes",
+                color: "#e5d272",
+                data: [ {"id": "CG"},  {"id": "CV"},  {"id": "VN"},  {"id": "ZA"} ]
+            }
+        
+        
+            ,
+            {
+                name: "Plusieurs points de vue : \n- Perspectives s\u00e9curitaires isra\u00e9liennes et militaires dures\n- M\u00e9diation active et soutien strat\u00e9gique des \u00c9tats-Unis",
+                color: "#AAAAAA",
+                data: [{"id": "AL"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Perspectives s\u00e9curitaires isra\u00e9liennes et militaires dures\n- Perspective humanitaire et activiste internationale condamnant la violence et les blocus",
+                color: "#AAAAAA",
+                data: [{"id": "AT"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Perspectives s\u00e9curitaires isra\u00e9liennes et militaires dures\n- Position Mixte des Pays Europ\u00e9ens et Occidentaux : Comm\u00e9moration, Diplomatie et Pr\u00e9occupations relatives aux Droits Humains",
+                color: "#AAAAAA",
+                data: [{"id": "CA"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Perspectives s\u00e9curitaires isra\u00e9liennes et militaires dures\n- Hamas et ses alli\u00e9s r\u00e9gionaux pr\u00f4nent des n\u00e9gociations avec conditions\n- Perspective humanitaire et activiste internationale condamnant la violence et les blocus",
+                color: "#AAAAAA",
+                data: [{"id": "CN"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Perspectives s\u00e9curitaires isra\u00e9liennes et militaires dures\n- Pays du Sud global et en d\u00e9veloppement critiques \u00e0 l\u0027\u00e9gard des politiques isra\u00e9liennes",
+                color: "#AAAAAA",
+                data: [{"id": "EG"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Perspectives s\u00e9curitaires isra\u00e9liennes et militaires dures\n- Perspective humanitaire et activiste internationale condamnant la violence et les blocus\n- Pays du Sud global et en d\u00e9veloppement critiques \u00e0 l\u0027\u00e9gard des politiques isra\u00e9liennes",
+                color: "#AAAAAA",
+                data: [{"id": "GW"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Perspectives s\u00e9curitaires isra\u00e9liennes et militaires dures\n- M\u00e9diation active et soutien strat\u00e9gique des \u00c9tats-Unis",
+                color: "#AAAAAA",
+                data: [{"id": "GY"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Perspectives s\u00e9curitaires isra\u00e9liennes et militaires dures\n- M\u00e9diation active et soutien strat\u00e9gique des \u00c9tats-Unis",
+                color: "#AAAAAA",
+                data: [{"id": "HK"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Perspectives s\u00e9curitaires isra\u00e9liennes et militaires dures\n- Hamas et ses alli\u00e9s r\u00e9gionaux pr\u00f4nent des n\u00e9gociations avec conditions\n- M\u00e9diation active et soutien strat\u00e9gique des \u00c9tats-Unis",
+                color: "#AAAAAA",
+                data: [{"id": "LB"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Perspectives s\u00e9curitaires isra\u00e9liennes et militaires dures\n- M\u00e9diation active et soutien strat\u00e9gique des \u00c9tats-Unis",
+                color: "#AAAAAA",
+                data: [{"id": "LK"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Perspectives s\u00e9curitaires isra\u00e9liennes et militaires dures\n- M\u00e9diation active et soutien strat\u00e9gique des \u00c9tats-Unis",
+                color: "#AAAAAA",
+                data: [{"id": "MZ"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Perspectives s\u00e9curitaires isra\u00e9liennes et militaires dures\n- M\u00e9diation active et soutien strat\u00e9gique des \u00c9tats-Unis",
+                color: "#AAAAAA",
+                data: [{"id": "PE"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Perspectives s\u00e9curitaires isra\u00e9liennes et militaires dures\n- M\u00e9diation active et soutien strat\u00e9gique des \u00c9tats-Unis\n- Pays du Sud global et en d\u00e9veloppement critiques \u00e0 l\u0027\u00e9gard des politiques isra\u00e9liennes",
+                color: "#AAAAAA",
+                data: [{"id": "US"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Hamas et ses alli\u00e9s r\u00e9gionaux pr\u00f4nent des n\u00e9gociations avec conditions\n- Perspective humanitaire et activiste internationale condamnant la violence et les blocus\n- Position Mixte des Pays Europ\u00e9ens et Occidentaux : Comm\u00e9moration, Diplomatie et Pr\u00e9occupations relatives aux Droits Humains",
+                color: "#AAAAAA",
+                data: [{"id": "AR"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Hamas et ses alli\u00e9s r\u00e9gionaux pr\u00f4nent des n\u00e9gociations avec conditions\n- Pays du Sud global et en d\u00e9veloppement critiques \u00e0 l\u0027\u00e9gard des politiques isra\u00e9liennes",
+                color: "#AAAAAA",
+                data: [{"id": "BH"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Hamas et ses alli\u00e9s r\u00e9gionaux pr\u00f4nent des n\u00e9gociations avec conditions\n- M\u00e9diation active et soutien strat\u00e9gique des \u00c9tats-Unis\n- Position Mixte des Pays Europ\u00e9ens et Occidentaux : Comm\u00e9moration, Diplomatie et Pr\u00e9occupations relatives aux Droits Humains",
+                color: "#AAAAAA",
+                data: [{"id": "ES"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Hamas et ses alli\u00e9s r\u00e9gionaux pr\u00f4nent des n\u00e9gociations avec conditions\n- Pays du Sud global et en d\u00e9veloppement critiques \u00e0 l\u0027\u00e9gard des politiques isra\u00e9liennes",
+                color: "#AAAAAA",
+                data: [{"id": "KW"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Hamas et ses alli\u00e9s r\u00e9gionaux pr\u00f4nent des n\u00e9gociations avec conditions\n- Perspective humanitaire et activiste internationale condamnant la violence et les blocus\n- M\u00e9diation active et soutien strat\u00e9gique des \u00c9tats-Unis",
+                color: "#AAAAAA",
+                data: [{"id": "LU"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Hamas et ses alli\u00e9s r\u00e9gionaux pr\u00f4nent des n\u00e9gociations avec conditions\n- Position Mixte des Pays Europ\u00e9ens et Occidentaux : Comm\u00e9moration, Diplomatie et Pr\u00e9occupations relatives aux Droits Humains",
+                color: "#AAAAAA",
+                data: [{"id": "MV"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Hamas et ses alli\u00e9s r\u00e9gionaux pr\u00f4nent des n\u00e9gociations avec conditions\n- Pays du Sud global et en d\u00e9veloppement critiques \u00e0 l\u0027\u00e9gard des politiques isra\u00e9liennes",
+                color: "#AAAAAA",
+                data: [{"id": "PS"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Hamas et ses alli\u00e9s r\u00e9gionaux pr\u00f4nent des n\u00e9gociations avec conditions\n- Perspective humanitaire et activiste internationale condamnant la violence et les blocus",
+                color: "#AAAAAA",
+                data: [{"id": "SG"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Hamas et ses alli\u00e9s r\u00e9gionaux pr\u00f4nent des n\u00e9gociations avec conditions\n- Position Mixte des Pays Europ\u00e9ens et Occidentaux : Comm\u00e9moration, Diplomatie et Pr\u00e9occupations relatives aux Droits Humains",
+                color: "#AAAAAA",
+                data: [{"id": "XK"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Perspective humanitaire et activiste internationale condamnant la violence et les blocus\n- M\u00e9diation active et soutien strat\u00e9gique des \u00c9tats-Unis",
+                color: "#AAAAAA",
+                data: [{"id": "ID"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Perspective humanitaire et activiste internationale condamnant la violence et les blocus\n- Position Mixte des Pays Europ\u00e9ens et Occidentaux : Comm\u00e9moration, Diplomatie et Pr\u00e9occupations relatives aux Droits Humains\n- Pays du Sud global et en d\u00e9veloppement critiques \u00e0 l\u0027\u00e9gard des politiques isra\u00e9liennes",
+                color: "#AAAAAA",
+                data: [{"id": "IE"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Perspective humanitaire et activiste internationale condamnant la violence et les blocus\n- M\u00e9diation active et soutien strat\u00e9gique des \u00c9tats-Unis",
+                color: "#AAAAAA",
+                data: [{"id": "SA"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- M\u00e9diation active et soutien strat\u00e9gique des \u00c9tats-Unis\n- Pays du Sud global et en d\u00e9veloppement critiques \u00e0 l\u0027\u00e9gard des politiques isra\u00e9liennes",
+                color: "#AAAAAA",
+                data: [{"id": "BD"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- M\u00e9diation active et soutien strat\u00e9gique des \u00c9tats-Unis\n- Position Mixte des Pays Europ\u00e9ens et Occidentaux : Comm\u00e9moration, Diplomatie et Pr\u00e9occupations relatives aux Droits Humains",
+                color: "#AAAAAA",
+                data: [{"id": "BE"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- M\u00e9diation active et soutien strat\u00e9gique des \u00c9tats-Unis\n- Position Mixte des Pays Europ\u00e9ens et Occidentaux : Comm\u00e9moration, Diplomatie et Pr\u00e9occupations relatives aux Droits Humains",
+                color: "#AAAAAA",
+                data: [{"id": "GL"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- M\u00e9diation active et soutien strat\u00e9gique des \u00c9tats-Unis\n- Position Mixte des Pays Europ\u00e9ens et Occidentaux : Comm\u00e9moration, Diplomatie et Pr\u00e9occupations relatives aux Droits Humains",
+                color: "#AAAAAA",
+                data: [{"id": "NP"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- M\u00e9diation active et soutien strat\u00e9gique des \u00c9tats-Unis\n- Position Mixte des Pays Europ\u00e9ens et Occidentaux : Comm\u00e9moration, Diplomatie et Pr\u00e9occupations relatives aux Droits Humains",
+                color: "#AAAAAA",
+                data: [{"id": "NZ"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- M\u00e9diation active et soutien strat\u00e9gique des \u00c9tats-Unis\n- Pays du Sud global et en d\u00e9veloppement critiques \u00e0 l\u0027\u00e9gard des politiques isra\u00e9liennes",
+                color: "#AAAAAA",
+                data: [{"id": "QA"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- M\u00e9diation active et soutien strat\u00e9gique des \u00c9tats-Unis\n- Pays du Sud global et en d\u00e9veloppement critiques \u00e0 l\u0027\u00e9gard des politiques isra\u00e9liennes",
+                color: "#AAAAAA",
+                data: [{"id": "SK"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Position Mixte des Pays Europ\u00e9ens et Occidentaux : Comm\u00e9moration, Diplomatie et Pr\u00e9occupations relatives aux Droits Humains\n- Pays du Sud global et en d\u00e9veloppement critiques \u00e0 l\u0027\u00e9gard des politiques isra\u00e9liennes",
+                color: "#AAAAAA",
+                data: [{"id": "DO"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Position Mixte des Pays Europ\u00e9ens et Occidentaux : Comm\u00e9moration, Diplomatie et Pr\u00e9occupations relatives aux Droits Humains\n- Pays du Sud global et en d\u00e9veloppement critiques \u00e0 l\u0027\u00e9gard des politiques isra\u00e9liennes",
+                color: "#AAAAAA",
+                data: [{"id": "YE"}]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Masquer les sources ▲' : 'Montrer les sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li class="active-m">
+               <a href="/">Accueil</a>
+            </li>
+            <li>
+              <a href="/fr/about.html">A Propos</a>
+            </li>
+            <li>
+              <a href="/fr/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
