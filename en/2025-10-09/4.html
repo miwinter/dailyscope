@@ -1,0 +1,585 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>International Perspectives on the First-Phase Peace Agreement in the Israeli-Palestinian Conflict</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/fra.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="Français" title="Français" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/en', '/fr');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>              
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>International Perspectives on the First-Phase Peace Agreement in the Israeli-Palestinian Conflict</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-10-09</span> • <span>55 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-10-09/2025-10-09-4.jpg" alt="International Perspectives on the First-Phase Peace Agreement in the Israeli-Palestinian Conflict" class="main-image">
+                <p style="margin:0">Recent reports detail a landmark first-phase peace agreement between Israel and Hamas, largely mediated and publicized by former U.S. President Donald Trump. Numerous countries highlight this initial step as a hopeful path toward reducing hostilities, emphasizing hostage exchanges, ceasefires, and humanitarian aid. However, some nations and groups strongly criticize Israeli military actions, call for arms embargoes, and condemn violations of Palestinian rights, reflecting ongoing regional tensions. The international community remains divided between cautious optimism for peace efforts and condemnation of violence and occupation-related issues.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div class="key-points">
+        <h2>Countries covering this topic</h2>
+    </div>
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Pro-Peace Agreement Supporters Highlighting Diplomatic Progress</h3>
+        <p class="cluster-description">Countries in this group emphasize the significant breakthrough represented by the first phase of the peace plan between Israel and Hamas, frequently referencing the mediation role of former U.S. President Donald Trump and associated international negotiators. These articles underscore steps such as hostage releases, ceasefire agreements, prisoner exchanges, and the opening of humanitarian corridors as promising developments. The outlook is cautiously optimistic, viewing this agreement as a foundation for broader peace and de-escalation, while details remain limited. Supporters also reference government-level endorsements of the plan, signaling political willingness to pursue peace.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kor.svg" alt="South Korea" title="South Korea" class="flag-icon">
+                            <a href="https://www.chosun.com/international/" target="_blank" class="article-link">Israel and Hamas Agree on First Phase of Peace Plan Ahead of Nobel Peace Prize Announcement</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kor.svg" alt="South Korea" title="South Korea" class="flag-icon">
+                            <a href="https://www.chosun.com/international/" target="_blank" class="article-link">Israeli-Hamas First Phase Peace Agreement Precedes Nobel Peace Prize</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kor.svg" alt="South Korea" title="South Korea" class="flag-icon">
+                            <a href="https://www.koreaherald.com/World" target="_blank" class="article-link">Trump says Israel and Hamas have agreed to the &#39;first phase&#39; of his peace plan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hti.svg" alt="Haiti" title="Haiti" class="flag-icon">
+                            <a href="https://lenouvelliste.com/international" target="_blank" class="article-link">Hamas Ready to Release Hostages, Trump Calls for Israeli Bombing Halt</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svk.svg" alt="Slovakia" title="Slovakia" class="flag-icon">
+                            <a href="https://spravy.pravda.sk/svet/" target="_blank" class="article-link">Trump: Israel and Hamas agreed to the first phase of the peace plan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ukr.svg" alt="Ukraine" title="Ukraine" class="flag-icon">
+                            <a href="https://kyivindependent.com/" target="_blank" class="article-link">Israel, Hamas sign off on first phase of peace plan, Trump says</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/grc.svg" alt="Greece" title="Greece" class="flag-icon">
+                            <a href="https://www.tovima.gr/category/world/" target="_blank" class="article-link">Agreement reached between Israel and Hamas on the first phase - What it entails</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/npl.svg" alt="Nepal" title="Nepal" class="flag-icon">
+                            <a href="https://ekantipur.com/world" target="_blank" class="article-link">Israel and Hamas sign first phase of peace plan with US mediation</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/per.svg" alt="Peru" title="Peru" class="flag-icon">
+                            <a href="https://elcomercio.pe/mundo/" target="_blank" class="article-link">Israel and Hamas Agree on Prisoner Exchange and Aid Entry to Gaza, Say Egyptian Mediators</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nld.svg" alt="Netherlands" title="Netherlands" class="flag-icon">
+                            <a href="https://www.telegraaf.nl/nieuws/buitenland" target="_blank" class="article-link">LIVE | Trump: Israel and Hamas agree on first phase deal, possible release of hostages on Saturday</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aus.svg" alt="Australia" title="Australia" class="flag-icon">
+                            <a href="https://www.smh.com.au/world" target="_blank" class="article-link">Israeli-Palestinian conflict: Israel has lost the support of the American people. It’s danger time for Netanyahu</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cze.svg" alt="Czech Republic" title="Czech Republic" class="flag-icon">
+                            <a href="https://www.idnes.cz/zpravy/zahranicni" target="_blank" class="article-link">Hamas and Israel agreed on first phase of peace plan, says Trump</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lka.svg" alt="Sri Lanka" title="Sri Lanka" class="flag-icon">
+                            <a href="https://sinhala.newsfirst.lk/world" target="_blank" class="article-link">Israel and Hamas Agree on First Phase of Peace Plan, Says U.S. President Donald Trump</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pan.svg" alt="Panama" title="Panama" class="flag-icon">
+                            <a href="https://www.laestrella.com.pa/mundo" target="_blank" class="article-link">Peace Agreement: Netanyahu suspends vacation, growing rumor of Trump&#39;s visit to Israel</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/prt.svg" alt="Portugal" title="Portugal" class="flag-icon">
+                            <a href="https://www.publico.pt/mundo" target="_blank" class="article-link">Hamas and Israel signed first phase of Peace Agreement, says Trump</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/prt.svg" alt="Portugal" title="Portugal" class="flag-icon">
+                            <a href="https://www.publico.pt/mundo" target="_blank" class="article-link">Hamas submits list of prisoners to be released by Israel in peace talks</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgr.svg" alt="Bulgaria" title="Bulgaria" class="flag-icon">
+                            <a href="https://www.24chasa.bg/mezhdunarodni" target="_blank" class="article-link">War in Gaza Stops. Donald Trump: Israel and Hamas Signed the First Phase of the Peace Agreement</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/omn.svg" alt="Oman" title="Oman" class="flag-icon">
+                            <a href="https://timesofoman.com/World" target="_blank" class="article-link">Israel, Hamas sign &#34;first phase of peace plan,&#34; says Trump</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gtm.svg" alt="Guatemala" title="Guatemala" class="flag-icon">
+                            <a href="https://lahora.gt/internacionales/" target="_blank" class="article-link">Trump Announces Israel and Hamas Have Signed the First Phase of Gaza Peace Plan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gtm.svg" alt="Guatemala" title="Guatemala" class="flag-icon">
+                            <a href="https://lahora.gt/internacionales/" target="_blank" class="article-link">Netanyahu Announces His Government Will Ratify Gaza Agreement Thursday</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gtm.svg" alt="Guatemala" title="Guatemala" class="flag-icon">
+                            <a href="https://lahora.gt/internacionales/" target="_blank" class="article-link">Trump Considers Traveling to the Middle East Amid Progress in Israel-Hamas Peace Deal</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tls.svg" alt="Timor-Leste" title="Timor-Leste" class="flag-icon">
+                            <a href="https://www.noticiasaominuto.com/mundo" target="_blank" class="article-link">Netanyahu highlights the return of &#34;all&#34; hostages after Trump&#39;s announcement</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Ireland" title="Ireland" class="flag-icon">
+                            <a href="https://www.irishtimes.com/news/world" target="_blank" class="article-link">Hamas says it has handed over list of Israelis and Palestinians for swap deal</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mex.svg" alt="Mexico" title="Mexico" class="flag-icon">
+                            <a href="https://www.jornada.com.mx/categoria/mundo" target="_blank" class="article-link">Celebrations erupt in Gaza after acceptance of Trump peace plan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mex.svg" alt="Mexico" title="Mexico" class="flag-icon">
+                            <a href="https://www.jornada.com.mx/categoria/mundo" target="_blank" class="article-link">Trump and Netanyahu congratulate each other on peace agreement with Hamas</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/isl.svg" alt="Iceland" title="Iceland" class="flag-icon">
+                            <a href="https://www.mbl.is/frettir/erlent/" target="_blank" class="article-link">Israel and Hamas reach ceasefire agreement</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nga.svg" alt="Nigeria" title="Nigeria" class="flag-icon">
+                            <a href="https://guardian.ng/category/world/" target="_blank" class="article-link">Hamas agree to first phase of peace plan, says Trump</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lbn.svg" alt="Lebanon" title="Lebanon" class="flag-icon">
+                            <a href="https://www.lorientlejour.com/rubrique/7-moyen-orient-et-monde" target="_blank" class="article-link">Hamas optimistic after exchanging lists of prisoners and hostages to be released</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72a2e5; padding: 8px 16px; border-radius: 4px;">Critics Condemning Israeli Actions and Supporting Palestinian Rights</h3>
+        <p class="cluster-description">This cluster groups articles from countries and sources that are critical of Israel&#39;s military conduct and occupation policies, often condemning violence against Palestinians. They highlight human rights concerns, civilian casualties, and call for international accountability, including legal and diplomatic measures against Israel. Some articles report deaths and injuries of Palestinians due to Israeli attacks and settler violence, framing them as ongoing violations. These perspectives advocate for decolonization, arms embargoes, and boycott movements, underscoring the humanitarian and moral imperative to support Palestinian self-determination and condemn aggression.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ecu.svg" alt="Ecuador" title="Ecuador" class="flag-icon">
+                            <a href="https://rebelion.org/categoria/territorios/mundo/" target="_blank" class="article-link">Sumud Flotilla succeeded in turning Israel into a pariah</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/yem.svg" alt="Yemen" title="Yemen" class="flag-icon">
+                            <a href="https://www.ypagency.net/" target="_blank" class="article-link">Palestinian Killed and Seven Injured in Israeli Attacks in West Bank and Jerusalem</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/yem.svg" alt="Yemen" title="Yemen" class="flag-icon">
+                            <a href="https://www.saba.ye" target="_blank" class="article-link">Palestinian Killed and 7 Injured in Attacks by Zionist Enemy and Settlers in West Bank and Jerusalem</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vat.svg" alt="Holy See" title="Holy See" class="flag-icon">
+                            <a href="https://www.osservatoreromano.va/it/sections/internazionale.html" target="_blank" class="article-link">Israel and Hamas exchange lists of hostages and prisoners to be released</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sur.svg" alt="Suriname" title="Suriname" class="flag-icon">
+                            <a href="https://www.dwtonline.com/" target="_blank" class="article-link">Palestine Calls for Geographical Decolonization</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/srb.svg" alt="Serbia" title="Serbia" class="flag-icon">
+                            <a href="https://www.blic.rs/vesti/svet" target="_blank" class="article-link">Israel Confirms Death of 26 out of 48 Hostages; Hamas Provides Information on 20 Alive Hostages</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cpv.svg" alt="Cape Verde" title="Cape Verde" class="flag-icon">
+                            <a href="https://www.anacao.cv/categoria/mundo/" target="_blank" class="article-link">Palestinian BDS Movement Rejoices Over ENAPOR Blocking Ship Carrying Arms to Israel</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/esp.svg" alt="Spain" title="Spain" class="flag-icon">
+                            <a href="https://elpais.com/internacional/" target="_blank" class="article-link">U.S. public opinion moves away from Israel</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #bf72e5; padding: 8px 16px; border-radius: 4px;">Regional Middle Eastern Views Emphasizing Accountability and Opposition to Israeli Policies</h3>
+        <p class="cluster-description">Countries from the Middle East, particularly Saudi Arabia and Iran, express strong opposition to Israeli policies and call for international interventions to hold Israel accountable. They focus on incidents like violations at holy sites, killings of Palestinian and militant leaders, and emphasize safeguarding Palestinian religious and cultural rights. These articles reflect regional solidarity with Palestinians and heightened tensions over military actions, while often rejecting unilateral peace attempts that do not address core issues. The stance is marked by calls for resistance against Israeli aggression and support for Palestinian rights.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/arm.svg" alt="Armenia" title="Armenia" class="flag-icon">
+                            <a href="https://www.panarmenian.net/arm/world/" target="_blank" class="article-link">Hamas leader killed in Tehran; Iran vows to make terrorists regret it</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sau.svg" alt="Saudi Arabia" title="Saudi Arabia" class="flag-icon">
+                            <a href="https://www.arabnews.com/international" target="_blank" class="article-link">Palestinian man shot dead by Israeli settler in West Bank near Ramallah</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sau.svg" alt="Saudi Arabia" title="Saudi Arabia" class="flag-icon">
+                            <a href="https://saudigazette.com.sa/World" target="_blank" class="article-link">Israel kills 118 Palestinians in four days despite Trump’s ceasefire call</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bhr.svg" alt="Bahrain" title="Bahrain" class="flag-icon">
+                            <a href="https://akhbar-alkhaleej.com/news/section/WORL" target="_blank" class="article-link">Saudi Arabia calls on the international community to hold Israel accountable for violations of holy sites in Palestine</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5728f; padding: 8px 16px; border-radius: 4px;">European Parliamentary and Public Pressure for Arms Embargoes and Ethical Diplomacy</h3>
+        <p class="cluster-description">Several articles highlight European countries, especially Spain and San Marino, taking political actions such as imposing arms embargoes on Israel and reconsidering economic ties tied to the Israeli conflict. These measures are endorsed by parliaments and public activists who consider Israeli military operations as contributing to humanitarian crises in Gaza. This viewpoint reflects a growing European focus on ethical foreign policy, peace advocacy, and solidarity movements supporting Palestinians, including protests and boycotts against Israeli policies. The stance also stresses humanitarian concerns and enforcement of international law through legislative channels.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svk.svg" alt="Slovakia" title="Slovakia" class="flag-icon">
+                            <a href="https://spravy.pravda.sk/svet/" target="_blank" class="article-link">Spain halts weapons shipments to Israel, parliament approves embargo</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mne.svg" alt="Montenegro" title="Montenegro" class="flag-icon">
+                            <a href="https://www.vijesti.me/svijet" target="_blank" class="article-link">Spanish Parliament bans arms supplies to Israel to stop the genocide of Palestinians in Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cze.svg" alt="Czech Republic" title="Czech Republic" class="flag-icon">
+                            <a href="https://www.lidovky.cz/svet" target="_blank" class="article-link">Israel Deported Czech Woman from Detained Fleet; She Was Handed Over to Jordanians at the Border</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgr.svg" alt="Bulgaria" title="Bulgaria" class="flag-icon">
+                            <a href="https://www.24chasa.bg/mezhdunarodni" target="_blank" class="article-link">Spanish Deputies Approved an Arms Embargo on Supplies to Israel</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">International Public and Civil Society Voices Highlighting Human Rights and Activism</h3>
+        <p class="cluster-description">This group features narratives from activists, NGOs, and public figures who draw attention to human rights abuses and humanitarian issues within the conflict. Reports include allegations of mistreatment of activists detained by Israeli authorities, protests supporting Palestinian rights worldwide, and campaigns aimed at raising awareness of the conflict’s humanitarian toll. These voices often challenge state narratives and push for greater global attention to detainee treatment, freedom of movement, and the impact of militarization on civilians. The focus is on grassroots mobilization and ethical accountability.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/can.svg" alt="Canada" title="Canada" class="flag-icon">
+                            <a href="https://www.theglobeandmail.com/world/" target="_blank" class="article-link">Greta Thunberg claims she was tortured in Israeli prison during Gaza flotilla detainment</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/smr.svg" alt="San Marino" title="San Marino" class="flag-icon">
+                            <a href="http://www.sanmarinortv.sm/news/attualita-c4" target="_blank" class="article-link">Appeal at Palazzo Pubblico: “No more contracts from San Marino with companies linked to the Israeli war economy”</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tls.svg" alt="Timor-Leste" title="Timor-Leste" class="flag-icon">
+                            <a href="https://www.noticiasaominuto.com/mundo" target="_blank" class="article-link">About 20 pro-Palestine protesters lock themselves in a classroom in Spain</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hun.svg" alt="Hungary" title="Hungary" class="flag-icon">
+                            <a href="https://nepszava.hu/tag/kulfold/" target="_blank" class="article-link">Greenpeace Activist Greta Thunberg Claims She Was Tortured in Israeli Jail</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Pro-Peace Agreement Supporters Highlighting Diplomatic Progress",
+                color: "#72e5ac",
+                data: [ {"id": "AU"},  {"id": "GR"},  {"id": "GT"},  {"id": "HT"},  {"id": "IE"},  {"id": "IS"},  {"id": "KR"},  {"id": "LB"},  {"id": "LK"},  {"id": "MX"},  {"id": "NG"},  {"id": "NL"},  {"id": "NP"},  {"id": "OM"},  {"id": "PA"},  {"id": "PE"},  {"id": "PT"},  {"id": "UA"} ]
+            },
+        
+            {
+                name: "Critics Condemning Israeli Actions and Supporting Palestinian Rights",
+                color: "#72a2e5",
+                data: [ {"id": "CV"},  {"id": "EC"},  {"id": "ES"},  {"id": "RS"},  {"id": "SR"},  {"id": "VA"},  {"id": "YE"} ]
+            },
+        
+            {
+                name: "Regional Middle Eastern Views Emphasizing Accountability and Opposition to Israeli Policies",
+                color: "#bf72e5",
+                data: [ {"id": "AM"},  {"id": "BH"},  {"id": "SA"} ]
+            },
+        
+            {
+                name: "European Parliamentary and Public Pressure for Arms Embargoes and Ethical Diplomacy",
+                color: "#e5728f",
+                data: [ {"id": "ME"} ]
+            },
+        
+            {
+                name: "International Public and Civil Society Voices Highlighting Human Rights and Activism",
+                color: "#e5d272",
+                data: [ {"id": "CA"},  {"id": "HU"},  {"id": "SM"} ]
+            }
+        
+        
+            ,
+            {
+                name: "Different perspectives:\n- Pro-Peace Agreement Supporters Highlighting Diplomatic Progress\n- European Parliamentary and Public Pressure for Arms Embargoes and Ethical Diplomacy",
+                color: "#AAAAAA",
+                data: [{"id": "BG"}]
+            },
+            {
+                name: "Different perspectives:\n- Pro-Peace Agreement Supporters Highlighting Diplomatic Progress\n- European Parliamentary and Public Pressure for Arms Embargoes and Ethical Diplomacy",
+                color: "#AAAAAA",
+                data: [{"id": "CZ"}]
+            },
+            {
+                name: "Different perspectives:\n- Pro-Peace Agreement Supporters Highlighting Diplomatic Progress\n- European Parliamentary and Public Pressure for Arms Embargoes and Ethical Diplomacy",
+                color: "#AAAAAA",
+                data: [{"id": "SK"}]
+            },
+            {
+                name: "Different perspectives:\n- Pro-Peace Agreement Supporters Highlighting Diplomatic Progress\n- International Public and Civil Society Voices Highlighting Human Rights and Activism",
+                color: "#AAAAAA",
+                data: [{"id": "TL"}]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Hide sources ▲' : 'Show sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li class="active-m">
+               <a href="/">Home </a>
+            </li>
+            <li>
+              <a href="/en/about.html">About</a>
+            </li>
+            <li>
+              <a href="/en/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
