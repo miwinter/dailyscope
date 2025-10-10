@@ -1,0 +1,598 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Global Natural Disaster Alerts and Responses: Earthquakes, Storms, and Floods</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/fra.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="Français" title="Français" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/en', '/fr');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>              
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Global Natural Disaster Alerts and Responses: Earthquakes, Storms, and Floods</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-10-10</span> • <span>50 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-10-10/2025-10-10-4.webp" alt="Global Natural Disaster Alerts and Responses: Earthquakes, Storms, and Floods" class="main-image">
+                <p style="margin:0">Recent natural disasters have affected multiple regions globally, with a large number of articles focusing on powerful earthquakes in the Philippines that triggered tsunami warnings and emergency responses. These seismic events, ranging around magnitudes 7.2 to 7.6, caused significant alarm and preventative evacuations across neighboring countries. In parallel, severe weather phenomena such as storms and floods have caused casualties and infrastructure damage in regions including South Asia, the Caribbean, Europe, and Africa. The varied responses highlight the global emphasis on early warnings and coordinated emergency measures to mitigate disaster impacts across differing geographies.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div class="key-points">
+        <h2>Countries covering this topic</h2>
+    </div>
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Philippines and Neighboring Countries&#39; Emphasis on Tsunami Preparedness</h3>
+        <p class="cluster-description">Articles from countries either directly affected by or closely monitoring seismic activity in the Philippines emphasize prompt issuance of tsunami warnings, evacuation advisories, and coordination of emergency response efforts. These sources underscore the high seismic risk in the region and focus on safeguarding coastal populations through heightened alertness and preventive actions by authorities. The perspective reflects a regional and international concern for disaster readiness and minimizing casualties following major earthquakes.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sau.svg" alt="Saudi Arabia" title="Saudi Arabia" class="flag-icon">
+                            <a href="https://www.arabnews.com/international" target="_blank" class="article-link">Magnitude 7.6 earthquake strikes Philippines, tsunami warning issued</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ind.svg" alt="India" title="India" class="flag-icon">
+                            <a href="https://www.thehindu.com/news/international/" target="_blank" class="article-link">Magnitude 7.4 earthquake strikes Philippines&#39; Mindanao, tsunami warning issued</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgd.svg" alt="Bangladesh" title="Bangladesh" class="flag-icon">
+                            <a href="https://www.thedailystar.net/world" target="_blank" class="article-link">Major quake strikes off southern Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgd.svg" alt="Bangladesh" title="Bangladesh" class="flag-icon">
+                            <a href="https://bdnews24.com/world" target="_blank" class="article-link">Tsunami warning as strong quake hits off Philippines coast</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svk.svg" alt="Slovakia" title="Slovakia" class="flag-icon">
+                            <a href="https://spravy.pravda.sk/svet/" target="_blank" class="article-link">Philippines hit by a 7.4 magnitude earthquake, authorities warn of tsunami</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/che.svg" alt="Switzerland" title="Switzerland" class="flag-icon">
+                            <a href="https://www.letemps.ch/monde" target="_blank" class="article-link">Tsunami Alert After Powerful Earthquake Off the Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aus.svg" alt="Australia" title="Australia" class="flag-icon">
+                            <a href="https://www.smh.com.au/world" target="_blank" class="article-link">Tsunami warning for waves up to three metres after earthquake off Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/grc.svg" alt="Greece" title="Greece" class="flag-icon">
+                            <a href="https://www.tovima.gr/category/world/" target="_blank" class="article-link">Strong 7.4 magnitude earthquake in the Philippines – Tsunami warning</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fin.svg" alt="Finland" title="Finland" class="flag-icon">
+                            <a href="https://www.is.fi/ulkomaat/" target="_blank" class="article-link">Strong earthquake in the Philippines, tsunami warning issued to neighboring countries</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mhl.svg" alt="Marshall Islands" title="Marshall Islands" class="flag-icon">
+                            <a href="https://www.rnz.co.nz/international/pacific-news?tag=marshall-islands" target="_blank" class="article-link">Magnitude 7.2 earthquake strikes Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mys.svg" alt="Malaysia" title="Malaysia" class="flag-icon">
+                            <a href="https://www.malaymail.com/news/world" target="_blank" class="article-link">Powerful 7.4-magnitude quake strikes southern Philippines, tsunami warning issued</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nzl.svg" alt="New Zealand" title="New Zealand" class="flag-icon">
+                            <a href="https://www.rnz.co.nz/news/world" target="_blank" class="article-link">Magnitude 7.4 earthquake strikes Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/per.svg" alt="Peru" title="Peru" class="flag-icon">
+                            <a href="https://larepublica.pe/mundo/" target="_blank" class="article-link">Strong 7.4 Magnitude Earthquake Shakes Philippines, Tsunami Alert Activated</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/usa.svg" alt="United States" title="United States" class="flag-icon">
+                            <a href="https://edition.cnn.com/world" target="_blank" class="article-link">7.4 magnitude earthquake hits southeast Philippines, tsunami advisory issued</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dom.svg" alt="Dominican Republic" title="Dominican Republic" class="flag-icon">
+                            <a href="https://www.diariolibre.com/mundo" target="_blank" class="article-link">7.4 Magnitude Earthquake Strikes Philippine Island of Mindanao, Tsunami Alert Activated</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ita.svg" alt="Italy" title="Italy" class="flag-icon">
+                            <a href="https://www.corriere.it/esteri/" target="_blank" class="article-link">Philippines: magnitude 7.4 earthquake, tsunami alert triggered</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ita.svg" alt="Italy" title="Italy" class="flag-icon">
+                            <a href="https://www.repubblica.it/esteri/" target="_blank" class="article-link">Tsunami alert after a magnitude 7.4 earthquake in the Philippines: &#39;Evacuate coastal areas&#39;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mng.svg" alt="Mongolia" title="Mongolia" class="flag-icon">
+                            <a href="https://montsame.mn/mn/more/17" target="_blank" class="article-link">Tsunami Alert Issued in the Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mng.svg" alt="Mongolia" title="Mongolia" class="flag-icon">
+                            <a href="https://news.mn/angilal/delhii/" target="_blank" class="article-link">7.4 Magnitude Earthquake in the Philippines Raises Tsunami Risk</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vnm.svg" alt="Vietnam" title="Vietnam" class="flag-icon">
+                            <a href="https://tuoitre.vn/the-gioi.htm" target="_blank" class="article-link">Strong 7.6 Magnitude Earthquake in Philippines, US and Indonesia Warn Tsunami</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cri.svg" alt="Costa Rica" title="Costa Rica" class="flag-icon">
+                            <a href="https://www.nacion.com/el-mundo/" target="_blank" class="article-link">‘A destructive tsunami is expected’: alert in the Philippines after 7.4 earthquake</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/imn.svg" alt="IMN" title="IMN" class="flag-icon">
+                            <a href="https://www.manxradio.com/news/" target="_blank" class="article-link">Tsunami warning issued following powerful earthquake in Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hnd.svg" alt="Honduras" title="Honduras" class="flag-icon">
+                            <a href="https://www.elheraldo.hn/mundo" target="_blank" class="article-link">7.4-Magnitude Earthquake Hits Mindanao, Philippines, Tsunami Alert Activated</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cyp.svg" alt="Cyprus" title="Cyprus" class="flag-icon">
+                            <a href="https://www.philenews.com/kosmos/" target="_blank" class="article-link">Philippines: Strong 7.2 Magnitude Earthquake – Tsunami Warning Issued</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/swe.svg" alt="Sweden" title="Sweden" class="flag-icon">
+                            <a href="https://www.svd.se/" target="_blank" class="article-link">Tsunami warning after earthquake in the Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dnk.svg" alt="Denmark" title="Denmark" class="flag-icon">
+                            <a href="https://nyheder.tv2.dk/udland" target="_blank" class="article-link">Philippines warns of devastating and deadly tsunami</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/idn.svg" alt="Indonesia" title="Indonesia" class="flag-icon">
+                            <a href="https://www.kompas.com/global" target="_blank" class="article-link">Philippines Hit by Strong M7.6 Earthquake Amid Tsunami Warning</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sgp.svg" alt="Singapore" title="Singapore" class="flag-icon">
+                            <a href="https://www.straitstimes.com/global" target="_blank" class="article-link">Powerful 7.5-magnitude earthquake strikes off southern Philippines, tsunami warning issued</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/deu.svg" alt="Germany" title="Germany" class="flag-icon">
+                            <a href="https://www.sueddeutsche.de/news/politik/" target="_blank" class="article-link">Strong Earthquake Hits the Philippines, Triggering Tsunami Warning</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mex.svg" alt="Mexico" title="Mexico" class="flag-icon">
+                            <a href="https://www.jornada.com.mx/categoria/mundo" target="_blank" class="article-link">Magnitude 7.4 earthquake shakes the coasts of the Philippines and triggers tsunami alert</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nor.svg" alt="Norway" title="Norway" class="flag-icon">
+                            <a href="https://www.aftenposten.no/verden" target="_blank" class="article-link">Tsunami warning after 7.4 earthquake off the Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nor.svg" alt="Norway" title="Norway" class="flag-icon">
+                            <a href="https://www.vg.no/nyheter/utenriks" target="_blank" class="article-link">Tsunami warning after 7.6 earthquake off the Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/are.svg" alt="United Arab Emirates" title="United Arab Emirates" class="flag-icon">
+                            <a href="https://gulfnews.com/world" target="_blank" class="article-link">Philippines Oct. 11 quake: First images reveal damage</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gbr.svg" alt="United Kingdom" title="United Kingdom" class="flag-icon">
+                            <a href="https://news.sky.com/world" target="_blank" class="article-link">Tsunami warning issued following powerful earthquake in Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lbn.svg" alt="Lebanon" title="Lebanon" class="flag-icon">
+                            <a href="https://www.annahar.com/International" target="_blank" class="article-link">7.4-Magnitude Earthquake Strikes Mindanao Island in the Philippines with Tsunami Warning</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72bbe5; padding: 8px 16px; border-radius: 4px;">Natural Disaster Impact and Response in South Asia and Surrounding Regions</h3>
+        <p class="cluster-description">This group of articles focuses on the consequences of heavy rainfall, landslides, and floods in South Asia, especially India, Nepal, Pakistan, and Bangladesh. The perspective highlights tragic casualties, infrastructure damage, and humanitarian responses amid ongoing severe weather events. These reports bring attention to natural disaster vulnerability in mountainous and flood-prone areas and emphasize rescue operations and continued alerts for worsening conditions.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/phl.svg" alt="Philippines" title="Philippines" class="flag-icon">
+                            <a href="https://www.philstar.com/world" target="_blank" class="article-link">Landslides and floods kill 63 in Nepal, India</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/afg.svg" alt="Afghanistan" title="Afghanistan" class="flag-icon">
+                            <a href="https://tolonews.com/world" target="_blank" class="article-link">15 Killed as Landslide Hits Bus in India</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/npl.svg" alt="Nepal" title="Nepal" class="flag-icon">
+                            <a href="https://thehimalayantimes.com/category/world/" target="_blank" class="article-link">A week of heavy rains and floods across Pakistan kills 46 people including 13 family members</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pak.svg" alt="Pakistan" title="Pakistan" class="flag-icon">
+                            <a href="https://www.thenews.com.pk/latest/category/world" target="_blank" class="article-link">Powerful 7.6 quake hits Southern Philippines, tsunami alert issued</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #8d72e5; padding: 8px 16px; border-radius: 4px;">Storm and Flood Warnings in Europe and Africa</h3>
+        <p class="cluster-description">Articles from European and African countries describe meteorological warnings about heavy rain, floods, and storms that threaten local populations and agriculture. The focus is on issuing red alerts, precautionary advisories, and mobilizing emergency preparedness to reduce damage. Some articles also mention the socio-political implications of flood events, such as disputes over water management in Nile basin countries. The stance reflects proactive disaster management combined with awareness of environmental and political impacts.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nld.svg" alt="Netherlands" title="Netherlands" class="flag-icon">
+                            <a href="https://www.telegraaf.nl/nieuws/buitenland" target="_blank" class="article-link">Warning of heavy rain and floods in Spain: red alert on Alicante and Valencia coasts</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fin.svg" alt="Finland" title="Finland" class="flag-icon">
+                            <a href="https://www.is.fi/ulkomaat/" target="_blank" class="article-link">Powerful storm threatens popular Finnish tourist destination – “Red warning”</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gin.svg" alt="Guinea" title="Guinea" class="flag-icon">
+                            <a href="https://guineematin.com/category/international/" target="_blank" class="article-link">Floods in Senegal: over 1,200 hectares of agricultural land submerged in Matam</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/rou.svg" alt="Romania" title="Romania" class="flag-icon">
+                            <a href="https://adevarul.ro/news/eveniment/" target="_blank" class="article-link">Warning from Ministry of Foreign Affairs for Romanians traveling to Bulgaria: traffic restrictions due to heavy rains</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/brn.svg" alt="Brunei" title="Brunei" class="flag-icon">
+                            <a href="https://www.rtbnews.rtb.gov.bn/Lists/News%202018/Category_International.aspx" target="_blank" class="article-link">Surging Nile waters inundate Egypt and Sudan, revive dispute over Ethiopian mega-dam</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bel.svg" alt="Belgium" title="Belgium" class="flag-icon">
+                            <a href="https://www.lavenir.net/actu/monde/" target="_blank" class="article-link">Red alert for torrential rains on the Spanish Alicante coast: precipitation could exceed 140mm in 12 hours</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e572da; padding: 8px 16px; border-radius: 4px;">Caribbean Nations Brace for Tropical Storm Jerry</h3>
+        <p class="cluster-description">Articles from Caribbean nations and territories focus on Tropical Storm Jerry’s advance and the multiple watches and warnings issued to prepare the affected populations. The perspective highlights coordination at the government and community level to ensure readiness for potentially severe weather hazards. They emphasize vigilance and precaution as key to mitigating disruptions and damages from the tropical storm.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lca.svg" alt="Saint Lucia" title="Saint Lucia" class="flag-icon">
+                            <a href="https://stluciatimes.com/category/news/" target="_blank" class="article-link">Tropical Storm Jerry strengthens as it approaches the Leeward Islands</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sxm.svg" alt="SXM" title="SXM" class="flag-icon">
+                            <a href="https://www.sxm-talks.com/" target="_blank" class="article-link">Tropical Storm Watch Issued as Tropical Storm Jerry Approaches Leeward Islands</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e57276; padding: 8px 16px; border-radius: 4px;">High-Altitude Weather Threats in Tibetan Region</h3>
+        <p class="cluster-description">This viewpoint is expressed in the article describing the sudden snowstorm in a Tibetan valley that trapped hundreds of hikers and local residents. The report underscores the dangers of extreme weather in high-altitude regions and the successful rescue operations to prevent casualties. The focus is on the vulnerability of remote mountainous areas to abrupt climatic events and the effectiveness of rapid emergency responses.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tza.svg" alt="Tanzania" title="Tanzania" class="flag-icon">
+                            <a href="https://dailynews.co.tz/category/world/" target="_blank" class="article-link">Hundreds of Everest hikers reach safety after snowstorm in Tibetan valley</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Miscellaneous Earthquake Incident in China</h3>
+        <p class="cluster-description">One article reports a moderate magnitude 5.4 earthquake in Sichuan, China, noting damage and emergency assessment. This perspective is more localized, emphasizing damage evaluation with no tsunami risk or wider regional impacts discussed.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Ireland" title="Ireland" class="flag-icon">
+                            <a href="https://www.independent.ie/world-news/" target="_blank" class="article-link">Magnitude 5.4 earthquake strikes Sichuan in China</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Philippines and Neighboring Countries\u0027 Emphasis on Tsunami Preparedness",
+                color: "#72e5ac",
+                data: [ {"id": "AE"},  {"id": "AU"},  {"id": "BD"},  {"id": "CH"},  {"id": "CR"},  {"id": "CY"},  {"id": "DE"},  {"id": "DK"},  {"id": "DO"},  {"id": "GB"},  {"id": "GR"},  {"id": "HN"},  {"id": "ID"},  {"id": "IM"},  {"id": "IN"},  {"id": "IT"},  {"id": "LB"},  {"id": "MH"},  {"id": "MN"},  {"id": "MX"},  {"id": "MY"},  {"id": "NO"},  {"id": "NZ"},  {"id": "PE"},  {"id": "SA"},  {"id": "SE"},  {"id": "SG"},  {"id": "SK"},  {"id": "US"},  {"id": "VN"} ]
+            },
+        
+            {
+                name: "Natural Disaster Impact and Response in South Asia and Surrounding Regions",
+                color: "#72bbe5",
+                data: [ {"id": "AF"},  {"id": "NP"},  {"id": "PH"},  {"id": "PK"} ]
+            },
+        
+            {
+                name: "Storm and Flood Warnings in Europe and Africa",
+                color: "#8d72e5",
+                data: [ {"id": "BE"},  {"id": "BN"},  {"id": "GN"},  {"id": "NL"},  {"id": "RO"} ]
+            },
+        
+            {
+                name: "Caribbean Nations Brace for Tropical Storm Jerry",
+                color: "#e572da",
+                data: [ {"id": "LC"},  {"id": "SX"} ]
+            },
+        
+            {
+                name: "High-Altitude Weather Threats in Tibetan Region",
+                color: "#e57276",
+                data: [ {"id": "TZ"} ]
+            },
+        
+            {
+                name: "Miscellaneous Earthquake Incident in China",
+                color: "#e5d272",
+                data: [ {"id": "IE"} ]
+            }
+        
+        
+            ,
+            {
+                name: "Different perspectives:\n- Philippines and Neighboring Countries\u0027 Emphasis on Tsunami Preparedness\n- Storm and Flood Warnings in Europe and Africa",
+                color: "#AAAAAA",
+                data: [{"id": "FI"}]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Hide sources ▲' : 'Show sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li class="active-m">
+               <a href="/">Home </a>
+            </li>
+            <li>
+              <a href="/en/about.html">About</a>
+            </li>
+            <li>
+              <a href="/en/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
