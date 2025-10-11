@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Labels & Categories — History + Tag Cloud</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+  <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-tag-cloud.min.js"></script>
+  <style>
+    
+    html, body {
+      width: 100%; height: 100%;
+      margin: 0; padding: 0;
+    }
+    .band { width: 100%; margin: 0; padding: 0; }
+    .band--title { background: #f8f9fa; border-top: 1px solid #eee; }
+    .band--chart { background: #fff; border-top: 1px solid #eee; }
+    .content-shell {
+      width: 100%;
+      max-width: 1400px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+    .band--title .content-shell { padding: 28px 16px 18px; }
+    .band--chart .content-shell { padding: 20px 16px 40px; }
+    .section-title {
+      margin: 0;
+      font: 600 20px/1.3 system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial;
+    }
+    .section-subtitle {
+      margin: 8px 0 0 0;
+      color: #666;
+      font: 400 14px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial;
+    }
+    /* un cadre qui définit largeur ET ratio */
+    .chart-frame {
+      width: min(100%, 800px);     /* cap responsive */
+      margin: 0 auto;
+      aspect-ratio: 16 / 9;         /* change en 4/3, 3/2, etc. */
+      position: relative;
+    }
+
+    /* le chart occupe 100% du cadre */
+    .chart-plot {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+  </style>
+</head>
+<body>
+  <header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/fra.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="Français" title="Français" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/en', '/fr');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>              
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+  <!-- Section 2: Tag Cloud -->
+  <section class="band band--title">
+    <div class="content-shell">
+      <h2 class="section-title">Categories Tag Cloud</h2>
+      <p class="section-subtitle">Most frequent categories in the news for 2025-10-11.</p>
+    </div>
+  </section>
+  <section class="band band--chart">
+    <div class="content-shell">
+      <div class="chart-frame">
+        <div id="chart-tagcloud" class="chart-plot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 1: Labels History (stacked columns) -->
+  <section class="band band--title">
+    <div class="content-shell">
+      <h2 class="section-title">Labels Evolution</h2>
+      <p class="section-subtitle">Daily distribution of top news labels over the last 7 days.</p>
+    </div>
+  </section>
+  <section class="band band--chart">
+    <div class="content-shell">
+      <div class="chart-frame">
+        <div id="chart-labels" class="chart-plot"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    // ===== Chart 1: Labels History (from labels_template_en.html) =====
+    anychart.onDocumentReady(function () {
+      (function () {
+        var rawData = [["Bilateral Diplomacy", 0, 0, 95, 102, 0, 0, 0], ["Gaza Conflict", 0, 0, 237, 191, 0, 0, 0], ["Israel-Hamas Ceasefire", 134, 139, 0, 0, 0, 0, 0], ["Israel-Palestine Conflict", 0, 118, 0, 0, 53, 0, 62], ["Maria Corina Machado Nobel Win", 44, 0, 0, 0, 0, 0, 0], ["Natural Disaster", 49, 51, 0, 0, 41, 49, 0], ["US\u2013China Tariff War", 55, 0, 0, 0, 0, 0, 0], ["Ukraine-Russia Conflict", 49, 55, 56, 79, 81, 99, 73]];
+        var dates = ["2025-10-11", "2025-10-10", "2025-10-09", "2025-10-08", "2025-10-07", "2025-10-06", "2025-10-05"].reverse();
+
+        var chart = anychart.column();
+        chart.yScale().stackMode('value');
+
+        var colors = ['#72e5ac','#72e5e3','#72b0e5','#7279e5','#a372e5','#da72e5','#e572b8','#e57281','#e59b72','#e5d272'];
+
+        var seriesList = [];
+        var lastHighlighted = null;
+
+        function setHighlighted(s, on) {
+          var orig = s.meta('origFill');
+          if (!orig) return;
+          if (on) {
+            s.normal().fill('#000000');
+            s.normal().stroke('2 #fff 1');
+            s.zIndex(10);
+            s.meta('isHighlighted', true);
+            lastHighlighted = s;
+          } else {
+            s.normal().fill(orig);
+            s.normal().stroke('2 #fff 1');
+            s.zIndex(1);
+            s.meta('isHighlighted', false);
+            if (lastHighlighted === s) lastHighlighted = null;
+          }
+        }
+
+        function toggleHighlight(s) {
+          if (lastHighlighted && lastHighlighted !== s) setHighlighted(lastHighlighted, false);
+          var isOn = !!s.meta('isHighlighted');
+          setHighlighted(s, !isOn);
+        }
+
+        for (var i = 0; i < rawData.length; i++) {
+          var labelData = [];
+          var values = rawData[i].slice(1).reverse();
+          for (var j = 0; j < dates.length; j++) {
+            labelData.push({ x: dates[j], value: values[j] });
+          }
+          var s = chart.column(labelData);
+          var color = colors[i % colors.length];
+
+          s.name(rawData[i][0]);
+          s.normal().stroke('2 #fff 1');
+          s.normal().fill(color);
+
+          s.meta('origFill', color);
+          s.meta('isHighlighted', false);
+          s.zIndex(1);
+
+          s.listen('pointClick', function(e) { toggleHighlight(e.series); });
+
+          seriesList.push(s);
+        }
+
+        var legend = chart.legend();
+        legend.enabled(true).position('right').itemsLayout('vertical').padding([20,0,0,0]).fontSize(13);
+
+        chart.listen('legendItemClick', function (e) {
+          var s = seriesList[e.itemIndex];
+          if (s) toggleHighlight(s);
+          e.preventDefault();
+        });
+
+        chart.tooltip()
+          .displayMode('single')
+          .titleFormat(function () { return this.x + ' — ' + this.seriesName; })
+          .format(function () { return this.value + ' articles'; });
+
+        chart.xAxis().labels().rotation(-45);
+        chart.yAxis().title('Number of articles');
+
+        chart.container('chart-labels');
+        chart.draw();
+      })();
+    });
+
+    // ===== Chart 2: Tag Cloud (from tag_cloud_template.html) =====
+    anychart.onDocumentReady(function () {
+      (function () {
+        var raw = [{"category": "Israel-Hamas Ceasefire", "weight": 134}, {"category": "Israel-Palestine Conflict", "weight": 35}, {"category": "Ukraine-Russia Conflict", "weight": 49}, {"category": "Natural Disaster", "weight": 49}, {"category": "Trump Gaza Peace Plan", "weight": 32}, {"category": "Israel-Hamas Hostage Deal", "weight": 24}, {"category": "American Diplomacy", "weight": 5}, {"category": "Trump Nobel Peace Bid", "weight": 18}, {"category": "US Government Shutdown", "weight": 21}, {"category": "Belgium PM Assassination Plot", "weight": 7}, {"category": "Russia\u2013Azerbaijan Jet Shootdown", "weight": 4}, {"category": "Man\u2011Made Disasters", "weight": 32}, {"category": "Trump Spain NATO Expulsion", "weight": 7}, {"category": "Peru President Removal Bid", "weight": 29}, {"category": "UN Gaza Aid Plan", "weight": 11}, {"category": "US\u2013Israel Diplomatic Visit", "weight": 6}, {"category": "EU Probes Hungary Spy Network", "weight": 3}, {"category": "France PM Appointment", "weight": 40}, {"category": "NATO Eastern Flank Operation", "weight": 2}, {"category": "Central Asia\u2013Russia Cooperation Summit", "weight": 7}, {"category": "Japan Bear Attack", "weight": 1}, {"category": "Los Angeles Missile Attack", "weight": 1}, {"category": "US\u2013China Tariff War", "weight": 55}, {"category": "US\u2013Denmark Fighter Jet Sale", "weight": 1}, {"category": "British Airways Emergency Landing", "weight": 1}, {"category": "Machado Wins Nobel Peace Prize", "weight": 20}, {"category": "Ecuador Motorcade Attack", "weight": 1}, {"category": "US\u2013Russia Child Hostage Talks", "weight": 8}, {"category": "Maria Corina Machado Nobel Win", "weight": 44}, {"category": "Venezuela Nobel Peace Prize", "weight": 3}, {"category": "BADEA Rwanda Concessional Loan", "weight": 1}, {"category": "Machado Nobel Peace Award", "weight": 1}, {"category": "Laos\u2013North Korea State Visit", "weight": 1}, {"category": "Grenada Fake Passport Bust", "weight": 1}, {"category": "Namibia Honors Seretse Khama", "weight": 1}, {"category": "Brazil: Bolsonaro Coup Verdict", "weight": 1}, {"category": "Baltic States Evacuation Plans", "weight": 2}, {"category": "Ethiopia Accuses Eritrea War Prep", "weight": 1}, {"category": "Turkey\u2013Iraq\u2013Syria Counter-ISIS Coordination", "weight": 1}, {"category": "North Korea Missile Parade", "weight": 1}, {"category": "Faroe Islands Pelagos Reception", "weight": 1}, {"category": "US Defense Budget: Ukraine Aid", "weight": 1}, {"category": "CARICOM Climate Finance Meeting", "weight": 1}, {"category": "ICC Rejects Duterte Release", "weight": 1}, {"category": "Zimbabwe\u2013Botswana Agritech Partnership", "weight": 1}, {"category": "US\u2013Qatar Base Sharing", "weight": 1}, {"category": "Jordan-Gaza Aid Corridor", "weight": 1}, {"category": "Nepal Press Freedom Appeal", "weight": 1}, {"category": "US Tomahawk Escalation Risk", "weight": 1}, {"category": "Air Antilles Loan Approval", "weight": 1}, {"category": "Nordic Social Media Ban", "weight": 1}, {"category": "US\u2013Burkina Faso Deportation Rift", "weight": 1}, {"category": "Trump Misinformation Spread", "weight": 1}, {"category": "DRC\u2013Rwanda M23 Support Dispute", "weight": 3}, {"category": "Vanuatu-PNG Justice Cooperation", "weight": 1}, {"category": "EPA Guam Cleanup", "weight": 1}, {"category": "Curacao Coach Praises Teams", "weight": 1}, {"category": "US\u2013Denmark Arctic Deployment", "weight": 1}, {"category": "US Navy 250th Anniversary Celebration", "weight": 1}, {"category": "Laos\u2013ASEAN Agriculture Cooperation", "weight": 1}, {"category": "North Korea State Parade", "weight": 1}, {"category": "Hamas Rejects Foreign Control", "weight": 1}, {"category": "Boluarte Travel Ban", "weight": 1}, {"category": "Eurogroup Sanctions Russian Assets", "weight": 1}, {"category": "Trump Demands Jail Chicago Officials", "weight": 1}, {"category": "Pakistan Space Tech Push", "weight": 1}, {"category": "EU\u2013Iran Nuclear Talks", "weight": 5}, {"category": "Colombia-US Strike Tension", "weight": 1}, {"category": "Sudan\u2013Eritrea Diplomatic Visit", "weight": 1}, {"category": "Trump Demands Chicago Officials Imprisonment", "weight": 1}, {"category": "CSTO Security Summit", "weight": 2}, {"category": "Taiwan T-Dome Deployment", "weight": 1}, {"category": "US\u2013Qatar Defense Talks", "weight": 2}, {"category": "Togo\u2013Cuba Diplomatic Talks", "weight": 3}, {"category": "UNESCO Leadership Appointment", "weight": 1}, {"category": "US\u2013Caribbean Destabilization", "weight": 1}, {"category": "Czechia Airspace Incursion", "weight": 1}, {"category": "Ivory Coast Presidential Campaign", "weight": 1}, {"category": "NATO Weighs Russia Countermeasures", "weight": 1}, {"category": "Latvia Expels Russians", "weight": 1}, {"category": "US\u2013Russia Nuclear Arms Race", "weight": 1}, {"category": "US\u2013Finland Icebreaker Deal", "weight": 1}, {"category": "Egypt\u2013Kenya Cooperation Talks", "weight": 1}, {"category": "Cuba Backs Global Governance Initiative", "weight": 1}, {"category": "South Africa Airspace Alert", "weight": 1}, {"category": "Mali Fuel Blockade", "weight": 1}, {"category": "Pentagon Drug Cartel Taskforce", "weight": 1}, {"category": "Somalia\u2013South Africa Diaspora Shooting", "weight": 1}, {"category": "US Attacks Venezuelan Boats", "weight": 1}, {"category": "Spain PM Corruption Probe", "weight": 1}, {"category": "Vanuatu UN Development Plan", "weight": 1}, {"category": "Unification Church Indictment", "weight": 1}, {"category": "Cambodia Exports Surge", "weight": 1}, {"category": "Indonesia Radioactive Contamination", "weight": 1}, {"category": "CIS Heads Summit", "weight": 1}, {"category": "Tonga Candidate Registration", "weight": 1}, {"category": "Solomon Islands\u2013San Marino Diplomatic Accord", "weight": 1}, {"category": "Russia Blocks Moldovan Apples", "weight": 1}, {"category": "Florida Child Abandonment", "weight": 1}, {"category": "Russia Defies ICC Warrant", "weight": 1}, {"category": "Kenya Shakahola Massacre Trial", "weight": 1}, {"category": "Africa\u2013EU Health Infrastructure Cooperation", "weight": 1}, {"category": "Europe Entry/Exit System Launch", "weight": 1}, {"category": "Norway Develops Explosive Drones", "weight": 1}, {"category": "MENA Asset Recovery Summit", "weight": 3}, {"category": "Comoros-Madagascar Friendship Assembly", "weight": 1}, {"category": "Belarusian Student Aid Debate", "weight": 1}, {"category": "Jamaica\u2013Spain Economic Cooperation", "weight": 1}, {"category": "San Marino Accessible Tourism Pledge", "weight": 1}, {"category": "South Africa\u2013Zimbabwe Permits Extension", "weight": 1}, {"category": "US\u2013Qatar Training Facility Deal", "weight": 3}, {"category": "UN Plastic Treaty Talks", "weight": 1}, {"category": "US Sidelines Nicaragua Opposition", "weight": 1}, {"category": "Trump Disinformation Spread", "weight": 1}, {"category": "Guinea\u2013Niger Migrant Repatriation", "weight": 1}, {"category": "Fiji Cyber Scam Surge", "weight": 1}, {"category": "Germany Citizenship Law Repeal", "weight": 1}, {"category": "Colombia Deploys Drone Battalion", "weight": 1}, {"category": "Japan: Coalition Collapse", "weight": 1}, {"category": "Burkina Faso US Visa Relocation", "weight": 1}, {"category": "Haiti Child Displacement Surge", "weight": 3}, {"category": "Haiti\u2013France Anti-Drone Equipment Seizure", "weight": 1}, {"category": "Podemos Nobel Protest", "weight": 1}, {"category": "Trump China Threats", "weight": 1}, {"category": "Mali Moussa Mara Sentencing", "weight": 1}, {"category": "EU\u2013Russia Accusations Analysis", "weight": 1}, {"category": "US\u2013Venezuela Oil Diplomacy Rift", "weight": 3}, {"category": "ICC Denies Duterte Release", "weight": 1}, {"category": "Germany\u2013Russia Training Cooperation", "weight": 1}, {"category": "NYT Pentagon Leak Dispute", "weight": 1}, {"category": "US\u2013Ghana Deportation Dispute", "weight": 1}, {"category": "Cameroon Presidential Election", "weight": 3}, {"category": "Mexico Screwworm Outbreak", "weight": 1}, {"category": "Pope Leo Social Justice Appeal", "weight": 1}, {"category": "US\u2013Argentina Currency Intervention", "weight": 1}, {"category": "Tajikistan\u2013Azerbaijan Bilateral Talks", "weight": 1}, {"category": "Barbados\u2013Italy Diplomatic Talks", "weight": 1}, {"category": "US\u2013Russia Nuclear Arms Rift", "weight": 1}, {"category": "Pavol Ga\u0161par Accident Probe", "weight": 1}, {"category": "Pacific Islands Climate Adaptation", "weight": 1}, {"category": "US\u2013Syria Caesar Act Repeal", "weight": 1}, {"category": "South Africa: Somali Businessman Shooting", "weight": 1}, {"category": "Thailand\u2013Cambodia Peace Talks", "weight": 1}, {"category": "Ethiopia\u2013Belgium Political Consultation", "weight": 1}, {"category": "Afreximbank President Appointment", "weight": 1}, {"category": "EU Energy Sanctions Russia", "weight": 1}, {"category": "France: Macron Camp Split", "weight": 1}, {"category": "Cuba\u2013Namibia Commission Launch", "weight": 1}, {"category": "BOAD 15-Year Eurobond", "weight": 1}, {"category": "US\u2013Venezuela Pressure Campaign", "weight": 2}, {"category": "China Sinicization Policy", "weight": 1}, {"category": "EU\u2013Russia Energy Imports Rise", "weight": 1}, {"category": "Norway Recognizes Palestine", "weight": 1}, {"category": "IDF Strikes Hezbollah", "weight": 1}, {"category": "US Cuts UN Funding", "weight": 1}, {"category": "UAE Bans Israeli Defense Firms", "weight": 1}, {"category": "Physicists Predict Reverse Big Bang", "weight": 1}, {"category": "Ex-FBI Informant Sanctions", "weight": 1}, {"category": "Putin Cancels Arab Summit", "weight": 1}, {"category": "Afghanistan\u2013India Diplomatic Talks", "weight": 1}, {"category": "IMF Growth Forecast", "weight": 1}, {"category": "Kyrgyzstan\u2013Tajikistan Diplomatic Talks", "weight": 2}, {"category": "New Orleans Jailbreak Recapture", "weight": 1}, {"category": "South Africa Envoy Suicide Probe", "weight": 1}, {"category": "Macron Andorra Visit Delay", "weight": 1}, {"category": "CIS Economic Growth Surge", "weight": 1}, {"category": "Machado Nobel Leak Probe", "weight": 1}, {"category": "Badinter Pantheon Induction", "weight": 1}, {"category": "Putin Weapon Reveal", "weight": 1}, {"category": "Play Airline Shutdown", "weight": 1}, {"category": "Gee Ends Israel-Premier Tech Deal", "weight": 1}, {"category": "Netherlands\u2013Cura\u00e7ao Cooperation Talks", "weight": 1}, {"category": "Nobel Peace Prize Leak Probe", "weight": 1}, {"category": "Trump Health Assessment", "weight": 5}, {"category": "Baltic States Evacuation Plan", "weight": 1}, {"category": "US\u2013Cuba Military Deployment Dispute", "weight": 1}, {"category": "Solomon Islands Narco-Sub Bust", "weight": 1}, {"category": "Georgia Media Foreign Funding Warnings", "weight": 1}, {"category": "DRC\u2013Rwanda Peace Initiative", "weight": 3}, {"category": "Netherlands\u2013Suriname State Visit", "weight": 1}, {"category": "US Threatens IMO Sanctions", "weight": 1}, {"category": "ChatGPT Aids Arson Probe", "weight": 1}, {"category": "Mozambique Extremist Killings", "weight": 2}, {"category": "COMESA Digital Sovereignty Summit", "weight": 1}, {"category": "Saint Lucia Travel Awards Sweep", "weight": 1}, {"category": "Germany Repeals Fast-Track Citizenship", "weight": 1}, {"category": "Syria-Kurdish Ceasefire", "weight": 1}, {"category": "Libya\u2013UAE Flight Resumption", "weight": 1}, {"category": "China Rare Earth Export Clampdown", "weight": 1}, {"category": "Burkina Faso Defense Equipment Delivery", "weight": 1}, {"category": "UK\u2013India Missile Deal", "weight": 1}, {"category": "EU Steel Import Curbs", "weight": 1}, {"category": "US Government Layoffs", "weight": 7}, {"category": "Colombia Media Pluralism Ruling", "weight": 1}, {"category": "Malaysia\u2013Turkmenistan Diplomatic Talks", "weight": 1}, {"category": "Slovenia Backs Russian Asset Seizure", "weight": 1}, {"category": "Laos Joins ASEAN Sustainability Drive", "weight": 1}, {"category": "Russia Alleges Western Election Interference", "weight": 1}, {"category": "Italy Airport Strike", "weight": 1}, {"category": "Central America FDI Surge", "weight": 1}, {"category": "CIS Foreign Ministers Summit", "weight": 1}, {"category": "Niger Ambassador Credentials", "weight": 1}, {"category": "Turkmenistan\u2013Ethiopia Envoy Accreditation", "weight": 1}, {"category": "US\u2013Georgia Diplomatic Row", "weight": 1}, {"category": "US\u2013Syria Sanctions Repeal", "weight": 1}, {"category": "African Union Digital Policy Fragmentation", "weight": 1}, {"category": "Macron Surprise Move", "weight": 1}, {"category": "Ivory Coast Campaign Kickoff", "weight": 1}, {"category": "CARICOM Migration Framework Talks", "weight": 1}, {"category": "North Korea Hypersonic Demo", "weight": 1}, {"category": "Laos\u2013Russia Diplomatic Anniversary", "weight": 1}, {"category": "US Military Barracks Overhaul", "weight": 1}, {"category": "Liberian Registry Innovation Approvals", "weight": 1}, {"category": "IMF Upgrades Outlook", "weight": 1}, {"category": "Burkina\u2013Senegal Diaspora Diplomacy", "weight": 1}, {"category": "ASEAN Plans Myanmar Election Observers", "weight": 1}, {"category": "Azerbaijan Releases Sputnik Editor", "weight": 1}, {"category": "EU Energy: Russian Imports Rise", "weight": 1}, {"category": "Trump Mideast Mission", "weight": 4}, {"category": "Denmark Social Media Ban", "weight": 1}, {"category": "Denmark\u2013Norway Drug Bust", "weight": 1}, {"category": "China\u2013North Korea Diplomatic Talks", "weight": 2}, {"category": "EU Global Gateway Forum", "weight": 4}, {"category": "Cuba\u2013China Diplomatic Anniversary", "weight": 1}, {"category": "Myanmar Air Strikes Disrupt Education", "weight": 1}, {"category": "Syria Missing Persons Probe", "weight": 1}, {"category": "US\u2013Guyana Extradition Talks", "weight": 1}, {"category": "Mark Bray Death Threats", "weight": 1}, {"category": "Parlacen Nepotism Probe", "weight": 1}, {"category": "North Korea ICBM Test Plan", "weight": 2}, {"category": "US\u2013Russia Child Protection Plan", "weight": 1}, {"category": "COMESA Finance Shift", "weight": 1}, {"category": "Ethiopia\u2013EU Global Gateway Partnership", "weight": 1}, {"category": "Trump National Guard Injunction", "weight": 1}, {"category": "Taiwan Defense Pledge", "weight": 1}, {"category": "Palau Rejects Asylum", "weight": 1}, {"category": "Afghanistan-Pakistan Border Dispute", "weight": 1}, {"category": "Jamaica Hotel Rankings", "weight": 1}, {"category": "Libya\u2013Hungary Cement Deal", "weight": 1}, {"category": "US Airline Food Safety Lawsuit", "weight": 1}, {"category": "US Arctic Jet Patrol", "weight": 1}, {"category": "Portugal\u2013S\u00e3o Tom\u00e9 Migration Aid", "weight": 1}, {"category": "Saint Vincent\u2013Taiwan Diplomatic Ties", "weight": 1}, {"category": "Caspian Sea Conservation Drive", "weight": 1}, {"category": "Somalia Swahili Integration", "weight": 1}, {"category": "Andorra-EU Association Deal", "weight": 1}, {"category": "Virgin Islands Debt Exemption", "weight": 1}, {"category": "Papua New Guinea Sorcery Torture", "weight": 1}, {"category": "Serbia Press Crackdown", "weight": 1}, {"category": "Peru Boluarte Travel Ban", "weight": 1}, {"category": "Haiti\u2013Bahamas Drug Bust", "weight": 1}, {"category": "Senegal Investment Forum", "weight": 1}, {"category": "Denmark F-35 Purchase", "weight": 1}, {"category": "IMF\u2013Kenya Reform Talks", "weight": 1}, {"category": "Belgium Transport Strike", "weight": 1}, {"category": "Canada\u2013US Diplomatic Visit", "weight": 1}, {"category": "France Government Collapse", "weight": 1}, {"category": "Ukraine\u2013Netherlands Drone Pact", "weight": 2}, {"category": "Jaguar Land Rover Cyberattack", "weight": 1}, {"category": "Bukele Animal Rescue Initiative", "weight": 1}, {"category": "Kim Jong-un Socialist Pledge", "weight": 1}, {"category": "South Sudan Army Chief Dismissal", "weight": 1}, {"category": "Samaritans Mental Health Campaign", "weight": 1}, {"category": "Romania\u2013US\u2013France Security Diplomacy", "weight": 1}, {"category": "Russia Gasoline Shortage", "weight": 1}, {"category": "India Police Phone Seizure", "weight": 1}, {"category": "Pakistan Taliban Leader Airstrike", "weight": 1}, {"category": "Russia\u2013Cuba Pharma Collaboration", "weight": 1}, {"category": "Russia AI Missile Development", "weight": 1}, {"category": "Uzhhorod Housing Surge", "weight": 1}, {"category": "Venezuela UN Security Appeal", "weight": 1}, {"category": "Kyrgyzstan: Russia, Middle East Ties", "weight": 1}, {"category": "Nauru Parliamentary Elections", "weight": 1}, {"category": "Pakistani Taliban Leader Killing", "weight": 1}, {"category": "Netherlands Election Campaign Halt", "weight": 1}, {"category": "Central Asia Growth Surge", "weight": 1}, {"category": "Russia Mediates Israel\u2013Iran", "weight": 1}, {"category": "Moscow Format Counterterrorism", "weight": 1}, {"category": "Tinubu Vetoes Senate Bills", "weight": 1}, {"category": "Trump Federal Funds Misuse", "weight": 1}, {"category": "Taiwan Builds Air Defense Dome", "weight": 1}, {"category": "US Senate Blocks Cartel Strike Powers", "weight": 1}, {"category": "Krasznahorkai Nobel Win", "weight": 1}, {"category": "Myanmar Festival Attack", "weight": 2}, {"category": "Haiti Malnutrition Crisis", "weight": 1}, {"category": "Liberia Procurement Protest", "weight": 1}, {"category": "Peru President Summons Security Chiefs", "weight": 1}, {"category": "Kagame Pushes Africa\u2013EU Partnership", "weight": 2}, {"category": "Australia\u2013India Security Pact", "weight": 1}, {"category": "EU Auditors Expose Fraud", "weight": 1}, {"category": "China Gobi Solar Thermal Launch", "weight": 1}, {"category": "Gaza Returnee Surge", "weight": 1}, {"category": "FirstRock KFC Expansion Costa Rica", "weight": 1}, {"category": "US Sanctions Carbon Tax Backers", "weight": 1}, {"category": "Mozambique Insurgent Incursion", "weight": 1}, {"category": "Singapore\u2013Australia Military Ties", "weight": 1}, {"category": "EU No-Confidence Vote", "weight": 1}, {"category": "Niger Agriculture Forum", "weight": 1}, {"category": "Sudan El Fasher Attacks", "weight": 1}, {"category": "Russia Inflation Drop", "weight": 1}, {"category": "Israel-Hezbollah Border Strike", "weight": 1}, {"category": "Europe Medical Staff Burnout", "weight": 1}, {"category": "Azerbaijan Propagandist Release", "weight": 1}, {"category": "US Sanctions Chinese Drone Firms", "weight": 1}, {"category": "US\u2013Argentina Financing Deal", "weight": 1}, {"category": "UK\u2013BVI Economic Interference", "weight": 1}, {"category": "US\u2013Russia Child Aid Talks", "weight": 1}, {"category": "Turkey: Mansur Yava\u015f Investigation", "weight": 1}, {"category": "DRC Gold Reserve Build", "weight": 1}, {"category": "North Korea Military Parade", "weight": 1}, {"category": "Kenya Expat Safety Rules", "weight": 1}, {"category": "Australia\u2013PNG Defence Pact", "weight": 1}, {"category": "Nepal Youth Protests", "weight": 1}, {"category": "Brazil Hunger Reduction", "weight": 1}, {"category": "Blue Pacific Rules-Based Order", "weight": 1}, {"category": "US Sanctions Iran Energy Trade", "weight": 1}, {"category": "Costa Rica: Chaves Immunity Removal", "weight": 1}, {"category": "Hungary\u2013Israel Diplomatic Visit", "weight": 1}, {"category": "S\u0026P Upgrades Egypt Rating", "weight": 1}, {"category": "Turkey Restores Gaza Diplomacy", "weight": 1}, {"category": "Hong Kong Parliament Probe", "weight": 1}, {"category": "F/A-XX Stealth Fighter Program", "weight": 1}, {"category": "US\u2013Palau Refugee Dispute", "weight": 1}, {"category": "DRC Ebola Containment", "weight": 1}, {"category": "US\u2013Mali Visa Bond Program", "weight": 1}, {"category": "US\u2013Russia Peace Talks", "weight": 1}, {"category": "UK Fraud Charges", "weight": 1}, {"category": "South Africa-Israel Activist Release", "weight": 1}, {"category": "North Korea Missile Display", "weight": 5}, {"category": "Ethiopia\u2013Eritrea War Buildup", "weight": 1}, {"category": "Russia Passenger Plane Shootdown", "weight": 1}, {"category": "BVI Decolonisation Push", "weight": 1}, {"category": "US\u2013Colombia Military Strike", "weight": 1}, {"category": "Putin Acknowledges Air Crash Role", "weight": 1}, {"category": "EU Migration Debate", "weight": 1}, {"category": "Yemen Rebels Attack USS Mason", "weight": 1}, {"category": "Amos Iran Coaching Appointment", "weight": 1}, {"category": "Geert Wilders Assassination Plot", "weight": 1}, {"category": "Malaysia Budget Delay", "weight": 1}, {"category": "US\u2013Norway Nobel Retaliation", "weight": 1}, {"category": "US\u2013Ukraine Arms Talks", "weight": 1}, {"category": "France-Mauritania Economic Mission", "weight": 1}, {"category": "Central African Republic Financing Call", "weight": 1}, {"category": "Ivory Coast 2025 Campaign Launch", "weight": 1}, {"category": "UNHRC Georgia Occupation Resolution", "weight": 1}, {"category": "Japan Coalition Collapse", "weight": 1}, {"category": "Iran Strikes Israel", "weight": 1}, {"category": "Arctic Infrastructure Investments", "weight": 1}, {"category": "Haiti\u2013Japan Diplomatic Talks", "weight": 1}, {"category": "US Rohingya Relief Funding", "weight": 1}, {"category": "Mali Military Dismissals", "weight": 1}, {"category": "Costa Rica Election Race", "weight": 1}, {"category": "North Korea Condemns Western Pressure", "weight": 1}, {"category": "NATO Annual Nuclear Exercise", "weight": 1}, {"category": "UK Google Market Oversight", "weight": 1}, {"category": "Syria\u2013Lebanon Diplomatic Visit", "weight": 2}, {"category": "France Pledges Gaza Stabilization Force", "weight": 1}, {"category": "USSOUTHCOM Caribbean Covert Ops", "weight": 1}, {"category": "Ivory Coast FIFA Appointments", "weight": 1}, {"category": "Peru Ex-President Travel Ban", "weight": 1}, {"category": "Denmark F-35 Procurement", "weight": 1}, {"category": "Asiana\u2013Jeju Osaka Route Dispute", "weight": 1}, {"category": "Putin Arms Race Pledge", "weight": 2}, {"category": "Mohammed VI Reform Call", "weight": 1}, {"category": "Nicaragua Press Freedom Award", "weight": 1}, {"category": "Morocco Youth Reform Protests", "weight": 2}, {"category": "Europe LNG Import Surge", "weight": 1}, {"category": "Iran\u2013Azerbaijan Military Drills", "weight": 1}, {"category": "Comoros\u2013Saudi Judicial Training", "weight": 1}, {"category": "Chagossians Repatriation", "weight": 1}, {"category": "Kazakhstan\u2013Russia State Visit", "weight": 1}, {"category": "Mandla Mandela No-Regrets Declaration", "weight": 1}, {"category": "EU Entry-Exit System Implementation", "weight": 1}, {"category": "Suriname\u2013Dominican Republic Tourism Cooperation", "weight": 1}, {"category": "Georgia\u2013Poland Border Assault", "weight": 1}, {"category": "Liberia UN Security Council Victory", "weight": 1}, {"category": "Gaza Reconstruction Contracts", "weight": 1}, {"category": "Pakistan Strike on Kabul", "weight": 1}, {"category": "Pakistan Counterterrorism Operation", "weight": 1}, {"category": "OPCW Syria Disarmament Resolution", "weight": 1}, {"category": "Mexico: Satellite Deforestation Monitoring", "weight": 1}, {"category": "EU Gaza Reconstruction Pledge", "weight": 1}, {"category": "Solomon Islands\u2013Saudi Development Pact", "weight": 1}, {"category": "Australia\u2013UK Free Trade Deal", "weight": 1}, {"category": "Philippines Stock Market Scandal", "weight": 1}, {"category": "Haiti Security Talks Disrupted", "weight": 1}, {"category": "Trump Deportation Surge", "weight": 1}, {"category": "African Pangolin Antitrafficking", "weight": 1}, {"category": "Trump Immigration Fines", "weight": 1}, {"category": "EU Border Control Rollout", "weight": 1}, {"category": "Tajikistan\u2013Russia Transport Roadmap", "weight": 1}, {"category": "Sudan World Cup Exit", "weight": 1}, {"category": "Comoros\u2013Saudi Ambassador Appointment", "weight": 1}, {"category": "China Taiwan War Games", "weight": 1}, {"category": "Putin\u2013Aliyev Summit", "weight": 1}, {"category": "China\u2013Russia Visa Waiver", "weight": 1}, {"category": "Rwanda\u2013Brazil Education Climate Pact", "weight": 1}, {"category": "Canada\u2013US Trade Talks", "weight": 1}, {"category": "US\u2013Venezuela Military Tensions", "weight": 4}, {"category": "DRC: Kabila Death Sentence", "weight": 1}, {"category": "Taiwan Defense Initiative", "weight": 1}, {"category": "US Admiral Hamas Disarmament", "weight": 1}, {"category": "Missouri Muslims Denounce ISIS", "weight": 1}, {"category": "Taliban Internet Restrictions", "weight": 1}, {"category": "IOM\u2013Niger Stability Pact", "weight": 1}, {"category": "Berks County Murder Charge", "weight": 1}, {"category": "Japan PM Appointment Crisis", "weight": 2}, {"category": "Kosovo Elects Ethnic Serb Leader", "weight": 1}, {"category": "Libya Rocket Attack Arrests", "weight": 1}, {"category": "Poland Rejects EU Migration Pact", "weight": 1}, {"category": "Italy-Israel Tourism Dispute", "weight": 1}, {"category": "Ethiopia Port Access Push", "weight": 1}, {"category": "US\u2013China Hostility Warning", "weight": 1}, {"category": "MIT Rebuffs Trump Oversight", "weight": 1}, {"category": "EU Drone Warfare Response", "weight": 1}, {"category": "Greenland Defense Cable Deal", "weight": 1}, {"category": "China UNGA 2758 Response", "weight": 1}, {"category": "Syria Manbij Solidarity Campaign", "weight": 1}, {"category": "German Mayor Stabbing", "weight": 1}, {"category": "Darfur Camp Attacks", "weight": 1}, {"category": "US Sanctions Iran-Backed Militias", "weight": 1}, {"category": "Mali Fuel Convoy Relief", "weight": 1}, {"category": "India\u2013Afghanistan Embassy Reopening", "weight": 1}, {"category": "Lebanon Dismantles Israel Spy Network", "weight": 1}, {"category": "Nigeria Academic Forgery Scandal", "weight": 2}, {"category": "US\u2013EU Tariff Talks", "weight": 1}, {"category": "Afghanistan Accuses Pakistan Airstrikes", "weight": 1}, {"category": "Sweden Anti-Drone Procurement", "weight": 1}, {"category": "US\u2013Tonga MCC Partnership", "weight": 1}, {"category": "Mozambique Gas Tax Warning", "weight": 1}, {"category": "Mali\u2013Mauritania Diplomatic Talks", "weight": 1}, {"category": "Norway Nobel Leak Probe", "weight": 1}, {"category": "Israel Approves Peace Plan", "weight": 2}, {"category": "Chile\u2013Haiti Scholarship Program", "weight": 1}, {"category": "Isle of Man Warnings Review", "weight": 1}, {"category": "China AI Chip Controls", "weight": 1}, {"category": "UNESCO Director Nomination", "weight": 1}, {"category": "EU Blacklists Panama", "weight": 1}, {"category": "Trump-AstraZeneca Drug Deal", "weight": 1}, {"category": "Pakistan Anti-Taliban Offensive", "weight": 1}, {"category": "US Blocks China Overflights", "weight": 1}, {"category": "AU Women Journalists Network Launch", "weight": 1}, {"category": "Indonesia\u2013Netherlands Prisoner Repatriation", "weight": 1}, {"category": "Bangladesh UNESCO Presidency", "weight": 1}, {"category": "Solomon Islands\u2013FSM Trade Talks", "weight": 1}, {"category": "Afghanistan Polio Team Attacks", "weight": 1}, {"category": "ZimTrade Botswana Export Drive", "weight": 1}, {"category": "Trump ASEAN Summit Visit", "weight": 1}, {"category": "Putin-Trump Peace Praise", "weight": 1}, {"category": "Madagascar Protest Violence", "weight": 2}, {"category": "Rome Airport Strike Advisory", "weight": 1}, {"category": "Africa: Precarious Jobs Crisis", "weight": 1}, {"category": "Liberia\u2013Rwanda Police Training", "weight": 1}, {"category": "Bannon Warns Britain", "weight": 1}, {"category": "Biden Aides Warn RFK", "weight": 1}, {"category": "Botswana Rejects De Beers Takeover", "weight": 1}, {"category": "Czech Election: Ukraine Aid Cut", "weight": 1}, {"category": "Cayman Q1 GDP Growth", "weight": 1}, {"category": "US\u2013Israel Troop Deployment", "weight": 1}, {"category": "OIC Congratulates Saudi Nobel Win", "weight": 1}, {"category": "NATO Nuclear Exercise", "weight": 1}, {"category": "Melania Trump\u2013Putin Exchange", "weight": 1}, {"category": "Niger\u2013Senegal Alliance Summit", "weight": 1}, {"category": "Cambodia Human Trafficking", "weight": 1}, {"category": "Senegal Rift Valley Fever Outbreak", "weight": 1}, {"category": "Germany Highway Crash", "weight": 1}, {"category": "Maria Corina Machado Nobel Nomination", "weight": 1}, {"category": "Tikhanovskaya HQ Relocation", "weight": 1}, {"category": "Russia\u2013Arab Summit Delay", "weight": 1}, {"category": "US\u2013Russia Ukraine Peace Talks", "weight": 1}, {"category": "Hamas Aid Entry", "weight": 1}, {"category": "Laos Awards Friendship Medal", "weight": 1}, {"category": "ECOWAS Boosts School Nutrition", "weight": 1}, {"category": "Israel\u2013Lebanon Bomb Plot", "weight": 1}, {"category": "Kabul Bombings Probe", "weight": 1}, {"category": "ChatGPT-Aided Arrest", "weight": 1}, {"category": "Israel\u2013Togo Ambassador Appointment", "weight": 1}, {"category": "Egypt\u2013Germany Gaza Deal", "weight": 1}];
+        var ds = anychart.data.set(raw);
+        var mapped = ds.mapAs({ x: "category", value: "weight" });
+
+        var chart = anychart.tagCloud();
+        chart.data(mapped);
+        chart.tooltip().format("{%x}: {%value} articles");
+        // Pour imposer uniquement horizontal/vertical, décommentez :
+        // chart.angles([0, 90]);
+        chart.container("chart-tagcloud");
+        chart.draw();
+      })();
+    });
+  </script>
+
+   <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li class="active-m">
+               <a href="/">Home </a>
+            </li>
+            <li>
+              <a href="/en/about.html">About</a>
+            </li>
+            <li>
+              <a href="/en/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
