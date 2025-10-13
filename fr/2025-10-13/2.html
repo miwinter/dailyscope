@@ -1,0 +1,590 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Perspectives sur le cessez-le-feu entre Israël et le Hamas et ses implications</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/fr', '/en');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>                 
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Perspectives sur le cessez-le-feu entre Israël et le Hamas et ses implications</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-10-13</span> • <span>71 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-10-13/2025-10-13-2.webp" alt="Perspectives sur le cessez-le-feu entre Israël et le Hamas et ses implications" class="main-image">
+                <p style="margin:0">Un accord de cessez-le-feu entre Israël et le Hamas a permis une suspension temporaire des hostilités intenses à Gaza, entraînant un soulagement humanitaire significatif tel que le retour de centaines de milliers de Palestiniens déplacés et l&#39;entrée de l&#39;aide. Divers acteurs internationaux, y compris les États-Unis sous la direction de Donald Trump, ont joué un rôle important dans la négociation et la supervision du cessez-le-feu, malgré une tension diplomatique complexe et des récits divergents concernant les gains politiques et la gouvernance future. Alors que certaines sources soulignent la fragilité de la paix et les défis internes et régionaux en cours, d&#39;autres mettent en avant un optimisme prudent et la nécessité humanitaire. Le rôle du Hamas dans la gouvernance de Gaza après le cessez-le-feu reste contesté, et des acteurs géopolitiques comme l&#39;Iran expriment leur scepticisme quant aux motifs des États-Unis malgré leur soutien au cessez-le-feu. La supervision globale du cessez-le-feu et les efforts d&#39;aide reflètent un équilibre délicat entre maintien de la paix et résolution des problèmes profonds sous-jacents au conflit de longue date.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div class="key-points">
+        <h2>Les pays qui en parlent</h2>
+    </div>
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Médiation optimiste des États-Unis et des alliés occidentaux et surveillance militaire</h3>
+        <p class="cluster-description">Ce cluster se concentre sur la perspective selon laquelle les États-Unis, en particulier sous la direction de Donald Trump, ainsi que leurs alliés occidentaux tels que la France, le Royaume-Uni et l&#39;Allemagne, ont joué un rôle essentiel dans la négociation du cessez-le-feu, la supervision des libérations d&#39;otages et le déploiement de troupes pour surveiller la trêve. Ces sources expriment un optimisme prudent et louent les efforts diplomatiques, en mettant en avant les visites de Trump et la présence militaire américaine en Israël pour maintenir la paix. Elles présentent le cessez-le-feu comme une étape cruciale vers une paix durable et une aide humanitaire, soulignant la coopération internationale et les avancées politiques dans la résolution des conflits.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/slv.svg" alt="Salvador" title="Salvador" class="flag-icon">
+                            <a href="https://diario.elmundo.sv/el-mundo" target="_blank" class="article-link">Trump dit que la guerre entre Israël et le Hamas &#34;a pris fin&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gum.svg" alt="GUM" title="GUM" class="flag-icon">
+                            <a href="https://www.guampdn.com/news/" target="_blank" class="article-link">&#39;La guerre est finie&#39; à Gaza, dit Trump en route vers le Moyen-Orient</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sau.svg" alt="Arabie Saoudite" title="Arabie Saoudite" class="flag-icon">
+                            <a href="https://saudigazette.com.sa/World" target="_blank" class="article-link">Trump se rend en Israël et en Égypte pour marquer le cessez-le-feu à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sau.svg" alt="Arabie Saoudite" title="Arabie Saoudite" class="flag-icon">
+                            <a href="https://saudigazette.com.sa/World" target="_blank" class="article-link">Des camions d&#39;aide entrent à Gaza alors que le cessez-le-feu entre en vigueur ; Trump doit visiter Israël et l&#39;Égypte</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cri.svg" alt="Costa Rica" title="Costa Rica" class="flag-icon">
+                            <a href="https://www.nacion.com/el-mundo/" target="_blank" class="article-link">Le vice-président américain dit que les otages à Gaza pourraient être libérés &#34;à tout moment&#34;, les troupes américaines surveillent le cessez-le-feu</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hnd.svg" alt="Honduras" title="Honduras" class="flag-icon">
+                            <a href="https://www.laprensa.hn/mundo/" target="_blank" class="article-link">Les troupes américaines arrivent en Israël pour superviser l&#39;accord de cessez-le-feu</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kos.svg" alt="KOS" title="KOS" class="flag-icon">
+                            <a href="https://www.rtklive.com/sq/news-category.php?CatID=10" target="_blank" class="article-link">Trump : Le cessez-le-feu dans la bande de Gaza est stable</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kos.svg" alt="KOS" title="KOS" class="flag-icon">
+                            <a href="https://www.rtklive.com/sq/news-category.php?CatID=10" target="_blank" class="article-link">La France, l&#39;Angleterre et l&#39;Allemagne saluent le leadership de Trump sur le cessez-le-feu</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gtm.svg" alt="Guatemala" title="Guatemala" class="flag-icon">
+                            <a href="https://www.prensalibre.com/internacional/" target="_blank" class="article-link">Trump assure la fin de la guerre entre Israël et le Hamas : &#34;Tout le monde danse dans les rues&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sen.svg" alt="Sénégal" title="Sénégal" class="flag-icon">
+                            <a href="https://www.senenews.com/category/actualites/international" target="_blank" class="article-link">Accord historique conclu entre Israël et le Hamas après deux ans de guerre à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mex.svg" alt="Mexique" title="Mexique" class="flag-icon">
+                            <a href="https://www.jornada.com.mx/categoria/mundo" target="_blank" class="article-link">Israël annonce un cessez-le-feu à Gaza ; libération des otages dans les 72 heures</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/esp.svg" alt="Espagne" title="Espagne" class="flag-icon">
+                            <a href="https://elpais.com/internacional/" target="_blank" class="article-link">Le cessez-le-feu à Gaza fait face à son premier grand test</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/esp.svg" alt="Espagne" title="Espagne" class="flag-icon">
+                            <a href="https://www.elmundo.es/internacional.html" target="_blank" class="article-link">Le lendemain de la guerre à Gaza : les États-Unis, la Turquie, le Qatar et l&#39;Égypte superviseront le cessez-le-feu dans l&#39;enclave</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/chn.svg" alt="Chine" title="Chine" class="flag-icon">
+                            <a href="https://www.chinadaily.com.cn/world" target="_blank" class="article-link">Le gouvernement israélien approuve l&#39;accord de cessez-le-feu à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgd.svg" alt="Bangladesh" title="Bangladesh" class="flag-icon">
+                            <a href="https://bdnews24.com/world" target="_blank" class="article-link">Le cessez-le-feu à Gaza tient avant la libération des otages</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/qat.svg" alt="Qatar" title="Qatar" class="flag-icon">
+                            <a href="https://www.al-watan.com/%D8%B9%D8%B1%D8%A8%D9%8A-%D9%88%D8%AF%D9%88%D9%84%D9%8A" target="_blank" class="article-link">Force américaine pour surveiller le cessez-le-feu</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/qat.svg" alt="Qatar" title="Qatar" class="flag-icon">
+                            <a href="https://www.al-watan.com/%D8%B9%D8%B1%D8%A8%D9%8A-%D9%88%D8%AF%D9%88%D9%84%D9%8A" target="_blank" class="article-link">Un demi-million de déplacés retournent à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gnb.svg" alt="Guinée-Bissau" title="Guinée-Bissau" class="flag-icon">
+                            <a href="https://una-oic.org/News/all/" target="_blank" class="article-link">Des centaines de milliers continuent de revenir à Gaza le troisième jour de cessez-le-feu</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ind.svg" alt="Inde" title="Inde" class="flag-icon">
+                            <a href="https://timesofindia.indiatimes.com/world" target="_blank" class="article-link">Engagement à voir la voie à suivre : rare éloge de Hillary Clinton pour Donald Trump après l&#39;accord de Gaza ; appelle à un soutien mondial</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ind.svg" alt="Inde" title="Inde" class="flag-icon">
+                            <a href="https://timesofindia.indiatimes.com/world" target="_blank" class="article-link">&#39;Engagement à voir la voie à suivre&#39; : rare éloge de Hillary Clinton pour Donald Trump après l&#39;accord de Gaza ; appelle à un soutien mondial</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/alb.svg" alt="Albanie" title="Albanie" class="flag-icon">
+                            <a href="https://www.panorama.com.al/category/bota-rajoni/" target="_blank" class="article-link">Accord historique de cessez-le-feu à Gaza, Trump arrive en Israël ! Visite avec les familles des otages, discours à la Knesset et arrivée au sommet en Égypte ! Tony Blair doit rencontrer</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Irlande" title="Irlande" class="flag-icon">
+                            <a href="https://www.irishtimes.com/news/world" target="_blank" class="article-link">Le cessez-le-feu tient à Gaza avant la libération des otages et la visite de Donald Trump en Israël</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Irlande" title="Irlande" class="flag-icon">
+                            <a href="https://www.independent.ie/world-news/" target="_blank" class="article-link">Les Gazaouis rentrent chez eux alors que le cessez-le-feu entre Israël et Hamas tient ; les otages restants seront libérés lundi</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pse.svg" alt="Palestine" title="Palestine" class="flag-icon">
+                            <a href="https://www.alquds.com/" target="_blank" class="article-link">Trump : La guerre à Gaza est terminée et l&#39;accord de Gaza tiendra</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/arg.svg" alt="Argentine" title="Argentine" class="flag-icon">
+                            <a href="https://www.clarin.com/mundo/" target="_blank" class="article-link">Des soldats américains arrivent en Israël pour superviser l&#39;accord de cessez-le-feu négocié par Trump</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/srb.svg" alt="Serbie" title="Serbie" class="flag-icon">
+                            <a href="https://www.politika.rs/scc/svet" target="_blank" class="article-link">Premier ministre qatari : Négociations difficiles sur le désarmement de Hamas reportées</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tjk.svg" alt="Tadjikistan" title="Tadjikistan" class="flag-icon">
+                            <a href="https://asiaplustj.info/tj/rubrics/world" target="_blank" class="article-link">Retraite de l&#39;armée israélienne et retour des Palestiniens chez eux. Cessez-le-feu à Gaza mis en œuvre</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72a2e5; padding: 8px 16px; border-radius: 4px;">Focalisation du Vatican et des Humanitaires sur la Paix et l&#39;Accès à l&#39;Aide</h3>
+        <p class="cluster-description">Représenté par le Vatican et des organisations humanitaires comme l&#39;UNICEF, ce point de vue met en évidence le besoin urgent de bonne volonté, de coopération et d&#39;une aide humanitaire ininterrompue après le cessez-le-feu. Il souligne la nature fragile de la trêve et l&#39;impératif de faciliter la livraison de l&#39;aide dans un contexte de famine et de déplacements massifs. L&#39;accent est mis sur la responsabilité morale, la promotion de la paix et le renforcement des efforts de reconstruction et de réconciliation à Gaza.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vat.svg" alt="Saint-Siège" title="Saint-Siège" class="flag-icon">
+                            <a href="https://www.vaticannews.va/it/mondo.html" target="_blank" class="article-link">Gaza, UNICEF : famine dans certaines zones, un cessez-le-feu doit permettre un accès sans obstacle à l&#39;aide</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vat.svg" alt="Saint-Siège" title="Saint-Siège" class="flag-icon">
+                            <a href="https://www.osservatoreromano.va/it/sections/internazionale.html" target="_blank" class="article-link">Besoin de bonne volonté maintenant pour Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bol.svg" alt="Bolivie" title="Bolivie" class="flag-icon">
+                            <a href="https://eldeber.com.bo/seccion/mundo/" target="_blank" class="article-link">Le Vatican exprime sa satisfaction concernant l&#39;accord sur Gaza et espère une paix durable</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #bf72e5; padding: 8px 16px; border-radius: 4px;">Soutien varié des acteurs du Moyen-Orient et de la région avec des nuances géopolitiques</h3>
+        <p class="cluster-description">L&#39;Iran et d&#39;autres pays du Moyen-Orient adoptent une position complexe : tout en soutenant le cessez-le-feu comme une étape nécessaire, ils s&#39;éloignent prudemment de l&#39;approbation des politiques américaines ou d&#39;alignements politiques plus larges. Les déclarations mettent en garde contre l&#39;interprétation du cessez-le-feu comme un accord politique complet et insistent sur le respect des termes du cessez-le-feu, la reconstruction et la coopération régionale. Ce cluster inclut également des appels de la Turquie et de l&#39;Égypte exhortant Israël à respecter l&#39;accord et soulignant les efforts diplomatiques en cours.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mkd.svg" alt="Macédoine du Nord" title="Macédoine du Nord" class="flag-icon">
+                            <a href="https://www.novamakedonija.com.mk/" target="_blank" class="article-link">Iran : Le soutien à l&#39;accord de cessez-le-feu à Gaza ne signifie pas l&#39;approbation de la politique américaine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/egy.svg" alt="Égypte" title="Égypte" class="flag-icon">
+                            <a href="https://www.dailynewsegypt.com/category/politics/" target="_blank" class="article-link">Al-Sissi, le président chypriote discutent de l&#39;accord de cessez-le-feu à Gaza et de la coopération bilatérale</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kaz.svg" alt="Kazakhstan" title="Kazakhstan" class="flag-icon">
+                            <a href="https://tengrinews.kz/news/" target="_blank" class="article-link">Erdogan exige qu&#39;Israël respecte l&#39;accord de cessez-le-feu à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kwt.svg" alt="Koweït" title="Koweït" class="flag-icon">
+                            <a href="https://www.aljarida.com/%D8%AF%D9%88%D9%84%D9%8A%D8%A7%D8%AA" target="_blank" class="article-link">Iran : Notre soutien à l&#39;accord de Gaza ne signifie pas l&#39;approbation de la politique américaine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pse.svg" alt="Palestine" title="Palestine" class="flag-icon">
+                            <a href="https://www.alquds.com/" target="_blank" class="article-link">Iran remet en question l&#39;accord de Gaza et accuse Washington de favoriser Israël</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5728f; padding: 8px 16px; border-radius: 4px;">Dynamique locale à Gaza : Contrôle continu, conflit interne et impacts civils</h3>
+        <p class="cluster-description">Des sources de la bande de Gaza rapportent des affrontements internes en cours malgré le cessez-le-feu, la réaffirmation ou la renonciation au contrôle par le Hamas, et des défis en matière de gouvernance. Elles révèlent la tension entre les besoins militaires et civils, la ciblage des collaborateurs perçus, et le lourd bilan humanitaire avec le retour des Palestiniens déplacés dans des maisons endommagées et dévastées. Ces perspectives soulignent une instabilité persistante malgré les déclarations officielles de trêve et l&#39;environnement social-politique complexe à l&#39;intérieur de Gaza.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pol.svg" alt="Pologne" title="Pologne" class="flag-icon">
+                            <a href="https://wyborcza.pl/0,0.html?disableRedirects=true" target="_blank" class="article-link">&#39;Hamas n&#39;a pas changé&#39; : affrontements sanglants dans la bande de Gaza après le cessez-le-feu</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/can.svg" alt="Canada" title="Canada" class="flag-icon">
+                            <a href="https://www.theglobeandmail.com/world/" target="_blank" class="article-link">Hamas réaffirme sa présence dans la bande de Gaza alors que le cessez-le-feu atteint son troisième jour</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kos.svg" alt="KOS" title="KOS" class="flag-icon">
+                            <a href="https://www.rtklive.com/sq/news-category.php?CatID=10" target="_blank" class="article-link">Des milliers de Palestiniens retournent chez eux à Gaza-ville</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kor.svg" alt="Corée du Sud" title="Corée du Sud" class="flag-icon">
+                            <a href="https://www.koreaherald.com/World" target="_blank" class="article-link">Les Gazaouis rentrent chez eux alors que le cessez-le-feu entre Israël et Hamas tient</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hti.svg" alt="Haïti" title="Haïti" class="flag-icon">
+                            <a href="https://lenouvelliste.com/international" target="_blank" class="article-link">Cessez-le-feu à Gaza, des milliers de déplacés rentrent chez eux</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/guy.svg" alt="Guyana" title="Guyana" class="flag-icon">
+                            <a href="https://www.stabroeknews.com/news/world/" target="_blank" class="article-link">Les Gazaouis rentrent chez eux alors que le cessez-le-feu entre Israël et Hamas tient</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/moz.svg" alt="Mozambique" title="Mozambique" class="flag-icon">
+                            <a href="https://opais.co.mz/internacional/" target="_blank" class="article-link">Environ 200 000 personnes retournent à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nzl.svg" alt="Nouvelle-Zélande" title="Nouvelle-Zélande" class="flag-icon">
+                            <a href="https://www.rnz.co.nz/news/world" target="_blank" class="article-link">Les Palestiniens retournent à Gaza-ville dévastée alors que la trêve tient</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/per.svg" alt="Pérou" title="Pérou" class="flag-icon">
+                            <a href="https://larepublica.pe/mundo/" target="_blank" class="article-link">Hamas déclare la fin de la guerre avec Israël à Gaza : &#34;Un cessez-le-feu permanent&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/usa.svg" alt="États-Unis" title="États-Unis" class="flag-icon">
+                            <a href="https://edition.cnn.com/world" target="_blank" class="article-link">Hamas affirme son contrôle à Gaza et cible les collaborateurs présumés alors que le cessez-le-feu s&#39;installe</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ita.svg" alt="Italie" title="Italie" class="flag-icon">
+                            <a href="https://www.repubblica.it/esteri/" target="_blank" class="article-link">Il se peut que la guerre soit vraiment terminée, mais la douleur demeure</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Commentaire diplomatique et politique international sur la légitimité du cessez-le-feu et les défis futurs</h3>
+        <p class="cluster-description">Ce point de vue inclut des déclarations sur les ramifications politiques du cessez-le-feu, notamment les gains politiques potentiels de Netanyahu, les différends sur la reconnaissance diplomatique entre les pays, le report des négociations sur le désarmement du Hamas, et les appels internationaux à maintenir les efforts de paix. Il présente le cessez-le-feu comme une réussite fragile dans un contexte de intérêts politiques domestiques, régionaux et mondiaux compliqués, en soulignant que l&#39;accord de paix n&#39;est qu&#39;un début plutôt qu&#39;une conclusion.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pol.svg" alt="Pologne" title="Pologne" class="flag-icon">
+                            <a href="https://www.rp.pl/temat/swiat" target="_blank" class="article-link">Cessez-le-feu à Gaza n&#39;est que le début. Netanyahu pourrait être le plus grand gagnant</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/imn.svg" alt="IMN" title="IMN" class="flag-icon">
+                            <a href="https://www.manxradio.com/news/" target="_blank" class="article-link">L&#39;ambassadeur américain en Israël qualifie de &#34;délirant&#34; un ministre du cabinet qui affirme que le Royaume-Uni a joué un rôle clé dans l&#39;accord de paix à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lca.svg" alt="Sainte-Lucie" title="Sainte-Lucie" class="flag-icon">
+                            <a href="https://stluciatimes.com/category/news/" target="_blank" class="article-link">Israël confirme la signature de la première phase de l&#39;accord de cessez-le-feu à Gaza avec le Hamas</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fro.svg" alt="FRO" title="FRO" class="flag-icon">
+                            <a href="https://www.in.fo/" target="_blank" class="article-link">Pas de cessez-le-feu avant le vote du gouvernement</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "M\u00e9diation optimiste des \u00c9tats-Unis et des alli\u00e9s occidentaux et surveillance militaire",
+                color: "#72e5ac",
+                data: [ {"id": "AL"},  {"id": "AR"},  {"id": "BD"},  {"id": "CN"},  {"id": "CR"},  {"id": "ES"},  {"id": "GT"},  {"id": "GU"},  {"id": "GW"},  {"id": "HN"},  {"id": "IE"},  {"id": "IN"},  {"id": "MX"},  {"id": "QA"},  {"id": "RS"},  {"id": "SA"},  {"id": "SN"},  {"id": "SV"},  {"id": "TJ"} ]
+            },
+        
+            {
+                name: "Focalisation du Vatican et des Humanitaires sur la Paix et l\u0027Acc\u00e8s \u00e0 l\u0027Aide",
+                color: "#72a2e5",
+                data: [ {"id": "BO"},  {"id": "VA"} ]
+            },
+        
+            {
+                name: "Soutien vari\u00e9 des acteurs du Moyen-Orient et de la r\u00e9gion avec des nuances g\u00e9opolitiques",
+                color: "#bf72e5",
+                data: [ {"id": "EG"},  {"id": "KW"},  {"id": "KZ"},  {"id": "MK"} ]
+            },
+        
+            {
+                name: "Dynamique locale \u00e0 Gaza : Contr\u00f4le continu, conflit interne et impacts civils",
+                color: "#e5728f",
+                data: [ {"id": "CA"},  {"id": "GY"},  {"id": "HT"},  {"id": "IT"},  {"id": "KR"},  {"id": "MZ"},  {"id": "NZ"},  {"id": "PE"},  {"id": "US"} ]
+            },
+        
+            {
+                name: "Commentaire diplomatique et politique international sur la l\u00e9gitimit\u00e9 du cessez-le-feu et les d\u00e9fis futurs",
+                color: "#e5d272",
+                data: [ {"id": "FO"},  {"id": "IM"},  {"id": "LC"} ]
+            }
+        
+        
+            ,
+            {
+                name: "Plusieurs points de vue : \n- M\u00e9diation optimiste des \u00c9tats-Unis et des alli\u00e9s occidentaux et surveillance militaire\n- Soutien vari\u00e9 des acteurs du Moyen-Orient et de la r\u00e9gion avec des nuances g\u00e9opolitiques",
+                color: "#AAAAAA",
+                data: [{"id": "PS"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- M\u00e9diation optimiste des \u00c9tats-Unis et des alli\u00e9s occidentaux et surveillance militaire\n- Dynamique locale \u00e0 Gaza : Contr\u00f4le continu, conflit interne et impacts civils",
+                color: "#AAAAAA",
+                data: [{"id": "XK"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Dynamique locale \u00e0 Gaza : Contr\u00f4le continu, conflit interne et impacts civils\n- Commentaire diplomatique et politique international sur la l\u00e9gitimit\u00e9 du cessez-le-feu et les d\u00e9fis futurs",
+                color: "#AAAAAA",
+                data: [{"id": "PL"}]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Masquer les sources ▲' : 'Montrer les sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li class="active-m">
+               <a href="/">Accueil</a>
+            </li>
+            <li>
+              <a href="/fr/about.html">A Propos</a>
+            </li>
+            <li>
+              <a href="/fr/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
