@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Labels & Categories — History + Tag Cloud</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+  <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-tag-cloud.min.js"></script>
+  <style>
+    
+    html, body {
+      width: 100%; height: 100%;
+      margin: 0; padding: 0;
+    }
+    .band { width: 100%; margin: 0; padding: 0; }
+    .band--title { background: #f8f9fa; border-top: 1px solid #eee; }
+    .band--chart { background: #fff; border-top: 1px solid #eee; }
+    .content-shell {
+      width: 100%;
+      max-width: 1400px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+    .band--title .content-shell { padding: 28px 16px 18px; }
+    .band--chart .content-shell { padding: 20px 16px 40px; }
+    .section-title {
+      margin: 0;
+      font: 600 20px/1.3 system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial;
+    }
+    .section-subtitle {
+      margin: 8px 0 0 0;
+      color: #666;
+      font: 400 14px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial;
+    }
+    .chart-frame {
+      width: min(100%, 800px);
+      margin: 0 auto;
+      height: clamp(320px, 56vw, 480px); /* min 320px, grandit avec la largeur */
+      position: relative;
+    }
+
+    /* le chart occupe 100% du cadre */
+    .chart-plot {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .content-shell--narrow {
+      max-width: 860px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  </style>
+</head>
+<body>
+  <header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/fra.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="Français" title="Français" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/en', '/fr');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>              
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+  <!-- Section 1: Tag Cloud -->
+  <section class="band band--title">
+    <div class="content-shell content-shell--narrow">
+      <h2 class="section-title">Categories Tag Cloud</h2>
+      <p class="section-subtitle">Most frequent categories in the news for 2025-10-14.</p>
+    </div>
+  </section>
+  <section class="band band--chart">
+    <div class="content-shell">
+      <div class="chart-frame">
+        <div id="chart-tagcloud" class="chart-plot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Labels History (stacked columns) -->
+  <section class="band band--title">
+    <div class="content-shell content-shell--narrow">
+      <h2 class="section-title">Labels Evolution</h2>
+      <p class="section-subtitle">Daily distribution of top news labels over the last 7 days.</p>
+    </div>
+  </section>
+  <section class="band band--chart">
+    <div class="content-shell">
+      <div class="chart-frame">
+        <div id="chart-labels" class="chart-plot"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    // ===== Chart 1: Tag Cloud (from tag_cloud_template.html) =====
+    anychart.onDocumentReady(function () {
+      (function () {
+        var raw = [{"category": "Cameroon Presidential Election", "weight": 9}, {"category": "US Government Shutdown", "weight": 6}, {"category": "OAS\u2013Italy Peace Partnership", "weight": 1}, {"category": "Dodik Three-Entity Demand", "weight": 1}, {"category": "Asia APEC Unity Call", "weight": 1}, {"category": "Ecuador Anti-Noboa Protests", "weight": 1}, {"category": "ASEAN Express Rail Launch", "weight": 1}, {"category": "Australia\u2013UK Free Trade Pact", "weight": 1}, {"category": "Thailand-Cambodia Border Talks", "weight": 1}, {"category": "Iran\u2013Azerbaijan Border Drills", "weight": 1}, {"category": "Kenya Agricultural Journalism Summit", "weight": 1}, {"category": "Hamradun Germany Visit", "weight": 1}, {"category": "Horacio Cartes Sanctions Reversal", "weight": 1}, {"category": "UK Consumer Spending Slump", "weight": 1}, {"category": "Syria\u2013Japan Disaster Talks", "weight": 1}, {"category": "Bannon Warns Britain", "weight": 1}, {"category": "Xi Jinping Women\u0027s Empowerment Call", "weight": 1}, {"category": "China\u2013Philippines Maritime Clash", "weight": 4}, {"category": "Parlacen Nepotism Scandal", "weight": 1}, {"category": "Israel\u2013Indonesia Visa Lawsuit", "weight": 1}, {"category": "RBI Cross-Border Trade Reforms", "weight": 1}, {"category": "Dominica Honors Former Prime Ministers", "weight": 1}, {"category": "Algeria Illicit Fund Recovery", "weight": 1}, {"category": "IATA Forecasts $11B Airline Loss", "weight": 1}, {"category": "Sure\u2013Beyon Global Alliance", "weight": 1}, {"category": "Italy Truck Driver Stabbing", "weight": 1}, {"category": "Blue Pacific Rules Order", "weight": 1}, {"category": "Royal Netherlands Navy Caribbean Redeployment", "weight": 1}, {"category": "Qatar Diplomats Car Crash", "weight": 1}, {"category": "India-Italy Marines Case Closed", "weight": 1}, {"category": "Sharm El Sheikh Peace Summit", "weight": 21}, {"category": "Australia Under-16 Social Media Ban", "weight": 1}, {"category": "Turkey-Romania Strategic Visit", "weight": 1}, {"category": "Lindsay Cold Case Breakthrough", "weight": 1}, {"category": "CARICOM Climate Finance Summit", "weight": 1}, {"category": "Iceland 40M ISK Fraud", "weight": 1}, {"category": "Emirates Schengen Travel Advisory", "weight": 1}, {"category": "UNEP Urges Caribbean Action", "weight": 1}, {"category": "Vacherot Masters 1000 Win", "weight": 1}, {"category": "Australian Immi App Expansion", "weight": 1}, {"category": "Namibia Honors Sir Seretse Khama", "weight": 1}, {"category": "Malaysia Gang Rape Expulsions", "weight": 1}, {"category": "State of Palestine Recognition", "weight": 1}, {"category": "US Southern Command Caribbean Tour", "weight": 1}, {"category": "PPE Medpro Settlement Talks", "weight": 1}, {"category": "Southeast Asia Organized Crime Threat", "weight": 1}, {"category": "Russia Denies Assad Poison Plot", "weight": 1}, {"category": "Burundi\u2013Tanzania Border Dispute", "weight": 1}, {"category": "Sub-Saharan Africa Jobs Challenge", "weight": 1}, {"category": "Aliou Sall Money Laundering Charges", "weight": 1}, {"category": "Iran-Israel Retaliatory Strikes", "weight": 1}, {"category": "Egypt-Ethiopia Nile Dam Dispute", "weight": 2}, {"category": "Vanuatu Resists Indonesia Wallet Diplomacy", "weight": 1}, {"category": "Botswana\u2013Zimbabwe Trade Expo", "weight": 1}, {"category": "Benin 2026 Presidential Race", "weight": 1}, {"category": "Africa Map Reform", "weight": 1}, {"category": "Vietnam Hosts Asian Esports Games", "weight": 1}, {"category": "Vanuatu-PNG Legal Partnership", "weight": 1}, {"category": "Argentina Milei Scandal Hearings", "weight": 1}, {"category": "OSCE South Caucasus Visit", "weight": 1}, {"category": "Pope Denounces Inequality", "weight": 1}, {"category": "Morocco\u2013Senegal Diplomatic Talks", "weight": 1}, {"category": "Ironman: 80-Year-Old Finish", "weight": 1}, {"category": "Nicaragua Press Freedom Award", "weight": 1}, {"category": "Trump Displays Egypt-Israel Treaty", "weight": 1}, {"category": "Barbados Postal Suspension", "weight": 1}, {"category": "Croatia-Hungary Oil Dispute", "weight": 1}, {"category": "Egyptian President Endorses Trump", "weight": 1}, {"category": "Comesa Fines Diageo", "weight": 1}, {"category": "Colombia Seasonal Worker Program", "weight": 1}, {"category": "MENA Asset Recovery Network Launch", "weight": 1}, {"category": "Caribbean: Cartagena Convention Push", "weight": 1}, {"category": "Philippines Lifts Bird Ban", "weight": 1}, {"category": "Jaguar Land Rover Cyberattack", "weight": 1}, {"category": "Lisbon Mayoral Reelection", "weight": 1}, {"category": "Lopez Aliaga Presidential Campaign", "weight": 1}, {"category": "UNIFIL: Israeli Attack", "weight": 1}, {"category": "Hague Academy Pacific Legal Training", "weight": 1}, {"category": "France Recognizes Palestinian State", "weight": 1}, {"category": "Biden Prostate Cancer Treatment", "weight": 1}, {"category": "South Africa LEP Extension", "weight": 1}, {"category": "TJNA Launches IFFs Tracker", "weight": 1}, {"category": "US Tariff Leverage", "weight": 1}, {"category": "ONGC Oil Price Outlook", "weight": 1}, {"category": "Trukhanov Citizenship Revocation", "weight": 1}, {"category": "EU Cocaine Smuggling Case", "weight": 1}, {"category": "US Issues Maldives Terror Alert", "weight": 1}, {"category": "EU AI Centers Expansion", "weight": 1}, {"category": "Georgian Dream Protest Crackdown", "weight": 1}, {"category": "Colombia Pecci Lawsuit", "weight": 1}, {"category": "OIC Labor Summit", "weight": 1}, {"category": "St Helena Election", "weight": 1}, {"category": "US\u2013Burkina Faso Migrant Dispute", "weight": 1}, {"category": "Maduro Exit Ultimatum", "weight": 1}, {"category": "California Chatbot Safety Law", "weight": 1}, {"category": "Argentina\u2013US Currency Swap Deal", "weight": 1}, {"category": "Sint Maarten 15th Anniversary", "weight": 1}, {"category": "UK-China Spy Case Collapse", "weight": 1}, {"category": "Tajikistan Defies Putin Arrest Warrant", "weight": 1}, {"category": "Yemen Rebel Missile Strikes", "weight": 1}, {"category": "Ethiopia Chairs UNHCR Bureau", "weight": 1}, {"category": "Biden Radiation Therapy", "weight": 1}, {"category": "Turkmenistan\u2013Spain Diplomatic Gesture", "weight": 1}, {"category": "World Nature Congress: Biodiversity Summit", "weight": 1}, {"category": "Malawi Appoints SADC Observer", "weight": 1}, {"category": "ECOWAS Migration Policy", "weight": 1}, {"category": "Iran Kills Hamas Leader", "weight": 1}, {"category": "Central America Rent Surge", "weight": 1}, {"category": "US Muslims Anti-ISIS Campaign", "weight": 1}, {"category": "Nauru Presidential Re-election", "weight": 2}, {"category": "Nobel Peace Prize Related Probes And Awards", "weight": 23}, {"category": "UN Peace Day Events", "weight": 2}, {"category": "Sweden-Russia GPS And Spy Disruptions", "weight": 2}, {"category": "Nigeria Genocide And Arms Renegotiation", "weight": 2}, {"category": "Gaza Clan Shootout and Militia Clashes", "weight": 2}, {"category": "South Africa Ambassador Death and Probe", "weight": 2}, {"category": "Natural And Man-Made Disasters", "weight": 53}, {"category": "North Korea ICBM And Military Shows", "weight": 5}, {"category": "Sahel Security And Peace Talks", "weight": 2}, {"category": "Russia Diamond And Mineral Discovery", "weight": 2}, {"category": "Guam-Taiwan And Taiwan-Saint Vincent Diplomacy", "weight": 2}, {"category": "Generation Z Protests And Uprisings", "weight": 2}, {"category": "Global Economic Risks", "weight": 2}, {"category": "Solomon Islands Security And Drug Discovery", "weight": 2}, {"category": "Georgia Diplomatic Talks", "weight": 2}, {"category": "EU War Crimes And Sanctions", "weight": 2}, {"category": "Global Coral Reef And Deforestation Collapse", "weight": 2}, {"category": "DPRK-China Strategic Talks And Partnership", "weight": 4}, {"category": "Somalia Political And Territorial Seat", "weight": 2}, {"category": "Indonesia Policy And Protests", "weight": 4}, {"category": "Angola Labor And China Relations", "weight": 3}, {"category": "Burkina Faso-Gabon Diplomatic Exchanges", "weight": 2}, {"category": "Mozambique Diplomats And Insurgent Attacks", "weight": 2}, {"category": "COP30 Brazil Climate And Tipping Point Warnings", "weight": 3}, {"category": "Starlink And Myanmar Scams", "weight": 3}, {"category": "Israel Security And Togo Forum", "weight": 2}, {"category": "Laos-China Finance And Burial Search", "weight": 2}, {"category": "Herminie Seychelles Presidential Election", "weight": 5}, {"category": "Nepal Press And Youth Voter Registration", "weight": 2}, {"category": "Malaysia Flu And Influenza Outbreaks", "weight": 3}, {"category": "ExxonMobil Guyana Bill And Rig Dispute", "weight": 2}, {"category": "IMF-World Bank And Global Debt Meetings", "weight": 1}, {"category": "Haiti Hunger Crisis", "weight": 2}, {"category": "SpaceX Starship Launches", "weight": 2}, {"category": "Spain Protest Arrests And Genocide Probe", "weight": 2}, {"category": "Brazil Court Condemns Bolsonaro And House Arrest", "weight": 2}, {"category": "Cuba Mosquito Control And Dissident Exile", "weight": 10}, {"category": "DRC Gold Reserves And Islamic State Attack", "weight": 2}, {"category": "ILO Budget And UNHCR Aid Appeals", "weight": 2}, {"category": "US Jobless Claims And Markets Bubble Warning", "weight": 2}, {"category": "US Envoy Rwanda-DRC Peace Talks And Related Deals", "weight": 3}, {"category": "EU Migration Pact And Oversight Mechanism", "weight": 2}, {"category": "UK Gaza Recovery Summit And Aid Pledge", "weight": 2}, {"category": "Ivory Coast Election And Protests", "weight": 3}, {"category": "Guatemala Gang Escape And Political Events", "weight": 3}, {"category": "Poland Migration And Spy Trials", "weight": 3}, {"category": "Liechtenstein-Montenegro Events Friendly And Sports", "weight": 2}, {"category": "Botswana Political And Citizenship Reforms And Trade Imbalance", "weight": 3}, {"category": "UNESCO Leadership And Bangladesh Presidency", "weight": 2}, {"category": "Trump Iran Peace Talks And US-Iran Deal Talks", "weight": 3}, {"category": "South Carolina Bar Shooting And Mississippi Shooting Rampage", "weight": 2}, {"category": "Germany Social Benefits, Diplomacy Decline, And Arms Exports", "weight": 4}, {"category": "Mali Fuel Blockade, Military Purge, And Visa Issues", "weight": 9}, {"category": "US-Mauritania Relations", "weight": 1}, {"category": "Europe Espionage And Investigations", "weight": 3}, {"category": "Afghanistan Border Conflicts And Attacks", "weight": 27}, {"category": "India International Cooperation", "weight": 2}, {"category": "US-Nicaragua Relations", "weight": 6}, {"category": "Central African Republic Security And Finance", "weight": 3}, {"category": "Trade And Economic Summits", "weight": 4}, {"category": "EU Agricultural And Migration Policies", "weight": 5}, {"category": "Venezuela US Oil And Embassy Disputes", "weight": 23}, {"category": "UK-Guyana Debt And Economic Aid", "weight": 5}, {"category": "US Insurrection And Security Measures", "weight": 2}, {"category": "Pakistan Diplomatic And Military Relations", "weight": 3}, {"category": "European Political And Defense Issues", "weight": 11}, {"category": "South Korea Climate And Security", "weight": 5}, {"category": "India Public Health And Emergency Responses", "weight": 2}, {"category": "China Trade, Aid, And Maritime Relations", "weight": 7}, {"category": "Sudan Conflict And Child Rights Violations", "weight": 5}, {"category": "US-Israel Summit And Cooperation", "weight": 2}, {"category": "Israel-Arab Peace And Normalization", "weight": 45}, {"category": "Central Asia Diplomacy And Security", "weight": 9}, {"category": "France Political And Overseas Affairs", "weight": 7}, {"category": "EU Tax And Trade Policies", "weight": 4}, {"category": "Africa Economic And Investment Summits", "weight": 2}, {"category": "Italy-Egypt-Turkey Diplomacy", "weight": 6}, {"category": "US-China Trade And Tariff War", "weight": 36}, {"category": "Israel-Hamas Conflict", "weight": 228}, {"category": "Trump Gaza Aid And Peace Initiatives", "weight": 83}, {"category": "US Immigration Issues And Policies", "weight": 4}, {"category": "Trump Legal And Political Cases", "weight": 65}, {"category": "EU Ukraine Economic And Aid Talks", "weight": 54}, {"category": "US Military And Event Security Funding", "weight": 65}, {"category": "African Union Visa Pact And Transformation", "weight": 2}, {"category": "Egypt Gaza Reconstruction And Aid", "weight": 4}, {"category": "Russia Political Threats And Conflicts", "weight": 23}, {"category": "Paraguay Silicon Vega Launch", "weight": 2}, {"category": "Turkey-Israel Gaza Diplomacy", "weight": 1}, {"category": "Syria-Turkey Aid Coordination", "weight": 3}, {"category": "US-Ukraine Tomahawk And Cruise Deals", "weight": 2}];
+        var ds = anychart.data.set(raw);
+        var mapped = ds.mapAs({ x: "category", value: "weight" });
+
+        var chart = anychart.tagCloud();
+        chart.data(mapped);
+        chart.tooltip().format("{%x}: {%value} articles");
+        // Pour imposer uniquement horizontal/vertical, décommentez :
+        // chart.angles([0, 90]);
+        chart.container("chart-tagcloud");
+        chart.draw();
+      })();
+    });
+
+
+    // ===== Chart 2: Labels History (from labels_template_en.html) =====
+    anychart.onDocumentReady(function () {
+      (function () {
+        var rawData = [["EU Ukraine Economic And Aid Talks", 54, 0, 0, 0, 0, 0, 0], ["Gaza Conflict", 0, 0, 0, 0, 0, 237, 191], ["Israel-Hamas Ceasefire", 0, 68, 113, 134, 139, 0, 0], ["Israel-Hamas Conflict", 228, 0, 0, 0, 0, 0, 0], ["Trump Gaza Aid And Peace Initiatives", 83, 0, 0, 0, 0, 0, 0], ["Trump Legal And Political Cases", 65, 0, 0, 0, 0, 0, 0], ["US Military And Event Security Funding", 65, 0, 0, 0, 0, 0, 0], ["Ukraine-Russia Conflict", 0, 57, 48, 49, 55, 56, 79]];
+        var dates = ["2025-10-14", "2025-10-13", "2025-10-12", "2025-10-11", "2025-10-10", "2025-10-09", "2025-10-08"].reverse();
+
+        var chart = anychart.column();
+        chart.yScale().stackMode('value');
+
+        var colors = ['#72e5ac','#72e5e3','#72b0e5','#7279e5','#a372e5','#da72e5','#e572b8','#e57281','#e59b72','#e5d272'];
+
+        var seriesList = [];
+        var lastHighlighted = null;
+
+        function setHighlighted(s, on) {
+          var orig = s.meta('origFill');
+          if (!orig) return;
+          if (on) {
+            s.normal().fill('#000000');
+            s.normal().stroke('2 #fff 1');
+            s.zIndex(10);
+            s.meta('isHighlighted', true);
+            lastHighlighted = s;
+          } else {
+            s.normal().fill(orig);
+            s.normal().stroke('2 #fff 1');
+            s.zIndex(1);
+            s.meta('isHighlighted', false);
+            if (lastHighlighted === s) lastHighlighted = null;
+          }
+        }
+
+        function toggleHighlight(s) {
+          if (lastHighlighted && lastHighlighted !== s) setHighlighted(lastHighlighted, false);
+          var isOn = !!s.meta('isHighlighted');
+          setHighlighted(s, !isOn);
+        }
+
+        for (var i = 0; i < rawData.length; i++) {
+          var labelData = [];
+          var values = rawData[i].slice(1).reverse();
+          for (var j = 0; j < dates.length; j++) {
+            labelData.push({ x: dates[j], value: values[j] });
+          }
+          var s = chart.column(labelData);
+          var color = colors[i % colors.length];
+
+          s.name(rawData[i][0]);
+          s.normal().stroke('2 #fff 1');
+          s.normal().fill(color);
+
+          s.meta('origFill', color);
+          s.meta('isHighlighted', false);
+          s.zIndex(1);
+
+          s.listen('pointClick', function(e) { toggleHighlight(e.series); });
+
+          seriesList.push(s);
+        }
+
+        var legend = chart.legend();
+        //legend.enabled(true).position('right').itemsLayout('vertical').padding([20,0,0,0]).fontSize(13);
+
+                // après avoir fait var legend = chart.legend(); ...
+        legend.enabled(true).padding([8,0,0,0]).fontSize(12);
+
+        function applyLegendLayout() {
+          if (window.innerWidth <= 640) {
+            legend.position('bottom');
+            legend.itemsLayout('horizontal'); // ou 'horizontal' si tu préfères sur 1–2 lignes
+            legend.align('left');
+            chart.padding([10,10,48,10]);   // espace pour la légende en bas
+          } else {
+            legend.position('right');
+            legend.itemsLayout('vertical');
+            legend.align('left');
+            chart.padding([10,10,10,10]);
+          }
+        }
+        applyLegendLayout();
+        window.addEventListener('resize', applyLegendLayout);
+
+        chart.listen('legendItemClick', function (e) {
+          var s = seriesList[e.itemIndex];
+          if (s) toggleHighlight(s);
+          e.preventDefault();
+        });
+
+        chart.tooltip()
+          .displayMode('single')
+          .titleFormat(function () { return this.x + ' — ' + this.seriesName; })
+          .format(function () { return this.value + ' articles'; });
+
+        chart.xAxis().labels().rotation(-45);
+        chart.yAxis().title('Number of articles');
+
+        chart.container('chart-labels');
+        chart.draw();
+      })();
+    });
+
+
+  </script>
+
+   <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li class="active-m">
+               <a href="/">Home </a>
+            </li>
+            <li>
+              <a href="/en/about.html">About</a>
+            </li>
+            <li>
+              <a href="/en/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
