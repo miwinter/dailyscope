@@ -1,0 +1,568 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Le virage stratégique de l&#39;UE vers un renforcement de la défense et de l&#39;indépendance énergétique</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/fr', '/en');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>                 
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Le virage stratégique de l&#39;UE vers un renforcement de la défense et de l&#39;indépendance énergétique</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-10-17</span> • <span>44 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-10-17/2025-10-17-5.webp" alt="Le virage stratégique de l&#39;UE vers un renforcement de la défense et de l&#39;indépendance énergétique" class="main-image">
+                <p style="margin:0">L&#39;Union européenne accélère ses efforts pour renforcer ses capacités de défense et réduire sa dépendance à l&#39;énergie russe face à l&#39;escalade des tensions géopolitiques. Au cœur de cette démarche se trouvent des feuilles de route de défense globales visant une préparation d&#39;ici 2030, avec un accent particulier sur les systèmes anti-drone, l&#39;autonomie stratégique et l&#39;augmentation des dépenses militaires. Les États membres, notamment la Roumanie et la Pologne, jouent un rôle clé en hébergeant des infrastructures de défense et en menant la préparation en première ligne. Parallèlement, l&#39;UE renforce ses sanctions en interdisant les importations de gaz et de pétrole russes pour affaiblir la levée de fonds de Moscou. Cette stratégie multifacette reflète l&#39;engagement de l&#39;UE en faveur de la sécurité collective, de la modernisation technologique et de la résilience face aux menaces évolutives de la Russie et d&#39;autres acteurs extérieurs.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div class="key-points">
+        <h2>Les pays qui en parlent</h2>
+    </div>
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Europe de l&#39;Ouest et du Nord : Accent sur l&#39;autonomie stratégique et la modernisation militaire</h3>
+        <p class="cluster-description">Des pays comme l&#39;Irlande, le Luxembourg, l&#39;Estonie et le Royaume-Uni articulent une vision de l&#39;UE renforçant sa défense par des investissements importants, des avancées technologiques et une autonomie stratégique d&#39;ici 2030. Ils privilégient les initiatives anti-drone, les systèmes de détection de drones et la préparation militaire coordonnée pour répondre aux menaces contemporaines, notamment face aux capacités évolutives de la Russie. La position inclut une augmentation des dépenses de défense, le développement de nouvelles armements et le renforcement de la coopération dans l&#39;industrie de la défense entre les États membres, soulignant une posture de défense européenne proactive et unifiée.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Irlande" title="Irlande" class="flag-icon">
+                            <a href="https://www.irishtimes.com/news/world" target="_blank" class="article-link">L&#39;UE propose des projets de défense pour contrer les drones et protéger la frontière orientale</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Irlande" title="Irlande" class="flag-icon">
+                            <a href="https://www.independent.ie/world-news/" target="_blank" class="article-link">L&#39;UE dévoile un plan pour être prête d&#39;ici cinq ans à repousser toute attaque russe</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fra.svg" alt="France" title="France" class="flag-icon">
+                            <a href="https://www.lefigaro.fr/international/" target="_blank" class="article-link">Union européenne : La défense anti-drones est &#39;désormais optionnelle&#39; face à la Russie, déclare Kaja Kallas</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ukr.svg" alt="Ukraine" title="Ukraine" class="flag-icon">
+                            <a href="https://www.kyivpost.com/category/world" target="_blank" class="article-link">Prêt pour la défense d&#39;ici 2030 – L&#39;UE accepte d&#39;augmenter les dépenses d&#39;armement de 1,5 milliard d&#39;euros</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/rou.svg" alt="Roumanie" title="Roumanie" class="flag-icon">
+                            <a href="https://adevarul.ro/news/eveniment/" target="_blank" class="article-link">Le ministre de la Défense participe à la réunion du Conseil des Affaires étrangères de l&#39;UE, souligne la nécessité de renforcer les capacités de défense</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mda.svg" alt="Moldavie" title="Moldavie" class="flag-icon">
+                            <a href="https://www.kp.md/daily/" target="_blank" class="article-link">Un homme d&#39;affaires ukrainien pourrait diriger le gouvernement moldave : Qui est Alexandru Muntyanu</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/swe.svg" alt="Suède" title="Suède" class="flag-icon">
+                            <a href="https://www.dn.se/varlden/" target="_blank" class="article-link">L&#39;UE intensifie ses efforts contre la Russie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/prt.svg" alt="Portugal" title="Portugal" class="flag-icon">
+                            <a href="https://www.publico.pt/mundo" target="_blank" class="article-link">Le « mur » anti-drones de l&#39;UE gagne en ampleur continentale et devient un projet phare</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bel.svg" alt="Belgique" title="Belgique" class="flag-icon">
+                            <a href="https://www.lavenir.net/actu/monde/" target="_blank" class="article-link">L&#39;UE défend le projet de barrière anti-drones face à la Russie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lux.svg" alt="Luxembourg" title="Luxembourg" class="flag-icon">
+                            <a href="https://www.wort.lu/fr/international" target="_blank" class="article-link">Une protestation nationale en Belgique révèle de profondes fractures sociales et politiques</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/omn.svg" alt="Oman" title="Oman" class="flag-icon">
+                            <a href="https://www.omanobserver.om/world" target="_blank" class="article-link">UE : La défense contre les drones n&#39;est pas &#39;optionnelle&#39; dans la poussée pour faire face à la Russie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/che.svg" alt="Suisse" title="Suisse" class="flag-icon">
+                            <a href="https://www.letemps.ch/monde" target="_blank" class="article-link">Le Porc-épic blindé de l&#39;Europe : nouvelle stratégie de défense</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72bbe5; padding: 8px 16px; border-radius: 4px;">Europe du Sud et de l&#39;Est : Focus sur la sécurité régionale et les contributions à l&#39;infrastructure de défense</h3>
+        <p class="cluster-description">Des pays tels que la Roumanie, la Grèce, l&#39;Espagne et la Moldavie mettent en avant leur rôle actif dans la stratégie de défense de l&#39;UE en accueillant des infrastructures critiques et en soutenant des initiatives de sécurité régionales. La Roumanie est reconnue pour son soutien financier substantiel à la défense et l&#39;accueil de parties de l&#39;Initiative européenne de défense contre les drones, tandis que la Grèce équilibre les tensions sociales internes avec ses engagements en matière de défense. L&#39;Espagne affirme son allégeance à l&#39;OTAN face aux menaces commerciales externes, et la Moldavie reçoit une assistance britannique pour la contre-mesure contre les drones, reflétant une focalisation régionale sur le renforcement des capacités de défense locales dans le cadre de l&#39;UE.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/grc.svg" alt="Grèce" title="Grèce" class="flag-icon">
+                            <a href="https://www.tovima.gr/category/world/" target="_blank" class="article-link">Feuille de route de la préparation à la défense présentée par l&#39;UE</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dom.svg" alt="République dominicaine" title="République dominicaine" class="flag-icon">
+                            <a href="https://www.diariolibre.com/mundo" target="_blank" class="article-link">Les vingt-sept débattent de la construction d&#39;un &#34;mur de drones&#34; contre les menaces russes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svn.svg" alt="Slovénie" title="Slovénie" class="flag-icon">
+                            <a href="https://www.delo.si/novice/svet" target="_blank" class="article-link">Crise politique en Bosnie attend avec anxiété la prochaine décision de Milorad Dodik</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/rou.svg" alt="Roumanie" title="Roumanie" class="flag-icon">
+                            <a href="https://adevarul.ro/news/eveniment/" target="_blank" class="article-link">L&#39;Union européenne construira un mur anti-drones d&#39;ici 2027, avec une partie hébergée en Roumanie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/rou.svg" alt="Roumanie" title="Roumanie" class="flag-icon">
+                            <a href="https://adevarul.ro/news/eveniment/" target="_blank" class="article-link">La Roumanie reçoit le soutien européen pour des projets de défense : 16,68 milliards d&#39;euros via le mécanisme SAFE</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/rou.svg" alt="Roumanie" title="Roumanie" class="flag-icon">
+                            <a href="https://adevarul.ro/news/eveniment/" target="_blank" class="article-link">Discussion téléphonique entre le président roumain et le président du Conseil de l&#39;UE sur la défense de l&#39;Europe et le soutien à l&#39;Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mda.svg" alt="Moldavie" title="Moldavie" class="flag-icon">
+                            <a href="https://www.kp.md/daily/" target="_blank" class="article-link">Royaume-Uni envoie des spécialistes en contre-mesures contre les drones en Moldavie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mkd.svg" alt="Macédoine du Nord" title="Macédoine du Nord" class="flag-icon">
+                            <a href="https://www.novamakedonija.com.mk/" target="_blank" class="article-link">Travailleurs grecs unis contre la journée de travail de 13 heures</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cpv.svg" alt="Cap-Vert" title="Cap-Vert" class="flag-icon">
+                            <a href="https://expressodasilhas.cv/mundo" target="_blank" class="article-link">L&#39;Espagne réaffirme sa fiabilité en tant que membre de l&#39;OTAN et minimise la menace de Trump</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #8d72e5; padding: 8px 16px; border-radius: 4px;">Europe centrale et orientale : Défense en première ligne et engagement avec l&#39;OTAN</h3>
+        <p class="cluster-description">La Pologne et ses pays voisins soulignent leur position stratégique en tant que première ligne de l&#39;OTAN, se préparant à d&#39;éventuels engagements militaires par le renforcement des forces actives et l&#39;augmentation des missions de surveillance comme &#39;Eastern Watch&#39;. Ces nations prônent un renforcement des défenses frontalières et une coopération accrue avec les alliés de l&#39;OTAN pour contrer les menaces immédiates. L&#39;accent est mis sur la vigilance, la préparation et le renforcement des partenariats bilatéraux, notamment avec l&#39;Ukraine, pour naviguer dans le paysage sécuritaire complexe façonné par l&#39;agression russe.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mkd.svg" alt="Macédoine du Nord" title="Macédoine du Nord" class="flag-icon">
+                            <a href="https://www.novamakedonija.com.mk/" target="_blank" class="article-link">Les Polonais se Préparent à Être en &#39;Première Ligne&#39; de la Défense de l&#39;OTAN</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mkd.svg" alt="Macédoine du Nord" title="Macédoine du Nord" class="flag-icon">
+                            <a href="https://www.novamakedonija.com.mk/" target="_blank" class="article-link">L&#39;« Observation de l&#39;Est » Observe Bien Au-Delà des Frontières Est de l&#39;OTAN</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/est.svg" alt="Estonie" title="Estonie" class="flag-icon">
+                            <a href="https://maailm.postimees.ee/" target="_blank" class="article-link">Accord de Coopération dans l&#39;Industrie de Défense Ukrainienne et Polonaise Signé</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/blr.svg" alt="Biélorussie" title="Biélorussie" class="flag-icon">
+                            <a href="https://euroradio.fm/cats/palityka" target="_blank" class="article-link">La Pologne Pourrait Ouvrir de Nouveaux Passages Frontaliers avec la Biélorussie</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e572da; padding: 8px 16px; border-radius: 4px;">Stratégie et Cadre Politique de Défense Institutionnels et Dirigés par la Commission de l&#39;UE</h3>
+        <p class="cluster-description">Les institutions de l&#39;Union européenne et la Commission européenne présentent des feuilles de route coordonnées mettant l&#39;accent sur la préparation à la défense, les améliorations technologiques et les mesures politiques soutenant les capacités militaires des États membres. Elles mènent des initiatives sur l&#39;armement, la défense par drone, la protection des frontières et la promotion de l&#39;autonomie stratégique. Les objectifs visent une posture de défense cohésive et intégrée avec des échéances claires et des mécanismes de financement, soulignant le rôle de l&#39;UE en tant qu&#39;acteur à la fois politique et opérationnel dans la sécurité continentale.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kos.svg" alt="KOS" title="KOS" class="flag-icon">
+                            <a href="https://www.rtklive.com/sq/news-category.php?CatID=10" target="_blank" class="article-link">L&#39;UE dévoile de nouvelles lignes directrices en matière de défense vers l&#39;autosuffisance</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lux.svg" alt="Luxembourg" title="Luxembourg" class="flag-icon">
+                            <a href="https://www.tageblatt.lu/headlines/" target="_blank" class="article-link">La Commission européenne vise à rendre l&#39;UE capable de se défendre d&#39;ici 2030</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/est.svg" alt="Estonie" title="Estonie" class="flag-icon">
+                            <a href="https://www.delfi.ee/kategooria/123/maailm" target="_blank" class="article-link">La Commission européenne révèle un plan détaillé pour renforcer les capacités de défense du bloc</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cze.svg" alt="République tchèque" title="République tchèque" class="flag-icon">
+                            <a href="https://www.idnes.cz/zpravy/zahranicni" target="_blank" class="article-link">La Commission européenne présente le plan de capacité de défense de l&#39;UE tant attendu</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cze.svg" alt="République tchèque" title="République tchèque" class="flag-icon">
+                            <a href="https://www.lidovky.cz/svet" target="_blank" class="article-link">L&#39;UE se prépare à la guerre d&#39;ici 2030 avec un plan de défense longtemps attendu</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lva.svg" alt="Lettonie" title="Lettonie" class="flag-icon">
+                            <a href="https://www.diena.lv/raksts/pasaule" target="_blank" class="article-link">La Commission européenne dévoile quatre initiatives d&#39;armement</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e57276; padding: 8px 16px; border-radius: 4px;">Tensions politiques et diplomatiques impactant la coopération en matière de défense et de sécurité</h3>
+        <p class="cluster-description">Plusieurs articles mettent en lumière des points de friction géopolitique compliquant les efforts de défense européens, notamment les réponses anxieuses de l&#39;UE à l&#39;invitation de la Hongrie à Poutine, les allégations de provocations de drones de l&#39;OTAN par la Russie, et les efforts diplomatiques des États-Unis pour courtiser les partis d&#39;extrême droite européens. Ces cas révèlent des défis pour maintenir la cohésion des alliances et naviguer dans l&#39;influence extérieure dans le contexte plus large de la sécurité. Par ailleurs, l&#39;appel du Monténégro à l&#39;aide de l&#39;UE contre l&#39;ingérence russe illustre les préoccupations persistantes liées à la guerre hybride dans les Balkans.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ita.svg" alt="Italie" title="Italie" class="flag-icon">
+                            <a href="https://www.repubblica.it/esteri/" target="_blank" class="article-link">Trump-Poutine, Bruxelles anxieuse quant au soutien américain. La question de l&#39;entrée de Poutine en Europe</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gbr.svg" alt="Royaume-Uni" title="Royaume-Uni" class="flag-icon">
+                            <a href="https://news.sky.com/world" target="_blank" class="article-link">Poutine prêt à revenir sur le sol de l&#39;UE pour la première fois depuis le début de la guerre - et vous pouvez déjà voir son sourire</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/isl.svg" alt="Islande" title="Islande" class="flag-icon">
+                            <a href="https://www.mbl.is/frettir/erlent/" target="_blank" class="article-link">Les Russes accusent l&#39;OTAN des incidents de drones</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/alb.svg" alt="Albanie" title="Albanie" class="flag-icon">
+                            <a href="http://www.gsh.al/category/bota/" target="_blank" class="article-link">Monténégro appelle l&#39;UE à l&#39;aide contre l&#39;ingérence russe</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aut.svg" alt="Autriche" title="Autriche" class="flag-icon">
+                            <a href="https://www.diepresse.com/ausland" target="_blank" class="article-link">Les diplomates de Trump veulent bouleverser l&#39;Europe</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Indépendance énergétique et politiques de sanctions contre la Russie</h3>
+        <p class="cluster-description">Le Parlement européen et les commissions associées préconisent une interdiction progressive des importations de gaz et de pétrole russes en tant que mesure essentielle pour affaiblir l&#39;influence russe et soutenir les objectifs de sécurité sous-tendant la posture de défense de l&#39;UE. Ce changement de politique énergétique fait partie du régime de sanctions plus large en réponse au conflit en Ukraine, signalant l&#39;intention de l&#39;UE de se désolidariser économiquement de la Russie tout en renforçant la dissuasion politique et militaire.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mng.svg" alt="Mongolie" title="Mongolie" class="flag-icon">
+                            <a href="https://montsame.mn/mn/more/17" target="_blank" class="article-link">Les panels du Parlement européen soutiennent l&#39;interdiction des importations de gaz russe</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lva.svg" alt="Lettonie" title="Lettonie" class="flag-icon">
+                            <a href="https://www.diena.lv/raksts/pasaule" target="_blank" class="article-link">Le comité du Parlement européen soutient l&#39;interdiction des importations de gaz et de pétrole russes à partir de 2027</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Europe de l\u0027Ouest et du Nord : Accent sur l\u0027autonomie strat\u00e9gique et la modernisation militaire",
+                color: "#72e5ac",
+                data: [ {"id": "BE"},  {"id": "CH"},  {"id": "FR"},  {"id": "IE"},  {"id": "OM"},  {"id": "PT"},  {"id": "SE"},  {"id": "UA"} ]
+            },
+        
+            {
+                name: "Europe du Sud et de l\u0027Est : Focus sur la s\u00e9curit\u00e9 r\u00e9gionale et les contributions \u00e0 l\u0027infrastructure de d\u00e9fense",
+                color: "#72bbe5",
+                data: [ {"id": "CV"},  {"id": "DO"},  {"id": "GR"},  {"id": "SI"} ]
+            },
+        
+            {
+                name: "Europe centrale et orientale : D\u00e9fense en premi\u00e8re ligne et engagement avec l\u0027OTAN",
+                color: "#8d72e5",
+                data: [ {"id": "BY"} ]
+            },
+        
+            {
+                name: "Strat\u00e9gie et Cadre Politique de D\u00e9fense Institutionnels et Dirig\u00e9s par la Commission de l\u0027UE",
+                color: "#e572da",
+                data: [ {"id": "CZ"},  {"id": "XK"} ]
+            },
+        
+            {
+                name: "Tensions politiques et diplomatiques impactant la coop\u00e9ration en mati\u00e8re de d\u00e9fense et de s\u00e9curit\u00e9",
+                color: "#e57276",
+                data: [ {"id": "AL"},  {"id": "AT"},  {"id": "GB"},  {"id": "IS"},  {"id": "IT"} ]
+            },
+        
+            {
+                name: "Ind\u00e9pendance \u00e9nerg\u00e9tique et politiques de sanctions contre la Russie",
+                color: "#e5d272",
+                data: [ {"id": "MN"} ]
+            }
+        
+        
+            ,
+            {
+                name: "Plusieurs points de vue : \n- Europe de l\u0027Ouest et du Nord : Accent sur l\u0027autonomie strat\u00e9gique et la modernisation militaire\n- Strat\u00e9gie et Cadre Politique de D\u00e9fense Institutionnels et Dirig\u00e9s par la Commission de l\u0027UE",
+                color: "#AAAAAA",
+                data: [{"id": "LU"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Europe de l\u0027Ouest et du Nord : Accent sur l\u0027autonomie strat\u00e9gique et la modernisation militaire\n- Europe du Sud et de l\u0027Est : Focus sur la s\u00e9curit\u00e9 r\u00e9gionale et les contributions \u00e0 l\u0027infrastructure de d\u00e9fense",
+                color: "#AAAAAA",
+                data: [{"id": "MD"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Europe de l\u0027Ouest et du Nord : Accent sur l\u0027autonomie strat\u00e9gique et la modernisation militaire\n- Europe du Sud et de l\u0027Est : Focus sur la s\u00e9curit\u00e9 r\u00e9gionale et les contributions \u00e0 l\u0027infrastructure de d\u00e9fense",
+                color: "#AAAAAA",
+                data: [{"id": "RO"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Europe du Sud et de l\u0027Est : Focus sur la s\u00e9curit\u00e9 r\u00e9gionale et les contributions \u00e0 l\u0027infrastructure de d\u00e9fense\n- Europe centrale et orientale : D\u00e9fense en premi\u00e8re ligne et engagement avec l\u0027OTAN",
+                color: "#AAAAAA",
+                data: [{"id": "MK"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Europe centrale et orientale : D\u00e9fense en premi\u00e8re ligne et engagement avec l\u0027OTAN\n- Strat\u00e9gie et Cadre Politique de D\u00e9fense Institutionnels et Dirig\u00e9s par la Commission de l\u0027UE",
+                color: "#AAAAAA",
+                data: [{"id": "EE"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Strat\u00e9gie et Cadre Politique de D\u00e9fense Institutionnels et Dirig\u00e9s par la Commission de l\u0027UE\n- Ind\u00e9pendance \u00e9nerg\u00e9tique et politiques de sanctions contre la Russie",
+                color: "#AAAAAA",
+                data: [{"id": "LV"}]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Masquer les sources ▲' : 'Montrer les sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li class="active-m">
+               <a href="/">Accueil</a>
+            </li>
+            <li>
+              <a href="/fr/about.html">A Propos</a>
+            </li>
+            <li>
+              <a href="/fr/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
