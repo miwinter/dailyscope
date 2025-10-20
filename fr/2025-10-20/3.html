@@ -1,0 +1,526 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Perspectives divergentes sur les négociations du conflit entre les États-Unis, la Russie et l&#39;Ukraine</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/fr', '/en');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>                 
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/">Actus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2025-10-20/country_count.html">Pays</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2025-10-20/labels.html">Thèmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Perspectives divergentes sur les négociations du conflit entre les États-Unis, la Russie et l&#39;Ukraine</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-10-20</span> • <span>47 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-10-20/2025-10-20-3.webp" alt="Perspectives divergentes sur les négociations du conflit entre les États-Unis, la Russie et l&#39;Ukraine" class="main-image">
+                <p style="margin:0" class="chapitre">Les articles analysés révèlent des points de vue contrastés centrés sur les efforts diplomatiques et les pourparlers de paix impliquant les États-Unis, la Russie et l&#39;Ukraine dans le conflit en cours. L&#39;ancien président américain Donald Trump a constamment exhorté le président ukrainien Zelensky à négocier et à accepter les propositions russes, y compris des concessions territoriales dans des régions comme le Donbas et Donetsk, une position qui a été critiquée et suscite des inquiétudes de la part des dirigeants ukrainiens qui réclament un soutien américain plus ferme et une pression accrue sur la Russie. Le président russe Poutine a proposé des échanges de territoires et a souligné la nécessité de stopper les actions militaires comme préalable au dialogue. Par ailleurs, les dirigeants ukrainiens se disent prêts à négocier mais insistent sur le fait que Poutine ne peut pas être arrêté par des mots seuls, plaidant pour une aide militaire substantielle, ce qui rencontre l&#39;hésitation des décideurs américains. Les acteurs internationaux observent ces interactions avec un optimisme prudent ou des préoccupations, soulignant la complexité d&#39;atteindre une résolution durable dans un contexte de tensions géopolitiques et d&#39;intérêts nationaux divergents.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div class="key-points">
+        <h2>Les pays qui en parlent</h2>
+    </div>
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Perspective américaine : plaidoyer pour la négociation et le compromis territorial</h3>
+        <p class="cluster-description">Points de vue des États-Unis, principalement représentés par l&#39;ancien président Donald Trump, insistent sur la nécessité d&#39;inciter l&#39;Ukraine à accepter les propositions de la Russie et à rechercher la paix par la négociation, ce qui pourrait inclure des concessions territoriales telles que des parties du Donbass et des régions de Donetsk. Trump met également en garde contre une escalade de l&#39;implication militaire, montrant une réticence à fournir des armes avancées comme les missiles Tomahawk, et appelle à une cessation immédiate des hostilités, adoptant une approche pragmatique visant à mettre fin au conflit, bien que cette position soit critiquée pour risquer de compromettre la souveraineté de l&#39;Ukraine.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kor.svg" alt="Corée du Sud" title="Corée du Sud" class="flag-icon">
+                            <a href="https://www.chosun.com/international/" target="_blank" class="article-link">Trump fait pression sur Zelensky avec des insultes pour accepter la proposition de Poutine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgd.svg" alt="Bangladesh" title="Bangladesh" class="flag-icon">
+                            <a href="https://www.thedailystar.net/world" target="_blank" class="article-link">Trump a exhorté Zelenskiy à conclure un accord avec Poutine ou à risquer la destruction, rapporte le FT</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgd.svg" alt="Bangladesh" title="Bangladesh" class="flag-icon">
+                            <a href="https://bdnews24.com/world" target="_blank" class="article-link">Trump a exhorté Zelensky à conclure un accord avec Poutine : FT</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mac.svg" alt="MAC" title="MAC" class="flag-icon">
+                            <a href="https://macaudailytimes.com.mo/category/world" target="_blank" class="article-link">Trump appelle l&#39;Ukraine et la Russie à &#39;s&#39;arrêter là où ils en sont&#39; et à mettre fin à la guerre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pri.svg" alt="PRI" title="PRI" class="flag-icon">
+                            <a href="https://www.elnuevodia.com/noticias/mundo/" target="_blank" class="article-link">Donald Trump dit que la région du Donbass en Ukraine devra être &#39;divisée&#39; pour mettre fin à l&#39;invasion russe</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Irlande" title="Irlande" class="flag-icon">
+                            <a href="https://www.irishtimes.com/news/world" target="_blank" class="article-link">Trump dit que le cessez-le-feu au Moyen-Orient donne à l&#39;administration une &#39;crédibilité&#39; dans la médiation Russie-Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Irlande" title="Irlande" class="flag-icon">
+                            <a href="https://www.independent.ie/world-news/" target="_blank" class="article-link">Le conflit en Ukraine pourrait dépendre du jeu de chat et de souris de Donald Trump autour des missiles Tomahawk</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/twn.svg" alt="TWN" title="TWN" class="flag-icon">
+                            <a href="https://www.taipeitimes.com/News/world" target="_blank" class="article-link">Trump dit à Zelenskiy de &#39;faire un accord&#39;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/srb.svg" alt="Serbie" title="Serbie" class="flag-icon">
+                            <a href="https://www.politika.rs/scc/svet" target="_blank" class="article-link">Trump appelle Zelensky à accepter les conditions russes pour mettre fin à la guerre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nld.svg" alt="Pays-Bas" title="Pays-Bas" class="flag-icon">
+                            <a href="https://www.telegraaf.nl/nieuws/buitenland" target="_blank" class="article-link">Trump a exhorté Zelenskiy à accepter les demandes russes, entravant les progrès de la paix</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pol.svg" alt="Pologne" title="Pologne" class="flag-icon">
+                            <a href="https://wyborcza.pl/0,0.html?disableRedirects=true" target="_blank" class="article-link">&#34;Financial Times&#34; : Trump a exhorté Zelensky à accepter les conditions de Poutine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pol.svg" alt="Pologne" title="Pologne" class="flag-icon">
+                            <a href="https://www.rp.pl/temat/swiat" target="_blank" class="article-link">Le président américain Donald Trump prévoit des concessions territoriales de l&#39;Ukraine à Poutine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vat.svg" alt="Saint-Siège" title="Saint-Siège" class="flag-icon">
+                            <a href="https://www.osservatoreromano.va/it/sections/internazionale.html" target="_blank" class="article-link">Trump ralentit l&#39;envoi de missiles Tomahawk en Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/afg.svg" alt="Afghanistan" title="Afghanistan" class="flag-icon">
+                            <a href="https://tolonews.com/world" target="_blank" class="article-link">Trump cherche à mettre fin à la guerre, pas à obtenir plus de soutien pour l&#39;Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/npl.svg" alt="Népal" title="Népal" class="flag-icon">
+                            <a href="https://ekantipur.com/world" target="_blank" class="article-link">Le président Trump rencontre le président Zelensky pour exhorter à une fin immédiate de la guerre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ltu.svg" alt="Lituanie" title="Lituanie" class="flag-icon">
+                            <a href="https://www.delfi.lt/news/daily/world/" target="_blank" class="article-link">Guerre en Ukraine : Les médias rapportent que Trump aurait nié la proposition de remettre le Donbass à Poutine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lbn.svg" alt="Liban" title="Liban" class="flag-icon">
+                            <a href="https://www.annahar.com/International" target="_blank" class="article-link">Trump exhorte Zelensky à négocier avec la Russie, affirme que Poutine a menacé de détruire l&#39;Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/swe.svg" alt="Suède" title="Suède" class="flag-icon">
+                            <a href="https://www.svd.se/" target="_blank" class="article-link">Sources : Trump exhorte l&#39;Ukraine à accepter les demandes de Poutine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/swe.svg" alt="Suède" title="Suède" class="flag-icon">
+                            <a href="https://www.svd.se/" target="_blank" class="article-link">Invasion russe de l&#39;Ukraine : Négociations bloquées entre Trump et Poutine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/deu.svg" alt="Allemagne" title="Allemagne" class="flag-icon">
+                            <a href="https://www.sueddeutsche.de/news/politik/" target="_blank" class="article-link">Trump appelle à geler la ligne de front dans la région contestée du Donbass en Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mkd.svg" alt="Macédoine du Nord" title="Macédoine du Nord" class="flag-icon">
+                            <a href="https://www.novamakedonija.com.mk/" target="_blank" class="article-link">Trump : Je ne mettrai pas en danger l&#39;Amérique à cause de l&#39;Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bol.svg" alt="Bolivie" title="Bolivie" class="flag-icon">
+                            <a href="https://eldeber.com.bo/seccion/mundo/" target="_blank" class="article-link">Trump hésite à livrer des missiles Tomahawk à Zelenski</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/blr.svg" alt="Biélorussie" title="Biélorussie" class="flag-icon">
+                            <a href="https://euroradio.fm/cats/palityka" target="_blank" class="article-link">Comment Trump agira-t-il si Poutine rejette un cessez-le-feu ? La réponse du président américain</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lka.svg" alt="Sri Lanka" title="Sri Lanka" class="flag-icon">
+                            <a href="https://sinhala.newsfirst.lk/world" target="_blank" class="article-link">Donald Trump appelle à la fin immédiate de la guerre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lka.svg" alt="Sri Lanka" title="Sri Lanka" class="flag-icon">
+                            <a href="https://sinhala.newsfirst.lk/world" target="_blank" class="article-link">Accord entre le président américain et le président russe sur le conflit en Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/uzb.svg" alt="Ouzbékistan" title="Ouzbékistan" class="flag-icon">
+                            <a href="https://kun.uz/news/category/jahon" target="_blank" class="article-link">Trump exhorte Zelensky à accepter les conditions de la Russie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/egy.svg" alt="Égypte" title="Égypte" class="flag-icon">
+                            <a href="https://www.egyptindependent.com/category/world/" target="_blank" class="article-link">Trump nie la livraison de missiles Tomahawk à l&#39;Ukraine, appelle les deux parties à « arrêter la guerre immédiatement »</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lux.svg" alt="Luxembourg" title="Luxembourg" class="flag-icon">
+                            <a href="https://www.wort.lu/fr/international" target="_blank" class="article-link">Trump exhorte Zelensky à conclure un « accord » pour mettre fin à la guerre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/can.svg" alt="Canada" title="Canada" class="flag-icon">
+                            <a href="https://www.theglobeandmail.com/world/" target="_blank" class="article-link">L&#39;Ukraine pourrait devoir échanger des terres contre la paix, dit Trump</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/can.svg" alt="Canada" title="Canada" class="flag-icon">
+                            <a href="https://www.thestar.com/news/world.html" target="_blank" class="article-link">Trump affirme que la région du Donbass en Ukraine devra être « découpée » pour mettre fin à l&#39;invasion russe</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #bf72e5; padding: 8px 16px; border-radius: 4px;">Perspective ukrainienne : Demande d&#39;un soutien accru des États-Unis et scepticisme face aux concessions russes</h3>
+        <p class="cluster-description">Ukraine, par l&#39;intermédiaire du président Zelensky et des responsables, souligne l&#39;insuffisance des seules négociations diplomatiques, exigeant un soutien militaire plus fort et une pression plus ferme sur la Russie. La direction ukrainienne exprime sa volonté de participer à des pourparlers de paix, y compris des réunions trilatérales potentielles, mais reste critique à l&#39;égard des propositions impliquant des concessions territoriales et s&#39;inquiète de l&#39;apaisement envers la Russie. Zelensky met en avant la posture agressive de la Russie et compare le niveau de menace de Poutine à celui d&#39;autres acteurs géopolitiques, appelant les États-Unis et leurs alliés à adopter des positions plus fermes tout en restant prudents face aux propositions principalement avancées par la direction américaine et russe.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hun.svg" alt="Hongrie" title="Hongrie" class="flag-icon">
+                            <a href="https://nepszava.hu/tag/kulfold/" target="_blank" class="article-link">Volodymyr Zelensky prêt à rencontrer Vladimir Poutine à Budapest mais croit que le président russe ne peut plus être arrêté par des mots</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/grc.svg" alt="Grèce" title="Grèce" class="flag-icon">
+                            <a href="https://www.kathimerini.gr/world" target="_blank" class="article-link">Ukraine : Zelensky appelle Trump à durcir la position contre Poutine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bel.svg" alt="Belgique" title="Belgique" class="flag-icon">
+                            <a href="https://www.lavenir.net/actu/monde/" target="_blank" class="article-link">Volodymyr Zelensky appelle Donald Trump à adopter une position plus ferme contre Vladimir Poutine : &#34;Poutine ressemble mais est plus fort que Hamas&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ind.svg" alt="Inde" title="Inde" class="flag-icon">
+                            <a href="https://www.thehindu.com/news/international/" target="_blank" class="article-link">Zelensky exhorte ses alliés à ne pas apaiser la Russie après le voyage aux États-Unis</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/alb.svg" alt="Albanie" title="Albanie" class="flag-icon">
+                            <a href="https://www.panorama.com.al/category/bota-rajoni/" target="_blank" class="article-link">Poutine n&#39;est pas plus fort que Hamas ! - Zelensky appelle Trump : une pression sur Moscou est nécessaire ! Je suis prêt pour une réunion trilatérale</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kos.svg" alt="KOS" title="KOS" class="flag-icon">
+                            <a href="https://www.rtklive.com/sq/news-category.php?CatID=10" target="_blank" class="article-link">Zelensky : Trump devrait être plus dur avec Poutine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svn.svg" alt="Slovénie" title="Slovénie" class="flag-icon">
+                            <a href="https://www.delo.si/novice/svet" target="_blank" class="article-link">Crise ukrainienne : Zelensky depuis la Maison Blanche les mains vides</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Perspective russe : propositions conditionnelles et négociations territoriales</h3>
+        <p class="cluster-description">La Russie, dirigée par le président Poutine, a proposé des échanges territoriaux impliquant des régions contestées telles que Donetsk, Kherson et Zaporizhzhia dans le cadre de négociations de paix. Poutine souligne la nécessité de stopper les actions militaires comme condition pour un dialogue ultérieur et indique sa volonté d&#39;accords médiés par les États-Unis. Cependant, la Russie maintient des revendications fermes sur ces territoires, reflétant des objectifs stratégiques dans le conflit. Ces positions contribuent à des discussions en cours, complexes, compliquées par des réponses internationales divergentes et un contexte géopolitique en évolution.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kwt.svg" alt="Koweït" title="Koweït" class="flag-icon">
+                            <a href="https://www.aljarida.com/%D8%AF%D9%88%D9%84%D9%8A%D8%A7%D8%AA" target="_blank" class="article-link">Poutine propose un échange de terres avec l&#39;Ukraine dans les «quatre régions»</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cze.svg" alt="République tchèque" title="République tchèque" class="flag-icon">
+                            <a href="https://www.idnes.cz/zpravy/zahranicni" target="_blank" class="article-link">Poutine insiste sur le fait que l&#39;Ukraine doit remettre la région de Donetsk mais offre des concessions</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ita.svg" alt="Italie" title="Italie" class="flag-icon">
+                            <a href="https://www.repubblica.it/esteri/" target="_blank" class="article-link">Guerre Ukraine-Russie, actualités d&#39;aujourd&#39;hui. Trump : &#34;Poutine et moi n&#39;avons pas parlé de Donetsk&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ltu.svg" alt="Lituanie" title="Lituanie" class="flag-icon">
+                            <a href="https://www.lrytas.lt/pasaulis" target="_blank" class="article-link">Des sources révèlent ce que Poutine a exigé lors des négociations avec Trump</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/esp.svg" alt="Espagne" title="Espagne" class="flag-icon">
+                            <a href="https://www.elmundo.es/internacional.html" target="_blank" class="article-link">Poutine propose à Trump de rendre des parties de Kherson et Zaporizhzhia en échange de toute la région de Donetsk</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gbr.svg" alt="Royaume-Uni" title="Royaume-Uni" class="flag-icon">
+                            <a href="https://news.sky.com/world" target="_blank" class="article-link">Oligarque russe exilé : Poutine a envoyé un signal à Trump qu&#39;il était prêt pour un accord sur l&#39;Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/uzb.svg" alt="Ouzbékistan" title="Ouzbékistan" class="flag-icon">
+                            <a href="https://kun.uz/news/category/jahon" target="_blank" class="article-link">Poutine a dit à Trump que les actions militaires doivent cesser</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hrv.svg" alt="Croatie" title="Croatie" class="flag-icon">
+                            <a href="https://www.vecernji.hr/vijesti/svijet" target="_blank" class="article-link">Poutine et Trump discutent de négociations secrètes : Donetsk comme prix de la paix en Ukraine ?</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Perspective am\u00e9ricaine : plaidoyer pour la n\u00e9gociation et le compromis territorial",
+                color: "#72e5ac",
+                data: [ {"id": "AF"},  {"id": "BD"},  {"id": "BO"},  {"id": "BY"},  {"id": "CA"},  {"id": "DE"},  {"id": "EG"},  {"id": "IE"},  {"id": "KR"},  {"id": "LB"},  {"id": "LK"},  {"id": "LU"},  {"id": "MK"},  {"id": "MO"},  {"id": "NL"},  {"id": "NP"},  {"id": "PL"},  {"id": "PR"},  {"id": "RS"},  {"id": "SE"},  {"id": "TW"},  {"id": "VA"} ]
+            },
+        
+            {
+                name: "Perspective ukrainienne : Demande d\u0027un soutien accru des \u00c9tats-Unis et scepticisme face aux concessions russes",
+                color: "#bf72e5",
+                data: [ {"id": "AL"},  {"id": "BE"},  {"id": "GR"},  {"id": "HU"},  {"id": "IN"},  {"id": "SI"},  {"id": "XK"} ]
+            },
+        
+            {
+                name: "Perspective russe : propositions conditionnelles et n\u00e9gociations territoriales",
+                color: "#e5d272",
+                data: [ {"id": "CZ"},  {"id": "ES"},  {"id": "GB"},  {"id": "HR"},  {"id": "IT"},  {"id": "KW"} ]
+            }
+        
+        
+            ,
+            {
+                name: "Plusieurs points de vue : \n- Perspective am\u00e9ricaine : plaidoyer pour la n\u00e9gociation et le compromis territorial\n- Perspective russe : propositions conditionnelles et n\u00e9gociations territoriales",
+                color: "#AAAAAA",
+                data: [{"id": "LT"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Perspective am\u00e9ricaine : plaidoyer pour la n\u00e9gociation et le compromis territorial\n- Perspective russe : propositions conditionnelles et n\u00e9gociations territoriales",
+                color: "#AAAAAA",
+                data: [{"id": "UZ"}]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Masquer les sources ▲' : 'Montrer les sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li>
+               <a href="/">Actus </a>
+            </li>
+            <li>
+              <a href="/fr/2025-10-20/country_count.html">Pays</a>
+            </li>
+            <li>
+              <a href="/fr/2025-10-20/labels.html">Thèmes</a>
+            </li>
+            <li>
+              <a href="/fr/about.html">A Propos</a>
+            </li>
+            <li>
+              <a href="/fr/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
