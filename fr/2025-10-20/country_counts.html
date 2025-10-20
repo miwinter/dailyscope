@@ -6,8 +6,8 @@
 <title></title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
@@ -104,12 +104,12 @@
                 <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
             </div>
             <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
-              <a id="lang-switch" href="#"><img src="/assets/images/flags/fra.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="Français" title="Français" class="flag-icon"></a>
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
               <script>
                 const currentUrl = window.location.href;
-                const englishUrl = currentUrl.replace('/en', '/fr');
+                const englishUrl = currentUrl.replace('/fr', '/en');
                 document.getElementById('lang-switch').setAttribute('href', englishUrl);
-              </script>              
+              </script>                 
             </div>
         </div>
       </div>
@@ -132,19 +132,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">News</a>
+              <a class="nav-link active" aria-current="page" href="/fr/">Actus</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/en/2025-10-20/country_count.html">Top Countries</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2025-10-20/country_count.html">Pays</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/en/2025-10-20/labels.html">Top Themes</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2025-10-20/labels.html">Thèmes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/en/about.html">About</a>
+              <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/en/contact.html">Contact</a>
+              <a class="nav-link active" aria-current="page" href="/fr/contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -155,16 +155,14 @@
 
 <!-- ===== SECTION 1 : TITRE (fond gris clair) ===== -->
   <section class="band band--title">
-  <div class="content-shell content-shell--narrow">
-    <h2 class="section-title">Most Mentioned Countries</h2>
-    <p class="section-subtitle">
-      Countries most frequently mentioned in today’s collected articles. 
-      Hover over a country to see the number of articles that refer to it.
-      Hover over the legend to highlight countries within a given value range.<br>
-      2025-10-20 • 1776 mentions in total
-    </p>
-  </div>
-</section>
+    <div class="content-shell content-shell--narrow">
+      <h2 class="section-title">Pays les plus mentionnés</h2>
+      <p class="section-subtitle">Pays les plus cités dans les articles récoltés aujourd'hui. 
+        Survolez un pays pour avoir le nombre d'articles qui y font référence.
+        Survolez la légende pour mettre en évidence les pays correspondant à une plage de valeurs.<br>
+      2025-10-20 • 1776 mentions au total</p>
+    </div>
+  </section>
 
   <!-- ===== SECTION 1 : CHART (bande blanche) ===== -->
   <section class="band band--chart">
@@ -176,14 +174,14 @@
   <!-- Section 2: Counts History (stacked columns) -->
   <section class="band band--title">
   <div class="content-shell content-shell--narrow">
-    <h2 class="section-title">History of the Most Mentioned Countries</h2>
+    <h2 class="section-title">Historique des pays les plus cités</h2>
     <p class="section-subtitle">
-      Countries most frequently mentioned over the past 7 days. 
-      Hover over a column to display the number of articles associated with it.
-      Click on a country in the legend or on a bar to highlight its full trend.
+      Pays les plus cités au cours des 7 derniers jours. 
+      Survolez une colonne pour afficher le nombre d’articles qui y sont associés.
+      Cliquez sur un pays dans la légende ou sur une barre pour mettre en évidence l’évolution complète du pays.
     </p>
   </div>
-  </section>
+</section>
   <section class="band band--chart">
     <div class="content-shell">
       <div class="chart-frame">
@@ -597,7 +595,7 @@
     (function () {
       var rawData = [["EG", 0, 0, 0, 0, 0, 42, 104], ["IL", 208, 170, 115, 127, 177, 213, 281], ["PS", 201, 170, 119, 129, 181, 220, 264], ["RU", 145, 135, 197, 212, 151, 123, 95], ["UA", 108, 106, 149, 114, 88, 94, 84], ["US", 287, 361, 389, 418, 354, 346, 330], ["VE", 0, 39, 72, 83, 92, 57, 49]];
       var dates = ["2025-10-20", "2025-10-19", "2025-10-18", "2025-10-17", "2025-10-16", "2025-10-15", "2025-10-14"].reverse();
-      var countryNames = {"EG": "Egypt", "IL": "Israel", "PS": "Palestine", "RU": "Russia", "UA": "Ukraine", "US": "United States", "VE": "Venezuela"};
+      var countryNames = {"EG": "\u00c9gypte", "IL": "Isra\u00ebl", "PS": "Palestine", "RU": "Russie", "UA": "Ukraine", "US": "\u00c9tats-Unis", "VE": "Venezuela"};
 
       var chart = anychart.column();
       chart.yScale().stackMode('value');
@@ -722,7 +720,7 @@
 
 <div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
   <div class="offcanvas-header">
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
   </div>
   <div class="offcanvas-body">
     <div class="head-contact">
@@ -733,21 +731,19 @@
       <div class="mobile-menu-sec mt-3">
          <ul class="list-unstyled">
             <li>
-               <a href="/">News </a>
-            </li>
-              <a href="/">News</a>
-            </li>
-            <li class="nav-item">
-              <a href="/en/2025-10-20/country_count.html">Top Countries</a>
-            </li>
-            <li class="nav-item">
-              <a href="/en/2025-10-20/labels.html">Top Themes</a>
+               <a href="/">Actus </a>
             </li>
             <li>
-              <a href="/en/about.html">About</a>
+              <a href="/fr/2025-10-20/country_count.html">Pays</a>
             </li>
             <li>
-              <a href="/en/contact.html">Contact</a>
+              <a href="/fr/2025-10-20/labels.html">Thèmes</a>
+            </li>
+            <li>
+              <a href="/fr/about.html">A Propos</a>
+            </li>
+            <li>
+              <a href="/fr/contact.html">Contact</a>
             </li>
          </ul>
       </div>
