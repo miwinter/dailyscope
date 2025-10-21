@@ -1,0 +1,522 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Global Overview of Recent Man-Made Disasters and Safety Failures</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/fra.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="Français" title="Français" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/en', '/fr');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>              
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/2025-10-21/country_counts.html">Top Countries</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/2025-10-21/labels.html">Top Themes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Global Overview of Recent Man-Made Disasters and Safety Failures</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-10-21</span> • <span>40 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-10-21/2025-10-21-4.webp" alt="Global Overview of Recent Man-Made Disasters and Safety Failures" class="main-image">
+                <p style="margin:0" class="chapitre">Recent man-made disasters across various regions highlight significant issues in transportation and industrial safety. A cargo plane accident in Hong Kong resulted in two fatalities, sparking concerns about aviation safety at the busy international hub, with multiple investigations ongoing. In Lisbon, a funicular crash caused 16 deaths due to a defective cable and maintenance failures, prompting widespread safety reviews. Industrial incidents such as explosions at Romanian oil refineries and a Tennessee explosives factory underscore ongoing challenges in industrial hazard management. Additionally, severe traffic accidents in Brazil and a crowd stampede in Kenya further emphasize the urgent need for improved safety protocols worldwide.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div class="key-points">
+        <h2>Countries covering this topic</h2>
+    </div>
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Hong Kong Cargo Plane Crash Focus</h3>
+        <p class="cluster-description">Sources from various countries emphasize the tragic cargo plane accident in Hong Kong that caused the deaths of two airport staff. Reporting focuses on the events of the plane skidding off the runway into the sea, the collision with ground vehicles, and subsequent investigations. The incident highlights safety concerns in the region’s aviation sector, with detailed descriptions of rescue efforts and operational disruptions at the airport. The convergence of multiple international news outlets stresses Hong Kong’s role as a critical air cargo hub and the implications of the accident for global air transport safety.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fji.svg" alt="Fiji" title="Fiji" class="flag-icon">
+                            <a href="https://www.fijitimes.com/category/world/" target="_blank" class="article-link">Cargo plane slides off runway in Hong Kong, media reports two dead</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ca-qc.svg" alt="CA-QC" title="CA-QC" class="flag-icon">
+                            <a href="https://www.journaldequebec.com/actualite/monde" target="_blank" class="article-link">Deadly cargo plane accident in Hong Kong kills two</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lux.svg" alt="Luxembourg" title="Luxembourg" class="flag-icon">
+                            <a href="https://www.tageblatt.lu/headlines/" target="_blank" class="article-link">Two Dead in Cargo Plane Accident in Hong Kong</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/isr.svg" alt="Israel" title="Israel" class="flag-icon">
+                            <a href="https://www.jpost.com/International" target="_blank" class="article-link">Cargo plane slides off runway in Hong Kong, killing two airport staff</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gbr.svg" alt="United Kingdom" title="United Kingdom" class="flag-icon">
+                            <a href="https://news.sky.com/world" target="_blank" class="article-link">Video shows cargo plane in the sea after Hong Kong crash which killed two people</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/plw.svg" alt="Palau" title="Palau" class="flag-icon">
+                            <a href="https://islandtimes.org/category/world-news/" target="_blank" class="article-link">Cargo plane slides off runway at Hong Kong International Airport, two people dead</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/idn.svg" alt="Indonesia" title="Indonesia" class="flag-icon">
+                            <a href="https://www.thejakartapost.com/world" target="_blank" class="article-link">Cargo plane slides off runway in Hong Kong, killing two airport staff</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sgp.svg" alt="Singapore" title="Singapore" class="flag-icon">
+                            <a href="https://www.businesstimes.com.sg/international" target="_blank" class="article-link">Two dead after cargo jet skids into the sea at Hong Kong airport</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mus.svg" alt="Mauritius" title="Mauritius" class="flag-icon">
+                            <a href="https://lexpress.mu/international" target="_blank" class="article-link">Cargo Plane 747 Skids Off Runway, Ends in Water with Two Dead</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/npl.svg" alt="Nepal" title="Nepal" class="flag-icon">
+                            <a href="https://ekantipur.com/world" target="_blank" class="article-link">Cargo plane crashes into sea at Hong Kong airport, two dead</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ita.svg" alt="Italy" title="Italy" class="flag-icon">
+                            <a href="https://www.corriere.it/esteri/" target="_blank" class="article-link">Hong Kong, cargo plane veers off runway during landing phase: two dead</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kor.svg" alt="South Korea" title="South Korea" class="flag-icon">
+                            <a href="https://www.koreaherald.com/World" target="_blank" class="article-link">Cargo aircraft skids off Hong Kong runway</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aze.svg" alt="Azerbaijan" title="Azerbaijan" class="flag-icon">
+                            <a href="https://en.trend.az/world/" target="_blank" class="article-link">Boeing 747 cargo plane skids off Hong Kong runway into sea</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pri.svg" alt="PRI" title="PRI" class="flag-icon">
+                            <a href="https://www.elnuevodia.com/noticias/mundo/" target="_blank" class="article-link">Cargo Plane Crash in Hong Kong Kills Two People</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Ireland" title="Ireland" class="flag-icon">
+                            <a href="https://www.independent.ie/world-news/" target="_blank" class="article-link">Two airport workers killed as cargo aircraft skids off a Hong Kong runway into the sea</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kwt.svg" alt="Kuwait" title="Kuwait" class="flag-icon">
+                            <a href="https://kuwaittimes.com/world/" target="_blank" class="article-link">Cargo plane skids off HK runway, kills 2</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/twn.svg" alt="TWN" title="TWN" class="flag-icon">
+                            <a href="https://www.taipeitimes.com/News/world" target="_blank" class="article-link">Two dead after jet skids off HK runway</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ben.svg" alt="Benin" title="Benin" class="flag-icon">
+                            <a href="https://lematinal.bj/category/inter/" target="_blank" class="article-link">Hong Kong: Cargo Plane Crash Landing Causes Two Deaths</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lva.svg" alt="Latvia" title="Latvia" class="flag-icon">
+                            <a href="https://www.diena.lv/raksts/pasaule" target="_blank" class="article-link">Cargo plane crashes in Hong Kong, two dead</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72a2e5; padding: 8px 16px; border-radius: 4px;">Lisbon Funicular Accident Analysis</h3>
+        <p class="cluster-description">European sources, particularly from Portugal and nearby countries, provide in-depth analysis of the deadly Lisbon funicular crash that resulted in 16 fatalities. Investigations revealed that the accident was caused by a defective and uncertified cable alongside maintenance failures. The discourse centers on regulatory shortcomings, safety protocol breaches, and the impact on public trust. These reports highlight systemic issues in infrastructure maintenance and call for stricter safety oversight to prevent recurrence.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lux.svg" alt="Luxembourg" title="Luxembourg" class="flag-icon">
+                            <a href="https://www.wort.lu/fr/international" target="_blank" class="article-link">Funicular Accident in Lisbon in September: The Cable Did Not Meet Standards</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/esp.svg" alt="Spain" title="Spain" class="flag-icon">
+                            <a href="https://www.elmundo.es/internacional.html" target="_blank" class="article-link">Broken cable of Lisbon funicular did not meet the regulations for passenger transport</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tun.svg" alt="Tunisia" title="Tunisia" class="flag-icon">
+                            <a href="http://www.tunisiesoir.com/category/international/" target="_blank" class="article-link">Funicular Crash Lisbon Portugal: Authorities Probe Deadly Derailment</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/imn.svg" alt="IMN" title="IMN" class="flag-icon">
+                            <a href="https://www.manxradio.com/news/" target="_blank" class="article-link">Report reveals failings that led to deadly Lisbon funicular crash</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mac.svg" alt="MAC" title="MAC" class="flag-icon">
+                            <a href="https://www.macaubusiness.com/category/mna/international/" target="_blank" class="article-link">Lisbon funicular accident linked to uncertified cable, maintenance failures</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/col.svg" alt="Colombia" title="Colombia" class="flag-icon">
+                            <a href="https://www.eltiempo.com/mundo" target="_blank" class="article-link">Investigation concludes on Portugal funicular accident: defective cable violating standards caused tragedy killing 16</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #bf72e5; padding: 8px 16px; border-radius: 4px;">Brazilian Traffic and Mining Accidents</h3>
+        <p class="cluster-description">Coverage from South American and related international media focuses on a series of fatal accidents in Brazil and Sudan, including a bus crash killing at least 15 people and a gold mine collapse in Sudan causing 11 deaths. The reports underscore the dangers associated with road transport and mining industries in developing economies, noting ongoing investigations and emergency response efforts. The narrative draws attention to infrastructure and occupational safety gaps in these sectors.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/afg.svg" alt="Afghanistan" title="Afghanistan" class="flag-icon">
+                            <a href="https://www.pajhwok.com/en/world-news" target="_blank" class="article-link">15 dead in Brazil traffic accident</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mus.svg" alt="Mauritius" title="Mauritius" class="flag-icon">
+                            <a href="https://lexpress.mu/international" target="_blank" class="article-link">Bus Accident in Brazil Kills at Least 15</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/npl.svg" alt="Nepal" title="Nepal" class="flag-icon">
+                            <a href="https://thehimalayantimes.com/category/world/" target="_blank" class="article-link">A gold mine collapse kills 11 workers in Sudan</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5728f; padding: 8px 16px; border-radius: 4px;">Industrial Explosions and Public Health Concerns in Romania and Guam</h3>
+        <p class="cluster-description">Articles from Eastern Europe and the Pacific discuss recent explosions at Romanian oil refineries and chemical contamination issues in Guam’s water supply. The Romanian incidents highlight industrial hazards with serious injuries but as yet undetermined causes, raising concerns about manufacturing safety standards amid regional energy pressures. Guam&#39;s contamination problem stresses public health challenges and governmental prioritization of environmental investigations. Both contexts emphasize the need for enhanced industrial and environmental safety management.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gum.svg" alt="GUM" title="GUM" class="flag-icon">
+                            <a href="https://www.guampdn.com/news/" target="_blank" class="article-link">Acting Governor Joshua Tenorio prioritizes dieldrin contamination investigation</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cri.svg" alt="Costa Rica" title="Costa Rica" class="flag-icon">
+                            <a href="https://www.nacion.com/el-mundo/" target="_blank" class="article-link">Two dead after cargo plane skids and falls into sea near Hong Kong</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hun.svg" alt="Hungary" title="Hungary" class="flag-icon">
+                            <a href="https://magyarnemzet.hu/" target="_blank" class="article-link">Explosion at Romanian oil refinery injures worker seriously</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/blr.svg" alt="Belarus" title="Belarus" class="flag-icon">
+                            <a href="https://www.belta.by/" target="_blank" class="article-link">Explosion at Romanian oil refinery</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Global Cyber and Environmental Risks</h3>
+        <p class="cluster-description">Some reports take a broader view of man-made disasters by addressing the global internet outage affecting dozens of major websites and services and the record-high carbon dioxide levels indicating accelerating climate change. These articles stress the vulnerabilities of critical digital infrastructure and the environmental threats posed by human activities. They call for urgent systemic responses to safeguard digital and ecological stability worldwide.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/rou.svg" alt="Romania" title="Romania" class="flag-icon">
+                            <a href="https://adevarul.ro/news/eveniment/" target="_blank" class="article-link">Major Global Internet Outage: Websites, Apps, Online Games, and Banking Services Affected</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mar.svg" alt="Morocco" title="Morocco" class="flag-icon">
+                            <a href="https://lematin.ma/monde" target="_blank" class="article-link">The Earth Suffocates: CO2 Levels Reach Unprecedented High in Modern History</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Hong Kong Cargo Plane Crash Focus",
+                color: "#72e5ac",
+                data: [ {"id": ""},  {"id": "AZ"},  {"id": "BJ"},  {"id": "FJ"},  {"id": "GB"},  {"id": "ID"},  {"id": "IE"},  {"id": "IL"},  {"id": "IT"},  {"id": "KR"},  {"id": "KW"},  {"id": "LV"},  {"id": "PR"},  {"id": "PW"},  {"id": "SG"},  {"id": "TW"} ]
+            },
+        
+            {
+                name: "Lisbon Funicular Accident Analysis",
+                color: "#72a2e5",
+                data: [ {"id": "CO"},  {"id": "ES"},  {"id": "IM"},  {"id": "MO"},  {"id": "TN"} ]
+            },
+        
+            {
+                name: "Brazilian Traffic and Mining Accidents",
+                color: "#bf72e5",
+                data: [ {"id": "AF"} ]
+            },
+        
+            {
+                name: "Industrial Explosions and Public Health Concerns in Romania and Guam",
+                color: "#e5728f",
+                data: [ {"id": "BY"},  {"id": "CR"},  {"id": "GU"},  {"id": "HU"} ]
+            },
+        
+            {
+                name: "Global Cyber and Environmental Risks",
+                color: "#e5d272",
+                data: [ {"id": "MA"},  {"id": "RO"} ]
+            }
+        
+        
+            ,
+            {
+                name: "Different perspectives:\n- Hong Kong Cargo Plane Crash Focus\n- Lisbon Funicular Accident Analysis",
+                color: "#AAAAAA",
+                data: [{"id": "LU"}]
+            },
+            {
+                name: "Different perspectives:\n- Hong Kong Cargo Plane Crash Focus\n- Brazilian Traffic and Mining Accidents",
+                color: "#AAAAAA",
+                data: [{"id": "MU"}]
+            },
+            {
+                name: "Different perspectives:\n- Hong Kong Cargo Plane Crash Focus\n- Brazilian Traffic and Mining Accidents",
+                color: "#AAAAAA",
+                data: [{"id": "NP"}]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Hide sources ▲' : 'Show sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li>
+               <a href="/">News </a>
+            </li>
+            <li>
+              <a href="/en/2025-10-21/country_counts.html">Top Countries</a>
+            </li>
+            <li>
+              <a href="/en/2025-10-21/labels.html">Top Themes</a>
+            </li>
+            <li>
+              <a href="/en/about.html">About</a>
+            </li>
+            <li>
+              <a href="/en/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
