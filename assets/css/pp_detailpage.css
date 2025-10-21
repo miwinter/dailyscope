@@ -1,6 +1,6 @@
 
 body {
-    font-family: Garamond, serif;
+    font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
     line-height: 1.6;
     padding: 0;
     margin: 0;
@@ -54,7 +54,7 @@ body {
     margin: 0 auto;
     padding: 20px;
     color: #333;
-    font-family: Garamond, serif;
+    font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
     background-color: #f8f9fa;
 }
 
@@ -63,7 +63,7 @@ body {
     font-weight: bold;
     margin: 0 0 10px 22px;
     background-color: #f8f9fa;
-    font-family: Garamond, serif;
+    font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 
 .content-wrapper {
@@ -97,7 +97,7 @@ body {
     font-size: 0.9em;
 }
 .key-points {
-    background-color: #ffffff;
+    background-color: #f8f9fa;
     padding: 0px;
     border-radius: 8px;
 }
@@ -127,7 +127,7 @@ body {
     transform: scale(1.1);
 }
 .article-summary {
-    font-family: Georgia, serif;
+    font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
     line-height: 1.5;
     margin: 0 0;
     padding: 20px;
@@ -142,12 +142,12 @@ body {
     border-radius: 8px;
 }
 .cluster-description {
-    font-family: Georgia, serif;
+    font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
     line-height: 1.5;
     margin: 0 0 0 0;
 }
 .cluster-title {
-    font-family: Garamond, serif;
+    font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
     margin: 10px 0 15px 0;
     font-size: 1.2em;
     color: #333;
@@ -257,4 +257,32 @@ body {
 
 .article-link:hover {
     text-decoration: underline;
+}
+/* 1) Quand ouvert : ne pas tronquer, afficher tout */
+.sources-content {
+  /* on supprime la contrainte qui coupait la fin de liste */
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+/* 2) Quand fermé : retirer complètement du flux (pas d’espace réservé)
+   et neutraliser le padding inline via !important */
+.sources-content.hidden {
+  display: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  visibility: hidden; /* facultatif */
+  opacity: 0;         /* facultatif */
+}
+
+.chapitre::first-letter{
+  float: left;             /* fait descendre la lettre sur plusieurs lignes */
+  font-size: 4rem;         /* taille de la lettrine */
+  line-height: 0.9;        /* ajuste la hauteur visuelle */
+  font-weight: 700;        /* gras (facultatif) */
+  margin: 0 .4rem 0 0;     /* espace entre la lettrine et le texte */
+  color: #222;             /* couleur */
+}
+@media (max-width: 480px){
+  .chapitre::first-letter{ float:none; font-size:inherit; margin:0; }
 }
