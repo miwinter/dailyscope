@@ -1,0 +1,545 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Dynamiques complexes et perspectives diverses dans le conflit israélo-palestinien</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/fr', '/en');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>                 
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/">Actus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2025-10-23/country_counts.html">Pays</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2025-10-23/labels.html">Thèmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Dynamiques complexes et perspectives diverses dans le conflit israélo-palestinien</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-10-23</span> • <span>45 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-10-23/2025-10-23-4.webp" alt="Dynamiques complexes et perspectives diverses dans le conflit israélo-palestinien" class="main-image">
+                <p style="margin:0" class="chapitre">Le conflit israélo-palestinien demeure profondément complexe avec des actions militaires continues, des manœuvres politiques et des crises humanitaires. Les initiatives législatives israéliennes visant à l&#39;annexion de la Cisjordanie ont suscité des préoccupations internationales et risquent de compromettre les accords de paix, tandis que les conditions humanitaires à Gaza et en Cisjordanie se détériorent, avec des avertissements concernant la malnutrition, les déplacements et les menaces d&#39;armes non explosées. Différents pays et organismes internationaux expriment des positions variées : certains condamnent les actions d&#39;Israël, mettent en avant les besoins humanitaires ou appellent à la retenue et à la relance des efforts de paix ; d&#39;autres soulignent les préoccupations sécuritaires ou mettent en lumière des problèmes de gouvernance palestinienne interne. L&#39;opinion publique évolue, comme le soutien américain à la reconnaissance d&#39;un État palestinien, et les initiatives diplomatiques régionales révèlent la nature multifacette et en constante évolution du conflit. Dans l&#39;ensemble, la situation est fragile, avec des défis importants pour la paix, la reconstruction et la stabilité régionale.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div class="key-points">
+        <h2>Les pays qui en parlent</h2>
+    </div>
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Perspective grecque : Focus sur les questions juridiques, humanitaires et de reconstruction</h3>
+        <p class="cluster-description">Les sources grecques mettent en avant les défis humanitaires auxquels sont confrontés les Palestiniens en Cisjordanie et à Gaza, soulignant les incidents violents lors de la récolte des olives, les expulsions d&#39;activistes, et les changements législatifs israéliens appliquant les lois israéliennes en Cisjordanie, considérés comme des étapes d&#39;annexion. La Grèce note également le rôle actif de Chypre dans la proposition d&#39;un plan de reconstruction pour Gaza, soulignant les efforts internationaux pour aider à la relance dans un contexte de tensions persistantes.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/grc.svg" alt="Grèce" title="Grèce" class="flag-icon">
+                            <a href="https://www.kathimerini.gr/world" target="_blank" class="article-link">Expulsion de 32 activistes de Cisjordanie aidant les Palestiniens lors de la récolte des olives</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/grc.svg" alt="Grèce" title="Grèce" class="flag-icon">
+                            <a href="https://www.kathimerini.gr/world" target="_blank" class="article-link">Le plan de Chypre pour la reconstruction de Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/grc.svg" alt="Grèce" title="Grèce" class="flag-icon">
+                            <a href="https://www.tovima.gr/category/world/" target="_blank" class="article-link">Le Knesset israélien adopte une loi appliquant la législation israélienne à la Cisjordanie</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72bbe5; padding: 8px 16px; border-radius: 4px;">Perspective malaisienne : développements politiques et réponses internationales</h3>
+        <p class="cluster-description">Les articles malaisiens se concentrent sur les mouvements parlementaires israéliens en faveur de l&#39;annexion de la Cisjordanie et les tensions politiques qui en découlent, notamment l&#39;opposition des États-Unis sous l&#39;ancien président Trump. De plus, la couverture malaisienne inclut l&#39;évolution de l&#39;opinion publique américaine en faveur de la reconnaissance de l&#39;État palestinien, reflétant un intérêt géopolitique plus large et des vues nuancées sur la résolution du conflit.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mys.svg" alt="Malaisie" title="Malaisie" class="flag-icon">
+                            <a href="https://www.malaymail.com/news/world" target="_blank" class="article-link">Les députés israéliens soutiennent la première étape de l&#39;annexion de la Cisjordanie alors que Trump promet de bloquer la démarche</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mys.svg" alt="Malaisie" title="Malaisie" class="flag-icon">
+                            <a href="https://www.malaymail.com/news/world" target="_blank" class="article-link">La majorité des Américains soutiennent la reconnaissance par les États-Unis de l&#39;État palestinien, selon un sondage Reuters/Ipsos</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #8d72e5; padding: 8px 16px; border-radius: 4px;">Perspective des États-Unis : Impact humanitaire et appels à la retenue</h3>
+        <p class="cluster-description">Les sources américaines mettent en lumière la crise humanitaire à Gaza, rapportant des funérailles massives au milieu d&#39;allégations d&#39;abus, et soulignent les appels diplomatiques à la retenue et au dialogue pour éviter une déstabilisation plus large de la région. Les États-Unis expriment leurs préoccupations concernant des propositions législatives israéliennes menaçant les accords de paix et soutiennent les efforts humanitaires tout en naviguant dans des dynamiques politiques et sécuritaires complexes.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/usa.svg" alt="États-Unis" title="États-Unis" class="flag-icon">
+                            <a href="https://abcnews.go.com/International" target="_blank" class="article-link">Funérailles de masse à Gaza alors que des signes d&#39;abus allégués sont signalés sur les corps renvoyés par Israël</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mdv.svg" alt="Maldives" title="Maldives" class="flag-icon">
+                            <a href="https://mihaaru.com/world" target="_blank" class="article-link">Les États-Unis appellent à la retenue de toutes les parties dans les tensions au Moyen-Orient</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sau.svg" alt="Arabie Saoudite" title="Arabie Saoudite" class="flag-icon">
+                            <a href="https://www.arabnews.com/international" target="_blank" class="article-link">Rubio dit que les mouvements d&#39;annexion d&#39;Israël en Cisjordanie « menacent » l&#39;accord de paix</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dnk.svg" alt="Danemark" title="Danemark" class="flag-icon">
+                            <a href="https://nyheder.tv2.dk/udland" target="_blank" class="article-link">Une proposition législative israélienne pourrait menacer l&#39;accord de paix, avertit les États-Unis</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e572da; padding: 8px 16px; border-radius: 4px;">Perspective yéménite : Accent sur la résistance palestinienne et les avertissements humanitaires</h3>
+        <p class="cluster-description">Les récits yéménites soulignent les aspects symboliques et politiques de la résistance palestinienne, tels que l&#39;annonce du martyre des dirigeants des Brigades d&#39;Al-Quds, en présentant ces événements comme emblématiques de la lutte en cours. Ils mettent également en avant des alarmes humanitaires, comme les avertissements de l&#39;UNRWA concernant le déplacement forcé en Cisjordanie, reflétant une solidarité régionale plus large avec la Palestine et des préoccupations concernant l&#39;impact sur les civils.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/yem.svg" alt="Yémen" title="Yémen" class="flag-icon">
+                            <a href="https://www.ypagency.net/" target="_blank" class="article-link">Signification politique de l&#39;annonce du martyre des dirigeants des Brigades d&#39;Al-Quds</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/yem.svg" alt="Yémen" title="Yémen" class="flag-icon">
+                            <a href="https://www.ypagency.net/" target="_blank" class="article-link">L&#39;UNRWA met en garde contre le déplacement forcé des Palestiniens de Cisjordanie</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e57276; padding: 8px 16px; border-radius: 4px;">Préoccupations humanitaires et juridiques internationales de divers pays</h3>
+        <p class="cluster-description">Plusieurs acteurs internationaux, dont Cuba, République dominicaine, Koweït, Maldives, Jordanie, Russie, France, Roumanie, Afrique du Sud, Maroc, Côte d&#39;Ivoire, Égypte, Qatar, Slovaquie, Cap-Vert et Suède, expriment des préoccupations concernant les actions militaires israéliennes, les crises humanitaires, les obligations légales et les conséquences politiques. Cela inclut des rapports sur l&#39;insécurité alimentaire, l&#39;aide bloquée, des décisions de justice critiquant Israël, des défis de gouvernance palestinienne interne, et des appels à une intervention internationale pour traiter à la fois les problèmes humanitaires et sécuritaires.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cub.svg" alt="Cuba" title="Cuba" class="flag-icon">
+                            <a href="http://www.juventudrebelde.cu/internacionales/" target="_blank" class="article-link">Netanyahu poursuit sa rampage criminel à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dom.svg" alt="République dominicaine" title="République dominicaine" class="flag-icon">
+                            <a href="https://listindiario.com/las-mundiales" target="_blank" class="article-link">L&#39;ONU avertit que la malnutrition chez les femmes enceintes à Gaza aura des effets générationnels</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kwt.svg" alt="Koweït" title="Koweït" class="flag-icon">
+                            <a href="https://www.aljarida.com/%D8%AF%D9%88%D9%84%D9%8A%D8%A7%D8%AA" target="_blank" class="article-link">France : le Hamas reprend le contrôle de Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mdv.svg" alt="Maldives" title="Maldives" class="flag-icon">
+                            <a href="https://mihaaru.com/world" target="_blank" class="article-link">Aide humanitaire envoyée aux Palestiniens dans le contexte du conflit en cours</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mdv.svg" alt="Maldives" title="Maldives" class="flag-icon">
+                            <a href="https://mihaaru.com/world" target="_blank" class="article-link">Islande rouvre son ambassade à Gaza après suspension</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jor.svg" alt="Jordanie" title="Jordanie" class="flag-icon">
+                            <a href="https://www.jordantimes.com/news/world" target="_blank" class="article-link">La plus haute cour de l&#39;ONU commence à rendre son verdict sur les obligations d&#39;aide d&#39;Israël à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jor.svg" alt="Jordanie" title="Jordanie" class="flag-icon">
+                            <a href="https://www.jordantimes.com/news/world" target="_blank" class="article-link">Trump dit que les alliés du Moyen-Orient sont prêts à &#34;régler le Hamas&#34; si on leur demande</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cpv.svg" alt="Cap-Vert" title="Cap-Vert" class="flag-icon">
+                            <a href="https://www.anacao.cv/categoria/mundo/" target="_blank" class="article-link">Le mouvement palestinien BDS accueille l&#39;interdiction par ENAPOR du navire d&#39;armes israélien</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pol.svg" alt="Pologne" title="Pologne" class="flag-icon">
+                            <a href="https://www.rp.pl/temat/swiat" target="_blank" class="article-link">MTS rend une décision sur la bande de Gaza : Israël a des obligations</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fra.svg" alt="France" title="France" class="flag-icon">
+                            <a href="https://www.lemonde.fr/international/" target="_blank" class="article-link">Tragédie des travailleurs palestiniens interdits d&#39;Israël</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/rou.svg" alt="Roumanie" title="Roumanie" class="flag-icon">
+                            <a href="https://jurnalul.ro/stiri/externe/" target="_blank" class="article-link">Netanyahu : Préparer une journée post-Gaza incroyable avec une nouvelle vision de la paix</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mar.svg" alt="Maroc" title="Maroc" class="flag-icon">
+                            <a href="https://lematin.ma/monde" target="_blank" class="article-link">Gaza : 8 000 enseignants bénévoles pour relancer l&#39;école pour les enfants</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/civ.svg" alt="Côte d&#39;Ivoire" title="Côte d&#39;Ivoire" class="flag-icon">
+                            <a href="https://www.aip.ci/category/international/" target="_blank" class="article-link">Israël rend 15 restes palestiniens, dit la Croix-Rouge</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/egy.svg" alt="Égypte" title="Égypte" class="flag-icon">
+                            <a href="https://www.dailynewsegypt.com/category/politics/" target="_blank" class="article-link">CIJ tient Israël responsable de l&#39;aggravation de la crise humanitaire à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fro.svg" alt="FRO" title="FRO" class="flag-icon">
+                            <a href="https://www.in.fo/" target="_blank" class="article-link">Armée israélienne : Nous avons obtenu un autre otage mort</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/qat.svg" alt="Qatar" title="Qatar" class="flag-icon">
+                            <a href="https://www.al-watan.com/%D8%B9%D8%B1%D8%A8%D9%8A-%D9%88%D8%AF%D9%88%D9%84%D9%8A" target="_blank" class="article-link">&#34;Cour&#34; de Gaza commence à enquêter sur les crimes israéliens</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/qat.svg" alt="Qatar" title="Qatar" class="flag-icon">
+                            <a href="https://www.al-watan.com/%D8%B9%D8%B1%D8%A8%D9%8A-%D9%88%D8%AF%D9%88%D9%84%D9%8A" target="_blank" class="article-link">Gaza reçoit 30 corps de Palestiniens de l&#39;occupation israélienne</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/qat.svg" alt="Qatar" title="Qatar" class="flag-icon">
+                            <a href="https://www.al-watan.com/%D8%B9%D8%B1%D8%A8%D9%8A-%D9%88%D8%AF%D9%88%D9%84%D9%8A" target="_blank" class="article-link">Massives arrestations en Cisjordanie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svk.svg" alt="Slovaquie" title="Slovaquie" class="flag-icon">
+                            <a href="https://dennikn.sk/sekcia/svet/" target="_blank" class="article-link">Conflit israélo-palestinien</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cpv.svg" alt="Cap-Vert" title="Cap-Vert" class="flag-icon">
+                            <a href="https://expressodasilhas.cv/mundo" target="_blank" class="article-link">La France avertit que le Hamas &#34;reprend le contrôle de la bande de Gaza&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bhr.svg" alt="Bahreïn" title="Bahreïn" class="flag-icon">
+                            <a href="https://akhbar-alkhaleej.com/news/section/WORL" target="_blank" class="article-link">Augmentation des suicides chez les soldats israéliens ayant combattu à Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bhr.svg" alt="Bahreïn" title="Bahreïn" class="flag-icon">
+                            <a href="https://akhbar-alkhaleej.com/news/section/WORL" target="_blank" class="article-link">Gergash appelle à une nouvelle approche pour mettre fin au conflit au Moyen-Orient</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Voix Palestiniennes et Régionales Affirment la Souveraineté et la Résistance</h3>
+        <p class="cluster-description">Sources palestiniennes et pays alliés réaffirment leurs revendications territoriales, rejetant la souveraineté israélienne sur des terres contestées, et mettent en avant les récits de résistance en cours, y compris les déclarations politiques et les mouvements populaires. Ces voix soulignent la difficulté de désarmer le Hamas et la complexité de la reconstruction de Gaza, tout en insistant sur les tensions politiques persistantes et les appels à la justice et à l&#39;autodétermination dans le cadre du conflit.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pse.svg" alt="Palestine" title="Palestine" class="flag-icon">
+                            <a href="https://www.alquds.com/" target="_blank" class="article-link">Turquie : Nous continuerons à soutenir le peuple palestinien dans sa lutte juste</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pse.svg" alt="Palestine" title="Palestine" class="flag-icon">
+                            <a href="http://www.al-ayyam.ps/" target="_blank" class="article-link">Vincent : Désarmer le Hamas et reconstruire Gaza est une tâche &#34;extrêmement difficile&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pry.svg" alt="Paraguay" title="Paraguay" class="flag-icon">
+                            <a href="https://www.ultimahora.com/noticias/mundo/" target="_blank" class="article-link">Ministère des Affaires étrangères palestinien : &#34;Israël n&#39;aura aucune souveraineté sur notre terre&#34;</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Perspective grecque : Focus sur les questions juridiques, humanitaires et de reconstruction",
+                color: "#72e5ac",
+                data: [ {"id": "GR"} ]
+            },
+        
+            {
+                name: "Perspective malaisienne : d\u00e9veloppements politiques et r\u00e9ponses internationales",
+                color: "#72bbe5",
+                data: [ {"id": "MY"} ]
+            },
+        
+            {
+                name: "Perspective des \u00c9tats-Unis : Impact humanitaire et appels \u00e0 la retenue",
+                color: "#8d72e5",
+                data: [ {"id": "DK"},  {"id": "SA"},  {"id": "US"} ]
+            },
+        
+            {
+                name: "Perspective y\u00e9m\u00e9nite : Accent sur la r\u00e9sistance palestinienne et les avertissements humanitaires",
+                color: "#e572da",
+                data: [ {"id": "YE"} ]
+            },
+        
+            {
+                name: "Pr\u00e9occupations humanitaires et juridiques internationales de divers pays",
+                color: "#e57276",
+                data: [ {"id": "BH"},  {"id": "CI"},  {"id": "CU"},  {"id": "CV"},  {"id": "DO"},  {"id": "EG"},  {"id": "FO"},  {"id": "FR"},  {"id": "JO"},  {"id": "KW"},  {"id": "MA"},  {"id": "PL"},  {"id": "QA"},  {"id": "RO"},  {"id": "SK"} ]
+            },
+        
+            {
+                name: "Voix Palestiniennes et R\u00e9gionales Affirment la Souverainet\u00e9 et la R\u00e9sistance",
+                color: "#e5d272",
+                data: [ {"id": "PS"},  {"id": "PY"} ]
+            }
+        
+        
+            ,
+            {
+                name: "Plusieurs points de vue : \n- Perspective des \u00c9tats-Unis : Impact humanitaire et appels \u00e0 la retenue\n- Pr\u00e9occupations humanitaires et juridiques internationales de divers pays",
+                color: "#AAAAAA",
+                data: [{"id": "MV"}]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Masquer les sources ▲' : 'Montrer les sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li>
+               <a href="/">Actus </a>
+            </li>
+            <li>
+              <a href="/fr/2025-10-23/country_counts.html">Pays</a>
+            </li>
+            <li>
+              <a href="/fr/2025-10-23/labels.html">Thèmes</a>
+            </li>
+            <li>
+              <a href="/fr/about.html">A Propos</a>
+            </li>
+            <li>
+              <a href="/fr/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

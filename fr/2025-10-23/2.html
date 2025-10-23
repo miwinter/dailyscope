@@ -1,0 +1,667 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Augmentation des attaques militaires et des pertes civiles dans le conflit entre l&#39;Ukraine et la Russie</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/fr', '/en');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>                 
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/">Actus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2025-10-23/country_counts.html">Pays</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2025-10-23/labels.html">Thèmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Augmentation des attaques militaires et des pertes civiles dans le conflit entre l&#39;Ukraine et la Russie</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-10-23</span> • <span>62 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-10-23/2025-10-23-2.webp" alt="Augmentation des attaques militaires et des pertes civiles dans le conflit entre l&#39;Ukraine et la Russie" class="main-image">
+                <p style="margin:0" class="chapitre">Le conflit entre l&#39;Ukraine et la Russie continue de s&#39;intensifier avec des attaques massives de missiles et de drones principalement lancées par les forces russes visant les infrastructures militaires et civiles à travers l&#39;Ukraine, y compris les écoles et les jardins d&#39;enfants, entraînant d&#39;importantes pertes civiles et une crise humanitaire. L&#39;Ukraine a répondu par des frappes ciblées à l&#39;intérieur de la Russie, touchant des usines chimiques et des installations énergétiques, ce qui indique une escalade vers des opérations militaires transfrontalières. Les efforts diplomatiques, y compris des sommets proposés entre des dirigeants tels que Trump et Poutine, ont échoué ou été retardés, compliquant davantage les perspectives de paix. Le soutien militaire international à l&#39;Ukraine augmente, comme en témoignent les accords pour fournir des avions de chasse avancés et des missiles, tandis que certains pays expriment du scepticisme ou mettent l&#39;accent sur une surveillance pacifique. La situation humanitaire se détériore avec la conscription forcée, les coupures de courant et les attaques directes contre les civils qui s&#39;intensifient dans un contexte de hostilités continues et de préoccupations sécuritaires régionales.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div class="key-points">
+        <h2>Les pays qui en parlent</h2>
+    </div>
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Aggression militaire russe et impact humanitaire</h3>
+        <p class="cluster-description">Des sources des États-Unis, du Pérou, d&#39;Espagne, de Hongrie, de Suède, du Japon et d&#39;autres pays mettent en évidence les attaques militaires russes en cours et intensifiées contre l&#39;Ukraine, soulignant l&#39;utilisation de missiles balistiques, d&#39;armes hypersoniques et de drones ciblant à la fois des sites militaires et civils tels que des jardins d&#39;enfants et des infrastructures électriques. Ces articles soulignent la responsabilité de la Russie dans les morts civiles, les crises humanitaires, les coupures d&#39;électricité et la violence croissante, condamnant souvent ces actions et présentant la Russie comme l&#39;agresseur soutenant le conflit.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/per.svg" alt="Pérou" title="Pérou" class="flag-icon">
+                            <a href="https://elcomercio.pe/mundo/" target="_blank" class="article-link">La Russie a lancé 11 missiles balistiques et 4 missiles hypersoniques Kinzhal contre l&#39;Ukraine la nuit dernière</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/per.svg" alt="Pérou" title="Pérou" class="flag-icon">
+                            <a href="https://larepublica.pe/mundo/" target="_blank" class="article-link">La Russie lance une attaque massive de drones et de missiles sur Kiev, laissant au moins 6 morts et 17 blessés</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/usa.svg" alt="États-Unis" title="États-Unis" class="flag-icon">
+                            <a href="https://edition.cnn.com/world" target="_blank" class="article-link">Des attaques aériennes russes meurtrières provoquent des coupures de courant à travers l&#39;Ukraine, alors que le sommet Trump-Poutine est annulé</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hun.svg" alt="Hongrie" title="Hongrie" class="flag-icon">
+                            <a href="https://nepszava.hu/tag/kulfold/" target="_blank" class="article-link">Plus de 400 drones et roquettes ont attaqué l&#39;Ukraine tôt mercredi</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mdv.svg" alt="Maldives" title="Maldives" class="flag-icon">
+                            <a href="https://sun.mv/world_news" target="_blank" class="article-link">La Russie intensifie ses attaques en Ukraine dans un contexte de conflit croissant</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/arg.svg" alt="Argentine" title="Argentine" class="flag-icon">
+                            <a href="https://www.lanacion.com.ar/el-mundo" target="_blank" class="article-link">La Russie bombarde une maternelle après l&#39;annulation du sommet Poutine-Trump</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/brb.svg" alt="Barbade" title="Barbade" class="flag-icon">
+                            <a href="https://nationnews.com/category/world/" target="_blank" class="article-link">Une attaque aérienne russe meurtrière provoque des coupures de courant à travers l&#39;Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sau.svg" alt="Arabie Saoudite" title="Arabie Saoudite" class="flag-icon">
+                            <a href="https://saudigazette.com.sa/World" target="_blank" class="article-link">Une frappe russe touche une maternelle à Kharkiv, les enfants évacués au milieu d&#39;un incendie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/swe.svg" alt="Suède" title="Suède" class="flag-icon">
+                            <a href="https://www.dn.se/varlden/" target="_blank" class="article-link">Une école maternelle ukrainienne attaquée quelques heures après l&#39;annulation du sommet</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ltu.svg" alt="Lituanie" title="Lituanie" class="flag-icon">
+                            <a href="https://www.delfi.lt/news/daily/world/" target="_blank" class="article-link">Les attaques de drones russes se sont intensifiées : les renseignements ont révélé des chiffres impressionnants</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/esp.svg" alt="Espagne" title="Espagne" class="flag-icon">
+                            <a href="https://elpais.com/internacional/" target="_blank" class="article-link">La Russie mobilise ses réservistes pour combattre les drones ukrainiens</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/esp.svg" alt="Espagne" title="Espagne" class="flag-icon">
+                            <a href="https://www.elmundo.es/internacional.html" target="_blank" class="article-link">La Russie attaque une école maternelle pleine d&#39;enfants à Kharkiv</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nga.svg" alt="Nigeria" title="Nigeria" class="flag-icon">
+                            <a href="https://guardian.ng/category/world/" target="_blank" class="article-link">Les frappes russes laissent une ville ukrainienne sans électricité</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hnd.svg" alt="Honduras" title="Honduras" class="flag-icon">
+                            <a href="https://www.elheraldo.hn/mundo" target="_blank" class="article-link">La Russie a attaqué l&#39;Ukraine avec 405 drones et 28 missiles ; une frappe a touché une école avec des enfants</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/rou.svg" alt="Roumanie" title="Roumanie" class="flag-icon">
+                            <a href="https://adevarul.ro/news/eveniment/" target="_blank" class="article-link">Attaque de drone par la Russie sur le Danube ; les résidents du nord du comté de Tulcea alertés via RO-Alert</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/rou.svg" alt="Roumanie" title="Roumanie" class="flag-icon">
+                            <a href="https://jurnalul.ro/stiri/externe/" target="_blank" class="article-link">La Russie a lancé de massives frappes de missiles balistiques sur l&#39;Ukraine pendant la nuit</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/uzb.svg" alt="Ouzbékistan" title="Ouzbékistan" class="flag-icon">
+                            <a href="https://kun.uz/news/category/jahon" target="_blank" class="article-link">La Russie a lancé des frappes à travers l&#39;Ukraine – photos</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/egy.svg" alt="Égypte" title="Égypte" class="flag-icon">
+                            <a href="https://www.egyptindependent.com/category/world/" target="_blank" class="article-link">Des attaques aériennes russes meurtrières provoquent des coupures d&#39;électricité dans toute l&#39;Ukraine, alors que le sommet Trump-Poutine est mis en suspens</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fro.svg" alt="FRO" title="FRO" class="flag-icon">
+                            <a href="https://www.in.fo/" target="_blank" class="article-link">Six personnes tuées lors d&#39;attaques en Ukraine pendant la nuit</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/arm.svg" alt="Arménie" title="Arménie" class="flag-icon">
+                            <a href="https://www.panarmenian.net/arm/world/" target="_blank" class="article-link">Zelensky d&#39;Ukraine exhorte les États-Unis à garantir la sécurité, critique l&#39;Europe</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ecu.svg" alt="Équateur" title="Équateur" class="flag-icon">
+                            <a href="https://rebelion.org/categoria/territorios/mundo/" target="_blank" class="article-link">Parfois, les guerres sont perdues : réflexions sur l&#39;Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hti.svg" alt="Haïti" title="Haïti" class="flag-icon">
+                            <a href="https://lenouvelliste.com/international" target="_blank" class="article-link">Pannes d&#39;électricité en Ukraine suite aux frappes russes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kos.svg" alt="KOS" title="KOS" class="flag-icon">
+                            <a href="https://www.koha.net/bote" target="_blank" class="article-link">La Russie abandonne des soldats près du fleuve Dnipro ; des troupes meurent de faim et d&#39;attaques de drones ukrainiens</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bra.svg" alt="Brésil" title="Brésil" class="flag-icon">
+                            <a href="https://oglobo.globo.com/mundo/" target="_blank" class="article-link">Une frappe aérienne russe tue sept personnes et prive une partie de l&#39;Ukraine d&#39;électricité</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/isr.svg" alt="Israël" title="Israël" class="flag-icon">
+                            <a href="https://www.jpost.com/International" target="_blank" class="article-link">Une attaque de drone russe endommage la synagogue de Kiev, annonce le grand rabbin</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mlt.svg" alt="Malte" title="Malte" class="flag-icon">
+                            <a href="https://www.maltatoday.com.mt/news/world/" target="_blank" class="article-link">Une attaque massive russe tue cinq personnes en Ukraine alors que la Pologne déploie des jets de combat</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72a2e5; padding: 8px 16px; border-radius: 4px;">Capacités défensives et offensives ukrainiennes</h3>
+        <p class="cluster-description">Articles principalement issus de Mongolie, Jordanie, Pologne, République tchèque, Roumanie, Moldavie et Slovaquie mettent en lumière les réponses et avancées militaires de l&#39;Ukraine, notamment des frappes réussies sur des cibles militaires et industrielles russes utilisant des missiles fournis par l&#39;Occident tels que Storm Shadow, des efforts pour renforcer la défense aérienne via l&#39;acquisition de chasseurs suédois Gripen, et la libération stratégique de localités occupées. Ces perspectives soulignent la résilience de l&#39;Ukraine et ses opérations militaires de plus en plus sophistiquées visant à contrer l&#39;agression russe.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mng.svg" alt="Mongolie" title="Mongolie" class="flag-icon">
+                            <a href="https://news.mn/angilal/delhii/" target="_blank" class="article-link">Ukraine frappe une usine chimique russe avec des missiles britanniques</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jor.svg" alt="Jordanie" title="Jordanie" class="flag-icon">
+                            <a href="https://www.jordannews.jo/Category/18/Global" target="_blank" class="article-link">Ukraine frappe une usine chimique russe avec des missiles Storm Shadow</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/che.svg" alt="Suisse" title="Suisse" class="flag-icon">
+                            <a href="https://www.letemps.ch/monde" target="_blank" class="article-link">Les frappes ukrainiennes sur les installations énergétiques russes menacent l&#39;approvisionnement en carburant de Moscou</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pol.svg" alt="Pologne" title="Pologne" class="flag-icon">
+                            <a href="https://wyborcza.pl/0,0.html?disableRedirects=true" target="_blank" class="article-link">L&#39;Ukraine a frappé des installations à Bryansk. « Cible clé »</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cze.svg" alt="République tchèque" title="République tchèque" class="flag-icon">
+                            <a href="https://www.lidovky.cz/svet" target="_blank" class="article-link">Les États-Unis ont probablement levé les restrictions sur l&#39;utilisation par l&#39;Ukraine de missiles alliés, Trump dissimule les détails</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cze.svg" alt="République tchèque" title="République tchèque" class="flag-icon">
+                            <a href="https://www.lidovky.cz/svet" target="_blank" class="article-link">L&#39;Ukraine prévoit d&#39;acheter jusqu&#39;à 150 chasseurs Gripen en Suède, un accord préliminaire conclu</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/rou.svg" alt="Roumanie" title="Roumanie" class="flag-icon">
+                            <a href="https://adevarul.ro/news/eveniment/" target="_blank" class="article-link">Les Ukrainiens disposent d&#39;armes puissantes pour frapper plus profondément en Russie ; la Roumanie collabore sur un projet de missile</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mda.svg" alt="Moldavie" title="Moldavie" class="flag-icon">
+                            <a href="https://www.zdg.md/" target="_blank" class="article-link">Des soldats ukrainiens ont libéré une localité de la région de Donetsk</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svk.svg" alt="Slovaquie" title="Slovaquie" class="flag-icon">
+                            <a href="https://dennikn.sk/sekcia/svet/" target="_blank" class="article-link">Développement du combat (Jour 1335) : la Slovaquie les a rejetés, l&#39;Ukraine les veut – le rôle trouvé pour les hélicoptères Viper dans la guerre des drones</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svk.svg" alt="Slovaquie" title="Slovaquie" class="flag-icon">
+                            <a href="https://spravy.pravda.sk/svet/" target="_blank" class="article-link">La Russie envoie à nouveau des drones sur Kiev, en représailles aux attaques de missiles Storm Shadow ukrainiens</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ukr.svg" alt="Ukraine" title="Ukraine" class="flag-icon">
+                            <a href="https://kyivindependent.com/" target="_blank" class="article-link">&#39;Budanov&#39;s sanctions&#39; — HUR confirme une frappe de drone ukrainien sur la raffinerie de pétrole du Daghestan</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #bf72e5; padding: 8px 16px; border-radius: 4px;">Perspectives diplomatiques et stratégiques internationales</h3>
+        <p class="cluster-description">Divers articles provenant de Serbie, Lituanie, Argentine, Brésil, Estonie, Slovaquie et d&#39;autres discutent des dimensions géopolitiques et diplomatiques plus larges du conflit, y compris le scepticisme concernant les pourparlers de paix, les critiques des approches de certains dirigeants, les analyses sur ceux qui bénéficient des cessez-le-feu, le report des sommets, et les préoccupations concernant une escalade impliquant du personnel de l&#39;OTAN. Ces sources reflètent la complexité de la diplomatie internationale entourant le conflit et diverses interprétations de sa trajectoire et de sa résolution.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/srb.svg" alt="Serbie" title="Serbie" class="flag-icon">
+                            <a href="https://www.politika.rs/scc/svet" target="_blank" class="article-link">Trump : La déclaration publiée par le Wall Street Journal est fausse</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/srb.svg" alt="Serbie" title="Serbie" class="flag-icon">
+                            <a href="https://www.blic.rs/vesti/svet" target="_blank" class="article-link">Aucune fin en vue pour la guerre en Ukraine : le jeu de Poutine réussit, la tactique de Trump s&#39;effondre comme un château de cartes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ltu.svg" alt="Lituanie" title="Lituanie" class="flag-icon">
+                            <a href="https://www.delfi.lt/news/daily/world/" target="_blank" class="article-link">De Zelensky – un avertissement urgent : Poutine pourrait ouvrir un nouveau front</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/rou.svg" alt="Roumanie" title="Roumanie" class="flag-icon">
+                            <a href="https://adevarul.ro/news/eveniment/" target="_blank" class="article-link">Analyse stratégique de ceux qui bénéficieraient si un armistice était signé demain en Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aut.svg" alt="Autriche" title="Autriche" class="flag-icon">
+                            <a href="https://www.diepresse.com/ausland" target="_blank" class="article-link">La fin rapide de la guerre en Ukraine est une illusion</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bra.svg" alt="Brésil" title="Brésil" class="flag-icon">
+                            <a href="https://www1.folha.uol.com.br/mundo/" target="_blank" class="article-link">La Russie et l&#39;Ukraine intensifient leurs attaques alors que le sommet Trump-Poutine reste non programmé</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/est.svg" alt="Estonie" title="Estonie" class="flag-icon">
+                            <a href="https://maailm.postimees.ee/" target="_blank" class="article-link">1338e jour de la guerre en Ukraine : Trump en réunion avec Rutte : les discussions avec Poutine n&#39;aboutissent à rien</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5728f; padding: 8px 16px; border-radius: 4px;">Souffrance Civile et Préoccupations Humanitaires</h3>
+        <p class="cluster-description">Plusieurs rapports provenant de Hongrie, Ukraine, Pologne, Albanie, Lettonie, Kosovo et d&#39;autres pays mettent en évidence l&#39;impact sévère du conflit sur les civils, en particulier les enfants, en insistant sur les attaques contre les jardins d&#39;enfants et les écoles, la conscription forcée, les pertes civiles, les coupures d&#39;électricité et les conditions de vie difficiles. Ces récits soulignent la crise humanitaire et la souffrance généralisée causées par la guerre en cours et les opérations militaires.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/usa.svg" alt="États-Unis" title="États-Unis" class="flag-icon">
+                            <a href="https://abcnews.go.com/International" target="_blank" class="article-link">Frappe russe sur une maternelle ukrainienne faisant 1 mort et 10 blessés</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/usa.svg" alt="États-Unis" title="États-Unis" class="flag-icon">
+                            <a href="https://abcnews.go.com/International" target="_blank" class="article-link">Frappe aérienne russe sur l&#39;Ukraine tuant 6 personnes, dont 2 enfants, selon Kyiv</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hun.svg" alt="Hongrie" title="Hongrie" class="flag-icon">
+                            <a href="https://magyarnemzet.hu/" target="_blank" class="article-link">Service militaire obligatoire en Ukraine conduit à une évitement généralisé et à des pratiques sévères</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cze.svg" alt="République tchèque" title="République tchèque" class="flag-icon">
+                            <a href="https://www.lidovky.cz/svet" target="_blank" class="article-link">La Russie a frappé une maternelle à Kharkiv ; Zelensky a prononcé des mots forts</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lva.svg" alt="Lettonie" title="Lettonie" class="flag-icon">
+                            <a href="https://www.diena.lv/raksts/pasaule" target="_blank" class="article-link">Un drone russe frappe une maternelle à Kharkiv</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/alb.svg" alt="Albanie" title="Albanie" class="flag-icon">
+                            <a href="https://www.panorama.com.al/category/bota-rajoni/" target="_blank" class="article-link">Nouvelles attaques de drones russes en Ukraine tuant des enfants dans une maternelle</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svk.svg" alt="Slovaquie" title="Slovaquie" class="flag-icon">
+                            <a href="https://dennikn.sk/sekcia/svet/" target="_blank" class="article-link">Développement des combats (Jour 1334) : À Pokrovsk, c&#39;est l&#39;enfer – les Russes sont dans le centre-ville et tirent sur des civils</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ukr.svg" alt="Ukraine" title="Ukraine" class="flag-icon">
+                            <a href="https://kyivindependent.com/" target="_blank" class="article-link">Une radio interceptée suggère que le commandant russe a ordonné aux troupes de tirer sur des civils près de Pokrovsk, selon HUR</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kos.svg" alt="KOS" title="KOS" class="flag-icon">
+                            <a href="https://www.rtklive.com/sq/news-category.php?CatID=10" target="_blank" class="article-link">Les attaques russes ciblent des civils en Ukraine, y compris des enfants parmi les victimes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/est.svg" alt="Estonie" title="Estonie" class="flag-icon">
+                            <a href="https://maailm.postimees.ee/" target="_blank" class="article-link">La Russie a attaqué une maternelle à Kharkiv</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Positions Neutres ou de Surveillance</h3>
+        <p class="cluster-description">Articles provenant de Cuba, de Chine et de sources similaires expriment des positions de non-engagement ou d&#39;observation neutre, avec des démentis officiels de participation militaire et des déclarations sur la surveillance étroite de la situation évolutive en Ukraine. Ces perspectives mettent en avant la prudence diplomatique, l&#39;importance des relations pacifiques et la réticence à s&#39;engager militairement dans le conflit.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cub.svg" alt="Cuba" title="Cuba" class="flag-icon">
+                            <a href="http://fr.granma.cu/mundo" target="_blank" class="article-link">Cuba nie catégoriquement sa participation au conflit en Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mmr.svg" alt="Birmanie" title="Birmanie" class="flag-icon">
+                            <a href="https://elevenmyanmar.com/world" target="_blank" class="article-link">La Chine dit qu&#39;&#34;elle suit de près&#34; la situation en Ukraine après les développements récents</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Aggression militaire russe et impact humanitaire",
+                color: "#72e5ac",
+                data: [ {"id": "AM"},  {"id": "AR"},  {"id": "BB"},  {"id": "EC"},  {"id": "EG"},  {"id": "ES"},  {"id": "FO"},  {"id": "HN"},  {"id": "HT"},  {"id": "IL"},  {"id": "MT"},  {"id": "MV"},  {"id": "NG"},  {"id": "PE"},  {"id": "SA"},  {"id": "SE"},  {"id": "UZ"} ]
+            },
+        
+            {
+                name: "Capacit\u00e9s d\u00e9fensives et offensives ukrainiennes",
+                color: "#72a2e5",
+                data: [ {"id": "CH"},  {"id": "JO"},  {"id": "MD"},  {"id": "MN"},  {"id": "PL"} ]
+            },
+        
+            {
+                name: "Perspectives diplomatiques et strat\u00e9giques internationales",
+                color: "#bf72e5",
+                data: [ {"id": "AT"},  {"id": "RS"} ]
+            },
+        
+            {
+                name: "Souffrance Civile et Pr\u00e9occupations Humanitaires",
+                color: "#e5728f",
+                data: [ {"id": "AL"},  {"id": "LV"} ]
+            },
+        
+            {
+                name: "Positions Neutres ou de Surveillance",
+                color: "#e5d272",
+                data: [ {"id": "CU"},  {"id": "MM"} ]
+            }
+        
+        
+            ,
+            {
+                name: "Plusieurs points de vue : \n- Aggression militaire russe et impact humanitaire\n- Perspectives diplomatiques et strat\u00e9giques internationales",
+                color: "#AAAAAA",
+                data: [{"id": "BR"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Aggression militaire russe et impact humanitaire\n- Souffrance Civile et Pr\u00e9occupations Humanitaires",
+                color: "#AAAAAA",
+                data: [{"id": "HU"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Aggression militaire russe et impact humanitaire\n- Perspectives diplomatiques et strat\u00e9giques internationales",
+                color: "#AAAAAA",
+                data: [{"id": "LT"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Aggression militaire russe et impact humanitaire\n- Capacit\u00e9s d\u00e9fensives et offensives ukrainiennes\n- Perspectives diplomatiques et strat\u00e9giques internationales",
+                color: "#AAAAAA",
+                data: [{"id": "RO"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Aggression militaire russe et impact humanitaire\n- Souffrance Civile et Pr\u00e9occupations Humanitaires",
+                color: "#AAAAAA",
+                data: [{"id": "US"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Aggression militaire russe et impact humanitaire\n- Souffrance Civile et Pr\u00e9occupations Humanitaires",
+                color: "#AAAAAA",
+                data: [{"id": "XK"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Capacit\u00e9s d\u00e9fensives et offensives ukrainiennes\n- Souffrance Civile et Pr\u00e9occupations Humanitaires",
+                color: "#AAAAAA",
+                data: [{"id": "CZ"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Capacit\u00e9s d\u00e9fensives et offensives ukrainiennes\n- Souffrance Civile et Pr\u00e9occupations Humanitaires",
+                color: "#AAAAAA",
+                data: [{"id": "SK"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Capacit\u00e9s d\u00e9fensives et offensives ukrainiennes\n- Souffrance Civile et Pr\u00e9occupations Humanitaires",
+                color: "#AAAAAA",
+                data: [{"id": "UA"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Perspectives diplomatiques et strat\u00e9giques internationales\n- Souffrance Civile et Pr\u00e9occupations Humanitaires",
+                color: "#AAAAAA",
+                data: [{"id": "EE"}]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Masquer les sources ▲' : 'Montrer les sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li>
+               <a href="/">Actus </a>
+            </li>
+            <li>
+              <a href="/fr/2025-10-23/country_counts.html">Pays</a>
+            </li>
+            <li>
+              <a href="/fr/2025-10-23/labels.html">Thèmes</a>
+            </li>
+            <li>
+              <a href="/fr/about.html">A Propos</a>
+            </li>
+            <li>
+              <a href="/fr/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
