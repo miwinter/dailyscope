@@ -45,23 +45,14 @@ body {
 
 .header-content {
     width: 100%;
-    padding: 20px;
+    padding: 20px 0 0 20px;;
     background-color: #f8f9fa;
 }
 
-.key-points {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    color: #333;
-    font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
-    background-color: #f8f9fa;
-}
-
-.key-points h2 {
-    font-size: 2em;
+h2 {
+    font-size: 26px;
     font-weight: bold;
-    margin: 0 0 10px 22px;
+    margin: 0 0 0 18px;
     background-color: #f8f9fa;
     font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
@@ -144,12 +135,14 @@ body {
 .cluster-description {
     font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
     line-height: 1.5;
-    margin: 0 0 0 0;
+    text-indent: 1em;
+    margin: 0 0 0 18px;
 }
 .cluster-title {
     font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
     margin: 10px 0 15px 0;
-    font-size: 1.2em;
+    font-size: 18px;
+    font-weight: bold;
     color: #333;
     display: inline-block;
 }
@@ -194,7 +187,7 @@ body {
     border: none;
     color: #0066cc;
     cursor: pointer;
-    padding: 5px 10px;
+    padding: 5px 18px;
     font-size: 0.9em;
     display: block;
     width: 100%;
@@ -286,3 +279,61 @@ body {
 @media (max-width: 480px){
   .chapitre::first-letter{ float:none; font-size:inherit; margin:0; }
 }
+
+/* --- Fix ratio + responsive pour l'image de tête --- */
+/* L'image garde son ratio: largeur fluide, hauteur auto */
+img.main-image {
+  display: block;
+  width: 100%;
+  max-width: 340px;   /* ou 40% si tu préfères */
+  height: auto;       /* clé: ratio respecté */
+  float: left;
+  border-radius: 8px;
+  margin: 0 20px 12px 0;
+}
+
+/* Mobile: supprimer TOUT le retrait latéral du 1er bloc texte */
+@media (max-width: 680px){
+  .header-inner{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .header-content{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    border-radius: 0; /* option: pour coller vraiment bord à bord */
+  }
+  .article-summary{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .cluster-description {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .content-wrapper{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+/* Gouttière commune pour aligner header-content et cluster-description */
+:root { --ds-gutter-x: 20px; }
+
+/* Applique la même gouttière au bloc des clusters (texte et listes) */
+.cluster-section { padding: 0 var(--ds-gutter-x); }    /* aligne le <p class="cluster-description"> */
+
+/* Mobile: on conserve l'affichage bord à bord demandé précédemment */
+@media (max-width: 680px){
+  :root { --ds-gutter-x: 0px; }
+  /* (si besoin, tu peux laisser 8–12px au lieu de 0) */
+}
+
+
+
