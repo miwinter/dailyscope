@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Labels & Categories — History + Tag Cloud</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+  <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-treemap.min.js"></script>
+  <style>
+    
+    html, body {
+      width: 100%; height: 100%;
+      margin: 0; padding: 0;
+    }
+    .band { width: 100%; margin: 0; padding: 0; }
+    .band--title { background: #f8f9fa; border-top: 1px solid #eee; }
+    .band--chart { background: #fff; border-top: 1px solid #eee; }
+    .content-shell {
+      width: 100%;
+      max-width: 1400px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+    .band--title .content-shell { padding: 28px 16px 18px; }
+    .band--chart .content-shell { padding: 20px 16px 40px; }
+    .section-title {
+      margin: 0;
+      font: 600 20px/1.3 system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial;
+    }
+    .section-subtitle {
+      margin: 8px 0 0 0;
+      color: #666;
+      font: 400 14px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial;
+    }
+    .chart-frame {
+      width: min(100%, 800px);
+      margin: 0 auto;
+      height: clamp(320px, 56vw, 480px); /* min 320px, grandit avec la largeur */
+      position: relative;
+    }
+
+    /* le chart occupe 100% du cadre */
+    .chart-plot {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .content-shell--narrow {
+      max-width: 860px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  </style>
+</head>
+<body>
+  <header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/fr', '/en');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>                 
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/">Actus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2025-10-24/country_counts.html">Pays</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2025-10-24/labels.html">Thèmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+  <!-- Section 1: Tag Cloud -->
+  <section class="band band--title">
+  <div class="content-shell content-shell--narrow">
+    <h2 class="section-title">Principales thématiques du jour</h2>
+    <p class="section-subtitle">
+      Voici les principales thématiques identifiées dans les articles 
+      collectés aujourd’hui (2025-10-24).
+    </p>
+  </div>
+</section>
+  <section class="band band--chart">
+    <div class="content-shell">
+      <div class="chart-frame">
+        <div id="chart-tagcloud" class="chart-plot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Labels History (stacked columns) -->
+  <section class="band band--title">
+  <div class="content-shell content-shell--narrow">
+    <h2 class="section-title">Historique des thématiques</h2>
+    <p class="section-subtitle">
+      Principales thématiques identifiées au cours des 7 derniers jours.
+      Survolez une colonne pour afficher le nombre d’articles associés à une thématique.
+      Cliquez sur une thématique dans la légende ou sur une barre pour mettre en évidence l’évolution complète de cette thématique.
+    </p>
+  </div>
+</section>
+  <section class="band band--chart">
+    <div class="content-shell">
+      <div class="chart-frame">
+        <div id="chart-labels" class="chart-plot"></div>
+      </div>
+    </div>
+  </section>
+<script>
+anychart.onDocumentReady(function () {
+  // === Données brutes Jinja (inchangé côté Python)
+  var raw = [{"category": "US\u2013Russia Threat Escalation", "weight": 17}, {"category": "Ukraine-Russia Conflict", "weight": 49}, {"category": "US Military Narcotics Strike", "weight": 21}, {"category": "Israel-Palestine Conflict", "weight": 28}, {"category": "US\u2013Russia Summit Diplomacy", "weight": 22}, {"category": "Israel-Hamas Ceasefire Issues", "weight": 23}, {"category": "Man\u2011Made Disasters", "weight": 22}, {"category": "Israel ICJ Aid Ruling", "weight": 13}, {"category": "US\u2013Venezuela Military Threats", "weight": 36}, {"category": "US\u2013Colombia Diplomatic Tensions", "weight": 14}, {"category": "Natural Disaster", "weight": 12}, {"category": "Trump\u2013Xi Summit Talks", "weight": 30}, {"category": "US\u2013Russia Sanctions Row", "weight": 14}, {"category": "Israel-Lebanon Border Strikes", "weight": 11}, {"category": "NATO-Russia Airspace Protest", "weight": 15}, {"category": "Russia Airspace Incursion", "weight": 19}, {"category": "US-Canada Trade Talks Collapse", "weight": 11}, {"category": "EU Frozen Assets Aid Plan", "weight": 15}, {"category": "EU\u2013Russia Sanctions on Oil", "weight": 104}, {"category": "Israel West Bank Annexation Issues", "weight": 45}] || [];
+
+  // === min/max (calculés une seule fois)
+  var minVal = Infinity, maxVal = -Infinity;
+  for (var i = 0; i < raw.length; i++) {
+    var vv = Number(raw[i].weight);
+    if (isFinite(vv)) { if (vv < minVal) minVal = vv; if (vv > maxVal) maxVal = vv; }
+  }
+  if (minVal === Infinity) { minVal = 0; maxVal = 0; }
+
+  // === Tailles FIXES par paliers (modifie si besoin)
+  var SIZE_STEPS = [8, 12, 14, 16, 18]; // petites → grandes polices
+  function fontSizeFromValue(v) {
+    if (!isFinite(v) || maxVal === minVal) return 16; // défaut si plat
+    var t = (v - minVal) / (maxVal - minVal); // 0..1
+    if (t < 0.20) return SIZE_STEPS[0];
+    if (t < 0.40) return SIZE_STEPS[1];
+    if (t < 0.65) return SIZE_STEPS[2];
+    if (t < 0.85) return SIZE_STEPS[3];
+    return SIZE_STEPS[4];
+  }
+
+  // === Arbre (root -> catégories)
+  var nodes = [{ id: 'root', name: 'Categories' }];
+  for (var j = 0; j < raw.length; j++) {
+    nodes.push({
+      id: 'cat_' + j,
+      name: String(raw[j].category),
+      parent: 'root',
+      value: Number(raw[j].weight) || 0
+    });
+  }
+  var dataTree = anychart.data.tree(nodes, 'as-table');
+
+  // === Chart
+  var chart = anychart.treeMap(dataTree);
+
+  // Fond / marges / pas de bordure
+  chart.background().fill('#0f172a');  // ← change la couleur si besoin
+  chart.margin(0);
+  chart.padding(0);
+  chart.normal().stroke('none');
+  chart.hovered().stroke('none');
+  chart.selected().stroke('none');
+  chart.stroke(null);
+
+  // Header "Categories" invisible (et pas de drill-up nécessaire ici)
+  chart.headers().enabled(false);
+
+  // Dégradé continu (valeurs faibles → fortes)
+  var scale = anychart.scales.linearColor();
+  scale.colors(['#FBE9D0', '#E64833']); // ← ajuste tes couleurs
+  chart.colorScale(scale);
+
+  // Pas de légende (barre de dégradé)
+  chart.colorRange().enabled(false);
+
+  // Labels : HTML, tailles FIXES selon la valeur (pas d’auto-fit)
+  chart.labels()
+    .enabled(true)
+    .useHtml(true)
+    .adjustFontSize(false)
+    .wordWrap('byWord')
+    .wordBreak('break-word')
+    .hAlign('center')
+    .vAlign('middle')
+    .format(function () {
+      var get = (this && typeof this.get === 'function') ? this.get.bind(this) : null;
+      var name = (get && get('name')) || this?.name || '';
+      var vRaw = (get && get('value')) || this?.value;
+      var v = Number(vRaw);
+
+      name = String(name);
+      if (name.length > 28) name = name.slice(0, 27) + '…';
+
+      var fs  = fontSizeFromValue(v);
+      var fs2 = Math.max(fs - 2, 10);
+
+      // Couleur texte auto pour contraste basique
+      var t = (maxVal === minVal) ? 0.5 : Math.max(0, Math.min(1, (v - minVal) / (maxVal - minVal)));
+      var fontColor = (t > 0.55) ? '#ffffff' : '#111111';
+
+      return '' +
+        '<div style="line-height:1.06; text-align:center; color:'+fontColor+'">' +
+          '<span style="font-size:'+fs+'px; display:block;">'+ name +'</span>' +
+          (isFinite(v) ? '<span style="font-size:'+fs2+'px; opacity:.85;"><br>'+ v +'</span>' : '') +
+        '</div>';
+    });
+
+  chart.maxDepth(1);
+  chart.selectionMode('none');
+
+  // Conteneur existant
+  chart.container('chart-tagcloud');
+  chart.draw();
+});
+</script>
+
+
+  <script>
+
+    // ===== Chart 2: Labels History (from labels_template_en.html) =====
+    anychart.onDocumentReady(function () {
+      (function () {
+        var rawData = [["EU\u2013Russia Sanctions on Oil", 104, 0, 0, 0, 0, 0, 0], ["Gaza Ceasefire and Reconstruction Crisis", 0, 0, 0, 0, 108, 78, 0], ["Israel West Bank Annexation Issues", 45, 0, 0, 0, 0, 0, 0], ["Israel-Palestine Conflict", 0, 45, 52, 110, 0, 0, 0], ["Trump\u2013Xi Summit Talks", 30, 0, 0, 0, 0, 0, 0], ["US\u2013Russia Ukraine Conflict Talks", 0, 0, 0, 0, 47, 115, 0], ["US\u2013Venezuela Military Threats", 36, 0, 0, 0, 0, 0, 0], ["Ukraine-Russia Conflict", 49, 62, 79, 57, 0, 0, 0]];
+        var dates = ["2025-10-24", "2025-10-23", "2025-10-22", "2025-10-21", "2025-10-20", "2025-10-19", "2025-10-18"].reverse();
+
+        var chart = anychart.column();
+        chart.yScale().stackMode('value');
+
+        var colors = ['#72e5ac','#72e5e3','#72b0e5','#7279e5','#a372e5','#da72e5','#e572b8','#e57281','#e59b72','#e5d272'];
+
+        var seriesList = [];
+        var lastHighlighted = null;
+
+        function setHighlighted(s, on) {
+          var orig = s.meta('origFill');
+          if (!orig) return;
+          if (on) {
+            s.normal().fill('#000000');
+            s.normal().stroke('2 #fff 1');
+            s.zIndex(10);
+            s.meta('isHighlighted', true);
+            lastHighlighted = s;
+          } else {
+            s.normal().fill(orig);
+            s.normal().stroke('2 #fff 1');
+            s.zIndex(1);
+            s.meta('isHighlighted', false);
+            if (lastHighlighted === s) lastHighlighted = null;
+          }
+        }
+
+        function toggleHighlight(s) {
+          if (lastHighlighted && lastHighlighted !== s) setHighlighted(lastHighlighted, false);
+          var isOn = !!s.meta('isHighlighted');
+          setHighlighted(s, !isOn);
+        }
+
+        for (var i = 0; i < rawData.length; i++) {
+          var labelData = [];
+          var values = rawData[i].slice(1).reverse();
+          for (var j = 0; j < dates.length; j++) {
+            labelData.push({ x: dates[j], value: values[j] });
+          }
+          var s = chart.column(labelData);
+          var color = colors[i % colors.length];
+
+          s.name(rawData[i][0]);
+          s.normal().stroke('2 #fff 1');
+          s.normal().fill(color);
+
+          s.meta('origFill', color);
+          s.meta('isHighlighted', false);
+          s.zIndex(1);
+
+          s.listen('pointClick', function(e) { toggleHighlight(e.series); });
+
+          seriesList.push(s);
+        }
+
+        var legend = chart.legend();
+        //legend.enabled(true).position('right').itemsLayout('vertical').padding([20,0,0,0]).fontSize(13);
+
+                // après avoir fait var legend = chart.legend(); ...
+        legend.enabled(true).padding([8,0,0,0]).fontSize(12);
+
+        function applyLegendLayout() {
+          if (window.innerWidth <= 640) {
+            legend.position('bottom')
+              .itemsLayout('horizontal')
+              .align('left');
+            chart.padding([10,10,48,10]);   // espace pour la légende en bas
+          } else {
+            legend.position('right')
+              .itemsLayout('vertical')
+              .align('center')
+              .padding([0,0,0,50]);
+            chart.padding([10,10,10,10]);
+          }
+        }
+        applyLegendLayout();
+        window.addEventListener('resize', applyLegendLayout);
+
+        chart.listen('legendItemClick', function (e) {
+          var s = seriesList[e.itemIndex];
+          if (s) toggleHighlight(s);
+          e.preventDefault();
+        });
+
+        chart.tooltip()
+          .displayMode('single')
+          .titleFormat(function () { return this.x + ' — ' + this.seriesName; })
+          .format(function () { return this.value + ' articles'; });
+
+        chart.xAxis().labels().rotation(-45);
+        chart.yAxis().title('Number of articles');
+
+        chart.container('chart-labels');
+        chart.draw();
+      })();
+    });
+
+
+  </script>
+
+   <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li>
+               <a href="/">Actus </a>
+            </li>
+            <li>
+              <a href="/fr/2025-10-24/country_counts.html">Pays</a>
+            </li>
+            <li>
+              <a href="/fr/2025-10-24/labels.html">Thèmes</a>
+            </li>
+            <li>
+              <a href="/fr/about.html">A Propos</a>
+            </li>
+            <li>
+              <a href="/fr/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
