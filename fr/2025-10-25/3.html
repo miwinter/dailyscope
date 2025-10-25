@@ -1,0 +1,562 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Tensions entre les États-Unis et la Colombie s&#39;intensifient à propos des sanctions contre le trafic de drogue</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/fr', '/en');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>                 
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/">Actus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2025-10-25/country_counts.html">Pays</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2025-10-25/labels.html">Thèmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Tensions entre les États-Unis et la Colombie s&#39;intensifient à propos des sanctions contre le trafic de drogue</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-10-25</span> • <span>49 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-10-25/2025-10-25-3.webp" alt="Tensions entre les États-Unis et la Colombie s&#39;intensifient à propos des sanctions contre le trafic de drogue" class="main-image">
+                <p style="margin:0" class="chapitre">Les États-Unis ont imposé de vastes sanctions financières au président colombien Gustavo Petro, à sa famille et à des responsables clés, les accusant d&#39;implication dans le trafic de drogue et d&#39;échec à réduire la production de cocaïne. Ces mesures, initiées sous l&#39;administration Trump et poursuivies par la suite, ont gravement détérioré les relations diplomatiques entre les États-Unis et la Colombie et perturbé une coopération de longue date. Petro et le gouvernement colombien ont nié fermement ces accusations, qualifiant les sanctions de paradoxales ou politiquement motivées, et ont répliqué de manière défiée. La controverse a intensifié les tensions géopolitiques régionales et a suscité certains efforts pour maintenir la collaboration anti-drogue malgré le désaccord. La situation reflète les efforts plus larges des États-Unis pour faire pression sur les pays d&#39;Amérique latine en matière de lutte contre les narcotiques tout en naviguant dans la complexité politique interne en Colombie.</p>
+            </div>
+            <h2>Les pays qui en parlent</h2>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Perspective du gouvernement américain : trafic de drogue et préoccupations de sécurité</h3>
+        <p class="cluster-description">Les États-Unis, par l&#39;intermédiaire du Département du Trésor et de l&#39;Office of Foreign Assets Control (OFAC), ont imposé des sanctions au président colombien Gustavo Petro, à sa famille et à des responsables gouvernementaux proches, en raison de leur implication dans des activités de narcotrafic et en accusant l&#39;administration de Petro de ne pas avoir réussi à freiner la hausse de la production et du trafic de cocaïne. Ce point de vue met en avant les menaces à la sécurité nationale posées par l&#39;augmentation des flux de drogues sur le marché américain et présente les sanctions comme une pression nécessaire pour lutter contre la criminalité organisée et la corruption au sein de la direction colombienne. Les États-Unis qualifient ces actions de partie intégrante d&#39;une politique étrangère visant à responsabiliser les responsables étrangers et à protéger les intérêts américains contre les dommages liés à la drogue.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cri.svg" alt="Costa Rica" title="Costa Rica" class="flag-icon">
+                            <a href="https://www.nacion.com/el-mundo/" target="_blank" class="article-link">Les États-Unis sanctionnent le président colombien Gustavo Petro et le ministre de l&#39;Intérieur</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cri.svg" alt="Costa Rica" title="Costa Rica" class="flag-icon">
+                            <a href="https://www.diarioextra.com/categoria/internacionales/" target="_blank" class="article-link">Les États-Unis sanctionnent le président colombien Gustavo Petro</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jpn.svg" alt="Japon" title="Japon" class="flag-icon">
+                            <a href="https://www.yomiuri.co.jp/world/" target="_blank" class="article-link">Les États-Unis imposent des sanctions au président colombien avec un passé de guérillero</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hnd.svg" alt="Honduras" title="Honduras" class="flag-icon">
+                            <a href="https://www.elheraldo.hn/mundo" target="_blank" class="article-link">Les États-Unis imposent des sanctions financières à Petro, l&#39;accusant d&#39;être un &#34;chef du narcotrafic&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgr.svg" alt="Bulgarie" title="Bulgarie" class="flag-icon">
+                            <a href="https://www.24chasa.bg/mezhdunarodni" target="_blank" class="article-link">Les États-Unis sanctionnent le président colombien pour des allégations de trafic de drogue</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cyp.svg" alt="Chypre" title="Chypre" class="flag-icon">
+                            <a href="https://www.philenews.com/kosmos/" target="_blank" class="article-link">Les États-Unis sanctionnent le président colombien – la production de cocaïne a augmenté depuis le début de son mandat, affirme Washington</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kos.svg" alt="KOS" title="KOS" class="flag-icon">
+                            <a href="https://www.rtklive.com/sq/news-category.php?CatID=10" target="_blank" class="article-link">Les États-Unis sanctionnent le président de la Colombie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bra.svg" alt="Brésil" title="Brésil" class="flag-icon">
+                            <a href="https://www1.folha.uol.com.br/mundo/" target="_blank" class="article-link">Les États-Unis imposent des sanctions au président colombien pour sa &#34;contribution au trafic de drogue&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bra.svg" alt="Brésil" title="Brésil" class="flag-icon">
+                            <a href="https://oglobo.globo.com/mundo/" target="_blank" class="article-link">Les États-Unis imposent des sanctions au président colombien et à ses membres de la famille</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/est.svg" alt="Estonie" title="Estonie" class="flag-icon">
+                            <a href="https://maailm.postimees.ee/" target="_blank" class="article-link">Les États-Unis imposent des sanctions au président de la Colombie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/swe.svg" alt="Suède" title="Suède" class="flag-icon">
+                            <a href="https://www.svd.se/" target="_blank" class="article-link">Les États-Unis imposent des sanctions contre le président de la Colombie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/slv.svg" alt="Salvador" title="Salvador" class="flag-icon">
+                            <a href="https://diario.elmundo.sv/el-mundo" target="_blank" class="article-link">Les États-Unis imposent des sanctions financières à Gustavo Petro pour des liens présumés avec le trafic de drogue</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/prt.svg" alt="Portugal" title="Portugal" class="flag-icon">
+                            <a href="https://expresso.pt/" target="_blank" class="article-link">Trump impose des sanctions au président colombien et à sa famille pour leur implication présumée dans le trafic de drogue</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mng.svg" alt="Mongolie" title="Mongolie" class="flag-icon">
+                            <a href="https://montsame.mn/mn/more/17" target="_blank" class="article-link">Le président colombien Gustavo Petro sanctionné</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mng.svg" alt="Mongolie" title="Mongolie" class="flag-icon">
+                            <a href="https://news.mn/angilal/delhii/" target="_blank" class="article-link">Le président colombien Gustavo Petro sanctionné par les États-Unis</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tls.svg" alt="Timor oriental" title="Timor oriental" class="flag-icon">
+                            <a href="https://www.noticiasaominuto.com/mundo" target="_blank" class="article-link">Les États-Unis imposent des sanctions au président de la Colombie et à sa famille. Pourquoi ?</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/arg.svg" alt="Argentine" title="Argentine" class="flag-icon">
+                            <a href="https://www.lanacion.com.ar/el-mundo" target="_blank" class="article-link">Les États-Unis sanctionnent le président Petro et sa famille pour des allégations de trafic de drogue</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/arg.svg" alt="Argentine" title="Argentine" class="flag-icon">
+                            <a href="https://www.clarin.com/mundo/" target="_blank" class="article-link">Les tensions montent entre les États-Unis et la Colombie : l&#39;administration Trump annonce des sanctions contre Gustavo Petro</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/srb.svg" alt="Serbie" title="Serbie" class="flag-icon">
+                            <a href="https://www.politika.rs/scc/svet" target="_blank" class="article-link">Les États-Unis sanctionnent le président colombien</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/srb.svg" alt="Serbie" title="Serbie" class="flag-icon">
+                            <a href="https://www.blic.rs/vesti/svet" target="_blank" class="article-link">Les États-Unis imposent des sanctions au président colombien et à sa famille</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mex.svg" alt="Mexique" title="Mexique" class="flag-icon">
+                            <a href="https://www.jornada.com.mx/categoria/mundo" target="_blank" class="article-link">Le Trésor américain sanctionne le président colombien ; l&#39;accusant de permettre la floraison du narcotrafic</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nor.svg" alt="Norvège" title="Norvège" class="flag-icon">
+                            <a href="https://www.aftenposten.no/verden" target="_blank" class="article-link">Les États-Unis imposent des sanctions au président colombien</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/are.svg" alt="Émirats arabes unis" title="Émirats arabes unis" class="flag-icon">
+                            <a href="https://gulfnews.com/world" target="_blank" class="article-link">Les États-Unis imposent des sanctions au président de la Colombie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/esp.svg" alt="Espagne" title="Espagne" class="flag-icon">
+                            <a href="https://elpais.com/internacional/" target="_blank" class="article-link">Le Trésor américain sanctionne le président colombien pour ses liens présumés avec le narcotrafic</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lbn.svg" alt="Liban" title="Liban" class="flag-icon">
+                            <a href="https://www.annahar.com/International" target="_blank" class="article-link">Les États-Unis imposent des sanctions au président colombien pour le trafic de drogue</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/grc.svg" alt="Grèce" title="Grèce" class="flag-icon">
+                            <a href="https://www.kathimerini.gr/world" target="_blank" class="article-link">Les États-Unis imposent des sanctions contre le président de la Colombie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kaz.svg" alt="Kazakhstan" title="Kazakhstan" class="flag-icon">
+                            <a href="https://tengrinews.kz/news/" target="_blank" class="article-link">Les États-Unis imposent des sanctions au président colombien Gustavo Petro et à son cercle intérieur</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mys.svg" alt="Malaisie" title="Malaisie" class="flag-icon">
+                            <a href="https://www.malaymail.com/news/world" target="_blank" class="article-link">Trump impose des sanctions à Petro, président de la Colombie, et à sa famille dans un contexte de conflit sur les tactiques de la guerre contre la drogue</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/per.svg" alt="Pérou" title="Pérou" class="flag-icon">
+                            <a href="https://elcomercio.pe/mundo/" target="_blank" class="article-link">Les États-Unis imposent des sanctions financières à Petro, l&#39;accusant d&#39;être un &#34;leader du trafic de drogue&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dom.svg" alt="République dominicaine" title="République dominicaine" class="flag-icon">
+                            <a href="https://listindiario.com/las-mundiales" target="_blank" class="article-link">Les États-Unis sanctionnent le président colombien Petro et sa famille pour ses liens présumés avec le trafic de drogue</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hti.svg" alt="Haïti" title="Haïti" class="flag-icon">
+                            <a href="https://lenouvelliste.com/international" target="_blank" class="article-link">Les États-Unis imposent des sanctions contre le président colombien</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nld.svg" alt="Pays-Bas" title="Pays-Bas" class="flag-icon">
+                            <a href="https://www.telegraaf.nl/nieuws/buitenland" target="_blank" class="article-link">Les États-Unis sanctionnent le président colombien pour le flux de cocaïne vers les États-Unis</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hkg.svg" alt="HKG" title="HKG" class="flag-icon">
+                            <a href="https://www.scmp.com/news/world" target="_blank" class="article-link">Les États-Unis sanctionnent le président de la Colombie pour la drogue, dans un conflit croissant avec Trump</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #7279e5; padding: 8px 16px; border-radius: 4px;">Position du gouvernement colombien et de Petro : Négation et défiance</h3>
+        <p class="cluster-description">Le président colombien Gustavo Petro et son administration rejettent fermement les accusations des États-Unis, les qualifiant de motivées politiquement, injustes ou paradoxales. Petro a nié publiquement toute implication dans le trafic de drogue, condamné les sanctions et juré de ne pas se rendre ou reculer. Il a accusé des agences américaines telles que la CIA et la DEA de tentatives de faire taire ou de déstabiliser son gouvernement. Ce point de vue met en avant des préoccupations de souveraineté nationale, remet en question les preuves ou motivations des États-Unis, et souligne l&#39;engagement de Petro dans la lutte contre le trafic de drogue malgré un environnement diplomatique contentieux.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hnd.svg" alt="Honduras" title="Honduras" class="flag-icon">
+                            <a href="https://www.laprensa.hn/mundo/" target="_blank" class="article-link">Les États-Unis imposent des sanctions financières à Petro l&#39;accusant d&#39;être un &#34;chef du trafic de drogue&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hnd.svg" alt="Honduras" title="Honduras" class="flag-icon">
+                            <a href="https://www.elheraldo.hn/mundo" target="_blank" class="article-link">Petro qualifie son inclusion sur la &#34;Liste Clinton&#34; des États-Unis de &#34;paradoxe&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gtm.svg" alt="Guatemala" title="Guatemala" class="flag-icon">
+                            <a href="https://www.prensalibre.com/internacional/" target="_blank" class="article-link">Qu&#39;est-ce que la &#34;Liste Clinton&#34; et pourquoi Gustavo Petro a été inclus par les États-Unis</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gtm.svg" alt="Guatemala" title="Guatemala" class="flag-icon">
+                            <a href="https://lahora.gt/internacionales/" target="_blank" class="article-link">Les États-Unis incluent Petro sur la Liste Clinton, alléguant des liens avec le trafic de drogue</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bol.svg" alt="Bolivie" title="Bolivie" class="flag-icon">
+                            <a href="https://eldeber.com.bo/seccion/mundo/" target="_blank" class="article-link">Les États-Unis sanctionnent le président de la Colombie, Gustavo Petro</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/alb.svg" alt="Albanie" title="Albanie" class="flag-icon">
+                            <a href="https://www.panorama.com.al/category/bota-rajoni/" target="_blank" class="article-link">Les États-Unis imposent des sanctions au président colombien Gustavo Petro : des niveaux élevés de cocaïne inondent le marché américain, empoisonnant les citoyens</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pan.svg" alt="Panama" title="Panama" class="flag-icon">
+                            <a href="https://www.laestrella.com.pa/mundo" target="_blank" class="article-link">Ce que signifie être ajouté à la Liste Clinton : sanctions auxquelles Gustavo Petro fait face après la décision de Trump</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pry.svg" alt="Paraguay" title="Paraguay" class="flag-icon">
+                            <a href="https://www.ultimahora.com/noticias/mundo/" target="_blank" class="article-link">Les États-Unis imposent des sanctions financières au président colombien Petro, accusé de leadership dans le narcotrafic</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pry.svg" alt="Paraguay" title="Paraguay" class="flag-icon">
+                            <a href="https://www.ultimahora.com/noticias/mundo/" target="_blank" class="article-link">Le président colombien Petro répond fermement aux sanctions américaines : &#34;Pas un pas en arrière&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mex.svg" alt="Mexique" title="Mexique" class="flag-icon">
+                            <a href="https://www.jornada.com.mx/categoria/mundo" target="_blank" class="article-link">Petro accuse la CIA et la DEA de comploter pour l&#39;emprisonner aux États-Unis afin de faire taire sa voix</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ita.svg" alt="Italie" title="Italie" class="flag-icon">
+                            <a href="https://www.corriere.it/esteri/" target="_blank" class="article-link">Les États-Unis imposent des sanctions contre le président colombien Gustavo Petro. Il répond : &#34;Jamais à genoux&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fra.svg" alt="France" title="France" class="flag-icon">
+                            <a href="https://www.lefigaro.fr/international/" target="_blank" class="article-link">Les États-Unis imposent des sanctions contre le président colombien Gustavo Petro, qui dénonce un « paradoxe total »</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e572b8; padding: 8px 16px; border-radius: 4px;">Commentaire régional et international : Critique des actions américaines comme politiques et néocoloniales</h3>
+        <p class="cluster-description">Plusieurs acteurs régionaux, dont le Venezuela, et des commentateurs extérieurs qualifient les sanctions américaines de mesures illégitimes reflétant le néocolonialisme ou une ingérence politique dans les affaires internes de la Colombie. Ils critiquent les États-Unis pour avoir exacerbé les tensions et compromis les cadres de coopération diplomatique et sécuritaire établis en Amérique latine. Cette perspective présente les sanctions comme faisant partie de luttes géopolitiques plus larges et comme une continuation des politiques américaines autoritaires dans la région, ajoutant de la complexité aux relations bilatérales et multilatérales.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/col.svg" alt="Colombie" title="Colombie" class="flag-icon">
+                            <a href="https://www.eltiempo.com/mundo" target="_blank" class="article-link">Venezuela étiquette OFAC pour avoir sanctionné Gustavo Petro comme &#34;illégitime et néocolonial&#34;</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Efforts vers la coopération diplomatique et anti-drogue malgré les tensions</h3>
+        <p class="cluster-description">En réponse à l&#39;augmentation des tensions diplomatiques résultant de sanctions et de différends politiques, des représentants des États-Unis et de la Colombie ont annoncé des efforts pour améliorer la coopération sur les initiatives antidrogue. Ce point de vue reconnaît la nécessité de réparer et de maintenir des stratégies conjointes de lutte contre la drogue malgré les désaccords et les frictions induites par les sanctions. Il souligne les tentatives pragmatiques en cours pour collaborer sur des défis de sécurité mutuels tout en naviguant dans des relations politiquement chargées.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hti.svg" alt="Haïti" title="Haïti" class="flag-icon">
+                            <a href="https://lenouvelliste.com/international" target="_blank" class="article-link">Washington et Bogota conviennent d&#39;&#34;améliorer&#34; la coopération anti-drogue après le différend Petro-Trump</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Perspective du gouvernement am\u00e9ricain : trafic de drogue et pr\u00e9occupations de s\u00e9curit\u00e9",
+                color: "#72e5ac",
+                data: [ {"id": "AE"},  {"id": "AR"},  {"id": "BG"},  {"id": "BR"},  {"id": "CR"},  {"id": "CY"},  {"id": "DO"},  {"id": "EE"},  {"id": "ES"},  {"id": "GR"},  {"id": "HK"},  {"id": "JP"},  {"id": "KZ"},  {"id": "LB"},  {"id": "MN"},  {"id": "MY"},  {"id": "NL"},  {"id": "NO"},  {"id": "PE"},  {"id": "PT"},  {"id": "RS"},  {"id": "SE"},  {"id": "SV"},  {"id": "TL"},  {"id": "XK"} ]
+            },
+        
+            {
+                name: "Position du gouvernement colombien et de Petro : N\u00e9gation et d\u00e9fiance",
+                color: "#7279e5",
+                data: [ {"id": "AL"},  {"id": "BO"},  {"id": "FR"},  {"id": "GT"},  {"id": "IT"},  {"id": "PA"},  {"id": "PY"} ]
+            },
+        
+            {
+                name: "Commentaire r\u00e9gional et international : Critique des actions am\u00e9ricaines comme politiques et n\u00e9ocoloniales",
+                color: "#e572b8",
+                data: [ {"id": "CO"} ]
+            },
+        
+            {
+                name: "Efforts vers la coop\u00e9ration diplomatique et anti-drogue malgr\u00e9 les tensions",
+                color: "#e5d272",
+                data: []
+            }
+        
+        
+            ,
+            {
+                name: "Plusieurs points de vue : \n- Perspective du gouvernement am\u00e9ricain : trafic de drogue et pr\u00e9occupations de s\u00e9curit\u00e9\n- Position du gouvernement colombien et de Petro : N\u00e9gation et d\u00e9fiance",
+                color: "#AAAAAA",
+                data: [{"id": "HN"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Perspective du gouvernement am\u00e9ricain : trafic de drogue et pr\u00e9occupations de s\u00e9curit\u00e9\n- Efforts vers la coop\u00e9ration diplomatique et anti-drogue malgr\u00e9 les tensions",
+                color: "#AAAAAA",
+                data: [{"id": "HT"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Perspective du gouvernement am\u00e9ricain : trafic de drogue et pr\u00e9occupations de s\u00e9curit\u00e9\n- Position du gouvernement colombien et de Petro : N\u00e9gation et d\u00e9fiance",
+                color: "#AAAAAA",
+                data: [{"id": "MX"}]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Masquer les sources ▲' : 'Montrer les sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li>
+               <a href="/">Actus </a>
+            </li>
+            <li>
+              <a href="/fr/2025-10-25/country_counts.html">Pays</a>
+            </li>
+            <li>
+              <a href="/fr/2025-10-25/labels.html">Thèmes</a>
+            </li>
+            <li>
+              <a href="/fr/about.html">A Propos</a>
+            </li>
+            <li>
+              <a href="/fr/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
