@@ -105,10 +105,10 @@
               <a class="nav-link active" aria-current="page" href="/fr/">Actus</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2025-10-21/country_counts.html">Pays</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2025-10-26/country_counts.html">Pays</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2025-10-21/labels.html">Thèmes</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2025-10-26/labels.html">Thèmes</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
@@ -129,7 +129,7 @@
     <h2 class="section-title">Principales thématiques du jour</h2>
     <p class="section-subtitle">
       Voici les principales thématiques identifiées dans les articles 
-      collectés aujourd’hui (2025-10-21).
+      collectés aujourd’hui (2025-10-26).
     </p>
   </div>
 </section>
@@ -162,7 +162,7 @@
 <script>
 anychart.onDocumentReady(function () {
   // === Données brutes Jinja (inchangé côté Python)
-  var raw = [{"category": "Israel-Palestine Conflict", "weight": 110}, {"category": "Ukraine-Russia Conflict", "weight": 57}, {"category": "Man\u2011Made Disasters", "weight": 40}, {"category": "Natural Disaster", "weight": 24}, {"category": "US\u2013Israel Diplomatic Visit", "weight": 15}, {"category": "EU Russian Gas Ban", "weight": 17}, {"category": "US\u2013Iran Nuclear Standoff", "weight": 19}, {"category": "Rodrigo Paz Elected", "weight": 21}, {"category": "Sarkozy Prison Sentence", "weight": 13}, {"category": "Louvre Museum Heist", "weight": 22}, {"category": "Japan PM Appointment", "weight": 12}, {"category": "Pakistan\u2013Afghanistan Ceasefire Agreement", "weight": 22}, {"category": "US\u2013Colombia Diplomatic Tensions", "weight": 32}, {"category": "US\u2013Russia Summit Diplomacy", "weight": 57}, {"category": "Israel-Hamas Ceasefire Issues", "weight": 29}] || [];
+  var raw = [{"category": "US\u2013Colombia Diplomatic Tensions and Sanctions", "weight": 26}, {"category": "US\u2013Venezuela Military Threats", "weight": 18}, {"category": "Israel-Palestine Conflict", "weight": 36}, {"category": "Israel-Hamas Ceasefire Issues", "weight": 32}, {"category": "US-Canada Trade Talks Collapse", "weight": 11}, {"category": "US Carrier Deployment Latin America", "weight": 20}, {"category": "Natural Disaster", "weight": 32}, {"category": "Man\u2011Made Disasters", "weight": 11}, {"category": "USS Gerald Ford Deployment", "weight": 12}, {"category": "Russia Attacks Ukrainian Civilians", "weight": 32}, {"category": "Timor-Leste ASEAN Accession", "weight": 14}, {"category": "Afghanistan-Pakistan Ceasefire Talks", "weight": 11}, {"category": "Kamala Harris 2028 Bid", "weight": 13}, {"category": "Ireland Presidential Election", "weight": 17}, {"category": "US-Canada Tariffs Escalation", "weight": 26}, {"category": "Ivory Coast Succession Vote", "weight": 15}, {"category": "UN Cybercrime Treaty Signing", "weight": 11}, {"category": "Russia\u2013Ukraine Peace Talks", "weight": 22}, {"category": "US\u2013Russia Summit and Sanctions Talks", "weight": 59}, {"category": "US\u2013China Trade Talks", "weight": 47}] || [];
 
   // === min/max (calculés une seule fois)
   var minVal = Infinity, maxVal = -Infinity;
@@ -266,8 +266,8 @@ anychart.onDocumentReady(function () {
     // ===== Chart 2: Labels History (from labels_template_en.html) =====
     anychart.onDocumentReady(function () {
       (function () {
-        var rawData = [["Gaza Ceasefire and Reconstruction Crisis", 0, 108, 78, 0, 0, 0, 0], ["Israel-Hamas Conflict And Related Developments", 0, 0, 0, 106, 111, 132, 180], ["Israel-Palestine Conflict", 110, 0, 0, 0, 0, 0, 0], ["Man\u2011Made Disasters", 40, 0, 0, 0, 0, 0, 0], ["US\u2013Colombia Diplomatic Tensions", 32, 0, 0, 0, 0, 0, 0], ["US\u2013Russia Summit Diplomacy", 57, 0, 0, 0, 0, 0, 0], ["US\u2013Venezuela Diplomatic And Military Tensions", 0, 0, 0, 56, 70, 73, 0], ["Ukraine-Russia Conflict", 57, 0, 0, 0, 0, 0, 0]];
-        var dates = ["2025-10-21", "2025-10-20", "2025-10-19", "2025-10-18", "2025-10-17", "2025-10-16", "2025-10-15"].reverse();
+        var rawData = [["Gaza Ceasefire and Reconstruction Crisis", 0, 0, 0, 0, 0, 0, 108], ["Israel-Hamas Ceasefire Issues", 32, 0, 0, 43, 73, 0, 0], ["Israel-Palestine Conflict", 36, 0, 0, 45, 52, 110, 0], ["Natural Disaster", 32, 0, 0, 0, 0, 0, 0], ["US\u2013China Trade Talks", 47, 0, 0, 0, 0, 0, 0], ["US\u2013Russia Summit Diplomacy", 0, 0, 0, 0, 89, 57, 0], ["US\u2013Russia Summit and Sanctions Talks", 59, 0, 0, 0, 0, 0, 0], ["Ukraine-Russia Conflict", 0, 0, 49, 62, 79, 57, 0]];
+        var dates = ["2025-10-26", "2025-10-25", "2025-10-24", "2025-10-23", "2025-10-22", "2025-10-21", "2025-10-20"].reverse();
 
         var chart = anychart.column();
         chart.yScale().stackMode('value');
@@ -397,10 +397,10 @@ anychart.onDocumentReady(function () {
                <a href="/">Actus </a>
             </li>
             <li>
-              <a href="/fr/2025-10-21/country_counts.html">Pays</a>
+              <a href="/fr/2025-10-26/country_counts.html">Pays</a>
             </li>
             <li>
-              <a href="/fr/2025-10-21/labels.html">Thèmes</a>
+              <a href="/fr/2025-10-26/labels.html">Thèmes</a>
             </li>
             <li>
               <a href="/fr/about.html">A Propos</a>
