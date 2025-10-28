@@ -1,0 +1,754 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Global Perspectives on Recent Natural Disasters: Hurricane Melissa and Turkish Earthquake</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/fra.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="Français" title="Français" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/en', '/fr');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>              
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/2025-10-28/country_counts.html">Top Countries</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/2025-10-28/labels.html">Top Themes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Global Perspectives on Recent Natural Disasters: Hurricane Melissa and Turkish Earthquake</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-10-28</span> • <span>95 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-10-28/2025-10-28-1.webp" alt="Global Perspectives on Recent Natural Disasters: Hurricane Melissa and Turkish Earthquake" class="main-image">
+                <p style="margin:0" class="chapitre">Recent natural disasters have dominated international news, with Hurricane Melissa posing a catastrophic threat to Jamaica and the wider Caribbean, and a significant 6.1 magnitude earthquake impacting western Turkey. Hurricane Melissa, upgraded to a Category 5 storm, has caused fatalities in Haiti and the Dominican Republic, and authorities across the Caribbean are conducting evacuations and emergency preparations amid warnings of severe flooding and wind damage. Meanwhile, Turkey has experienced widespread shaking and building collapses from the earthquake, prompting emergency responses and injury reports but limited immediate casualty reports. Various countries provide perspectives emphasizing regional vulnerability, preparedness challenges, climate change implications, humanitarian efforts, and the need for international cooperation in disaster response. These events underscore the increasing frequency and severity of natural disasters globally and highlight ongoing efforts to mitigate their impacts on affected populations.</p>
+            </div>
+            <h2>Countries covering this topic</h2>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Caribbean Nations&#39; Urgency on Hurricane Melissa</h3>
+        <p class="cluster-description">Countries in the Caribbean including Jamaica, Haiti, the Dominican Republic, Cuba and regional organizations express grave concern over Hurricane Melissa&#39;s catastrophic potential as a Category 5 storm. Their perspectives focus on emergency preparations, evacuation efforts, infrastructure vulnerability, community displacement, and calls for international and regional support and solidarity. The narratives highlight severe weather impacts such as flooding, landslides, and historic strength, alongside mobilization of humanitarian aid and public warnings to mitigate loss of life and property.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/grc.svg" alt="Greece" title="Greece" class="flag-icon">
+                            <a href="https://www.kathimerini.gr/world" target="_blank" class="article-link">Hurricane Melissa: Jamaica on red alert for deadly storm</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/grc.svg" alt="Greece" title="Greece" class="flag-icon">
+                            <a href="https://www.tovima.gr/category/world/" target="_blank" class="article-link">Cyclone Melissa in the Caribbean upgraded to category 5</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dom.svg" alt="Dominican Republic" title="Dominican Republic" class="flag-icon">
+                            <a href="https://listindiario.com/las-mundiales" target="_blank" class="article-link">More than 2,000 people in Haiti sheltered due to Hurricane Melissa, UNICEF reports</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dom.svg" alt="Dominican Republic" title="Dominican Republic" class="flag-icon">
+                            <a href="https://listindiario.com/las-mundiales" target="_blank" class="article-link">Jamaica government warns infrastructure cannot withstand Category 5 storm</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dom.svg" alt="Dominican Republic" title="Dominican Republic" class="flag-icon">
+                            <a href="https://www.diariolibre.com/mundo" target="_blank" class="article-link">Jamaica Prepares for Hurricane Melissa While Cuba Prepares for Possible Flooding</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ita.svg" alt="Italy" title="Italy" class="flag-icon">
+                            <a href="https://www.repubblica.it/esteri/" target="_blank" class="article-link">Hurricane Melissa causes alarm: catastrophic impact expected in Jamaica</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/are.svg" alt="United Arab Emirates" title="United Arab Emirates" class="flag-icon">
+                            <a href="https://gulfnews.com/world" target="_blank" class="article-link">175mph: Jamaica braces for its strongest hurricane</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cri.svg" alt="Costa Rica" title="Costa Rica" class="flag-icon">
+                            <a href="https://www.nacion.com/el-mundo/" target="_blank" class="article-link">Hurricane Melissa reaches category 5 and heads to Jamaica with winds of 260 kilometers per hour</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cri.svg" alt="Costa Rica" title="Costa Rica" class="flag-icon">
+                            <a href="https://www.diarioextra.com/categoria/internacionales/" target="_blank" class="article-link">Hurricane Melissa intensifies to maximum category heading towards Jamaica</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sur.svg" alt="Suriname" title="Suriname" class="flag-icon">
+                            <a href="https://www.srherald.com/" target="_blank" class="article-link">Hurricane Melissa Causes Devastation in Jamaica and Haiti</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hnd.svg" alt="Honduras" title="Honduras" class="flag-icon">
+                            <a href="https://www.laprensa.hn/mundo/" target="_blank" class="article-link">Hurricane Melissa Becomes Category 5 and Threatens Jamaica and Cuba</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hnd.svg" alt="Honduras" title="Honduras" class="flag-icon">
+                            <a href="https://www.elheraldo.hn/mundo" target="_blank" class="article-link">Jamaica expects Hurricane Melissa as Cuba prepares for possible floods</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hnd.svg" alt="Honduras" title="Honduras" class="flag-icon">
+                            <a href="https://www.elheraldo.hn/mundo" target="_blank" class="article-link">Caricom expresses deep concern and solidarity over effects of Hurricane Melissa</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fra.svg" alt="France" title="France" class="flag-icon">
+                            <a href="https://www.lefigaro.fr/international/" target="_blank" class="article-link">Jamaica prepares to face Hurricane Melissa, the most powerful in its history</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgd.svg" alt="Bangladesh" title="Bangladesh" class="flag-icon">
+                            <a href="https://www.thedailystar.net/world" target="_blank" class="article-link">Hurricane Melissa begins lashing Jamaica as &#39;catastrophic&#39; Category 5 storm</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pri.svg" alt="PRI" title="PRI" class="flag-icon">
+                            <a href="https://www.elnuevodia.com/noticias/mundo/" target="_blank" class="article-link">Over 2,000 people in Haiti sheltered due to hurricane Melissa, UNICEF reports</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pri.svg" alt="PRI" title="PRI" class="flag-icon">
+                            <a href="https://www.elnuevodia.com/noticias/mundo/" target="_blank" class="article-link">Cuba declares &#39;alarm&#39; phase for eastern provinces ahead of Hurricane Melissa</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pri.svg" alt="PRI" title="PRI" class="flag-icon">
+                            <a href="https://www.primerahora.com/noticias/mundo/" target="_blank" class="article-link">Hurricane Melissa approaches Jamaica and threatens to be the worst storm to hit the island</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pri.svg" alt="PRI" title="PRI" class="flag-icon">
+                            <a href="https://www.primerahora.com/noticias/mundo/" target="_blank" class="article-link">Rains continue in the Dominican Republic due to Hurricane Melissa</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Ireland" title="Ireland" class="flag-icon">
+                            <a href="https://www.independent.ie/world-news/" target="_blank" class="article-link">Hurricane Melissa strengthens to a Category 5 as it nears Jamaica</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/omn.svg" alt="Oman" title="Oman" class="flag-icon">
+                            <a href="https://timesofoman.com/World" target="_blank" class="article-link">Jamaica braces for its strongest recorded hurricane&#39;s impact</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bra.svg" alt="Brazil" title="Brazil" class="flag-icon">
+                            <a href="https://www1.folha.uol.com.br/mundo/" target="_blank" class="article-link">Hurricane Melissa reaches maximum category; Jamaican Prime Minister warns of massive destruction risk</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bra.svg" alt="Brazil" title="Brazil" class="flag-icon">
+                            <a href="https://oglobo.globo.com/mundo/" target="_blank" class="article-link">Hurricane Melissa reaches category 5 and puts Caribbean countries on alert</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dma.svg" alt="DMA" title="DMA" class="flag-icon">
+                            <a href="https://emonewsdm.com/category/world/" target="_blank" class="article-link">Monitoring Melissa — a catastrophic Cat 5 hurricane — ahead of projected landfall in Jamaica</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dma.svg" alt="DMA" title="DMA" class="flag-icon">
+                            <a href="https://emonewsdm.com/category/world/" target="_blank" class="article-link">CARILEC Chairman Mr. Wayne M. Caines Expresses Support and Regional Solidarity as Hurricane Melissa moves through the Region</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dma.svg" alt="DMA" title="DMA" class="flag-icon">
+                            <a href="https://emonewsdm.com/category/world/" target="_blank" class="article-link">IOM Mobilizes Early Response for Jamaica Ahead of Hurricane Melissa</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/est.svg" alt="Estonia" title="Estonia" class="flag-icon">
+                            <a href="https://maailm.postimees.ee/" target="_blank" class="article-link">Hurricane Threatens Jamaica with Devastating Floods in the Caribbean</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gtm.svg" alt="Guatemala" title="Guatemala" class="flag-icon">
+                            <a href="https://lahora.gt/internacionales/" target="_blank" class="article-link">Hurricane Melissa intensifies to category 5 threatening Jamaica</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/che.svg" alt="Switzerland" title="Switzerland" class="flag-icon">
+                            <a href="https://www.letemps.ch/monde" target="_blank" class="article-link">Powerful Hurricane Melissa Prepares to Hit Jamaica with Heavy Rain and Violent Winds</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jam.svg" alt="Jamaica" title="Jamaica" class="flag-icon">
+                            <a href="https://our.today/category/news/" target="_blank" class="article-link">Jamaica receiving pledges of support—PM</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jam.svg" alt="Jamaica" title="Jamaica" class="flag-icon">
+                            <a href="http://www.jamaicaobserver.com/news/" target="_blank" class="article-link">Slow but Savage: Why Hurricanes Like Melissa Are Becoming More Common</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jam.svg" alt="Jamaica" title="Jamaica" class="flag-icon">
+                            <a href="http://www.jamaicaobserver.com/news/" target="_blank" class="article-link">AI-generated Fakes Proliferate as Hurricane Nears Jamaica</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jam.svg" alt="Jamaica" title="Jamaica" class="flag-icon">
+                            <a href="http://www.jamaicaobserver.com/news/" target="_blank" class="article-link">Jamaica Receiving Pledges of Support – Prime Minister</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bhs.svg" alt="Bahamas" title="Bahamas" class="flag-icon">
+                            <a href="http://www.tribune242.com/news/" target="_blank" class="article-link">Bahamians in Jamaica brace for impact</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fra.svg" alt="France" title="France" class="flag-icon">
+                            <a href="https://www.lemonde.fr/international/" target="_blank" class="article-link">Hurricane Melissa Expected to Hit Jamaica as Category 5 Storm</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/can.svg" alt="Canada" title="Canada" class="flag-icon">
+                            <a href="https://www.theglobeandmail.com/world/" target="_blank" class="article-link">Hurricane Melissa strengthens to Category 5 storm as Jamaica braces for catastrophic flooding</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/brb.svg" alt="Barbados" title="Barbados" class="flag-icon">
+                            <a href="https://www.nationnews.com/nationnews/section/NEWS" target="_blank" class="article-link">Hurricane Melissa Strengthens into Category 4 Hurricane</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ca-qc.svg" alt="CA-QC" title="CA-QC" class="flag-icon">
+                            <a href="https://www.journaldequebec.com/actualite/monde" target="_blank" class="article-link">Hurricane &#34;Melissa&#34; in Jamaica: a &#34;sense of urgency&#34; among residents</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #bf72e5; padding: 8px 16px; border-radius: 4px;">Turkey’s Response and Experience with the 6.1 Magnitude Earthquake</h3>
+        <p class="cluster-description">Perspectives from Turkish news outlets and international observers detail the impact of a 6.1 magnitude earthquake in western Turkey, describing building collapses, widespread tremors felt in major cities like Istanbul and Izmir, and injury reports. There is emphasis on emergency response efforts, ongoing monitoring for aftershocks, and historical seismic vulnerability. Reports vary on casualty figures but consistently focus on threat assessment, structural damage, and early rescue operations amid a region familiar with significant seismic activity.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kaz.svg" alt="Kazakhstan" title="Kazakhstan" class="flag-icon">
+                            <a href="https://tengrinews.kz/news/" target="_blank" class="article-link">Buildings collapsed after earthquake in Turkey, Erdogan made a statement</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kaz.svg" alt="Kazakhstan" title="Kazakhstan" class="flag-icon">
+                            <a href="https://tengrinews.kz/news/" target="_blank" class="article-link">6.1 magnitude earthquake occurred in Turkey</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mys.svg" alt="Malaysia" title="Malaysia" class="flag-icon">
+                            <a href="https://www.malaymail.com/news/world" target="_blank" class="article-link">Strong 6.1-magnitude earthquake shakes western Turkey, felt in Istanbul and Izmir</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/per.svg" alt="Peru" title="Peru" class="flag-icon">
+                            <a href="https://larepublica.pe/mundo/" target="_blank" class="article-link">Earthquake of Magnitude 6.1 Shakes Western Turkey According to Disaster Agency</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/yem.svg" alt="Yemen" title="Yemen" class="flag-icon">
+                            <a href="https://www.saba.ye" target="_blank" class="article-link">6.1 Magnitude Earthquake Strikes Western Turkey</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mex.svg" alt="Mexico" title="Mexico" class="flag-icon">
+                            <a href="https://www.jornada.com.mx/categoria/mundo" target="_blank" class="article-link">6.1 magnitude earthquake shakes western Turkey; no casualties reported</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/chn.svg" alt="China" title="China" class="flag-icon">
+                            <a href="https://www.chinadaily.com.cn/world" target="_blank" class="article-link">5.9-magnitude quake hits Türkiye -- GFZ</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/rou.svg" alt="Romania" title="Romania" class="flag-icon">
+                            <a href="https://jurnalul.ro/stiri/externe/" target="_blank" class="article-link">6-magnitude earthquake in Turkey, strongly felt in Istanbul and Izmir</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgr.svg" alt="Bulgaria" title="Bulgaria" class="flag-icon">
+                            <a href="https://www.24chasa.bg/mezhdunarodni" target="_blank" class="article-link">Strong earthquake in Turkey, buildings collapsed, felt also in Bulgaria (Video)</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cyp.svg" alt="Cyprus" title="Cyprus" class="flag-icon">
+                            <a href="https://www.philenews.com/kosmos/" target="_blank" class="article-link">Panic moments caught on video from 6.1 Richter earthquake in Turkey – 19 injured fleeing</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Ireland" title="Ireland" class="flag-icon">
+                            <a href="https://www.independent.ie/world-news/" target="_blank" class="article-link">Magnitude 6.1 earthquake hits western Turkey, damaging buildings</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kwt.svg" alt="Kuwait" title="Kuwait" class="flag-icon">
+                            <a href="https://www.aljarida.com/%D8%AF%D9%88%D9%84%D9%8A%D8%A7%D8%AA" target="_blank" class="article-link">6 Magnitude Earthquake Strikes Western Turkey</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ind.svg" alt="India" title="India" class="flag-icon">
+                            <a href="https://www.thehindu.com/news/international/" target="_blank" class="article-link">Magnitude 6.1 earthquake hits western Turkiye, causing buildings to collapse</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/alb.svg" alt="Albania" title="Albania" class="flag-icon">
+                            <a href="https://www.panorama.com.al/category/bota-rajoni/" target="_blank" class="article-link">Powerful Earthquake Strikes Turkey with Magnitude 6 on Richter Scale</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/uzb.svg" alt="Uzbekistan" title="Uzbekistan" class="flag-icon">
+                            <a href="https://kun.uz/news/category/jahon" target="_blank" class="article-link">Strong Earthquake Shakes Turkey</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svn.svg" alt="Slovenia" title="Slovenia" class="flag-icon">
+                            <a href="https://www.dnevnik.si/svet" target="_blank" class="article-link">Earthquake with Magnitude 6.1 Strikes Turkey</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/can.svg" alt="Canada" title="Canada" class="flag-icon">
+                            <a href="https://www.thestar.com/news/world.html" target="_blank" class="article-link">Magnitude 6.1 earthquake hits western Turkey, causing buildings to collapse</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/chl.svg" alt="Chile" title="Chile" class="flag-icon">
+                            <a href="https://www.latercera.com/categoria/mundo/" target="_blank" class="article-link">6.1 Magnitude Earthquake Hits Western Turkey</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hrv.svg" alt="Croatia" title="Croatia" class="flag-icon">
+                            <a href="https://www.jutarnji.hr/vijesti/svijet" target="_blank" class="article-link">Strong earthquake of magnitude 6.1 hits northwest Turkey, felt in Istanbul</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/swe.svg" alt="Sweden" title="Sweden" class="flag-icon">
+                            <a href="https://www.svd.se/" target="_blank" class="article-link">Earthquake in Turkey</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/idn.svg" alt="Indonesia" title="Indonesia" class="flag-icon">
+                            <a href="https://www.kompas.com/global" target="_blank" class="article-link">6.1 Magnitude Earthquake Hits Turkey, Damaging Buildings and Shaking Istanbul</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mkd.svg" alt="North Macedonia" title="North Macedonia" class="flag-icon">
+                            <a href="https://www.novamakedonija.com.mk/" target="_blank" class="article-link">Earthquake of magnitude 6.1 hits western Turkey</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">International Views and Climate Context on Hurricane Melissa and Earthquake Events</h3>
+        <p class="cluster-description">External perspectives from international media and organizations focus on the unprecedented nature of Hurricane Melissa as one of the strongest storms of 2025, its climate change-driven intensification, misinformation challenges (e.g., AI-generated fakes), and calls for international aid and cooperation. Parallel coverage of the Turkish earthquake underlines global concerns regarding seismic risks and urban safety. Broader regional threats, including flooding with secondary hazards like snake infestations and connected disasters such as Asia’s cyclone-related evacuations, provide a wider scope of the current global natural disaster landscape.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jor.svg" alt="Jordan" title="Jordan" class="flag-icon">
+                            <a href="https://www.jordantimes.com/news/world" target="_blank" class="article-link">Thousands protest on 1st anniversary of Spain&#39;s deadly floods</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nam.svg" alt="Namibia" title="Namibia" class="flag-icon">
+                            <a href="https://neweralive.na/category/international/" target="_blank" class="article-link">Hurricane Melissa targets Jamaica</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kos.svg" alt="KOS" title="KOS" class="flag-icon">
+                            <a href="https://www.koha.net/bote" target="_blank" class="article-link">Turkey struck by 6.1 magnitude earthquake</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lux.svg" alt="Luxembourg" title="Luxembourg" class="flag-icon">
+                            <a href="https://www.tageblatt.lu/headlines/" target="_blank" class="article-link">One Year After the Centennial Flood in Valencia, Dead Bodies Are Still Found</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/isr.svg" alt="Israel" title="Israel" class="flag-icon">
+                            <a href="https://www.jpost.com/International" target="_blank" class="article-link">India evacuates tens of thousands as cyclone Montha gains strength</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sxm.svg" alt="SXM" title="SXM" class="flag-icon">
+                            <a href="https://www.sxm-talks.com/" target="_blank" class="article-link">ODM: Thoughts and Prayers with the Nation of Jamaica as Hurricane Melissa to make Landfall</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sxm.svg" alt="SXM" title="SXM" class="flag-icon">
+                            <a href="https://www.sxm-talks.com/" target="_blank" class="article-link">ODM expresses support and concerns as Hurricane Melissa nears Jamaica</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vut.svg" alt="Vanuatu" title="Vanuatu" class="flag-icon">
+                            <a href="https://dailypost.vu/news/" target="_blank" class="article-link">IsraAID restore safe water for earthquake affected communities</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pol.svg" alt="Poland" title="Poland" class="flag-icon">
+                            <a href="https://wyborcza.pl/0,0.html?disableRedirects=true" target="_blank" class="article-link">Jamaica prepares for Hurricane Melissa with airport closures and evacuations</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aus.svg" alt="Australia" title="Australia" class="flag-icon">
+                            <a href="https://www.smh.com.au/world" target="_blank" class="article-link">Hurricane Melissa LIVE: Jamaica prepares for category 5 storm to make landfall; ‘catastrophic and life-threatening winds’ forecast</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ind.svg" alt="India" title="India" class="flag-icon">
+                            <a href="https://timesofindia.indiatimes.com/world" target="_blank" class="article-link">Hurricane Melissa hits category 5: Strongest storm of 2025 nears Jamaica; Caribbean braces for catastrophic floods</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pan.svg" alt="Panama" title="Panama" class="flag-icon">
+                            <a href="https://www.laestrella.com.pa/mundo" target="_blank" class="article-link">Hurricane Melissa strengthens to category 5 and puts Jamaica on alert</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pry.svg" alt="Paraguay" title="Paraguay" class="flag-icon">
+                            <a href="https://www.ultimahora.com/noticias/mundo/" target="_blank" class="article-link">Hurricane Melissa upgrades to category 5, alerts Jamaica</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pry.svg" alt="Paraguay" title="Paraguay" class="flag-icon">
+                            <a href="https://www.ultimahora.com/noticias/mundo/" target="_blank" class="article-link">Hurricane Melissa reaches maximum category in the Caribbean</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svn.svg" alt="Slovenia" title="Slovenia" class="flag-icon">
+                            <a href="https://www.delo.si/novice/svet" target="_blank" class="article-link">Hurricane Melissa Approaches Jamaica: Worst Storm of 2025</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/can.svg" alt="Canada" title="Canada" class="flag-icon">
+                            <a href="https://www.thestar.com/news/world.html" target="_blank" class="article-link">Hurricane Melissa to batter Jamaica as the island’s strongest storm on record in almost 2 centuries</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/chl.svg" alt="Chile" title="Chile" class="flag-icon">
+                            <a href="https://www.latercera.com/categoria/mundo/" target="_blank" class="article-link">Hurricane Melissa Reaches Maximum Category Heading Towards Jamaica</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sau.svg" alt="Saudi Arabia" title="Saudi Arabia" class="flag-icon">
+                            <a href="https://saudigazette.com.sa/World" target="_blank" class="article-link">Hurricane Melissa: Jamaica braces for world&#39;s strongest storm of 2025</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bmu.svg" alt="BMU" title="BMU" class="flag-icon">
+                            <a href="https://bernews.com/category/news/international/" target="_blank" class="article-link">CARILEC Monitoring Hurricane Melissa</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bmu.svg" alt="BMU" title="BMU" class="flag-icon">
+                            <a href="https://bernews.com/category/news/international/" target="_blank" class="article-link">BWS: Hurricane Melissa Is A ‘Potential Threat’</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/swe.svg" alt="Sweden" title="Sweden" class="flag-icon">
+                            <a href="https://www.dn.se/varlden/" target="_blank" class="article-link">‘Life-threatening’ hurricane approaches Jamaica, could be the worst yet</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/swe.svg" alt="Sweden" title="Sweden" class="flag-icon">
+                            <a href="https://www.svd.se/" target="_blank" class="article-link">Melissa hits Jamaica</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/slv.svg" alt="El Salvador" title="El Salvador" class="flag-icon">
+                            <a href="https://diario.elmundo.sv/el-mundo" target="_blank" class="article-link">More than 2,000 people in Haiti sheltered due to Melissa hurricane, UNICEF reports</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mkd.svg" alt="North Macedonia" title="North Macedonia" class="flag-icon">
+                            <a href="https://www.novamakedonija.com.mk/" target="_blank" class="article-link">Hurricane Melissa reaches category five, strongest impact expected in Jamaica</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/prt.svg" alt="Portugal" title="Portugal" class="flag-icon">
+                            <a href="https://expresso.pt/" target="_blank" class="article-link">Hurricane Melissa reaches category 5 with devastating winds and floods worsening in Jamaica</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bel.svg" alt="Belgium" title="Belgium" class="flag-icon">
+                            <a href="https://www.lavenir.net/actu/monde/" target="_blank" class="article-link">Hurricane Melissa with maximum category destructive winds approaches Jamaica</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Caribbean Nations\u0027 Urgency on Hurricane Melissa",
+                color: "#72e5ac",
+                data: [ {"id": ""},  {"id": "AE"},  {"id": "BB"},  {"id": "BD"},  {"id": "BR"},  {"id": "BS"},  {"id": "CH"},  {"id": "CR"},  {"id": "DM"},  {"id": "DO"},  {"id": "EE"},  {"id": "FR"},  {"id": "GR"},  {"id": "GT"},  {"id": "HN"},  {"id": "IT"},  {"id": "JM"},  {"id": "OM"},  {"id": "PR"},  {"id": "SR"} ]
+            },
+        
+            {
+                name: "Turkey\u2019s Response and Experience with the 6.1 Magnitude Earthquake",
+                color: "#bf72e5",
+                data: [ {"id": "AL"},  {"id": "BG"},  {"id": "CN"},  {"id": "CY"},  {"id": "HR"},  {"id": "ID"},  {"id": "KW"},  {"id": "KZ"},  {"id": "MX"},  {"id": "MY"},  {"id": "PE"},  {"id": "RO"},  {"id": "UZ"},  {"id": "YE"} ]
+            },
+        
+            {
+                name: "International Views and Climate Context on Hurricane Melissa and Earthquake Events",
+                color: "#e5d272",
+                data: [ {"id": "AU"},  {"id": "BE"},  {"id": "BM"},  {"id": "IL"},  {"id": "JO"},  {"id": "LU"},  {"id": "NA"},  {"id": "PA"},  {"id": "PL"},  {"id": "PT"},  {"id": "PY"},  {"id": "SA"},  {"id": "SV"},  {"id": "SX"},  {"id": "VU"},  {"id": "XK"} ]
+            }
+        
+        
+            ,
+            {
+                name: "Different perspectives:\n- Caribbean Nations\u0027 Urgency on Hurricane Melissa\n- Turkey\u2019s Response and Experience with the 6.1 Magnitude Earthquake\n- International Views and Climate Context on Hurricane Melissa and Earthquake Events",
+                color: "#AAAAAA",
+                data: [{"id": "CA"}]
+            },
+            {
+                name: "Different perspectives:\n- Caribbean Nations\u0027 Urgency on Hurricane Melissa\n- Turkey\u2019s Response and Experience with the 6.1 Magnitude Earthquake",
+                color: "#AAAAAA",
+                data: [{"id": "IE"}]
+            },
+            {
+                name: "Different perspectives:\n- Turkey\u2019s Response and Experience with the 6.1 Magnitude Earthquake\n- International Views and Climate Context on Hurricane Melissa and Earthquake Events",
+                color: "#AAAAAA",
+                data: [{"id": "CL"}]
+            },
+            {
+                name: "Different perspectives:\n- Turkey\u2019s Response and Experience with the 6.1 Magnitude Earthquake\n- International Views and Climate Context on Hurricane Melissa and Earthquake Events",
+                color: "#AAAAAA",
+                data: [{"id": "IN"}]
+            },
+            {
+                name: "Different perspectives:\n- Turkey\u2019s Response and Experience with the 6.1 Magnitude Earthquake\n- International Views and Climate Context on Hurricane Melissa and Earthquake Events",
+                color: "#AAAAAA",
+                data: [{"id": "MK"}]
+            },
+            {
+                name: "Different perspectives:\n- Turkey\u2019s Response and Experience with the 6.1 Magnitude Earthquake\n- International Views and Climate Context on Hurricane Melissa and Earthquake Events",
+                color: "#AAAAAA",
+                data: [{"id": "SE"}]
+            },
+            {
+                name: "Different perspectives:\n- Turkey\u2019s Response and Experience with the 6.1 Magnitude Earthquake\n- International Views and Climate Context on Hurricane Melissa and Earthquake Events",
+                color: "#AAAAAA",
+                data: [{"id": "SI"}]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Hide sources ▲' : 'Show sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li>
+               <a href="/">News </a>
+            </li>
+            <li>
+              <a href="/en/2025-10-28/country_counts.html">Top Countries</a>
+            </li>
+            <li>
+              <a href="/en/2025-10-28/labels.html">Top Themes</a>
+            </li>
+            <li>
+              <a href="/en/about.html">About</a>
+            </li>
+            <li>
+              <a href="/en/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

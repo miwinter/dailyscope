@@ -1,0 +1,754 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Perspectives mondiales sur les catastrophes naturelles récentes : Ouragan Melissa et séisme en Turquie</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/fr', '/en');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>                 
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/">Actus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2025-10-28/country_counts.html">Pays</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2025-10-28/labels.html">Thèmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Perspectives mondiales sur les catastrophes naturelles récentes : Ouragan Melissa et séisme en Turquie</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-10-28</span> • <span>95 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-10-28/2025-10-28-1.webp" alt="Perspectives mondiales sur les catastrophes naturelles récentes : Ouragan Melissa et séisme en Turquie" class="main-image">
+                <p style="margin:0" class="chapitre">Les catastrophes naturelles récentes ont dominé l&#39;actualité internationale, avec l&#39;ouragan Melissa représentant une menace catastrophique pour la Jamaïque et le reste des Caraïbes, ainsi qu&#39;un séisme significatif de magnitude 6,1 affectant l&#39;ouest de la Turquie. L&#39;ouragan Melissa, reclassé en tempête de catégorie 5, a causé des décès en Haïti et en République dominicaine, et les autorités des Caraïbes mènent des évacuations et des préparatifs d&#39;urgence face aux avertissements de fortes inondations et de dégâts causés par le vent. Par ailleurs, la Turquie a connu des secousses généralisées et des effondrements de bâtiments dus au séisme, ce qui a entraîné des réponses d&#39;urgence et des rapports de blessures, mais peu de victimes immédiates. Divers pays apportent des perspectives soulignant la vulnérabilité régionale, les défis de la préparation, les implications du changement climatique, les efforts humanitaires et la nécessité d&#39;une coopération internationale dans la gestion des catastrophes. Ces événements soulignent la fréquence et la gravité croissantes des catastrophes naturelles à l’échelle mondiale et mettent en lumière les efforts en cours pour atténuer leurs impacts sur les populations affectées.</p>
+            </div>
+            <h2>Les pays qui en parlent</h2>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Urgence des nations caribéennes face à l&#39;ouragan Melissa</h3>
+        <p class="cluster-description">Les pays des Caraïbes, dont la Jamaïque, Haïti, la République dominicaine, Cuba, ainsi que les organisations régionales, expriment une vive inquiétude quant au potentiel catastrophique de l&#39;ouragan Melissa en tant que tempête de catégorie 5. Leurs perspectives portent sur les préparatifs d&#39;urgence, les efforts d&#39;évacuation, la vulnérabilité des infrastructures, le déplacement des communautés, et les appels au soutien et à la solidarité internationaux et régionaux. Les récits mettent en lumière les impacts météorologiques sévères tels que les inondations, les glissements de terrain, et la force historique, ainsi que la mobilisation de l&#39;aide humanitaire et les avertissements publics pour atténuer les pertes en vies humaines et en biens.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/grc.svg" alt="Grèce" title="Grèce" class="flag-icon">
+                            <a href="https://www.kathimerini.gr/world" target="_blank" class="article-link">Ouragan Melissa : la Jamaïque en alerte rouge pour une tempête mortelle</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/grc.svg" alt="Grèce" title="Grèce" class="flag-icon">
+                            <a href="https://www.tovima.gr/category/world/" target="_blank" class="article-link">Cyclone Melissa dans les Caraïbes porté au rang de catégorie 5</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dom.svg" alt="République dominicaine" title="République dominicaine" class="flag-icon">
+                            <a href="https://listindiario.com/las-mundiales" target="_blank" class="article-link">Plus de 2 000 personnes en Haïti réfugiées en raison de l&#39;Ouragan Melissa, rapporte l&#39;UNICEF</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dom.svg" alt="République dominicaine" title="République dominicaine" class="flag-icon">
+                            <a href="https://listindiario.com/las-mundiales" target="_blank" class="article-link">Le gouvernement jamaïcain avertit que les infrastructures ne peuvent pas résister à un ouragan de catégorie 5</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dom.svg" alt="République dominicaine" title="République dominicaine" class="flag-icon">
+                            <a href="https://www.diariolibre.com/mundo" target="_blank" class="article-link">La Jamaïque se prépare à l&#39;Ouragan Melissa tandis que Cuba se prépare à d&#39;éventuelles inondations</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ita.svg" alt="Italie" title="Italie" class="flag-icon">
+                            <a href="https://www.repubblica.it/esteri/" target="_blank" class="article-link">L&#39;Ouragan Melissa suscite l&#39;alarme : un impact catastrophique attendu en Jamaïque</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/are.svg" alt="Émirats arabes unis" title="Émirats arabes unis" class="flag-icon">
+                            <a href="https://gulfnews.com/world" target="_blank" class="article-link">175 mph : la Jamaïque se prépare à son ouragan le plus fort</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cri.svg" alt="Costa Rica" title="Costa Rica" class="flag-icon">
+                            <a href="https://www.nacion.com/el-mundo/" target="_blank" class="article-link">L&#39;Ouragan Melissa atteint la catégorie 5 et se dirige vers la Jamaïque avec des vents de 260 kilomètres par heure</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cri.svg" alt="Costa Rica" title="Costa Rica" class="flag-icon">
+                            <a href="https://www.diarioextra.com/categoria/internacionales/" target="_blank" class="article-link">L&#39;Ouragan Melissa s&#39;intensifie jusqu&#39;à la catégorie maximale en direction de la Jamaïque</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sur.svg" alt="Suriname" title="Suriname" class="flag-icon">
+                            <a href="https://www.srherald.com/" target="_blank" class="article-link">L&#39;Ouragan Melissa cause des dévastations en Jamaïque et en Haïti</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hnd.svg" alt="Honduras" title="Honduras" class="flag-icon">
+                            <a href="https://www.laprensa.hn/mundo/" target="_blank" class="article-link">Ouragan Melissa devient de catégorie 5 et menace la Jamaïque et Cuba</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hnd.svg" alt="Honduras" title="Honduras" class="flag-icon">
+                            <a href="https://www.elheraldo.hn/mundo" target="_blank" class="article-link">La Jamaïque attend l&#39;ouragan Melissa alors que Cuba se prépare à d&#39;éventuelles inondations</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hnd.svg" alt="Honduras" title="Honduras" class="flag-icon">
+                            <a href="https://www.elheraldo.hn/mundo" target="_blank" class="article-link">Caricom exprime une profonde inquiétude et solidarité face aux effets de l&#39;ouragan Melissa</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fra.svg" alt="France" title="France" class="flag-icon">
+                            <a href="https://www.lefigaro.fr/international/" target="_blank" class="article-link">La Jamaïque se prépare à affronter l&#39;ouragan Melissa, le plus puissant de son histoire</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgd.svg" alt="Bangladesh" title="Bangladesh" class="flag-icon">
+                            <a href="https://www.thedailystar.net/world" target="_blank" class="article-link">L&#39;ouragan Melissa commence à frapper la Jamaïque en tant que tempête de catégorie 5 &#34;catastrophique&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pri.svg" alt="PRI" title="PRI" class="flag-icon">
+                            <a href="https://www.elnuevodia.com/noticias/mundo/" target="_blank" class="article-link">Plus de 2 000 personnes en Haïti ont été mises à l&#39;abri en raison de l&#39;ouragan Melissa, rapporte l&#39;UNICEF</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pri.svg" alt="PRI" title="PRI" class="flag-icon">
+                            <a href="https://www.elnuevodia.com/noticias/mundo/" target="_blank" class="article-link">Cuba déclare la phase d&#39;&#34;alarme&#34; pour les provinces orientales à l&#39;approche de l&#39;ouragan Melissa</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pri.svg" alt="PRI" title="PRI" class="flag-icon">
+                            <a href="https://www.primerahora.com/noticias/mundo/" target="_blank" class="article-link">L&#39;ouragan Melissa approche de la Jamaïque et menace d&#39;être la pire tempête à frapper l&#39;île</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pri.svg" alt="PRI" title="PRI" class="flag-icon">
+                            <a href="https://www.primerahora.com/noticias/mundo/" target="_blank" class="article-link">Les pluies continuent en République dominicaine en raison de l&#39;ouragan Melissa</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Irlande" title="Irlande" class="flag-icon">
+                            <a href="https://www.independent.ie/world-news/" target="_blank" class="article-link">L&#39;ouragan Melissa se renforce en catégorie 5 alors qu&#39;il approche de la Jamaïque</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/omn.svg" alt="Oman" title="Oman" class="flag-icon">
+                            <a href="https://timesofoman.com/World" target="_blank" class="article-link">Jamaïque se prépare à l&#39;impact de son ouragan enregistré comme le plus fort</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bra.svg" alt="Brésil" title="Brésil" class="flag-icon">
+                            <a href="https://www1.folha.uol.com.br/mundo/" target="_blank" class="article-link">L&#39;ouragan Melissa atteint la catégorie maximale ; le Premier ministre jamaïcain met en garde contre un risque de destruction massive</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bra.svg" alt="Brésil" title="Brésil" class="flag-icon">
+                            <a href="https://oglobo.globo.com/mundo/" target="_blank" class="article-link">L&#39;ouragan Melissa atteint la catégorie 5 et met les pays des Caraïbes en alerte</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dma.svg" alt="DMA" title="DMA" class="flag-icon">
+                            <a href="https://emonewsdm.com/category/world/" target="_blank" class="article-link">Surveillance de Melissa — un ouragan cataclysmique de catégorie 5 — avant une éventuelle arrivée en Jamaïque</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dma.svg" alt="DMA" title="DMA" class="flag-icon">
+                            <a href="https://emonewsdm.com/category/world/" target="_blank" class="article-link">Le président de CARILEC, M. Wayne M. Caines, exprime son soutien et sa solidarité régionale alors que l&#39;ouragan Melissa traverse la région</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dma.svg" alt="DMA" title="DMA" class="flag-icon">
+                            <a href="https://emonewsdm.com/category/world/" target="_blank" class="article-link">L&#39;OIM mobilise une réponse rapide pour la Jamaïque avant l&#39;arrivée de l&#39;ouragan Melissa</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/est.svg" alt="Estonie" title="Estonie" class="flag-icon">
+                            <a href="https://maailm.postimees.ee/" target="_blank" class="article-link">L&#39;ouragan menace la Jamaïque de inondations dévastatrices dans les Caraïbes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gtm.svg" alt="Guatemala" title="Guatemala" class="flag-icon">
+                            <a href="https://lahora.gt/internacionales/" target="_blank" class="article-link">L&#39;ouragan Melissa s&#39;intensifie en catégorie 5, menaçant la Jamaïque</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/che.svg" alt="Suisse" title="Suisse" class="flag-icon">
+                            <a href="https://www.letemps.ch/monde" target="_blank" class="article-link">Un puissant ouragan Melissa se prépare à frapper la Jamaïque avec de fortes pluies et des vents violents</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jam.svg" alt="Jamaïque" title="Jamaïque" class="flag-icon">
+                            <a href="https://our.today/category/news/" target="_blank" class="article-link">La Jamaïque reçoit des promesses de soutien — PM</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jam.svg" alt="Jamaïque" title="Jamaïque" class="flag-icon">
+                            <a href="http://www.jamaicaobserver.com/news/" target="_blank" class="article-link">Lent mais sauvage : pourquoi les ouragans comme Melissa deviennent plus courants</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jam.svg" alt="Jamaïque" title="Jamaïque" class="flag-icon">
+                            <a href="http://www.jamaicaobserver.com/news/" target="_blank" class="article-link">Les faux générés par IA prolifèrent à l&#39;approche de l&#39;ouragan vers la Jamaïque</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jam.svg" alt="Jamaïque" title="Jamaïque" class="flag-icon">
+                            <a href="http://www.jamaicaobserver.com/news/" target="_blank" class="article-link">La Jamaïque reçoit des promesses de soutien – Premier ministre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bhs.svg" alt="Bahamas" title="Bahamas" class="flag-icon">
+                            <a href="http://www.tribune242.com/news/" target="_blank" class="article-link">Les Bahamiens en Jamaïque se préparent à l&#39;impact</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fra.svg" alt="France" title="France" class="flag-icon">
+                            <a href="https://www.lemonde.fr/international/" target="_blank" class="article-link">L&#39;ouragan Melissa devrait frapper la Jamaïque en tant que tempête de catégorie 5</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/can.svg" alt="Canada" title="Canada" class="flag-icon">
+                            <a href="https://www.theglobeandmail.com/world/" target="_blank" class="article-link">L&#39;ouragan Melissa se renforce en tempête de catégorie 5 alors que la Jamaïque se prépare à des inondations catastrophiques</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/brb.svg" alt="Barbade" title="Barbade" class="flag-icon">
+                            <a href="https://www.nationnews.com/nationnews/section/NEWS" target="_blank" class="article-link">L&#39;ouragan Melissa se renforce en ouragan de catégorie 4</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ca-qc.svg" alt="CA-QC" title="CA-QC" class="flag-icon">
+                            <a href="https://www.journaldequebec.com/actualite/monde" target="_blank" class="article-link">Ouragan &#34;Melissa&#34; en Jamaïque : un &#34;sentiment d&#39;urgence&#34; chez les résidents</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #bf72e5; padding: 8px 16px; border-radius: 4px;">Réponse et expérience de la Turquie face au séisme de magnitude 6,1</h3>
+        <p class="cluster-description">Perspectives des médias turcs et des observateurs internationaux détaillant l&#39;impact d&#39;un séisme de magnitude 6,1 dans l&#39;ouest de la Turquie, décrivant l&#39;effondrement de bâtiments, des tremblements de terre généralisés ressentis dans des villes majeures comme Istanbul et Izmir, et des rapports de blessures. L&#39;accent est mis sur les efforts de réponse d&#39;urgence, la surveillance continue des répliques, et la vulnérabilité sismique historique. Les rapports varient sur le nombre de victimes mais se concentrent systématiquement sur l&#39;évaluation des menaces, les dégâts structurels et les opérations de secours précoces dans une région familière avec une activité sismique importante.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kaz.svg" alt="Kazakhstan" title="Kazakhstan" class="flag-icon">
+                            <a href="https://tengrinews.kz/news/" target="_blank" class="article-link">Bâtiments effondrés après un tremblement de terre en Turquie, Erdogan a fait une déclaration</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kaz.svg" alt="Kazakhstan" title="Kazakhstan" class="flag-icon">
+                            <a href="https://tengrinews.kz/news/" target="_blank" class="article-link">Tremblement de terre de magnitude 6,1 survenu en Turquie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mys.svg" alt="Malaisie" title="Malaisie" class="flag-icon">
+                            <a href="https://www.malaymail.com/news/world" target="_blank" class="article-link">Fort tremblement de terre de magnitude 6,1 secoue l&#39;ouest de la Turquie, ressenti à Istanbul et Izmir</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/per.svg" alt="Pérou" title="Pérou" class="flag-icon">
+                            <a href="https://larepublica.pe/mundo/" target="_blank" class="article-link">Tremblement de terre de magnitude 6,1 secoue l&#39;ouest de la Turquie selon l&#39;agence de gestion des catastrophes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/yem.svg" alt="Yémen" title="Yémen" class="flag-icon">
+                            <a href="https://www.saba.ye" target="_blank" class="article-link">Tremblement de terre de magnitude 6,1 frappe l&#39;ouest de la Turquie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mex.svg" alt="Mexique" title="Mexique" class="flag-icon">
+                            <a href="https://www.jornada.com.mx/categoria/mundo" target="_blank" class="article-link">Tremblement de terre de magnitude 6,1 secoue l&#39;ouest de la Turquie ; aucun blessé rapporté</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/chn.svg" alt="Chine" title="Chine" class="flag-icon">
+                            <a href="https://www.chinadaily.com.cn/world" target="_blank" class="article-link">Tremblement de terre de magnitude 5,9 frappe la Turquie -- GFZ</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/rou.svg" alt="Roumanie" title="Roumanie" class="flag-icon">
+                            <a href="https://jurnalul.ro/stiri/externe/" target="_blank" class="article-link">Tremblement de terre de magnitude 6 en Turquie, fortement ressenti à Istanbul et Izmir</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgr.svg" alt="Bulgarie" title="Bulgarie" class="flag-icon">
+                            <a href="https://www.24chasa.bg/mezhdunarodni" target="_blank" class="article-link">Fort tremblement de terre en Turquie, bâtiments effondrés, ressenti aussi en Bulgarie (Vidéo)</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cyp.svg" alt="Chypre" title="Chypre" class="flag-icon">
+                            <a href="https://www.philenews.com/kosmos/" target="_blank" class="article-link">Moments de panique capturés en vidéo lors du tremblement de terre de 6,1 sur l&#39;échelle de Richter en Turquie – 19 blessés en fuite</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Irlande" title="Irlande" class="flag-icon">
+                            <a href="https://www.independent.ie/world-news/" target="_blank" class="article-link">Séisme de magnitude 6,1 frappe l&#39;ouest de la Turquie, endommageant les bâtiments</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kwt.svg" alt="Koweït" title="Koweït" class="flag-icon">
+                            <a href="https://www.aljarida.com/%D8%AF%D9%88%D9%84%D9%8A%D8%A7%D8%AA" target="_blank" class="article-link">Séisme de magnitude 6 frappe l&#39;ouest de la Turquie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ind.svg" alt="Inde" title="Inde" class="flag-icon">
+                            <a href="https://www.thehindu.com/news/international/" target="_blank" class="article-link">Séisme de magnitude 6,1 frappe l&#39;ouest de la Turquie, provoquant l&#39;effondrement des bâtiments</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/alb.svg" alt="Albanie" title="Albanie" class="flag-icon">
+                            <a href="https://www.panorama.com.al/category/bota-rajoni/" target="_blank" class="article-link">Puissant séisme frappe la Turquie avec une magnitude de 6 sur l&#39;échelle de Richter</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/uzb.svg" alt="Ouzbékistan" title="Ouzbékistan" class="flag-icon">
+                            <a href="https://kun.uz/news/category/jahon" target="_blank" class="article-link">Fort séisme secoue la Turquie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svn.svg" alt="Slovénie" title="Slovénie" class="flag-icon">
+                            <a href="https://www.dnevnik.si/svet" target="_blank" class="article-link">Séisme de magnitude 6,1 frappe la Turquie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/can.svg" alt="Canada" title="Canada" class="flag-icon">
+                            <a href="https://www.thestar.com/news/world.html" target="_blank" class="article-link">Séisme de magnitude 6,1 frappe l&#39;ouest de la Turquie, provoquant l&#39;effondrement des bâtiments</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/chl.svg" alt="Chili" title="Chili" class="flag-icon">
+                            <a href="https://www.latercera.com/categoria/mundo/" target="_blank" class="article-link">Séisme de magnitude 6,1 frappe l&#39;ouest de la Turquie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hrv.svg" alt="Croatie" title="Croatie" class="flag-icon">
+                            <a href="https://www.jutarnji.hr/vijesti/svijet" target="_blank" class="article-link">Fort séisme de magnitude 6,1 frappe le nord-ouest de la Turquie, ressenti à Istanbul</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/swe.svg" alt="Suède" title="Suède" class="flag-icon">
+                            <a href="https://www.svd.se/" target="_blank" class="article-link">Séisme en Turquie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/idn.svg" alt="Indonésie" title="Indonésie" class="flag-icon">
+                            <a href="https://www.kompas.com/global" target="_blank" class="article-link">Séisme de magnitude 6,1 frappe la Turquie, endommageant les bâtiments et secouant Istanbul</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mkd.svg" alt="Macédoine du Nord" title="Macédoine du Nord" class="flag-icon">
+                            <a href="https://www.novamakedonija.com.mk/" target="_blank" class="article-link">Séisme de magnitude 6,1 frappe l&#39;ouest de la Turquie</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Perspectives internationales et contexte climatique sur l&#39;ouragan Melissa et les événements sismiques</h3>
+        <p class="cluster-description">Les perspectives extérieures des médias et organisations internationales mettent en lumière la nature sans précédent de l&#39;ouragan Melissa en tant que l&#39;une des tempêtes les plus puissantes de 2025, son intensification liée au changement climatique, les défis liés à la désinformation (par exemple, les faux générés par l&#39;IA), et les appels à l&#39;aide et à la coopération internationales. La couverture parallèle du tremblement de terre en Turquie souligne les préoccupations mondiales concernant les risques sismiques et la sécurité urbaine. Les menaces régionales plus larges, notamment les inondations avec des dangers secondaires comme les infestations de serpents et les catastrophes connexes telles que les évacuations liées aux cyclones en Asie, offrent une vision plus large du paysage actuel des catastrophes naturelles mondiales.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jor.svg" alt="Jordanie" title="Jordanie" class="flag-icon">
+                            <a href="https://www.jordantimes.com/news/world" target="_blank" class="article-link">Des milliers de personnes manifestent lors du premier anniversaire des inondations meurtrières en Espagne</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nam.svg" alt="Namibie" title="Namibie" class="flag-icon">
+                            <a href="https://neweralive.na/category/international/" target="_blank" class="article-link">L&#39;ouragan Melissa cible la Jamaïque</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kos.svg" alt="KOS" title="KOS" class="flag-icon">
+                            <a href="https://www.koha.net/bote" target="_blank" class="article-link">La Turquie frappée par un tremblement de terre de magnitude 6,1</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lux.svg" alt="Luxembourg" title="Luxembourg" class="flag-icon">
+                            <a href="https://www.tageblatt.lu/headlines/" target="_blank" class="article-link">Un an après l&#39;inondation du centenaire à Valence, des corps sont toujours retrouvés</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/isr.svg" alt="Israël" title="Israël" class="flag-icon">
+                            <a href="https://www.jpost.com/International" target="_blank" class="article-link">L&#39;Inde évacue des dizaines de milliers de personnes alors que le cyclone Montha gagne en intensité</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sxm.svg" alt="SXM" title="SXM" class="flag-icon">
+                            <a href="https://www.sxm-talks.com/" target="_blank" class="article-link">ODM : Pensées et prières pour la nation de la Jamaïque alors que l&#39;ouragan Melissa doit toucher terre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sxm.svg" alt="SXM" title="SXM" class="flag-icon">
+                            <a href="https://www.sxm-talks.com/" target="_blank" class="article-link">ODM exprime son soutien et ses préoccupations alors que l&#39;ouragan Melissa approche de la Jamaïque</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vut.svg" alt="Vanuatu" title="Vanuatu" class="flag-icon">
+                            <a href="https://dailypost.vu/news/" target="_blank" class="article-link">IsraAID restaure l&#39;eau potable pour les communautés touchées par le tremblement de terre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pol.svg" alt="Pologne" title="Pologne" class="flag-icon">
+                            <a href="https://wyborcza.pl/0,0.html?disableRedirects=true" target="_blank" class="article-link">La Jamaïque se prépare à l&#39;ouragan Melissa avec des fermetures d&#39;aéroport et des évacuations</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aus.svg" alt="Australie" title="Australie" class="flag-icon">
+                            <a href="https://www.smh.com.au/world" target="_blank" class="article-link">OURAGAN Melissa EN DIRECT : La Jamaïque se prépare à un cyclone de catégorie 5 pour toucher terre ; vents « catastrophiques et menaçant la vie » prévus</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ind.svg" alt="Inde" title="Inde" class="flag-icon">
+                            <a href="https://timesofindia.indiatimes.com/world" target="_blank" class="article-link">Ouragan Melissa frappe la catégorie 5 : la tempête la plus forte de 2025 approche la Jamaïque ; les Caraïbes se préparent à des inondations catastrophiques</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pan.svg" alt="Panama" title="Panama" class="flag-icon">
+                            <a href="https://www.laestrella.com.pa/mundo" target="_blank" class="article-link">L&#39;ouragan Melissa se renforce en catégorie 5 et met la Jamaïque en alerte</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pry.svg" alt="Paraguay" title="Paraguay" class="flag-icon">
+                            <a href="https://www.ultimahora.com/noticias/mundo/" target="_blank" class="article-link">L&#39;ouragan Melissa passe en catégorie 5, alerte la Jamaïque</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pry.svg" alt="Paraguay" title="Paraguay" class="flag-icon">
+                            <a href="https://www.ultimahora.com/noticias/mundo/" target="_blank" class="article-link">L&#39;ouragan Melissa atteint la catégorie maximale dans les Caraïbes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svn.svg" alt="Slovénie" title="Slovénie" class="flag-icon">
+                            <a href="https://www.delo.si/novice/svet" target="_blank" class="article-link">L&#39;ouragan Melissa approche la Jamaïque : la pire tempête de 2025</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/can.svg" alt="Canada" title="Canada" class="flag-icon">
+                            <a href="https://www.thestar.com/news/world.html" target="_blank" class="article-link">L&#39;ouragan Melissa va frapper la Jamaïque en tant que tempête la plus forte jamais enregistrée sur l&#39;île en près de deux siècles</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/chl.svg" alt="Chili" title="Chili" class="flag-icon">
+                            <a href="https://www.latercera.com/categoria/mundo/" target="_blank" class="article-link">L&#39;ouragan Melissa atteint la catégorie maximale en direction de la Jamaïque</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sau.svg" alt="Arabie Saoudite" title="Arabie Saoudite" class="flag-icon">
+                            <a href="https://saudigazette.com.sa/World" target="_blank" class="article-link">L&#39;ouragan Melissa : la Jamaïque se prépare à la tempête la plus forte du monde en 2025</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bmu.svg" alt="BMU" title="BMU" class="flag-icon">
+                            <a href="https://bernews.com/category/news/international/" target="_blank" class="article-link">Surveillance de l&#39;ouragan Melissa par CARILEC</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bmu.svg" alt="BMU" title="BMU" class="flag-icon">
+                            <a href="https://bernews.com/category/news/international/" target="_blank" class="article-link">BWS : L&#39;ouragan Melissa est une « menace potentielle »</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/swe.svg" alt="Suède" title="Suède" class="flag-icon">
+                            <a href="https://www.dn.se/varlden/" target="_blank" class="article-link">Ouragan &#34;menace pour la vie&#34; approche la Jamaïque, pourrait être le pire jusqu&#39;à présent</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/swe.svg" alt="Suède" title="Suède" class="flag-icon">
+                            <a href="https://www.svd.se/" target="_blank" class="article-link">Melissa frappe la Jamaïque</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/slv.svg" alt="Salvador" title="Salvador" class="flag-icon">
+                            <a href="https://diario.elmundo.sv/el-mundo" target="_blank" class="article-link">Plus de 2 000 personnes en Haïti abritées en raison de l&#39;ouragan Melissa, rapporte l&#39;UNICEF</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mkd.svg" alt="Macédoine du Nord" title="Macédoine du Nord" class="flag-icon">
+                            <a href="https://www.novamakedonija.com.mk/" target="_blank" class="article-link">L&#39;ouragan Melissa atteint la catégorie cinq, impact le plus fort attendu en Jamaïque</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/prt.svg" alt="Portugal" title="Portugal" class="flag-icon">
+                            <a href="https://expresso.pt/" target="_blank" class="article-link">L&#39;ouragan Melissa atteint la catégorie 5 avec des vents dévastateurs et des inondations qui s&#39;aggravent en Jamaïque</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bel.svg" alt="Belgique" title="Belgique" class="flag-icon">
+                            <a href="https://www.lavenir.net/actu/monde/" target="_blank" class="article-link">L&#39;ouragan Melissa avec des vents destructeurs de catégorie maximale approche la Jamaïque</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Urgence des nations carib\u00e9ennes face \u00e0 l\u0027ouragan Melissa",
+                color: "#72e5ac",
+                data: [ {"id": ""},  {"id": "AE"},  {"id": "BB"},  {"id": "BD"},  {"id": "BR"},  {"id": "BS"},  {"id": "CH"},  {"id": "CR"},  {"id": "DM"},  {"id": "DO"},  {"id": "EE"},  {"id": "FR"},  {"id": "GR"},  {"id": "GT"},  {"id": "HN"},  {"id": "IT"},  {"id": "JM"},  {"id": "OM"},  {"id": "PR"},  {"id": "SR"} ]
+            },
+        
+            {
+                name: "R\u00e9ponse et exp\u00e9rience de la Turquie face au s\u00e9isme de magnitude 6,1",
+                color: "#bf72e5",
+                data: [ {"id": "AL"},  {"id": "BG"},  {"id": "CN"},  {"id": "CY"},  {"id": "HR"},  {"id": "ID"},  {"id": "KW"},  {"id": "KZ"},  {"id": "MX"},  {"id": "MY"},  {"id": "PE"},  {"id": "RO"},  {"id": "UZ"},  {"id": "YE"} ]
+            },
+        
+            {
+                name: "Perspectives internationales et contexte climatique sur l\u0027ouragan Melissa et les \u00e9v\u00e9nements sismiques",
+                color: "#e5d272",
+                data: [ {"id": "AU"},  {"id": "BE"},  {"id": "BM"},  {"id": "IL"},  {"id": "JO"},  {"id": "LU"},  {"id": "NA"},  {"id": "PA"},  {"id": "PL"},  {"id": "PT"},  {"id": "PY"},  {"id": "SA"},  {"id": "SV"},  {"id": "SX"},  {"id": "VU"},  {"id": "XK"} ]
+            }
+        
+        
+            ,
+            {
+                name: "Plusieurs points de vue : \n- Urgence des nations carib\u00e9ennes face \u00e0 l\u0027ouragan Melissa\n- R\u00e9ponse et exp\u00e9rience de la Turquie face au s\u00e9isme de magnitude 6,1\n- Perspectives internationales et contexte climatique sur l\u0027ouragan Melissa et les \u00e9v\u00e9nements sismiques",
+                color: "#AAAAAA",
+                data: [{"id": "CA"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Urgence des nations carib\u00e9ennes face \u00e0 l\u0027ouragan Melissa\n- R\u00e9ponse et exp\u00e9rience de la Turquie face au s\u00e9isme de magnitude 6,1",
+                color: "#AAAAAA",
+                data: [{"id": "IE"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- R\u00e9ponse et exp\u00e9rience de la Turquie face au s\u00e9isme de magnitude 6,1\n- Perspectives internationales et contexte climatique sur l\u0027ouragan Melissa et les \u00e9v\u00e9nements sismiques",
+                color: "#AAAAAA",
+                data: [{"id": "CL"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- R\u00e9ponse et exp\u00e9rience de la Turquie face au s\u00e9isme de magnitude 6,1\n- Perspectives internationales et contexte climatique sur l\u0027ouragan Melissa et les \u00e9v\u00e9nements sismiques",
+                color: "#AAAAAA",
+                data: [{"id": "IN"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- R\u00e9ponse et exp\u00e9rience de la Turquie face au s\u00e9isme de magnitude 6,1\n- Perspectives internationales et contexte climatique sur l\u0027ouragan Melissa et les \u00e9v\u00e9nements sismiques",
+                color: "#AAAAAA",
+                data: [{"id": "MK"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- R\u00e9ponse et exp\u00e9rience de la Turquie face au s\u00e9isme de magnitude 6,1\n- Perspectives internationales et contexte climatique sur l\u0027ouragan Melissa et les \u00e9v\u00e9nements sismiques",
+                color: "#AAAAAA",
+                data: [{"id": "SE"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- R\u00e9ponse et exp\u00e9rience de la Turquie face au s\u00e9isme de magnitude 6,1\n- Perspectives internationales et contexte climatique sur l\u0027ouragan Melissa et les \u00e9v\u00e9nements sismiques",
+                color: "#AAAAAA",
+                data: [{"id": "SI"}]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Masquer les sources ▲' : 'Montrer les sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li>
+               <a href="/">Actus </a>
+            </li>
+            <li>
+              <a href="/fr/2025-10-28/country_counts.html">Pays</a>
+            </li>
+            <li>
+              <a href="/fr/2025-10-28/labels.html">Thèmes</a>
+            </li>
+            <li>
+              <a href="/fr/about.html">A Propos</a>
+            </li>
+            <li>
+              <a href="/fr/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
