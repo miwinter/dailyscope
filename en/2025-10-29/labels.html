@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <title>Labels & Categories — History + Tag Cloud</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
@@ -74,12 +74,12 @@
                 <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
             </div>
             <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
-              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/fra.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="Français" title="Français" class="flag-icon"></a>
               <script>
                 const currentUrl = window.location.href;
-                const englishUrl = currentUrl.replace('/fr', '/en');
+                const englishUrl = currentUrl.replace('/en', '/fr');
                 document.getElementById('lang-switch').setAttribute('href', englishUrl);
-              </script>                 
+              </script>              
             </div>
         </div>
       </div>
@@ -102,19 +102,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/">Actus</a>
+              <a class="nav-link active" aria-current="page" href="/">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2025-10-24/country_counts.html">Pays</a>
+              <a class="nav-link active" aria-current="page" href="/en/2025-10-29/country_counts.html">Top Countries</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2025-10-24/labels.html">Thèmes</a>
+              <a class="nav-link active" aria-current="page" href="/en/2025-10-29/labels.html">Top Themes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
+              <a class="nav-link active" aria-current="page" href="/en/about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/contact.html">Contact</a>
+              <a class="nav-link active" aria-current="page" href="/en/contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -126,10 +126,9 @@
   <!-- Section 1: Tag Cloud -->
   <section class="band band--title">
   <div class="content-shell content-shell--narrow">
-    <h2 class="section-title">Principales thématiques du jour</h2>
+    <h2 class="section-title">Main Topics of the Day</h2>
     <p class="section-subtitle">
-      Voici les principales thématiques identifiées dans les articles 
-      collectés aujourd’hui (2025-10-24).
+      Here are the main topics identified in today’s collected articles (2025-10-29).
     </p>
   </div>
 </section>
@@ -144,11 +143,11 @@
   <!-- Section 2: Labels History (stacked columns) -->
   <section class="band band--title">
   <div class="content-shell content-shell--narrow">
-    <h2 class="section-title">Historique des thématiques</h2>
+    <h2 class="section-title">Topic History</h2>
     <p class="section-subtitle">
-      Principales thématiques identifiées au cours des 7 derniers jours.
-      Survolez une colonne pour afficher le nombre d’articles associés à une thématique.
-      Cliquez sur une thématique dans la légende ou sur une barre pour mettre en évidence l’évolution complète de cette thématique.
+      Main topics identified over the past 7 days. 
+      Hover over a column to display the number of articles associated with a topic.
+      Click on a topic in the legend or on a bar to highlight the full trend for that topic.
     </p>
   </div>
 </section>
@@ -162,7 +161,7 @@
 <script>
 anychart.onDocumentReady(function () {
   // === Données brutes Jinja (inchangé côté Python)
-  var raw = [{"category": "US\u2013Russia Threat Escalation", "weight": 17}, {"category": "Ukraine-Russia Conflict", "weight": 49}, {"category": "US Military Narcotics Strike", "weight": 21}, {"category": "Israel-Palestine Conflict", "weight": 28}, {"category": "US\u2013Russia Summit Diplomacy", "weight": 22}, {"category": "Israel-Hamas Ceasefire Issues", "weight": 23}, {"category": "Man\u2011Made Disasters", "weight": 22}, {"category": "Israel ICJ Aid Ruling", "weight": 13}, {"category": "US\u2013Venezuela Military Threats", "weight": 36}, {"category": "US\u2013Colombia Diplomatic Tensions", "weight": 14}, {"category": "Natural Disaster", "weight": 12}, {"category": "Trump\u2013Xi Summit Talks", "weight": 30}, {"category": "US\u2013Russia Sanctions Row", "weight": 14}, {"category": "Israel-Lebanon Border Strikes", "weight": 11}, {"category": "NATO-Russia Airspace Protest", "weight": 15}, {"category": "Russia Airspace Incursion", "weight": 19}, {"category": "US-Canada Trade Talks Collapse", "weight": 11}, {"category": "EU Frozen Assets Aid Plan", "weight": 15}, {"category": "EU\u2013Russia Sanctions on Oil", "weight": 104}, {"category": "Israel West Bank Annexation Issues", "weight": 45}] || [];
+  var raw = [{"category": "Natural Disaster", "weight": 110}, {"category": "Russia\u2013Ukraine Diplomatic and Military Conflict", "weight": 87}, {"category": "Israel-Palestine Conflict", "weight": 92}, {"category": "US\u2013Venezuela Military and Mediation Issues", "weight": 21}, {"category": "Israel-Hamas Ceasefire Issues", "weight": 74}, {"category": "Trump\u2013Japan Diplomatic Meeting", "weight": 13}, {"category": "Biya Reelection Dispute", "weight": 19}, {"category": "US Navy Drug-Ship Strike", "weight": 30}, {"category": "Rio Favela Crackdown", "weight": 26}, {"category": "Sudan El Fasher Attacks", "weight": 27}, {"category": "Trump\u2013Xi Diplomatic Talks", "weight": 18}, {"category": "Kenya Plane Crash", "weight": 13}, {"category": "North Korea Missile Test", "weight": 11}, {"category": "Ivory Coast Election Results", "weight": 12}] || [];
 
   // === min/max (calculés une seule fois)
   var minVal = Infinity, maxVal = -Infinity;
@@ -266,8 +265,8 @@ anychart.onDocumentReady(function () {
     // ===== Chart 2: Labels History (from labels_template_en.html) =====
     anychart.onDocumentReady(function () {
       (function () {
-        var rawData = [["EU\u2013Russia Sanctions on Oil", 104, 0, 0, 0, 0, 0, 0], ["Gaza Ceasefire and Reconstruction Crisis", 0, 0, 0, 0, 108, 78, 0], ["Israel West Bank Annexation Issues", 45, 0, 0, 0, 0, 0, 0], ["Israel-Palestine Conflict", 0, 45, 52, 110, 0, 0, 0], ["Trump\u2013Xi Summit Talks", 30, 0, 0, 0, 0, 0, 0], ["US\u2013Russia Ukraine Conflict Talks", 0, 0, 0, 0, 47, 115, 0], ["US\u2013Venezuela Military Threats", 36, 0, 0, 0, 0, 0, 0], ["Ukraine-Russia Conflict", 49, 62, 79, 57, 0, 0, 0]];
-        var dates = ["2025-10-24", "2025-10-23", "2025-10-22", "2025-10-21", "2025-10-20", "2025-10-19", "2025-10-18"].reverse();
+        var rawData = [["EU\u2013Russia Sanctions on Oil", 0, 0, 0, 0, 0, 104, 0], ["Israel-Hamas Ceasefire Issues", 74, 35, 0, 32, 0, 0, 43], ["Israel-Palestine Conflict", 92, 57, 48, 36, 0, 0, 45], ["Natural Disaster", 110, 95, 50, 32, 0, 0, 0], ["Russia\u2013Ukraine Diplomatic and Military Conflict", 87, 59, 0, 0, 0, 0, 0], ["Russia\u2013Ukraine Peace Talks", 0, 0, 33, 0, 70, 0, 0], ["US Navy Drug-Ship Strike", 30, 0, 0, 0, 0, 0, 0], ["Ukraine-Russia Conflict", 0, 0, 0, 0, 0, 49, 62]];
+        var dates = ["2025-10-29", "2025-10-28", "2025-10-27", "2025-10-26", "2025-10-25", "2025-10-24", "2025-10-23"].reverse();
 
         var chart = anychart.column();
         chart.yScale().stackMode('value');
@@ -383,7 +382,7 @@ anychart.onDocumentReady(function () {
 
 <div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
   <div class="offcanvas-header">
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
     <div class="head-contact">
@@ -394,19 +393,19 @@ anychart.onDocumentReady(function () {
       <div class="mobile-menu-sec mt-3">
          <ul class="list-unstyled">
             <li>
-               <a href="/">Actus </a>
+               <a href="/">News </a>
             </li>
             <li>
-              <a href="/fr/2025-10-24/country_counts.html">Pays</a>
+              <a href="/en/2025-10-29/country_counts.html">Top Countries</a>
             </li>
             <li>
-              <a href="/fr/2025-10-24/labels.html">Thèmes</a>
+              <a href="/en/2025-10-29/labels.html">Top Themes</a>
             </li>
             <li>
-              <a href="/fr/about.html">A Propos</a>
+              <a href="/en/about.html">About</a>
             </li>
             <li>
-              <a href="/fr/contact.html">Contact</a>
+              <a href="/en/contact.html">Contact</a>
             </li>
          </ul>
       </div>
