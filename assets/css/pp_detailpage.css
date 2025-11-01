@@ -1,6 +1,6 @@
 
 body {
-    font-family: Garamond, serif;
+    font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
     line-height: 1.6;
     padding: 0;
     margin: 0;
@@ -45,25 +45,16 @@ body {
 
 .header-content {
     width: 100%;
-    padding: 20px;
+    padding: 20px 20px 0 20px;;
     background-color: #f8f9fa;
 }
 
-.key-points {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    color: #333;
-    font-family: Garamond, serif;
-    background-color: #f8f9fa;
-}
-
-.key-points h2 {
-    font-size: 2em;
+h2 {
+    font-size: 26px;
     font-weight: bold;
-    margin: 0 0 10px 22px;
+    margin: 0 0 0 18px;
     background-color: #f8f9fa;
-    font-family: Garamond, serif;
+    font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 
 .content-wrapper {
@@ -97,7 +88,7 @@ body {
     font-size: 0.9em;
 }
 .key-points {
-    background-color: #ffffff;
+    background-color: #f8f9fa;
     padding: 0px;
     border-radius: 8px;
 }
@@ -127,7 +118,7 @@ body {
     transform: scale(1.1);
 }
 .article-summary {
-    font-family: Georgia, serif;
+    font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
     line-height: 1.5;
     margin: 0 0;
     padding: 20px;
@@ -142,14 +133,16 @@ body {
     border-radius: 8px;
 }
 .cluster-description {
-    font-family: Georgia, serif;
+    font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
     line-height: 1.5;
-    margin: 0 0 0 0;
+    text-indent: 1em;
+    margin: 0 0 0 18px;
 }
 .cluster-title {
-    font-family: Garamond, serif;
+    font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
     margin: 10px 0 15px 0;
-    font-size: 1.2em;
+    font-size: 18px;
+    font-weight: bold;
     color: #333;
     display: inline-block;
 }
@@ -258,3 +251,92 @@ body {
 .article-link:hover {
     text-decoration: underline;
 }
+/* 1) Quand ouvert : ne pas tronquer, afficher tout */
+.sources-content {
+  /* on supprime la contrainte qui coupait la fin de liste */
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+/* 2) Quand fermé : retirer complètement du flux (pas d’espace réservé)
+   et neutraliser le padding inline via !important */
+.sources-content.hidden {
+  display: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  visibility: hidden; /* facultatif */
+  opacity: 0;         /* facultatif */
+}
+
+.chapitre::first-letter{
+  float: left;             /* fait descendre la lettre sur plusieurs lignes */
+  font-size: 4rem;         /* taille de la lettrine */
+  line-height: 0.9;        /* ajuste la hauteur visuelle */
+  font-weight: 700;        /* gras (facultatif) */
+  margin: 0 .4rem 0 0;     /* espace entre la lettrine et le texte */
+  color: #222;             /* couleur */
+}
+@media (max-width: 480px){
+  .chapitre::first-letter{ float:none; font-size:inherit; margin:0; }
+}
+
+/* --- Fix ratio + responsive pour l'image de tête --- */
+/* L'image garde son ratio: largeur fluide, hauteur auto */
+img.main-image {
+  display: block;
+  width: 100%;
+  max-width: 340px;   /* ou 40% si tu préfères */
+  height: auto;       /* clé: ratio respecté */
+  float: left;
+  border-radius: 8px;
+  margin: 0 20px 12px 0;
+}
+
+/* Mobile: supprimer TOUT le retrait latéral du 1er bloc texte */
+@media (max-width: 680px){
+  .header-inner{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .header-content{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    border-radius: 0; /* option: pour coller vraiment bord à bord */
+  }
+  .article-summary{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .cluster-description {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .content-wrapper{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+/* Gouttière commune pour aligner header-content et cluster-description */
+:root { --ds-gutter-x: 20px; }
+
+/* header-content a déjà un padding: 20px; on précise gauche/droite via la variable */
+.header-content { padding: 20px var(--ds-gutter-x); }  /* aligné sur desktop */
+
+/* Applique la même gouttière au bloc des clusters (texte et listes) */
+.cluster-section { padding: 0 var(--ds-gutter-x); }    /* aligne le <p class="cluster-description"> */
+
+/* Mobile: on conserve l'affichage bord à bord demandé précédemment */
+@media (max-width: 680px){
+  :root { --ds-gutter-x: 0px; }
+  /* (si besoin, tu peux laisser 8–12px au lieu de 0) */
+}
+
+
+
