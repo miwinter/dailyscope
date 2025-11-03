@@ -4,6 +4,7 @@
 <title>DailyScope.ai - About</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
@@ -15,7 +16,7 @@
 <body>
 
 <header>  
-  <div class="middle-section py-2">
+  <div class="middle-section py-2" style="background-color:#244855;">
       <div class="container">
         <div class="row row-cols-1 row-cols-lg-3 align-items-center">
             <div class="col order-3 order-lg-1"><!-- vide --></div>
@@ -23,12 +24,12 @@
                 <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
             </div>
             <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
-              <a id="lang-switch" href="#"><img src="/assets/images/flags/fra.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="Français" title="Français" class="flag-icon"></a>
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
               <script>
                 const currentUrl = window.location.href;
-                const englishUrl = currentUrl.replace('/en', '/fr');
+                const englishUrl = currentUrl.replace('/fr', '/en');
                 document.getElementById('lang-switch').setAttribute('href', englishUrl);
-              </script>              
+              </script>                 
             </div>
         </div>
       </div>
@@ -51,13 +52,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
+              <a class="nav-link active" aria-current="page" href="/fr/">Actus</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/en/about.html">About</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2025-11-03/country_counts.html">Pays</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/en/contact.html">Contact</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2025-11-03/labels.html">Thèmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -66,50 +73,52 @@
   </nav>
 </div>
 
+
+<!-- ===== À propos de DailyScope.ai (section intégrable) ===== -->
 <section class="about-ds py-5">
   <div class="container">
     <div class="row align-items-center g-4">
 
-      <!-- Visual / Illustration -->
+      <!-- Visuel / Illustration -->
       <div class="col-lg-5">
         <img src="/assets/images/dailyscope-photo.png" alt="DailyScope.ai illustration" class="about-visual img-fluid">
       </div>
 
-      <!-- Copy + Features -->
+      <!-- Texte + fonctionnalités -->
       <div class="col-lg-7">
-        <h2 class="comon-sub-heading mb-3">About DailyScope.ai</h2>
-        <p class="about-lead"> <strong>DailyScope.ai is an agentic AI</strong> — an artificial intelligence that doesn’t just generate answers, but takes initiative and performs multi-step actions autonomously.</p>
-        <p>Every day, it scans more than <strong>350 online newspapers</strong> from <strong>over 200 countries</strong> to identify the key topics shaping the news. It then produces a synthesis, highlighting the <strong>five most prominent themes</strong> and surfacing the diversity of perspectives across countries.</p>
-        <p>New features will be added regularly to provide an ever more comprehensive and nuanced view of global current events.</p>
+        <h2 class="comon-sub-heading mb-3" style="white-space: nowrap;">À propos de DailyScope.ai</h2>
+        <p class="about-lead"><strong>DailyScope.ai est une IA agentique</strong> — une intelligence artificielle qui ne se contente pas de générer des réponses, mais qui prend des initiatives et enchaîne plusieurs étapes d’action de manière autonome.</p>
+        <p>Chaque jour, elle parcourt plus de <strong>350 quotidiens en ligne</strong> issus de <strong>plus de 200 pays</strong> pour identifier les grands sujets qui dominent l’actualité. Elle en propose ensuite une synthèse, regroupée autour des <strong>cinq thèmes majeurs</strong>, en mettant en valeur la diversité des points de vue selon les pays.</p>
+        <p>De nouvelles fonctionnalités viendront régulièrement enrichir DailyScope.ai pour offrir une vision toujours plus complète et nuancée de l’actualité mondiale.</p>
 
-        <!-- Key stats (chips) -->
+        <!-- Statistiques clés (étiquettes) -->
         <ul class="about-stats list-unstyled d-flex flex-wrap mt-3 mb-4">
-          <li><span class="chip chip-accent"><i class="fas fa-globe"></i> 200+ countries</span></li>
+          <li><span class="chip chip-accent"><i class="fas fa-globe"></i> 200+ pays</span></li>
           <li><span class="chip"><i class="far fa-newspaper"></i> 350+ sources</span></li>
-          <li><span class="chip chip-warm"><i class="fas fa-layer-group"></i> 5 themes/day</span></li>
+          <li><span class="chip chip-warm"><i class="fas fa-layer-group"></i> 5 thèmes/jour</span></li>
         </ul>
 
-        <!-- Feature cards -->
+        <!-- Cartes fonctionnalités -->
         <div class="row g-3">
           <div class="col-md-4">
             <div class="ds-card">
               <div class="ic"><i class="fas fa-compass"></i></div>
-              <h3>Global coverage</h3>
-              <p>Balanced inputs from diverse outlets worldwide.</p>
+              <h3>Couverture mondiale</h3>
+              <p>Des sources variées et équilibrées dans le monde entier.</p>
             </div>
           </div>
           <div class="col-md-4">
             <div class="ds-card">
               <div class="ic"><i class="fas fa-project-diagram"></i></div>
-              <h3>Agentic workflow</h3>
-              <p>Plans, executes and adapts across multiple steps.</p>
+              <h3>Approche agentique</h3>
+              <p>Planifie, exécute et s’adapte à travers plusieurs étapes.</p>
             </div>
           </div>
           <div class="col-md-4">
             <div class="ds-card">
               <div class="ic"><i class="fas fa-adjust"></i></div>
-              <h3>Nuanced views</h3>
-              <p>Country-level perspectives, not a flat consensus.</p>
+              <h3>Points de vue nuancés</h3>
+              <p>Des perspectives au niveau des pays, pas un consensus plat.</p>
             </div>
           </div>
         </div>
@@ -119,7 +128,7 @@
   </div>
 </section>
 
-
+<!-- Le CSS reste identique, seul le visuel est maintenant une image -->
 <!-- ===== Minimal CSS additions (append near the end of your style.css) ===== -->
 <style>
   /* About section — follows existing palette and serif type */
@@ -162,7 +171,7 @@
 
 <div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
   <div class="offcanvas-header">
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
   </div>
   <div class="offcanvas-body">
     <div class="head-contact">
@@ -172,14 +181,20 @@
       
       <div class="mobile-menu-sec mt-3">
          <ul class="list-unstyled">
-            <li class="active-m">
-               <a href="/">Home </a>
+            <li>
+               <a href="/">Actus </a>
             </li>
             <li>
-              <a href="/en/about.html">About</a>
+              <a href="/fr/2025-11-03/country_counts.html">Pays</a>
             </li>
             <li>
-              <a href="/en/contact.html">Contact</a>
+              <a href="/fr/2025-11-03/labels.html">Thèmes</a>
+            </li>
+            <li>
+              <a href="/fr/about.html">A Propos</a>
+            </li>
+            <li>
+              <a href="/fr/contact.html">Contact</a>
             </li>
          </ul>
       </div>

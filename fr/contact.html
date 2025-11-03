@@ -4,6 +4,7 @@
 <title>Today's News</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
@@ -15,7 +16,7 @@
 <body>
 
 <header>  
-  <div class="middle-section py-2">
+  <div class="middle-section py-2" style="background-color:#244855;">
       <div class="container">
         <div class="row row-cols-1 row-cols-lg-3 align-items-center">
             <div class="col order-3 order-lg-1"><!-- vide --></div>
@@ -23,12 +24,12 @@
                 <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
             </div>
             <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
-              <a id="lang-switch" href="#"><img src="/assets/images/flags/fra.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="Français" title="Français" class="flag-icon"></a>
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
               <script>
                 const currentUrl = window.location.href;
-                const englishUrl = currentUrl.replace('/en', '/fr');
+                const englishUrl = currentUrl.replace('/fr', '/en');
                 document.getElementById('lang-switch').setAttribute('href', englishUrl);
-              </script>              
+              </script>                 
             </div>
         </div>
       </div>
@@ -51,13 +52,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
+              <a class="nav-link active" aria-current="page" href="/fr/">Actus</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/en/about.html">About</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2025-11-03/country_counts.html">Pays</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/en/contact.html">Contact</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2025-11-03/labels.html">Thèmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -73,7 +80,7 @@
       <div class="row g-4">
         <div class="col-lg-7">
           <!-- Pure HTML form (PHP to be wired later) -->
-          <form id="contact-form" action="/en/contact.php" method="post" novalidate>
+          <form id="contact-form" action="/fr/contact.php" method="post" novalidate>
             <!-- Honeypot (spam trap) -->
             <div style="position:absolute; left:-5000px;" aria-hidden="true">
               <label for="company">Company</label>
@@ -81,18 +88,18 @@
             </div>
 
             <div class="mb-3">
-              <label for="email" class="form-label"><strong>Your e-mail</strong></label>
-              <input type="email" class="form-control" id="email" name="email" placeholder="name@domain.com" required autocomplete="email" />
+              <label for="email" class="form-label"><strong>Votre e-mail</strong></label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="nom@domaine.fr" required autocomplete="email" />
             </div>
 
             <div class="mb-3">
-              <label for="subject" class="form-label"><strong>Subject</strong></label>
-              <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject of your message" required maxlength="150" />
+              <label for="subject" class="form-label"><strong>Sujet</strong></label>
+              <input type="text" class="form-control" id="subject" name="subject" placeholder="Sujet de votre message" required maxlength="150" />
             </div>
 
             <div class="mb-3">
               <label for="message" class="form-label"><strong>Message</strong></label>
-              <textarea class="form-control" id="message" name="message" rows="6" placeholder="Your message…" required></textarea>
+              <textarea class="form-control" id="message" name="message" rows="6" placeholder="Votre message…" required></textarea>
             </div>
 
             <!-- Simple CAPTCHA (front only; validate in PHP later) -->
@@ -105,9 +112,9 @@
               <input type="hidden" id="captcha_expected" name="captcha_expected" />
             </div>
 
-            <button type="submit" class="btn btn-dark">Send</button>
+            <button type="submit" class="btn btn-dark">Envoyer</button>
           </form>
-          <p class="mt-3 text-muted" style="font-size: 14px;">By submitting this form, you agree that your information will only be used to process your request.</p>
+          <p class="mt-3 text-muted" style="font-size: 14px;">En envoyant ce formulaire, vous acceptez que vos informations soient utilisées uniquement pour traiter votre demande.</p>
         </div>
       </div>
     </div>
@@ -154,7 +161,7 @@
 
 <div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
   <div class="offcanvas-header">
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
   </div>
   <div class="offcanvas-body">
     <div class="head-contact">
@@ -164,14 +171,20 @@
       
       <div class="mobile-menu-sec mt-3">
          <ul class="list-unstyled">
-            <li class="active-m">
-               <a href="/">Home </a>
+            <li>
+               <a href="/">Actus </a>
             </li>
             <li>
-              <a href="/en/about.html">About</a>
+              <a href="/fr/2025-11-03/country_counts.html">Pays</a>
             </li>
             <li>
-              <a href="/en/contact.html">Contact</a>
+              <a href="/fr/2025-11-03/labels.html">Thèmes</a>
+            </li>
+            <li>
+              <a href="/fr/about.html">A Propos</a>
+            </li>
+            <li>
+              <a href="/fr/contact.html">Contact</a>
             </li>
          </ul>
       </div>
