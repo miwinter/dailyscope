@@ -5,17 +5,17 @@
 	margin: 0;
 }
 body{
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 .form-control{
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 img{
 	max-width:100%;
 }
 h1, h2, h3, h4, h5, h6{
 	/* font-family: 'Montserrat', sans-serif; */
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 header{
 
@@ -35,7 +35,7 @@ header{
 .top-bar p,
 .news-top-links li a{
 	font-size: 14px;
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 .socal-top-links li,
 .news-top-links li{
@@ -110,7 +110,7 @@ header{
 .news-top-links li a{
 	color: #fff;
 	text-decoration: none;
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 .middle-section{
 	display: inline-block;
@@ -244,10 +244,10 @@ header{
     padding: 10px;
 	font-size: 16px;
 	text-align: center;
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 .breadcrumb{
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 .comon-sub-heading:after{
 	content: '';
@@ -362,16 +362,17 @@ header{
 	margin-bottom:0;
 }
 .shorts-news-d1 .comon-slider-items p{
-	font-size: 14px;
-	font-family: 'Georgia', serif;
+	font-size: 13px;
+	line-height: 15px;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 .shorts-news-d1 .date-t{
 	font-size:15px;
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 	color: #bbb;
 }
 .date-t b{
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 	font-size: 14px;
 	color: #fff;
 }
@@ -419,7 +420,7 @@ header{
 	color: #000;
 }
 .date-t{
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 	color: #bbb;
 }
 .date-t b{
@@ -434,13 +435,12 @@ header{
     z-index: 2;
     left: 10px;
     color: #fff;
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 .content-div1 h5{
-	font-size: 16px;
-	font-family: 'Georgia', serif;
-
-	line-height: 22px;
+	font-size: 14px;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
+	line-height: 18px;
 
 
 	
@@ -448,7 +448,7 @@ header{
 .content-div1 p{
 	font-size: 14px;
 	color: #999;
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 .content-div1 p b{
 	font-size: 15px;
@@ -462,7 +462,7 @@ header{
 .comon-tabs1 .nav-link{
      font-size: 15px;
 	 color: #222222;
-	 font-family: 'Georgia', serif;
+	 font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 	 font-weight: 700;
 }
 .lisfe-style-sec{
@@ -546,17 +546,17 @@ header{
 	font-size: 13px;
 	color: rgba(95, 95, 95, 0.733);
 	margin: 0;
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 .text-sec p{
 	font-size: 14px;
 	margin-bottom: 10px;
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 .text-sec h5{
 	font-size: 16px;
     font-weight: 700;
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 
 }
 .text-sec .para{
@@ -580,19 +580,19 @@ header{
     padding: 0 15px;
     line-height: 36px;
 	transition: all 0.5s;
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 	font-weight: 700;
 
 }
 .toipc-op p{
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 .view-more-btn{
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 	font-size: 14px;
 }
 .trading-ads h2{
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 .topic ul li a:hover{
 	background: #222;
@@ -626,7 +626,7 @@ header{
 	font-weight: 700;
 	color: #222;
 	font-size: 16px;
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 .toipc-op a:hover{
 	text-decoration: underline;
@@ -683,7 +683,7 @@ header{
     line-height: 32px;
 	margin-bottom: 10px;
     transition: all 0.5s;
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 .tags-list li a:hover {
     background: #222;
@@ -700,14 +700,14 @@ header{
 .listing-details-page .comon-slider-items ul li{
 	margin: 0 20px 0 0;
 	font-size: 15px;
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 .para-details p{
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 	font-size: 16px;
 }
 .para-details h2{
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 .para-details figure{
 	height: 400px;
@@ -730,7 +730,7 @@ header{
 }
 .public-text{
 	color: #E64833;
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 .share-divs li {
 	margin-right: 15px;
@@ -831,7 +831,7 @@ footer ul li{
 	margin-bottom: 5px;
 	display: inline-block;
 	width: 100%;
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 	font-size: 14px;
 }
 footer ul li a{
@@ -840,7 +840,7 @@ footer ul li a{
 	text-decoration: none;
 
 	text-transform: capitalize;
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 footer hr{
 	background: #bbb;
@@ -875,7 +875,7 @@ footer hr{
   padding-left: 18px !important;
   padding-right: 18px !important;
   font-size: 15px;
-  font-family: 'Georgia', serif;
+  font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
   font-weight: 700;
 }
 .weather-divs h5{
@@ -918,10 +918,11 @@ footer hr{
 	align-content: center;
 	justify-content: center;
 	transition: all 0.5s;
-	
 }
 .breaking-news-divs .letf h5{
 	font-size: 17px;
+	white-space: nowrap;
+	padding: 0px 10px 0px 10px;
 }
 .breaking-news-divs a{
 	text-decoration: none;
@@ -973,10 +974,10 @@ footer hr{
 	justify-content: space-between;
 }
 .min-slider-st .titel-t p{
-	font-size: 20px;
-	line-height: 30px;
+	font-size: 16px;
+	line-height: 20px;
 	width: 50%;
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 	text-shadow: #000 1px 2px 5px;
 }
 .cat-list ul li a i{
@@ -1097,13 +1098,13 @@ footer hr{
 .comon-videos-sections h2{
 	border-bottom: solid 1px #e9e9e9;
 	padding-bottom: 10px;
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 .live-tv-page h6{
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 .content-div1{
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 .playpause {
   
@@ -1189,7 +1190,7 @@ footer hr{
 	font-weight: 600;
 	color: #000;
 	padding-left: 10px;
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 .all-video{
 	position: relative;
@@ -1210,7 +1211,7 @@ footer hr{
 	font-size: 13px;
 	color: #90AEAD;
 	padding-left: 10px;
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 .pl-btn{
 	position: absolute;
@@ -1219,7 +1220,7 @@ footer hr{
 	transform: translateX(-50%);
 	color: #fff;
 	font-size: 50px;
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 .live-sec{
 	display: inline-block;
@@ -1252,10 +1253,10 @@ footer hr{
 }
 .trading-right2 h5{
 	font-weight: 700;
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 .live-tv-page h2{
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 .trading-right2 ul li{
 	border-bottom: solid 1px #efefef;
@@ -1270,7 +1271,7 @@ footer hr{
 	font-size: 16px;
 	text-decoration: none;
 	font-size: 15px;
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 .trading-right2 ul li a span{
 	color: #bbb;
@@ -1293,16 +1294,16 @@ footer hr{
 .phots-page .populer-sec1-news h6{
 	font-size: 14px;
 	color: #90AEAD;
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 .comon-photo-slide h5{
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 	font-weight: 700;
 	text-shadow: #000 1px 2px 8px;
 }
 .Signin-btn{
 	color: #fff !important;
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 .conatct-page h2{
 	border-bottom: solid 1px #e1e1e1;
@@ -1326,11 +1327,11 @@ footer hr{
 .conatct-page h5{
 	margin-bottom: 5px;
 	font-weight: 700;
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 .conatct-page ul li{
 	margin-bottom: 8px !important;
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 
 .load-more-btn{
@@ -3849,7 +3850,7 @@ footer p{
 	color:#fff;
 	margin-bottom:10px;
 	margin-top:12px;
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 /* footer .container div:last-child > div:nth-child(2){
 	display: grid;
@@ -5376,7 +5377,7 @@ footer .row > div:nth-child(5) .comon-footer{
 .conatct-form-div h2,
 .cm-text-n h2{
 	font-size: 25px;
-	font-family: 'Georgia', serif;
+	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 .conatct-form-div h6{
 	color: #a2be2d;
@@ -6572,4 +6573,38 @@ button.close-menu{
     100% {
         transform: translate3d(-50%, 0, 0);
     }
+}
+
+/* Emerging Themes: garder le titre sur une seule ligne */
+.hilights-news .comon-sub-heading {
+    white-space: nowrap;   /* empêche le retour à la ligne */
+    width: auto;           /* laisse la largeur s’adapter au texte */
+    display: inline-block; /* garde le fond et le style du h2 */
+}
+/* Dominant Themes: garder le titre sur une seule ligne */
+.populers-sec-news .comon-sub-heading {
+    white-space: nowrap;   /* pas de retour à la ligne */
+    width: auto;           /* largeur adaptée au contenu */
+    display: inline-block; /* garde le fond et le style du h2 */
+}
+
+/* Date plus petite dans le titre */
+.theme-date {
+    font-size: 0.75em;     /* 75% de la taille du h2 */
+    font-weight: 400;      /* un peu plus léger que le reste */
+    opacity: 0.9;          /* optionnel : légèrement moins contrasté */
+}
+
+.limite-texte {
+  max-width: 30ch;      /* ~ 40 caractères de large */
+  white-space: nowrap;  /* tout sur une seule ligne */
+  overflow: hidden;     /* cache le surplus */
+  text-overflow: ellipsis; /* ajoute "..." à la fin */
+}
+
+.section-subtitle .legend-note {
+  font-style: italic;
+  font-size: 12px;
+  line-height: 12px;      /* ici on peut serrer */
+  display: inline-block;  /* voire block si tu préfères */
 }

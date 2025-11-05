@@ -126,9 +126,13 @@
   <!-- Section 1: Tag Cloud -->
   <section class="band band--title">
   <div class="content-shell content-shell--narrow">
-    <h2 class="section-title">Main Topics of the Day</h2>
+    <h2 class="section-title"><span class="theme-date">Wednesday November 05, 2025</span> - Main Topics of the Day</h2>
     <p class="section-subtitle">
-      Here are the main topics identified in today’s collected articles (2025-11-05).
+      <span class="legend-note">
+      Here’s the main set of topics identified in today’s collected articles.
+  In <span style="background-color: #9C74DE;">purple</span> are the most frequent topics, already discussed in previous days;
+  in <span style="background-color: #D67883;">red</span> are the topics that appeared today for the first time.
+      </span>
     </p>
   </div>
 </section>
@@ -145,9 +149,11 @@
   <div class="content-shell content-shell--narrow">
     <h2 class="section-title">Topic History</h2>
     <p class="section-subtitle">
+      <span class="legend-note">
       Main topics identified over the past 7 days. 
       Hover over a column to display the number of articles associated with a topic.
       Click on a topic in the legend or on a bar to highlight the full trend for that topic.
+      </span>
     </p>
   </div>
 </section>
@@ -199,8 +205,8 @@ anychart.onDocumentReady(function () {
   }
 
   // --- ramps
-  var RAMP_COLD  = { lo: '#FBE9D0', hi: '#E64833' };
-  var RAMP_HOT = { lo: '#D0F1FB', hi: '#338BE6' };
+  var RAMP_COLD  = { lo: '#F2D9DC', hi: '#D67883' };
+  var RAMP_HOT = { lo: '#E4DAF3', hi: '#9C74DE' };
 
   // --- font scaling (adjust if you want larger/smaller)
   var FS_MIN = 6, FS_MAX = 18;       // title line
