@@ -1,0 +1,359 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Renouveau de l&#39;engagement des États-Unis en Asie centrale face à la rivalité stratégique</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/fr', '/en');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>                 
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/">Actus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2025-11-06/country_counts.html">Pays</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2025-11-06/labels.html">Thèmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Renouveau de l&#39;engagement des États-Unis en Asie centrale face à la rivalité stratégique</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-11-06</span> • <span>13 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-11-06/2025-11-06-9.webp" alt="Renouveau de l&#39;engagement des États-Unis en Asie centrale face à la rivalité stratégique" class="main-image">
+                <p style="margin:0" class="chapitre">Dans les développements récents, les relations diplomatiques entre les États-Unis et l&#39;Asie centrale s&#39;intensifient à travers des visites de haut niveau de dirigeants du Tadjikistan, du Turkménistan, du Kirghizistan et du Kazakhstan aux États-Unis, ainsi que des visites prévues par des responsables américains, dont le secrétaire d&#39;État Marco Rubio. Ces engagements, y compris la participation à des forums comme le Sommet C5+1 et des sommets organisés par l&#39;ancien président Trump, visent à renforcer la coopération dans les domaines du commerce, de la sécurité, du développement économique et de la stabilité régionale. Les États d&#39;Asie centrale considèrent ces interactions comme des opportunités pour attirer des investissements et renforcer leurs partenariats, tandis que les États-Unis cherchent à contrebalancer l&#39;influence russe et chinoise dans la région. Ce changement marqué témoigne du renouveau stratégique de l&#39;Amérique en Asie centrale, reflétant une compétition géopolitique accrue liée à des dynamiques mondiales plus larges telles que le conflit en Ukraine. Dans l&#39;ensemble, cette activité diplomatique souligne l&#39;importance croissante de l&#39;Asie centrale dans la politique étrangère et la géopolitique régionales des États-Unis.</p>
+            </div>
+            <h2>Les pays qui en parlent</h2>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Engagement diplomatique actif des dirigeants d&#39;Asie centrale</h3>
+        <p class="cluster-description">Les dirigeants des pays d&#39;Asie centrale, notamment le Tadjikistan, le Turkménistan, le Kirghizistan et le Kazakhstan, s&#39;engagent activement avec les États-Unis à travers des visites officielles et leur participation à des forums multilatéraux comme le sommet C5+1. Leur perspective met l&#39;accent sur le renforcement des relations bilatérales, l&#39;expansion des liens économiques et l&#39;attraction d&#39;investissements étrangers pour soutenir le développement régional et la sécurité. Ces visites témoignent de leur intérêt à approfondir leurs partenariats avec les États-Unis tout en équilibrant leurs relations avec d&#39;autres puissances régionales.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tjk.svg" alt="Tadjikistan" title="Tadjikistan" class="flag-icon">
+                            <a href="https://avesta.tj/category/world/" target="_blank" class="article-link">Emomali Rahmon est arrivé à Washington pour une visite de travail</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tkm.svg" alt="Turkménistan" title="Turkménistan" class="flag-icon">
+                            <a href="http://www.turkmenistan.gov.tm/?cat=12" target="_blank" class="article-link">La visite officielle du président du Turkménistan aux États-Unis commence</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kgz.svg" alt="Kirghizistan" title="Kirghizistan" class="flag-icon">
+                            <a href="https://www.vb.kg/" target="_blank" class="article-link">Sadyr Japarov arrive aux États-Unis pour une visite de travail invitée par Donald Trump</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kgz.svg" alt="Kirghizistan" title="Kirghizistan" class="flag-icon">
+                            <a href="http://www.kabar.kg/" target="_blank" class="article-link">Sadyr Japarov s&#39;est rendu aux États-Unis lors d&#39;une visite officielle</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/rus.svg" alt="Russie" title="Russie" class="flag-icon">
+                            <a href="https://iz.ru/world" target="_blank" class="article-link">Le président kazakh Tokayev arrive en visite à Washington</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aze.svg" alt="Azerbaïdjan" title="Azerbaïdjan" class="flag-icon">
+                            <a href="https://en.trend.az/world/" target="_blank" class="article-link">Le président Zhaparov arrive aux États-Unis pour le sommet C5+1</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #bf72e5; padding: 8px 16px; border-radius: 4px;">Les responsables américains promeuvent un partenariat stratégique et une influence régionale</h3>
+        <p class="cluster-description">Des responsables américains, dont l&#39;ancien président Donald Trump et le secrétaire d&#39;État Marco Rubio, mènent des initiatives pour renforcer les relations diplomatiques avec les pays d&#39;Asie centrale en organisant des sommets et en planifiant des tournées multi-pays. La perspective des États-Unis est de favoriser la coopération sur le développement des ressources naturelles, la sécurité et l&#39;innovation, tout en cherchant activement à renforcer leur présence géopolitique dans une région traditionnellement influencée par la Russie et la Chine. Les États-Unis visent à intégrer plus étroitement l&#39;Asie centrale dans leur cadre stratégique, notamment en explorant des initiatives telles que l&#39;extension du modèle des Accords d&#39;Abraham à la région.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pak.svg" alt="Pakistan" title="Pakistan" class="flag-icon">
+                            <a href="https://www.dawn.com/world" target="_blank" class="article-link">Trump pour accueillir son premier sommet avec les dirigeants d&#39;Asie centrale</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/uzb.svg" alt="Ouzbékistan" title="Ouzbékistan" class="flag-icon">
+                            <a href="https://kun.uz/news/category/jahon" target="_blank" class="article-link">Le secrétaire d&#39;État américain Marco Rubio en visite dans cinq pays d&#39;Asie centrale en 2026</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kaz.svg" alt="Kazakhstan" title="Kazakhstan" class="flag-icon">
+                            <a href="https://tengrinews.kz/news/" target="_blank" class="article-link">Rubio a annoncé son voyage au Kazakhstan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kaz.svg" alt="Kazakhstan" title="Kazakhstan" class="flag-icon">
+                            <a href="https://tengrinews.kz/news/" target="_blank" class="article-link">L&#39;envoyé spécial de Trump a partagé ses impressions du voyage au Kazakhstan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/arm.svg" alt="Arménie" title="Arménie" class="flag-icon">
+                            <a href="https://armenpress.am/en/articles/world" target="_blank" class="article-link">Rubio prévoit de visiter cinq États d&#39;Asie centrale en 2026</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aze.svg" alt="Azerbaïdjan" title="Azerbaïdjan" class="flag-icon">
+                            <a href="https://en.trend.az/world/" target="_blank" class="article-link">Le format C5+1 comme carrefour d&#39;intérêts. Washington à la recherche de coopération, Kazakhstan pour l&#39;investissement</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Concurrence stratégique des États-Unis avec la Russie et la Chine en Asie centrale</h3>
+        <p class="cluster-description">Les États-Unis cherchent explicitement à contrer l&#39;influence russe et chinoise en Asie centrale, comme en témoigne les changements de politique tels que l&#39;abrogation de lois obsolètes limitant l&#39;engagement avec la région. Ce point de vue met en évidence la reconnaissance par Washington de l&#39;importance stratégique de l&#39;Asie centrale dans un contexte de compétition mondiale des puissances et de dynamiques de conflit régional, notamment la guerre de la Russie en Ukraine. La focalisation renouvelée des États-Unis sur l&#39;Asie centrale s&#39;inscrit dans un contexte plus large de rivalité entre grandes puissances pour sécuriser des intérêts politiques, économiques et sécuritaires dans cette zone géopolitique vitale.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ukr.svg" alt="Ukraine" title="Ukraine" class="flag-icon">
+                            <a href="https://www.kyivpost.com/category/world" target="_blank" class="article-link">Les États-Unis rejoignent le &#39;jeu des grandes puissances&#39; en Asie centrale, abandonnant des décennies de &#39;négligence&#39;</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Engagement diplomatique actif des dirigeants d\u0027Asie centrale",
+                color: "#72e5ac",
+                data: [ {"id": "KG"},  {"id": "RU"},  {"id": "TJ"},  {"id": "TM"} ]
+            },
+        
+            {
+                name: "Les responsables am\u00e9ricains promeuvent un partenariat strat\u00e9gique et une influence r\u00e9gionale",
+                color: "#bf72e5",
+                data: [ {"id": "AM"},  {"id": "KZ"},  {"id": "PK"},  {"id": "UZ"} ]
+            },
+        
+            {
+                name: "Concurrence strat\u00e9gique des \u00c9tats-Unis avec la Russie et la Chine en Asie centrale",
+                color: "#e5d272",
+                data: [ {"id": "UA"} ]
+            }
+        
+        
+            ,
+            {
+                name: "Plusieurs points de vue : \n- Engagement diplomatique actif des dirigeants d\u0027Asie centrale\n- Les responsables am\u00e9ricains promeuvent un partenariat strat\u00e9gique et une influence r\u00e9gionale",
+                color: "#AAAAAA",
+                data: [{"id": "AZ"}]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Masquer les sources ▲' : 'Montrer les sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li>
+               <a href="/">Actus </a>
+            </li>
+            <li>
+              <a href="/fr/2025-11-06/country_counts.html">Pays</a>
+            </li>
+            <li>
+              <a href="/fr/2025-11-06/labels.html">Thèmes</a>
+            </li>
+            <li>
+              <a href="/fr/about.html">A Propos</a>
+            </li>
+            <li>
+              <a href="/fr/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
