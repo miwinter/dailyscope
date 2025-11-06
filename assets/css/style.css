@@ -6602,9 +6602,53 @@ button.close-menu{
   text-overflow: ellipsis; /* ajoute "..." à la fin */
 }
 
+/* === MAJ Bandeau date + ticker === */
+
+.breaking-news-divs {
+    border: 1px solid #e9e6e6;
+    width: 100%;
+    min-height: 40px;
+    display: flex;          /* on force bien le flex */
+    align-items: center;
+    overflow: hidden;       /* rien ne dépasse du cadre */
+}
+
+/* Bloc rouge de la date : s'adapte au texte */
+.breaking-news-divs .letf {
+    background-color: #E64833;
+    color: #fff;
+	width: auto;
+    padding: 10px 10px;        /* marge horizontale autour du texte */
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;         /* largeur = contenu, pas de % fixe */
+}
+
+/* On s'assure que la date reste sur une ligne */
+.breaking-news-divs .letf h5 {
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* Zone du ticker à droite : prend tout le reste */
+.slide-section {
+    display: block;         /* plus besoin de inline-block */
+    flex: 1 1 0;            /* s'étire sur l'espace restant */
+    min-width: 0;           /* autorise le shrink, évite le débordement */
+}
+
+/* Le wrapper continue de cacher ce qui dépasse à l'intérieur */
+.ticker-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Utilisé pour les sous titres sur labels et country */
 .section-subtitle .legend-note {
   font-style: italic;
   font-size: 12px;
-  line-height: 12px;      /* ici on peut serrer */
-  display: inline-block;  /* voire block si tu préfères */
+  line-height: 12px;      
+  display: inline-block;  
 }
