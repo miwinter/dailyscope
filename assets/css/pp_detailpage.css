@@ -45,7 +45,7 @@ body {
 
 .header-content {
     width: 100%;
-    padding: 20px 0 0 20px;;
+    padding: 20px 20px 0 20px;;
     background-color: #f8f9fa;
 }
 
@@ -325,6 +325,9 @@ img.main-image {
 
 /* Gouttière commune pour aligner header-content et cluster-description */
 :root { --ds-gutter-x: 20px; }
+
+/* header-content a déjà un padding: 20px; on précise gauche/droite via la variable */
+.header-content { padding: 20px var(--ds-gutter-x); }  /* aligné sur desktop */
 
 /* Applique la même gouttière au bloc des clusters (texte et listes) */
 .cluster-section { padding: 0 var(--ds-gutter-x); }    /* aligne le <p class="cluster-description"> */

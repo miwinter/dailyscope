@@ -1,0 +1,474 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Plusieurs observations de drones entraînent la fermeture d&#39;aéroports en Belgique en raison de préoccupations de sécurité</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/fr', '/en');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>                 
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/">Actus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2025-11-05/country_counts.html">Pays</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2025-11-05/labels.html">Thèmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Plusieurs observations de drones entraînent la fermeture d&#39;aéroports en Belgique en raison de préoccupations de sécurité</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-11-05</span> • <span>19 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-11-05/2025-11-05-9.webp" alt="Plusieurs observations de drones entraînent la fermeture d&#39;aéroports en Belgique en raison de préoccupations de sécurité" class="main-image">
+                <p style="margin:0" class="chapitre">Une série de observations non autorisées de drones au-dessus des aéroports de Bruxelles et Liège ont entraîné plusieurs fermetures temporaires, provoquant d&#39;importantes annulations de vols et des perturbations dans le trafic aérien belge. Les autorités de plusieurs pays indiquent un renforcement des mesures de sécurité et des enquêtes en cours pour identifier les opérateurs de drones et prévenir de futurs incidents. Les perspectives varient quant à l&#39;origine et aux motivations des incursions de drones, certains les attribuant à des tensions géopolitiques plus larges, notamment liées au conflit Ukraine-Russie, tandis que d&#39;autres se concentrent sur la menace croissante d&#39;espions ou de drones de surveillance près d&#39;infrastructures critiques. Ces incidents ont suscité une inquiétude généralisée quant à la vulnérabilité des aéroports et aux défis de la régulation de l&#39;activité des drones dans l&#39;espace aérien sensible. Les pays soulignent la nécessité de renforcer les protocoles de sécurité et la coopération internationale pour faire face aux menaces aériennes émergentes.</p>
+            </div>
+            <h2>Les pays qui en parlent</h2>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Les Pays-Bas et Voisins Se Concentrent sur l&#39;Impact Immédiat de la Sécurité</h3>
+        <p class="cluster-description">Des articles en France, au Luxembourg, en Suisse, au Portugal, au Danemark, en Espagne, en Lituanie et en Slovénie mettent en évidence l&#39;impact opérationnel immédiat des observations de drones sur la fermeture des aéroports et les perturbations des vols. Ils détaillent les annulations, les détournements de vols et le renforcement des mesures de sécurité aéroportuaire, soulignant les désagréments civils et la nécessité d&#39;une réponse rapide. Ces sources reconnaissent les enquêtes en cours mais se concentrent principalement sur la perturbation causée et les protocoles de sécurité aéroportuaire mis en place.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lux.svg" alt="Luxembourg" title="Luxembourg" class="flag-icon">
+                            <a href="https://www.tageblatt.lu/headlines/" target="_blank" class="article-link">Observation de drone qui interrompt temporairement le trafic aérien à Bruxelles</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fra.svg" alt="France" title="France" class="flag-icon">
+                            <a href="https://www.lefigaro.fr/international/" target="_blank" class="article-link">Aéroports de Bruxelles et de Liège paralysés après la détection d&#39;un drone</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/che.svg" alt="Suisse" title="Suisse" class="flag-icon">
+                            <a href="https://www.letemps.ch/monde" target="_blank" class="article-link">Des dizaines de vols annulés en Belgique en raison de drones perturbant le trafic aérien</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svn.svg" alt="Slovénie" title="Slovénie" class="flag-icon">
+                            <a href="https://www.delo.si/novice/svet" target="_blank" class="article-link">Intrusion dans l&#39;espace aérien : aéroports de Bruxelles et de Liège fermés en raison de drones</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svn.svg" alt="Slovénie" title="Slovénie" class="flag-icon">
+                            <a href="https://www.dnevnik.si/svet" target="_blank" class="article-link">Aéroport belge fermé en raison d&#39;une observation de drone</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ltu.svg" alt="Lituanie" title="Lituanie" class="flag-icon">
+                            <a href="https://www.lrytas.lt/pasaulis" target="_blank" class="article-link">Aéroport de Bruxelles à nouveau fermé : drones repérés</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ltu.svg" alt="Lituanie" title="Lituanie" class="flag-icon">
+                            <a href="https://www.delfi.lt/news/daily/world/" target="_blank" class="article-link">Drones perturbent les opérations à l&#39;aéroport belge</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/esp.svg" alt="Espagne" title="Espagne" class="flag-icon">
+                            <a href="https://elpais.com/internacional/" target="_blank" class="article-link">Les observations de drones entraînent des fermetures temporaires d&#39;aéroports en Belgique</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dnk.svg" alt="Danemark" title="Danemark" class="flag-icon">
+                            <a href="https://nyheder.tv2.dk/udland" target="_blank" class="article-link">Deux aéroports belges ferment après des signalements de drones</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/prt.svg" alt="Portugal" title="Portugal" class="flag-icon">
+                            <a href="https://www.publico.pt/mundo" target="_blank" class="article-link">L&#39;aéroport de Bruxelles ferme l&#39;espace aérien en raison de la présence de drones</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72cbe5; padding: 8px 16px; border-radius: 4px;">Point de vue du Kosovo sur les menaces persistantes de drones espions</h3>
+        <p class="cluster-description">Les articles sur le Kosovo décrivent un récit où les incursions de drones sont continues, avec un accent sur les opérateurs inconnus et les motifs derrière l&#39;activité de drones espions. La situation est présentée comme un défi de sécurité persistant nécessitant une enquête approfondie et de la prudence jusqu&#39;à ce que la menace puisse être neutralisée. Cette perspective met en évidence l&#39;incertitude entourant l&#39;utilisation de drones pour l&#39;espionnage et le risque continu pour l&#39;aviation civile.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kos.svg" alt="KOS" title="KOS" class="flag-icon">
+                            <a href="https://www.koha.net/bote" target="_blank" class="article-link">Les drones espions continuent de maintenir les aéroports belges fermés</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kos.svg" alt="KOS" title="KOS" class="flag-icon">
+                            <a href="https://www.rtklive.com/sq/news-category.php?CatID=10" target="_blank" class="article-link">Aéroport de Bruxelles fermé après des signalements de drones</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #7279e5; padding: 8px 16px; border-radius: 4px;">L&#39;Ukraine et l&#39;Italie relient l&#39;activité de drones au conflit Ukraine-Russie</h3>
+        <p class="cluster-description">L&#39;Ukraine et l&#39;Italie évoquent les observations de drones dans le contexte des tensions géopolitiques régionales, suggérant que les menaces de drones sur les aéroports belges pourraient être une extension de la guerre Ukraine-Russie. Leur point de vue souligne les implications pour la sécurité internationale et l&#39;utilisation potentielle des drones comme instruments de conflit ou de surveillance s&#39;étendant dans l&#39;espace aérien européen. Ce cadre appelle à des efforts coordonnés de défense et de surveillance en tenant compte de l&#39;impact plus large du conflit.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ita.svg" alt="Italie" title="Italie" class="flag-icon">
+                            <a href="https://www.repubblica.it/esteri/" target="_blank" class="article-link">De nouveaux drones provoquent la fermeture des aéroports en Belgique en pleine crise Ukraine-Russie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ukr.svg" alt="Ukraine" title="Ukraine" class="flag-icon">
+                            <a href="https://kyivindependent.com/" target="_blank" class="article-link">La Belgique ferme l&#39;aéroport de Bruxelles en raison d&#39;une observation suspecte de drone</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #bf72e5; padding: 8px 16px; border-radius: 4px;">La perspective francophone belge met en évidence l&#39;ampleur des perturbations de vol</h3>
+        <p class="cluster-description">L&#39;article français met en lumière l&#39;ampleur des perturbations opérationnelles avec des détails sur le nombre de vols annulés et les aéroports affectés en Belgique. Il reflète les préoccupations nationales concernant la sécurité aérienne et l&#39;efficacité des mécanismes de réponse. Ce point de vue souligne les conséquences sociétales et économiques de la paralysie des aéroports causée par les drones en Belgique.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ca-qc.svg" alt="CA-QC" title="CA-QC" class="flag-icon">
+                            <a href="https://www.journaldequebec.com/actualite/monde" target="_blank" class="article-link">Les drones perturbent la circulation aérienne en Belgique, annulant environ 80 vols</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e572b8; padding: 8px 16px; border-radius: 4px;">La perspective serbe met en évidence les risques de sécurité près des sites militaires sensibles</h3>
+        <p class="cluster-description">La couverture serbe souligne les observations de drones près d&#39;installations hautement sensibles, y compris les sites de stockage d&#39;armes nucléaires américains, augmentant le niveau de menace, passant du simple dérangement à des risques de sécurité potentiellement graves. Elle détaille d&#39;importantes annulations de vols liées à ces incursions et souligne les actions de précaution urgentes des autorités. Cette situation présente ces incidents comme une source de panique et un défi critique pour la sécurité nationale et internationale.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/srb.svg" alt="Serbie" title="Serbie" class="flag-icon">
+                            <a href="https://www.politika.rs/scc/svet" target="_blank" class="article-link">Aéroport de Bruxelles fermé temporairement deux fois en raison de signalements de drones</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/srb.svg" alt="Serbie" title="Serbie" class="flag-icon">
+                            <a href="https://www.blic.rs/vesti/svet" target="_blank" class="article-link">Panique à Bruxelles : les opérations aéroportuaires arrêtées deux fois, près de 30 vols annulés après que des drones ont survolé le stockage d&#39;armes nucléaires américains</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e57f72; padding: 8px 16px; border-radius: 4px;">Préoccupations saoudiennes et internationales plus larges concernant les menaces de drones</h3>
+        <p class="cluster-description">L&#39;Arabie saoudite et d&#39;autres sources internationales présentent les observations de drones comme faisant partie d&#39;une inquiétude mondiale croissante concernant l&#39;interférence des véhicules aériens sans pilote dans l&#39;aviation commerciale. L&#39;accent est mis sur les auteurs et motifs inconnus, la nécessité de renforcer la réglementation, et les implications de sécurité plus larges pour les aéroports du monde entier. Ces perspectives attirent l&#39;attention sur le défi universel posé par les drones à la sécurité aérienne et appellent à une vigilance internationale.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sau.svg" alt="Arabie Saoudite" title="Arabie Saoudite" class="flag-icon">
+                            <a href="https://saudigazette.com.sa/World" target="_blank" class="article-link">Les soupçons d&#39;observations de drones perturbent les vols dans les aéroports en Belgique</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Rapports régionaux francophones belges et flamands sur l&#39;incident initial</h3>
+        <p class="cluster-description">Le rapport francophone (FRO) se concentre sur la première observation de drone qui a déclenché la fermeture de l&#39;aéroport de Bruxelles. Il fournit un compte rendu de base des perturbations et des préoccupations de sécurité au début des événements. Ce point de vue pose le contexte pour les développements et réactions ultérieurs.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fro.svg" alt="FRO" title="FRO" class="flag-icon">
+                            <a href="https://www.in.fo/" target="_blank" class="article-link">Drone aperçu – Aéroport de Bruxelles fermé</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Les Pays-Bas et Voisins Se Concentrent sur l\u0027Impact Imm\u00e9diat de la S\u00e9curit\u00e9",
+                color: "#72e5ac",
+                data: [ {"id": "CH"},  {"id": "DK"},  {"id": "ES"},  {"id": "FR"},  {"id": "LT"},  {"id": "LU"},  {"id": "PT"},  {"id": "SI"} ]
+            },
+        
+            {
+                name: "Point de vue du Kosovo sur les menaces persistantes de drones espions",
+                color: "#72cbe5",
+                data: [ {"id": "XK"} ]
+            },
+        
+            {
+                name: "L\u0027Ukraine et l\u0027Italie relient l\u0027activit\u00e9 de drones au conflit Ukraine-Russie",
+                color: "#7279e5",
+                data: [ {"id": "IT"},  {"id": "UA"} ]
+            },
+        
+            {
+                name: "La perspective francophone belge met en \u00e9vidence l\u0027ampleur des perturbations de vol",
+                color: "#bf72e5",
+                data: [ {"id": ""} ]
+            },
+        
+            {
+                name: "La perspective serbe met en \u00e9vidence les risques de s\u00e9curit\u00e9 pr\u00e8s des sites militaires sensibles",
+                color: "#e572b8",
+                data: [ {"id": "RS"} ]
+            },
+        
+            {
+                name: "Pr\u00e9occupations saoudiennes et internationales plus larges concernant les menaces de drones",
+                color: "#e57f72",
+                data: [ {"id": "SA"} ]
+            },
+        
+            {
+                name: "Rapports r\u00e9gionaux francophones belges et flamands sur l\u0027incident initial",
+                color: "#e5d272",
+                data: [ {"id": "FO"} ]
+            }
+        
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Masquer les sources ▲' : 'Montrer les sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li>
+               <a href="/">Actus </a>
+            </li>
+            <li>
+              <a href="/fr/2025-11-05/country_counts.html">Pays</a>
+            </li>
+            <li>
+              <a href="/fr/2025-11-05/labels.html">Thèmes</a>
+            </li>
+            <li>
+              <a href="/fr/about.html">A Propos</a>
+            </li>
+            <li>
+              <a href="/fr/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -362,7 +362,8 @@ header{
 	margin-bottom:0;
 }
 .shorts-news-d1 .comon-slider-items p{
-	font-size: 14px;
+	font-size: 13px;
+	line-height: 15px;
 	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 .shorts-news-d1 .date-t{
@@ -437,10 +438,9 @@ header{
 	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 .content-div1 h5{
-	font-size: 16px;
+	font-size: 14px;
 	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
-
-	line-height: 22px;
+	line-height: 18px;
 
 
 	
@@ -974,8 +974,8 @@ footer hr{
 	justify-content: space-between;
 }
 .min-slider-st .titel-t p{
-	font-size: 20px;
-	line-height: 30px;
+	font-size: 16px;
+	line-height: 20px;
 	width: 50%;
 	font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
 	text-shadow: #000 1px 2px 5px;
@@ -6573,4 +6573,82 @@ button.close-menu{
     100% {
         transform: translate3d(-50%, 0, 0);
     }
+}
+
+/* Emerging Themes: garder le titre sur une seule ligne */
+.hilights-news .comon-sub-heading {
+    white-space: nowrap;   /* empêche le retour à la ligne */
+    width: auto;           /* laisse la largeur s’adapter au texte */
+    display: inline-block; /* garde le fond et le style du h2 */
+}
+/* Dominant Themes: garder le titre sur une seule ligne */
+.populers-sec-news .comon-sub-heading {
+    white-space: nowrap;   /* pas de retour à la ligne */
+    width: auto;           /* largeur adaptée au contenu */
+    display: inline-block; /* garde le fond et le style du h2 */
+}
+
+/* Date plus petite dans le titre */
+.theme-date {
+    font-size: 0.75em;     /* 75% de la taille du h2 */
+    font-weight: 400;      /* un peu plus léger que le reste */
+    opacity: 0.9;          /* optionnel : légèrement moins contrasté */
+}
+
+.limite-texte {
+  max-width: 30ch;      /* ~ 40 caractères de large */
+  white-space: nowrap;  /* tout sur une seule ligne */
+  overflow: hidden;     /* cache le surplus */
+  text-overflow: ellipsis; /* ajoute "..." à la fin */
+}
+
+/* === MAJ Bandeau date + ticker === */
+
+.breaking-news-divs {
+    border: 1px solid #e9e6e6;
+    width: 100%;
+    min-height: 40px;
+    display: flex;          /* on force bien le flex */
+    align-items: center;
+    overflow: hidden;       /* rien ne dépasse du cadre */
+}
+
+/* Bloc rouge de la date : s'adapte au texte */
+.breaking-news-divs .letf {
+    background-color: #E64833;
+    color: #fff;
+	width: auto;
+    padding: 10px 10px;        /* marge horizontale autour du texte */
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;         /* largeur = contenu, pas de % fixe */
+}
+
+/* On s'assure que la date reste sur une ligne */
+.breaking-news-divs .letf h5 {
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* Zone du ticker à droite : prend tout le reste */
+.slide-section {
+    display: block;         /* plus besoin de inline-block */
+    flex: 1 1 0;            /* s'étire sur l'espace restant */
+    min-width: 0;           /* autorise le shrink, évite le débordement */
+}
+
+/* Le wrapper continue de cacher ce qui dépasse à l'intérieur */
+.ticker-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Utilisé pour les sous titres sur labels et country */
+.section-subtitle .legend-note {
+  font-style: italic;
+  font-size: 12px;
+  line-height: 12px;      
+  display: inline-block;  
 }

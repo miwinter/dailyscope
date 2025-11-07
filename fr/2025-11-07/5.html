@@ -1,0 +1,414 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Typhon Kalmaegi Cause de Nombreuses Morts et Destructions aux Philippines et au Vietnam</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/fr', '/en');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>                 
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/">Actus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2025-11-07/country_counts.html">Pays</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2025-11-07/labels.html">Thèmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Typhon Kalmaegi Cause de Nombreuses Morts et Destructions aux Philippines et au Vietnam</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-11-07</span> • <span>25 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-11-07/2025-11-07-5.webp" alt="Typhon Kalmaegi Cause de Nombreuses Morts et Destructions aux Philippines et au Vietnam" class="main-image">
+                <p style="margin:0" class="chapitre">Le typhon Kalmaegi a causé de lourdes pertes humaines et d&#39;importants dégâts aux Philippines, avec un nombre de morts rapporté allant de 26 à près de 190, et de nombreuses personnes portées disparues. Les zones les plus touchées incluent les régions centrales et les provinces telles que Cebu, ce qui a conduit à la déclaration d&#39;états d&#39;urgence et à des opérations de secours massives. La tempête s&#39;est déplacée vers l&#39;ouest, atteignant le Vietnam où elle continue de provoquer des décès, des inondations et des destructions, bien que le nombre de morts y soit inférieur à celui des Philippines. Cet événement met en lumière la vulnérabilité croissante des pays d&#39;Asie du Sud-Est face aux phénomènes météorologiques extrêmes, exacerbés par le changement climatique, incitant les autorités à renforcer la préparation et la réponse. Les opérations de récupération et d&#39;aide sont en cours, mais des défis subsistent en raison de l&#39;ampleur et de la gravité de la catastrophe.</p>
+            </div>
+            <h2>Les pays qui en parlent</h2>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Focus vietnamien et régional sur l&#39;impact double et l&#39;urgence en cours</h3>
+        <p class="cluster-description">Des articles du Vietnam et de certaines sources internationales mettent en évidence la menace persistante posée par le typhon Kalmaegi alors qu&#39;il progresse des Philippines vers le Vietnam. Ils se concentrent sur le bilan des décès dépassant 140 aux Philippines ainsi que sur les décès supplémentaires et les personnes portées disparues au Vietnam. Ces récits soulignent les réponses d&#39;urgence en cours dans les deux pays, la trajectoire de la tempête et les implications régionales plus larges des événements météorologiques extrêmes répétés.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jor.svg" alt="Jordanie" title="Jordanie" class="flag-icon">
+                            <a href="https://www.jordantimes.com/news/world" target="_blank" class="article-link">Le typhon Kalmaegi frappe le Vietnam après avoir tué 140 aux Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sgp.svg" alt="Singapour" title="Singapour" class="flag-icon">
+                            <a href="https://www.straitstimes.com/global" target="_blank" class="article-link">Le typhon Kalmaegi apporte la destruction au Vietnam alors que le bilan des morts approche les 200 aux Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nld.svg" alt="Pays-Bas" title="Pays-Bas" class="flag-icon">
+                            <a href="https://nos.nl/" target="_blank" class="article-link">Le bilan des morts du typhon augmente aux Philippines, des pêcheurs portés disparus au Vietnam</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lao.svg" alt="Laos" title="Laos" class="flag-icon">
+                            <a href="http://www.vientianetimes.org.la/" target="_blank" class="article-link">Le bilan des morts aux Philippines dépasse 140 alors que le typhon se dirige vers le Vietnam</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/brb.svg" alt="Barbade" title="Barbade" class="flag-icon">
+                            <a href="https://nationnews.com/category/world/" target="_blank" class="article-link">Le typhon Kalmaegi touche terre au Vietnam après avoir tué 142 aux Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lux.svg" alt="Luxembourg" title="Luxembourg" class="flag-icon">
+                            <a href="https://www.wort.lu/fr/international" target="_blank" class="article-link">Le typhon Kalmaegi se dirige vers le Vietnam après avoir causé 140 morts aux Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/phl.svg" alt="Philippines" title="Philippines" class="flag-icon">
+                            <a href="https://www.philstar.com/world" target="_blank" class="article-link">Le typhon Kalmaegi frappe le Vietnam après avoir tué 140 aux Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgd.svg" alt="Bangladesh" title="Bangladesh" class="flag-icon">
+                            <a href="https://www.thedailystar.net/world" target="_blank" class="article-link">Le typhon mortel Kalmaegi ravage le Vietnam et les Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/npl.svg" alt="Népal" title="Népal" class="flag-icon">
+                            <a href="https://ekantipur.com/world" target="_blank" class="article-link">Le typhon Kalmaegi tue au moins trois personnes au Vietnam, 114 morts aux Philippines</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #bf72e5; padding: 8px 16px; border-radius: 4px;">Rapports centrés sur les Philippines mettant en évidence le bilan des morts et l&#39;état d&#39;urgence</h3>
+        <p class="cluster-description">Les sources proches ou axées sur les Philippines rapportent des comptes détaillés du nombre de morts dans le pays, allant largement mais citant principalement des chiffres entre 100 et près de 190 décès. La discussion inclut souvent des réactions gouvernementales telles que la déclaration d&#39;états d&#39;urgence ou de calamité et décrit l&#39;étendue des destructions causées par les inondations et les glissements de terrain. L&#39;accent est mis sur les opérations de sauvetage, les personnes disparues et la nécessité d&#39;améliorer la préparation aux catastrophes aux Philippines.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cog.svg" alt="République du Congo" title="République du Congo" class="flag-icon">
+                            <a href="https://www.mediacongo.net/articles-actualite-27_monde.html" target="_blank" class="article-link">Le typhon Kalmaegi cause au moins 26 morts</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vnm.svg" alt="Viêt Nam" title="Viêt Nam" class="flag-icon">
+                            <a href="https://vietnamnews.vn/world" target="_blank" class="article-link">Le typhon Kalmaegi laisse 66 morts aux Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kwt.svg" alt="Koweït" title="Koweït" class="flag-icon">
+                            <a href="https://kuwaittimes.com/world/" target="_blank" class="article-link">Le typhon aux Philippines tue plus de 40 personnes et en bloque des milliers</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bra.svg" alt="Brésil" title="Brésil" class="flag-icon">
+                            <a href="https://oglobo.globo.com/mundo/" target="_blank" class="article-link">Les Philippines enregistrent plus de 140 morts après le typhon Kalmaegi ; voir les vidéos</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pri.svg" alt="PRI" title="PRI" class="flag-icon">
+                            <a href="https://www.elnuevodia.com/noticias/mundo/" target="_blank" class="article-link">Le bilan des morts s&#39;élève à 114 et plus de 127 personnes sont portées disparues après le passage du typhon Kalmaegi aux Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lka.svg" alt="Sri Lanka" title="Sri Lanka" class="flag-icon">
+                            <a href="https://www.dailymirror.lk/world-news/213" target="_blank" class="article-link">Les Philippines déclarent l&#39;état de calamité alors que le bilan du typhon s&#39;élève à 114 morts</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mus.svg" alt="Maurice" title="Maurice" class="flag-icon">
+                            <a href="https://lexpress.mu/international" target="_blank" class="article-link">Le typhon Kalmaegi cause cinq morts après avoir frappé les Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/per.svg" alt="Pérou" title="Pérou" class="flag-icon">
+                            <a href="https://larepublica.pe/mundo/" target="_blank" class="article-link">Les Philippines rapportent au moins 140 morts et 127 disparus après le typhon Kalmaegi</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Perspectives internationales avec des chiffres de mortalité variés et des préoccupations en matière de préparation</h3>
+        <p class="cluster-description">Les médias internationaux issus de pays comme le Canada, l&#39;Australie, la France, les États-Unis et d&#39;autres fournissent une couverture résumant les dégâts et mentionnent souvent des chiffres de mortalité variables, généralement entre 66 et 140 décès. Leurs reportages insistent sur l&#39;ampleur de la catastrophe, les efforts de réponse et les implications du changement climatique sur la fréquence de tels typhons, reflétant une préoccupation mondiale plus large concernant la vulnérabilité de l&#39;Asie du Sud-Est face aux catastrophes naturelles induites par le climat.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aus.svg" alt="Australie" title="Australie" class="flag-icon">
+                            <a href="https://www.smh.com.au/world" target="_blank" class="article-link">Les Philippines déclarent l&#39;état d&#39;urgence alors que le typhon Kalmaegi laisse plus de 100 morts</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aus.svg" alt="Australie" title="Australie" class="flag-icon">
+                            <a href="https://www.abc.net.au/news/world" target="_blank" class="article-link">Le typhon Kalmaegi touche terre au Vietnam après avoir tué 188 aux Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fra.svg" alt="France" title="France" class="flag-icon">
+                            <a href="https://www.lemonde.fr/international/" target="_blank" class="article-link">Le typhon Kalmaegi cause cinq morts au Vietnam après avoir ravagé les Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/can.svg" alt="Canada" title="Canada" class="flag-icon">
+                            <a href="https://www.theglobeandmail.com/world/" target="_blank" class="article-link">Le typhon Kalmaegi laisse au moins 114 morts aux Philippines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/egy.svg" alt="Égypte" title="Égypte" class="flag-icon">
+                            <a href="https://www.egyptindependent.com/category/world/" target="_blank" class="article-link">Le typhon Kalmaegi tue au moins 66 personnes aux Philippines, en direction du Vietnam</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mus.svg" alt="Maurice" title="Maurice" class="flag-icon">
+                            <a href="https://lexpress.mu/international" target="_blank" class="article-link">Le bilan mortel du typhon Kalmaegi aux Philippines dépasse 90</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/usa.svg" alt="États-Unis" title="États-Unis" class="flag-icon">
+                            <a href="https://edition.cnn.com/world" target="_blank" class="article-link">Le typhon Kalmaegi s&#39;abattent sur le Vietnam après avoir déchaîné une destruction mortelle aux Philippines</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Focus vietnamien et r\u00e9gional sur l\u0027impact double et l\u0027urgence en cours",
+                color: "#72e5ac",
+                data: [ {"id": "BB"},  {"id": "BD"},  {"id": "JO"},  {"id": "LA"},  {"id": "LU"},  {"id": "NL"},  {"id": "NP"},  {"id": "PH"},  {"id": "SG"} ]
+            },
+        
+            {
+                name: "Rapports centr\u00e9s sur les Philippines mettant en \u00e9vidence le bilan des morts et l\u0027\u00e9tat d\u0027urgence",
+                color: "#bf72e5",
+                data: [ {"id": "BR"},  {"id": "CG"},  {"id": "KW"},  {"id": "LK"},  {"id": "PE"},  {"id": "PR"},  {"id": "VN"} ]
+            },
+        
+            {
+                name: "Perspectives internationales avec des chiffres de mortalit\u00e9 vari\u00e9s et des pr\u00e9occupations en mati\u00e8re de pr\u00e9paration",
+                color: "#e5d272",
+                data: [ {"id": "AU"},  {"id": "CA"},  {"id": "EG"},  {"id": "FR"},  {"id": "US"} ]
+            }
+        
+        
+            ,
+            {
+                name: "Plusieurs points de vue : \n- Rapports centr\u00e9s sur les Philippines mettant en \u00e9vidence le bilan des morts et l\u0027\u00e9tat d\u0027urgence\n- Perspectives internationales avec des chiffres de mortalit\u00e9 vari\u00e9s et des pr\u00e9occupations en mati\u00e8re de pr\u00e9paration",
+                color: "#AAAAAA",
+                data: [{"id": "MU"}]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Masquer les sources ▲' : 'Montrer les sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li>
+               <a href="/">Actus </a>
+            </li>
+            <li>
+              <a href="/fr/2025-11-07/country_counts.html">Pays</a>
+            </li>
+            <li>
+              <a href="/fr/2025-11-07/labels.html">Thèmes</a>
+            </li>
+            <li>
+              <a href="/fr/about.html">A Propos</a>
+            </li>
+            <li>
+              <a href="/fr/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,506 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Tensions croissantes entre les États-Unis et le Nigeria concernant une menace d&#39;action militaire</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/fr', '/en');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>                 
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/">Actus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2025-11-03/country_counts.html">Pays</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2025-11-03/labels.html">Thèmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Tensions croissantes entre les États-Unis et le Nigeria concernant une menace d&#39;action militaire</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-11-03</span> • <span>48 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-11-03/2025-11-03-4.webp" alt="Tensions croissantes entre les États-Unis et le Nigeria concernant une menace d&#39;action militaire" class="main-image">
+                <p style="margin:0" class="chapitre">L&#39;ancien président américain Donald Trump a à plusieurs reprises menacé d&#39;intervention militaire au Nigeria, citant les violences continues contre les chrétiens et l&#39;insurrection islamiste comme justification. Ces déclarations ont évoqué des possibilités de frappes aériennes, de déploiements de troupes et d&#39;actions militaires rapides visant à faire pression sur le gouvernement nigérian pour qu&#39;il agisse de manière plus décisive. Le Nigeria a fermement rejeté ces menaces, soulignant sa souveraineté et sa volonté de coopérer uniquement dans le respect de son intégrité territoriale. La situation a intensifié les tensions diplomatiques, attirant l&#39;attention internationale sur la violence religieuse et les défis sécuritaires au Nigeria. Les appels au dialogue et à une coopération mesurée persistent malgré la rhétorique d&#39;une éventuelle implication militaire.</p>
+            </div>
+            <h2>Les pays qui en parlent</h2>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Perspective des États-Unis : Menaces d&#39;intervention militaire pour protéger les chrétiens et lutter contre le terrorisme</h3>
+        <p class="cluster-description">Les États-Unis, représentés en grande partie par des déclarations de l&#39;ancien président Trump et d&#39;officiels associés, présentent l&#39;action militaire potentielle comme une réponse nécessaire aux assassinats en cours de chrétiens et à la menace posée par les groupes terroristes islamistes au Nigeria. Leur position met en avant la préparation à des mesures militaires rapides et fermes, y compris des frappes aériennes et le déploiement de troupes, destinées à faire pression sur le gouvernement nigérian pour qu&#39;il réduise la violence. Ce point de vue souligne les préoccupations des États-Unis concernant les droits de l&#39;homme, la sécurité régionale et la lutte contre le terrorisme au Nigeria, exprimant souvent leur frustration face à la réponse perçue comme insuffisante du Nigeria à ces enjeux.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgd.svg" alt="Bangladesh" title="Bangladesh" class="flag-icon">
+                            <a href="https://bdnews24.com/world" target="_blank" class="article-link">Trump dit qu&#39;il pourrait y avoir des frappes aériennes, des troupes américaines au sol au Nigeria</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pri.svg" alt="PRI" title="PRI" class="flag-icon">
+                            <a href="https://www.primerahora.com/noticias/mundo/" target="_blank" class="article-link">Trump menace d&#39;une action militaire au Nigeria</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/blr.svg" alt="Biélorussie" title="Biélorussie" class="flag-icon">
+                            <a href="https://www.belta.by/" target="_blank" class="article-link">Trump n&#39;a pas exclu la participation de troupes américaines dans une opération militaire au Nigeria</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ind.svg" alt="Inde" title="Inde" class="flag-icon">
+                            <a href="https://timesofindia.indiatimes.com/world" target="_blank" class="article-link">« Ils tuent des chrétiens en grand nombre » : Trump prévoit-il des frappes aériennes au Nigeria ? Ce que le président américain a dit</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/egy.svg" alt="Égypte" title="Égypte" class="flag-icon">
+                            <a href="https://www.egyptindependent.com/category/world/" target="_blank" class="article-link">Trump dit avoir ordonné au Pentagone de « se préparer à une action possible » au Nigeria</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fro.svg" alt="FRO" title="FRO" class="flag-icon">
+                            <a href="https://www.dimma.fo/" target="_blank" class="article-link">Trump menace d&#39;attaquer les émeutiers au Nigeria</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/guy.svg" alt="Guyana" title="Guyana" class="flag-icon">
+                            <a href="https://www.stabroeknews.com/news/world/" target="_blank" class="article-link">Trump dit qu&#39;il pourrait y avoir des troupes américaines au Nigeria ou des frappes aériennes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mne.svg" alt="Monténégro" title="Monténégro" class="flag-icon">
+                            <a href="https://www.vijesti.me/svijet" target="_blank" class="article-link">Trump dit qu&#39;il pourrait y avoir des troupes américaines au Nigeria ou des frappes aériennes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/npl.svg" alt="Népal" title="Népal" class="flag-icon">
+                            <a href="https://ekantipur.com/world" target="_blank" class="article-link">Trump ordonne au Pentagone de se préparer à une attaque possible au Nigeria</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/usa.svg" alt="États-Unis" title="États-Unis" class="flag-icon">
+                            <a href="https://abcnews.go.com/International" target="_blank" class="article-link">Trump menace une éventuelle action militaire contre le Nigeria</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mex.svg" alt="Mexique" title="Mexique" class="flag-icon">
+                            <a href="https://www.jornada.com.mx/categoria/mundo" target="_blank" class="article-link">Trump dit qu&#39;il envisage toutes sortes d&#39;opérations militaires au Nigeria</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/esp.svg" alt="Espagne" title="Espagne" class="flag-icon">
+                            <a href="https://elpais.com/internacional/" target="_blank" class="article-link">Trump menace le Nigeria d&#39;une action militaire pour la &#34;tuerie&#34; des chrétiens</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/est.svg" alt="Estonie" title="Estonie" class="flag-icon">
+                            <a href="https://www.delfi.ee/kategooria/123/maailm" target="_blank" class="article-link">Trump a menacé d&#39;une action militaire contre le Nigeria pour la persécution présumée des chrétiens</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sen.svg" alt="Sénégal" title="Sénégal" class="flag-icon">
+                            <a href="https://www.senenews.com/category/actualites/international" target="_blank" class="article-link">Donald Trump menace d&#39;une action militaire contre le Nigeria pour les tueries de chrétiens</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dnk.svg" alt="Danemark" title="Danemark" class="flag-icon">
+                            <a href="https://politiken.dk/udland/" target="_blank" class="article-link">Trump menace d&#39;intervenir au Nigeria</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pak.svg" alt="Pakistan" title="Pakistan" class="flag-icon">
+                            <a href="https://www.thenews.com.pk/latest/category/world" target="_blank" class="article-link">Trump laisse entendre que les États-Unis &#34;pourraient&#34; envoyer des troupes ou lancer des frappes aériennes au Nigeria</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nld.svg" alt="Pays-Bas" title="Pays-Bas" class="flag-icon">
+                            <a href="https://www.telegraaf.nl/nieuws/buitenland" target="_blank" class="article-link">Trump menace le Nigeria d&#39;une action militaire pour les &#34;meurtres de chrétiens&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nld.svg" alt="Pays-Bas" title="Pays-Bas" class="flag-icon">
+                            <a href="https://nos.nl/" target="_blank" class="article-link">Trump menace une action militaire contre les terroristes au Nigeria</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pol.svg" alt="Pologne" title="Pologne" class="flag-icon">
+                            <a href="https://wyborcza.pl/0,0.html?disableRedirects=true" target="_blank" class="article-link">Trump menace d&#39;une intervention militaire au Nigeria. &#34;Le gouvernement doit agir rapidement&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pol.svg" alt="Pologne" title="Pologne" class="flag-icon">
+                            <a href="https://www.rp.pl/temat/swiat" target="_blank" class="article-link">Donald Trump commente à nouveau les missiles Tomahawk et les frappes aériennes au Nigeria</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cze.svg" alt="République tchèque" title="République tchèque" class="flag-icon">
+                            <a href="https://www.idnes.cz/zpravy/zahranicni" target="_blank" class="article-link">Trump exige des plans militaires contre le Nigeria en raison des tueries de chrétiens</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svn.svg" alt="Slovénie" title="Slovénie" class="flag-icon">
+                            <a href="https://www.dnevnik.si/svet" target="_blank" class="article-link">Trump menace le Nigeria : « Si nous attaquons, ce sera rapide, cruel et impitoyable »</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/can.svg" alt="Canada" title="Canada" class="flag-icon">
+                            <a href="https://www.theglobeandmail.com/world/" target="_blank" class="article-link">Trump menace d&#39;une attaque militaire contre le Nigeria en réponse à la persécution présumée des chrétiens</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mli.svg" alt="Mali" title="Mali" class="flag-icon">
+                            <a href="https://www.maliweb.net/category/international" target="_blank" class="article-link">« Anéantir les terroristes islamistes » : Trump menace d&#39;une opération militaire au Nigeria</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mnp.svg" alt="MNP" title="MNP" class="flag-icon">
+                            <a href="https://www.mvariety.com/news/regional_world/" target="_blank" class="article-link">Trump menace d&#39;une action militaire américaine contre le Nigeria à cause du traitement réservé aux chrétiens</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mrt.svg" alt="Mauritanie" title="Mauritanie" class="flag-icon">
+                            <a href="https://cridem.org/" target="_blank" class="article-link">Donald Trump menace d&#39;une action militaire contre le Nigeria à cause des tueries de chrétiens</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hrv.svg" alt="Croatie" title="Croatie" class="flag-icon">
+                            <a href="https://www.vecernji.hr/vijesti/svijet" target="_blank" class="article-link">En moyenne 32 chrétiens tués chaque jour, Trump menace d&#39;attaquer le Nigeria</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cri.svg" alt="Costa Rica" title="Costa Rica" class="flag-icon">
+                            <a href="https://www.nacion.com/el-mundo/" target="_blank" class="article-link">Trump envisage tous types d&#39;opérations militaires au Nigeria</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jpn.svg" alt="Japon" title="Japon" class="flag-icon">
+                            <a href="https://www.yomiuri.co.jp/world/" target="_blank" class="article-link">Le président Trump affirme que le gouvernement nigérian permet la persécution des chrétiens, et met en garde contre une action militaire</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cyp.svg" alt="Chypre" title="Chypre" class="flag-icon">
+                            <a href="https://cyprus-mail.com/category/world/" target="_blank" class="article-link">Trump dit qu&#39;il pourrait envoyer des troupes au Nigeria pour arrêter « le massacre des chrétiens »</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mng.svg" alt="Mongolie" title="Mongolie" class="flag-icon">
+                            <a href="https://montsame.mn/mn/more/17" target="_blank" class="article-link">Donald Trump n&#39;exclut pas d&#39;opérations militaires au Nigeria</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ago.svg" alt="Angola" title="Angola" class="flag-icon">
+                            <a href="https://www.opais.ao/categoria/mundo/" target="_blank" class="article-link">Les États-Unis menacent d&#39;&#34;envahir&#34; le Nigeria si les meurtres de chrétiens se poursuivent</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kwt.svg" alt="Koweït" title="Koweït" class="flag-icon">
+                            <a href="https://kuwaittimes.com/world/" target="_blank" class="article-link">Trump menace d&#39;attaques militaires au Nigeria en raison du traitement des chrétiens</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kwt.svg" alt="Koweït" title="Koweït" class="flag-icon">
+                            <a href="https://www.aljarida.com/%D8%AF%D9%88%D9%84%D9%8A%D8%A7%D8%AA" target="_blank" class="article-link">Trump menace le Nigeria d&#39;&#34;guerre religieuse&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/twn.svg" alt="TWN" title="TWN" class="flag-icon">
+                            <a href="https://www.taipeitimes.com/News/world" target="_blank" class="article-link">Trump menace d&#39;actions militaires au Nigeria à cause des tueries</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nam.svg" alt="Namibie" title="Namibie" class="flag-icon">
+                            <a href="https://www.namibian.com.na/category/news/politics/" target="_blank" class="article-link">Trump dit à l&#39;armée de se préparer à une &#34;action&#34; contre les militants islamistes au Nigeria</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Perspective nigériane : Souveraineté et coopération conditionnelle avec l&#39;aide militaire des États-Unis</h3>
+        <p class="cluster-description">Le gouvernement nigérian rejette la légitimité et la faisabilité des actions militaires unilatérales des États-Unis, affirmant l&#39;inviolabilité de sa souveraineté et de son intégrité territoriale. Le Nigeria exprime son ouverture à l&#39;aide des États-Unis dans la lutte contre les insurgés islamistes, mais souligne que cette coopération doit respecter son autorité nationale et être menée par le dialogue. Les responsables nigérians ont condamné la rhétorique américaine comme étant source d&#39;escalade des tensions diplomatiques et ont appelé à des approches respectueuses et basées sur le partenariat pour traiter les conflits internes. L&#39;accent est mis sur la gestion des défis sécuritaires sans intervention militaire extérieure qui pourrait compromettre l&#39;autonomie du Nigeria.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gbr.svg" alt="Royaume-Uni" title="Royaume-Uni" class="flag-icon">
+                            <a href="https://news.sky.com/world" target="_blank" class="article-link">Nigeria répond à la menace d&#39;action militaire de Trump</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sxm.svg" alt="SXM" title="SXM" class="flag-icon">
+                            <a href="https://www.thedailyherald.sx/" target="_blank" class="article-link">Nigeria affirme que l&#39;aide des États-Unis contre les insurgés islamistes doit respecter sa souveraineté</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irq.svg" alt="Irak" title="Irak" class="flag-icon">
+                            <a href="https://www.shafaq.com/ar/%D8%B9%D8%B1%D8%A8%D9%8A-%D9%88%D8%AF%D9%88%D9%84%D9%8A" target="_blank" class="article-link">Nigeria répond à la menace militaire de Trump : elle ne peut pas être mise en œuvre</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nld.svg" alt="Pays-Bas" title="Pays-Bas" class="flag-icon">
+                            <a href="https://www.telegraaf.nl/nieuws/buitenland" target="_blank" class="article-link">Le président nigérian prêt à rencontrer Trump après la menace militaire concernant les attaques contre les chrétiens</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/zmb.svg" alt="Zambie" title="Zambie" class="flag-icon">
+                            <a href="https://zambianobserver.com/category/world/" target="_blank" class="article-link">Le président nigérian veut rencontrer Trump après la menace militaire</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/zmb.svg" alt="Zambie" title="Zambie" class="flag-icon">
+                            <a href="https://www.zambiamonitor.com/category/international/" target="_blank" class="article-link">Le président Trump ordonne au Pentagone de « se préparer à une action possible » au Nigeria</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/can.svg" alt="Canada" title="Canada" class="flag-icon">
+                            <a href="https://www.theglobeandmail.com/world/" target="_blank" class="article-link">Les États-Unis doivent respecter la souveraineté nigériane dans la lutte contre les insurgés islamistes, déclare le gouvernement</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cyp.svg" alt="Chypre" title="Chypre" class="flag-icon">
+                            <a href="https://cyprus-mail.com/category/world/" target="_blank" class="article-link">Nigeria affirme que l&#39;aide des États-Unis contre les insurgés islamistes doit respecter sa souveraineté</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/arg.svg" alt="Argentine" title="Argentine" class="flag-icon">
+                            <a href="https://www.lanacion.com.ar/el-mundo" target="_blank" class="article-link">Nigeria exige le respect de sa souveraineté après la menace de Trump</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Perspective des \u00c9tats-Unis : Menaces d\u0027intervention militaire pour prot\u00e9ger les chr\u00e9tiens et lutter contre le terrorisme",
+                color: "#72e5ac",
+                data: [ {"id": "AO"},  {"id": "BD"},  {"id": "BY"},  {"id": "CR"},  {"id": "CZ"},  {"id": "DK"},  {"id": "EE"},  {"id": "EG"},  {"id": "ES"},  {"id": "FO"},  {"id": "GY"},  {"id": "HR"},  {"id": "IN"},  {"id": "JP"},  {"id": "KW"},  {"id": "ME"},  {"id": "ML"},  {"id": "MN"},  {"id": "MP"},  {"id": "MR"},  {"id": "MX"},  {"id": "NA"},  {"id": "NP"},  {"id": "PK"},  {"id": "PL"},  {"id": "PR"},  {"id": "SI"},  {"id": "SN"},  {"id": "TW"},  {"id": "US"} ]
+            },
+        
+            {
+                name: "Perspective nig\u00e9riane : Souverainet\u00e9 et coop\u00e9ration conditionnelle avec l\u0027aide militaire des \u00c9tats-Unis",
+                color: "#e5d272",
+                data: [ {"id": "AR"},  {"id": "GB"},  {"id": "IQ"},  {"id": "SX"},  {"id": "ZM"} ]
+            }
+        
+        
+            ,
+            {
+                name: "Plusieurs points de vue : \n- Perspective des \u00c9tats-Unis : Menaces d\u0027intervention militaire pour prot\u00e9ger les chr\u00e9tiens et lutter contre le terrorisme\n- Perspective nig\u00e9riane : Souverainet\u00e9 et coop\u00e9ration conditionnelle avec l\u0027aide militaire des \u00c9tats-Unis",
+                color: "#AAAAAA",
+                data: [{"id": "CA"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Perspective des \u00c9tats-Unis : Menaces d\u0027intervention militaire pour prot\u00e9ger les chr\u00e9tiens et lutter contre le terrorisme\n- Perspective nig\u00e9riane : Souverainet\u00e9 et coop\u00e9ration conditionnelle avec l\u0027aide militaire des \u00c9tats-Unis",
+                color: "#AAAAAA",
+                data: [{"id": "CY"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Perspective des \u00c9tats-Unis : Menaces d\u0027intervention militaire pour prot\u00e9ger les chr\u00e9tiens et lutter contre le terrorisme\n- Perspective nig\u00e9riane : Souverainet\u00e9 et coop\u00e9ration conditionnelle avec l\u0027aide militaire des \u00c9tats-Unis",
+                color: "#AAAAAA",
+                data: [{"id": "NL"}]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Masquer les sources ▲' : 'Montrer les sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li>
+               <a href="/">Actus </a>
+            </li>
+            <li>
+              <a href="/fr/2025-11-03/country_counts.html">Pays</a>
+            </li>
+            <li>
+              <a href="/fr/2025-11-03/labels.html">Thèmes</a>
+            </li>
+            <li>
+              <a href="/fr/about.html">A Propos</a>
+            </li>
+            <li>
+              <a href="/fr/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

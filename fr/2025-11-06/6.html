@@ -1,0 +1,412 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Perspectives internationales sur la montée des crimes de guerre et de la crise humanitaire au Soudan</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/fr', '/en');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>                 
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/">Actus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2025-11-06/country_counts.html">Pays</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2025-11-06/labels.html">Thèmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Perspectives internationales sur la montée des crimes de guerre et de la crise humanitaire au Soudan</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-11-06</span> • <span>25 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-11-06/2025-11-06-6.webp" alt="Perspectives internationales sur la montée des crimes de guerre et de la crise humanitaire au Soudan" class="main-image">
+                <p style="margin:0" class="chapitre">Les articles dressent un tableau sombre du conflit armé en cours au Soudan, marqué par des crimes de guerre importants tels que des massacres de masse, des attaques contre des civils et une violence sexuelle généralisée. Les événements clés impliquent un puissant chef de guerre contrôlant de vastes territoires et des attaques meurtrières comme le massacre lors des funérailles au Kordofan, causant une quarantaine de morts. Des images satellites ont révélé des fosses communes et des atrocités, renforçant les appels à des enquêtes internationales. L&#39;ONU et plusieurs nations insistent sur une intervention humanitaire urgente, la condamnation de la violence et des débats sur les réponses collectives. Les femmes et les civils supportent le poids de la crise, avec des déplacements massifs et de graves souffrances humaines soulignant la détérioration de la sécurité et de la gouvernance.</p>
+            </div>
+            <h2>Les pays qui en parlent</h2>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Les acteurs régionaux mettent en avant la dynamique du pouvoir et le contrôle local</h3>
+        <p class="cluster-description">Des articles provenant de sources argentines et namibiennes se concentrent sur la montée d&#39;un chef de guerre dominant, qui est passé d&#39;activités économiques telles que le commerce de chameaux et d&#39;or à la prise de contrôle de la moitié du Soudan. Cette perspective met en lumière les luttes de pouvoir internes façonnant le conflit, illustrant comment les influences économiques et militaires interagissent dans le paysage politique fracturé du Soudan. Ces récits se concentrent principalement sur les changements de leadership locaux et leurs implications pour les troubles civils en cours.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/arg.svg" alt="Argentine" title="Argentine" class="flag-icon">
+                            <a href="https://www.lanacion.com.ar/el-mundo" target="_blank" class="article-link">Une figure dominante : devenue riche grâce aux chameaux et à l&#39;or, ses forces contrôlent maintenant la moitié du Soudan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nam.svg" alt="Namibie" title="Namibie" class="flag-icon">
+                            <a href="https://www.namibian.com.na/category/news/politics/" target="_blank" class="article-link">Il a fait fortune en vendant des chameaux et de l&#39;or. Maintenant, ce chef de guerre contrôle la moitié du Soudan</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #bf72e5; padding: 8px 16px; border-radius: 4px;">Les Nations Unies et les Organisations Internationales mettent en lumière les atrocités des droits de l&#39;homme</h3>
+        <p class="cluster-description">Les rapports provenant de sources suisses, mexicaines, chinoises, rwandaises, bahreïnies, pakistanaises, américaines et bangladaises documentent de manière cohérente des atrocités de masse, y compris des fosses communes, des attaques contre des civils et des bilans mortels importants dans des régions telles qu&#39;Al-Fashir et Kordofan. Le rôle de l&#39;ONU dans la convocation de sessions d&#39;urgence, l&#39;émission d&#39;avertissements et la tenue de réunions du Conseil de sécurité souligne son attention à une réponse internationale coordonnée et à la responsabilité. Ces récits insistent sur la gravité des souffrances humanitaires, la nécessité d&#39;enquêtes et les mécanismes juridiques internationaux contre les crimes de guerre.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/che.svg" alt="Suisse" title="Suisse" class="flag-icon">
+                            <a href="https://www.letemps.ch/monde" target="_blank" class="article-link">Au Conseil des droits de l&#39;homme de l&#39;ONU à Genève, en quête d&#39;une réponse aux atrocités au Soudan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vat.svg" alt="Saint-Siège" title="Saint-Siège" class="flag-icon">
+                            <a href="https://www.osservatoreromano.va/it/sections/internazionale.html" target="_blank" class="article-link">Violent attaque lors d&#39;obsèques au Soudan : 40 morts</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/afg.svg" alt="Afghanistan" title="Afghanistan" class="flag-icon">
+                            <a href="https://tolonews.com/world" target="_blank" class="article-link">Rapport sur les atrocités massives signalées à Al-Fashir alors que le conflit soudanais s&#39;intensifie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hkg.svg" alt="HKG" title="HKG" class="flag-icon">
+                            <a href="https://www.scmp.com/news/world" target="_blank" class="article-link">Fosses communes, taches de sang : des images satellites pointent vers des horreurs dans la ville soudanaise saisie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sdn.svg" alt="Soudan" title="Soudan" class="flag-icon">
+                            <a href="https://www.dabangasudan.org/ar/all-news/category/news/politics" target="_blank" class="article-link">Émirats arabes unis et Égypte soutiennent les efforts de l&#39;alliance quadruple ; le Royaume-Uni appelle à une réunion du Conseil de sécurité</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sdn.svg" alt="Soudan" title="Soudan" class="flag-icon">
+                            <a href="https://www.dabangasudan.org/ar/all-news/category/news/politics" target="_blank" class="article-link">Le Conseil des droits de l&#39;homme de l&#39;ONU tiendra une session d&#39;urgence sur Al-Fashir et les zones environnantes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mex.svg" alt="Mexique" title="Mexique" class="flag-icon">
+                            <a href="https://www.jornada.com.mx/categoria/mundo" target="_blank" class="article-link">Des images satellites révèlent des atrocités après une attaque paramilitaire au Soudan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/rwa.svg" alt="Rwanda" title="Rwanda" class="flag-icon">
+                            <a href="https://www.newtimes.co.rw/international" target="_blank" class="article-link">L&#39;ONU met en garde contre une violence « qui s&#39;aggrave » au Soudan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/chn.svg" alt="Chine" title="Chine" class="flag-icon">
+                            <a href="https://www.chinadaily.com.cn/world" target="_blank" class="article-link">La violence s&#39;intensifie dans le Nord Darfour au Soudan : l&#39;ONU</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/omn.svg" alt="Oman" title="Oman" class="flag-icon">
+                            <a href="https://www.omanobserver.om/world" target="_blank" class="article-link">Attaque contre une ville clé dans la région du Kordofan au Soudan, faisant 40 morts</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bhr.svg" alt="Bahreïn" title="Bahreïn" class="flag-icon">
+                            <a href="https://akhbar-alkhaleej.com/news/section/WORL" target="_blank" class="article-link">Rapport de l&#39;ONU faisant état de 40 morts lors d&#39;une attaque contre Al-Obeid dans le Nord Kordofan, Soudan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bhr.svg" alt="Bahreïn" title="Bahreïn" class="flag-icon">
+                            <a href="https://www.alayam.com/online/international" target="_blank" class="article-link">Environ 81 000 déplacés de El Fasher ; avertissements sur l&#39;aggravation des conditions humanitaires</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pak.svg" alt="Pakistan" title="Pakistan" class="flag-icon">
+                            <a href="https://www.dawn.com/world" target="_blank" class="article-link">Attaque lors d&#39;obsèques au Soudan fait 40 morts</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/syr.svg" alt="Syrie" title="Syrie" class="flag-icon">
+                            <a href="https://sana.sy/en/?cat=3" target="_blank" class="article-link">Au moins 40 tués lors d&#39;une attaque lors d&#39;obsèques dans la ville d&#39;El-Obeid au Soudan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/usa.svg" alt="États-Unis" title="États-Unis" class="flag-icon">
+                            <a href="https://edition.cnn.com/world" target="_blank" class="article-link">Le Secrétaire général de l&#39;ONU met en garde contre une spirale incontrôlable de la guerre au Soudan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/usa.svg" alt="États-Unis" title="États-Unis" class="flag-icon">
+                            <a href="https://abcnews.go.com/International" target="_blank" class="article-link">Les paramilitaires du Soudan tuent au moins 40 personnes alors que les combats s&#39;étendent dans la région du Kordofan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgd.svg" alt="Bangladesh" title="Bangladesh" class="flag-icon">
+                            <a href="https://www.thedailystar.net/world" target="_blank" class="article-link">Attaque contre une ville clé du Kordofan au Soudan fait 40 morts</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Crise humanitaire et voix du terrain</h3>
+        <p class="cluster-description">Sources suédoises et qataries offrent des descriptions vivantes de la catastrophe humanitaire, y compris des témoignages de personnel médical témoignant des conditions désastreuses des réfugiés et des personnes déplacées. Elles révèlent des facteurs aggravants tels que la violence sexuelle massive contre les femmes et des routes d&#39;évasion dangereuses appelées &#39;corridors de la mort&#39;. Ces récits apportent des dimensions personnelles et humaines au conflit, soulignant la souffrance des populations vulnérables et le besoin urgent d&#39;aide face à la violence croissante.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/swe.svg" alt="Suède" title="Suède" class="flag-icon">
+                            <a href="https://www.dn.se/varlden/" target="_blank" class="article-link">Médecin suédois au Darfour : &#34;Le pire que j&#39;aie vu&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/swe.svg" alt="Suède" title="Suède" class="flag-icon">
+                            <a href="https://www.dn.se/varlden/" target="_blank" class="article-link">Attaque lors d&#39;obsèques dans le Soudan en guerre – 40 morts</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/swe.svg" alt="Suède" title="Suède" class="flag-icon">
+                            <a href="https://www.dn.se/varlden/" target="_blank" class="article-link">Des milliers fuient el-Fasher en panique à travers le couloir de la mort</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/swe.svg" alt="Suède" title="Suède" class="flag-icon">
+                            <a href="https://www.svd.se/" target="_blank" class="article-link">Bilan des morts au Soudan comparé au génocide au Rwanda</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/qat.svg" alt="Qatar" title="Qatar" class="flag-icon">
+                            <a href="https://dohanews.co/category/news/" target="_blank" class="article-link">« Une réalité cauchemardesque » : les femmes du Soudan face à la violence sexuelle de masse dans un contexte de conflit continu</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/qat.svg" alt="Qatar" title="Qatar" class="flag-icon">
+                            <a href="https://www.al-watan.com/%D8%B9%D8%B1%D8%A8%D9%8A-%D9%88%D8%AF%D9%88%D9%84%D9%8A" target="_blank" class="article-link">Massacre dans le Nord Kordofan</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Les acteurs r\u00e9gionaux mettent en avant la dynamique du pouvoir et le contr\u00f4le local",
+                color: "#72e5ac",
+                data: [ {"id": "AR"},  {"id": "NA"} ]
+            },
+        
+            {
+                name: "Les Nations Unies et les Organisations Internationales mettent en lumi\u00e8re les atrocit\u00e9s des droits de l\u0027homme",
+                color: "#bf72e5",
+                data: [ {"id": "AF"},  {"id": "BD"},  {"id": "BH"},  {"id": "CH"},  {"id": "CN"},  {"id": "HK"},  {"id": "MX"},  {"id": "OM"},  {"id": "PK"},  {"id": "RW"},  {"id": "SD"},  {"id": "SY"},  {"id": "US"},  {"id": "VA"} ]
+            },
+        
+            {
+                name: "Crise humanitaire et voix du terrain",
+                color: "#e5d272",
+                data: [ {"id": "QA"},  {"id": "SE"} ]
+            }
+        
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Masquer les sources ▲' : 'Montrer les sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li>
+               <a href="/">Actus </a>
+            </li>
+            <li>
+              <a href="/fr/2025-11-06/country_counts.html">Pays</a>
+            </li>
+            <li>
+              <a href="/fr/2025-11-06/labels.html">Thèmes</a>
+            </li>
+            <li>
+              <a href="/fr/about.html">A Propos</a>
+            </li>
+            <li>
+              <a href="/fr/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

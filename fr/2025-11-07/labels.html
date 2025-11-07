@@ -128,8 +128,11 @@
   <div class="content-shell content-shell--narrow">
     <h2 class="section-title">Principales thématiques du jour</h2>
     <p class="section-subtitle">
+      <span class="legend-note">
       Voici les principales thématiques identifiées dans les articles 
-      collectés aujourd’hui (2025-11-07).
+      collectés aujourd’hui. En <span style="background-color: #9C74DE; color: white; font-style: normal;">&nbsp;violet&nbsp;</span> les thématiques les plus fréquentes,déjà abordées
+      durant les jours précédents ; en <span style="background-color: #D67883; color: white; font-style: normal; ">&nbsp;rouge&nbsp;</span> les thématiques apparues aujourd’hui pour la première fois.
+      </span>
     </p>
   </div>
 </section>
@@ -146,9 +149,11 @@
   <div class="content-shell content-shell--narrow">
     <h2 class="section-title">Historique des thématiques</h2>
     <p class="section-subtitle">
+      <span class="legend-note">
       Principales thématiques identifiées au cours des 7 derniers jours.
       Survolez une colonne pour afficher le nombre d’articles associés à une thématique.
       Cliquez sur une thématique dans la légende ou sur une barre pour mettre en évidence l’évolution complète de cette thématique.
+      </span>
     </p>
   </div>
 </section>
@@ -159,102 +164,117 @@
       </div>
     </div>
   </section>
+  
+
 <script>
 anychart.onDocumentReady(function () {
-  // === Données brutes Jinja (inchangé côté Python)
-  var raw = [{"category": "Hurricane Melissa Caribbean Impact", "weight": 11}, {"category": "Russia\u2013Ukraine Diplomatic and Military Conflict", "weight": 79}, {"category": "Israel-Palestine Conflict", "weight": 21}, {"category": "US\u2013Venezuela Military and Mediation Issues", "weight": 12}, {"category": "Israel-Lebanon Border Strikes", "weight": 37}, {"category": "Pelosi Retirement", "weight": 22}, {"category": "US Shutdown Grounds Flights", "weight": 18}, {"category": "US Strikes Drug Vessel", "weight": 12}, {"category": "Gaza Stabilization Force", "weight": 16}, {"category": "Kazakhstan Joins Abraham Accords", "weight": 12}, {"category": "Typhoon Kalmaegi Devastation", "weight": 25}, {"category": "UN Lifts Syria Sanctions", "weight": 12}, {"category": "Zohran Mamdani Elected NYC Mayor", "weight": 15}] || [];
+  // --- Data: [{ category, weight, remanent }, ...]
+  var raw = [{"category": "Israel-Palestine Conflict", "remanent": 1, "weight": 81}, {"category": "Ukraine-Russia Conflict", "remanent": 1, "weight": 53}, {"category": "Philippines Typhoon Kalmaegi Deaths", "remanent": 1, "weight": 26}, {"category": "US Shutdown Standoff", "remanent": 1, "weight": 19}, {"category": "Sudan War Crimes", "remanent": 1, "weight": 12}, {"category": "NYC Mayoral Election", "remanent": 1, "weight": 11}, {"category": "Caribbean Hurricane Melissa Devastation", "remanent": 1, "weight": 12}, {"category": "US\u2013Venezuela Military Tensions", "remanent": 1, "weight": 21}, {"category": "US Central Asia Diplomacy", "remanent": 1, "weight": 28}, {"category": "Mamdani NYC Appointment", "remanent": 1, "weight": 12}, {"category": "Trump Political Commentary", "remanent": 0, "weight": 12}, {"category": "Israel Hezbollah Airstrikes", "remanent": 0, "weight": 23}, {"category": "North Korea Missile Test", "remanent": 0, "weight": 26}, {"category": "Pelosi Retires", "remanent": 0, "weight": 16}, {"category": "US Airport Flight Cuts", "remanent": 0, "weight": 20}, {"category": "Sudan Humanitarian Ceasefire", "remanent": 0, "weight": 19}, {"category": "China Aircraft Carrier Commission", "remanent": 0, "weight": 10}, {"category": "COP30 Climate Pledges", "remanent": 0, "weight": 19}, {"category": "US Caribbean Ship Airstrike", "remanent": 0, "weight": 12}, {"category": "UN Lifts Syria Sanctions", "remanent": 0, "weight": 19}] || [];
 
-  // === min/max (calculés une seule fois)
+  // --- Helpers
+  function escHtml(s){
+    s = String(s == null ? '' : s);
+    return s.replace(/&/g,'&amp;')
+            .replace(/</g,'&lt;')
+            .replace(/>/g,'&gt;')
+            .replace(/"/g,'&quot;')
+            .replace(/'/g,'&#39;');
+  }
+  function hexToRgb(h){
+    h = String(h||'').replace('#','');
+    if (h.length === 3) h = h.split('').map(function(x){return x+x;}).join('');
+    return { r:parseInt(h.slice(0,2),16)||0, g:parseInt(h.slice(2,4),16)||0, b:parseInt(h.slice(4,6),16)||0 };
+  }
+  function rgbToHex(r,g,b){
+    function c(v){ v=Math.max(0,Math.min(255,Math.round(v))); return v.toString(16).padStart(2,'0'); }
+    return '#'+c(r)+c(g)+c(b);
+  }
+  function lerp(a,b,t){ return a + (b-a)*t; }
+  function blend(c1,c2,t){ var A=hexToRgb(c1),B=hexToRgb(c2); return rgbToHex(lerp(A.r,B.r,t), lerp(A.g,B.g,t), lerp(A.b,B.b,t)); }
+
+  // --- min/max for weight
   var minVal = Infinity, maxVal = -Infinity;
   for (var i = 0; i < raw.length; i++) {
-    var vv = Number(raw[i].weight);
-    if (isFinite(vv)) { if (vv < minVal) minVal = vv; if (vv > maxVal) maxVal = vv; }
+    var wv = Number(raw[i].weight);
+    if (isFinite(wv)) { if (wv < minVal) minVal = wv; if (wv > maxVal) maxVal = wv; }
   }
   if (minVal === Infinity) { minVal = 0; maxVal = 0; }
-
-  // === Tailles FIXES par paliers (modifie si besoin)
-  var SIZE_STEPS = [8, 12, 14, 16, 18]; // petites → grandes polices
-  function fontSizeFromValue(v) {
-    if (!isFinite(v) || maxVal === minVal) return 16; // défaut si plat
-    var t = (v - minVal) / (maxVal - minVal); // 0..1
-    if (t < 0.20) return SIZE_STEPS[0];
-    if (t < 0.40) return SIZE_STEPS[1];
-    if (t < 0.65) return SIZE_STEPS[2];
-    if (t < 0.85) return SIZE_STEPS[3];
-    return SIZE_STEPS[4];
+  function norm(v){
+    if (!isFinite(v) || maxVal === minVal) return 0.5;
+    var t = (v - minVal) / (maxVal - minVal);
+    return Math.max(0, Math.min(1, t));
   }
 
-  // === Arbre (root -> catégories)
+  // --- ramps
+  var RAMP_COLD  = { lo: '#F2D9DC', hi: '#D67883' };
+  var RAMP_HOT = { lo: '#E4DAF3', hi: '#9C74DE' };
+
+  // --- font scaling (adjust if you want larger/smaller)
+  var FS_MIN = 6, FS_MAX = 18;       // title line
+  var FS_SUB = function(fs){ return Math.max(9, Math.round(fs * 0.85)); }; // value line
+
+  function fontSizeFromValue(v){
+    if (!isFinite(v) || maxVal === minVal) return Math.round((FS_MIN + FS_MAX)/2);
+    var t = (v - minVal) / (maxVal - minVal); // 0..1
+    return Math.round(FS_MIN + t * (FS_MAX - FS_MIN));
+  }
+
+  // --- Build as-table nodes with per-point color + per-point HTML label
   var nodes = [{ id: 'root', name: 'Categories' }];
   for (var j = 0; j < raw.length; j++) {
+    var w = Number(raw[j].weight) || 0;
+    var r = Number(raw[j].remanent) || 0;
+    var t = norm(w);
+    var ramp = (r === 1) ? RAMP_HOT : RAMP_COLD;
+    var fill = blend(ramp.lo, ramp.hi, t);
+
+    var fs  = fontSizeFromValue(w);
+    var fs2 = FS_SUB(fs);
+    var nameHtml = escHtml(raw[j].category);
+    var valueHtml = isFinite(w) ? String(w) : '';
+
+    // Per-point HTML label (no callbacks, no tokens)
+    var pointLabelHtml =
+      '<div style="text-align:center; line-height:1.15; padding:2px 4px;">' +
+        '<span style="display:block; font-size:'+fs+'px;">'+ nameHtml +'</span>' +
+        (valueHtml ? '<span style="font-size:'+fs2+'px; opacity:.75;"><br>'+ valueHtml +'</span>' : '') +
+      '</div>';
+
     nodes.push({
       id: 'cat_' + j,
-      name: String(raw[j].category),
       parent: 'root',
-      value: Number(raw[j].weight) || 0
+      name: String(raw[j].category),
+      value: w,
+      remanent: r,
+      normal: { fill: fill },                  // color per point
+      label: { enabled: true, useHtml: true,   // label per point
+               fontColor: '#0f172a',
+               fontWeight: 600,
+               format: pointLabelHtml }
     });
   }
-  var dataTree = anychart.data.tree(nodes, 'as-table');
 
-  // === Chart
-  var chart = anychart.treeMap(dataTree);
+  var tree  = anychart.data.tree(nodes, 'as-table');
+  var chart = anychart.treeMap(tree);
 
-  // Fond / marges / pas de bordure
-  chart.background().fill('#0f172a');  // ← change la couleur si besoin
-  chart.margin(0);
-  chart.padding(0);
-  chart.normal().stroke('none');
-  chart.hovered().stroke('none');
-  chart.selected().stroke('none');
-  chart.stroke(null);
-
-  // Header "Categories" invisible (et pas de drill-up nécessaire ici)
+  // --- style
+  chart.background().fill('#ffffff');     // remets '#0f172a' + label fontColor '#e2e8f0' si thème sombre
   chart.headers().enabled(false);
-
-  // Dégradé continu (valeurs faibles → fortes)
-  var scale = anychart.scales.linearColor();
-  scale.colors(['#FBE9D0', '#E64833']); // ← ajuste tes couleurs
-  chart.colorScale(scale);
-
-  // Pas de légende (barre de dégradé)
-  chart.colorRange().enabled(false);
-
-  // Labels : HTML, tailles FIXES selon la valeur (pas d’auto-fit)
-  chart.labels()
-    .enabled(true)
-    .useHtml(true)
-    .adjustFontSize(false)
-    .wordWrap('byWord')
-    .wordBreak('break-word')
-    .hAlign('center')
-    .vAlign('middle')
-    .format(function () {
-      var get = (this && typeof this.get === 'function') ? this.get.bind(this) : null;
-      var name = (get && get('name')) || this?.name || '';
-      var vRaw = (get && get('value')) || this?.value;
-      var v = Number(vRaw);
-
-      name = String(name);
-      if (name.length > 28) name = name.slice(0, 27) + '…';
-
-      var fs  = fontSizeFromValue(v);
-      var fs2 = Math.max(fs - 2, 10);
-
-      // Couleur texte auto pour contraste basique
-      var t = (maxVal === minVal) ? 0.5 : Math.max(0, Math.min(1, (v - minVal) / (maxVal - minVal)));
-      var fontColor = (t > 0.55) ? '#ffffff' : '#111111';
-
-      return '' +
-        '<div style="line-height:1.06; text-align:center; color:'+fontColor+'">' +
-          '<span style="font-size:'+fs+'px; display:block;">'+ name +'</span>' +
-          (isFinite(v) ? '<span style="font-size:'+fs2+'px; opacity:.85;"><br>'+ v +'</span>' : '') +
-        '</div>';
-    });
-
+  chart.margin(0); chart.padding(0);
   chart.maxDepth(1);
   chart.selectionMode('none');
 
-  // Conteneur existant
+  // Keep our per-point colors (don’t apply global palette/scales)
+  // (Ne pas appeler palette()/colorScale() sur ta build)
+
+  // no borders
+  chart.normal().stroke('none');
+  chart.hovered().stroke('none');
+  chart.selected().stroke('none');
+
+  // Disable global labels (we use per-point labels above)
+  chart.labels().enabled(false);
+
   chart.container('chart-tagcloud');
   chart.draw();
 });
@@ -266,8 +286,8 @@ anychart.onDocumentReady(function () {
     // ===== Chart 2: Labels History (from labels_template_en.html) =====
     anychart.onDocumentReady(function () {
       (function () {
-        var rawData = [["Hurricane Melissa Caribbean Impact", 0, 77, 48, 0, 0, 0, 0], ["Israel-Hamas Ceasefire Issues", 0, 0, 52, 74, 35, 0, 32], ["Israel-Lebanon Border Strikes", 37, 0, 0, 0, 0, 0, 0], ["Israel-Palestine Conflict", 21, 0, 64, 92, 57, 48, 36], ["Natural Disaster", 0, 0, 0, 110, 95, 50, 32], ["Pelosi Retirement", 22, 0, 0, 0, 0, 0, 0], ["Russia\u2013Ukraine Diplomatic and Military Conflict", 79, 70, 56, 87, 59, 0, 0], ["Typhoon Kalmaegi Devastation", 25, 0, 0, 0, 0, 0, 0]];
-        var dates = ["2025-11-07", "2025-10-31", "2025-10-30", "2025-10-29", "2025-10-28", "2025-10-27", "2025-10-26"].reverse();
+        var rawData = [["Israel-Palestine Conflict", 81, 90, 54, 78, 96, 67, 109], ["Natural Disaster", 0, 0, 0, 0, 106, 72, 65], ["North Korea Missile Test", 26, 0, 0, 0, 0, 0, 0], ["Philippines Typhoon Kalmaegi Deaths", 26, 44, 0, 0, 0, 0, 0], ["UK Train Station Stabbing", 0, 0, 0, 0, 0, 56, 0], ["US Central Asia Diplomacy", 28, 0, 0, 0, 0, 0, 0], ["US\u2013Nigeria Military Threat", 0, 0, 0, 33, 49, 60, 0], ["Ukraine-Russia Conflict", 53, 68, 60, 69, 74, 78, 84]];
+        var dates = ["2025-11-07", "2025-11-06", "2025-11-05", "2025-11-04", "2025-11-03", "2025-11-02", "2025-11-01"].reverse();
 
         var chart = anychart.column();
         chart.yScale().stackMode('value');
