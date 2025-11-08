@@ -1,0 +1,730 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>International Responses and Humanitarian Issues in the Israel-Palestine Conflict</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/fra.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="Français" title="Français" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/en', '/fr');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>              
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/2025-11-08/country_counts.html">Top Countries</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/2025-11-08/labels.html">Top Themes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>International Responses and Humanitarian Issues in the Israel-Palestine Conflict</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-11-08</span> • <span>97 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-11-08/2025-11-08-1.webp" alt="International Responses and Humanitarian Issues in the Israel-Palestine Conflict" class="main-image">
+                <p style="margin:0" class="chapitre">The Israel-Palestine conflict continues to evoke diverse international perspectives and ongoing humanitarian crises. Several countries, notably Turkey, have issued arrest warrants against Israeli Prime Minister Netanyahu and other officials, accusing them of war crimes and genocide, escalating diplomatic tensions particularly between Turkey and Israel. The United States, under former President Trump, is actively pursuing international stabilization efforts in Gaza, proposing the deployment of a multinational peacekeeping force, with discussions ongoing at the United Nations. Meanwhile, humanitarian concerns dominate reports from the UN and other global agencies highlighting the severe impact of violence, including barriers to aid delivery, high casualty exchanges, and calls for medical evacuations from Gaza. Regional and international leaders, including the Vatican and various Middle Eastern actors, emphasize dialogue, reconstruction, and political solutions such as a two-state framework, while violence including settler attacks and clashes continue to exacerbate tensions on the ground.</p>
+            </div>
+            <h2>Countries covering this topic</h2>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Turkey&#39;s Legal Action Against Israeli Leadership</h3>
+        <p class="cluster-description">Turkey has taken a firm stance by issuing arrest warrants against Israeli Prime Minister Benjamin Netanyahu and dozens of other officials, charging them with genocide and war crimes related to actions in Gaza. This legal approach reflects Turkey’s condemnation of Israeli military operations and its positioning as a vocal advocate for Palestinian rights. The warrants have heightened diplomatic frictions between Turkey and Israel, with Israel dismissing these efforts as propaganda. Turkey’s move also attracts Hamas&#39; support and reflects broader geopolitical dynamics involving accountability and international law.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svn.svg" alt="Slovenia" title="Slovenia" class="flag-icon">
+                            <a href="https://www.dnevnik.si/svet" target="_blank" class="article-link">Turkey issues arrest warrant for Netanyahu over genocide accusations</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/chl.svg" alt="Chile" title="Chile" class="flag-icon">
+                            <a href="https://www.latercera.com/categoria/mundo/" target="_blank" class="article-link">Istanbul Prosecutor issues arrest warrant against Netanyahu for genocide charges</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/imn.svg" alt="IMN" title="IMN" class="flag-icon">
+                            <a href="https://www.manxradio.com/news/" target="_blank" class="article-link">Israel receives hostage&#39;s remains - as Turkey issues arrest warrants for 36 officials involved in the war</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hnd.svg" alt="Honduras" title="Honduras" class="flag-icon">
+                            <a href="https://www.elheraldo.hn/mundo" target="_blank" class="article-link">Turkey issues arrest warrant against Netanyahu and 36 Israeli officials</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cyp.svg" alt="Cyprus" title="Cyprus" class="flag-icon">
+                            <a href="https://www.philenews.com/kosmos/" target="_blank" class="article-link">Netanyahu: Arrest Warrant Issued by Istanbul Prosecutor for Genocide</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mac.svg" alt="MAC" title="MAC" class="flag-icon">
+                            <a href="https://www.macaubusiness.com/category/mna/international/" target="_blank" class="article-link">Turkey issues genocide arrest warrant against Netanyahu</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fin.svg" alt="Finland" title="Finland" class="flag-icon">
+                            <a href="https://www.hs.fi/ulkomaat/" target="_blank" class="article-link">Turkey prosecutor issued arrest warrant for Netanyahu</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kaz.svg" alt="Kazakhstan" title="Kazakhstan" class="flag-icon">
+                            <a href="https://tengrinews.kz/news/" target="_blank" class="article-link">In Turkey, an arrest warrant issued for Netanyahu on charges of &#34;genocide&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ita.svg" alt="Italy" title="Italy" class="flag-icon">
+                            <a href="https://www.repubblica.it/esteri/" target="_blank" class="article-link">Turkey issues arrest warrant for Netanyahu over alleged war crimes</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kos.svg" alt="KOS" title="KOS" class="flag-icon">
+                            <a href="https://www.rtklive.com/sq/news-category.php?CatID=10" target="_blank" class="article-link">Turkey issues arrest warrant for Netanyahu for crimes against humanity</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lux.svg" alt="Luxembourg" title="Luxembourg" class="flag-icon">
+                            <a href="https://www.tageblatt.lu/headlines/" target="_blank" class="article-link">Turkish judiciary issues arrest warrant against Netanyahu for &#39;genocide&#39;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bel.svg" alt="Belgium" title="Belgium" class="flag-icon">
+                            <a href="https://www.lalibre.be/international" target="_blank" class="article-link">Turkey issues an arrest warrant for Netanyahu over &#39;genocide&#39;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/uzb.svg" alt="Uzbekistan" title="Uzbekistan" class="flag-icon">
+                            <a href="https://kun.uz/news/category/jahon" target="_blank" class="article-link">Istanbul Prosecutor Charges Netanyahu with Genocide and Issues Arrest Warrant</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72a2e5; padding: 8px 16px; border-radius: 4px;">US and International Diplomatic Initiatives and Military Proposals</h3>
+        <p class="cluster-description">The United States, notably represented by former President Donald Trump, is spearheading diplomatic initiatives including proposing and promoting a peace plan and an international stabilization force for Gaza. The US aims to gain UN endorsement and multinational backing for peacekeeping deployment to restore order amid ongoing hostilities. Discussions about mandates, conditions for peacekeepers, and related diplomacy are active internationally, with some countries like Indonesia and Azerbaijan expressing conditionality about engagement. These efforts present a strategic attempt to stabilize the region through coordinated international intervention.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/can.svg" alt="Canada" title="Canada" class="flag-icon">
+                            <a href="https://www.theglobeandmail.com/world/" target="_blank" class="article-link">Trump seeks UN endorsement for Gaza peace plan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cri.svg" alt="Costa Rica" title="Costa Rica" class="flag-icon">
+                            <a href="https://www.diarioextra.com/categoria/internacionales/" target="_blank" class="article-link">United States presents plan for Gaza at UN</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgd.svg" alt="Bangladesh" title="Bangladesh" class="flag-icon">
+                            <a href="https://www.thedailystar.net/world" target="_blank" class="article-link">International stabilization force in Gaza ‘very soon’</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgd.svg" alt="Bangladesh" title="Bangladesh" class="flag-icon">
+                            <a href="https://bdnews24.com/world" target="_blank" class="article-link">Trump expects Gaza stabilisation force ‘very soon’</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mac.svg" alt="MAC" title="MAC" class="flag-icon">
+                            <a href="https://macaudailytimes.com.mo/category/world" target="_blank" class="article-link">Israel hands over bodies of 45 Palestinians for three soldiers</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svk.svg" alt="Slovakia" title="Slovakia" class="flag-icon">
+                            <a href="https://spravy.pravda.sk/svet/" target="_blank" class="article-link">USA to Begin UN Security Council Talks on Mandate for International Forces in Gaza Strip</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irn.svg" alt="Iran" title="Iran" class="flag-icon">
+                            <a href="https://ifpnews.com/category/news/world/" target="_blank" class="article-link">US to share draft UN resolution on Gaza with most of Security Council</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/per.svg" alt="Peru" title="Peru" class="flag-icon">
+                            <a href="https://larepublica.pe/mundo/" target="_blank" class="article-link">Donald Trump announces deployment of international force to stabilize the Gaza Strip</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dom.svg" alt="Dominican Republic" title="Dominican Republic" class="flag-icon">
+                            <a href="https://www.diariolibre.com/mundo" target="_blank" class="article-link">International stabilization force will be deployed &#34;very soon&#34; in Gaza, asserts Trump</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lux.svg" alt="Luxembourg" title="Luxembourg" class="flag-icon">
+                            <a href="https://www.tageblatt.lu/headlines/" target="_blank" class="article-link">International coalition to be deployed to Gaza &#39;very soon&#39;, according to Trump</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bhr.svg" alt="Bahrain" title="Bahrain" class="flag-icon">
+                            <a href="https://akhbar-alkhaleej.com/news/section/WORL" target="_blank" class="article-link">Trump expects international stabilization force in Gaza &#39;very soon&#39;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bhr.svg" alt="Bahrain" title="Bahrain" class="flag-icon">
+                            <a href="https://akhbar-alkhaleej.com/news/section/WORL" target="_blank" class="article-link">The Gulf outlines a new Middle East after Gaza war</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/deu.svg" alt="Germany" title="Germany" class="flag-icon">
+                            <a href="https://www.welt.de/politik/ausland/" target="_blank" class="article-link">International stabilization force to be deployed soon in Gaza Strip; Kazakhstan joins Abraham Accords</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/png.svg" alt="Papua New Guinea" title="Papua New Guinea" class="flag-icon">
+                            <a href="https://postcourier.com.pg/category/world-news/" target="_blank" class="article-link">US may ask UN to mandate international force in Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/chn.svg" alt="China" title="China" class="flag-icon">
+                            <a href="https://www.chinadaily.com.cn/world" target="_blank" class="article-link">Gaza peace force needs &#39;legitimacy&#39;: UN</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aut.svg" alt="Austria" title="Austria" class="flag-icon">
+                            <a href="https://www.diepresse.com/ausland" target="_blank" class="article-link">Trump to Deploy International Troops &#39;Very Soon&#39; to Gaza Strip</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #bf72e5; padding: 8px 16px; border-radius: 4px;">United Nations and Humanitarian Organizations Highlight Crisis and Call for Aid and Protection</h3>
+        <p class="cluster-description">The UN, WHO, and other humanitarian entities focus on the dire humanitarian situation in Gaza and the West Bank amid ongoing conflict and ceasefire violations. They report significant barriers to aid delivery, rising settler violence against Palestinians, acute food shortages, and urgent medical evacuation needs. The UN special rapporteur and envoy publicly highlight allegations of genocide and call for global moral and political action, emphasizing the importance of humanitarian access and protection of civilians. These voices advocate for adherence to international law and sustained relief efforts.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cri.svg" alt="Costa Rica" title="Costa Rica" class="flag-icon">
+                            <a href="https://www.nacion.com/el-mundo/" target="_blank" class="article-link">UN states that obstacles persist for aid entry into Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/zaf.svg" alt="South Africa" title="South Africa" class="flag-icon">
+                            <a href="https://mg.co.za/section/news/" target="_blank" class="article-link">UN special rapporteur to present Gaza genocide report to UN</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/zaf.svg" alt="South Africa" title="South Africa" class="flag-icon">
+                            <a href="https://mg.co.za/section/news/" target="_blank" class="article-link">UN special rapporteur warns of conscience collapse over Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/zaf.svg" alt="South Africa" title="South Africa" class="flag-icon">
+                            <a href="https://mg.co.za/section/news/" target="_blank" class="article-link">UN envoy says South Africa is central in fight against Gaza genocide</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/phl.svg" alt="Philippines" title="Philippines" class="flag-icon">
+                            <a href="https://www.philstar.com/world" target="_blank" class="article-link">WHO pleads for sick Gazans to be allowed to leave</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/qat.svg" alt="Qatar" title="Qatar" class="flag-icon">
+                            <a href="https://www.al-watan.com/%D8%B9%D8%B1%D8%A8%D9%8A-%D9%88%D8%AF%D9%88%D9%84%D9%8A" target="_blank" class="article-link">Committee for Gaza Missing Persons Calls for International Teams to Retrieve Thousands of Palestinian Bodies</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nld.svg" alt="Netherlands" title="Netherlands" class="flag-icon">
+                            <a href="https://www.telegraaf.nl/nieuws/buitenland" target="_blank" class="article-link">USA: Israel warned about war crimes by its army in Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/grc.svg" alt="Greece" title="Greece" class="flag-icon">
+                            <a href="https://www.kathimerini.gr/world" target="_blank" class="article-link">USA Takes Control of Humanitarian Aid in Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/prt.svg" alt="Portugal" title="Portugal" class="flag-icon">
+                            <a href="https://www.publico.pt/mundo" target="_blank" class="article-link">Hunger in Gaza: Irreversible Damage Looms</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/chn.svg" alt="China" title="China" class="flag-icon">
+                            <a href="https://www.chinadaily.com.cn/world" target="_blank" class="article-link">UN chief demands halt to truce violations amid violence, Israeli aid restrictions</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fro.svg" alt="FRO" title="FRO" class="flag-icon">
+                            <a href="https://www.in.fo/" target="_blank" class="article-link">Israeli authorities: 45 Palestinian bodies received in Gaza</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5728f; padding: 8px 16px; border-radius: 4px;">Israeli Military Operations, Hostage Situations, and Internal Security Measures</h3>
+        <p class="cluster-description">Israel continues its military operations against Hamas and other groups within Gaza and the West Bank, including troop reinforcements, attacks on Hezbollah in Lebanon, and security operations in occupied territories. The Israeli government denies ceasefire talks proposed by Gaza and rejects international drafts where Hamas’s disarmament is ambiguous. Israel actively engages in hostage negotiations, returning bodies exchanged with Palestinian militants, amidst allegations of harsh treatment of detainees and rising internal tensions including racist violence against Arab Israelis and settler attacks. These measures reflect Israel’s security priorities amid the ongoing conflict and its complex social dynamics.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ton.svg" alt="Tonga" title="Tonga" class="flag-icon">
+                            <a href="https://tongaindependent.com/politics/" target="_blank" class="article-link">Israel Pulls Back from Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jpn.svg" alt="Japan" title="Japan" class="flag-icon">
+                            <a href="https://www.yomiuri.co.jp/world/" target="_blank" class="article-link">Israel Conducts Airstrikes in Southern Lebanon, Claims Targeting Hezbollah Stores</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgr.svg" alt="Bulgaria" title="Bulgaria" class="flag-icon">
+                            <a href="https://www.24chasa.bg/mezhdunarodni" target="_blank" class="article-link">Israel Receives the Body of Another Dead Hostage from Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cyp.svg" alt="Cyprus" title="Cyprus" class="flag-icon">
+                            <a href="https://www.philenews.com/kosmos/" target="_blank" class="article-link">Wave of Racist Violence in Israel: Increased Attacks on Arab Bus Drivers</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cyp.svg" alt="Cyprus" title="Cyprus" class="flag-icon">
+                            <a href="https://cyprus-mail.com/category/world/" target="_blank" class="article-link">Palestinian militants hand over body of another Gaza hostage</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tls.svg" alt="Timor-Leste" title="Timor-Leste" class="flag-icon">
+                            <a href="https://www.noticiasaominuto.com/mundo" target="_blank" class="article-link">Israel receives body of presumed Hamas hostage</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Ireland" title="Ireland" class="flag-icon">
+                            <a href="https://www.independent.ie/world-news/" target="_blank" class="article-link">Israeli hostage: I was stripped naked and sexually abused</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Ireland" title="Ireland" class="flag-icon">
+                            <a href="https://www.independent.ie/world-news/" target="_blank" class="article-link">Israel returns bodies of 15 Palestinians as exchanges continue despite violence</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kwt.svg" alt="Kuwait" title="Kuwait" class="flag-icon">
+                            <a href="https://kuwaittimes.com/world/" target="_blank" class="article-link">Zionist entity kills 2 Palestinians, delivers 15 bodies to Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mdv.svg" alt="Maldives" title="Maldives" class="flag-icon">
+                            <a href="https://sun.mv/world_news" target="_blank" class="article-link">Israel rejects ceasefire talks initiated by Gaza at work site</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mdv.svg" alt="Maldives" title="Maldives" class="flag-icon">
+                            <a href="https://sun.mv/world_news" target="_blank" class="article-link">Israel continues military operations against Hamas in Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pse.svg" alt="Palestine" title="Palestine" class="flag-icon">
+                            <a href="https://www.alquds.com/" target="_blank" class="article-link">Israeli Army Decides to Reinforce Troops in the West Bank, Foils 1200 Armed Attacks</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pse.svg" alt="Palestine" title="Palestine" class="flag-icon">
+                            <a href="https://www.alquds.com/" target="_blank" class="article-link">United Nations: Record Level of Israeli Settler Attacks</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pse.svg" alt="Palestine" title="Palestine" class="flag-icon">
+                            <a href="https://www.alquds.com/" target="_blank" class="article-link">Netanyahu&#39;s Office: Receipt of Body of Israeli Captive from Gaza via Red Cross</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pse.svg" alt="Palestine" title="Palestine" class="flag-icon">
+                            <a href="https://www.alquds.com/" target="_blank" class="article-link">Hamas Praises Turkish Arrest Warrants Including 37 Israeli Officials, Netanyahu Among Them</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pse.svg" alt="Palestine" title="Palestine" class="flag-icon">
+                            <a href="http://www.al-ayyam.ps/" target="_blank" class="article-link">Israeli army freezes troop reduction in the West Bank</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pse.svg" alt="Palestine" title="Palestine" class="flag-icon">
+                            <a href="http://www.al-ayyam.ps/" target="_blank" class="article-link">Netanyahu: We will build a model city for Gaza residents inside the green line</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pse.svg" alt="Palestine" title="Palestine" class="flag-icon">
+                            <a href="http://www.al-ayyam.ps/" target="_blank" class="article-link">Israel opposes American draft proposal on Gaza due to Hamas disarmament ambiguity</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pse.svg" alt="Palestine" title="Palestine" class="flag-icon">
+                            <a href="http://www.al-ayyam.ps/" target="_blank" class="article-link">American proposal to resolve Hamas fighters issue in Rafah tunnels rejected by Netanyahu</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/srb.svg" alt="Serbia" title="Serbia" class="flag-icon">
+                            <a href="https://www.politika.rs/scc/svet" target="_blank" class="article-link">Hamas fighters trapped in tunnels threaten ceasefire in Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kor.svg" alt="South Korea" title="South Korea" class="flag-icon">
+                            <a href="https://www.koreaherald.com/World" target="_blank" class="article-link">Israel says Hamas hands over additional remains</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vat.svg" alt="Holy See" title="Holy See" class="flag-icon">
+                            <a href="https://www.vaticannews.va/it/mondo.html" target="_blank" class="article-link">At the UN, work continues on the future of Gaza. Israeli bombs still fall on southern Lebanon</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vat.svg" alt="Holy See" title="Holy See" class="flag-icon">
+                            <a href="https://www.osservatoreromano.va/it/sections/internazionale.html" target="_blank" class="article-link">Trump: &#39;Very soon&#39; stabilization in Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/afg.svg" alt="Afghanistan" title="Afghanistan" class="flag-icon">
+                            <a href="https://www.pajhwok.com/en/world-news" target="_blank" class="article-link">Trump says ISF to be on ground in Gaza ‘very soon’</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Regional and Global Political Support for Palestinian Statehood and Peace Initiatives</h3>
+        <p class="cluster-description">Multiple international leaders and entities, including the Vatican, Palestinian Authority, and European nations, underscore the pursuit of peace through diplomacy, humanitarian reconstruction, and recognition of Palestinian statehood. Meetings between Mahmoud Abbas and leaders such as Pope Leo XIV and Italian Prime Minister Giorgia Meloni reaffirm commitments to a two-state solution and humanitarian efforts. Pro-Palestinian protests and calls for recognition reflect global civil society engagement, while regional cooperation from Gulf countries and Turkey emphasizes coordinated action to manage Gaza’s crisis.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cyp.svg" alt="Cyprus" title="Cyprus" class="flag-icon">
+                            <a href="https://www.philenews.com/kosmos/" target="_blank" class="article-link">Meloni – Abbas in Rome: Support for Gaza Reconstruction and Two-State Solution</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mng.svg" alt="Mongolia" title="Mongolia" class="flag-icon">
+                            <a href="https://montsame.mn/mn/more/17" target="_blank" class="article-link">Pope Leo XIV meets Palestinian leader Mahmoud Abbas</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/per.svg" alt="Peru" title="Peru" class="flag-icon">
+                            <a href="https://elcomercio.pe/mundo/" target="_blank" class="article-link">Mahmud Abbas urges Italian recognition of Palestinian state</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/are.svg" alt="United Arab Emirates" title="United Arab Emirates" class="flag-icon">
+                            <a href="https://www.thenationalnews.com/international" target="_blank" class="article-link">Mahmoud Abbas seeks Palestine statehood ties from Giorgia Meloni on Rome trip</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nga.svg" alt="Nigeria" title="Nigeria" class="flag-icon">
+                            <a href="https://www.premiumtimesng.com/category/foreign" target="_blank" class="article-link">Palestinian President Abbas visits Pope Leo XIV</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gnb.svg" alt="Guinea-Bissau" title="Guinea-Bissau" class="flag-icon">
+                            <a href="https://una-oic.org/News/all/" target="_blank" class="article-link">OIC Condemns Plans to Build 356 Settlement Units in Occupied Jerusalem</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/alb.svg" alt="Albania" title="Albania" class="flag-icon">
+                            <a href="http://www.gsh.al/category/bota/" target="_blank" class="article-link">Turkish Prosecutor Issues Arrest Warrants for 37 over Gaza Genocide Allegations, Including Israeli Prime Minister</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/civ.svg" alt="Côte d&#39;Ivoire" title="Côte d&#39;Ivoire" class="flag-icon">
+                            <a href="https://www.aip.ci/category/international/" target="_blank" class="article-link">Vatican: First audience between Pope Leo XIV and Mahmoud Abbas focused on the humanitarian situation in Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/grl.svg" alt="GRL" title="GRL" class="flag-icon">
+                            <a href="https://sermitsiaq.ag/" target="_blank" class="article-link">Netanyahu Orders Intense Attacks in Gaza</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Turkey\u0027s Legal Action Against Israeli Leadership",
+                color: "#72e5ac",
+                data: [ {"id": "BE"},  {"id": "CL"},  {"id": "FI"},  {"id": "HN"},  {"id": "IM"},  {"id": "IT"},  {"id": "KZ"},  {"id": "SI"},  {"id": "UZ"},  {"id": "XK"} ]
+            },
+        
+            {
+                name: "US and International Diplomatic Initiatives and Military Proposals",
+                color: "#72a2e5",
+                data: [ {"id": "AT"},  {"id": "BD"},  {"id": "BH"},  {"id": "CA"},  {"id": "DE"},  {"id": "DO"},  {"id": "IR"},  {"id": "PG"},  {"id": "SK"} ]
+            },
+        
+            {
+                name: "United Nations and Humanitarian Organizations Highlight Crisis and Call for Aid and Protection",
+                color: "#bf72e5",
+                data: [ {"id": "FO"},  {"id": "GR"},  {"id": "NL"},  {"id": "PH"},  {"id": "PT"},  {"id": "QA"},  {"id": "ZA"} ]
+            },
+        
+            {
+                name: "Israeli Military Operations, Hostage Situations, and Internal Security Measures",
+                color: "#e5728f",
+                data: [ {"id": "AF"},  {"id": "BG"},  {"id": "IE"},  {"id": "JP"},  {"id": "KR"},  {"id": "KW"},  {"id": "MV"},  {"id": "PS"},  {"id": "RS"},  {"id": "TL"},  {"id": "TO"},  {"id": "VA"} ]
+            },
+        
+            {
+                name: "Regional and Global Political Support for Palestinian Statehood and Peace Initiatives",
+                color: "#e5d272",
+                data: [ {"id": "AE"},  {"id": "AL"},  {"id": "CI"},  {"id": "GL"},  {"id": "GW"},  {"id": "MN"},  {"id": "NG"} ]
+            }
+        
+        
+            ,
+            {
+                name: "Different perspectives:\n- Turkey\u0027s Legal Action Against Israeli Leadership\n- Israeli Military Operations, Hostage Situations, and Internal Security Measures\n- Regional and Global Political Support for Palestinian Statehood and Peace Initiatives",
+                color: "#AAAAAA",
+                data: [{"id": "CY"}]
+            },
+            {
+                name: "Different perspectives:\n- Turkey\u0027s Legal Action Against Israeli Leadership\n- US and International Diplomatic Initiatives and Military Proposals",
+                color: "#AAAAAA",
+                data: [{"id": "LU"}]
+            },
+            {
+                name: "Different perspectives:\n- Turkey\u0027s Legal Action Against Israeli Leadership\n- US and International Diplomatic Initiatives and Military Proposals",
+                color: "#AAAAAA",
+                data: [{"id": "MO"}]
+            },
+            {
+                name: "Different perspectives:\n- US and International Diplomatic Initiatives and Military Proposals\n- United Nations and Humanitarian Organizations Highlight Crisis and Call for Aid and Protection",
+                color: "#AAAAAA",
+                data: [{"id": "CN"}]
+            },
+            {
+                name: "Different perspectives:\n- US and International Diplomatic Initiatives and Military Proposals\n- United Nations and Humanitarian Organizations Highlight Crisis and Call for Aid and Protection",
+                color: "#AAAAAA",
+                data: [{"id": "CR"}]
+            },
+            {
+                name: "Different perspectives:\n- US and International Diplomatic Initiatives and Military Proposals\n- Regional and Global Political Support for Palestinian Statehood and Peace Initiatives",
+                color: "#AAAAAA",
+                data: [{"id": "PE"}]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Hide sources ▲' : 'Show sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li>
+               <a href="/">News </a>
+            </li>
+            <li>
+              <a href="/en/2025-11-08/country_counts.html">Top Countries</a>
+            </li>
+            <li>
+              <a href="/en/2025-11-08/labels.html">Top Themes</a>
+            </li>
+            <li>
+              <a href="/en/about.html">About</a>
+            </li>
+            <li>
+              <a href="/en/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
