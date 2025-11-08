@@ -1,0 +1,444 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>US Navy Strikes Against Alleged Drug Trafficking Boats in the Pacific</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/fra.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="Français" title="Français" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/en', '/fr');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>              
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/2025-10-29/country_counts.html">Top Countries</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/2025-10-29/labels.html">Top Themes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>US Navy Strikes Against Alleged Drug Trafficking Boats in the Pacific</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-10-29</span> • <span>30 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-10-29/2025-10-29-26.webp" alt="US Navy Strikes Against Alleged Drug Trafficking Boats in the Pacific" class="main-image">
+                <p style="margin:0" class="chapitre">The United States conducted a series of military operations targeting four vessels suspected of drug trafficking in the eastern Pacific Ocean, resulting in the deaths of 14 individuals. These strikes are part of the US government&#39;s broader campaign to combat narcotics trafficking and secure international waters against illicit activities. Mexico played a humanitarian role by rescuing a survivor from the attacks, highlighting some degree of regional cooperation amidst concerns about the legality and repercussions of such cross-border military actions. While the US frames these operations as necessary to dismantle drug networks and labeled the targeted individuals as &#34;narcoterrorists,&#34; some regional voices express concern over the escalatory implications and regional tensions these strikes may trigger. Overall, the strikes underscore ongoing challenges and assertive US efforts in maritime interdiction of drug trafficking.</p>
+            </div>
+            <h2>Countries covering this topic</h2>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">North and South American Perspectives on US Anti-Drug Operations</h3>
+        <p class="cluster-description">Articles from Canadian, Jamaican, Colombian, Mexican, Panamanian, Costa Rican, Puerto Rican, Brazilian, Peruvian, Argentine, and Chilean sources generally report the US strikes as justified efforts against drug trafficking, emphasizing cooperation and humanitarian aspects such as the rescue of survivors by Mexico. They highlight the operational details and frame the actions as part of sustained regional anti-narcotics campaigns. While cooperation is apparent, some regional sources also allude to concerns about sovereignty and legal questions arising from US military involvement in international waters near Latin America.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/can.svg" alt="Canada" title="Canada" class="flag-icon">
+                            <a href="https://www.theglobeandmail.com/world/" target="_blank" class="article-link">Fourteen people killed as U.S. launches strikes on four alleged drug boats off Colombia</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/chl.svg" alt="Chile" title="Chile" class="flag-icon">
+                            <a href="https://www.latercera.com/categoria/mundo/" target="_blank" class="article-link">U.S. Kills 14 Alleged &#39;Narcoterrorists&#39; in Attacks on Four Boats in Pacific Waters</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pri.svg" alt="PRI" title="PRI" class="flag-icon">
+                            <a href="https://www.primerahora.com/noticias/mundo/" target="_blank" class="article-link">Mexico confirms rescue of survivor after US attack on alleged drug boats</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/esp.svg" alt="Spain" title="Spain" class="flag-icon">
+                            <a href="https://elpais.com/internacional/" target="_blank" class="article-link">US kills 14 crew members of four suspected drug smuggling boats in the Pacific</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/arg.svg" alt="Argentina" title="Argentina" class="flag-icon">
+                            <a href="https://www.clarin.com/mundo/" target="_blank" class="article-link">U.S. Claims to Have Attacked Four Suspected Drug Trafficker Boats in Pacific, Killing 14</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pan.svg" alt="Panama" title="Panama" class="flag-icon">
+                            <a href="https://www.laestrella.com.pa/mundo" target="_blank" class="article-link">United States confirms three lethal attacks in the eastern Pacific against narcoterrorist ships</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cri.svg" alt="Costa Rica" title="Costa Rica" class="flag-icon">
+                            <a href="https://www.nacion.com/el-mundo/" target="_blank" class="article-link">Mexico conducts maritime rescue following U.S. anti-narcotics attacks in the Pacific</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cri.svg" alt="Costa Rica" title="Costa Rica" class="flag-icon">
+                            <a href="https://www.diarioextra.com/categoria/internacionales/" target="_blank" class="article-link">US attacks narco speedboats leaving 14 dead</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kna.svg" alt="Saint Kitts and Nevis" title="Saint Kitts and Nevis" class="flag-icon">
+                            <a href="https://www.thestkittsnevisobserver.com/category/news/world-news/" target="_blank" class="article-link">Mexico Rescues Lone Survivor After US Sinks Drug Fleet</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bra.svg" alt="Brazil" title="Brazil" class="flag-icon">
+                            <a href="https://oglobo.globo.com/mundo/" target="_blank" class="article-link">US conducts strikes on four suspected drug trafficking vessels in the eastern Pacific, 14 killed</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/per.svg" alt="Peru" title="Peru" class="flag-icon">
+                            <a href="https://elcomercio.pe/mundo/" target="_blank" class="article-link">US kills 14 people after attacking four alleged drug trafficking boats in the Pacific</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/per.svg" alt="Peru" title="Peru" class="flag-icon">
+                            <a href="https://larepublica.pe/mundo/" target="_blank" class="article-link">At least 14 dead after new US attack against four presumed drug-running boats</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/prt.svg" alt="Portugal" title="Portugal" class="flag-icon">
+                            <a href="https://www.publico.pt/mundo" target="_blank" class="article-link">New US attacks in the Caribbean kill 14 alleged drug traffickers</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #bf72e5; padding: 8px 16px; border-radius: 4px;">US Government and Defense Officials&#39; Assertive Framing</h3>
+        <p class="cluster-description">US sources and defense officials portray the strikes as precise and necessary actions against key elements of drug trafficking networks, often describing the targets as &#34;narcoterrorists&#34; or &#34;drug terrorists.&#34; These narratives emphasize the strategic importance of military interdiction to disrupt the flow of illegal narcotics and maintain maritime security. US authorities underscore official confirmation of the attacks and the minimization of US personnel casualties, reflecting a determined stance on counter-narcotics operations in international waters.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/brb.svg" alt="Barbados" title="Barbados" class="flag-icon">
+                            <a href="https://nationnews.com/category/world/" target="_blank" class="article-link">US kills 14 in strikes on four alleged drug boats in Pacific</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ca-qc.svg" alt="CA-QC" title="CA-QC" class="flag-icon">
+                            <a href="https://www.journaldequebec.com/actualite/monde" target="_blank" class="article-link">U.S. Conducts Strikes on Suspected Drug Trafficking Boats in Pacific</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nld.svg" alt="Netherlands" title="Netherlands" class="flag-icon">
+                            <a href="https://www.telegraaf.nl/nieuws/buitenland" target="_blank" class="article-link">US Strikes Again on Suspected Drug Boats, Killing at Least Fourteen</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aus.svg" alt="Australia" title="Australia" class="flag-icon">
+                            <a href="https://www.abc.net.au/news/world" target="_blank" class="article-link">14 people killed as US destroys four more alleged drug boats</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kor.svg" alt="South Korea" title="South Korea" class="flag-icon">
+                            <a href="https://www.chosun.com/international/" target="_blank" class="article-link">US Navy Attacks Drug-Smuggling Vessel in Pacific Ocean</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgr.svg" alt="Bulgaria" title="Bulgaria" class="flag-icon">
+                            <a href="https://www.24chasa.bg/mezhdunarodni" target="_blank" class="article-link">US Destroyed Four Drug Smuggler Boats in the Pacific, 14 Killed</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kos.svg" alt="KOS" title="KOS" class="flag-icon">
+                            <a href="https://www.koha.net/bote" target="_blank" class="article-link">US strikes additional suspected drug trafficking ships, 14 dead</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/omn.svg" alt="Oman" title="Oman" class="flag-icon">
+                            <a href="https://timesofoman.com/World" target="_blank" class="article-link">US strikes drug-smuggling boats in Pacific, 14 killed</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/slv.svg" alt="El Salvador" title="El Salvador" class="flag-icon">
+                            <a href="https://diario.elmundo.sv/el-mundo" target="_blank" class="article-link">US claims killing 14 &#39;narcoterrorists&#39; in attack on boats in the Pacific</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">European and Other International Observations Highlighting Security and Regional Implications</h3>
+        <p class="cluster-description">Articles from European countries such as the Netherlands, Spain, Norway, Belgium, Portugal, Bulgaria, Serbia, Albania, and Kosovo present the incidents as part of broader international security and anti-drug efforts. They acknowledge the lethal outcomes and destruction of vessels but sometimes imply concerns about the extrajudicial nature of the strikes and their influence on regional geopolitical tensions, including US relations with Venezuela. The narratives tend to be factual yet open to discussion on the implications of US military involvement in foreign maritime zones.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jam.svg" alt="Jamaica" title="Jamaica" class="flag-icon">
+                            <a href="http://www.jamaicaobserver.com/news/" target="_blank" class="article-link">US kills 14 in strikes on alleged Pacific drug boats</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nor.svg" alt="Norway" title="Norway" class="flag-icon">
+                            <a href="https://www.aftenposten.no/verden" target="_blank" class="article-link">At least 14 killed after US strikes vessels in the East Pacific</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/esp.svg" alt="Spain" title="Spain" class="flag-icon">
+                            <a href="https://www.elmundo.es/internacional.html" target="_blank" class="article-link">Trump escalates pressure on Maduro after sinking four drug boats with 14 fatalities</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/srb.svg" alt="Serbia" title="Serbia" class="flag-icon">
+                            <a href="https://www.blic.rs/vesti/svet" target="_blank" class="article-link">US military eliminated 14 narcotic terrorists and destroyed four drug ships</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/alb.svg" alt="Albania" title="Albania" class="flag-icon">
+                            <a href="http://www.gsh.al/category/bota/" target="_blank" class="article-link">US Navy Bombards Four Cocaine Cartel Ships, 14 Killed</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mys.svg" alt="Malaysia" title="Malaysia" class="flag-icon">
+                            <a href="https://www.malaymail.com/news/world" target="_blank" class="article-link">US strikes on alleged drug boats in eastern Pacific kill 14</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dnk.svg" alt="Denmark" title="Denmark" class="flag-icon">
+                            <a href="https://politiken.dk/udland/" target="_blank" class="article-link">USA&#39;s military kills 14 alleged drug dealers in the Pacific</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bel.svg" alt="Belgium" title="Belgium" class="flag-icon">
+                            <a href="https://www.lalibre.be/international" target="_blank" class="article-link">New US strikes against suspected drug trafficking boats kill 14</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "North and South American Perspectives on US Anti-Drug Operations",
+                color: "#72e5ac",
+                data: [ {"id": "AR"},  {"id": "BR"},  {"id": "CA"},  {"id": "CL"},  {"id": "CR"},  {"id": "KN"},  {"id": "PA"},  {"id": "PE"},  {"id": "PR"},  {"id": "PT"} ]
+            },
+        
+            {
+                name: "US Government and Defense Officials\u0027 Assertive Framing",
+                color: "#bf72e5",
+                data: [ {"id": ""},  {"id": "AU"},  {"id": "BB"},  {"id": "BG"},  {"id": "KR"},  {"id": "NL"},  {"id": "OM"},  {"id": "SV"},  {"id": "XK"} ]
+            },
+        
+            {
+                name: "European and Other International Observations Highlighting Security and Regional Implications",
+                color: "#e5d272",
+                data: [ {"id": "AL"},  {"id": "BE"},  {"id": "DK"},  {"id": "JM"},  {"id": "MY"},  {"id": "NO"},  {"id": "RS"} ]
+            }
+        
+        
+            ,
+            {
+                name: "Different perspectives:\n- North and South American Perspectives on US Anti-Drug Operations\n- European and Other International Observations Highlighting Security and Regional Implications",
+                color: "#AAAAAA",
+                data: [{"id": "ES"}]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Hide sources ▲' : 'Show sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li>
+               <a href="/">News </a>
+            </li>
+            <li>
+              <a href="/en/2025-10-29/country_counts.html">Top Countries</a>
+            </li>
+            <li>
+              <a href="/en/2025-10-29/labels.html">Top Themes</a>
+            </li>
+            <li>
+              <a href="/en/about.html">About</a>
+            </li>
+            <li>
+              <a href="/en/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
