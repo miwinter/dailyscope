@@ -1,0 +1,403 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Tensions croissantes suite aux lancements de missiles balistiques de la Corée du Nord</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/fr', '/en');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>                 
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/">Actus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2025-11-08/country_counts.html">Pays</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2025-11-08/labels.html">Thèmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Tensions croissantes suite aux lancements de missiles balistiques de la Corée du Nord</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-11-08</span> • <span>14 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-11-08/2025-11-08-8.webp" alt="Tensions croissantes suite aux lancements de missiles balistiques de la Corée du Nord" class="main-image">
+                <p style="margin:0" class="chapitre">Les récents lancements de missiles balistiques de la Corée du Nord ont considérablement accru les tensions régionales et internationales, Pyongyang annonçant une évolution vers des actions militaires plus agressives en réponse aux exercices conjoints entre les États-Unis et la Corée du Sud ainsi qu&#39;aux sanctions internationales. Les pays voisins tels que le Japon et la Corée du Sud expriment une inquiétude croissante en matière de sécurité alors que des missiles sont lancés dans les eaux environnantes, notamment la mer du Japon. Les États-Unis notent que ces lancements ne représentent pas une menace immédiate pour leur territoire mais poursuivent une surveillance étroite. La Russie a exprimé son soutien au droit de la Corée du Nord à l&#39;autodéfense, contrastant avec la position préoccupée de nombreux autres pays. Dans l&#39;ensemble, ces tests de missiles compliquent les défis sécuritaires en cours en Asie de l&#39;Est et soulignent le creusement des divisions géopolitiques.</p>
+            </div>
+            <h2>Les pays qui en parlent</h2>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Perspective nord-coréenne : Justification de l&#39;escalade militaire</h3>
+        <p class="cluster-description">La Corée du Nord présente ses récents lancements de missiles balistiques comme une réponse défensive et proportionnée aux menaces perçues, citant spécifiquement les exercices militaires conjoints entre la Corée du Sud et les États-Unis comme des provocations nécessitant des mesures plus offensives. Ce point de vue encadre les actions de Pyongyang comme une légitime autodéfense visant à assurer la sécurité nationale et à dissuader les pressions militaires extérieures, signalant une posture déterminée à renforcer ses capacités militaires.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/chl.svg" alt="Chili" title="Chili" class="flag-icon">
+                            <a href="https://www.latercera.com/categoria/mundo/" target="_blank" class="article-link">La Corée du Nord annonce des actions &#39;plus offensives&#39; suite au nouveau lancement de missile</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sau.svg" alt="Arabie Saoudite" title="Arabie Saoudite" class="flag-icon">
+                            <a href="https://www.arabnews.com/international" target="_blank" class="article-link">La Corée du Nord met en garde contre de nouvelles « actions offensives » après le dernier lancement de missile</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/per.svg" alt="Pérou" title="Pérou" class="flag-icon">
+                            <a href="https://elcomercio.pe/mundo/" target="_blank" class="article-link">La Corée du Nord tire un missile balistique dans un contexte de tensions liées aux sanctions américaines</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72a2e5; padding: 8px 16px; border-radius: 4px;">Inquiétudes des voisins régionaux : menaces pour la sécurité et surveillance</h3>
+        <p class="cluster-description">Les pays voisins directs de la Corée du Nord, tels que la Corée du Sud, le Japon et la Mongolie, mettent en avant leur vigilance et leurs inquiétudes croissantes face à ces essais de missiles. Leurs gouvernements rapportent les trajectoires des missiles impactant les eaux régionales et soulignent les risques que ces actions font peser sur la stabilité sécuritaire locale et régionale. La perspective reflète des appels urgents à une surveillance étroite, mettant en évidence le potentiel d&#39;escalade et de perturbations de la paix en Asie de l&#39;Est.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mng.svg" alt="Mongolie" title="Mongolie" class="flag-icon">
+                            <a href="https://montsame.mn/mn/more/17" target="_blank" class="article-link">La Corée du Nord tire un missile balistique dans la mer du Japon</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/twn.svg" alt="TWN" title="TWN" class="flag-icon">
+                            <a href="https://www.taipeitimes.com/News/world" target="_blank" class="article-link">La Corée du Nord tire un missile balistique non identifié</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pri.svg" alt="PRI" title="PRI" class="flag-icon">
+                            <a href="https://www.primerahora.com/noticias/mundo/" target="_blank" class="article-link">La Corée du Nord lance un missile balistique vers la mer d&#39;Est</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cze.svg" alt="République tchèque" title="République tchèque" class="flag-icon">
+                            <a href="https://www.idnes.cz/zpravy/zahranicni" target="_blank" class="article-link">La Corée du Nord lance un missile balistique en direction du Japon</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cze.svg" alt="République tchèque" title="République tchèque" class="flag-icon">
+                            <a href="https://www.lidovky.cz/svet" target="_blank" class="article-link">La Corée du Nord a tiré un autre missile de test en direction du Japon</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/khm.svg" alt="Cambodge" title="Cambodge" class="flag-icon">
+                            <a href="https://cambodianess.com/world" target="_blank" class="article-link">La Corée du Nord tire un missile balistique non identifié : l&#39;armée de Séoul</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #bf72e5; padding: 8px 16px; border-radius: 4px;">États-Unis et alliés : réponse prudente avec un accent sur l&#39;évaluation de la menace</h3>
+        <p class="cluster-description">L&#39;armée américaine reconnaît les lancements de missiles dans le cadre des tests d&#39;armes en cours de la Corée du Nord, mais estime qu&#39;ils ne constituent pas actuellement une menace immédiate pour le territoire américain. Cette approche équilibre la reconnaissance des tensions régionales accrues avec une communication publique mesurée visant à rassurer les territoires américains tels que Guam. La position reflète une surveillance continue et une préparation tout en gérant l&#39;inquiétude publique.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/srb.svg" alt="Serbie" title="Serbie" class="flag-icon">
+                            <a href="https://www.blic.rs/vesti/svet" target="_blank" class="article-link">Nouveau test : le lancement de missile nord-coréen n&#39;est pas une menace immédiate pour les États-Unis, selon l&#39;armée</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gum.svg" alt="GUM" title="GUM" class="flag-icon">
+                            <a href="https://www.guampdn.com/news/" target="_blank" class="article-link">Aucune menace immédiate pour les Mariannes suite au lancement rapporté de la Corée du Nord</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5728f; padding: 8px 16px; border-radius: 4px;">Soutien Russe : Affirmation des Droits Défensifs de la Corée du Nord</h3>
+        <p class="cluster-description">Le gouvernement russe soutient publiquement l&#39;affirmation de la Corée du Nord concernant un droit légitime à l&#39;autodéfense suite à son lancement de missile balistique. Le point de vue de la Russie contraste avec l&#39;appréhension de la majorité de la communauté internationale et contribue à la dynamique de sécurité complexe en Asie du Nord-Est en apportant un soutien diplomatique aux actions militaires de Pyongyang, ce qui pourrait influencer les alignements et le discours régionaux.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cpv.svg" alt="Cap-Vert" title="Cap-Vert" class="flag-icon">
+                            <a href="https://expressodasilhas.cv/mundo" target="_blank" class="article-link">Le gouvernement russe défend le lancement de missile balistique de la Corée du Nord</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Préoccupation internationale neutre/générale : tensions régionales accrues et défis sécuritaires</h3>
+        <p class="cluster-description">Plusieurs observateurs internationaux et médias fournissent des reportages généraux sur les lancements de missiles sans attribuer de blâme ou de soutien explicite. Ces comptes soulignent l&#39;escalade des tensions et mettent en évidence les violations potentielles des accords internationaux, soulignant la nécessité d&#39;une surveillance mondiale continue et d&#39;un engagement diplomatique pour maintenir la stabilité en Asie de l&#39;Est.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cri.svg" alt="Costa Rica" title="Costa Rica" class="flag-icon">
+                            <a href="https://www.diarioextra.com/categoria/internacionales/" target="_blank" class="article-link">La Corée du Nord tire un missile balistique non identifié</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/rou.svg" alt="Roumanie" title="Roumanie" class="flag-icon">
+                            <a href="https://jurnalul.ro/stiri/externe/" target="_blank" class="article-link">La Corée du Nord lance un nouveau missile balistique</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Perspective nord-cor\u00e9enne : Justification de l\u0027escalade militaire",
+                color: "#72e5ac",
+                data: [ {"id": "CL"},  {"id": "PE"},  {"id": "SA"} ]
+            },
+        
+            {
+                name: "Inqui\u00e9tudes des voisins r\u00e9gionaux : menaces pour la s\u00e9curit\u00e9 et surveillance",
+                color: "#72a2e5",
+                data: [ {"id": "CZ"},  {"id": "KH"},  {"id": "MN"},  {"id": "PR"},  {"id": "TW"} ]
+            },
+        
+            {
+                name: "\u00c9tats-Unis et alli\u00e9s : r\u00e9ponse prudente avec un accent sur l\u0027\u00e9valuation de la menace",
+                color: "#bf72e5",
+                data: [ {"id": "GU"},  {"id": "RS"} ]
+            },
+        
+            {
+                name: "Soutien Russe : Affirmation des Droits D\u00e9fensifs de la Cor\u00e9e du Nord",
+                color: "#e5728f",
+                data: [ {"id": "CV"} ]
+            },
+        
+            {
+                name: "Pr\u00e9occupation internationale neutre/g\u00e9n\u00e9rale : tensions r\u00e9gionales accrues et d\u00e9fis s\u00e9curitaires",
+                color: "#e5d272",
+                data: [ {"id": "CR"},  {"id": "RO"} ]
+            }
+        
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Masquer les sources ▲' : 'Montrer les sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li>
+               <a href="/">Actus </a>
+            </li>
+            <li>
+              <a href="/fr/2025-11-08/country_counts.html">Pays</a>
+            </li>
+            <li>
+              <a href="/fr/2025-11-08/labels.html">Thèmes</a>
+            </li>
+            <li>
+              <a href="/fr/about.html">A Propos</a>
+            </li>
+            <li>
+              <a href="/fr/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

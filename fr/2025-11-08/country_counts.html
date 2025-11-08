@@ -21,7 +21,6 @@
 <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
 <script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
  
-
 <style>
     /* ===== Bandes plein écran ===== */
     .band { width: 100%; margin: 0; padding: 0; }
@@ -135,10 +134,10 @@
               <a class="nav-link active" aria-current="page" href="/fr/">Actus</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2025-11-03/country_counts.html">Pays</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2025-11-08/country_counts.html">Pays</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2025-11-03/labels.html">Thèmes</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2025-11-08/labels.html">Thèmes</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
@@ -157,10 +156,13 @@
   <section class="band band--title">
     <div class="content-shell content-shell--narrow">
       <h2 class="section-title">Pays les plus mentionnés</h2>
-      <p class="section-subtitle">Pays les plus cités dans les articles récoltés aujourd'hui. 
+      <p class="section-subtitle">
+        <span class="legend-note">
+        Pays les plus cités dans les articles récoltés aujourd'hui. 
         Survolez un pays pour avoir le nombre d'articles qui y font référence.
         Survolez la légende pour mettre en évidence les pays correspondant à une plage de valeurs.<br>
-      2025-11-03 • 1771 mentions au total</p>
+        </span>
+      2025-11-08 • 1809 mentions au total</p>
     </div>
   </section>
 
@@ -176,9 +178,11 @@
   <div class="content-shell content-shell--narrow">
     <h2 class="section-title">Historique des pays les plus cités</h2>
     <p class="section-subtitle">
+      <span class="legend-note">
       Pays les plus cités au cours des 7 derniers jours. 
       Survolez une colonne pour afficher le nombre d’articles qui y sont associés.
       Cliquez sur un pays dans la légende ou sur une barre pour mettre en évidence l’évolution complète du pays.
+      </span>
     </p>
   </div>
 </section>
@@ -211,347 +215,357 @@
         var seriesData = [
             
             {
-                name: "1–50 mentions",
+                name: "1–2 mentions",
                 color: "#FBE9D0",
                 data: [
                 
-                { id: "SD", name: "40" },
-                
-                { id: "TZ", name: "32" },
-                
-                { id: "JM", name: "31" },
-                
-                { id: "MX", name: "29" },
-                
-                { id: "DE", name: "28" },
-                
-                { id: "IR", name: "27" },
-                
-                { id: "FR", name: "27" },
-                
-                { id: "CU", name: "18" },
-                
-                { id: "TR", name: "18" },
-                
-                { id: "HT", name: "17" },
-                
-                { id: "EU", name: "16" },
-                
-                { id: "SY", name: "15" },
-                
-                { id: "IN", name: "15" },
-                
-                { id: "MA", name: "14" },
-                
-                { id: "KR", name: "12" },
-                
-                { id: "EG", name: "12" },
-                
-                { id: "LB", name: "12" },
-                
-                { id: "KE", name: "10" },
-                
-                { id: "BE", name: "10" },
-                
-                { id: "PH", name: "10" },
-                
-                { id: "JP", name: "9" },
-                
-                { id: "TW", name: "9" },
-                
-                { id: "SA", name: "9" },
-                
-                { id: "AU", name: "9" },
-                
-                { id: "NL", name: "8" },
-                
-                { id: "RS", name: "8" },
-                
-                { id: "IT", name: "8" },
-                
-                { id: "UN", name: "8" },
-                
-                { id: "PK", name: "8" },
-                
-                { id: "BB", name: "8" },
-                
-                { id: "CA", name: "7" },
-                
-                { id: "IQ", name: "7" },
-                
-                { id: "BR", name: "7" },
-                
-                { id: "AE", name: "7" },
-                
-                { id: "ID", name: "7" },
-                
-                { id: "TT", name: "6" },
-                
-                { id: "ML", name: "5" },
-                
-                { id: "QA", name: "5" },
-                
-                { id: "VC", name: "5" },
-                
-                { id: "GW", name: "5" },
-                
-                { id: "ES", name: "5" },
-                
-                { id: "GD", name: "5" },
-                
-                { id: "DM", name: "5" },
-                
-                { id: "KP", name: "4" },
-                
-                { id: "EH", name: "4" },
-                
-                { id: "CO", name: "4" },
-                
-                { id: "CI", name: "4" },
-                
-                { id: "VN", name: "4" },
-                
-                { id: "JO", name: "4" },
-                
-                { id: "PR", name: "4" },
-                
-                { id: "BS", name: "4" },
-                
-                { id: "BZ", name: "4" },
-                
-                { id: "LC", name: "4" },
-                
-                { id: "ZA", name: "4" },
-                
-                { id: "MV", name: "3" },
-                
-                { id: "OM", name: "3" },
-                
-                { id: "RO", name: "3" },
-                
-                { id: "DO", name: "3" },
-                
-                { id: "CD", name: "3" },
-                
-                { id: "BY", name: "3" },
-                
-                { id: "SV", name: "3" },
-                
-                { id: "UZ", name: "3" },
-                
-                { id: "CR", name: "3" },
-                
-                { id: "GT", name: "3" },
-                
-                { id: "AZ", name: "2" },
-                
-                { id: "EE", name: "2" },
-                
-                { id: "KZ", name: "2" },
-                
-                { id: "TH", name: "2" },
-                
-                { id: "NI", name: "2" },
-                
-                { id: "UG", name: "2" },
-                
-                { id: "BA", name: "2" },
-                
-                { id: "LT", name: "2" },
-                
-                { id: "CM", name: "2" },
-                
-                { id: "KH", name: "2" },
-                
-                { id: "LK", name: "2" },
-                
-                { id: "PT", name: "2" },
-                
-                { id: "MY", name: "2" },
-                
-                { id: "DZ", name: "2" },
-                
-                { id: "FM", name: "2" },
-                
-                { id: "AL", name: "2" },
-                
-                { id: "AR", name: "2" },
-                
-                { id: "BG", name: "2" },
-                
-                { id: "KN", name: "2" },
-                
-                { id: "VG", name: "2" },
-                
-                { id: "AG", name: "2" },
-                
-                { id: "HN", name: "2" },
-                
-                { id: "PA", name: "2" },
-                
-                { id: "NZ", name: "2" },
-                
-                { id: "CH", name: "2" },
-                
-                { id: "KY", name: "2" },
-                
-                { id: "SX", name: "2" },
-                
-                { id: "TM", name: "1" },
-                
-                { id: "CF", name: "1" },
-                
-                { id: "RW", name: "1" },
-                
-                { id: "G7", name: "1" },
-                
-                { id: "CY", name: "1" },
-                
                 { id: "AT", name: "1" },
-                
-                { id: "GH", name: "1" },
-                
-                { id: "HU", name: "1" },
-                
-                { id: "LU", name: "1" },
-                
-                { id: "GA", name: "1" },
-                
-                { id: "GE", name: "1" },
-                
-                { id: "IO", name: "1" },
-                
-                { id: "BN", name: "1" },
-                
-                { id: "KW", name: "1" },
-                
-                { id: "CZ", name: "1" },
-                
-                { id: "TG", name: "1" },
-                
-                { id: "NP", name: "1" },
-                
-                { id: "PE", name: "1" },
-                
-                { id: "MG", name: "1" },
-                
-                { id: "KG", name: "1" },
-                
-                { id: "TJ", name: "1" },
-                
-                { id: "TU", name: "1" },
-                
-                { id: "NC", name: "1" },
                 
                 { id: "GN", name: "1" },
                 
-                { id: "YE", name: "1" },
+                { id: "AI", name: "1" },
                 
-                { id: "NO", name: "1" },
+                { id: "EG", name: "1" },
                 
-                { id: "MP", name: "1" },
-                
-                { id: "AS", name: "1" },
-                
-                { id: "LN", name: "1" },
-                
-                { id: "GR", name: "1" },
-                
-                { id: "MQ", name: "1" },
-                
-                { id: "MS", name: "1" },
-                
-                { id: "TC", name: "1" },
-                
-                { id: "MM", name: "1" },
-                
-                { id: "SG", name: "1" },
-                
-                { id: "NA", name: "1" },
-                
-                { id: "UY", name: "1" },
-                
-                { id: "VA", name: "1" },
-                
-                { id: "FI", name: "1" },
-                
-                { id: "MZ", name: "1" },
+                { id: "CX", name: "1" },
                 
                 { id: "BW", name: "1" },
                 
-                { id: "PG", name: "1" },
+                { id: "GW", name: "1" },
                 
-                { id: "FJ", name: "1" },
-                
-                { id: "WS", name: "1" },
-                
-                { id: "SN", name: "1" },
-                
-                { id: "LR", name: "1" },
+                { id: "RW", name: "1" },
                 
                 { id: "SM", name: "1" },
                 
-                { id: "BO", name: "1" },
+                { id: "SK", name: "1" },
                 
-                { id: "DJ", name: "1" },
+                { id: "BZ", name: "1" },
                 
-                { id: "BM", name: "1" },
+                { id: "HN", name: "1" },
                 
-                { id: "MK", name: "1" },
+                { id: "PA", name: "1" },
                 
-                { id: "MN", name: "1" },
+                { id: "BS", name: "1" },
                 
-                { id: "BD", name: "1" },
+                { id: "GE", name: "1" },
+                
+                { id: "CF", name: "1" },
+                
+                { id: "GQ", name: "1" },
+                
+                { id: "DO", name: "1" },
+                
+                { id: "MZ", name: "1" },
+                
+                { id: "NI", name: "1" },
+                
+                { id: "ZW", name: "1" },
+                
+                { id: "CY", name: "1" },
+                
+                { id: "EC", name: "1" },
+                
+                { id: "NR", name: "1" },
+                
+                { id: "NC", name: "1" },
+                
+                { id: "CK", name: "1" },
+                
+                { id: "LN", name: "1" },
                 
                 { id: "TD", name: "1" },
                 
-                { id: "NU", name: "1" },
+                { id: "GM", name: "1" },
                 
-                { id: "BH", name: "1" }
+                { id: "HR", name: "1" },
+                
+                { id: "JO", name: "1" },
+                
+                { id: "KW", name: "1" },
+                
+                { id: "OM", name: "1" },
+                
+                { id: "ET", name: "1" },
+                
+                { id: "LA", name: "1" },
+                
+                { id: "IE", name: "1" },
+                
+                { id: "NP", name: "1" },
+                
+                { id: "TL", name: "1" },
+                
+                { id: "SL", name: "1" },
+                
+                { id: "PT", name: "1" },
+                
+                { id: "YE", name: "1" },
+                
+                { id: "HT", name: "1" },
+                
+                { id: "SX", name: "1" },
+                
+                { id: "ZM", name: "1" },
+                
+                { id: "SS", name: "1" },
+                
+                { id: "GR", name: "1" },
+                
+                { id: "LV", name: "1" },
+                
+                { id: "BJ", name: "1" },
+                
+                { id: "TG", name: "1" },
+                
+                { id: "AG", name: "1" },
+                
+                { id: "DM", name: "1" },
+                
+                { id: "GD", name: "1" },
+                
+                { id: "XK", name: "1" },
+                
+                { id: "FI", name: "1" },
+                
+                { id: "CH", name: "2" },
+                
+                { id: "GA", name: "2" },
+                
+                { id: "IQ", name: "2" },
+                
+                { id: "BB", name: "2" },
+                
+                { id: "RO", name: "2" },
+                
+                { id: "KN", name: "2" },
+                
+                { id: "AM", name: "2" },
+                
+                { id: "GH", name: "2" },
+                
+                { id: "SN", name: "2" },
+                
+                { id: "AS", name: "2" },
+                
+                { id: "UG", name: "2" },
+                
+                { id: "BY", name: "2" },
+                
+                { id: "TT", name: "2" },
+                
+                { id: "TH", name: "2" },
+                
+                { id: "NO", name: "2" },
+                
+                { id: "MG", name: "2" },
+                
+                { id: "SG", name: "2" },
+                
+                { id: "AW", name: "2" },
+                
+                { id: "FJ", name: "2" },
+                
+                { id: "VC", name: "2" }
                 
                 ]
             },
             
             {
-                name: "51–100 mentions",
+                name: "3 mentions",
                 color: "#F8CEB6",
                 data: [
                 
-                { id: "CN", name: "91" },
+                { id: "CR", name: "3" },
                 
-                { id: "PS", name: "80" },
+                { id: "KE", name: "3" },
                 
-                { id: "AF", name: "70" },
+                { id: "KH", name: "3" },
                 
-                { id: "UA", name: "69" },
+                { id: "NZ", name: "3" },
                 
-                { id: "GB", name: "60" },
+                { id: "NE", name: "3" },
                 
-                { id: "VE", name: "57" },
+                { id: "LC", name: "3" },
                 
-                { id: "NG", name: "55" }
+                { id: "VA", name: "3" },
+                
+                { id: "CD", name: "3" },
+                
+                { id: "BD", name: "3" },
+                
+                { id: "GT", name: "3" },
+                
+                { id: "AR", name: "3" },
+                
+                { id: "LY", name: "3" },
+                
+                { id: "DK", name: "3" },
+                
+                { id: "CZ", name: "3" },
+                
+                { id: "SE", name: "3" },
+                
+                { id: "MM", name: "3" },
+                
+                { id: "BO", name: "3" },
+                
+                { id: "LT", name: "3" },
+                
+                { id: "DZ", name: "3" }
                 
                 ]
             },
             
             {
-                name: "101–150 mentions",
+                name: "4–6 mentions",
                 color: "#F4B39C",
                 data: [
                 
-                { id: "IL", name: "113" },
+                { id: "KG", name: "4" },
                 
-                { id: "RU", name: "106" }
+                { id: "KR", name: "4" },
+                
+                { id: "BF", name: "4" },
+                
+                { id: "MY", name: "4" },
+                
+                { id: "CU", name: "4" },
+                
+                { id: "IT", name: "4" },
+                
+                { id: "PE", name: "4" },
+                
+                { id: "SV", name: "4" },
+                
+                { id: "BE", name: "4" },
+                
+                { id: "BA", name: "4" },
+                
+                { id: "SO", name: "4" },
+                
+                { id: "CA", name: "4" },
+                
+                { id: "UZ", name: "5" },
+                
+                { id: "TJ", name: "5" },
+                
+                { id: "TM", name: "5" },
+                
+                { id: "CI", name: "5" },
+                
+                { id: "WS", name: "5" },
+                
+                { id: "AZ", name: "5" },
+                
+                { id: "RS", name: "5" },
+                
+                { id: "TW", name: "6" },
+                
+                { id: "ES", name: "6" },
+                
+                { id: "MA", name: "6" },
+                
+                { id: "BG", name: "6" }
                 
                 ]
             },
             
             {
-                name: "301–340 mentions",
-                color: "#E64833",
+                name: "7–17 mentions",
+                color: "#F19982",
                 data: [
                 
-                { id: "US", name: "333" }
+                { id: "AE", name: "7" },
+                
+                { id: "PL", name: "7" },
+                
+                { id: "NL", name: "7" },
+                
+                { id: "JM", name: "8" },
+                
+                { id: "TZ", name: "8" },
+                
+                { id: "QA", name: "8" },
+                
+                { id: "CO", name: "9" },
+                
+                { id: "AU", name: "9" },
+                
+                { id: "KZ", name: "9" },
+                
+                { id: "PK", name: "9" },
+                
+                { id: "CM", name: "10" },
+                
+                { id: "SA", name: "10" },
+                
+                { id: "NG", name: "10" },
+                
+                { id: "JP", name: "11" },
+                
+                { id: "ML", name: "12" },
+                
+                { id: "LB", name: "12" },
+                
+                { id: "IN", name: "13" },
+                
+                { id: "DE", name: "17" },
+                
+                { id: "AF", name: "17" },
+                
+                { id: "VE", name: "17" }
+                
+                ]
+            },
+            
+            {
+                name: "18–401 mentions",
+                color: "#ED7E67",
+                data: [
+                
+                { id: "ID", name: "18" },
+                
+                { id: "UN", name: "19" },
+                
+                { id: "KP", name: "19" },
+                
+                { id: "VN", name: "22" },
+                
+                { id: "ZA", name: "23" },
+                
+                { id: "GB", name: "23" },
+                
+                { id: "FR", name: "25" },
+                
+                { id: "SD", name: "27" },
+                
+                { id: "BR", name: "30" },
+                
+                { id: "IR", name: "30" },
+                
+                { id: "SY", name: "31" },
+                
+                { id: "MX", name: "33" },
+                
+                { id: "PH", name: "35" },
+                
+                { id: "TR", name: "46" },
+                
+                { id: "HU", name: "47" },
+                
+                { id: "PS", name: "53" },
+                
+                { id: "EU", name: "56" },
+                
+                { id: "UA", name: "59" },
+                
+                { id: "CN", name: "72" },
+                
+                { id: "IL", name: "120" },
+                
+                { id: "RU", name: "152" },
+                
+                { id: "US", name: "401" }
                 
                 ]
             }
@@ -607,9 +621,9 @@
 <script>
   anychart.onDocumentReady(function () {
     (function () {
-      var rawData = [["CN", 91, 97, 131, 87, 65, 83, 34], ["GB", 60, 85, 0, 0, 0, 0, 0], ["IL", 113, 77, 95, 80, 179, 203, 310], ["PS", 80, 56, 81, 63, 198, 185, 251], ["RU", 106, 129, 134, 173, 93, 128, 133], ["UA", 69, 77, 88, 77, 74, 59, 64], ["US", 333, 349, 315, 310, 320, 350, 318]];
-      var dates = ["2025-11-03", "2025-11-02", "2025-11-01", "2025-10-28", "2025-10-12", "2025-10-11", "2025-10-10"].reverse();
-      var countryNames = {"CN": "Chine", "GB": "Royaume-Uni", "IL": "Isra\u00ebl", "PS": "Palestine", "RU": "Russie", "UA": "Ukraine", "US": "\u00c9tats-Unis"};
+      var rawData = [["CN", 72, 62, 127, 124, 70, 87, 126], ["IL", 120, 89, 98, 112, 155, 80, 61], ["PS", 53, 46, 76, 89, 127, 63, 47], ["RU", 152, 129, 146, 113, 122, 173, 154], ["UA", 59, 70, 64, 55, 83, 77, 93], ["US", 401, 393, 352, 377, 300, 310, 378], ["VE", 0, 0, 0, 0, 0, 54, 68]];
+      var dates = ["2025-11-08", "2025-11-07", "2025-10-31", "2025-10-30", "2025-10-29", "2025-10-28", "2025-10-27"].reverse();
+      var countryNames = {"CN": "Chine", "IL": "Isra\u00ebl", "PS": "Palestine", "RU": "Russie", "UA": "Ukraine", "US": "\u00c9tats-Unis", "VE": "Venezuela"};
 
       var chart = anychart.column();
       chart.yScale().stackMode('value');
@@ -748,10 +762,10 @@
                <a href="/">Actus </a>
             </li>
             <li>
-              <a href="/fr/2025-11-03/country_counts.html">Pays</a>
+              <a href="/fr/2025-11-08/country_counts.html">Pays</a>
             </li>
             <li>
-              <a href="/fr/2025-11-03/labels.html">Thèmes</a>
+              <a href="/fr/2025-11-08/labels.html">Thèmes</a>
             </li>
             <li>
               <a href="/fr/about.html">A Propos</a>
