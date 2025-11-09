@@ -6652,3 +6652,34 @@ button.close-menu{
   line-height: 12px;      
   display: inline-block;  
 }
+
+/*************. pour les tooltip sur la page home *******/
+/* L’icône elle-même reste inline */
+.tooltip_mw {
+  position: static;   /* plus de position relative ici */
+  display: inline-block;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+/* Tooltip : aligné sur le bord gauche du h2 */
+.tooltiptext_mw {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;          /* juste sous le h2 */
+  left: 0;            /* bord gauche du h2 */
+  width: 220px;       /* ajuste selon ton contenu */
+  background-color: white;
+  color: #2C4652;
+  font-size: 10px;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px 8px;
+  z-index: 9999;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.tooltip_mw:hover .tooltiptext_mw {
+  visibility: visible;
+}
