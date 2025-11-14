@@ -1,0 +1,580 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Escalating Violence and Humanitarian Crisis Amid Fragile Israeli-Palestinian Ceasefire</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/fra.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="Français" title="Français" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/en', '/fr');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>              
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/2025-11-14/country_counts.html">Top Countries</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/2025-11-14/labels.html">Top Themes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Escalating Violence and Humanitarian Crisis Amid Fragile Israeli-Palestinian Ceasefire</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-11-14</span> • <span>72 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-11-14/2025-11-14-1.webp" alt="Escalating Violence and Humanitarian Crisis Amid Fragile Israeli-Palestinian Ceasefire" class="main-image">
+                <p style="margin:0" class="chapitre">The Israeli-Palestinian conflict remains marked by escalating violence, including attacks on religious sites such as mosques in the West Bank by Israeli settlers, and continuous Israeli military operations in Gaza resulting in significant destruction and casualties. Humanitarian conditions in Gaza deteriorate due to blockade-related shortages of medical supplies and power outages, complicating efforts to assist civilians. Hostage exchanges and the identification of deceased captives underscore the human toll and mercy efforts amidst ongoing hostilities. Various international actors express concern about escalating tensions, while peace initiatives face significant obstacles, with some nations proposing alternative solutions and others warning about the fragility of ceasefires. The situation reflects a complex interplay of military, humanitarian, and political challenges that threaten regional stability and peace efforts.</p>
+            </div>
+            <h2>Countries covering this topic</h2>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">United States and Western Allies&#39; Security and Conflict Focus</h3>
+        <p class="cluster-description">Articles from U.S. sources emphasize security concerns, highlighting Israeli military responses to Hamas, arrests of suspected Hamas members in the West Bank, and the dire consequences of settler violence undermining fragile ceasefires. There is attention on hostage situations and military operations, alongside diplomatic efforts such as U.S. mediators pushing for ceasefires and warnings from U.S. officials about risks to peace from escalating violence. The overarching viewpoint stresses the need for stability and containment of conflict to prevent wider escalation.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/usa.svg" alt="United States" title="United States" class="flag-icon">
+                            <a href="https://edition.cnn.com/world" target="_blank" class="article-link">Israeli settlers torch mosque and spray graffiti in latest West Bank attack</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/usa.svg" alt="United States" title="United States" class="flag-icon">
+                            <a href="https://edition.cnn.com/world" target="_blank" class="article-link">Israel identifies deceased hostage returned by Hamas as Manny Godard</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/usa.svg" alt="United States" title="United States" class="flag-icon">
+                            <a href="https://edition.cnn.com/world" target="_blank" class="article-link">‘A death sentence for my son’: Israel plans to deport sick Palestinians back to Gaza, patients and doctors say</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/rou.svg" alt="Romania" title="Romania" class="flag-icon">
+                            <a href="https://jurnalul.ro/stiri/externe/" target="_blank" class="article-link">Marco Rubio warns violence in West Bank may endanger Gaza ceasefire</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nld.svg" alt="Netherlands" title="Netherlands" class="flag-icon">
+                            <a href="https://nos.nl/" target="_blank" class="article-link">Israeli army confirms body of deceased hostage Meni Godard, settlers set fire to mosque in West Bank</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vat.svg" alt="Holy See" title="Holy See" class="flag-icon">
+                            <a href="https://www.osservatoreromano.va/it/sections/internazionale.html" target="_blank" class="article-link">Spike in Attacks by Israeli Settlers in the West Bank</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bhr.svg" alt="Bahrain" title="Bahrain" class="flag-icon">
+                            <a href="https://akhbar-alkhaleej.com/news/section/WORL" target="_blank" class="article-link">US Optimistic on UN Resolution Regarding Gaza; Warning of Settler Attacks Consequences</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bra.svg" alt="Brazil" title="Brazil" class="flag-icon">
+                            <a href="https://www1.folha.uol.com.br/mundo/" target="_blank" class="article-link">Israeli forces arrest 40 suspected Hamas cell members in West Bank planning attacks</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mlt.svg" alt="Malta" title="Malta" class="flag-icon">
+                            <a href="https://www.maltatoday.com.mt/news/world/" target="_blank" class="article-link">Netanyahu orders &#39;powerful&#39; strikes on Gaza after Hamas accused of ceasefire breach</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fra.svg" alt="France" title="France" class="flag-icon">
+                            <a href="https://www.lefigaro.fr/international/" target="_blank" class="article-link">Israel Confirms Returned Remains Are of Israeli Hostage from Gaza</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72a2e5; padding: 8px 16px; border-radius: 4px;">Arab and Regional Perspectives Emphasizing Occupation and Humanitarian Impact</h3>
+        <p class="cluster-description">Sources from Arab countries and allied nations focus on Israeli occupation policies, military operations resulting in widespread destruction, and the humanitarian crisis in Gaza and the West Bank. They report on Israeli raids, evictions, settler violence, and airstrikes, condemning such actions as exacerbating tensions and undermining peace. These articles highlight displacement, damage to infrastructure, and calls for international intervention to protect Palestinian civilians and uphold their rights.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/yem.svg" alt="Yemen" title="Yemen" class="flag-icon">
+                            <a href="https://www.ypagency.net/" target="_blank" class="article-link">Hamas and Islamic Jihad condemn the Israeli occupation forces&#39; targeting of boys and children in the West Bank</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/yem.svg" alt="Yemen" title="Yemen" class="flag-icon">
+                            <a href="https://www.saba.ye" target="_blank" class="article-link">UN Condemns Settler Attack on Mosque in the West Bank</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/yem.svg" alt="Yemen" title="Yemen" class="flag-icon">
+                            <a href="https://www.saba.ye" target="_blank" class="article-link">Switzerland Expresses Concern over Increasing Settler Violence in the West Bank</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/yem.svg" alt="Yemen" title="Yemen" class="flag-icon">
+                            <a href="https://www.saba.ye" target="_blank" class="article-link">Al-Qassam Brigades and Al-Quds Brigades Return Body of Israeli Prisoner in Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/yem.svg" alt="Yemen" title="Yemen" class="flag-icon">
+                            <a href="https://www.saba.ye" target="_blank" class="article-link">Israeli Forces Shoot Three Palestinians in Al-Eizariya and Raid Hebron</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kwt.svg" alt="Kuwait" title="Kuwait" class="flag-icon">
+                            <a href="https://kuwaittimes.com/world/" target="_blank" class="article-link">Gaza families still without power</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kwt.svg" alt="Kuwait" title="Kuwait" class="flag-icon">
+                            <a href="https://kuwaittimes.com/world/" target="_blank" class="article-link">Gaza hospitals can&#39;t keep up as thousands await treatment</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pse.svg" alt="Palestine" title="Palestine" class="flag-icon">
+                            <a href="http://www.al-ayyam.ps/" target="_blank" class="article-link">Israeli Army Creates Target Bank in the West Bank</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pse.svg" alt="Palestine" title="Palestine" class="flag-icon">
+                            <a href="http://www.al-ayyam.ps/" target="_blank" class="article-link">Israeli Discussions About a &#39;Settlement&#39; to Release 200 Fighters from Rafah Tunnels</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jor.svg" alt="Jordan" title="Jordan" class="flag-icon">
+                            <a href="https://www.jordannews.jo/Category/18/Global" target="_blank" class="article-link">Israeli Occupation Continues Airstrikes on Various Areas in Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jor.svg" alt="Jordan" title="Jordan" class="flag-icon">
+                            <a href="https://www.jordannews.jo/Category/18/Global" target="_blank" class="article-link">Israeli Supreme Court Approves Evacuation of Ras Jaraba Village in the Negev</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jor.svg" alt="Jordan" title="Jordan" class="flag-icon">
+                            <a href="https://www.jordannews.jo/Category/18/Global" target="_blank" class="article-link">Israeli Airstrikes on Southern Lebanon Cause Litani River Blockage</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cze.svg" alt="Czech Republic" title="Czech Republic" class="flag-icon">
+                            <a href="https://www.idnes.cz/zpravy/zahranicni" target="_blank" class="article-link">Jewish settlers set mosque on fire, Israeli army killed two Palestinians</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cze.svg" alt="Czech Republic" title="Czech Republic" class="flag-icon">
+                            <a href="https://www.lidovky.cz/svet" target="_blank" class="article-link">Jewish settlers set fire to mosque, Israeli army kills two Palestinians</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/egy.svg" alt="Egypt" title="Egypt" class="flag-icon">
+                            <a href="https://www.dailynewsegypt.com/category/politics/" target="_blank" class="article-link">Tensions escalate in Gaza as Israeli violations persist, humanitarian crisis deepens</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/are.svg" alt="United Arab Emirates" title="United Arab Emirates" class="flag-icon">
+                            <a href="https://www.thenationalnews.com/international" target="_blank" class="article-link">Israeli army vows to crack down on settler attacks amid escalating violence in occupied West Bank</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lbn.svg" alt="Lebanon" title="Lebanon" class="flag-icon">
+                            <a href="https://www.lorientlejour.com/rubrique/7-moyen-orient-et-monde" target="_blank" class="article-link">Palestinians take advantage of ceasefire to restore a damaged historic site in Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lbn.svg" alt="Lebanon" title="Lebanon" class="flag-icon">
+                            <a href="https://www.lorientlejour.com/rubrique/7-moyen-orient-et-monde" target="_blank" class="article-link">Palestinians were used to explore potentially booby-trapped tunnels, according to US officials</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #bf72e5; padding: 8px 16px; border-radius: 4px;">International Organizations and Humanitarian Agencies&#39; Concern Over Aid and Civilian Welfare</h3>
+        <p class="cluster-description">Reports from UN bodies, UNICEF, and international humanitarian sources stress the obstructed delivery of critical medical and humanitarian aid to Gaza, exacerbated by Israeli restrictions on supplies like syringes and fuel, leading to severe public health crises. They document the massive destruction of homes and infrastructure and call urgently for increased funding and international support to address the worsening living conditions for Palestinians amid ongoing violence and ceasefire limitations.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/moz.svg" alt="Mozambique" title="Mozambique" class="flag-icon">
+                            <a href="https://opais.co.mz/internacional/" target="_blank" class="article-link">UNICEF accuses Israel of blocking syringes for vaccines in Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tls.svg" alt="Timor-Leste" title="Timor-Leste" class="flag-icon">
+                            <a href="https://www.noticiasaominuto.com/mundo" target="_blank" class="article-link">UN agency supporting Palestinians calls for more funds</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/blr.svg" alt="Belarus" title="Belarus" class="flag-icon">
+                            <a href="https://www.belta.by/" target="_blank" class="article-link">UN Reports Over 282,000 Homes Destroyed or Seriously Damaged in Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/omn.svg" alt="Oman" title="Oman" class="flag-icon">
+                            <a href="https://www.omanobserver.om/world" target="_blank" class="article-link">US envoy to press Gaza truce</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kor.svg" alt="South Korea" title="South Korea" class="flag-icon">
+                            <a href="https://www.koreaherald.com/World" target="_blank" class="article-link">UNICEF says Israel blocking one million syringes needed to vaccinate Gaza children</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/qat.svg" alt="Qatar" title="Qatar" class="flag-icon">
+                            <a href="https://www.al-watan.com/%D8%B9%D8%B1%D8%A8%D9%8A-%D9%88%D8%AF%D9%88%D9%84%D9%8A" target="_blank" class="article-link">Over 282,000 Homes Destroyed or Damaged in Gaza</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5728f; padding: 8px 16px; border-radius: 4px;">Israel&#39;s Internal and Official Responses Addressing Security, Settler Violence, and Peace Efforts</h3>
+        <p class="cluster-description">Israeli official statements and government sources condemn settler violence against Palestinians and call for restraint to preserve peace efforts, while also detailing military operations including strikes and arrests in the West Bank. The government stresses counterterrorism efforts, the complexities of hostage negotiations, and legal decisions such as village evacuations. This perspective underscores balancing national security priorities with addressing internal unrest and international criticism.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Ireland" title="Ireland" class="flag-icon">
+                            <a href="https://www.independent.ie/world-news/" target="_blank" class="article-link">Israeli president Isaac Herzog calls for an end to ‘shocking’ violence by Jewish settlers against Palestinians</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vat.svg" alt="Holy See" title="Holy See" class="flag-icon">
+                            <a href="https://www.vaticannews.va/it/mondo.html" target="_blank" class="article-link">Israel reopens Zikim crossing for aid delivery to Gaza</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/afg.svg" alt="Afghanistan" title="Afghanistan" class="flag-icon">
+                            <a href="https://tolonews.com/world" target="_blank" class="article-link">Completion of the First Phase of the Ceasefire Between Hamas and Israel</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/est.svg" alt="Estonia" title="Estonia" class="flag-icon">
+                            <a href="https://www.delfi.ee/kategooria/123/maailm" target="_blank" class="article-link">Israel President Condemns Jewish Settler Attacks on Palestinian Villages</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mex.svg" alt="Mexico" title="Mexico" class="flag-icon">
+                            <a href="https://www.jornada.com.mx/categoria/mundo" target="_blank" class="article-link">Israeli settlers set fire to a mosque in central West Bank</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nor.svg" alt="Norway" title="Norway" class="flag-icon">
+                            <a href="https://www.aftenposten.no/verden" target="_blank" class="article-link">Israeli settlers set fire to mosque in West Bank</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Critical Analyses and Alternative International Proposals on Conflict Resolution</h3>
+        <p class="cluster-description">Media analyses and reports from countries like Russia and Switzerland critique existing ceasefire plans, pointing to failures or ineffectiveness of proposed peacekeeping forces and peace initiatives like Trump&#39;s Gaza plan. They highlight political obstacles at the UN Security Council and potential risks of territorial partition or annexation, urging reconsideration of strategies to achieve lasting peace amid deep-seated tensions and unaddressed grievances.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cyp.svg" alt="Cyprus" title="Cyprus" class="flag-icon">
+                            <a href="https://www.philenews.com/kosmos/" target="_blank" class="article-link">Moscow against Trump&#39;s Gaza plan: Russia&#39;s counterproposal at the Security Council</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svn.svg" alt="Slovenia" title="Slovenia" class="flag-icon">
+                            <a href="https://www.delo.si/novice/svet" target="_blank" class="article-link">Israel has effectively annexed half of the Gaza Strip; genocide continues by other means</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kwt.svg" alt="Kuwait" title="Kuwait" class="flag-icon">
+                            <a href="https://kuwaittimes.com/world/" target="_blank" class="article-link">Partition of Gaza a looming risk as Trump’s plan falters</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kwt.svg" alt="Kuwait" title="Kuwait" class="flag-icon">
+                            <a href="https://www.aljarida.com/%D8%AF%D9%88%D9%84%D9%8A%D8%A7%D8%AA" target="_blank" class="article-link">US and Israeli &#39;Plan B&#39; for Gaza if Trump&#39;s path fails</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/swe.svg" alt="Sweden" title="Sweden" class="flag-icon">
+                            <a href="https://www.dn.se/varlden/" target="_blank" class="article-link">Nathan Shachar: Trump&#39;s peace force in Gaza exists only on paper</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bel.svg" alt="Belgium" title="Belgium" class="flag-icon">
+                            <a href="https://www.lalibre.be/international" target="_blank" class="article-link">Israel has conducted ninety attacks on Palestinian water installations since 2024</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ind.svg" alt="India" title="India" class="flag-icon">
+                            <a href="https://www.thehindu.com/news/international/" target="_blank" class="article-link">U.S. proposal at UN for Gaza stabilization force faces concerns from Russia, China, Arabs</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+        map.padding([0, 0, 0, 0]);
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "United States and Western Allies\u0027 Security and Conflict Focus",
+                color: "#72e5ac",
+                data: [ {"id": "BH"},  {"id": "BR"},  {"id": "FR"},  {"id": "MT"},  {"id": "NL"},  {"id": "RO"},  {"id": "US"} ]
+            },
+        
+            {
+                name: "Arab and Regional Perspectives Emphasizing Occupation and Humanitarian Impact",
+                color: "#72a2e5",
+                data: [ {"id": "AE"},  {"id": "CZ"},  {"id": "EG"},  {"id": "JO"},  {"id": "LB"},  {"id": "PS"},  {"id": "YE"} ]
+            },
+        
+            {
+                name: "International Organizations and Humanitarian Agencies\u0027 Concern Over Aid and Civilian Welfare",
+                color: "#bf72e5",
+                data: [ {"id": "BY"},  {"id": "KR"},  {"id": "MZ"},  {"id": "OM"},  {"id": "QA"},  {"id": "TL"} ]
+            },
+        
+            {
+                name: "Israel\u0027s Internal and Official Responses Addressing Security, Settler Violence, and Peace Efforts",
+                color: "#e5728f",
+                data: [ {"id": "AF"},  {"id": "EE"},  {"id": "IE"},  {"id": "MX"},  {"id": "NO"} ]
+            },
+        
+            {
+                name: "Critical Analyses and Alternative International Proposals on Conflict Resolution",
+                color: "#e5d272",
+                data: [ {"id": "BE"},  {"id": "CY"},  {"id": "IN"},  {"id": "SE"},  {"id": "SI"} ]
+            }
+        
+        
+            ,
+            {
+                name: "Different perspectives:\n- United States and Western Allies\u0027 Security and Conflict Focus\n- Israel\u0027s Internal and Official Responses Addressing Security, Settler Violence, and Peace Efforts",
+                color: "#AAAAAA",
+                data: [{"id": "VA"}]
+            },
+            {
+                name: "Different perspectives:\n- Arab and Regional Perspectives Emphasizing Occupation and Humanitarian Impact\n- Critical Analyses and Alternative International Proposals on Conflict Resolution",
+                color: "#AAAAAA",
+                data: [{"id": "KW"}]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Hide sources ▲' : 'Show sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li>
+               <a href="/">News </a>
+            </li>
+            <li>
+              <a href="/en/2025-11-14/country_counts.html">Top Countries</a>
+            </li>
+            <li>
+              <a href="/en/2025-11-14/labels.html">Top Themes</a>
+            </li>
+            <li>
+              <a href="/en/about.html">About</a>
+            </li>
+            <li>
+              <a href="/en/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

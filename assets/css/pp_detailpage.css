@@ -45,7 +45,7 @@ body {
 
 .header-content {
     width: 100%;
-    padding: 20px 20px 0 20px;;
+    padding: 20px 0 0 20px;;
     background-color: #f8f9fa;
 }
 
@@ -326,9 +326,6 @@ img.main-image {
 /* Gouttière commune pour aligner header-content et cluster-description */
 :root { --ds-gutter-x: 20px; }
 
-/* header-content a déjà un padding: 20px; on précise gauche/droite via la variable */
-.header-content { padding: 20px var(--ds-gutter-x); }  /* aligné sur desktop */
-
 /* Applique la même gouttière au bloc des clusters (texte et listes) */
 .cluster-section { padding: 0 var(--ds-gutter-x); }    /* aligne le <p class="cluster-description"> */
 
@@ -338,5 +335,68 @@ img.main-image {
   /* (si besoin, tu peux laisser 8–12px au lieu de 0) */
 }
 
+   /* ===== Bandes plein écran ===== */
+    .band { width: 100%; margin: 0; padding: 0; }
+    .band--title { background: #f8f9fa; border-top: 1px solid #eee; }
+    .band--chart { background: #fff; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
 
+    /* Coquille commune pour aligner les titres et centrer les contenus */
+    .content-shell {
+      width: 100%;
+      max-width: 1400px;     /* largeur max sur grands écrans */
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+    /* Padding spécifique des sections */
+    .band--title .content-shell { padding: 28px 16px 18px; }
+    .band--chart .content-shell--wide    { padding: 0px; }
+    .band--chart .content-shell--history { padding: 20px 16px 40px; }
+
+    /* Titre : aligné à gauche dans la coquille (avec marge intérieure) */
+    .section-title {
+      margin: 0;
+      font: 600 20px/1.3 "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif; /*system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial;*/
+      
+      text-align: left;
+    }
+    .section-subtitle {
+      margin: 8px 0 0 0;
+      color: #666;
+      font: 400 14px/1.5 "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif; /*system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial;*/
+      text-align: left;
+    }
+
+    /* ===== Containers charts ===== */
+    /* MAP : pleine largeur dans la coquille */
+    .content-shell--wide { width: 100%; }
+    #map-container     { width: 100%; height: 520px; }
+
+    /* (Optionnel) légère respiration entre sections adjacentes de titre */
+    .band--title + .band--title { border-top: none; }
+
+    .chart-frame {
+      width: min(100%, 800px);
+      margin: 0 auto;
+      height: clamp(320px, 56vw, 480px); /* min 320px, grandit avec la largeur */
+      position: relative;
+    }
+
+    /* le chart occupe 100% du cadre */
+    .chart-plot {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Coquille étroite pour les textes au-dessus des charts */
+    .content-shell--narrow {
+      max-width: 860px;         /* largeur contenue, à ajuster si besoin */
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media (max-width: 640px) {
+      .band--chart .content-shell--wide { padding: 0px; } /* au lieu de 20/40px */
+      #map-container { height: 200px; }                              /* au lieu de 520px */
+    }
 

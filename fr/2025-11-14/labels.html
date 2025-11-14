@@ -105,10 +105,10 @@
               <a class="nav-link active" aria-current="page" href="/fr/">Actus</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2025-10-29/country_counts.html">Pays</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2025-11-14/country_counts.html">Pays</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2025-10-29/labels.html">Thèmes</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2025-11-14/labels.html">Thèmes</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
@@ -128,8 +128,11 @@
   <div class="content-shell content-shell--narrow">
     <h2 class="section-title">Principales thématiques du jour</h2>
     <p class="section-subtitle">
+      <span class="legend-note">
       Voici les principales thématiques identifiées dans les articles 
-      collectés aujourd’hui (2025-10-29).
+      collectés aujourd’hui. En <span style="background-color: #9C74DE; color: white; font-style: normal;">&nbsp;violet&nbsp;</span> les thématiques les plus fréquentes,déjà abordées
+      durant les jours précédents ; en <span style="background-color: #D67883; color: white; font-style: normal; ">&nbsp;rouge&nbsp;</span> les thématiques apparues aujourd’hui pour la première fois.
+      </span>
     </p>
   </div>
 </section>
@@ -146,9 +149,11 @@
   <div class="content-shell content-shell--narrow">
     <h2 class="section-title">Historique des thématiques</h2>
     <p class="section-subtitle">
+      <span class="legend-note">
       Principales thématiques identifiées au cours des 7 derniers jours.
       Survolez une colonne pour afficher le nombre d’articles associés à une thématique.
       Cliquez sur une thématique dans la légende ou sur une barre pour mettre en évidence l’évolution complète de cette thématique.
+      </span>
     </p>
   </div>
 </section>
@@ -159,102 +164,117 @@
       </div>
     </div>
   </section>
+  
+
 <script>
 anychart.onDocumentReady(function () {
-  // === Données brutes Jinja (inchangé côté Python)
-  var raw = [{"category": "Natural Disaster", "weight": 110}, {"category": "Russia\u2013Ukraine Diplomatic and Military Conflict", "weight": 87}, {"category": "Israel-Palestine Conflict", "weight": 92}, {"category": "US\u2013Venezuela Military and Mediation Issues", "weight": 21}, {"category": "Israel-Hamas Ceasefire Issues", "weight": 74}, {"category": "Trump\u2013Japan Diplomatic Meeting", "weight": 13}, {"category": "Biya Reelection Dispute", "weight": 19}, {"category": "US Navy Drug-Ship Strike", "weight": 30}, {"category": "Rio Favela Crackdown", "weight": 26}, {"category": "Sudan El Fasher Attacks", "weight": 27}, {"category": "Trump\u2013Xi Diplomatic Talks", "weight": 18}, {"category": "Kenya Plane Crash", "weight": 13}, {"category": "North Korea Missile Test", "weight": 11}, {"category": "Ivory Coast Election Results", "weight": 12}] || [];
+  // --- Data: [{ category, weight, remanent }, ...]
+  var raw = [{"category": "Ukraine-Russia Conflict", "remanent": 1, "weight": 68}, {"category": "US Shutdown Standoff", "remanent": 1, "weight": 41}, {"category": "Turkey-Georgia Plane Crash", "remanent": 1, "weight": 11}, {"category": "Pakistan Suicide Bombing", "remanent": 1, "weight": 10}, {"category": "Trump BBC Defamation Suit", "remanent": 1, "weight": 13}, {"category": "BBC Trump Apology", "remanent": 0, "weight": 11}, {"category": "US Western Hemisphere Counter-Narcotics Operation", "remanent": 0, "weight": 19}, {"category": "Operation Southern Spear Strike", "remanent": 0, "weight": 13}, {"category": "Paris 2015 Attack Anniversary", "remanent": 0, "weight": 11}, {"category": "Sudan Humanitarian Crisis", "remanent": 0, "weight": 14}, {"category": "Israel-Palestine Conflict", "remanent": 0, "weight": 72}, {"category": "Trump-Epstein Disclosures", "remanent": 0, "weight": 16}] || [];
 
-  // === min/max (calculés une seule fois)
+  // --- Helpers
+  function escHtml(s){
+    s = String(s == null ? '' : s);
+    return s.replace(/&/g,'&amp;')
+            .replace(/</g,'&lt;')
+            .replace(/>/g,'&gt;')
+            .replace(/"/g,'&quot;')
+            .replace(/'/g,'&#39;');
+  }
+  function hexToRgb(h){
+    h = String(h||'').replace('#','');
+    if (h.length === 3) h = h.split('').map(function(x){return x+x;}).join('');
+    return { r:parseInt(h.slice(0,2),16)||0, g:parseInt(h.slice(2,4),16)||0, b:parseInt(h.slice(4,6),16)||0 };
+  }
+  function rgbToHex(r,g,b){
+    function c(v){ v=Math.max(0,Math.min(255,Math.round(v))); return v.toString(16).padStart(2,'0'); }
+    return '#'+c(r)+c(g)+c(b);
+  }
+  function lerp(a,b,t){ return a + (b-a)*t; }
+  function blend(c1,c2,t){ var A=hexToRgb(c1),B=hexToRgb(c2); return rgbToHex(lerp(A.r,B.r,t), lerp(A.g,B.g,t), lerp(A.b,B.b,t)); }
+
+  // --- min/max for weight
   var minVal = Infinity, maxVal = -Infinity;
   for (var i = 0; i < raw.length; i++) {
-    var vv = Number(raw[i].weight);
-    if (isFinite(vv)) { if (vv < minVal) minVal = vv; if (vv > maxVal) maxVal = vv; }
+    var wv = Number(raw[i].weight);
+    if (isFinite(wv)) { if (wv < minVal) minVal = wv; if (wv > maxVal) maxVal = wv; }
   }
   if (minVal === Infinity) { minVal = 0; maxVal = 0; }
-
-  // === Tailles FIXES par paliers (modifie si besoin)
-  var SIZE_STEPS = [8, 12, 14, 16, 18]; // petites → grandes polices
-  function fontSizeFromValue(v) {
-    if (!isFinite(v) || maxVal === minVal) return 16; // défaut si plat
-    var t = (v - minVal) / (maxVal - minVal); // 0..1
-    if (t < 0.20) return SIZE_STEPS[0];
-    if (t < 0.40) return SIZE_STEPS[1];
-    if (t < 0.65) return SIZE_STEPS[2];
-    if (t < 0.85) return SIZE_STEPS[3];
-    return SIZE_STEPS[4];
+  function norm(v){
+    if (!isFinite(v) || maxVal === minVal) return 0.5;
+    var t = (v - minVal) / (maxVal - minVal);
+    return Math.max(0, Math.min(1, t));
   }
 
-  // === Arbre (root -> catégories)
+  // --- ramps
+  var RAMP_COLD  = { lo: '#F2D9DC', hi: '#D67883' };
+  var RAMP_HOT = { lo: '#E4DAF3', hi: '#9C74DE' };
+
+  // --- font scaling (adjust if you want larger/smaller)
+  var FS_MIN = 6, FS_MAX = 18;       // title line
+  var FS_SUB = function(fs){ return Math.max(9, Math.round(fs * 0.85)); }; // value line
+
+  function fontSizeFromValue(v){
+    if (!isFinite(v) || maxVal === minVal) return Math.round((FS_MIN + FS_MAX)/2);
+    var t = (v - minVal) / (maxVal - minVal); // 0..1
+    return Math.round(FS_MIN + t * (FS_MAX - FS_MIN));
+  }
+
+  // --- Build as-table nodes with per-point color + per-point HTML label
   var nodes = [{ id: 'root', name: 'Categories' }];
   for (var j = 0; j < raw.length; j++) {
+    var w = Number(raw[j].weight) || 0;
+    var r = Number(raw[j].remanent) || 0;
+    var t = norm(w);
+    var ramp = (r === 1) ? RAMP_HOT : RAMP_COLD;
+    var fill = blend(ramp.lo, ramp.hi, t);
+
+    var fs  = fontSizeFromValue(w);
+    var fs2 = FS_SUB(fs);
+    var nameHtml = escHtml(raw[j].category);
+    var valueHtml = isFinite(w) ? String(w) : '';
+
+    // Per-point HTML label (no callbacks, no tokens)
+    var pointLabelHtml =
+      '<div style="text-align:center; line-height:1.15; padding:2px 4px;">' +
+        '<span style="display:block; font-size:'+fs+'px;">'+ nameHtml +'</span>' +
+        (valueHtml ? '<span style="font-size:'+fs2+'px; opacity:.75;"><br>'+ valueHtml +'</span>' : '') +
+      '</div>';
+
     nodes.push({
       id: 'cat_' + j,
-      name: String(raw[j].category),
       parent: 'root',
-      value: Number(raw[j].weight) || 0
+      name: String(raw[j].category),
+      value: w,
+      remanent: r,
+      normal: { fill: fill },                  // color per point
+      label: { enabled: true, useHtml: true,   // label per point
+               fontColor: '#0f172a',
+               fontWeight: 600,
+               format: pointLabelHtml }
     });
   }
-  var dataTree = anychart.data.tree(nodes, 'as-table');
 
-  // === Chart
-  var chart = anychart.treeMap(dataTree);
+  var tree  = anychart.data.tree(nodes, 'as-table');
+  var chart = anychart.treeMap(tree);
 
-  // Fond / marges / pas de bordure
-  chart.background().fill('#0f172a');  // ← change la couleur si besoin
-  chart.margin(0);
-  chart.padding(0);
-  chart.normal().stroke('none');
-  chart.hovered().stroke('none');
-  chart.selected().stroke('none');
-  chart.stroke(null);
-
-  // Header "Categories" invisible (et pas de drill-up nécessaire ici)
+  // --- style
+  chart.background().fill('#ffffff');     // remets '#0f172a' + label fontColor '#e2e8f0' si thème sombre
   chart.headers().enabled(false);
-
-  // Dégradé continu (valeurs faibles → fortes)
-  var scale = anychart.scales.linearColor();
-  scale.colors(['#FBE9D0', '#E64833']); // ← ajuste tes couleurs
-  chart.colorScale(scale);
-
-  // Pas de légende (barre de dégradé)
-  chart.colorRange().enabled(false);
-
-  // Labels : HTML, tailles FIXES selon la valeur (pas d’auto-fit)
-  chart.labels()
-    .enabled(true)
-    .useHtml(true)
-    .adjustFontSize(false)
-    .wordWrap('byWord')
-    .wordBreak('break-word')
-    .hAlign('center')
-    .vAlign('middle')
-    .format(function () {
-      var get = (this && typeof this.get === 'function') ? this.get.bind(this) : null;
-      var name = (get && get('name')) || this?.name || '';
-      var vRaw = (get && get('value')) || this?.value;
-      var v = Number(vRaw);
-
-      name = String(name);
-      if (name.length > 28) name = name.slice(0, 27) + '…';
-
-      var fs  = fontSizeFromValue(v);
-      var fs2 = Math.max(fs - 2, 10);
-
-      // Couleur texte auto pour contraste basique
-      var t = (maxVal === minVal) ? 0.5 : Math.max(0, Math.min(1, (v - minVal) / (maxVal - minVal)));
-      var fontColor = (t > 0.55) ? '#ffffff' : '#111111';
-
-      return '' +
-        '<div style="line-height:1.06; text-align:center; color:'+fontColor+'">' +
-          '<span style="font-size:'+fs+'px; display:block;">'+ name +'</span>' +
-          (isFinite(v) ? '<span style="font-size:'+fs2+'px; opacity:.85;"><br>'+ v +'</span>' : '') +
-        '</div>';
-    });
-
+  chart.margin(0); chart.padding(0);
   chart.maxDepth(1);
   chart.selectionMode('none');
 
-  // Conteneur existant
+  // Keep our per-point colors (don’t apply global palette/scales)
+  // (Ne pas appeler palette()/colorScale() sur ta build)
+
+  // no borders
+  chart.normal().stroke('none');
+  chart.hovered().stroke('none');
+  chart.selected().stroke('none');
+
+  // Disable global labels (we use per-point labels above)
+  chart.labels().enabled(false);
+
   chart.container('chart-tagcloud');
   chart.draw();
 });
@@ -266,8 +286,8 @@ anychart.onDocumentReady(function () {
     // ===== Chart 2: Labels History (from labels_template_en.html) =====
     anychart.onDocumentReady(function () {
       (function () {
-        var rawData = [["EU\u2013Russia Sanctions on Oil", 0, 0, 0, 0, 0, 104, 0], ["Israel-Hamas Ceasefire Issues", 74, 35, 0, 32, 0, 0, 43], ["Israel-Palestine Conflict", 92, 57, 48, 36, 0, 0, 45], ["Natural Disaster", 110, 95, 50, 32, 0, 0, 0], ["Russia\u2013Ukraine Diplomatic and Military Conflict", 87, 59, 0, 0, 0, 0, 0], ["Russia\u2013Ukraine Peace Talks", 0, 0, 33, 0, 70, 0, 0], ["US Navy Drug-Ship Strike", 30, 0, 0, 0, 0, 0, 0], ["Ukraine-Russia Conflict", 0, 0, 0, 0, 0, 49, 62]];
-        var dates = ["2025-10-29", "2025-10-28", "2025-10-27", "2025-10-26", "2025-10-25", "2025-10-24", "2025-10-23"].reverse();
+        var rawData = [["Hurricane Melissa Caribbean Impact", 0, 0, 0, 0, 0, 0, 77], ["Israel-Hamas Ceasefire and Hostage Issues", 0, 0, 0, 0, 0, 0, 57], ["Israel-Palestine Conflict", 72, 58, 82, 98, 97, 21, 0], ["Russia\u2013Ukraine Diplomatic and Military Conflict", 0, 0, 0, 0, 0, 79, 70], ["Trump-Epstein Disclosures", 16, 0, 0, 0, 0, 0, 0], ["US Shutdown Standoff", 41, 69, 67, 0, 37, 0, 0], ["US Western Hemisphere Counter-Narcotics Operation", 19, 0, 0, 0, 0, 0, 0], ["Ukraine-Russia Conflict", 68, 72, 88, 82, 56, 0, 0]];
+        var dates = ["2025-11-14", "2025-11-13", "2025-11-10", "2025-11-09", "2025-11-08", "2025-11-07", "2025-10-31"].reverse();
 
         var chart = anychart.column();
         chart.yScale().stackMode('value');
@@ -397,10 +417,10 @@ anychart.onDocumentReady(function () {
                <a href="/">Actus </a>
             </li>
             <li>
-              <a href="/fr/2025-10-29/country_counts.html">Pays</a>
+              <a href="/fr/2025-11-14/country_counts.html">Pays</a>
             </li>
             <li>
-              <a href="/fr/2025-10-29/labels.html">Thèmes</a>
+              <a href="/fr/2025-11-14/labels.html">Thèmes</a>
             </li>
             <li>
               <a href="/fr/about.html">A Propos</a>
