@@ -14,6 +14,7 @@ function render_page($title, $inner_html) {
   $includes = <<<'EOT'
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
@@ -25,7 +26,7 @@ EOT;
 
   $header = <<<'EOT'
   <header>  
-  <div class="middle-section py-2">
+  <div class="middle-section py-2" style="background-color:#244855;">
       <div class="container">
         <div class="row row-cols-1 row-cols-lg-3 align-items-center">
             <div class="col order-3 order-lg-1"><!-- vide --></div>
@@ -61,7 +62,13 @@ EOT;
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/">Accueil</a>
+              <a class="nav-link active" aria-current="page" href="/fr/">Actus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2025-11-15/country_counts.html">Pays</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2025-11-15/labels.html">Thèmes</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
@@ -103,8 +110,14 @@ EOT;
       
       <div class="mobile-menu-sec mt-3">
          <ul class="list-unstyled">
-            <li class="active-m">
-               <a href="/">Accueil</a>
+            <li>
+               <a href="/">Actus </a>
+            </li>
+            <li>
+              <a href="/fr/2025-11-15/country_counts.html">Pays</a>
+            </li>
+            <li>
+              <a href="/fr/2025-11-15/labels.html">Thèmes</a>
             </li>
             <li>
               <a href="/fr/about.html">A Propos</a>

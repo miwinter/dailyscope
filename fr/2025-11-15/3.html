@@ -1,0 +1,516 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Conflit croissant et crise humanitaire au Soudan nécessitant une réponse internationale urgente</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/fr', '/en');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>                 
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/">Actus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2025-11-15/country_counts.html">Pays</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2025-11-15/labels.html">Thèmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Conflit croissant et crise humanitaire au Soudan nécessitant une réponse internationale urgente</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-11-15</span> • <span>34 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-11-15/2025-11-15-3.webp" alt="Conflit croissant et crise humanitaire au Soudan nécessitant une réponse internationale urgente" class="main-image">
+                <p style="margin:0" class="chapitre">La crise humanitaire au Soudan s&#39;est aggravée avec l&#39;intensification de la violence impliquant des groupes paramilitaires, notamment dans les régions du Darfour et du Kordofan, entraînant des massacres, des déplacements massifs et de graves violations des droits de l&#39;homme. Les Nations Unies ont organisé plusieurs enquêtes et sessions spéciales pour traiter des atrocités, appelant à la responsabilité et à une aide humanitaire d&#39;urgence. Les acteurs internationaux, dont les États-Unis et les Émirats arabes unis, soulignent la nécessité cruciale d&#39;intervenir, de faire des cessez-le-feu et d&#39;accroître le soutien pour faire face à l&#39;insécurité alimentaire, aux épidémies et à l&#39;insuffisance des services pour les populations déplacées. Les pays de la région, comme le Tchad, subissent une pression immense en raison de l&#39;afflux de réfugiés, mettant en évidence l&#39;impact transfrontalier de l&#39;instabilité au Soudan. Malgré l&#39;attention mondiale et les sanctions contre les dirigeants militaires, les combats en cours continuent de menacer les civils et d&#39;entraver les efforts de secours, signalant un besoin urgent d&#39;engagement international soutenu et de protection des communautés vulnérables.</p>
+            </div>
+            <h2>Les pays qui en parlent</h2>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Investigations des Nations Unies et des Droits Humains Internationaux</h3>
+        <p class="cluster-description">Ce cluster comprend des articles mettant en avant le rôle des Nations Unies dans l&#39;enquête sur les violations des droits humains et les crimes de guerre au Soudan, en particulier à El Fasher et au Darfour. Le Conseil des droits de l&#39;homme de l&#39;ONU a mandaté plusieurs missions d&#39;établissement des faits visant à documenter les abus, à tenir les responsables pour compte et à mettre en lumière la gravité des atrocités en cours. Ces sources reflètent un engagement international constant en faveur de la justice, de la protection des civils et de la responsabilité juridique dans un contexte de conflit qui s&#39;aggrave. L&#39;accent mis sur les résolutions d&#39;enquête et les appels à une intervention mondiale souligne l&#39;urgence de répondre aux violations graves du droit international.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/can.svg" alt="Canada" title="Canada" class="flag-icon">
+                            <a href="https://www.thestar.com/news/world.html" target="_blank" class="article-link">Le corps des Droits de l&#39;Homme de l&#39;ONU se réunit au sujet du Soudan suite aux tueries paramilitaires au Darfour</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mli.svg" alt="Mali" title="Mali" class="flag-icon">
+                            <a href="https://bamada.net/category/international" target="_blank" class="article-link">Le chef de l&#39;ONU exprime une profonde inquiétude concernant les rapports d&#39;atrocités massives à El-Fasher, Soudan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sdn.svg" alt="Soudan" title="Soudan" class="flag-icon">
+                            <a href="https://www.dabangasudan.org/ar/all-news/category/news/politics" target="_blank" class="article-link">Le Conseil des Droits de l&#39;Homme de l&#39;ONU ordonne une enquête urgente sur les violations à El Fasher</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mrt.svg" alt="Mauritanie" title="Mauritanie" class="flag-icon">
+                            <a href="https://cridem.org/" target="_blank" class="article-link">Soudan : l&#39;ONU ordonne une enquête sur les violations du droit international à El-Fasher</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cri.svg" alt="Costa Rica" title="Costa Rica" class="flag-icon">
+                            <a href="https://www.nacion.com/el-mundo/" target="_blank" class="article-link">L&#39;ONU lance une mission pour enquêter sur les violations des droits de l&#39;homme au Soudan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bhr.svg" alt="Bahreïn" title="Bahreïn" class="flag-icon">
+                            <a href="https://akhbar-alkhaleej.com/news/section/WORL" target="_blank" class="article-link">Le Conseil des Droits de l&#39;Homme de l&#39;ONU adopte une résolution pour envoyer une mission d&#39;enquête au Soudan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/prt.svg" alt="Portugal" title="Portugal" class="flag-icon">
+                            <a href="https://www.publico.pt/mundo" target="_blank" class="article-link">Soudan : l&#39;ONU enquête sur des rapports de massacres et de disparitions à El Fasher</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/che.svg" alt="Suisse" title="Suisse" class="flag-icon">
+                            <a href="https://www.letemps.ch/monde" target="_blank" class="article-link">Le Conseil des Droits de l&#39;Homme de l&#39;ONU ordonne une enquête sur les atrocités à El-Fasher, Soudan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irq.svg" alt="Irak" title="Irak" class="flag-icon">
+                            <a href="https://www.shafaq.com/ar/%D8%B9%D8%B1%D8%A8%D9%8A-%D9%88%D8%AF%D9%88%D9%84%D9%8A" target="_blank" class="article-link">Les Nations Unies ouvrent une enquête sur les violations à El-Fashir, Soudan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nor.svg" alt="Norvège" title="Norvège" class="flag-icon">
+                            <a href="https://www.aftenposten.no/verden" target="_blank" class="article-link">Le Conseil des Droits de l&#39;Homme de l&#39;ONU ordonne une enquête sur les crimes de guerre présumés au Soudan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/are.svg" alt="Émirats arabes unis" title="Émirats arabes unis" class="flag-icon">
+                            <a href="https://gulfnews.com/world" target="_blank" class="article-link">Soudan : Les massacres d&#39;Al-Fashir déclenchent une enquête de l&#39;ONU</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fra.svg" alt="France" title="France" class="flag-icon">
+                            <a href="https://www.lefigaro.fr/international/" target="_blank" class="article-link">Soudan : Le Conseil des droits de l&#39;homme de l&#39;ONU ordonne une enquête sur les atrocités à el-Fasher</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72a2e5; padding: 8px 16px; border-radius: 4px;">Perspectives américaines et occidentales : Responsabilité et aide urgente</h3>
+        <p class="cluster-description">Articles provenant de sources américaines et occidentales mettent en évidence la condamnation des forces paramilitaires, en particulier les Forces de Soutien Rapide (FSR), les accusant d&#39;aggraver la crise par la violence et le soutien étranger. Ces sources soulignent le désastre humanitaire urgent qui se déroule et la nécessité critique de cessez-le-feu immédiats, de trêves humanitaires et d&#39;une augmentation de l&#39;aide. Elles préconisent une pression accrue sur les dirigeants militaires du Soudan, y compris par des sanctions, pour mettre fin aux abus et faciliter les efforts de secours.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/usa.svg" alt="États-Unis" title="États-Unis" class="flag-icon">
+                            <a href="https://abcnews.go.com/International" target="_blank" class="article-link">Un organisme des droits de l&#39;homme de l&#39;ONU tient une session spéciale sur le Soudan après les massacres de Darfour</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Irlande" title="Irlande" class="flag-icon">
+                            <a href="https://www.irishtimes.com/news/world" target="_blank" class="article-link">L&#39;enquête sur les massacres de masse au Soudan promet de tenir les coupables responsables, déclare l&#39;ONU</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tcd.svg" alt="Tchad" title="Tchad" class="flag-icon">
+                            <a href="https://tchadinfos.com/category/international/" target="_blank" class="article-link">Soudan : Washington accuse les Forces de soutien rapide de recevoir un soutien étranger et dénonce une &#34;catastrophe humanitaire&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/rwa.svg" alt="Rwanda" title="Rwanda" class="flag-icon">
+                            <a href="https://www.ktpress.rw/category/news/international/" target="_blank" class="article-link">États-Unis appellent à une trêve humanitaire immédiate au Soudan alors que la souffrance des civils s&#39;aggrave</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #bf72e5; padding: 8px 16px; border-radius: 4px;">Voix Soudanaises et Régionales : Réalités du Terrain et Défis des Réfugiés</h3>
+        <p class="cluster-description">Ce cluster capture les perspectives des acteurs soudanais et régionaux se concentrant sur les impacts humanitaires sur le terrain, notamment l&#39;insuffisance de l&#39;éducation et des soins de santé pour les réfugiés dans les camps au Tchad et la crise de déplacement interne au Soudan. Les responsables soudanais et les représentants de l&#39;ONU déplorent l&#39;échec de la communauté internationale à protéger les populations vulnérables et appellent à un renouveau des efforts mondiaux. Les pays voisins signalent une augmentation des flux de réfugiés, mettant à rude épreuve leurs ressources et soulignant la pression humanitaire régionale plus large causée par l&#39;instabilité au Soudan.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sdn.svg" alt="Soudan" title="Soudan" class="flag-icon">
+                            <a href="https://www.dabangasudan.org/ar/all-news/category/news/politics" target="_blank" class="article-link">Fonctionnaire de l&#39;ONU senior après une longue visite : Le monde a échoué à les protéger, nous ne devons pas les abandonner à nouveau !</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sdn.svg" alt="Soudan" title="Soudan" class="flag-icon">
+                            <a href="https://www.dabangasudan.org/ar/all-news/category/news/politics" target="_blank" class="article-link">Réfugiés dans le camp de &#39;Telum&#39; dans l&#39;est du Tchad se plaignent d&#39;une mauvaise attention à l&#39;éducation</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tcd.svg" alt="Tchad" title="Tchad" class="flag-icon">
+                            <a href="https://www.alwihdainfo.com/Monde_r39.html" target="_blank" class="article-link">L&#39;afflux de réfugiés soudanais se poursuit, la pression humanitaire reste élevée au Tchad</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mwi.svg" alt="Malawi" title="Malawi" class="flag-icon">
+                            <a href="https://www.maravipost.com/ " target="_blank" class="article-link">Guerre au Soudan : les équipes d&#39;aide implorent l&#39;accès à des milliers de personnes piégées à El Fasher</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5728f; padding: 8px 16px; border-radius: 4px;">Analyses du Moyen-Orient et d&#39;autres pays internationaux : expansion du conflit et crise sanitaire</h3>
+        <p class="cluster-description">Des sources de pays du Moyen-Orient et d&#39;autres mettent en évidence l&#39;intensification de la violence paramilitaire s&#39;étendant à des régions telles que le Kordofan, avec des attaques par drone et des infrastructures stratégiques menacées. Ces rapports soulignent également la propagation alarmante d&#39;épidémies, notamment le choléra, aggravant l&#39;urgence humanitaire. Les discussions diplomatiques insistent sur les préoccupations communes face à ces développements tragiques et la nécessité de réponses internationales collaboratives pour contenir et finalement résoudre la crise.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kwt.svg" alt="Koweït" title="Koweït" class="flag-icon">
+                            <a href="https://kuwaittimes.com/world/" target="_blank" class="article-link">Les attaques de drones de RSF ciblent une ville du nord</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kwt.svg" alt="Koweït" title="Koweït" class="flag-icon">
+                            <a href="https://www.aljarida.com/%D8%AF%D9%88%D9%84%D9%8A%D8%A7%D8%AA" target="_blank" class="article-link">Le Conseil des droits de l&#39;homme de l&#39;ONU ordonne une enquête sur les violations à El Fasher</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kwt.svg" alt="Koweït" title="Koweït" class="flag-icon">
+                            <a href="https://www.aljarida.com/%D8%AF%D9%88%D9%84%D9%8A%D8%A7%D8%AA" target="_blank" class="article-link">L&#39;OMS met en garde contre la propagation inquiétante d&#39;une épidémie au Soudan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pse.svg" alt="Palestine" title="Palestine" class="flag-icon">
+                            <a href="https://www.alquds.com/" target="_blank" class="article-link">Les Émirats arabes unis et les États-Unis discutent des &#34;développements tragiques&#34; au Soudan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/egy.svg" alt="Égypte" title="Égypte" class="flag-icon">
+                            <a href="https://www.dailynewsegypt.com/category/politics/" target="_blank" class="article-link">L&#39;ONU met en garde contre des &#34;atrocités systématiques&#34;, aggravant la catastrophe humanitaire au Soudan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/are.svg" alt="Émirats arabes unis" title="Émirats arabes unis" class="flag-icon">
+                            <a href="https://www.thenationalnews.com/international" target="_blank" class="article-link">Le chef des droits de l&#39;homme de l&#39;ONU avertit les parties en conflit au Soudan &#34;Nous vous surveillons&#34;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/are.svg" alt="Émirats arabes unis" title="Émirats arabes unis" class="flag-icon">
+                            <a href="https://www.thenationalnews.com/international" target="_blank" class="article-link">Massacre et aide bloquée : les principaux généraux du Soudan sous sanctions</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/esp.svg" alt="Espagne" title="Espagne" class="flag-icon">
+                            <a href="https://elpais.com/internacional/" target="_blank" class="article-link">Les paramilitaires russes étendent la violence à la vaste région de Kordofan au Soudan</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Avertissements des agences humanitaires sur l&#39;insuffisance de l&#39;aide</h3>
+        <p class="cluster-description">Ce cluster se concentre sur l&#39;insuffisance critique de l&#39;aide humanitaire face à l&#39;augmentation des besoins due aux déplacements massifs et aux conflits. Les agences d&#39;aide rapportent que les efforts actuels sont loin de répondre à la demande, avertissant que les opérations d&#39;aide approchent de l&#39;effondrement. Elles soulignent le besoin urgent d&#39;accès aux populations piégées, de corridors de livraison sûrs et de soutien international pour atténuer l&#39;insécurité alimentaire et les pénuries médicales.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/can.svg" alt="Canada" title="Canada" class="flag-icon">
+                            <a href="https://www.theglobeandmail.com/world/" target="_blank" class="article-link">Les agences d&#39;aide sont « loin du compte » pour répondre aux besoins des Soudanais déplacés alors que la crise humanitaire s&#39;aggrave</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Irlande" title="Irlande" class="flag-icon">
+                            <a href="https://www.independent.ie/world-news/" target="_blank" class="article-link">L&#39;ONU avertit que l&#39;aide est « au bord de l&#39;effondrement » au Soudan après la prise de contrôle d&#39;une grande ville par des forces paramilitaires</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nga.svg" alt="Nigeria" title="Nigeria" class="flag-icon">
+                            <a href="https://guardian.ng/category/world/" target="_blank" class="article-link">Insécurité alimentaire au Soudan : l&#39;ONU Femmes appelle à une action urgente</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+        map.padding([0, 0, 0, 0]);
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Investigations des Nations Unies et des Droits Humains Internationaux",
+                color: "#72e5ac",
+                data: [ {"id": "BH"},  {"id": "CH"},  {"id": "CR"},  {"id": "FR"},  {"id": "IQ"},  {"id": "ML"},  {"id": "MR"},  {"id": "NO"},  {"id": "PT"} ]
+            },
+        
+            {
+                name: "Perspectives am\u00e9ricaines et occidentales : Responsabilit\u00e9 et aide urgente",
+                color: "#72a2e5",
+                data: [ {"id": "RW"},  {"id": "US"} ]
+            },
+        
+            {
+                name: "Voix Soudanaises et R\u00e9gionales : R\u00e9alit\u00e9s du Terrain et D\u00e9fis des R\u00e9fugi\u00e9s",
+                color: "#bf72e5",
+                data: [ {"id": "MW"} ]
+            },
+        
+            {
+                name: "Analyses du Moyen-Orient et d\u0027autres pays internationaux : expansion du conflit et crise sanitaire",
+                color: "#e5728f",
+                data: [ {"id": "EG"},  {"id": "ES"},  {"id": "KW"},  {"id": "PS"} ]
+            },
+        
+            {
+                name: "Avertissements des agences humanitaires sur l\u0027insuffisance de l\u0027aide",
+                color: "#e5d272",
+                data: [ {"id": "NG"} ]
+            }
+        
+        
+            ,
+            {
+                name: "Plusieurs points de vue : \n- Investigations des Nations Unies et des Droits Humains Internationaux\n- Analyses du Moyen-Orient et d\u0027autres pays internationaux : expansion du conflit et crise sanitaire",
+                color: "#AAAAAA",
+                data: [{"id": "AE"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Investigations des Nations Unies et des Droits Humains Internationaux\n- Avertissements des agences humanitaires sur l\u0027insuffisance de l\u0027aide",
+                color: "#AAAAAA",
+                data: [{"id": "CA"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Investigations des Nations Unies et des Droits Humains Internationaux\n- Voix Soudanaises et R\u00e9gionales : R\u00e9alit\u00e9s du Terrain et D\u00e9fis des R\u00e9fugi\u00e9s",
+                color: "#AAAAAA",
+                data: [{"id": "SD"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Perspectives am\u00e9ricaines et occidentales : Responsabilit\u00e9 et aide urgente\n- Avertissements des agences humanitaires sur l\u0027insuffisance de l\u0027aide",
+                color: "#AAAAAA",
+                data: [{"id": "IE"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Perspectives am\u00e9ricaines et occidentales : Responsabilit\u00e9 et aide urgente\n- Voix Soudanaises et R\u00e9gionales : R\u00e9alit\u00e9s du Terrain et D\u00e9fis des R\u00e9fugi\u00e9s",
+                color: "#AAAAAA",
+                data: [{"id": "TD"}]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Masquer les sources ▲' : 'Montrer les sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li>
+               <a href="/">Actus </a>
+            </li>
+            <li>
+              <a href="/fr/2025-11-15/country_counts.html">Pays</a>
+            </li>
+            <li>
+              <a href="/fr/2025-11-15/labels.html">Thèmes</a>
+            </li>
+            <li>
+              <a href="/fr/about.html">A Propos</a>
+            </li>
+            <li>
+              <a href="/fr/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

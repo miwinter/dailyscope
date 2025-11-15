@@ -6,8 +6,8 @@
 <title></title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
@@ -21,77 +21,6 @@
 <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
 <script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
  
-
-<style>
-    /* ===== Bandes plein écran ===== */
-    .band { width: 100%; margin: 0; padding: 0; }
-    .band--title { background: #f8f9fa; border-top: 1px solid #eee; }
-    .band--chart { background: #fff; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
-
-    /* Coquille commune pour aligner les titres et centrer les contenus */
-    .content-shell {
-      width: 100%;
-      max-width: 1400px;     /* largeur max sur grands écrans */
-      margin: 0 auto;
-      box-sizing: border-box;
-    }
-    /* Padding spécifique des sections */
-    .band--title .content-shell { padding: 28px 16px 18px; }
-    .band--chart .content-shell--wide    { padding: 20px 16px 40px; }
-    .band--chart .content-shell--history { padding: 20px 16px 40px; }
-
-    /* Titre : aligné à gauche dans la coquille (avec marge intérieure) */
-    .section-title {
-      margin: 0;
-      font: 600 20px/1.3 "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif; /*system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial;*/
-      
-      text-align: left;
-    }
-    .section-subtitle {
-      margin: 8px 0 0 0;
-      color: #666;
-      font: 400 14px/1.5 "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif; /*system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial;*/
-      text-align: left;
-    }
-
-    /* ===== Containers charts ===== */
-    /* MAP : pleine largeur dans la coquille */
-    .content-shell--wide { width: 100%; }
-    #map-container     { width: 100%; height: 520px; }
-
-    /* (Optionnel) légère respiration entre sections adjacentes de titre */
-    .band--title + .band--title { border-top: none; }
-
-    .chart-frame {
-      width: min(100%, 800px);
-      margin: 0 auto;
-      height: clamp(320px, 56vw, 480px); /* min 320px, grandit avec la largeur */
-      position: relative;
-    }
-
-    /* le chart occupe 100% du cadre */
-    .chart-plot {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    /* Coquille étroite pour les textes au-dessus des charts */
-    .content-shell--narrow {
-      max-width: 860px;         /* largeur contenue, à ajuster si besoin */
-      margin-left: auto;
-      margin-right: auto;
-    }
-    @media (max-width: 640px) {
-      .band--chart .content-shell--wide { padding: 8px 12px 8px; } /* au lieu de 20/40px */
-      #map-container { height: 250px; }                              /* au lieu de 520px */
-    }
-
-
-  </style>
-
-
 </head>
 <body>
 
@@ -104,12 +33,12 @@
                 <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
             </div>
             <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
-              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/fra.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="Français" title="Français" class="flag-icon"></a>
               <script>
                 const currentUrl = window.location.href;
-                const englishUrl = currentUrl.replace('/fr', '/en');
+                const englishUrl = currentUrl.replace('/en', '/fr');
                 document.getElementById('lang-switch').setAttribute('href', englishUrl);
-              </script>                 
+              </script>              
             </div>
         </div>
       </div>
@@ -132,19 +61,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/">Actus</a>
+              <a class="nav-link active" aria-current="page" href="/">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2025-10-30/country_counts.html">Pays</a>
+              <a class="nav-link active" aria-current="page" href="/en/2025-11-15/country_counts.html">Top Countries</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2025-10-30/labels.html">Thèmes</a>
+              <a class="nav-link active" aria-current="page" href="/en/2025-11-15/labels.html">Top Themes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
+              <a class="nav-link active" aria-current="page" href="/en/about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/contact.html">Contact</a>
+              <a class="nav-link active" aria-current="page" href="/en/contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -155,14 +84,18 @@
 
 <!-- ===== SECTION 1 : TITRE (fond gris clair) ===== -->
   <section class="band band--title">
-    <div class="content-shell content-shell--narrow">
-      <h2 class="section-title">Pays les plus mentionnés</h2>
-      <p class="section-subtitle">Pays les plus cités dans les articles récoltés aujourd'hui. 
-        Survolez un pays pour avoir le nombre d'articles qui y font référence.
-        Survolez la légende pour mettre en évidence les pays correspondant à une plage de valeurs.<br>
-      2025-10-30 • 1851 mentions au total</p>
-    </div>
-  </section>
+  <div class="content-shell content-shell--narrow">
+    <h2 class="section-title">Most Mentioned Countries</h2>
+    <p class="section-subtitle">
+  <span class="legend-note">
+    Countries most frequently mentioned in today’s collected articles.
+    Hover over a country to see the number of articles that refer to it.
+    Hover over the legend to highlight countries within a given value range.
+  </span><br>
+  2025-11-15 • 1716 mentions in total
+</p>
+  </div>
+</section>
 
   <!-- ===== SECTION 1 : CHART (bande blanche) ===== -->
   <section class="band band--chart">
@@ -174,14 +107,16 @@
   <!-- Section 2: Counts History (stacked columns) -->
   <section class="band band--title">
   <div class="content-shell content-shell--narrow">
-    <h2 class="section-title">Historique des pays les plus cités</h2>
+    <h2 class="section-title">History of the Most Mentioned Countries</h2>
     <p class="section-subtitle">
-      Pays les plus cités au cours des 7 derniers jours. 
-      Survolez une colonne pour afficher le nombre d’articles qui y sont associés.
-      Cliquez sur un pays dans la légende ou sur une barre pour mettre en évidence l’évolution complète du pays.
+      <span class="legend-note">
+      Countries most frequently mentioned over the past 7 days. 
+      Hover over a column to display the number of articles associated with it.
+      Click on a country in the legend or on a bar to highlight its full trend.
+      </span>
     </p>
   </div>
-</section>
+  </section>
   <section class="band band--chart">
     <div class="content-shell">
       <div class="chart-frame">
@@ -211,337 +146,351 @@
         var seriesData = [
             
             {
-                name: "1–60 mentions",
+                name: "1–2 mentions",
                 color: "#FBE9D0",
                 data: [
                 
-                { id: "CU", name: "54" },
+                { id: "NZ", name: "1" },
                 
-                { id: "BR", name: "50" },
-                
-                { id: "SD", name: "48" },
-                
-                { id: "KR", name: "41" },
-                
-                { id: "VE", name: "37" },
-                
-                { id: "EU", name: "33" },
-                
-                { id: "HT", name: "33" },
-                
-                { id: "NL", name: "29" },
-                
-                { id: "FR", name: "26" },
-                
-                { id: "AF", name: "22" },
-                
-                { id: "PK", name: "19" },
-                
-                { id: "CM", name: "18" },
-                
-                { id: "GB", name: "18" },
-                
-                { id: "RO", name: "15" },
-                
-                { id: "IR", name: "15" },
-                
-                { id: "DE", name: "12" },
-                
-                { id: "CA", name: "12" },
-                
-                { id: "CI", name: "11" },
-                
-                { id: "TR", name: "11" },
-                
-                { id: "JP", name: "11" },
-                
-                { id: "SA", name: "10" },
-                
-                { id: "KE", name: "9" },
-                
-                { id: "SY", name: "9" },
-                
-                { id: "AU", name: "9" },
-                
-                { id: "BS", name: "9" },
-                
-                { id: "TZ", name: "9" },
-                
-                { id: "ML", name: "9" },
-                
-                { id: "IN", name: "8" },
-                
-                { id: "EG", name: "8" },
-                
-                { id: "BE", name: "8" },
-                
-                { id: "LT", name: "8" },
-                
-                { id: "BY", name: "8" },
-                
-                { id: "UN", name: "8" },
-                
-                { id: "GT", name: "7" },
-                
-                { id: "MX", name: "7" },
-                
-                { id: "VN", name: "7" },
-                
-                { id: "TT", name: "7" },
-                
-                { id: "HU", name: "7" },
-                
-                { id: "MA", name: "7" },
-                
-                { id: "AE", name: "6" },
-                
-                { id: "CD", name: "6" },
-                
-                { id: "ES", name: "6" },
-                
-                { id: "AG", name: "6" },
-                
-                { id: "KH", name: "6" },
-                
-                { id: "KZ", name: "6" },
-                
-                { id: "LY", name: "5" },
-                
-                { id: "BB", name: "5" },
-                
-                { id: "QA", name: "5" },
-                
-                { id: "XK", name: "5" },
-                
-                { id: "CO", name: "5" },
-                
-                { id: "LC", name: "5" },
-                
-                { id: "NZ", name: "5" },
-                
-                { id: "KP", name: "5" },
-                
-                { id: "BA", name: "5" },
-                
-                { id: "SN", name: "4" },
-                
-                { id: "MM", name: "4" },
-                
-                { id: "PH", name: "4" },
-                
-                { id: "MY", name: "4" },
-                
-                { id: "DO", name: "4" },
-                
-                { id: "VC", name: "4" },
-                
-                { id: "ZA", name: "4" },
-                
-                { id: "RS", name: "4" },
-                
-                { id: "SV", name: "4" },
-                
-                { id: "AO", name: "4" },
-                
-                { id: "UZ", name: "4" },
-                
-                { id: "IT", name: "3" },
-                
-                { id: "NA", name: "3" },
-                
-                { id: "PT", name: "3" },
-                
-                { id: "CR", name: "3" },
-                
-                { id: "DM", name: "3" },
-                
-                { id: "GD", name: "3" },
-                
-                { id: "KN", name: "3" },
-                
-                { id: "AS", name: "3" },
-                
-                { id: "SG", name: "3" },
-                
-                { id: "CH", name: "3" },
-                
-                { id: "HN", name: "3" },
-                
-                { id: "ZW", name: "2" },
-                
-                { id: "ID", name: "2" },
-                
-                { id: "AR", name: "2" },
-                
-                { id: "CZ", name: "2" },
-                
-                { id: "NR", name: "2" },
-                
-                { id: "SE", name: "2" },
-                
-                { id: "PL", name: "2" },
-                
-                { id: "SO", name: "2" },
-                
-                { id: "DZ", name: "2" },
-                
-                { id: "MZ", name: "2" },
-                
-                { id: "BW", name: "2" },
-                
-                { id: "TH", name: "2" },
-                
-                { id: "AZ", name: "2" },
-                
-                { id: "SZ", name: "2" },
-                
-                { id: "DK", name: "2" },
-                
-                { id: "LB", name: "2" },
-                
-                { id: "BZ", name: "2" },
-                
-                { id: "PA", name: "2" },
-                
-                { id: "ZM", name: "2" },
-                
-                { id: "TM", name: "2" },
-                
-                { id: "GY", name: "2" },
-                
-                { id: "AM", name: "2" },
-                
-                { id: "MG", name: "2" },
-                
-                { id: "SM", name: "1" },
-                
-                { id: "YE", name: "1" },
-                
-                { id: "TW", name: "1" },
-                
-                { id: "EC", name: "1" },
-                
-                { id: "BM", name: "1" },
-                
-                { id: "DW", name: "1" },
-                
-                { id: "MS", name: "1" },
-                
-                { id: "PR", name: "1" },
-                
-                { id: "VG", name: "1" },
-                
-                { id: "VU", name: "1" },
-                
-                { id: "TN", name: "1" },
-                
-                { id: "EH", name: "1" },
+                { id: "PW", name: "1" },
                 
                 { id: "NC", name: "1" },
                 
-                { id: "PN", name: "1" },
+                { id: "EE", name: "1" },
                 
-                { id: "FI", name: "1" },
+                { id: "GY", name: "1" },
                 
-                { id: "SS", name: "1" },
+                { id: "TM", name: "1" },
                 
-                { id: "ER", name: "1" },
+                { id: "OS", name: "1" },
                 
-                { id: "CF", name: "1" },
+                { id: "WS", name: "1" },
                 
-                { id: "HR", name: "1" },
+                { id: "LK", name: "1" },
                 
-                { id: "NI", name: "1" },
+                { id: "NO", name: "1" },
                 
-                { id: "PY", name: "1" },
+                { id: "UY", name: "1" },
                 
-                { id: "BG", name: "1" },
+                { id: "EH", name: "1" },
                 
-                { id: "LR", name: "1" },
+                { id: "SM", name: "1" },
                 
-                { id: "LA", name: "1" },
+                { id: "CL", name: "1" },
                 
-                { id: "BN", name: "1" },
+                { id: "CY", name: "1" },
                 
-                { id: "BD", name: "1" },
+                { id: "TN", name: "1" },
                 
-                { id: "TL", name: "1" },
+                { id: "MU", name: "1" },
                 
-                { id: "JO", name: "1" },
+                { id: "SR", name: "1" },
                 
-                { id: "KG", name: "1" },
+                { id: "VA", name: "1" },
                 
-                { id: "NP", name: "1" },
-                
-                { id: "GA", name: "1" },
-                
-                { id: "TD", name: "1" },
+                { id: "MZ", name: "1" },
                 
                 { id: "CG", name: "1" },
                 
-                { id: "GQ", name: "1" },
+                { id: "CF", name: "1" },
                 
-                { id: "FJ", name: "1" },
+                { id: "IS", name: "1" },
+                
+                { id: "CW", name: "1" },
                 
                 { id: "AI", name: "1" },
                 
-                { id: "TJ", name: "1" },
+                { id: "KY", name: "1" },
                 
-                { id: "LS", name: "1" },
+                { id: "GD", name: "1" },
                 
-                { id: "MW", name: "1" },
+                { id: "SB", name: "1" },
                 
-                { id: "XX", name: "1" },
-                
-                { id: "TO", name: "1" },
+                { id: "LU", name: "1" },
                 
                 { id: "CV", name: "1" },
                 
-                { id: "GH", name: "1" },
+                { id: "PH", name: "1" },
                 
-                { id: "AW", name: "1" },
+                { id: "VC", name: "1" },
                 
-                { id: "OM", name: "1" },
+                { id: "LR", name: "1" },
                 
-                { id: "GL", name: "1" }
+                { id: "AQ", name: "1" },
+                
+                { id: "ME", name: "1" },
+                
+                { id: "DJ", name: "1" },
+                
+                { id: "CU", name: "1" },
+                
+                { id: "NI", name: "1" },
+                
+                { id: "HR", name: "1" },
+                
+                { id: "BF", name: "1" },
+                
+                { id: "RW", name: "1" },
+                
+                { id: "AO", name: "2" },
+                
+                { id: "AS", name: "2" },
+                
+                { id: "MP", name: "2" },
+                
+                { id: "FJ", name: "2" },
+                
+                { id: "BD", name: "2" },
+                
+                { id: "LV", name: "2" },
+                
+                { id: "ET", name: "2" },
+                
+                { id: "GT", name: "2" },
+                
+                { id: "TJ", name: "2" },
+                
+                { id: "GL", name: "2" },
+                
+                { id: "LY", name: "2" },
+                
+                { id: "CR", name: "2" },
+                
+                { id: "HN", name: "2" },
+                
+                { id: "KG", name: "2" },
+                
+                { id: "CZ", name: "2" },
+                
+                { id: "PT", name: "2" },
+                
+                { id: "UG", name: "2" },
+                
+                { id: "VN", name: "2" },
+                
+                { id: "GQ", name: "2" },
+                
+                { id: "IE", name: "2" },
+                
+                { id: "UK", name: "2" },
+                
+                { id: "MR", name: "2" },
+                
+                { id: "NE", name: "2" },
+                
+                { id: "SG", name: "2" },
+                
+                { id: "LA", name: "2" },
+                
+                { id: "RS", name: "2" },
+                
+                { id: "ZW", name: "2" },
+                
+                { id: "ZM", name: "2" },
+                
+                { id: "DZ", name: "2" },
+                
+                { id: "ER", name: "2" }
                 
                 ]
             },
             
             {
-                name: "61–120 mentions",
+                name: "3 mentions",
                 color: "#F8CEB6",
                 data: [
                 
-                { id: "PS", name: "89" },
+                { id: "CM", name: "3" },
                 
-                { id: "JM", name: "62" },
+                { id: "PG", name: "3" },
                 
-                { id: "UA", name: "55" }
+                { id: "TT", name: "3" },
+                
+                { id: "JM", name: "3" },
+                
+                { id: "LT", name: "3" },
+                
+                { id: "CD", name: "3" },
+                
+                { id: "GR", name: "3" },
+                
+                { id: "TD", name: "3" },
+                
+                { id: "SN", name: "3" },
+                
+                { id: "SS", name: "3" },
+                
+                { id: "MY", name: "3" },
+                
+                { id: "SV", name: "3" },
+                
+                { id: "PE", name: "3" },
+                
+                { id: "DK", name: "3" },
+                
+                { id: "YE", name: "3" },
+                
+                { id: "GA", name: "3" },
+                
+                { id: "MA", name: "3" },
+                
+                { id: "GN", name: "3" },
+                
+                { id: "SO", name: "3" }
                 
                 ]
             },
             
             {
-                name: "121–180 mentions",
+                name: "4–7 mentions",
                 color: "#F4B39C",
                 data: [
                 
-                { id: "CN", name: "124" },
+                { id: "FI", name: "4" },
                 
-                { id: "RU", name: "113" },
+                { id: "BE", name: "4" },
                 
-                { id: "IL", name: "112" }
+                { id: "MX", name: "4" },
+                
+                { id: "PA", name: "4" },
+                
+                { id: "KE", name: "4" },
+                
+                { id: "RO", name: "4" },
+                
+                { id: "MD", name: "4" },
+                
+                { id: "JO", name: "5" },
+                
+                { id: "KZ", name: "5" },
+                
+                { id: "TZ", name: "5" },
+                
+                { id: "HU", name: "5" },
+                
+                { id: "QA", name: "6" },
+                
+                { id: "ES", name: "6" },
+                
+                { id: "UZ", name: "6" },
+                
+                { id: "IQ", name: "6" },
+                
+                { id: "CO", name: "6" },
+                
+                { id: "NL", name: "6" },
+                
+                { id: "BY", name: "6" },
+                
+                { id: "GH", name: "6" },
+                
+                { id: "EC", name: "7" },
+                
+                { id: "NG", name: "7" },
+                
+                { id: "AM", name: "7" },
+                
+                { id: "PL", name: "7" },
+                
+                { id: "AZ", name: "7" }
                 
                 ]
             },
             
             {
-                name: "361–380 mentions",
-                color: "#E64833",
+                name: "8–15 mentions",
+                color: "#F19982",
                 data: [
                 
-                { id: "US", name: "377" }
+                { id: "KP", name: "8" },
+                
+                { id: "LB", name: "9" },
+                
+                { id: "AE", name: "9" },
+                
+                { id: "TH", name: "9" },
+                
+                { id: "CA", name: "9" },
+                
+                { id: "GE", name: "9" },
+                
+                { id: "SY", name: "9" },
+                
+                { id: "BA", name: "9" },
+                
+                { id: "EG", name: "10" },
+                
+                { id: "AU", name: "10" },
+                
+                { id: "KH", name: "11" },
+                
+                { id: "AR", name: "11" },
+                
+                { id: "ML", name: "11" },
+                
+                { id: "ID", name: "12" },
+                
+                { id: "KR", name: "12" },
+                
+                { id: "IT", name: "13" },
+                
+                { id: "CH", name: "14" },
+                
+                { id: "PK", name: "15" },
+                
+                { id: "UN", name: "15" }
+                
+                ]
+            },
+            
+            {
+                name: "16–337 mentions",
+                color: "#ED7E67",
+                data: [
+                
+                { id: "AF", name: "16" },
+                
+                { id: "SA", name: "17" },
+                
+                { id: "IR", name: "17" },
+                
+                { id: "SE", name: "17" },
+                
+                { id: "ZA", name: "18" },
+                
+                { id: "BR", name: "20" },
+                
+                { id: "TW", name: "20" },
+                
+                { id: "TR", name: "21" },
+                
+                { id: "IN", name: "26" },
+                
+                { id: "JP", name: "26" },
+                
+                { id: "FR", name: "32" },
+                
+                { id: "DE", name: "32" },
+                
+                { id: "SD", name: "38" },
+                
+                { id: "GB", name: "41" },
+                
+                { id: "EU", name: "45" },
+                
+                { id: "VE", name: "53" },
+                
+                { id: "IL", name: "58" },
+                
+                { id: "PS", name: "59" },
+                
+                { id: "CN", name: "64" },
+                
+                { id: "UA", name: "121" },
+                
+                { id: "RU", name: "144" },
+                
+                { id: "US", name: "337" }
                 
                 ]
             }
@@ -597,9 +546,9 @@
 <script>
   anychart.onDocumentReady(function () {
     (function () {
-      var rawData = [["CN", 124, 70, 87, 126, 104, 71, 86], ["EU", 0, 37, 0, 0, 45, 50, 100], ["IL", 112, 155, 80, 61, 84, 81, 117], ["PS", 89, 127, 63, 47, 97, 86, 66], ["RU", 113, 122, 173, 154, 176, 193, 308], ["UA", 55, 83, 77, 93, 106, 106, 115], ["US", 377, 300, 310, 378, 439, 458, 392], ["VE", 0, 0, 54, 68, 54, 70, 51]];
-      var dates = ["2025-10-30", "2025-10-29", "2025-10-28", "2025-10-27", "2025-10-26", "2025-10-25", "2025-10-24"].reverse();
-      var countryNames = {"CN": "Chine", "EU": "EU", "IL": "Isra\u00ebl", "PS": "Palestine", "RU": "Russie", "UA": "Ukraine", "US": "\u00c9tats-Unis", "VE": "Venezuela"};
+      var rawData = [["CN", 64, 61, 44, 38, 51, 72, 62], ["GB", 41, 55, 54, 81, 0, 0, 0], ["IL", 58, 81, 65, 76, 126, 120, 89], ["PS", 59, 73, 41, 56, 75, 53, 46], ["RU", 144, 131, 100, 131, 164, 152, 129], ["UA", 121, 113, 118, 91, 90, 59, 70], ["US", 337, 323, 350, 333, 331, 401, 393]];
+      var dates = ["2025-11-15", "2025-11-14", "2025-11-13", "2025-11-10", "2025-11-09", "2025-11-08", "2025-11-07"].reverse();
+      var countryNames = {"CN": "China", "GB": "United Kingdom", "IL": "Israel", "PS": "Palestine", "RU": "Russia", "UA": "Ukraine", "US": "United States"};
 
       var chart = anychart.column();
       chart.yScale().stackMode('value');
@@ -724,7 +673,7 @@
 
 <div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
   <div class="offcanvas-header">
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
     <div class="head-contact">
@@ -735,19 +684,19 @@
       <div class="mobile-menu-sec mt-3">
          <ul class="list-unstyled">
             <li>
-               <a href="/">Actus </a>
+               <a href="/">News </a>
             </li>
             <li>
-              <a href="/fr/2025-10-30/country_counts.html">Pays</a>
+              <a href="/en/2025-11-15/country_counts.html">Top Countries</a>
             </li>
             <li>
-              <a href="/fr/2025-10-30/labels.html">Thèmes</a>
+              <a href="/en/2025-11-15/labels.html">Top Themes</a>
             </li>
             <li>
-              <a href="/fr/about.html">A Propos</a>
+              <a href="/en/about.html">About</a>
             </li>
             <li>
-              <a href="/fr/contact.html">Contact</a>
+              <a href="/en/contact.html">Contact</a>
             </li>
          </ul>
       </div>
