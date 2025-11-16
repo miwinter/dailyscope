@@ -21,77 +21,6 @@
 <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
 <script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
  
-
-<style>
-    /* ===== Bandes plein écran ===== */
-    .band { width: 100%; margin: 0; padding: 0; }
-    .band--title { background: #f8f9fa; border-top: 1px solid #eee; }
-    .band--chart { background: #fff; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
-
-    /* Coquille commune pour aligner les titres et centrer les contenus */
-    .content-shell {
-      width: 100%;
-      max-width: 1400px;     /* largeur max sur grands écrans */
-      margin: 0 auto;
-      box-sizing: border-box;
-    }
-    /* Padding spécifique des sections */
-    .band--title .content-shell { padding: 28px 16px 18px; }
-    .band--chart .content-shell--wide    { padding: 20px 16px 40px; }
-    .band--chart .content-shell--history { padding: 20px 16px 40px; }
-
-    /* Titre : aligné à gauche dans la coquille (avec marge intérieure) */
-    .section-title {
-      margin: 0;
-      font: 600 20px/1.3 "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif; /*system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial;*/
-      
-      text-align: left;
-    }
-    .section-subtitle {
-      margin: 8px 0 0 0;
-      color: #666;
-      font: 400 14px/1.5 "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif; /*system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial;*/
-      text-align: left;
-    }
-
-    /* ===== Containers charts ===== */
-    /* MAP : pleine largeur dans la coquille */
-    .content-shell--wide { width: 100%; }
-    #map-container     { width: 100%; height: 520px; }
-
-    /* (Optionnel) légère respiration entre sections adjacentes de titre */
-    .band--title + .band--title { border-top: none; }
-
-    .chart-frame {
-      width: min(100%, 800px);
-      margin: 0 auto;
-      height: clamp(320px, 56vw, 480px); /* min 320px, grandit avec la largeur */
-      position: relative;
-    }
-
-    /* le chart occupe 100% du cadre */
-    .chart-plot {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    /* Coquille étroite pour les textes au-dessus des charts */
-    .content-shell--narrow {
-      max-width: 860px;         /* largeur contenue, à ajuster si besoin */
-      margin-left: auto;
-      margin-right: auto;
-    }
-    @media (max-width: 640px) {
-      .band--chart .content-shell--wide { padding: 8px 12px 8px; } /* au lieu de 20/40px */
-      #map-container { height: 250px; }                              /* au lieu de 520px */
-    }
-
-
-  </style>
-
-
 </head>
 <body>
 
@@ -135,10 +64,10 @@
               <a class="nav-link active" aria-current="page" href="/fr/">Actus</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2025-10-31/country_counts.html">Pays</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2025-11-16/country_counts.html">Pays</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2025-10-31/labels.html">Thèmes</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2025-11-16/labels.html">Thèmes</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
@@ -157,10 +86,13 @@
   <section class="band band--title">
     <div class="content-shell content-shell--narrow">
       <h2 class="section-title">Pays les plus mentionnés</h2>
-      <p class="section-subtitle">Pays les plus cités dans les articles récoltés aujourd'hui. 
+      <p class="section-subtitle">
+        <span class="legend-note">
+        Pays les plus cités dans les articles récoltés aujourd'hui. 
         Survolez un pays pour avoir le nombre d'articles qui y font référence.
         Survolez la légende pour mettre en évidence les pays correspondant à une plage de valeurs.<br>
-      2025-10-31 • 1837 mentions au total</p>
+        </span>
+      2025-11-16 • 1547 mentions au total</p>
     </div>
   </section>
 
@@ -176,9 +108,11 @@
   <div class="content-shell content-shell--narrow">
     <h2 class="section-title">Historique des pays les plus cités</h2>
     <p class="section-subtitle">
+      <span class="legend-note">
       Pays les plus cités au cours des 7 derniers jours. 
       Survolez une colonne pour afficher le nombre d’articles qui y sont associés.
       Cliquez sur un pays dans la légende ou sur une barre pour mettre en évidence l’évolution complète du pays.
+      </span>
     </p>
   </div>
 </section>
@@ -211,365 +145,323 @@
         var seriesData = [
             
             {
-                name: "1–60 mentions",
+                name: "1–2 mentions",
                 color: "#FBE9D0",
                 data: [
                 
-                { id: "SD", name: "51" },
-                
-                { id: "JM", name: "50" },
-                
-                { id: "GB", name: "37" },
-                
-                { id: "CU", name: "37" },
-                
-                { id: "BR", name: "33" },
-                
-                { id: "FR", name: "33" },
-                
-                { id: "AF", name: "32" },
-                
-                { id: "VE", name: "28" },
-                
-                { id: "HT", name: "28" },
-                
-                { id: "PK", name: "25" },
-                
-                { id: "DE", name: "23" },
-                
-                { id: "JP", name: "22" },
-                
-                { id: "ZA", name: "21" },
-                
-                { id: "EU", name: "21" },
-                
-                { id: "TR", name: "20" },
-                
-                { id: "KR", name: "16" },
-                
-                { id: "NL", name: "16" },
-                
-                { id: "TZ", name: "15" },
-                
-                { id: "IR", name: "14" },
-                
-                { id: "ML", name: "13" },
-                
-                { id: "UN", name: "13" },
-                
-                { id: "ES", name: "13" },
-                
-                { id: "CM", name: "13" },
-                
-                { id: "IN", name: "12" },
-                
-                { id: "BM", name: "12" },
-                
-                { id: "CA", name: "10" },
-                
-                { id: "BS", name: "10" },
-                
-                { id: "PL", name: "10" },
-                
-                { id: "IT", name: "9" },
-                
-                { id: "BB", name: "9" },
-                
-                { id: "SY", name: "9" },
-                
-                { id: "LB", name: "9" },
-                
-                { id: "TT", name: "9" },
-                
-                { id: "AU", name: "8" },
-                
-                { id: "HU", name: "8" },
-                
-                { id: "CO", name: "8" },
-                
-                { id: "MA", name: "7" },
-                
-                { id: "CI", name: "7" },
-                
-                { id: "SA", name: "7" },
-                
-                { id: "VN", name: "7" },
-                
-                { id: "AE", name: "7" },
-                
-                { id: "RO", name: "6" },
-                
-                { id: "KH", name: "6" },
-                
-                { id: "BA", name: "6" },
-                
-                { id: "CD", name: "5" },
-                
-                { id: "MX", name: "5" },
-                
-                { id: "BF", name: "5" },
-                
-                { id: "UZ", name: "5" },
-                
-                { id: "DO", name: "5" },
-                
-                { id: "WS", name: "5" },
-                
-                { id: "LT", name: "4" },
-                
-                { id: "RS", name: "4" },
-                
-                { id: "KE", name: "4" },
-                
-                { id: "HN", name: "4" },
-                
-                { id: "BE", name: "4" },
-                
-                { id: "AG", name: "4" },
-                
-                { id: "KN", name: "4" },
-                
-                { id: "MM", name: "4" },
-                
-                { id: "EG", name: "4" },
-                
-                { id: "KZ", name: "4" },
-                
-                { id: "DZ", name: "3" },
-                
-                { id: "QA", name: "3" },
-                
-                { id: "MG", name: "3" },
-                
-                { id: "SN", name: "3" },
-                
-                { id: "GT", name: "3" },
-                
-                { id: "SV", name: "3" },
-                
-                { id: "AR", name: "3" },
-                
-                { id: "MY", name: "3" },
-                
-                { id: "ID", name: "3" },
-                
-                { id: "AZ", name: "3" },
-                
-                { id: "PE", name: "3" },
-                
-                { id: "AM", name: "3" },
-                
-                { id: "NG", name: "3" },
-                
-                { id: "PW", name: "3" },
-                
-                { id: "CK", name: "3" },
-                
-                { id: "NZ", name: "3" },
-                
-                { id: "SK", name: "2" },
-                
-                { id: "NO", name: "2" },
-                
-                { id: "NI", name: "2" },
-                
-                { id: "SL", name: "2" },
-                
-                { id: "HR", name: "2" },
-                
-                { id: "LY", name: "2" },
-                
-                { id: "GD", name: "2" },
-                
-                { id: "LC", name: "2" },
-                
-                { id: "VC", name: "2" },
-                
-                { id: "NC", name: "2" },
-                
-                { id: "KP", name: "2" },
-                
-                { id: "PH", name: "2" },
-                
-                { id: "SG", name: "2" },
-                
-                { id: "MK", name: "2" },
-                
-                { id: "PT", name: "2" },
-                
-                { id: "MZ", name: "2" },
-                
-                { id: "NP", name: "2" },
-                
-                { id: "CZ", name: "2" },
-                
-                { id: "CH", name: "2" },
-                
-                { id: "KY", name: "2" },
-                
-                { id: "BY", name: "2" },
-                
-                { id: "LV", name: "2" },
-                
-                { id: "TN", name: "1" },
-                
-                { id: "XK", name: "1" },
-                
-                { id: "BQ", name: "1" },
-                
-                { id: "SE", name: "1" },
-                
-                { id: "AO", name: "1" },
-                
-                { id: "SM", name: "1" },
-                
-                { id: "OC", name: "1" },
-                
-                { id: "PA", name: "1" },
-                
-                { id: "DK", name: "1" },
-                
-                { id: "FI", name: "1" },
-                
-                { id: "LR", name: "1" },
-                
-                { id: "BN", name: "1" },
-                
                 { id: "LA", name: "1" },
-                
-                { id: "TH", name: "1" },
-                
-                { id: "EE", name: "1" },
-                
-                { id: "ZM", name: "1" },
-                
-                { id: "ME", name: "1" },
-                
-                { id: "AL", name: "1" },
-                
-                { id: "KG", name: "1" },
-                
-                { id: "SO", name: "1" },
-                
-                { id: "BZ", name: "1" },
-                
-                { id: "XD", name: "1" },
-                
-                { id: "OT", name: "1" },
-                
-                { id: "BW", name: "1" },
-                
-                { id: "ZW", name: "1" },
-                
-                { id: "NR", name: "1" },
-                
-                { id: "FJ", name: "1" },
-                
-                { id: "TL", name: "1" },
-                
-                { id: "GR", name: "1" },
-                
-                { id: "SS", name: "1" },
-                
-                { id: "CF", name: "1" },
-                
-                { id: "SZ", name: "1" },
-                
-                { id: "PY", name: "1" },
-                
-                { id: "BJ", name: "1" },
-                
-                { id: "GW", name: "1" },
-                
-                { id: "NE", name: "1" },
-                
-                { id: "RW", name: "1" },
-                
-                { id: "BG", name: "1" },
-                
-                { id: "CY", name: "1" },
-                
-                { id: "VA", name: "1" },
-                
-                { id: "TJ", name: "1" },
-                
-                { id: "TM", name: "1" },
-                
-                { id: "GN", name: "1" },
-                
-                { id: "AT", name: "1" },
-                
-                { id: "AS", name: "1" },
                 
                 { id: "MP", name: "1" },
                 
-                { id: "MU", name: "1" },
+                { id: "ZM", name: "1" },
                 
-                { id: "TD", name: "1" },
+                { id: "CY", name: "1" },
                 
-                { id: "CG", name: "1" },
-                
-                { id: "GA", name: "1" },
+                { id: "MR", name: "1" },
                 
                 { id: "GQ", name: "1" },
                 
-                { id: "TO", name: "1" },
+                { id: "BJ", name: "1" },
                 
-                { id: "PG", name: "1" },
+                { id: "LN", name: "1" },
                 
-                { id: "SB", name: "1" },
+                { id: "G7", name: "1" },
                 
-                { id: "EC", name: "1" },
+                { id: "DM", name: "1" },
                 
-                { id: "ET", name: "1" },
+                { id: "AG", name: "1" },
                 
-                { id: "ER", name: "1" },
+                { id: "BB", name: "1" },
                 
-                { id: "YE", name: "1" },
+                { id: "WS", name: "1" },
                 
-                { id: "BH", name: "1" },
+                { id: "HN", name: "1" },
                 
-                { id: "CL", name: "1" },
+                { id: "UY", name: "1" },
                 
-                { id: "HK", name: "1" },
+                { id: "EH", name: "1" },
                 
-                { id: "GY", name: "1" }
+                { id: "CF", name: "1" },
+                
+                { id: "AI", name: "1" },
+                
+                { id: "PH", name: "1" },
+                
+                { id: "DZ", name: "1" },
+                
+                { id: "LR", name: "1" },
+                
+                { id: "GT", name: "1" },
+                
+                { id: "SM", name: "1" },
+                
+                { id: "LK", name: "1" },
+                
+                { id: "JM", name: "1" },
+                
+                { id: "CZ", name: "1" },
+                
+                { id: "UG", name: "1" },
+                
+                { id: "PW", name: "1" },
+                
+                { id: "CK", name: "1" },
+                
+                { id: "IE", name: "1" },
+                
+                { id: "ZW", name: "2" },
+                
+                { id: "MK", name: "2" },
+                
+                { id: "BF", name: "2" },
+                
+                { id: "AS", name: "2" },
+                
+                { id: "CI", name: "2" },
+                
+                { id: "EE", name: "2" },
+                
+                { id: "GR", name: "2" },
+                
+                { id: "BD", name: "2" },
+                
+                { id: "TJ", name: "2" },
+                
+                { id: "BG", name: "2" },
+                
+                { id: "DK", name: "2" },
+                
+                { id: "IS", name: "2" },
+                
+                { id: "IQ", name: "2" },
+                
+                { id: "ER", name: "2" },
+                
+                { id: "CU", name: "2" },
+                
+                { id: "NI", name: "2" },
+                
+                { id: "FI", name: "2" },
+                
+                { id: "MY", name: "2" },
+                
+                { id: "RO", name: "2" },
+                
+                { id: "SG", name: "2" },
+                
+                { id: "CR", name: "2" },
+                
+                { id: "EC", name: "2" },
+                
+                { id: "GA", name: "2" },
+                
+                { id: "BE", name: "2" },
+                
+                { id: "MA", name: "2" },
+                
+                { id: "JO", name: "2" },
+                
+                { id: "SO", name: "2" },
+                
+                { id: "PE", name: "2" },
+                
+                { id: "OT", name: "2" },
+                
+                { id: "UK", name: "2" },
+                
+                { id: "AO", name: "2" },
+                
+                { id: "NZ", name: "2" }
                 
                 ]
             },
             
             {
-                name: "61–120 mentions",
+                name: "3–4 mentions",
                 color: "#F8CEB6",
                 data: [
                 
-                { id: "IL", name: "98" },
+                { id: "YE", name: "3" },
                 
-                { id: "PS", name: "76" },
+                { id: "NE", name: "3" },
                 
-                { id: "UA", name: "64" }
+                { id: "GN", name: "3" },
+                
+                { id: "LT", name: "3" },
+                
+                { id: "PA", name: "3" },
+                
+                { id: "VA", name: "3" },
+                
+                { id: "GE", name: "3" },
+                
+                { id: "AZ", name: "3" },
+                
+                { id: "SN", name: "3" },
+                
+                { id: "BY", name: "3" },
+                
+                { id: "SV", name: "3" },
+                
+                { id: "KZ", name: "3" },
+                
+                { id: "VN", name: "3" },
+                
+                { id: "GH", name: "4" },
+                
+                { id: "NL", name: "4" },
+                
+                { id: "NO", name: "4" },
+                
+                { id: "QA", name: "4" },
+                
+                { id: "KR", name: "4" },
+                
+                { id: "PL", name: "4" },
+                
+                { id: "HT", name: "4" },
+                
+                { id: "ES", name: "4" },
+                
+                { id: "RS", name: "4" },
+                
+                { id: "SS", name: "4" },
+                
+                { id: "CM", name: "4" },
+                
+                { id: "AM", name: "4" },
+                
+                { id: "KP", name: "4" },
+                
+                { id: "MD", name: "4" }
                 
                 ]
             },
             
             {
-                name: "121–180 mentions",
+                name: "5–7 mentions",
                 color: "#F4B39C",
                 data: [
                 
-                { id: "RU", name: "146" },
+                { id: "LY", name: "5" },
                 
-                { id: "CN", name: "127" }
+                { id: "SE", name: "5" },
+                
+                { id: "TZ", name: "5" },
+                
+                { id: "KE", name: "5" },
+                
+                { id: "DO", name: "5" },
+                
+                { id: "AU", name: "6" },
+                
+                { id: "BA", name: "6" },
+                
+                { id: "UZ", name: "6" },
+                
+                { id: "CH", name: "6" },
+                
+                { id: "EG", name: "7" },
+                
+                { id: "HU", name: "7" },
+                
+                { id: "AR", name: "7" },
+                
+                { id: "LB", name: "7" }
                 
                 ]
             },
             
             {
-                name: "301–360 mentions",
-                color: "#EA634D",
+                name: "8–16 mentions",
+                color: "#F19982",
                 data: [
                 
-                { id: "US", name: "352" }
+                { id: "NG", name: "8" },
+                
+                { id: "KH", name: "8" },
+                
+                { id: "ET", name: "8" },
+                
+                { id: "SY", name: "8" },
+                
+                { id: "IT", name: "8" },
+                
+                { id: "ML", name: "8" },
+                
+                { id: "TT", name: "8" },
+                
+                { id: "TH", name: "9" },
+                
+                { id: "AF", name: "9" },
+                
+                { id: "ID", name: "9" },
+                
+                { id: "AE", name: "11" },
+                
+                { id: "UN", name: "11" },
+                
+                { id: "CD", name: "12" },
+                
+                { id: "DE", name: "12" },
+                
+                { id: "PT", name: "13" },
+                
+                { id: "CL", name: "15" },
+                
+                { id: "CA", name: "15" },
+                
+                { id: "PK", name: "15" },
+                
+                { id: "TR", name: "16" }
+                
+                ]
+            },
+            
+            {
+                name: "17–295 mentions",
+                color: "#ED7E67",
+                data: [
+                
+                { id: "ZA", name: "17" },
+                
+                { id: "CO", name: "17" },
+                
+                { id: "SA", name: "18" },
+                
+                { id: "TW", name: "18" },
+                
+                { id: "MX", name: "19" },
+                
+                { id: "FR", name: "21" },
+                
+                { id: "IN", name: "27" },
+                
+                { id: "IR", name: "27" },
+                
+                { id: "SD", name: "30" },
+                
+                { id: "JP", name: "30" },
+                
+                { id: "EU", name: "32" },
+                
+                { id: "BR", name: "34" },
+                
+                { id: "PS", name: "46" },
+                
+                { id: "VE", name: "52" },
+                
+                { id: "IL", name: "59" },
+                
+                { id: "GB", name: "59" },
+                
+                { id: "CN", name: "64" },
+                
+                { id: "UA", name: "87" },
+                
+                { id: "RU", name: "126" },
+                
+                { id: "US", name: "295" }
                 
                 ]
             }
@@ -625,9 +517,9 @@
 <script>
   anychart.onDocumentReady(function () {
     (function () {
-      var rawData = [["CN", 127, 124, 70, 87, 126, 104, 71], ["IL", 98, 112, 155, 80, 61, 84, 81], ["PS", 76, 89, 127, 63, 47, 97, 86], ["RU", 146, 113, 122, 173, 154, 176, 193], ["UA", 64, 55, 83, 77, 93, 106, 106], ["US", 352, 377, 300, 310, 378, 439, 458], ["VE", 0, 0, 0, 54, 68, 54, 70]];
-      var dates = ["2025-10-31", "2025-10-30", "2025-10-29", "2025-10-28", "2025-10-27", "2025-10-26", "2025-10-25"].reverse();
-      var countryNames = {"CN": "Chine", "IL": "Isra\u00ebl", "PS": "Palestine", "RU": "Russie", "UA": "Ukraine", "US": "\u00c9tats-Unis", "VE": "Venezuela"};
+      var rawData = [["CN", 64, 64, 61, 44, 38, 51, 72], ["GB", 59, 41, 55, 54, 81, 0, 0], ["IL", 59, 58, 81, 65, 76, 126, 120], ["PS", 46, 59, 73, 41, 56, 75, 53], ["RU", 126, 144, 131, 100, 131, 164, 152], ["UA", 87, 121, 113, 118, 91, 90, 59], ["US", 295, 337, 323, 350, 333, 331, 401]];
+      var dates = ["2025-11-16", "2025-11-15", "2025-11-14", "2025-11-13", "2025-11-10", "2025-11-09", "2025-11-08"].reverse();
+      var countryNames = {"CN": "Chine", "GB": "Royaume-Uni", "IL": "Isra\u00ebl", "PS": "Palestine", "RU": "Russie", "UA": "Ukraine", "US": "\u00c9tats-Unis"};
 
       var chart = anychart.column();
       chart.yScale().stackMode('value');
@@ -766,10 +658,10 @@
                <a href="/">Actus </a>
             </li>
             <li>
-              <a href="/fr/2025-10-31/country_counts.html">Pays</a>
+              <a href="/fr/2025-11-16/country_counts.html">Pays</a>
             </li>
             <li>
-              <a href="/fr/2025-10-31/labels.html">Thèmes</a>
+              <a href="/fr/2025-11-16/labels.html">Thèmes</a>
             </li>
             <li>
               <a href="/fr/about.html">A Propos</a>
