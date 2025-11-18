@@ -1,0 +1,525 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Venezuela–US Tensions: Military Pressure and Potential Dialogue</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/fra.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="Français" title="Français" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/en', '/fr');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>              
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/2025-11-18/country_counts.html">Top Countries</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/2025-11-18/labels.html">Top Themes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/2025-11-18/c1.html">In Focus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Venezuela–US Tensions: Military Pressure and Potential Dialogue</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-11-18</span> • <span>52 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-11-18/2025-11-18-3.webp" alt="Venezuela–US Tensions: Military Pressure and Potential Dialogue" class="main-image">
+                <p style="margin:0" class="chapitre">Tensions between the United States and Venezuela have escalated with the US increasing military presence near Venezuelan waters, including deployment of the USS Gerald R. Ford and thousands of troops, signaling readiness for possible intervention. Former President Donald Trump publicly did not rule out military action while simultaneously expressing willingness to engage in face-to-face talks with Venezuelan President Nicolás Maduro, reflecting a dual strategy of pressure and diplomacy. The US has intensified sanctions and plans to designate the Venezuelan &#39;Cartel of the Suns&#39; linked to Maduro as a terrorist organization, aiming to undermine the regime and combat narcotics trafficking. Venezuela and its allies, such as China, condemn US actions as interventionist and reject coercive tactics, emphasizing sovereignty and denouncing military drills and sanctions. Regional actors like Colombia seek multilateral dialogue involving the US and China to ease tensions, while Maduro warns of dire consequences if the US pursues military strikes, maintaining a stance of resistance amid a fragile geopolitical environment.</p>
+            </div>
+            <h2>Countries covering this topic</h2>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">US Military and Political Strategy</h3>
+        <p class="cluster-description">This cluster contains articles primarily from US and allied perspectives detailing the increase in US military presence near Venezuela, readiness for potential military actions, and Trump’s statements keeping all options open but also expressing willingness for dialogue with Maduro. It highlights the US strategy combining military pressure, diplomatic engagement, and sanction policies, including designating the Cartel of the Suns as a terrorist organization to weaken Maduro’s regime. The viewpoint shows a blend of coercive and conciliatory tactics amid ongoing regional instability.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nzl.svg" alt="New Zealand" title="New Zealand" class="flag-icon">
+                            <a href="https://www.nzherald.co.nz/world/" target="_blank" class="article-link">‘I don’t rule out anything’: Trump on possible Venezuela deployment</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dom.svg" alt="Dominican Republic" title="Dominican Republic" class="flag-icon">
+                            <a href="https://www.diariolibre.com/mundo" target="_blank" class="article-link">Donald Trump Does Not Rule Out Military Intervention in Venezuela</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kor.svg" alt="South Korea" title="South Korea" class="flag-icon">
+                            <a href="https://www.koreaherald.com/World" target="_blank" class="article-link">Trump leaves military action against Venezuela on the table but floats possible talks</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgd.svg" alt="Bangladesh" title="Bangladesh" class="flag-icon">
+                            <a href="https://www.thedailystar.net/world" target="_blank" class="article-link">US escalates military presence near Venezuela</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hti.svg" alt="Haiti" title="Haiti" class="flag-icon">
+                            <a href="https://lenouvelliste.com/international" target="_blank" class="article-link">US aircraft carrier off Latin America heightens tensions with Venezuela</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cri.svg" alt="Costa Rica" title="Costa Rica" class="flag-icon">
+                            <a href="https://www.nacion.com/el-mundo/" target="_blank" class="article-link">Trump does not rule out sending troops to Venezuela and proposes talks with Maduro</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cri.svg" alt="Costa Rica" title="Costa Rica" class="flag-icon">
+                            <a href="https://www.diarioextra.com/categoria/internacionales/" target="_blank" class="article-link">Trump says he will talk with Maduro and does not rule out troop deployment</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hnd.svg" alt="Honduras" title="Honduras" class="flag-icon">
+                            <a href="https://www.laprensa.hn/mundo/" target="_blank" class="article-link">Trump Says He &#39;Could Discuss with Maduro&#39; as Venezuela Wants to Talk</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hnd.svg" alt="Honduras" title="Honduras" class="flag-icon">
+                            <a href="https://www.laprensa.hn/mundo/" target="_blank" class="article-link">US to Designate Cartel de los Soles as Terrorist Organization</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hnd.svg" alt="Honduras" title="Honduras" class="flag-icon">
+                            <a href="https://www.elheraldo.hn/mundo" target="_blank" class="article-link">Maduro Claims an Attack on Venezuela Would End Trump’s Political Career</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/che.svg" alt="Switzerland" title="Switzerland" class="flag-icon">
+                            <a href="https://www.letemps.ch/monde" target="_blank" class="article-link">Donald Trump and Nicolas Maduro ready to talk amid rising tensions in Venezuela</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vat.svg" alt="Holy See" title="Holy See" class="flag-icon">
+                            <a href="https://www.osservatoreromano.va/it/sections/internazionale.html" target="_blank" class="article-link">Trump does not exclude talks with Maduro but the US strengthens military presence in the Caribbean</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bra.svg" alt="Brazil" title="Brazil" class="flag-icon">
+                            <a href="https://www1.folha.uol.com.br/mundo/" target="_blank" class="article-link">Trump says he might talk to Maduro amid military mobilization in the Caribbean</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bra.svg" alt="Brazil" title="Brazil" class="flag-icon">
+                            <a href="https://oglobo.globo.com/mundo/" target="_blank" class="article-link">Trump indicates possibility of dialogue with Maduro</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gtm.svg" alt="Guatemala" title="Guatemala" class="flag-icon">
+                            <a href="https://www.prensalibre.com/internacional/" target="_blank" class="article-link">Trump hints at possible dialogue with Maduro amid US military deployment in the Caribbean</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gtm.svg" alt="Guatemala" title="Guatemala" class="flag-icon">
+                            <a href="https://lahora.gt/internacionales/" target="_blank" class="article-link">Cartel of the Suns linked to Maduro to be designated as a terrorist organization by the U.S.</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sen.svg" alt="Senegal" title="Senegal" class="flag-icon">
+                            <a href="https://www.senenews.com/category/actualites/international" target="_blank" class="article-link">Donald Trump hints at possible U.S. intervention in the Caribbean</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sxm.svg" alt="SXM" title="SXM" class="flag-icon">
+                            <a href="https://www.thedailyherald.sx/" target="_blank" class="article-link">Trump says America may open talks with Venezuela&#39;s Maduro</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/alb.svg" alt="Albania" title="Albania" class="flag-icon">
+                            <a href="https://www.panorama.com.al/category/bota-rajoni/" target="_blank" class="article-link">Trump: I do not exclude sending US troops to Venezuela! I may speak with Maduro “at some point”</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pan.svg" alt="Panama" title="Panama" class="flag-icon">
+                            <a href="https://www.laestrella.com.pa/mundo" target="_blank" class="article-link">Trump increases pressure on Maduro and leaves open a possible military action in Venezuela</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/uzb.svg" alt="Uzbekistan" title="Uzbekistan" class="flag-icon">
+                            <a href="https://kun.uz/news/category/jahon" target="_blank" class="article-link">US Preparing Military Operation Against Venezuela. Will Russia Assist Its Ally?</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kwt.svg" alt="Kuwait" title="Kuwait" class="flag-icon">
+                            <a href="https://www.aljarida.com/%D8%AF%D9%88%D9%84%D9%8A%D8%A7%D8%AA" target="_blank" class="article-link">Washington: Maduro Must Step Down Without War</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/col.svg" alt="Colombia" title="Colombia" class="flag-icon">
+                            <a href="https://www.eltiempo.com/mundo" target="_blank" class="article-link">US military declares readiness for military actions in Venezuela &#39;if asked to act&#39;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/are.svg" alt="United Arab Emirates" title="United Arab Emirates" class="flag-icon">
+                            <a href="https://gulfnews.com/world" target="_blank" class="article-link">Trump says will talk to Maduro</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nga.svg" alt="Nigeria" title="Nigeria" class="flag-icon">
+                            <a href="https://guardian.ng/category/world/" target="_blank" class="article-link">Trump plans Maduro&#39;s talk, &#39;OK&#39; with US strikes on Mexico</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dnk.svg" alt="Denmark" title="Denmark" class="flag-icon">
+                            <a href="https://nyheder.tv2.dk/udland" target="_blank" class="article-link">US issues harsh accusations against Maduro</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dnk.svg" alt="Denmark" title="Denmark" class="flag-icon">
+                            <a href="https://nyheder.tv2.dk/udland" target="_blank" class="article-link">Attack on Venezuelan soil likely after arrival of US warship</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/idn.svg" alt="Indonesia" title="Indonesia" class="flag-icon">
+                            <a href="https://www.thejakartapost.com/world" target="_blank" class="article-link">Trump says US may open talks with Maduro</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/slv.svg" alt="El Salvador" title="El Salvador" class="flag-icon">
+                            <a href="https://diario.elmundo.sv/el-mundo" target="_blank" class="article-link">Trump Says He Keeps &#39;All Options on the Table&#39; Regarding Venezuela</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pry.svg" alt="Paraguay" title="Paraguay" class="flag-icon">
+                            <a href="https://www.ultimahora.com/noticias/mundo/" target="_blank" class="article-link">United States to designate the &#39;Cartel of the Suns&#39; as a terrorist group</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/chl.svg" alt="Chile" title="Chile" class="flag-icon">
+                            <a href="https://www.latercera.com/categoria/mundo/" target="_blank" class="article-link">Contradictory signals from Washington towards Maduro amid increased military presence in the Caribbean</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #bf72e5; padding: 8px 16px; border-radius: 4px;">Venezuela and Allies’ Rejection of US Pressure</h3>
+        <p class="cluster-description">Articles in this cluster convey Venezuela’s strong opposition to US military presence, sanctions, and attempts to designate domestic entities as terrorist organizations. Maduro and allied countries such as China and Cuba denounce US actions as coercive, interventionist, and violations of sovereignty. Venezuela maintains readiness to resist military attacks, warns of significant regional destabilization, and insists on direct face-to-face talks under terms favourable to Venezuelan sovereignty. The perspective stresses defensive rhetoric and condemnation of US policies as external aggression.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cub.svg" alt="Cuba" title="Cuba" class="flag-icon">
+                            <a href="http://fr.granma.cu/mundo" target="_blank" class="article-link">China and Venezuela reject US pressure on third countries over Cuba embargo</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cog.svg" alt="Republic of the Congo" title="Republic of the Congo" class="flag-icon">
+                            <a href="https://www.mediacongo.net/articles-actualite-27_monde.html" target="_blank" class="article-link">Maduro warns the American people: &#39;Do you want a new Gaza in South America?&#39;</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/est.svg" alt="Estonia" title="Estonia" class="flag-icon">
+                            <a href="https://www.delfi.ee/kategooria/123/maailm" target="_blank" class="article-link">Possible Venezuelan attack imminent; Trump says dialogue still possible</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ind.svg" alt="India" title="India" class="flag-icon">
+                            <a href="https://www.thehindu.com/news/international/" target="_blank" class="article-link">Trump’s ‘Spear of the South’ sparks regional alarm as Venezuela braces for U.S. moves</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/egy.svg" alt="Egypt" title="Egypt" class="flag-icon">
+                            <a href="https://www.egyptindependent.com/category/world/" target="_blank" class="article-link">Venezuela’s Maduro denounces US military drills in Trinidad and Tobago amid heightened tensions</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lbn.svg" alt="Lebanon" title="Lebanon" class="flag-icon">
+                            <a href="https://www.annahar.com/International" target="_blank" class="article-link">Maduro: Ready to Talk &#34;Face to Face&#34; with Trump</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/swe.svg" alt="Sweden" title="Sweden" class="flag-icon">
+                            <a href="https://www.svd.se/" target="_blank" class="article-link">Maduro Ready for Face-to-Face Talks with Trump</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pry.svg" alt="Paraguay" title="Paraguay" class="flag-icon">
+                            <a href="https://www.ultimahora.com/noticias/mundo/" target="_blank" class="article-link">Maduro says willing to talk “face to face” with Trump</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Regional and International Diplomatic Concerns</h3>
+        <p class="cluster-description">This grouping includes articles from neighboring and global countries expressing concern about escalating tensions and the broader implications of US military activities near Venezuela. Colombia’s proposal to include China for a multilateral security discussion aims to de-escalate military confrontations and promote diplomatic dialogue. Other regional actors clarify their positions on US military exercises and opposition to intervention, reflecting worries about sovereignty, stability, and international law. This viewpoint underscores efforts to mediate and manage conflict amid fragile geopolitical dynamics.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hkg.svg" alt="HKG" title="HKG" class="flag-icon">
+                            <a href="https://www.scmp.com/news/world" target="_blank" class="article-link">Colombia pushes for talks – to include China – over US military action in region</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fra.svg" alt="France" title="France" class="flag-icon">
+                            <a href="https://www.lemonde.fr/international/" target="_blank" class="article-link">Trinidad and Tobago denies U.S. request to use its territory for attacks on Venezuela</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/col.svg" alt="Colombia" title="Colombia" class="flag-icon">
+                            <a href="https://www.eltiempo.com/mundo" target="_blank" class="article-link">Trump strengthens pressure on Maduro while opening the door to dialogue: Is it a calculated strategy to weaken the regime?</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jor.svg" alt="Jordan" title="Jordan" class="flag-icon">
+                            <a href="https://www.jordannews.jo/Category/18/Global" target="_blank" class="article-link">Trump: &#39;We May Hold Some Discussions&#39; with Venezuelan President Maduro</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cuw.svg" alt="CUW" title="CUW" class="flag-icon">
+                            <a href="https://www.curacaochronicle.com/home/" target="_blank" class="article-link">Dutch Parliament Demands Urgent Clarity on Possible Netherlands Role in Controversial U.S. Attacks in Caribbean Sea</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+        map.padding([0, 0, 0, 0]);
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "US Military and Political Strategy",
+                color: "#72e5ac",
+                data: [ {"id": "AE"},  {"id": "AL"},  {"id": "BD"},  {"id": "BR"},  {"id": "CH"},  {"id": "CL"},  {"id": "CR"},  {"id": "DK"},  {"id": "DO"},  {"id": "GT"},  {"id": "HN"},  {"id": "HT"},  {"id": "ID"},  {"id": "KR"},  {"id": "KW"},  {"id": "NG"},  {"id": "NZ"},  {"id": "PA"},  {"id": "SN"},  {"id": "SV"},  {"id": "SX"},  {"id": "UZ"},  {"id": "VA"} ]
+            },
+        
+            {
+                name: "Venezuela and Allies\u2019 Rejection of US Pressure",
+                color: "#bf72e5",
+                data: [ {"id": "CG"},  {"id": "CU"},  {"id": "EE"},  {"id": "EG"},  {"id": "IN"},  {"id": "LB"},  {"id": "SE"} ]
+            },
+        
+            {
+                name: "Regional and International Diplomatic Concerns",
+                color: "#e5d272",
+                data: [ {"id": "CW"},  {"id": "FR"},  {"id": "HK"},  {"id": "JO"} ]
+            }
+        
+        
+            ,
+            {
+                name: "Different perspectives:\n- US Military and Political Strategy\n- Regional and International Diplomatic Concerns",
+                color: "#AAAAAA",
+                data: [{"id": "CO"}]
+            },
+            {
+                name: "Different perspectives:\n- US Military and Political Strategy\n- Venezuela and Allies\u2019 Rejection of US Pressure",
+                color: "#AAAAAA",
+                data: [{"id": "PY"}]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Hide sources ▲' : 'Show sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li>
+               <a href="/">News </a>
+            </li>
+            <li>
+              <a href="/en/2025-11-18/country_counts.html">Top Countries</a>
+            </li>
+            <li>
+              <a href="/en/2025-11-18/labels.html">Top Themes</a>
+            </li>
+            <li>
+              <a href="/en/2025-11-18/c1.html">In Focus</a>
+            </li>
+            <li>
+              <a href="/en/about.html">About</a>
+            </li>
+            <li>
+              <a href="/en/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
