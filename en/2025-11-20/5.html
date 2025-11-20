@@ -1,0 +1,408 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Escalating China-Japan Diplomatic and Trade Tensions over Taiwan and Seafood Imports</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/fra.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="Français" title="Français" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/en', '/fr');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>              
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/2025-11-20/country_counts.html">Top Countries</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/2025-11-20/labels.html">Top Themes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/2025-11-20/c1.html">In Focus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Escalating China-Japan Diplomatic and Trade Tensions over Taiwan and Seafood Imports</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-11-20</span> • <span>23 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-11-20/2025-11-20-5.webp" alt="Escalating China-Japan Diplomatic and Trade Tensions over Taiwan and Seafood Imports" class="main-image">
+                <p style="margin:0" class="chapitre">Tensions between China and Japan have sharply escalated, primarily triggered by Japan&#39;s Prime Minister Sanae Takaichi&#39;s remarks on Taiwan, which China views as interference in its internal affairs. In retaliation, China has imposed bans and suspensions on Japanese seafood imports, affecting trade and economic relations significantly. The dispute extends beyond trade, with cultural exchanges like Japanese film approvals also being halted, and both countries issuing warnings to their citizens amid rising nationalism and security concerns. This diplomatic spat reflects broader regional instability in East Asia, involving sovereignty disputes, maritime claims, and the strategic importance of Taiwan. The situation has drawn international attention, including concerns about the Pacific region&#39;s security and potential involvement of external powers like the United States.</p>
+            </div>
+            <h2>Countries covering this topic</h2>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Chinese Perspective: Sovereignty and Retaliation</h3>
+        <p class="cluster-description">Chinese sources emphasize the protection of national sovereignty, particularly regarding Taiwan, which China considers a core interest. They frame Japan&#39;s statements and actions as unacceptable interference, justifying retaliatory measures such as banning Japanese seafood imports and halting cultural exchanges. China portrays these actions as necessary responses to Japan&#39;s provocations and political maneuvering, aiming to uphold regional stability from their viewpoint.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bra.svg" alt="Brazil" title="Brazil" class="flag-icon">
+                            <a href="https://oglobo.globo.com/mundo/" target="_blank" class="article-link">China blocks seafood imports from Japan amid diplomatic crisis</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gtm.svg" alt="Guatemala" title="Guatemala" class="flag-icon">
+                            <a href="https://lahora.gt/internacionales/" target="_blank" class="article-link">EFE: China Pressures Japan with Seafood Trade Amid Taiwan Tensions</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/idn.svg" alt="Indonesia" title="Indonesia" class="flag-icon">
+                            <a href="https://www.kompas.com/global" target="_blank" class="article-link">China Now Halts Seafood Imports from Japan Amid Rising Tensions</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/idn.svg" alt="Indonesia" title="Indonesia" class="flag-icon">
+                            <a href="https://www.thejakartapost.com/world" target="_blank" class="article-link">China to suspend imports of Japanese seafood amid diplomatic dispute</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tza.svg" alt="Tanzania" title="Tanzania" class="flag-icon">
+                            <a href="https://dailynews.co.tz/category/world/" target="_blank" class="article-link">China to suspend imports of Japanese seafood amid diplomatic row</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/chl.svg" alt="Chile" title="Chile" class="flag-icon">
+                            <a href="https://www.latercera.com/categoria/mundo/" target="_blank" class="article-link">China Warns of Retaliation if Japan Does Not Retract Comments on Taiwan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kaz.svg" alt="Kazakhstan" title="Kazakhstan" class="flag-icon">
+                            <a href="https://tengrinews.kz/news/" target="_blank" class="article-link">China threatens &#39;tough measures&#39; against Japan over Taiwan statement</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/usa.svg" alt="United States" title="United States" class="flag-icon">
+                            <a href="https://abcnews.go.com/International" target="_blank" class="article-link">China to suspend imports of Japanese seafood in new escalation over Taiwan comments</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irq.svg" alt="Iraq" title="Iraq" class="flag-icon">
+                            <a href="https://www.shafaq.com/ar/%D8%B9%D8%B1%D8%A8%D9%8A-%D9%88%D8%AF%D9%88%D9%84%D9%8A" target="_blank" class="article-link">China halts approvals of Japanese films amid Taiwan tensions</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mng.svg" alt="Mongolia" title="Mongolia" class="flag-icon">
+                            <a href="https://news.mn/angilal/delhii/" target="_blank" class="article-link">China suspends seafood imports from Japan amid diplomatic tensions</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/twn.svg" alt="TWN" title="TWN" class="flag-icon">
+                            <a href="https://www.taipeitimes.com/News/world" target="_blank" class="article-link">China bans Japanese seafood imports amid Taiwan dispute</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ind.svg" alt="India" title="India" class="flag-icon">
+                            <a href="https://timesofindia.indiatimes.com/world" target="_blank" class="article-link">Diplomatic dispute: China suspends Japanese seafood imports amid escalating row</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #bf72e5; padding: 8px 16px; border-radius: 4px;">Japanese Perspective: National Security and Diplomatic Challenges</h3>
+        <p class="cluster-description">Japanese sources focus on the diplomatic and security challenges posed by China&#39;s aggressive responses to Japan&#39;s stance on Taiwan. They highlight the impact of China&#39;s trade restrictions on Japan&#39;s seafood industry and the broader implications for regional stability. Japan also issues safety warnings to its citizens in China, reflecting concerns over escalating tensions and the need to navigate a complex geopolitical environment carefully.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sxm.svg" alt="SXM" title="SXM" class="flag-icon">
+                            <a href="https://www.thedailyherald.sx/" target="_blank" class="article-link">Japanese seafood caught up in escalating dispute with China</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kwt.svg" alt="Kuwait" title="Kuwait" class="flag-icon">
+                            <a href="https://kuwaittimes.com/world/" target="_blank" class="article-link">Japan warns citizens in China over safety amid Taiwan row</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kwt.svg" alt="Kuwait" title="Kuwait" class="flag-icon">
+                            <a href="https://www.aljarida.com/%D8%AF%D9%88%D9%84%D9%8A%D8%A7%D8%AA" target="_blank" class="article-link">China Punishes Japan as Takaitchi Maintains Taiwan Stance</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/grl.svg" alt="GRL" title="GRL" class="flag-icon">
+                            <a href="https://sermitsiaq.ag/" target="_blank" class="article-link">Japan warns citizens in China amid diplomatic dispute over Taiwan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/plw.svg" alt="Palau" title="Palau" class="flag-icon">
+                            <a href="https://islandtimes.org/category/world-news/" target="_blank" class="article-link">Here’s how Japan’s PM found herself in a diplomatic spat with China over Taiwan</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jpn.svg" alt="Japan" title="Japan" class="flag-icon">
+                            <a href="https://www.yomiuri.co.jp/world/" target="_blank" class="article-link">China Criticizes Japanese Prime Minister’s Parliamentary Remarks Over Fishery Import Suspension</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jpn.svg" alt="Japan" title="Japan" class="flag-icon">
+                            <a href="https://www.asahi.com/ajw/" target="_blank" class="article-link">Chinese media footage of diplomatic talks worsens Tokyo-Beijing feud</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jpn.svg" alt="Japan" title="Japan" class="flag-icon">
+                            <a href="https://www.asahi.com/ajw/" target="_blank" class="article-link">China reimposes ban on Japanese seafood amid ‘Taiwan’ row</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">International and Regional Observers: Broader Geopolitical Implications</h3>
+        <p class="cluster-description">International and regional analyses underscore the wider ramifications of the China-Japan dispute, noting how rising nationalism and security tensions affect East Asian stability and ripple into the Pacific region. They point to the involvement of external powers like the United States and the strategic competition over resources and influence. These perspectives stress the importance of diplomatic navigation by smaller states caught between the two powers and the potential for broader conflict escalation.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ton.svg" alt="Tonga" title="Tonga" class="flag-icon">
+                            <a href="https://tongaindependent.com/politics/" target="_blank" class="article-link">Rising Nationalism and Security Tensions Strain Japan–China Relations — and the Ripple Effects Reach the Pacific</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nld.svg" alt="Netherlands" title="Netherlands" class="flag-icon">
+                            <a href="https://www.telegraaf.nl/nieuws/buitenland" target="_blank" class="article-link">Escalation of Dispute Between Tokyo and Beijing Sparks US Involvement Over Resources</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aus.svg" alt="Australia" title="Australia" class="flag-icon">
+                            <a href="https://www.smh.com.au/world" target="_blank" class="article-link">The three words from Japan’s PM that sparked a furious Chinese response</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+        map.padding([0, 0, 0, 0]);
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Chinese Perspective: Sovereignty and Retaliation",
+                color: "#72e5ac",
+                data: [ {"id": "BR"},  {"id": "CL"},  {"id": "GT"},  {"id": "ID"},  {"id": "IN"},  {"id": "IQ"},  {"id": "KZ"},  {"id": "MN"},  {"id": "TW"},  {"id": "TZ"},  {"id": "US"} ]
+            },
+        
+            {
+                name: "Japanese Perspective: National Security and Diplomatic Challenges",
+                color: "#bf72e5",
+                data: [ {"id": "GL"},  {"id": "JP"},  {"id": "KW"},  {"id": "PW"},  {"id": "SX"} ]
+            },
+        
+            {
+                name: "International and Regional Observers: Broader Geopolitical Implications",
+                color: "#e5d272",
+                data: [ {"id": "AU"},  {"id": "NL"},  {"id": "TO"} ]
+            }
+        
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Hide sources ▲' : 'Show sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li>
+               <a href="/">News </a>
+            </li>
+            <li>
+              <a href="/en/2025-11-20/country_counts.html">Top Countries</a>
+            </li>
+            <li>
+              <a href="/en/2025-11-20/labels.html">Top Themes</a>
+            </li>
+            <li>
+              <a href="/en/2025-11-20/c1.html">In Focus</a>
+            </li>
+            <li>
+              <a href="/en/about.html">About</a>
+            </li>
+            <li>
+              <a href="/en/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
