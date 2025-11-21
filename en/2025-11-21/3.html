@@ -1,0 +1,609 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>COP30 Climate Talks Disrupted by Fire Amid Urgent Calls for Climate Action and Justice</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/fra.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="Français" title="Français" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/en', '/fr');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>              
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/2025-11-21/country_counts.html">Top Countries</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/2025-11-21/labels.html">Top Themes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/2025-11-21/c1.html">In Focus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>COP30 Climate Talks Disrupted by Fire Amid Urgent Calls for Climate Action and Justice</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-11-21</span> • <span>48 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-11-21/2025-11-21-3.webp" alt="COP30 Climate Talks Disrupted by Fire Amid Urgent Calls for Climate Action and Justice" class="main-image">
+                <p style="margin:0" class="chapitre">The COP30 climate summit in Belém, Brazil, was significantly disrupted by a fire that forced evacuations and delayed critical negotiations during a pivotal phase of the conference. Despite the safety incident, delegates from over 30 countries continued to push for ambitious climate goals, including a just and equitable phase-out of fossil fuels and increased climate finance for vulnerable nations. Indigenous groups allied with Palestine to highlight shared struggles against colonialism, emphasizing the intersection of climate justice and human rights. Brazilian President Lula and other leaders called for financial contributions from fossil fuel companies and the wealthy to support the global energy transition. The event underscored both the logistical challenges of hosting large international summits and the persistent political deadlocks on key issues such as loss and damage finance and fossil fuel commitments.</p>
+            </div>
+            <h2>Countries covering this topic</h2>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Safety and Disruption Due to Fire Incident</h3>
+        <p class="cluster-description">Many countries and sources reported on the fire outbreak at the COP30 venue, emphasizing the evacuation, safety concerns, and the disruption caused to the climate negotiations. The incident highlighted challenges in managing large international events and raised questions about venue preparedness and security. Despite no reported casualties, the fire delayed talks and complicated efforts to reach agreements during a critical phase of the summit.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tls.svg" alt="Timor-Leste" title="Timor-Leste" class="flag-icon">
+                            <a href="https://www.noticiasaominuto.com/mundo" target="_blank" class="article-link">Thirteen people treated for smoke inhalation after fire at COP30</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/arg.svg" alt="Argentina" title="Argentina" class="flag-icon">
+                            <a href="https://www.clarin.com/mundo/" target="_blank" class="article-link">Urgent evacuation at COP30 climate summit in Brazil due to fire incident</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hti.svg" alt="Haiti" title="Haiti" class="flag-icon">
+                            <a href="https://lenouvelliste.com/international" target="_blank" class="article-link">A fire halts COP30 at the worst moment</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lux.svg" alt="Luxembourg" title="Luxembourg" class="flag-icon">
+                            <a href="https://www.wort.lu/fr/international" target="_blank" class="article-link">COP30: fire forces evacuation and halts climate negotiations</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lux.svg" alt="Luxembourg" title="Luxembourg" class="flag-icon">
+                            <a href="https://www.tageblatt.lu/headlines/" target="_blank" class="article-link">COP30 Venue Evacuated Due to Fire</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gtm.svg" alt="Guatemala" title="Guatemala" class="flag-icon">
+                            <a href="https://lahora.gt/internacionales/" target="_blank" class="article-link">Fire forces evacuation of negotiation area at COP30 in Brazil</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sen.svg" alt="Senegal" title="Senegal" class="flag-icon">
+                            <a href="https://www.senenews.com/category/actualites/international" target="_blank" class="article-link">Brazil: Fire Forces Interruption of COP30</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irq.svg" alt="Iraq" title="Iraq" class="flag-icon">
+                            <a href="https://www.shafaq.com/ar/%D8%B9%D8%B1%D8%A8%D9%8A-%D9%88%D8%AF%D9%88%D9%84%D9%8A" target="_blank" class="article-link">Fire evacuates the venue of the Climate Conference in Brazil</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jam.svg" alt="Jamaica" title="Jamaica" class="flag-icon">
+                            <a href="http://www.jamaicaobserver.com/news/" target="_blank" class="article-link">Fire triggers evacuation at COP30 venue in Brazil; Jamaican delegation safe</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nld.svg" alt="Netherlands" title="Netherlands" class="flag-icon">
+                            <a href="https://www.telegraaf.nl/nieuws/buitenland" target="_blank" class="article-link">Fire breaks out at climate summit in Brazil, participants evacuated</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hkg.svg" alt="HKG" title="HKG" class="flag-icon">
+                            <a href="https://www.scmp.com/news/world" target="_blank" class="article-link">Fire breaks out at Brazil’s Cop30 talks, forcing delay at critical phase</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cze.svg" alt="Czech Republic" title="Czech Republic" class="flag-icon">
+                            <a href="https://www.idnes.cz/zpravy/zahranicni" target="_blank" class="article-link">Fire disrupts COP30 climate conference, main events canceled</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svn.svg" alt="Slovenia" title="Slovenia" class="flag-icon">
+                            <a href="https://www.delo.si/novice/svet" target="_blank" class="article-link">Fire at COP30 Venue Leads to Evacuation</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cri.svg" alt="Costa Rica" title="Costa Rica" class="flag-icon">
+                            <a href="https://www.diarioextra.com/categoria/internacionales/" target="_blank" class="article-link">Fire forces evacuation of COP30 summit in Brazil</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgr.svg" alt="Bulgaria" title="Bulgaria" class="flag-icon">
+                            <a href="https://www.24chasa.bg/mezhdunarodni" target="_blank" class="article-link">Evacuation of participants at COP30 conference in Brazil after fire outbreak (Photos)</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cyp.svg" alt="Cyprus" title="Cyprus" class="flag-icon">
+                            <a href="https://cyprus-mail.com/category/world/" target="_blank" class="article-link">Fire disrupts COP30 climate talks as UN chief urges deal</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lbr.svg" alt="Liberia" title="Liberia" class="flag-icon">
+                            <a href="https://frontpageafricaonline.com/category/news/" target="_blank" class="article-link">Fire Incident Near Liberian Pavilion Triggers Brief Evacuation at COP30 in Brazil</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/swe.svg" alt="Sweden" title="Sweden" class="flag-icon">
+                            <a href="https://www.dn.se/varlden/" target="_blank" class="article-link">Fire breaks out at climate summit in Brazil</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/swe.svg" alt="Sweden" title="Sweden" class="flag-icon">
+                            <a href="https://www.svd.se/" target="_blank" class="article-link">Fire at the COP30 climate meeting</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/deu.svg" alt="Germany" title="Germany" class="flag-icon">
+                            <a href="https://www.welt.de/politik/ausland/" target="_blank" class="article-link">Fire breaks out at UN climate summit in Brazil, venue evacuated</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pak.svg" alt="Pakistan" title="Pakistan" class="flag-icon">
+                            <a href="https://www.thenews.com.pk/latest/category/world" target="_blank" class="article-link">Fire forces evacuation at UN climate talks</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bel.svg" alt="Belgium" title="Belgium" class="flag-icon">
+                            <a href="https://www.lavenir.net/actu/monde/" target="_blank" class="article-link">Fire at COP30 site in Brazil: &#34;Limited damage,&#34; site closed until at least midnight Belgian time</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bol.svg" alt="Bolivia" title="Bolivia" class="flag-icon">
+                            <a href="https://eldeber.com.bo/seccion/mundo/" target="_blank" class="article-link">Fire forces evacuation of COP30 negotiations zone in Belém</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ind.svg" alt="India" title="India" class="flag-icon">
+                            <a href="https://timesofindia.indiatimes.com/world" target="_blank" class="article-link">Delegates flee as fire erupts at COP30 Summit in Brazil; climate talks disrupted</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ind.svg" alt="India" title="India" class="flag-icon">
+                            <a href="https://www.thehindu.com/news/international/" target="_blank" class="article-link">Fire breaks out in pavilion at COP30 venue in Brazil</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lca.svg" alt="Saint Lucia" title="Saint Lucia" class="flag-icon">
+                            <a href="https://stluciatimes.com/category/news/" target="_blank" class="article-link">Fire erupts at COP30 Climate Summit in Brazil, disrupting final hours of negotiations</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/npl.svg" alt="Nepal" title="Nepal" class="flag-icon">
+                            <a href="https://ekantipur.com/world" target="_blank" class="article-link">Fire at COP30 Conference Venue Causes Temporary Suspension</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ltu.svg" alt="Lithuania" title="Lithuania" class="flag-icon">
+                            <a href="https://www.delfi.lt/news/daily/world/" target="_blank" class="article-link">Fire breaks out at pavilion during COP30 climate talks in Brazil</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/are.svg" alt="United Arab Emirates" title="United Arab Emirates" class="flag-icon">
+                            <a href="https://gulfnews.com/world" target="_blank" class="article-link">COP30 summit in Brazil faces disruption as fire erupts</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bfa.svg" alt="Burkina Faso" title="Burkina Faso" class="flag-icon">
+                            <a href="https://www.sidwaya.info/bfcategories/international/" target="_blank" class="article-link">COP30: Fire at the Conference Site</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72bbe5; padding: 8px 16px; border-radius: 4px;">Calls for Ambitious Climate Action and Fossil Fuel Phase-Out</h3>
+        <p class="cluster-description">Delegations from over 30 countries, including Switzerland and others, pressed for the inclusion of a roadmap to phase out fossil fuels in the final COP30 agreement. The UN Secretary-General expressed optimism about reaching compromises on adaptation and fossil fuel policies despite difficult negotiations. The push reflects growing international demands for stronger climate commitments to address the climate crisis effectively.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/che.svg" alt="Switzerland" title="Switzerland" class="flag-icon">
+                            <a href="https://www.letemps.ch/monde" target="_blank" class="article-link">Over 30 countries press for fossil fuel phase-out inclusion at COP30</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/che.svg" alt="Switzerland" title="Switzerland" class="flag-icon">
+                            <a href="https://www.letemps.ch/monde" target="_blank" class="article-link">UN Chief optimistic about compromise on adaptation and fossil fuels at COP30</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/idn.svg" alt="Indonesia" title="Indonesia" class="flag-icon">
+                            <a href="https://www.kompas.com/global" target="_blank" class="article-link">Climate Summit COP30 in Brazil Disrupted by Fire, Discussions on Fossil Fuel Phase-Out Stalled</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ita.svg" alt="Italy" title="Italy" class="flag-icon">
+                            <a href="https://www.repubblica.it/esteri/" target="_blank" class="article-link">Belém fire halts the UN climate conference</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #8d72e5; padding: 8px 16px; border-radius: 4px;">Climate Finance and Support for Vulnerable Nations</h3>
+        <p class="cluster-description">Several countries and leaders, including Brazil&#39;s President Lula and the UN Secretary-General, emphasized the urgent need for financial contributions from fossil fuel companies, miners, and wealthy individuals to support the energy transition and climate adaptation. Developing countries expressed frustration over the deadlock in delivering promised loss and damage funds, highlighting the political and logistical challenges in climate finance negotiations.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cpv.svg" alt="Cape Verde" title="Cape Verde" class="flag-icon">
+                            <a href="https://expressodasilhas.cv/mundo" target="_blank" class="article-link">Brazil&#39;s Lula calls for fossil fuel companies, miners and super-rich to fund transition</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/zaf.svg" alt="South Africa" title="South Africa" class="flag-icon">
+                            <a href="https://www.dailymaverick.co.za/section/world/" target="_blank" class="article-link">Developing deadlock – Will the promised Loss and Damage climate finance funds materialise?</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/chn.svg" alt="China" title="China" class="flag-icon">
+                            <a href="https://www.chinadaily.com.cn/world" target="_blank" class="article-link">UN chief urges compromise on climate finance</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e572da; padding: 8px 16px; border-radius: 4px;">Indigenous and Human Rights Perspectives at COP30</h3>
+        <p class="cluster-description">Indigenous peoples allied with Palestine during protests at COP30, drawing attention to shared struggles against colonialism and systemic oppression. This alliance underscored the intersectionality of climate justice with broader human rights issues, aiming to amplify marginalized voices within the international climate discourse.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ecu.svg" alt="Ecuador" title="Ecuador" class="flag-icon">
+                            <a href="https://rebelion.org/categoria/territorios/mundo/" target="_blank" class="article-link">Indigenous Peoples Ally with Palestine in COP Protests: &#34;We Have the Same Enemy, Colonialism&#34;</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e57276; padding: 8px 16px; border-radius: 4px;">National and Regional Climate Priorities and Participation</h3>
+        <p class="cluster-description">Countries like Kyrgyzstan, Liberia, and the Marshall Islands used COP30 to advance specific agendas such as mountain ecosystem protection, African climate justice, and active engagement in global climate policies. These contributions reflect the diverse priorities and commitments of nations within the broader framework of international climate negotiations.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kgz.svg" alt="Kyrgyzstan" title="Kyrgyzstan" class="flag-icon">
+                            <a href="https://www.vb.kg/" target="_blank" class="article-link">Kyrgyzstan Advances Mountain Agenda at COP30 in Brazil</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lbr.svg" alt="Liberia" title="Liberia" class="flag-icon">
+                            <a href="https://www.liberianobserver.com/news/" target="_blank" class="article-link">Liberia’s Call for Collective Climate Justice at COP30</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mhl.svg" alt="Marshall Islands" title="Marshall Islands" class="flag-icon">
+                            <a href="http://marshallislandsjournal.com/" target="_blank" class="article-link">RMI engages in COP30</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">General Outlook on COP30 Negotiations and Challenges</h3>
+        <p class="cluster-description">Some sources highlighted the overall difficulty in reaching consensus at COP30 due to differing national priorities and the complexity of global climate governance. Despite obstacles, dialogue and efforts toward a unified climate agreement continue, with the conference serving as a critical platform for international cooperation on environmental issues.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cpv.svg" alt="Cape Verde" title="Cape Verde" class="flag-icon">
+                            <a href="https://www.anacao.cv/categoria/mundo/" target="_blank" class="article-link">30th United Nations Climate Change Conference (COP30) begins today in Belém, Brazil</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vat.svg" alt="Holy See" title="Holy See" class="flag-icon">
+                            <a href="https://www.vaticannews.va/it/mondo.html" target="_blank" class="article-link">COP30, uphill path for an agreement. President Lula returns to Belém</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sgp.svg" alt="Singapore" title="Singapore" class="flag-icon">
+                            <a href="https://www.straitstimes.com/global" target="_blank" class="article-link">UN Climate Summit Venue in Brazil Re-opens After Fire: Officials</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/prt.svg" alt="Portugal" title="Portugal" class="flag-icon">
+                            <a href="https://expresso.pt/" target="_blank" class="article-link">A Global ‘Condominium’ Searching for a COP30 Agreement</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bfa.svg" alt="Burkina Faso" title="Burkina Faso" class="flag-icon">
+                            <a href="https://www.sidwaya.info/bfcategories/international/" target="_blank" class="article-link">COP30: Presentation of Strategic Plan 2026–2030 in Belém</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+        map.padding([0, 0, 0, 0]);
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Safety and Disruption Due to Fire Incident",
+                color: "#72e5ac",
+                data: [ {"id": "AE"},  {"id": "AR"},  {"id": "BE"},  {"id": "BG"},  {"id": "BO"},  {"id": "CR"},  {"id": "CY"},  {"id": "CZ"},  {"id": "DE"},  {"id": "GT"},  {"id": "HK"},  {"id": "HT"},  {"id": "IN"},  {"id": "IQ"},  {"id": "JM"},  {"id": "LC"},  {"id": "LT"},  {"id": "LU"},  {"id": "NL"},  {"id": "NP"},  {"id": "PK"},  {"id": "SE"},  {"id": "SI"},  {"id": "SN"},  {"id": "TL"} ]
+            },
+        
+            {
+                name: "Calls for Ambitious Climate Action and Fossil Fuel Phase-Out",
+                color: "#72bbe5",
+                data: [ {"id": "CH"},  {"id": "ID"},  {"id": "IT"} ]
+            },
+        
+            {
+                name: "Climate Finance and Support for Vulnerable Nations",
+                color: "#8d72e5",
+                data: [ {"id": "CN"},  {"id": "ZA"} ]
+            },
+        
+            {
+                name: "Indigenous and Human Rights Perspectives at COP30",
+                color: "#e572da",
+                data: [ {"id": "EC"} ]
+            },
+        
+            {
+                name: "National and Regional Climate Priorities and Participation",
+                color: "#e57276",
+                data: [ {"id": "KG"},  {"id": "MH"} ]
+            },
+        
+            {
+                name: "General Outlook on COP30 Negotiations and Challenges",
+                color: "#e5d272",
+                data: [ {"id": "PT"},  {"id": "SG"},  {"id": "VA"} ]
+            }
+        
+        
+            ,
+            {
+                name: "Different perspectives:\n- Safety and Disruption Due to Fire Incident\n- General Outlook on COP30 Negotiations and Challenges",
+                color: "#AAAAAA",
+                data: [{"id": "BF"}]
+            },
+            {
+                name: "Different perspectives:\n- Safety and Disruption Due to Fire Incident\n- National and Regional Climate Priorities and Participation",
+                color: "#AAAAAA",
+                data: [{"id": "LR"}]
+            },
+            {
+                name: "Different perspectives:\n- Climate Finance and Support for Vulnerable Nations\n- General Outlook on COP30 Negotiations and Challenges",
+                color: "#AAAAAA",
+                data: [{"id": "CV"}]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Hide sources ▲' : 'Show sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li>
+               <a href="/">News </a>
+            </li>
+            <li>
+              <a href="/en/2025-11-21/country_counts.html">Top Countries</a>
+            </li>
+            <li>
+              <a href="/en/2025-11-21/labels.html">Top Themes</a>
+            </li>
+            <li>
+              <a href="/en/2025-11-21/c1.html">In Focus</a>
+            </li>
+            <li>
+              <a href="/en/about.html">About</a>
+            </li>
+            <li>
+              <a href="/en/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
