@@ -1,0 +1,479 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>La diplomatie stratégique de la France et ses défis domestiques face aux tensions mondiales</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/fr', '/en');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>                 
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/">Actus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2025-11-22/country_counts.html">Pays</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2025-11-22/labels.html">Thèmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2025-11-22/c1.html">France Focus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>La France dans l’actualité internationale</h1>
+            <span style="font-style:italic;font-size:12px;line-height:12px;display:inline-block;">
+            Synthèse des articles sur la France dans la presse internationale du <b>2025-11-22</b>, 
+            au travers de <b>28 articles</b> collectés.
+            </span>
+            <br><br><b>La diplomatie stratégique de la France et ses défis domestiques face aux tensions mondiales</b>
+            <div class="article-summary">
+                <img src="/illustrations/2025-11-22/2025-11-22-c1.webp" alt="La diplomatie stratégique de la France et ses défis domestiques face aux tensions mondiales" class="main-image">
+                <p style="margin:0" class="chapitre">La France est activement engagée dans une diplomatie internationale complexe, notamment concernant le conflit en Ukraine, les relations avec l&#39;Afrique et les négociations territoriales dans le Pacifique. La tournée africaine stratégique du président Macron et ses efforts diplomatiques dans des régions comme le Gabon, l&#39;île Maurice et les Grands Lacs soulignent l&#39;engagement de la France à renforcer ses partenariats mondiaux. Sur le plan intérieur, la France doit faire face à des défis politiques tels que le rejet du budget par le parlement et les débats publics sur la préparation à la sécurité nationale face à l&#39;augmentation des tensions géopolitiques.</p>
+            </div>
+            <h2>Les pays qui en parlent</h2>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Conflit en Ukraine et diplomatie internationale</h3>
+        <p class="cluster-description">La France joue un rôle central dans les efforts diplomatiques entourant le conflit en Ukraine, en dialoguant avec les dirigeants européens et américains pour évaluer les propositions de paix et coordonner les réponses. Des experts français mettent en garde contre les menaces russes persistantes, tandis que le gouvernement prépare les citoyens à d&#39;éventuelles crises. La controverse autour des déclarations sur le sacrifice militaire reflète la sensibilité intérieure face aux implications du conflit. L&#39;implication de la France souligne sa position stratégique dans la sécurité européenne et les négociations de paix internationales.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/grc.svg" alt="Grèce" title="Grèce" class="flag-icon">
+                            <a href="https://www.kathimerini.gr/world" target="_blank" class="article-link">Thriller diplomatique avant l&#39;&#39;heure zéro&#39; dans le conflit en Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ita.svg" alt="Italie" title="Italie" class="flag-icon">
+                            <a href="https://www.corriere.it/esteri/" target="_blank" class="article-link">Déclaration controversée du chef d&#39;&#39;état-major français sur le sacrifice face à la menace russe</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/svk.svg" alt="Slovaquie" title="Slovaquie" class="flag-icon">
+                            <a href="https://dennikn.sk/sekcia/svet/" target="_blank" class="article-link">Les voix françaises avertissent : la Russie attaquera l&#39;&#39;Europe, Poutine s&#39;&#39;oppose à la paix, dit l&#39;&#39;analyste russe</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/chl.svg" alt="Chili" title="Chili" class="flag-icon">
+                            <a href="https://www.latercera.com/categoria/mundo/" target="_blank" class="article-link">Zelensky rencontre les dirigeants d&#39;&#39;Allemagne, de France et du Royaume-Uni pour évaluer le plan de paix de Trump</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/chl.svg" alt="Chili" title="Chili" class="flag-icon">
+                            <a href="https://www.latercera.com/categoria/mundo/" target="_blank" class="article-link">Le gouvernement français publie un guide de survie en cas de guerre ou de catastrophe naturelle</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ben.svg" alt="Bénin" title="Bénin" class="flag-icon">
+                            <a href="https://lanouvelletribune.info/rubrique/politique/" target="_blank" class="article-link">Retour de la Russie ? Ce que dit le plan de Trump sur l&#39;&#39;Ukraine</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/aut.svg" alt="Autriche" title="Autriche" class="flag-icon">
+                            <a href="https://kurier.at/politik/ausland" target="_blank" class="article-link">Le plan de paix de Trump pour l&#39;&#39;Ukraine : l&#39;&#39;UE doit payer, mais ne pas participer à la prise de décision</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mco.svg" alt="Monaco" title="Monaco" class="flag-icon">
+                            <a href="https://www.monacomatin.mc/" target="_blank" class="article-link">Guerre en Ukraine : Donald Trump dit que son plan doit convenir à Volodymyr Zelensky</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/srb.svg" alt="Serbie" title="Serbie" class="flag-icon">
+                            <a href="https://www.blic.rs/vesti/svet" target="_blank" class="article-link">L&#39;&#39;Union européenne prépare une contre-proposition au plan de paix américain face à la crise en Ukraine</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72a2e5; padding: 8px 16px; border-radius: 4px;">L&#39;engagement africain de la France et ses visites stratégiques</h3>
+        <p class="cluster-description">La tournée africaine multi-pays du président Emmanuel Macron, comprenant des visites au Gabon, à l&#39;île Maurice, et la participation au sommet du G20 à Johannesburg, met en évidence l&#39;accent de la France sur le renforcement des liens diplomatiques, économiques et sécuritaires avec les nations africaines. Les efforts de collaboration avec des pays comme le Togo pour promouvoir la paix dans la région des Grands Lacs illustrent davantage le rôle actif de la France dans la stabilité et le développement régionaux. Ces initiatives reflètent l&#39;engagement continu de la France envers ses intérêts historiques et stratégiques en Afrique.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gab.svg" alt="Gabon" title="Gabon" class="flag-icon">
+                            <a href="https://gabon24.tv/category/monde/" target="_blank" class="article-link">France : Emmanuel Macron prépare une visite à Libreville avec des enjeux stratégiques</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gab.svg" alt="Gabon" title="Gabon" class="flag-icon">
+                            <a href="https://gabon24.tv/category/monde/" target="_blank" class="article-link">Emmanuel Macron commence une tournée stratégique de 5 jours en Afrique</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tgo.svg" alt="Togo" title="Togo" class="flag-icon">
+                            <a href="https://www.republicoftogo.com/" target="_blank" class="article-link">La France et le Togo s&#39;unissent pour la paix dans les Grands Lacs</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/civ.svg" alt="Côte d&#39;Ivoire" title="Côte d&#39;Ivoire" class="flag-icon">
+                            <a href="https://www.aip.ci/category/international/" target="_blank" class="article-link">Macron débute sa tournée africaine avec un point culminant au sommet du G20 à Johannesburg</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mdg.svg" alt="Madagascar" title="Madagascar" class="flag-icon">
+                            <a href="https://www.lexpress.mg/" target="_blank" class="article-link">MACRON À MAURICE - La France attentive à la Transition</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #bf72e5; padding: 8px 16px; border-radius: 4px;">Négociations territoriales et régionales dans le Pacifique et l&#39;océan Indien</h3>
+        <p class="cluster-description">La France est impliquée dans des discussions sensibles sur le territoire avec des nations du Pacifique telles que Vanuatu concernant la souveraineté insulaire et les frontières maritimes, ainsi que sur le statut de Mayotte par rapport aux Comores. Ces négociations révèlent les efforts de la France pour gérer les héritages coloniaux et maintenir son influence dans ces régions. De plus, la présence navale française dans le canal du Mozambique souligne son engagement en faveur de la sécurité maritime et de la coopération régionale.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/moz.svg" alt="Mozambique" title="Mozambique" class="flag-icon">
+                            <a href="https://cartamz.com/" target="_blank" class="article-link">Patrouilleur français surveillant le canal du Mozambique</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mhl.svg" alt="Îles Marshall" title="Îles Marshall" class="flag-icon">
+                            <a href="https://www.rnz.co.nz/international/pacific-news?tag=marshall-islands" target="_blank" class="article-link">Nouvelles du Pacifique en bref</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/com.svg" alt="Comores" title="Comores" class="flag-icon">
+                            <a href="http://alwatwan.net/index.php?home" target="_blank" class="article-link">Retour de Mayotte : dialogue bilatéral ou justice internationale ?</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vut.svg" alt="Vanuatu" title="Vanuatu" class="flag-icon">
+                            <a href="https://dailypost.vu/news/" target="_blank" class="article-link">Vanuatu et la France concluent leurs premières négociations sur Matthew et Hunter</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vut.svg" alt="Vanuatu" title="Vanuatu" class="flag-icon">
+                            <a href="https://dailypost.vu/news/" target="_blank" class="article-link">La France finance la rénovation du bloc opératoire de l&#39;hôpital de Norsup</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5728f; padding: 8px 16px; border-radius: 4px;">Développements politiques et sociaux domestiques</h3>
+        <p class="cluster-description">La France fait face à d&#39;importants défis politiques internes, notamment le rejet sans précédent du budget de l&#39;État par le parlement, ce qui indique des difficultés gouvernementales. La publication d&#39;un guide de survie pour les crises et les débats suscités par des déclarations militaires témoignent d&#39;une inquiétude accrue du public concernant la sécurité nationale. La sortie prévue du mémoire en prison de l&#39;ancien président Nicolas Sarkozy s&#39;ajoute au discours politique intérieur, tandis que le retour de Boualem Sansal d&#39;Algérie marque un événement culturel et diplomatique notable.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ltu.svg" alt="Lituanie" title="Lituanie" class="flag-icon">
+                            <a href="https://www.delfi.lt/news/daily/world/" target="_blank" class="article-link">Le livre de Sarkozy sur ses trois semaines en prison sera publié le mois prochain en France</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hti.svg" alt="Haïti" title="Haïti" class="flag-icon">
+                            <a href="https://lenouvelliste.com/international" target="_blank" class="article-link">France : le Parlement rejette massivement le budget de l&#39;État</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mac.svg" alt="MAC" title="MAC" class="flag-icon">
+                            <a href="https://www.macaubusiness.com/category/mna/international/" target="_blank" class="article-link">Sarkozy en France publiera « le journal d&#39;un prisonnier » sur son séjour en prison de 3 semaines</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/civ.svg" alt="Côte d&#39;Ivoire" title="Côte d&#39;Ivoire" class="flag-icon">
+                            <a href="https://www.aip.ci/category/international/" target="_blank" class="article-link">Le gouvernement français publie le guide « Tous responsables » pour préparer les citoyens aux crises</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sen.svg" alt="Sénégal" title="Sénégal" class="flag-icon">
+                            <a href="https://www.senenews.com/category/actualites/international" target="_blank" class="article-link">Boualem Sansal gracié par l&#39;Algérie, officiellement de retour en France</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Rôle de la France dans les organisations internationales et le commerce nucléaire</h3>
+        <p class="cluster-description">La France maintient des rôles influents dans des organisations internationales telles que la Francophonie, avec une continuité de leadership étant un enjeu clé. Le commerce nucléaire du pays avec la Russie, notamment les exportations d&#39;uranium, présente des considérations géopolitiques et économiques complexes dans un contexte de tensions mondiales. Ces aspects mettent en évidence les engagements internationaux multifacettes de la France au-delà des préoccupations diplomatiques et sécuritaires immédiates.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/rwa.svg" alt="Rwanda" title="Rwanda" class="flag-icon">
+                            <a href="https://www.newtimes.co.rw/international" target="_blank" class="article-link">Mushikiwabo s&#39;exprime sur les perspectives d&#39;un troisième mandat à La Francophonie</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mli.svg" alt="Mali" title="Mali" class="flag-icon">
+                            <a href="https://bamada.net/category/international" target="_blank" class="article-link">Analyse : Commerce nucléaire avec Moscou ? Pourquoi la France envoie-t-elle de l&#39;uranium en Russie</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+        map.padding([0, 0, 0, 0]);
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Conflit en Ukraine et diplomatie internationale",
+                color: "#72e5ac",
+                data: [ {"id": "AT"},  {"id": "BJ"},  {"id": "CL"},  {"id": "GR"},  {"id": "IT"},  {"id": "MC"},  {"id": "RS"},  {"id": "SK"} ]
+            },
+        
+            {
+                name: "L\u0027engagement africain de la France et ses visites strat\u00e9giques",
+                color: "#72a2e5",
+                data: [ {"id": "GA"},  {"id": "MG"},  {"id": "TG"} ]
+            },
+        
+            {
+                name: "N\u00e9gociations territoriales et r\u00e9gionales dans le Pacifique et l\u0027oc\u00e9an Indien",
+                color: "#bf72e5",
+                data: [ {"id": "KM"},  {"id": "MH"},  {"id": "MZ"},  {"id": "VU"} ]
+            },
+        
+            {
+                name: "D\u00e9veloppements politiques et sociaux domestiques",
+                color: "#e5728f",
+                data: [ {"id": "HT"},  {"id": "LT"},  {"id": "MO"},  {"id": "SN"} ]
+            },
+        
+            {
+                name: "R\u00f4le de la France dans les organisations internationales et le commerce nucl\u00e9aire",
+                color: "#e5d272",
+                data: [ {"id": "ML"},  {"id": "RW"} ]
+            }
+        
+        
+            ,
+            {
+                name: "Plusieurs points de vue : \n- L\u0027engagement africain de la France et ses visites strat\u00e9giques\n- D\u00e9veloppements politiques et sociaux domestiques",
+                color: "#AAAAAA",
+                data: [{"id": "CI"}]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Masquer les sources ▲' : 'Montrer les sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li>
+               <a href="/">Actus </a>
+            </li>
+            <li>
+              <a href="/fr/2025-11-22/country_counts.html">Pays</a>
+            </li>
+            <li>
+              <a href="/fr/2025-11-22/labels.html">Thèmes</a>
+            </li>
+            <li>
+              <a href="/fr/2025-11-22/c1.html">France Focus</a>
+            </li>
+            <li>
+              <a href="/fr/about.html">A Propos</a>
+            </li>
+            <li>
+              <a href="/fr/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

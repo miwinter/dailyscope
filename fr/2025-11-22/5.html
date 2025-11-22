@@ -1,0 +1,507 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Les négociations sur le climat COP30 marquées par des incendies et des blocages sur les combustibles fossiles</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+ 
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/fr', '/en');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>                 
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/">Actus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2025-11-22/country_counts.html">Pays</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2025-11-22/labels.html">Thèmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2025-11-22/c1.html">France Focus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Les négociations sur le climat COP30 marquées par des incendies et des blocages sur les combustibles fossiles</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-11-22</span> • <span>33 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-11-22/2025-11-22-5.webp" alt="Les négociations sur le climat COP30 marquées par des incendies et des blocages sur les combustibles fossiles" class="main-image">
+                <p style="margin:0" class="chapitre">Le sommet sur le climat COP30 à Belém, au Brésil, a été particulièrement perturbé par un incendie important sur le site, entraînant des évacuations et une suspension temporaire des négociations, sans qu&#39;aucune blessure grave ne soit signalée. Par ailleurs, le sommet a été confronté à un blocage majeur concernant les politiques sur les combustibles fossiles, avec des désaccords entre pays, notamment l&#39;UE et le Brésil, empêchant de parvenir à un consensus sur une feuille de route pour la transition mondiale. Le Brésil, en tant qu&#39;hôte, a appelé à l&#39;unité et au compromis, avec des leaders comme le Secrétaire général de l&#39;ONU Guterres et le président Lula plaidant pour des progrès malgré les tensions. Les groupes indigènes ont également souligné des luttes politiques plus larges en s&#39;alliant avec la Palestine dans des protestations, liant l&#39;action climatique à la résistance anti-coloniale. Les enjeux financiers, notamment autour du fonds pour les pertes et dommages destiné aux pays en développement, ont complexifié la situation, soulignant les défis multiples pour parvenir à un accord climatique global.</p>
+            </div>
+            <h2>Les pays qui en parlent</h2>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Perturbations et préoccupations de sécurité dues à l&#39;incendie au lieu de la COP30</h3>
+        <p class="cluster-description">Plusieurs pays ont rapporté l&#39;incident d&#39;incendie survenu au lieu de la COP30 à Belém, soulignant la perturbation qu&#39;il a causée au déroulement de la conférence et les mesures de sécurité prises. Ces comptes mettent l&#39;accent sur l&#39;impact immédiat de l&#39;incendie, les efforts d&#39;évacuation et la gestion de l&#39;urgence, en soulignant la résilience des organisateurs et des délégués pour reprendre les discussions. L&#39;incident est présenté comme un événement important mais maîtrisé, qui a temporairement entravé le progrès du sommet.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/moz.svg" alt="Mozambique" title="Mozambique" class="flag-icon">
+                            <a href="https://opais.co.mz/internacional/" target="_blank" class="article-link">Incendie au pavillon de la COP30 : Plus de 20 personnes nécessitent des soins médicaux</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/npl.svg" alt="Népal" title="Népal" class="flag-icon">
+                            <a href="https://ekantipur.com/world" target="_blank" class="article-link">Un incendie cause une perturbation au lieu de la conférence de la COP30 au Brésil</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/nzl.svg" alt="Nouvelle-Zélande" title="Nouvelle-Zélande" class="flag-icon">
+                            <a href="https://www.rnz.co.nz/news/world" target="_blank" class="article-link">Un incendie force l&#39;évacuation lors des négociations climatiques de la COP30</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/usa.svg" alt="États-Unis" title="États-Unis" class="flag-icon">
+                            <a href="https://abcnews.go.com/International" target="_blank" class="article-link">Un incendie se déclare lors d&#39;un événement climatique de l&#39;ONU au Brésil</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hti.svg" alt="Haïti" title="Haïti" class="flag-icon">
+                            <a href="https://lenouvelliste.com/international" target="_blank" class="article-link">Un incendie perturbe les négociations climatiques de la COP30 au Brésil à un moment crucial</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/deu.svg" alt="Allemagne" title="Allemagne" class="flag-icon">
+                            <a href="https://www.welt.de/politik/ausland/" target="_blank" class="article-link">Un incendie se déclare lors du sommet climatique de l&#39;ONU à Belém, au Brésil</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bol.svg" alt="Bolivie" title="Bolivie" class="flag-icon">
+                            <a href="https://eldeber.com.bo/seccion/mundo/" target="_blank" class="article-link">Un incendie force l&#39;évacuation de la zone de négociation à la COP30 à Belém</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lux.svg" alt="Luxembourg" title="Luxembourg" class="flag-icon">
+                            <a href="https://www.wort.lu/fr/international" target="_blank" class="article-link">Un incendie sur le site de la COP30 au Brésil provoque une évacuation et suspend les négociations</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sen.svg" alt="Sénégal" title="Sénégal" class="flag-icon">
+                            <a href="https://www.senenews.com/category/actualites/international" target="_blank" class="article-link">Brésil : Un incendie interrompt la COP30</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irl.svg" alt="Irlande" title="Irlande" class="flag-icon">
+                            <a href="https://www.independent.ie/world-news/" target="_blank" class="article-link">Un énorme incendie à la COP30 laisse 13 personnes souffrant d&#39;inhalation de fumée</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72a2e5; padding: 8px 16px; border-radius: 4px;">Appel du Brésil hôte à l&#39;unité face à l&#39;impasse sur les négociations sur les combustibles fossiles</h3>
+        <p class="cluster-description">Le Brésil, en tant que pays hôte, souligne l&#39;importance de l&#39;unité et du compromis pour surmonter l&#39;impasse sur les politiques relatives aux combustibles fossiles qui menace le succès du sommet. La direction brésilienne, y compris le président Lula, plaide en faveur de contributions financières équitables des compagnies pétrolières et des riches pour soutenir la transition énergétique. La position du Brésil reflète une approche pragmatique visant à équilibrer les intérêts économiques avec les engagements climatiques, cherchant à combler les divisions entre les nations.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mys.svg" alt="Malaisie" title="Malaisie" class="flag-icon">
+                            <a href="https://www.malaymail.com/news/world" target="_blank" class="article-link">L&#39;hôte de la COP30, le Brésil, appelle à l&#39;unité alors que le sommet sur le climat est bloqué sur les combustibles fossiles</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bfa.svg" alt="Burkina Faso" title="Burkina Faso" class="flag-icon">
+                            <a href="https://www.burkina24.com/category/international/" target="_blank" class="article-link">Brésil : un incendie perturbe les négociations de la COP30 à Belém</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kor.svg" alt="Corée du Sud" title="Corée du Sud" class="flag-icon">
+                            <a href="https://www.koreaherald.com/World" target="_blank" class="article-link">Guterres et Lula font pression pour un compromis lors des négociations sur le climat à la COP30</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/idn.svg" alt="Indonésie" title="Indonésie" class="flag-icon">
+                            <a href="https://www.thejakartapost.com/world" target="_blank" class="article-link">Le sommet sur le climat de l&#39;ONU se prolonge en prolongation alors que les nations s&#39;affrontent sur les combustibles fossiles</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/guy.svg" alt="Guyana" title="Guyana" class="flag-icon">
+                            <a href="https://www.stabroeknews.com/news/world/" target="_blank" class="article-link">Le sommet sur le climat de la COP30 prévu pour un affrontement de dernière minute sur les combustibles fossiles et le financement</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cpv.svg" alt="Cap-Vert" title="Cap-Vert" class="flag-icon">
+                            <a href="https://expressodasilhas.cv/mundo" target="_blank" class="article-link">Le président brésilien Lula souhaite que les compagnies pétrolières, les mineurs et les ultra-riches financent la transition</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #bf72e5; padding: 8px 16px; border-radius: 4px;">Critiques de l&#39;UE et des Disputes sur la Politique des Combustibles Fossiles Menacent l&#39;Accord</h3>
+        <p class="cluster-description">Plusieurs pays et groupes critiquent l&#39;Union européenne pour avoir entravé le progrès en rejetant des propositions qui manquent d&#39;une feuille de route claire pour éliminer progressivement les combustibles fossiles. Les disputes persistantes sur l&#39;utilisation des combustibles fossiles et le rythme de la transition énergétique sont considérées comme des obstacles majeurs à la conclusion d&#39;un accord climatique global. Ce point de vue souligne la tension entre les nations développées et en développement concernant les responsabilités climatiques et les ambitions politiques.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cub.svg" alt="Cuba" title="Cuba" class="flag-icon">
+                            <a href="http://www.juventudrebelde.cu/internacionales/" target="_blank" class="article-link">L&#39;UE critiquée pour avoir entravé le progrès des négociations de la COP30</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dom.svg" alt="République dominicaine" title="République dominicaine" class="flag-icon">
+                            <a href="https://listindiario.com/las-mundiales" target="_blank" class="article-link">L&#39;utilisation des combustibles fossiles entrave l&#39;accord lors du Sommet sur le climat</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bfa.svg" alt="Burkina Faso" title="Burkina Faso" class="flag-icon">
+                            <a href="https://www.sidwaya.info/bfcategories/international/" target="_blank" class="article-link">Rapport partiel sur la COP30 : plusieurs questions restent bloquées</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/slv.svg" alt="Salvador" title="Salvador" class="flag-icon">
+                            <a href="https://diario.elmundo.sv/el-mundo" target="_blank" class="article-link">Environ 36 pays rejettent le projet de la COP30 sans feuille de route sur les combustibles fossiles</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/deu.svg" alt="Allemagne" title="Allemagne" class="flag-icon">
+                            <a href="https://www.sueddeutsche.de/news/politik/" target="_blank" class="article-link">Prolongation de la Conférence mondiale sur le climat : dispute sur le calendrier pour l&#39;élimination du charbon, du pétrole et du gaz</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gum.svg" alt="GUM" title="GUM" class="flag-icon">
+                            <a href="https://www.guampdn.com/news/" target="_blank" class="article-link">La lutte contre les combustibles fossiles menace de faire échouer la COP30 alors que l&#39;UE rejette le projet du Brésil</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pak.svg" alt="Pakistan" title="Pakistan" class="flag-icon">
+                            <a href="https://www.thenews.com.pk/latest/category/world" target="_blank" class="article-link">Les négociations de la COP30 au bord du gouffre : un nouveau texte abandonne les espoirs de suppression progressive</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bol.svg" alt="Bolivie" title="Bolivie" class="flag-icon">
+                            <a href="https://eldeber.com.bo/seccion/mundo/" target="_blank" class="article-link">Discrepances lors de la COP30 concernant les combustibles fossiles</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/omn.svg" alt="Oman" title="Oman" class="flag-icon">
+                            <a href="https://www.omanobserver.om/world" target="_blank" class="article-link">L&#39;accord de la COP30 menacé alors que les nations se disputent sur les combustibles fossiles</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/est.svg" alt="Estonie" title="Estonie" class="flag-icon">
+                            <a href="https://maailm.postimees.ee/" target="_blank" class="article-link">Les différends entre pays sur les combustibles fossiles menacent l&#39;accord climatique de la COP30</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5728f; padding: 8px 16px; border-radius: 4px;">Focalisation des pays en développement sur le financement climatique et les pertes et dommages</h3>
+        <p class="cluster-description">Les nations en développement soulignent la nécessité cruciale d&#39;un soutien financier concret, notamment en ce qui concerne les fonds pour les pertes et dommages promis aux pays vulnérables. Il y a des inquiétudes concernant l&#39;impasse dans les négociations sur les engagements en matière de financement climatique, ce qui menace l&#39;efficacité des résultats du sommet. Cette perspective met en lumière la lutte continue pour obtenir un financement climatique équitable et pour répondre aux impacts disproportionnés du changement climatique sur les pays les plus pauvres.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tza.svg" alt="Tanzanie" title="Tanzanie" class="flag-icon">
+                            <a href="https://dailynews.co.tz/category/world/" target="_blank" class="article-link">L&#39;AGN fête ses 30 ans, promet de protéger les intérêts climatiques de l&#39;Afrique</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dma.svg" alt="DMA" title="DMA" class="flag-icon">
+                            <a href="https://emonewsdm.com/category/world/" target="_blank" class="article-link">DB, CAF et CDB lancent l&#39;initiative conjointe de la dette caribéenne pour la résilience</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/zaf.svg" alt="Afrique du Sud" title="Afrique du Sud" class="flag-icon">
+                            <a href="https://www.dailymaverick.co.za/section/world/" target="_blank" class="article-link">Impasse en développement – Les fonds promis pour le financement climatique des pertes et dommages se concrétiseront-ils ?</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Les alliances indigènes et politiques mettent en lumière des enjeux plus larges de justice climatique</h3>
+        <p class="cluster-description">Les peuples autochtones ont formé des alliances avec des activistes palestiniens lors des protestations de la COP30, en inscrivant le changement climatique dans un contexte plus large de colonialisme et d&#39;oppression. Ce point de vue relie l&#39;activisme environnemental aux mouvements de justice sociale et politique, en soulignant les luttes communes et la nécessité d&#39;approches inclusives en matière de politique climatique. Il reflète l&#39;intersectionnalité des enjeux climatiques avec les préoccupations mondiales en matière de droits humains.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Montrer les sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ecu.svg" alt="Équateur" title="Équateur" class="flag-icon">
+                            <a href="https://rebelion.org/categoria/territorios/mundo/" target="_blank" class="article-link">Les peuples autochtones s&#39;allient avec la Palestine lors des protestations de la COP : &#34;Nous avons le même ennemi, le colonialisme&#34;</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+        map.padding([0, 0, 0, 0]);
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Perturbations et pr\u00e9occupations de s\u00e9curit\u00e9 dues \u00e0 l\u0027incendie au lieu de la COP30",
+                color: "#72e5ac",
+                data: [ {"id": "HT"},  {"id": "IE"},  {"id": "LU"},  {"id": "MZ"},  {"id": "NP"},  {"id": "NZ"},  {"id": "SN"},  {"id": "US"} ]
+            },
+        
+            {
+                name: "Appel du Br\u00e9sil h\u00f4te \u00e0 l\u0027unit\u00e9 face \u00e0 l\u0027impasse sur les n\u00e9gociations sur les combustibles fossiles",
+                color: "#72a2e5",
+                data: [ {"id": "CV"},  {"id": "GY"},  {"id": "ID"},  {"id": "KR"},  {"id": "MY"} ]
+            },
+        
+            {
+                name: "Critiques de l\u0027UE et des Disputes sur la Politique des Combustibles Fossiles Menacent l\u0027Accord",
+                color: "#bf72e5",
+                data: [ {"id": "CU"},  {"id": "DO"},  {"id": "EE"},  {"id": "GU"},  {"id": "OM"},  {"id": "PK"},  {"id": "SV"} ]
+            },
+        
+            {
+                name: "Focalisation des pays en d\u00e9veloppement sur le financement climatique et les pertes et dommages",
+                color: "#e5728f",
+                data: [ {"id": "DM"},  {"id": "TZ"},  {"id": "ZA"} ]
+            },
+        
+            {
+                name: "Les alliances indig\u00e8nes et politiques mettent en lumi\u00e8re des enjeux plus larges de justice climatique",
+                color: "#e5d272",
+                data: [ {"id": "EC"} ]
+            }
+        
+        
+            ,
+            {
+                name: "Plusieurs points de vue : \n- Perturbations et pr\u00e9occupations de s\u00e9curit\u00e9 dues \u00e0 l\u0027incendie au lieu de la COP30\n- Critiques de l\u0027UE et des Disputes sur la Politique des Combustibles Fossiles Menacent l\u0027Accord",
+                color: "#AAAAAA",
+                data: [{"id": "BO"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Perturbations et pr\u00e9occupations de s\u00e9curit\u00e9 dues \u00e0 l\u0027incendie au lieu de la COP30\n- Critiques de l\u0027UE et des Disputes sur la Politique des Combustibles Fossiles Menacent l\u0027Accord",
+                color: "#AAAAAA",
+                data: [{"id": "DE"}]
+            },
+            {
+                name: "Plusieurs points de vue : \n- Appel du Br\u00e9sil h\u00f4te \u00e0 l\u0027unit\u00e9 face \u00e0 l\u0027impasse sur les n\u00e9gociations sur les combustibles fossiles\n- Critiques de l\u0027UE et des Disputes sur la Politique des Combustibles Fossiles Menacent l\u0027Accord",
+                color: "#AAAAAA",
+                data: [{"id": "BF"}]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Masquer les sources ▲' : 'Montrer les sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li>
+               <a href="/">Actus </a>
+            </li>
+            <li>
+              <a href="/fr/2025-11-22/country_counts.html">Pays</a>
+            </li>
+            <li>
+              <a href="/fr/2025-11-22/labels.html">Thèmes</a>
+            </li>
+            <li>
+              <a href="/fr/2025-11-22/c1.html">France Focus</a>
+            </li>
+            <li>
+              <a href="/fr/about.html">A Propos</a>
+            </li>
+            <li>
+              <a href="/fr/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
