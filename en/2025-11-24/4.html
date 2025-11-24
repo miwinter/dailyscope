@@ -1,0 +1,483 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>COP30 Climate Talks End with Minimal Fossil Fuel Commitments Amid Global Divisions</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/fra.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="Français" title="Français" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/en', '/fr');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>              
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/2025-11-24/country_counts.html">Top Countries</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/2025-11-24/labels.html">Top Themes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/2025-11-24/c1.html">In Focus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>COP30 Climate Talks End with Minimal Fossil Fuel Commitments Amid Global Divisions</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-11-24</span> • <span>33 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-11-24/2025-11-24-4.webp" alt="COP30 Climate Talks End with Minimal Fossil Fuel Commitments Amid Global Divisions" class="main-image">
+                <p style="margin:0" class="chapitre">The COP30 climate summit in Belém concluded with a broadly minimal agreement that notably avoided explicit commitments to phase out fossil fuels, reflecting deep divisions among participating countries. While some nations and groups emphasized adaptation strategies and increased financial support for vulnerable countries, others expressed disappointment over the lack of decisive action on fossil fuel reduction. The summit was marked by protests, a fire incident disrupting negotiations, and extended talks due to disagreements, particularly involving the European Union and fossil fuel-producing nations. Regional initiatives and national targets, such as Thailand&#39;s emissions reduction goal and Caribbean debt-for-resilience programs, were highlighted as positive steps. Overall, the conference underscored the challenges of balancing economic interests with urgent climate action and the need for stronger future commitments.</p>
+            </div>
+            <h2>Countries covering this topic</h2>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Minimal Agreement Avoiding Fossil Fuel Phase-Out</h3>
+        <p class="cluster-description">This group of articles highlights the consensus reached at COP30 that resulted in a minimal climate agreement without explicit commitments to phase out fossil fuels. The perspective reflects disappointment from many countries and environmental groups who expected stronger action, emphasizing the challenges in uniting diverse national interests and the compromises made to secure consensus. The agreement focuses more on financial support and adaptation rather than aggressive emission cuts.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irq.svg" alt="Iraq" title="Iraq" class="flag-icon">
+                            <a href="https://www.shafaq.com/ar/%D8%B9%D8%B1%D8%A8%D9%8A-%D9%88%D8%AF%D9%88%D9%84%D9%8A" target="_blank" class="article-link">COP30 adopts climate agreement without fossil fuel phase-out</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gin.svg" alt="Guinea" title="Guinea" class="flag-icon">
+                            <a href="https://guineematin.com/category/international/" target="_blank" class="article-link">Belém: COP30 Ends with Minimal Agreement, Falling Short of Fossil Fuel Phase-Out Ambitions</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mar.svg" alt="Morocco" title="Morocco" class="flag-icon">
+                            <a href="https://lematin.ma/monde" target="_blank" class="article-link">COP30: The world adopts a minimalist climate agreement in Belém</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hti.svg" alt="Haiti" title="Haiti" class="flag-icon">
+                            <a href="https://www.haitilibre.com/cat-actualites-internationales.html" target="_blank" class="article-link">COP30 Produces a Minimal Agreement</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/guy.svg" alt="Guyana" title="Guyana" class="flag-icon">
+                            <a href="https://www.stabroeknews.com/news/world/" target="_blank" class="article-link">World secures compromise deal at COP30 that sidesteps fossil fuels</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/idn.svg" alt="Indonesia" title="Indonesia" class="flag-icon">
+                            <a href="https://www.thejakartapost.com/world" target="_blank" class="article-link">COP30 Seals Uneasy Climate Deal That Sidesteps Fossil Fuels</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sgp.svg" alt="Singapore" title="Singapore" class="flag-icon">
+                            <a href="https://www.straitstimes.com/global" target="_blank" class="article-link">COP30 climate talks in Brazil reach tentative deal after overrunning</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/npl.svg" alt="Nepal" title="Nepal" class="flag-icon">
+                            <a href="https://ekantipur.com/world" target="_blank" class="article-link">COP 30 ends without new commitments to fossil fuel reduction</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tcd.svg" alt="Chad" title="Chad" class="flag-icon">
+                            <a href="https://tchadinfos.com/category/international/" target="_blank" class="article-link">COP30: Minimal agreement adopted in Brazil without explicit mention of phasing out fossil fuels</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #7279e5; padding: 8px 16px; border-radius: 4px;">Calls for Stronger Climate Action and Fossil Fuel Phase-Out</h3>
+        <p class="cluster-description">These articles represent viewpoints from countries and leaders advocating for more ambitious climate commitments, including explicit fossil fuel phase-out plans. They express frustration with the minimal outcomes of COP30 and emphasize the urgency of stronger international cooperation and clear roadmaps to reduce emissions. The European Union&#39;s objections and Pacific leaders&#39; criticisms exemplify this stance, highlighting the tension between environmental goals and political realities.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jpn.svg" alt="Japan" title="Japan" class="flag-icon">
+                            <a href="https://www.yomiuri.co.jp/world/" target="_blank" class="article-link">COP30 Climate Summit Closes with Agreement to Accelerate Phase-Out of Fossil Fuels, Avoiding Mention Due to Oil-Producing Nations</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/grl.svg" alt="GRL" title="GRL" class="flag-icon">
+                            <a href="https://sermitsiaq.ag/" target="_blank" class="article-link">EU Ready for Agreement at Climate Summit Despite Great Disappointment</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/guy.svg" alt="Guyana" title="Guyana" class="flag-icon">
+                            <a href="https://www.stabroeknews.com/news/world/" target="_blank" class="article-link">COP30 talks grind into overtime as EU objects to proposed deal</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pak.svg" alt="Pakistan" title="Pakistan" class="flag-icon">
+                            <a href="https://www.thenews.com.pk/latest/category/world" target="_blank" class="article-link">COP30: Five key insights from climate summit</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bel.svg" alt="Belgium" title="Belgium" class="flag-icon">
+                            <a href="https://www.lavenir.net/actu/monde/" target="_blank" class="article-link">COP30 ends in chaotic session with mixed results</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lux.svg" alt="Luxembourg" title="Luxembourg" class="flag-icon">
+                            <a href="https://www.tageblatt.lu/headlines/" target="_blank" class="article-link">Criticism of UN Climate Conference Outcome – No Roadmap to Exit Fossil Fuels</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/fji.svg" alt="Fiji" title="Fiji" class="flag-icon">
+                            <a href="https://www.fijitimes.com/category/world/" target="_blank" class="article-link">Pacific climate leaders say COP30 falls short without fossil fuel phase-out plan</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e572b8; padding: 8px 16px; border-radius: 4px;">Focus on Adaptation, Financial Support, and Regional Initiatives</h3>
+        <p class="cluster-description">This cluster focuses on the importance of adaptation strategies, financial aid to vulnerable nations, and regional collaborative efforts announced or emphasized during COP30. Articles discuss initiatives like the Caribbean debt-for-resilience program, Africa&#39;s call for robust adaptation funds, and national commitments such as Thailand&#39;s emissions target. This perspective underscores a pragmatic approach to climate change, balancing mitigation with adaptation and support for developing countries.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/phl.svg" alt="Philippines" title="Philippines" class="flag-icon">
+                            <a href="https://www.philstar.com/world" target="_blank" class="article-link">What did countries agree to at COP30?</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bgd.svg" alt="Bangladesh" title="Bangladesh" class="flag-icon">
+                            <a href="https://www.thedailystar.net/world" target="_blank" class="article-link">What did nations agree to at COP30?</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ind.svg" alt="India" title="India" class="flag-icon">
+                            <a href="https://www.thehindu.com/news/international/" target="_blank" class="article-link">COP30 stresses ‘adaptation’ as path to fossil fuel-free world</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vnm.svg" alt="Vietnam" title="Vietnam" class="flag-icon">
+                            <a href="https://vietnamnews.vn/world" target="_blank" class="article-link">Thailand sets 47% emissions-cut target by 2035 at COP30</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dma.svg" alt="DMA" title="DMA" class="flag-icon">
+                            <a href="https://emonewsdm.com/category/world/" target="_blank" class="article-link">IDB, CAF, and CDB Launch Caribbean Debt-for-Resilience Joint Initiative</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/png.svg" alt="Papua New Guinea" title="Papua New Guinea" class="flag-icon">
+                            <a href="https://postcourier.com.pg/category/world-news/" target="_blank" class="article-link">COP30 delivers incremental climate action, but lack of implementation support jeopardises health</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bfa.svg" alt="Burkina Faso" title="Burkina Faso" class="flag-icon">
+                            <a href="https://www.sidwaya.info/bfcategories/international/" target="_blank" class="article-link">COP30: WASCAL Unveils Its 2026-2030 Strategic Plan in Belém</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/tza.svg" alt="Tanzania" title="Tanzania" class="flag-icon">
+                            <a href="https://dailynews.co.tz/category/world/" target="_blank" class="article-link">Africa presses for robust adaptation funds at COP30</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Disruptions and Public Reactions at COP30</h3>
+        <p class="cluster-description">These articles cover the disruptions during the summit, including a fire incident that delayed negotiations and public protests demanding stronger climate action. They highlight the tense atmosphere and the challenges faced by delegates in reaching agreements amid external pressures and unexpected events. The public&#39;s demand for urgent environmental measures is a key theme, reflecting societal engagement with climate issues.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sur.svg" alt="Suriname" title="Suriname" class="flag-icon">
+                            <a href="https://www.dwtonline.com/" target="_blank" class="article-link">Climate Summit in Belém Ends with a Pedestrian Protest</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hti.svg" alt="Haiti" title="Haiti" class="flag-icon">
+                            <a href="https://lenouvelliste.com/international" target="_blank" class="article-link">Fire disrupts COP30 negotiations at critical moment</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/moz.svg" alt="Mozambique" title="Mozambique" class="flag-icon">
+                            <a href="https://opais.co.mz/internacional/" target="_blank" class="article-link">Fire at COP30: Over 20 people receive medical attention</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mhl.svg" alt="Marshall Islands" title="Marshall Islands" class="flag-icon">
+                            <a href="http://marshallislandsjournal.com/" target="_blank" class="article-link">RMI engages in COP30</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/mhl.svg" alt="Marshall Islands" title="Marshall Islands" class="flag-icon">
+                            <a href="https://www.rnz.co.nz/international/pacific-news?tag=marshall-islands" target="_blank" class="article-link">COP30: What did countries agree to at the United Nations climate talks?</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lux.svg" alt="Luxembourg" title="Luxembourg" class="flag-icon">
+                            <a href="https://www.wort.lu/fr/international" target="_blank" class="article-link">COP30 in Belém: Historic declaration and pragmatic exit from fossil fuels</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+        map.padding([0, 0, 0, 0]);
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Minimal Agreement Avoiding Fossil Fuel Phase-Out",
+                color: "#72e5ac",
+                data: [ {"id": "GN"},  {"id": "ID"},  {"id": "IQ"},  {"id": "MA"},  {"id": "NP"},  {"id": "SG"},  {"id": "TD"} ]
+            },
+        
+            {
+                name: "Calls for Stronger Climate Action and Fossil Fuel Phase-Out",
+                color: "#7279e5",
+                data: [ {"id": "BE"},  {"id": "FJ"},  {"id": "GL"},  {"id": "JP"},  {"id": "PK"} ]
+            },
+        
+            {
+                name: "Focus on Adaptation, Financial Support, and Regional Initiatives",
+                color: "#e572b8",
+                data: [ {"id": "BD"},  {"id": "BF"},  {"id": "DM"},  {"id": "IN"},  {"id": "PG"},  {"id": "PH"},  {"id": "TZ"},  {"id": "VN"} ]
+            },
+        
+            {
+                name: "Disruptions and Public Reactions at COP30",
+                color: "#e5d272",
+                data: [ {"id": "MH"},  {"id": "MZ"},  {"id": "SR"} ]
+            }
+        
+        
+            ,
+            {
+                name: "Different perspectives:\n- Minimal Agreement Avoiding Fossil Fuel Phase-Out\n- Calls for Stronger Climate Action and Fossil Fuel Phase-Out",
+                color: "#AAAAAA",
+                data: [{"id": "GY"}]
+            },
+            {
+                name: "Different perspectives:\n- Minimal Agreement Avoiding Fossil Fuel Phase-Out\n- Disruptions and Public Reactions at COP30",
+                color: "#AAAAAA",
+                data: [{"id": "HT"}]
+            },
+            {
+                name: "Different perspectives:\n- Calls for Stronger Climate Action and Fossil Fuel Phase-Out\n- Disruptions and Public Reactions at COP30",
+                color: "#AAAAAA",
+                data: [{"id": "LU"}]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Hide sources ▲' : 'Show sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li>
+               <a href="/">News </a>
+            </li>
+            <li>
+              <a href="/en/2025-11-24/country_counts.html">Top Countries</a>
+            </li>
+            <li>
+              <a href="/en/2025-11-24/labels.html">Top Themes</a>
+            </li>
+            <li>
+              <a href="/en/2025-11-24/c1.html">In Focus</a>
+            </li>
+            <li>
+              <a href="/en/about.html">About</a>
+            </li>
+            <li>
+              <a href="/en/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

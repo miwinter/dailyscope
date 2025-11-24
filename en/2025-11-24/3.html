@@ -1,0 +1,495 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Escalating Venezuela–US Tensions: Military Pressure and Terrorist Designations</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+<script src="https://cdn.anychart.com/geodata/2.2.0/custom/world/world.js"></script>
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/fra.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="Français" title="Français" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/en', '/fr');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>              
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/2025-11-24/country_counts.html">Top Countries</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/2025-11-24/labels.html">Top Themes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/2025-11-24/c1.html">In Focus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Total Body  --> 
+<div class="header">
+    <div class="header-inner">
+        <div class="header-content">
+            <h1>Escalating Venezuela–US Tensions: Military Pressure and Terrorist Designations</h1>
+            <div class="metadata" style="color: #666;">
+                <span>2025-11-24</span> • <span>38 articles in total</span>
+            </div>
+            <div class="article-summary" style="margin-top: 20px;">
+                <img src="/illustrations/2025-11-24/2025-11-24-3.webp" alt="Escalating Venezuela–US Tensions: Military Pressure and Terrorist Designations" class="main-image">
+                <p style="margin:0" class="chapitre">Tensions between Venezuela and the United States have sharply escalated, marked by increased US military presence in the Caribbean and plans for new operations targeting the Maduro government. The US has designated Venezuela&#39;s Cartel of the Suns as a terrorist organization and labeled President Nicolás Maduro himself a terrorist, intensifying sanctions and diplomatic pressure. Venezuela condemns these actions as aggressive and destabilizing, accusing the US of interventionism and resource-driven motives. Regional actors like Brazil and Spain advocate for dialogue and caution against military escalation, while reports of covert US operations and maritime confrontations with Russian vessels highlight the complex geopolitical stakes. The situation remains volatile, with international concerns over potential conflict and the future of Venezuela&#39;s political landscape.</p>
+            </div>
+            <h2>Countries covering this topic</h2>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div id="map-container"></div>
+</div>
+
+<div class="content-wrapper">
+  <div class="clusters-container">
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #72e5ac; padding: 8px 16px; border-radius: 4px;">Venezuelan and allied perspective condemning US aggression</h3>
+        <p class="cluster-description">This cluster reflects Venezuela&#39;s official stance and allied countries&#39; views, condemning US military threats and interventionist policies as destabilizing and aggressive. Venezuela accuses the US of fearing Maduro&#39;s leadership and pursuing resource control, while emphasizing calls for peace and dialogue to avoid conflict. Allies like China and Cuba also denounce US pressure tactics and sanctions as violations of international law.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/irq.svg" alt="Iraq" title="Iraq" class="flag-icon">
+                            <a href="https://www.shafaq.com/ar/%D8%B9%D8%B1%D8%A8%D9%8A-%D9%88%D8%AF%D9%88%D9%84%D9%8A" target="_blank" class="article-link">Venezuela warns against Washington&#39;s insistence on imposing policy by force</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pri.svg" alt="PRI" title="PRI" class="flag-icon">
+                            <a href="https://www.elnuevodia.com/noticias/mundo/" target="_blank" class="article-link">Venezuela Claims US Has Great Fear of Nicolás Maduro&#39;s Leadership</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pri.svg" alt="PRI" title="PRI" class="flag-icon">
+                            <a href="https://www.primerahora.com/noticias/mundo/" target="_blank" class="article-link">Maduro asks students to write to American youth to avoid conflict</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/lca.svg" alt="Saint Lucia" title="Saint Lucia" class="flag-icon">
+                            <a href="https://www.thevoiceslu.com/category/news/" target="_blank" class="article-link">Venezuela Condemns US Military Threats on Regional Borders</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ven.svg" alt="Venezuela" title="Venezuela" class="flag-icon">
+                            <a href="https://www.elnacional.com/mundo/" target="_blank" class="article-link">Pedro Sánchez appeals to dialogue to peacefully resolve crisis between US and Venezuela</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cub.svg" alt="Cuba" title="Cuba" class="flag-icon">
+                            <a href="http://fr.granma.cu/mundo" target="_blank" class="article-link">China and Venezuela Reject U.S. Pressure on Third Countries to Support Blockade Against Cuba</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bra.svg" alt="Brazil" title="Brazil" class="flag-icon">
+                            <a href="https://oglobo.globo.com/mundo/" target="_blank" class="article-link">Venezuela’s Maduro bolsters personal security with Cuban support amid U.S. threats</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #bf72e5; padding: 8px 16px; border-radius: 4px;">US and Western reports on escalating operations and designations</h3>
+        <p class="cluster-description">Articles from US and Western sources focus on the intensification of US military and covert operations against Venezuela, including plans for a new phase of actions to pressure or potentially overthrow Maduro. The designation of the Cartel of the Suns and Maduro as terrorists is highlighted as a key strategy to increase sanctions and international scrutiny. These reports emphasize the geopolitical and security rationale behind US policies and the ongoing campaign to influence Venezuela&#39;s political situation.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pol.svg" alt="Poland" title="Poland" class="flag-icon">
+                            <a href="https://www.rp.pl/temat/swiat" target="_blank" class="article-link">USA against Venezuela. Unofficial: The Next Stage of the Operation to Begin Soon</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/vat.svg" alt="Holy See" title="Holy See" class="flag-icon">
+                            <a href="https://www.osservatoreromano.va/it/sections/internazionale.html" target="_blank" class="article-link">Escalation in the Caribbean and Venezuela&#39;s geopolitical weight</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/zmb.svg" alt="Zambia" title="Zambia" class="flag-icon">
+                            <a href="https://zambianobserver.com/category/world/" target="_blank" class="article-link">U.S. Military Moving into Caribbean – Venezuela’s About to Learn What &#39;New Phase&#39; Means</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cri.svg" alt="Costa Rica" title="Costa Rica" class="flag-icon">
+                            <a href="https://www.nacion.com/el-mundo/" target="_blank" class="article-link">US plans to label Nicolás Maduro&#39;s alleged cartel as terrorist group</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jpn.svg" alt="Japan" title="Japan" class="flag-icon">
+                            <a href="https://www.yomiuri.co.jp/world/" target="_blank" class="article-link">Trump Administration Allegedly Preparing Secret Operations to Overthrow Venezuela&#39;s Anti-US Regime</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hnd.svg" alt="Honduras" title="Honduras" class="flag-icon">
+                            <a href="https://www.laprensa.hn/mundo/" target="_blank" class="article-link">Revealed: Possible US Strategy to Pressure Nicolás Maduro</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hnd.svg" alt="Honduras" title="Honduras" class="flag-icon">
+                            <a href="https://www.elheraldo.hn/mundo" target="_blank" class="article-link">From this Monday, the United States will designate the Cartel of the Suns as a terrorist organization</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/kor.svg" alt="South Korea" title="South Korea" class="flag-icon">
+                            <a href="https://www.koreaherald.com/World" target="_blank" class="article-link">US to launch new phase of Venezuela operations, sources say</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pan.svg" alt="Panama" title="Panama" class="flag-icon">
+                            <a href="https://www.laestrella.com.pa/mundo" target="_blank" class="article-link">United States to designate Los Soles cartel as a terrorist organization</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/swe.svg" alt="Sweden" title="Sweden" class="flag-icon">
+                            <a href="https://www.dn.se/varlden/" target="_blank" class="article-link">Sources: USA Considering Overthrow of Maduro Government</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/cuw.svg" alt="CUW" title="CUW" class="flag-icon">
+                            <a href="https://www.curacaochronicle.com/home/" target="_blank" class="article-link">Russian Oil Tanker Forced to Turn Back After U.S. Warship Blocks Route to Venezuela</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/slv.svg" alt="El Salvador" title="El Salvador" class="flag-icon">
+                            <a href="https://diario.elmundo.sv/el-mundo" target="_blank" class="article-link">Washington to designate the Cartel of the Suns as a terrorist group starting Monday</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/prt.svg" alt="Portugal" title="Portugal" class="flag-icon">
+                            <a href="https://expresso.pt/" target="_blank" class="article-link">Trump intensifies military pressure on Maduro; US plans new illegal operations in Venezuela</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/twn.svg" alt="TWN" title="TWN" class="flag-icon">
+                            <a href="https://www.taipeitimes.com/News/world" target="_blank" class="article-link">US ‘planning Venezuela operations’</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/jor.svg" alt="Jordan" title="Jordan" class="flag-icon">
+                            <a href="https://www.jordannews.jo/Category/18/Global" target="_blank" class="article-link">Reuters: United States Preparing to Launch a New Phase of Operations Against Venezuela</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/per.svg" alt="Peru" title="Peru" class="flag-icon">
+                            <a href="https://elcomercio.pe/mundo/" target="_blank" class="article-link">Does the Cartel of the Suns exist in Venezuela?: What is known about the organization designated as a terrorist group by the U.S.</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/per.svg" alt="Peru" title="Peru" class="flag-icon">
+                            <a href="https://elcomercio.pe/mundo/" target="_blank" class="article-link">Washington to designate the Cartel of the Suns as a terrorist group starting Monday</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dom.svg" alt="Dominican Republic" title="Dominican Republic" class="flag-icon">
+                            <a href="https://www.diariolibre.com/mundo" target="_blank" class="article-link">US Signals Imminent Action on Venezuelan Soil</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/est.svg" alt="Estonia" title="Estonia" class="flag-icon">
+                            <a href="https://www.delfi.ee/kategooria/123/maailm" target="_blank" class="article-link">Reuters: New Phase of US Activity Against Venezuela Begins, Maduro&#39;s Removal Not Excluded</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/gtm.svg" alt="Guatemala" title="Guatemala" class="flag-icon">
+                            <a href="https://www.prensalibre.com/internacional/" target="_blank" class="article-link">What it means that the US will designate the Cartel of the Suns as a terrorist organization next Monday</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/sxm.svg" alt="SXM" title="SXM" class="flag-icon">
+                            <a href="https://www.thedailyherald.sx/" target="_blank" class="article-link">US to launch new phase of Venezuela operations</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/esp.svg" alt="Spain" title="Spain" class="flag-icon">
+                            <a href="https://elpais.com/internacional/" target="_blank" class="article-link">United States Declares Maduro a Terrorist Amid Military Escalation with Venezuela</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="cluster-section">
+        <h3 class="cluster-title" style="color: #333; background-color: #e5d272; padding: 8px 16px; border-radius: 4px;">Regional diplomatic concerns and calls for dialogue</h3>
+        <p class="cluster-description">This group includes perspectives from Latin American leaders and regional actors expressing concern over US military deployments near Venezuela and the risk of escalation. Figures like Brazilian President Lula and Colombian President Gustavo Petro advocate for diplomatic engagement and mediation to prevent conflict. European voices also emphasize peaceful resolution through dialogue rather than confrontation, reflecting broader regional unease about the crisis.</p>
+        <div class="sources-section">
+            <button class="expand-button" onclick="toggleSources(this)">
+                Show sources ▼
+            </button>
+            <div class="sources-content hidden">
+                <div class="flags-and-sources">
+                    <ul class="sources-list">
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/hnd.svg" alt="Honduras" title="Honduras" class="flag-icon">
+                            <a href="https://www.elheraldo.hn/mundo" target="_blank" class="article-link">Lula seeks to mediate with Trump to avoid military clash with Venezuela</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/pan.svg" alt="Panama" title="Panama" class="flag-icon">
+                            <a href="https://www.laestrella.com.pa/mundo" target="_blank" class="article-link">Brazilian president &#39;very concerned&#39; about U.S. military presence near Venezuela</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/ven.svg" alt="Venezuela" title="Venezuela" class="flag-icon">
+                            <a href="https://www.elnacional.com/mundo/" target="_blank" class="article-link">US reportedly considered dropping leaflets over Caracas to increase pressure on Maduro</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/arg.svg" alt="Argentina" title="Argentina" class="flag-icon">
+                            <a href="https://www.clarin.com/mundo/" target="_blank" class="article-link">Tension between the United States and Venezuela: Gustavo Petro expresses position</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/dom.svg" alt="Dominican Republic" title="Dominican Republic" class="flag-icon">
+                            <a href="https://www.diariolibre.com/mundo" target="_blank" class="article-link">President of Brazil &#39;Very Concerned&#39; by U.S. Military Presence Near Venezuela</a>
+                        </li>
+                        
+                        <li class="source-item">
+                            <img src="/assets/images/flags/bra.svg" alt="Brazil" title="Brazil" class="flag-icon">
+                            <a href="https://www1.folha.uol.com.br/mundo/" target="_blank" class="article-link">Lula says he wants to talk to Trump about tensions between United States and Venezuela</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+        map.padding([0, 0, 0, 0]);
+            
+          // Construire les données des séries dynamiquement à partir des clusters
+        var seriesData = [
+        
+            {
+                name: "Venezuelan and allied perspective condemning US aggression",
+                color: "#72e5ac",
+                data: [ {"id": "CU"},  {"id": "IQ"},  {"id": "LC"},  {"id": "PR"} ]
+            },
+        
+            {
+                name: "US and Western reports on escalating operations and designations",
+                color: "#bf72e5",
+                data: [ {"id": "CR"},  {"id": "CW"},  {"id": "EE"},  {"id": "ES"},  {"id": "GT"},  {"id": "JO"},  {"id": "JP"},  {"id": "KR"},  {"id": "PE"},  {"id": "PL"},  {"id": "PT"},  {"id": "SE"},  {"id": "SV"},  {"id": "SX"},  {"id": "TW"},  {"id": "VA"},  {"id": "ZM"} ]
+            },
+        
+            {
+                name: "Regional diplomatic concerns and calls for dialogue",
+                color: "#e5d272",
+                data: [ {"id": "AR"} ]
+            }
+        
+        
+            ,
+            {
+                name: "Different perspectives:\n- Venezuelan and allied perspective condemning US aggression\n- Regional diplomatic concerns and calls for dialogue",
+                color: "#AAAAAA",
+                data: [{"id": "BR"}]
+            },
+            {
+                name: "Different perspectives:\n- Venezuelan and allied perspective condemning US aggression\n- Regional diplomatic concerns and calls for dialogue",
+                color: "#AAAAAA",
+                data: [{"id": "VE"}]
+            },
+            {
+                name: "Different perspectives:\n- US and Western reports on escalating operations and designations\n- Regional diplomatic concerns and calls for dialogue",
+                color: "#AAAAAA",
+                data: [{"id": "DO"}]
+            },
+            {
+                name: "Different perspectives:\n- US and Western reports on escalating operations and designations\n- Regional diplomatic concerns and calls for dialogue",
+                color: "#AAAAAA",
+                data: [{"id": "HN"}]
+            },
+            {
+                name: "Different perspectives:\n- US and Western reports on escalating operations and designations\n- Regional diplomatic concerns and calls for dialogue",
+                color: "#AAAAAA",
+                data: [{"id": "PA"}]
+            }
+        
+        ];
+        
+        // Créer une série pour chaque cluster
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.fill(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten(seriesInfo.color, 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.series.name()
+            });
+        });
+        
+        // Désactiver la légende
+        map.legend(false);
+        
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+
+    function toggleSources(button) {
+        var content = button.nextElementSibling;
+        var isHidden = content.classList.contains('hidden');
+        
+        content.classList.toggle('hidden');
+        button.innerHTML = isHidden ? 'Hide sources ▲' : 'Show sources ▼';
+    }
+</script>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li>
+               <a href="/">News </a>
+            </li>
+            <li>
+              <a href="/en/2025-11-24/country_counts.html">Top Countries</a>
+            </li>
+            <li>
+              <a href="/en/2025-11-24/labels.html">Top Themes</a>
+            </li>
+            <li>
+              <a href="/en/2025-11-24/c1.html">In Focus</a>
+            </li>
+            <li>
+              <a href="/en/about.html">About</a>
+            </li>
+            <li>
+              <a href="/en/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
