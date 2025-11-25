@@ -6683,3 +6683,28 @@ button.close-menu{
 .tooltip_mw:hover .tooltiptext_mw {
   visibility: visible;
 }
+
+/* pour l'encart "En bref" */
+.en-bref-box {
+    position: relative;
+    padding: 12px 12px 10px;
+    border: 1px solid #DDD;
+    margin: 10px 0;
+	border-radius: 2px;
+  }
+
+  .en-bref-title {
+    position: absolute;
+    top: 0;
+    left: 16px;              /* décale un peu à droite */
+    transform: translateY(-50%);
+    background-color: #f8f9fa;  /* fond blanc pour masquer la bordure */
+    padding: 0 6px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .en-bref-list {
+    margin: 0;
+    padding-left: 20px;
+  }

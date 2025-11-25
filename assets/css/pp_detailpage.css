@@ -80,7 +80,7 @@ h2 {
     width: 300px;
     height: 300px;
     float: left;
-    border-radius: 8px;
+    border-radius: 2px;
     margin: 0 20px 0 0;
 }
 .metadata {
@@ -127,10 +127,9 @@ h2 {
     overflow: hidden;
 }
 .cluster-section {
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     padding: 0px;
-    background-color: #f8f9fa;
-    border-radius: 8px;
+    border-left: 3px solid transparent;
 }
 .cluster-description {
     font-family: "Libre Baskerville", "PT Serif", "Merriweather", "Source Serif 4", Georgia, "Times New Roman", serif;
@@ -144,13 +143,15 @@ h2 {
     font-size: 18px;
     font-weight: bold;
     color: #333;
-    display: inline-block;
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+
 }
 .country-section {
     margin-bottom: 15px;
     padding: 10px;
     background-color: #ffffff;
-    border-radius: 4px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 .country-header {
@@ -288,7 +289,7 @@ img.main-image {
   max-width: 340px;   /* ou 40% si tu préfères */
   height: auto;       /* clé: ratio respecté */
   float: left;
-  border-radius: 8px;
+  border-radius: 2px;
   margin: 0 20px 12px 0;
 }
 
@@ -306,13 +307,13 @@ img.main-image {
   .article-summary{
     padding-left: 0 !important;
     padding-right: 0 !important;
-    margin-left: 0 !important;
+    margin-left: 2px !important;
     margin-right: 0 !important;
   }
   .cluster-description {
     padding-left: 0 !important;
     padding-right: 0 !important;
-    margin-left: 0 !important;
+    margin-left: 2px !important;
     margin-right: 0 !important;
   }
   .content-wrapper{
@@ -320,6 +321,14 @@ img.main-image {
     padding-right: 0 !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
+  }
+  .cluster-section {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+  .cluster-title {
+    padding-left: 0 !important;
+    margin-left: 2px !important;
   }
 }
 
