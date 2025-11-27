@@ -13,6 +13,27 @@
 <link href="/assets/css/style.css" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
 <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+        page_lang: 'en',
+        page_type: 'topics_analysis',
+        
+        
+        
+});
+    (function(w,d,s,l,i){
+        w[l]=w[l]||[];
+        w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+        var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),
+            dl=l!='dataLayer'?'&l='+l:'';
+        j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+        f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KL7V4FQH');
+</script>
   <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js"></script>
   <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-treemap.min.js"></script>
   <style>
@@ -105,10 +126,13 @@
               <a class="nav-link active" aria-current="page" href="/">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/en/2025-11-16/country_counts.html">Top Countries</a>
+              <a class="nav-link active" aria-current="page" href="/en/2025-11-27/country_counts.html">Top Countries</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/en/2025-11-16/labels.html">Top Themes</a>
+              <a class="nav-link active" aria-current="page" href="/en/2025-11-27/labels.html">Top Themes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/2025-11-27/c1.html">In Focus</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/en/about.html">About</a>
@@ -168,7 +192,7 @@
 <script>
 anychart.onDocumentReady(function () {
   // --- Data: [{ category, weight, remanent }, ...]
-  var raw = [{"category": "Ukraine-Russia Conflict", "remanent": 1, "weight": 87}, {"category": "Israel-Palestine Conflict", "remanent": 1, "weight": 59}, {"category": "Sudan Humanitarian Crisis", "remanent": 1, "weight": 28}, {"category": "Trump-Epstein Disclosures", "remanent": 1, "weight": 11}, {"category": "Venezuela\u2013US Tensions", "remanent": 1, "weight": 32}, {"category": "Trump BBC Defamation Suit", "remanent": 1, "weight": 19}, {"category": "US Shutdown Standoff", "remanent": 1, "weight": 17}, {"category": "US Western Hemisphere Counter-Narcotics Operation", "remanent": 1, "weight": 16}, {"category": "China-Japan Taiwan Dispute", "remanent": 1, "weight": 20}, {"category": "Kashmir Police Station Bombing", "remanent": 1, "weight": 12}, {"category": "Ukraine Embezzlement Scandal", "remanent": 1, "weight": 15}, {"category": "Trump Tariff Rollback", "remanent": 1, "weight": 14}, {"category": "Iran Seizes Tanker", "remanent": 0, "weight": 12}, {"category": "UK Asylum Protections Cut", "remanent": 0, "weight": 13}, {"category": "Chile Presidential Election", "remanent": 0, "weight": 14}, {"category": "Portugal Storm Claudia Impact", "remanent": 0, "weight": 10}, {"category": "UNSC Gaza Resolution Vote", "remanent": 0, "weight": 10}] || [];
+  var raw = [{"category": "Venezuela\u2013US Conflict Issues", "remanent": 1, "weight": 22}, {"category": "AU\u2013EU Partnership Summit", "remanent": 1, "weight": 14}, {"category": "G20 Summit Africa Focus", "remanent": 1, "weight": 18}, {"category": "Israel-Palestine Conflict", "remanent": 1, "weight": 30}, {"category": "Gaza Humanitarian Crisis", "remanent": 1, "weight": 11}, {"category": "Guinea-Bissau Military Coup", "remanent": 0, "weight": 64}, {"category": "Hong Kong Apartment Fire", "remanent": 0, "weight": 75}, {"category": "Mart\u00edn Vizcarra Corruption Sentence", "remanent": 0, "weight": 14}, {"category": "Nigeria Security Emergency", "remanent": 0, "weight": 10}, {"category": "US National Guard Shootings", "remanent": 0, "weight": 57}, {"category": "Bolsonaro Coup Sentencing", "remanent": 0, "weight": 10}, {"category": "Sarkozy Corruption Conviction", "remanent": 0, "weight": 11}, {"category": "Thailand Flood Crisis", "remanent": 0, "weight": 10}, {"category": "Trump Envoy Coaching Kremlin", "remanent": 0, "weight": 10}, {"category": "US\u2013Ukraine Peace Talks", "remanent": 0, "weight": 106}] || [];
 
   // --- Helpers
   function escHtml(s){
@@ -285,8 +309,8 @@ anychart.onDocumentReady(function () {
   // ===== Chart 2: Labels History (from labels_template_en.html) =====
   anychart.onDocumentReady(function () {
     (function () {
-      var rawData = [["China-Japan Taiwan Dispute", 20, 0, 0, 0, 0, 0, 0], ["Democrats Disclose Epstein Emails", 0, 0, 0, 31, 0, 0, 0], ["Israel-Palestine Conflict", 59, 81, 72, 58, 82, 98, 97], ["Sudan Humanitarian Crisis", 28, 35, 0, 0, 0, 0, 0], ["Trump-Epstein Disclosures", 0, 29, 16, 0, 0, 0, 0], ["US Shutdown Standoff", 0, 0, 41, 69, 67, 0, 37], ["Ukraine-Russia Conflict", 87, 101, 68, 72, 88, 82, 56], ["Venezuela\u2013US Tensions", 32, 23, 0, 0, 0, 0, 0]];
-      var dates = ["2025-11-16", "2025-11-15", "2025-11-14", "2025-11-13", "2025-11-10", "2025-11-09", "2025-11-08"].reverse();
+      var rawData = [["COP30 Climate Talks", 0, 0, 28, 33, 52, 33, 48], ["Guinea-Bissau Military Coup", 64, 0, 0, 0, 0, 0, 0], ["Hong Kong Apartment Fire", 75, 0, 0, 0, 0, 0, 0], ["Israel-Palestine Conflict", 30, 0, 0, 0, 0, 41, 37], ["US National Guard Shootings", 57, 0, 0, 0, 0, 0, 0], ["US\u2013Ukraine Peace Talks", 106, 0, 0, 0, 0, 217, 125], ["Ukraine\u2013US Ceasefire and Alliance Talks", 0, 0, 0, 0, 176, 0, 0], ["Ukraine\u2013US Ceasefire and Peace Talks", 0, 0, 148, 148, 0, 0, 0]];
+      var dates = ["2025-11-27", "2025-11-26", "2025-11-25", "2025-11-24", "2025-11-23", "2025-11-22", "2025-11-21"].reverse();
 
       var chart = anychart.column();
       chart.yScale().stackMode('value');
@@ -416,10 +440,13 @@ anychart.onDocumentReady(function () {
                <a href="/">News </a>
             </li>
             <li>
-              <a href="/en/2025-11-16/country_counts.html">Top Countries</a>
+              <a href="/en/2025-11-27/country_counts.html">Top Countries</a>
             </li>
             <li>
-              <a href="/en/2025-11-16/labels.html">Top Themes</a>
+              <a href="/en/2025-11-27/labels.html">Top Themes</a>
+            </li>
+            <li>
+              <a href="/en/2025-11-27/c1.html">In Focus</a>
             </li>
             <li>
               <a href="/en/about.html">About</a>
