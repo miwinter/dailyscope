@@ -6708,3 +6708,21 @@ button.close-menu{
     margin: 0;
     padding-left: 20px;
   }
+
+  /* pour l'image de la page about */
+  /* Titre "À propos de DailyScope.ai" : une seule ligne, mais au-dessus de l'image */
+.about-ds .comon-sub-heading {
+    display: block;          /* reste un bloc => le float ne peut pas monter à côté */
+    width: max-content;      /* largeur ajustée au texte, pas 100% */
+    white-space: nowrap;     /* pas de retour à la ligne */
+    margin-bottom: 16px;     /* petit espace avec l'image */
+}
+.about-ds .about-inline {
+    float: left;
+    width: 240px;
+    border-radius: 12px;
+    margin: 6px 20px 12px 0;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 8%);
+}
+
