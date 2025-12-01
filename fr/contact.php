@@ -23,6 +23,17 @@ function render_page($title, $inner_html) {
 <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
 <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
 
+<meta name="description"
+      content="DailyScope.ai analyse automatiquement les actualités mondiales pour mettre en lumière les pays et thèmes les plus couverts.">
+<meta property="og:title" content="DailyScope.ai — Today’s global news signals">
+<meta property="og:description"
+      content="DailyScope.ai analyse automatiquement les actualités mondiales pour mettre en lumière les pays et thèmes les plus couverts.">
+<meta property="og:image" content="https://www.dailyscope.ai/assets/images/dailyscope-carte.jpg">
+<meta property="og:url" content="https://www.dailyscope.ai/fr/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DailyScope.ai">
+<link rel="canonical" href="https://www.dailyscope.ai/fr/">
+
 <script>
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
@@ -86,13 +97,13 @@ EOT;
               <a class="nav-link active" aria-current="page" href="/fr/">Actus</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2025-11-30/country_counts.html">Pays</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2025-12-01/country_counts.html">Pays</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2025-11-30/labels.html">Thèmes</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2025-12-01/labels.html">Thèmes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2025-11-30/c1.html">France Focus</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2025-12-01/c1.html">France Focus</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
@@ -138,13 +149,13 @@ EOT;
                <a href="/">Actus </a>
             </li>
             <li>
-              <a href="/fr/2025-11-30/country_counts.html">Pays</a>
+              <a href="/fr/2025-12-01/country_counts.html">Pays</a>
             </li>
             <li>
-              <a href="/fr/2025-11-30/labels.html">Thèmes</a>
+              <a href="/fr/2025-12-01/labels.html">Thèmes</a>
             </li>
             <li>
-              <a href="/fr/2025-11-30/c1.html">France Focus</a>
+              <a href="/fr/2025-12-01/c1.html">France Focus</a>
             </li>
             <li>
               <a href="/fr/about.html">A Propos</a>

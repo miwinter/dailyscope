@@ -23,6 +23,17 @@ function render_page($title, $inner_html) {
 <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
 <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
 
+<meta name="description"
+      content="DailyScope.ai automatically analyzes global news to highlight the most covered countries and themes.">
+<meta property="og:title" content="DailyScope.ai — Today’s global news signals">
+<meta property="og:description"
+      content="DailyScope.ai automatically analyzes global news to highlight the most covered countries and themes.">
+<meta property="og:image" content="https://www.dailyscope.ai/assets/images/dailyscope-carte.jpg">
+<meta property="og:url" content="https://www.dailyscope.ai/en/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DailyScope.ai">
+<link rel="canonical" href="https://www.dailyscope.ai/en/">
+
 <script>
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
@@ -86,13 +97,13 @@ EOT;
               <a class="nav-link active" aria-current="page" href="/">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/en/2025-11-30/country_counts.html">Top Countries</a>
+              <a class="nav-link active" aria-current="page" href="/en/2025-12-01/country_counts.html">Top Countries</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/en/2025-11-30/labels.html">Top Themes</a>
+              <a class="nav-link active" aria-current="page" href="/en/2025-12-01/labels.html">Top Themes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/en/2025-11-30/c1.html">In Focus</a>
+              <a class="nav-link active" aria-current="page" href="/en/2025-12-01/c1.html">In Focus</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/en/about.html">About</a>
@@ -138,13 +149,13 @@ EOT;
                <a href="/">News </a>
             </li>
             <li>
-              <a href="/en/2025-11-30/country_counts.html">Top Countries</a>
+              <a href="/en/2025-12-01/country_counts.html">Top Countries</a>
             </li>
             <li>
-              <a href="/en/2025-11-30/labels.html">Top Themes</a>
+              <a href="/en/2025-12-01/labels.html">Top Themes</a>
             </li>
             <li>
-              <a href="/en/2025-11-30/c1.html">In Focus</a>
+              <a href="/en/2025-12-01/c1.html">In Focus</a>
             </li>
             <li>
               <a href="/en/about.html">About</a>

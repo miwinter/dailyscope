@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <!-- Redirection instantanée vers /fr/index.html -->
-    <meta http-equiv="refresh" content="0; url=en/" />
+<head>
+  <meta charset="utf-8" />
 
-    <!-- Pour les navigateurs qui interprètent les liens -->
-    <link rel="canonical" href="en/" />
-    <title>Redirection…</title>
-    <script>
-      /* Recours JavaScript si le méta-refresh était bloqué */
+  <!-- Balises Open Graph pour LinkedIn / Facebook -->
+  <meta property="og:title" content="DailyScope.ai — AI-powered global news insights">
+  <meta property="og:description" content="DailyScope.ai automatically analyzes global news to highlight the most covered countries and themes.">
+  <meta property="og:image" content="https://www.dailyscope.ai/assets/images/dailyscope-og.jpg">
+  <meta property="og:url" content="https://www.dailyscope.ai">
+  <meta property="og:type" content="website">
+
+  <!-- Pas de redirection meta-refresh -->
+  <title>DailyScope.ai</title>
+
+  <script>
+    // Redirection uniquement pour les humains
+    if (typeof navigator !== "undefined") {
       window.location.replace("en/");
-    </script>
-  </head>
-  <body>
-    <!-- Fallback pour les très vieux navigateurs ou si JS + meta désactivés -->
-    <p>
-If you are not redirected automatically,
-<a href="en/">click here</a>.
-    </p>
-  </body>
+    }
+  </script>
+</head>
+<body>
+  <!-- Fallback minimal -->
+  <p>Redirection vers <a href="en/">DailyScope.ai</a>…</p>
+</body>
 </html>
