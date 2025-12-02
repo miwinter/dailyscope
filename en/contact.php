@@ -15,10 +15,8 @@ function render_page($title, $inner_html) {
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="/assets/css/fontawesome-5.15.4.min.css">
 <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
-<link href="/assets/css/all.min.css" rel="stylesheet">
 <link href="/assets/css/style.css" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
 <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
@@ -97,13 +95,13 @@ EOT;
               <a class="nav-link active" aria-current="page" href="/">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/en/2025-12-01/country_counts.html">Top Countries</a>
+              <a class="nav-link active" aria-current="page" href="/en/2025-12-02/country_counts.html">Top Countries</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/en/2025-12-01/labels.html">Top Themes</a>
+              <a class="nav-link active" aria-current="page" href="/en/2025-12-02/labels.html">Top Themes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/en/2025-12-01/c1.html">In Focus</a>
+              <a class="nav-link active" aria-current="page" href="/en/2025-12-02/c1.html">In Focus</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/en/about.html">About</a>
@@ -149,13 +147,13 @@ EOT;
                <a href="/">News </a>
             </li>
             <li>
-              <a href="/en/2025-12-01/country_counts.html">Top Countries</a>
+              <a href="/en/2025-12-02/country_counts.html">Top Countries</a>
             </li>
             <li>
-              <a href="/en/2025-12-01/labels.html">Top Themes</a>
+              <a href="/en/2025-12-02/labels.html">Top Themes</a>
             </li>
             <li>
-              <a href="/en/2025-12-01/c1.html">In Focus</a>
+              <a href="/en/2025-12-02/c1.html">In Focus</a>
             </li>
             <li>
               <a href="/en/about.html">About</a>
@@ -240,7 +238,7 @@ if ($errors) {
 $clean_subject = sanitize_header($subject);
 $clean_email   = sanitize_header($email);
 
-$headers  = "From: ".$clean_email."\r\n";
+$headers  = "From: contact@dailyscope.ai\r\n";
 $headers .= "Reply-To: ".$clean_email."\r\n";
 $headers .= "Content-Type: text/plain; charset=utf-8\r\n";
 

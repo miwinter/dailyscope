@@ -1,0 +1,719 @@
+<!-- templates/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title></title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/css/fontawesome-5.15.4.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<meta name="description"
+      content="DailyScope.ai automatically analyzes global news to highlight the most covered countries and themes.">
+<meta property="og:title" content="DailyScope.ai — Today’s global news signals">
+<meta property="og:description"
+      content="DailyScope.ai automatically analyzes global news to highlight the most covered countries and themes.">
+<meta property="og:image" content="https://www.dailyscope.ai/assets/images/dailyscope-carte.jpg">
+<meta property="og:url" content="https://www.dailyscope.ai/en/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DailyScope.ai">
+<link rel="canonical" href="https://www.dailyscope.ai/en/">
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+        page_lang: 'en',
+        page_type: 'countries_analysis',
+        
+        
+        
+});
+    (function(w,d,s,l,i){
+        w[l]=w[l]||[];
+        w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+        var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),
+            dl=l!='dataLayer'?'&l='+l:'';
+        j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+        f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KL7V4FQH');
+</script>
+
+<link rel="stylesheet" href="/assets/css/pp_detailpage.css">
+
+<script src="/assets/js/anychart-custom-build.js"></script>
+<script src="/assets/js/world.js"></script>
+
+
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/fra.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="Français" title="Français" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/en', '/fr');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>              
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/2025-12-02/country_counts.html">Top Countries</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/2025-12-02/labels.html">Top Themes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/2025-12-02/c1.html">In Focus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- ===== SECTION 1 : TITRE (fond gris clair) ===== -->
+  <section class="band band--title">
+  <div class="content-shell content-shell--narrow">
+    <h2 class="section-title">Most Mentioned Countries</h2>
+    <p class="section-subtitle">
+  <span class="legend-note">
+    Countries most frequently mentioned in today’s collected articles.
+    Hover over a country to see the number of articles that refer to it.
+    Hover over the legend to highlight countries within a given value range.
+  </span><br>
+  2025-12-02 • 1707 mentions in total
+</p>
+  </div>
+</section>
+
+  <!-- ===== SECTION 1 : CHART (bande blanche) ===== -->
+  <section class="band band--chart">
+    <div class="content-shell content-shell--wide">
+      <div id="map-container"></div>
+    </div>
+  </section>
+
+  <!-- Section 2: Counts History (stacked columns) -->
+  <section class="band band--title">
+  <div class="content-shell content-shell--narrow">
+    <h2 class="section-title">History of the Most Mentioned Countries</h2>
+    <p class="section-subtitle">
+      <span class="legend-note">
+      Countries most frequently mentioned over the past 7 days. 
+      Hover over a column to display the number of articles associated with it.
+      Click on a country in the legend or on a bar to highlight its full trend.
+      </span>
+    </p>
+  </div>
+  </section>
+  <section class="band band--chart">
+    <div class="content-shell">
+      <div class="chart-frame">
+        <div id="history-container" class="chart-plot"></div>
+      </div>
+    </div>
+  </section>
+
+
+<script>
+    anychart.onDocumentReady(function() {
+        var map = anychart.map();
+        var credits = map.credits();
+        credits.enabled(false);
+        map.geoData('anychart.maps.world');
+        map.interactivity().selectionMode('none');
+        
+        // Configurer les régions non couvertes
+        map.unboundRegions()
+            .enabled(true)
+            .fill('#f0f0f0')
+            .stroke({
+                color: '#000000',
+                thickness: 0.5,
+                lineJoin: 'round'
+            });
+            
+        // Préparer les données pour la carte
+        var seriesData = [
+            
+            {
+                name: "1–2 mentions",
+                color: "#FBE9D0",
+                data: [
+                
+                { id: "DK", name: "1" },
+                
+                { id: "CV", name: "1" },
+                
+                { id: "MZ", name: "1" },
+                
+                { id: "MG", name: "1" },
+                
+                { id: "KH", name: "1" },
+                
+                { id: "IQ", name: "1" },
+                
+                { id: "TN", name: "1" },
+                
+                { id: "TL", name: "1" },
+                
+                { id: "ME", name: "1" },
+                
+                { id: "EG", name: "1" },
+                
+                { id: "ML", name: "1" },
+                
+                { id: "CK", name: "1" },
+                
+                { id: "OM", name: "1" },
+                
+                { id: "TD", name: "1" },
+                
+                { id: "AN", name: "1" },
+                
+                { id: "CR", name: "1" },
+                
+                { id: "HR", name: "1" },
+                
+                { id: "MN", name: "1" },
+                
+                { id: "AT", name: "1" },
+                
+                { id: "VI", name: "1" },
+                
+                { id: "LA", name: "1" },
+                
+                { id: "KP", name: "1" },
+                
+                { id: "TJ", name: "1" },
+                
+                { id: "TM", name: "1" },
+                
+                { id: "GM", name: "1" },
+                
+                { id: "LR", name: "1" },
+                
+                { id: "SL", name: "1" },
+                
+                { id: "TZ", name: "1" },
+                
+                { id: "WS", name: "1" },
+                
+                { id: "AM", name: "1" },
+                
+                { id: "KE", name: "1" },
+                
+                { id: "SS", name: "1" },
+                
+                { id: "GR", name: "1" },
+                
+                { id: "CZ", name: "1" },
+                
+                { id: "GH", name: "1" },
+                
+                { id: "CI", name: "1" },
+                
+                { id: "NJ", name: "1" },
+                
+                { id: "EC", name: "1" },
+                
+                { id: "PA", name: "1" },
+                
+                { id: "GA", name: "1" },
+                
+                { id: "CH", name: "1" },
+                
+                { id: "MR", name: "1" },
+                
+                { id: "SM", name: "1" },
+                
+                { id: "KG", name: "1" },
+                
+                { id: "CU", name: "1" },
+                
+                { id: "SE", name: "1" },
+                
+                { id: "EE", name: "1" },
+                
+                { id: "PT", name: "2" },
+                
+                { id: "YE", name: "2" },
+                
+                { id: "VC", name: "2" },
+                
+                { id: "KR", name: "2" },
+                
+                { id: "GT", name: "2" },
+                
+                { id: "SK", name: "2" },
+                
+                { id: "CL", name: "2" },
+                
+                { id: "CM", name: "2" },
+                
+                { id: "RS", name: "2" },
+                
+                { id: "SZ", name: "2" },
+                
+                { id: "SO", name: "2" },
+                
+                { id: "MA", name: "2" },
+                
+                { id: "UG", name: "2" },
+                
+                { id: "UZ", name: "2" },
+                
+                { id: "GN", name: "2" },
+                
+                { id: "BO", name: "2" },
+                
+                { id: "NI", name: "2" },
+                
+                { id: "RW", name: "2" },
+                
+                { id: "ZG", name: "2" },
+                
+                { id: "SA", name: "2" },
+                
+                { id: "BB", name: "2" },
+                
+                { id: "KW", name: "2" }
+                
+                ]
+            },
+            
+            {
+                name: "3–4 mentions",
+                color: "#F8CEB6",
+                data: [
+                
+                { id: "ZM", name: "3" },
+                
+                { id: "BG", name: "3" },
+                
+                { id: "BE", name: "3" },
+                
+                { id: "SR", name: "3" },
+                
+                { id: "AR", name: "3" },
+                
+                { id: "SN", name: "3" },
+                
+                { id: "MU", name: "3" },
+                
+                { id: "JM", name: "3" },
+                
+                { id: "AZ", name: "3" },
+                
+                { id: "PG", name: "3" },
+                
+                { id: "BF", name: "4" },
+                
+                { id: "TW", name: "4" },
+                
+                { id: "AU", name: "4" },
+                
+                { id: "MM", name: "4" },
+                
+                { id: "PH", name: "4" },
+                
+                { id: "PL", name: "4" },
+                
+                { id: "AE", name: "4" },
+                
+                { id: "IT", name: "4" },
+                
+                { id: "CD", name: "4" },
+                
+                { id: "SG", name: "4" },
+                
+                { id: "DO", name: "4" },
+                
+                { id: "HU", name: "4" }
+                
+                ]
+            },
+            
+            {
+                name: "5–6 mentions",
+                color: "#F4B39C",
+                data: [
+                
+                { id: "BR", name: "5" },
+                
+                { id: "ES", name: "5" },
+                
+                { id: "NE", name: "5" },
+                
+                { id: "CA", name: "6" },
+                
+                { id: "NG", name: "6" },
+                
+                { id: "CG", name: "6" },
+                
+                { id: "KZ", name: "6" },
+                
+                { id: "HT", name: "6" },
+                
+                { id: "DZ", name: "6" }
+                
+                ]
+            },
+            
+            {
+                name: "7–16 mentions",
+                color: "#F19982",
+                data: [
+                
+                { id: "AS", name: "7" },
+                
+                { id: "GE", name: "7" },
+                
+                { id: "LT", name: "7" },
+                
+                { id: "SD", name: "8" },
+                
+                { id: "JP", name: "8" },
+                
+                { id: "BY", name: "8" },
+                
+                { id: "NL", name: "9" },
+                
+                { id: "CO", name: "9" },
+                
+                { id: "PK", name: "9" },
+                
+                { id: "VN", name: "9" },
+                
+                { id: "DE", name: "10" },
+                
+                { id: "UN", name: "10" },
+                
+                { id: "BD", name: "10" },
+                
+                { id: "IR", name: "11" },
+                
+                { id: "ZA", name: "13" },
+                
+                { id: "IN", name: "14" },
+                
+                { id: "SY", name: "14" },
+                
+                { id: "MY", name: "15" },
+                
+                { id: "PE", name: "16" }
+                
+                ]
+            },
+            
+            {
+                name: "19–320 mentions",
+                color: "#ED7E67",
+                data: [
+                
+                { id: "LB", name: "19" },
+                
+                { id: "MX", name: "20" },
+                
+                { id: "AF", name: "20" },
+                
+                { id: "TR", name: "20" },
+                
+                { id: "HN", name: "22" },
+                
+                { id: "PS", name: "26" },
+                
+                { id: "GW", name: "26" },
+                
+                { id: "TH", name: "29" },
+                
+                { id: "LK", name: "29" },
+                
+                { id: "HK", name: "30" },
+                
+                { id: "GB", name: "30" },
+                
+                { id: "FR", name: "40" },
+                
+                { id: "ID", name: "45" },
+                
+                { id: "CN", name: "47" },
+                
+                { id: "EU", name: "61" },
+                
+                { id: "IL", name: "76" },
+                
+                { id: "VE", name: "98" },
+                
+                { id: "RU", name: "158" },
+                
+                { id: "UA", name: "177" },
+                
+                { id: "US", name: "320" }
+                
+                ]
+            }
+            
+            ];
+
+        seriesData.forEach(function(seriesInfo) {
+            var series = map.choropleth(seriesInfo.data);
+            series.name(seriesInfo.name);
+            series.geoIdField('id');
+            series.color(seriesInfo.color);
+            series.stroke('#000000', 0.5, 'round');
+            
+            // Configuration du hover
+            series.hovered()
+                .fill(anychart.color.lighten("#000", 0.2));
+            
+            // Configuration des tooltips
+            series.tooltip().format(function() {
+                // this.series.name() donne le titre du cluster, this.getData('name') le code pays
+                return this.getData('name') + " mentions";
+            });
+        });
+
+        // affichage de la legende
+        var legend = map.legend();
+        
+        // après avoir fait var legend = chart.legend(); ...
+        legend.enabled(true).fontSize(12).margin(0,0,0,0).align('left');
+
+        function applyMapLegendLayout() {
+          if (window.innerWidth <= 640) {
+            legend.position('bottom');
+            legend.itemsLayout('horizontal'); 
+            map.padding([0,0,0,0]);   // espace pour la légende en bas
+          } else {
+            legend.position('right');
+            legend.itemsLayout('vertical');
+            map.padding([0,0,0,0]);
+            legend.align('center');
+          }
+        }
+        applyMapLegendLayout();
+        window.addEventListener('resize', applyMapLegendLayout);
+
+            
+        // Rendre la carte
+        map.container('map-container');
+        map.draw();
+    });
+</script>
+
+<script>
+  anychart.onDocumentReady(function () {
+    (function () {
+      var rawData = [["EU", 61, 44, 51, 57, 61, 64, 75], ["GW", 0, 0, 61, 65, 90, 71, 0], ["HK", 30, 39, 0, 49, 74, 78, 0], ["IL", 76, 91, 65, 83, 80, 61, 68], ["RU", 158, 137, 165, 179, 173, 161, 201], ["UA", 177, 180, 178, 180, 129, 146, 214], ["US", 320, 344, 313, 308, 313, 357, 360], ["VE", 98, 112, 111, 48, 51, 0, 64]];
+      var dates = ["2025-12-02", "2025-12-01", "2025-11-30", "2025-11-29", "2025-11-28", "2025-11-27", "2025-11-26"].reverse();
+      var countryNames = {"EU": "EU", "GW": "Guinea-Bissau", "HK": "Hong Kong (China)", "IL": "Israel", "RU": "Russia", "UA": "Ukraine", "US": "United States", "VE": "Venezuela"};
+
+      var chart = anychart.column();
+      chart.yScale().stackMode('value');
+      var credits = chart.credits();
+      credits.enabled(false);
+
+      // Palette fixe pour rester isomorphe au chart "labels"
+      var colors = ['#72e5ac','#72e5e3','#72b0e5','#7279e5','#a372e5','#da72e5','#e572b8','#e57281','#e59b72','#e5d272'];
+
+      var seriesList = [];
+      var lastHighlighted = null;
+
+      function setHighlighted(s, on) {
+        var orig = s.meta('origFill');
+        if (!orig) return;
+        if (on) {
+          s.normal().fill('#000000');
+          s.normal().stroke('2 #fff 1');
+          s.zIndex(10);
+          s.meta('isHighlighted', true);
+          lastHighlighted = s;
+        } else {
+          s.normal().fill(orig);
+          s.normal().stroke('2 #fff 1');
+          s.zIndex(1);
+          s.meta('isHighlighted', false);
+          if (lastHighlighted === s) lastHighlighted = null;
+        }
+      }
+
+      function toggleHighlight(s) {
+        if (lastHighlighted && lastHighlighted !== s) setHighlighted(lastHighlighted, false);
+        var isOn = !!s.meta('isHighlighted');
+        setHighlighted(s, !isOn);
+      }
+
+      // Création des séries (une par pays)
+      for (var i = 0; i < rawData.length; i++) {
+        var countryCode = rawData[i][0];
+        var countryLabel = countryNames[countryCode] || countryCode;
+        var values = rawData[i].slice(1).reverse();
+
+        var countryData = [];
+        for (var j = 0; j < dates.length; j++) {
+          countryData.push({ x: dates[j], value: values[j] });
+        }
+
+        var s = chart.column(countryData);
+        var color = colors[i % colors.length];
+        s.name(countryLabel);
+        s.normal().stroke('2 #fff 1');
+        s.normal().fill(color);
+
+        // metas pour le toggle highlight
+        s.meta('origFill', color);
+        s.meta('isHighlighted', false);
+        s.zIndex(1);
+
+        // Clic sur une colonne -> toggle de la série correspondante
+        s.listen('pointClick', function (e) {
+          toggleHighlight(e.series);
+        });
+
+        seriesList.push(s);
+      }
+
+      // Légende (même comportement responsive que labels)
+      var legend = chart.legend();
+      legend.enabled(true).padding([8,0,0,0]).fontSize(12);
+
+      function applyLegendLayout() {
+        if (window.innerWidth <= 640) {
+          legend.position('bottom');
+          legend.itemsLayout('horizontal');
+          legend.align('left');
+          chart.padding([10,10,48,10]); // espace pour la légende
+        } else {
+          legend.position('right');
+          legend.itemsLayout('vertical');
+          legend.align('left');
+          chart.padding([10,10,10,10]);
+        }
+      }
+      applyLegendLayout();
+      window.addEventListener('resize', applyLegendLayout);
+
+      // Clic sur un item de légende -> toggle de la série
+      chart.listen('legendItemClick', function (e) {
+        var s = seriesList[e.itemIndex];
+        if (s) toggleHighlight(s);
+        e.preventDefault();
+      });
+
+      // Tooltip : on aligne le style sur "labels" (single), 
+      // mais tu peux repasser en 'union' si tu préfères le total.
+      chart.tooltip()
+        .displayMode('single')
+        .titleFormat(function () { return this.x + ' — ' + this.seriesName; })
+        .format(function () { return this.value + ' mentions'; });
+
+      chart.title().enabled(false);
+      chart.xAxis().labels().rotation(-45);
+      chart.yAxis().title('Number of mentions');
+
+      chart.container('history-container');
+      chart.draw();
+    })();
+  });
+</script>
+
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li>
+               <a href="/">News </a>
+            </li>
+            <li>
+              <a href="/en/2025-12-02/country_counts.html">Top Countries</a>
+            </li>
+            <li>
+              <a href="/en/2025-12-02/labels.html">Top Themes</a>
+            </li>
+            <li>
+              <a href="/en/2025-12-02/c1.html">In Focus</a>
+            </li>
+            <li>
+              <a href="/en/about.html">About</a>
+            </li>
+            <li>
+              <a href="/en/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

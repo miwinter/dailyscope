@@ -15,10 +15,8 @@ function render_page($title, $inner_html) {
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
-<link href="/assets/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/fontawesome-5.15.4.min.css">
 <link href="/assets/css/style.css" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
 <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
@@ -97,13 +95,13 @@ EOT;
               <a class="nav-link active" aria-current="page" href="/fr/">Actus</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2025-12-01/country_counts.html">Pays</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2025-12-02/country_counts.html">Pays</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2025-12-01/labels.html">Thèmes</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2025-12-02/labels.html">Thèmes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2025-12-01/c1.html">France Focus</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2025-12-02/c1.html">France Focus</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
@@ -149,13 +147,13 @@ EOT;
                <a href="/">Actus </a>
             </li>
             <li>
-              <a href="/fr/2025-12-01/country_counts.html">Pays</a>
+              <a href="/fr/2025-12-02/country_counts.html">Pays</a>
             </li>
             <li>
-              <a href="/fr/2025-12-01/labels.html">Thèmes</a>
+              <a href="/fr/2025-12-02/labels.html">Thèmes</a>
             </li>
             <li>
-              <a href="/fr/2025-12-01/c1.html">France Focus</a>
+              <a href="/fr/2025-12-02/c1.html">France Focus</a>
             </li>
             <li>
               <a href="/fr/about.html">A Propos</a>
@@ -240,7 +238,7 @@ if ($errors) {
 $clean_subject = sanitize_header($subject);
 $clean_email   = sanitize_header($email);
 
-$headers  = "From: ".$clean_email."\r\n";
+$headers  = "From: contact@dailyscope.ai\r\n";
 $headers .= "Reply-To: ".$clean_email."\r\n";
 $headers .= "Content-Type: text/plain; charset=utf-8\r\n";
 
