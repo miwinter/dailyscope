@@ -229,7 +229,7 @@ if ($errors) {
   $lis = "";
   foreach ($errors as $e) { $lis .= "<li>".e($e)."</li>"; }
   render_page("Contact — Erreur", '<div class="alert alert-danger" role="alert">
-    <h4 class="alert-heading">Erreur lors de l''envoi du message</h4>
+    <h4 class="alert-heading">Erreur lors de l\'envoi du message</h4>
     <ul class="mb-0">'.$lis.'</ul>
   </div>');
 }
