@@ -95,13 +95,13 @@ EOT;
               <a class="nav-link active" aria-current="page" href="/fr/">Actus</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2025-12-02/country_counts.html">Pays</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2025-12-03/country_counts.html">Pays</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2025-12-02/labels.html">Thèmes</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2025-12-03/labels.html">Thèmes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2025-12-02/c1.html">France Focus</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2025-12-03/c1.html">France Focus</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
@@ -147,13 +147,13 @@ EOT;
                <a href="/">Actus </a>
             </li>
             <li>
-              <a href="/fr/2025-12-02/country_counts.html">Pays</a>
+              <a href="/fr/2025-12-03/country_counts.html">Pays</a>
             </li>
             <li>
-              <a href="/fr/2025-12-02/labels.html">Thèmes</a>
+              <a href="/fr/2025-12-03/labels.html">Thèmes</a>
             </li>
             <li>
-              <a href="/fr/2025-12-02/c1.html">France Focus</a>
+              <a href="/fr/2025-12-03/c1.html">France Focus</a>
             </li>
             <li>
               <a href="/fr/about.html">A Propos</a>
@@ -229,7 +229,7 @@ if ($errors) {
   $lis = "";
   foreach ($errors as $e) { $lis .= "<li>".e($e)."</li>"; }
   render_page("Contact — Erreur", '<div class="alert alert-danger" role="alert">
-    <h4 class="alert-heading">Erreur lors de l\'envoi du message</h4>
+    <h4 class="alert-heading">Erreur lors de l''envoi du message</h4>
     <ul class="mb-0">'.$lis.'</ul>
   </div>');
 }
