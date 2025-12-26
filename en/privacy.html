@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Today's News</title>
+<title>DailyScope.ai - About</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,7 +26,7 @@
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
         page_lang: 'en',
-        page_type: 'contact',
+        page_type: 'privacy',
         
         
         
@@ -106,78 +106,161 @@
   </nav>
 </div>
 
-  <!-- Contact page body -->
-  <main class="conatct-page py-5"> <!-- note: class name follows site CSS -->
-    <div class="container">
-      <div class="row g-4 justify-content-center">
-        <div class="col-lg-7">
-          <h2 class="comon-sub-heading mb-4">Contact</h2>
-          <!-- Pure HTML form (PHP to be wired later) -->
-          <form id="contact-form" action="/en/contact.php" method="post" novalidate>
-            <!-- Honeypot (spam trap) -->
-            <div style="position:absolute; left:-5000px;" aria-hidden="true">
-              <label for="company">Company</label>
-              <input type="text" id="company" name="company" tabindex="-1" autocomplete="off" />
-            </div>
+<section class="about-ds py-5">
+  <div class="container">
+    <div class="row justify-content-center">
 
-            <div class="mb-3">
-              <label for="email" class="form-label"><strong>Your e-mail</strong></label>
-              <input type="email" class="form-control" id="email" name="email" placeholder="name@domain.com" required autocomplete="email" />
-            </div>
+<!-- TERMS OF USE -->    
+<div class="col-lg-7">
+  <div class="terms-content">
+<style>
+  .terms-content h1, .terms-content h2, .terms-content h3 {
+    margin-top: 1.5em;
+    font-weight: bold;
+    font-size: medium;
+  }
+  .terms-content p, .terms-content ul, .terms-content ol {
+    margin-bottom: 1em;
+    font-size: small;
+  }
+</style>
 
-            <div class="mb-3">
-              <label for="subject" class="form-label"><strong>Subject</strong></label>
-              <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject of your message" required maxlength="150" />
-            </div>
+<!-- =========================
+     Privacy Policy (Final)
+     ========================= -->
+<h1>Privacy Policy</h1>
+<p><em>Last updated: December 18, 2025</em></p>
 
-            <div class="mb-3">
-              <label for="message" class="form-label"><strong>Message</strong></label>
-              <textarea class="form-control" id="message" name="message" rows="6" placeholder="Your message…" required></textarea>
-            </div>
+<p>
+This Privacy Policy explains how DailyScope.ai (the “Service”) collects and processes personal data.
+DailyScope.ai is a personal project operated by an individual (“Operator”).
+</p>
 
-            <!-- Simple CAPTCHA (front only; validate in PHP later) -->
-            <div class="mb-3">
-              <label for="captcha_answer" class="form-label"><strong>Captcha</strong> <small class="text-muted">(anti-spam)</small></label>
-              <div class="input-group">
-                <span class="input-group-text" id="captcha_question" aria-live="polite">…</span>
-                <input type="number" class="form-control" id="captcha_answer" name="captcha_answer" inputmode="numeric" placeholder="Response" required aria-describedby="captcha_question" />
-              </div>
-              <input type="hidden" id="captcha_expected" name="captcha_expected" />
-            </div>
+<h2>1. Data controller</h2>
+<p>
+Data controller: <strong>The Operator of DailyScope.ai (individual)</strong><br>
+Contact: <a href="/contact">Contact form</a>
+</p>
 
-            <button type="submit" class="btn btn-dark">Send</button>
-          </form>
-          <p class="mt-3 text-muted" style="font-size: 14px;">By submitting this form, you agree that your information will only be used to process your request.</p>
-        </div>
-      </div>
-    </div>
-  </main>
+<h2>2. What the Service does</h2>
+<p>
+DailyScope.ai provides automated analysis of international news coverage using software algorithms and AI models.
+The Service presents aggregated insights (e.g., themes, trends, rankings) derived from publicly available sources.
+</p>
+
+<h2>3. Personal data we collect</h2>
+
+<h3>3.1 Data you provide</h3>
+<p>
+When you contact us via the contact form, we may collect:
+</p>
+<ul>
+  <li>Your email address</li>
+  <li>Your message content (and any information you choose to include)</li>
+  <li>Technical metadata related to the submission (e.g., timestamp)</li>
+</ul>
+
+<h3>3.2 Data collected automatically</h3>
+<p>
+When you browse the Service, limited technical/usage data may be collected, such as:
+</p>
+<ul>
+  <li>Pages viewed and interactions</li>
+  <li>Approximate location (country/city level, derived from IP)</li>
+  <li>Device and browser information</li>
+  <li>Referral source</li>
+  <li>Identifiers stored in cookies or similar technologies (where applicable)</li>
+</ul>
+
+<h2>4. Cookies and analytics</h2>
+<p>
+We use analytics and tag management tools (for example Google Analytics 4 and Google Tag Manager) to measure usage and improve the Service.
+These tools may set cookies or use similar technologies depending on your configuration and consent choices.
+</p>
+<p>
+Where required by applicable law, non-essential cookies/trackers are only used after you provide consent.
+You can also manage cookies through your browser settings.
+</p>
+
+<h2>5. Purposes of processing</h2>
+<ul>
+  <li>To operate and maintain the Service</li>
+  <li>To respond to your messages and support requests</li>
+  <li>To understand usage and improve performance (analytics)</li>
+  <li>To secure the Service and prevent abuse</li>
+  <li>To comply with legal obligations</li>
+</ul>
+
+<h2>6. Legal bases (GDPR)</h2>
+<p>
+When the GDPR applies, processing is based on:
+</p>
+<ul>
+  <li><strong>Legitimate interests</strong> (running and securing the Service, responding to messages, basic measurement)</li>
+  <li><strong>Consent</strong> (for non-essential cookies/trackers where required)</li>
+  <li><strong>Legal obligation</strong> (when required by law)</li>
+</ul>
+
+<h2>7. Recipients</h2>
+<p>
+We may share personal data with trusted service providers acting as processors (e.g., hosting, analytics, security),
+only to the extent necessary to provide the Service. We do not sell personal data.
+</p>
+
+<h2>8. Hosting</h2>
+<p>
+The Service is hosted by <strong>OVHcloud</strong> (France).
+</p>
+
+<h2>9. International transfers</h2>
+<p>
+Some providers may process data outside the European Economic Area.
+Where applicable, appropriate safeguards may be used (e.g., contractual protections).
+</p>
+
+<h2>10. Data retention</h2>
+<ul>
+  <li><strong>Contact messages</strong>: retained for up to <strong>12 months</strong> after the last exchange, unless a longer period is required (e.g., to handle a dispute) or you request deletion earlier where applicable.</li>
+  <li><strong>Analytics data</strong>: retained according to the analytics provider settings and your consent choices.</li>
+</ul>
+
+<h2>11. Your rights</h2>
+<p>
+Depending on your location, you may have rights including access, rectification, erasure, restriction, objection, and portability.
+Where processing is based on consent, you can withdraw consent at any time.
+</p>
+<p>
+To exercise your rights, please use the <a href="/contact">contact form</a>.
+You may also lodge a complaint with your data protection authority.
+</p>
+
+<h2>12. Security</h2>
+<p>
+We apply reasonable technical and organizational measures to protect personal data.
+No system is 100% secure, and you use the Service at your own risk.
+</p>
+
+<h2>13. Third-party links</h2>
+<p>
+The Service may link to third-party websites. We are not responsible for their content or privacy practices.
+</p>
+
+<h2>14. Changes to this Privacy Policy</h2>
+<p>
+We may update this Privacy Policy from time to time. The “Last updated” date indicates the latest revision.
+</p>
+
+<h2>15. Contact</h2>
+<p>
+For privacy-related questions, please use the <a href="/contact">contact form</a>.
+</p>
 
 
-  <!-- JS: Bootstrap + tiny captcha helper (front-end only) -->
-  <script src="/assets/js/bootstrap.bundle.min.js"></script>
-  <script>
-    // Front-only math captcha; real validation must be done in contact.php
-    (function() {
-      function rand(min, max) { return Math.floor(Math.random() * (max - min + 1)) + min; }
-      var a = rand(1, 9), b = rand(1, 9), op = ['+', '-'][rand(0,1)];
-      var expected = op === '+' ? (a + b) : (a - b);
-      document.getElementById('captcha_question').textContent = a + ' ' + op + ' ' + b + ' = ?';
-      document.getElementById('captcha_expected').value = expected;
-
-      // Light client-side check (progressive enhancement only)
-      var form = document.getElementById('contact-form');
-      form.addEventListener('submit', function(e) {
-        var ans = document.getElementById('captcha_answer').value;
-        var exp = document.getElementById('captcha_expected').value;
-        if (String(ans).trim() !== String(exp)) {
-          e.preventDefault();
-          alert('Captcha incorrect. Merci de réessayer.');
-        }
-      });
-    })();
-  </script>
-
+</div></div>
+<!-- TERMS OF USE -->  
+</div>
+</div>
+</section>
 
  <footer class="mt-5">
   <div class="container">

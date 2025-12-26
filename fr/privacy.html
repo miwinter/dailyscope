@@ -1,18 +1,8 @@
-<?php
-// contact.php
-
-// --- CONFIG ---
-$recipient = "winter.michel@gmail.com"; // ⇦ remplace par ton adresse
-$site_name = "DailyScope.ai";
-
-// --- OUTILS ---
-function e($s) { return htmlspecialchars($s ?? "", ENT_QUOTES, "UTF-8"); }
-function sanitize_header($s) { return str_replace(["\r", "\n"], "", trim($s ?? "")); }
-
-function render_page($title, $inner_html) {
-  // Page complète qui reprend l’allure du site
-  $includes = <<<'EOT'
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DailyScope.ai - About</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
 <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
@@ -36,7 +26,7 @@ function render_page($title, $inner_html) {
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
         page_lang: 'fr',
-        page_type: 'contact_processing',
+        page_type: 'privacy',
         
         
         
@@ -52,10 +42,10 @@ function render_page($title, $inner_html) {
         f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-KL7V4FQH');
 </script>
-EOT;
+</head>
+<body>
 
-  $header = <<<'EOT'
-  <header>  
+<header>  
   <div class="middle-section py-2" style="background-color:#244855;">
       <div class="container">
         <div class="row row-cols-1 row-cols-lg-3 align-items-center">
@@ -115,10 +105,139 @@ EOT;
     </div>
   </nav>
 </div>
-EOT;
 
-  $footer = <<<'EOT'
-   <footer class="mt-5">
+<section class="about-ds py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+
+<!-- PRIVACY POLICY -->    
+<div class="col-lg-7">
+  <div class="terms-content">
+<style>
+  .terms-content h1, .terms-content h2, .terms-content h3 {
+    margin-top: 1.5em;
+    font-weight: bold;
+    font-size: medium;
+  }
+  .terms-content p, .terms-content ul, .terms-content ol {
+    margin-bottom: 1em;
+    font-size: small;
+  }
+</style>
+
+<h1>Politique de confidentialité</h1>
+<p><em>Dernière mise à jour : 18 décembre 2025</em></p>
+
+<p>
+La présente politique de confidentialité explique comment le site DailyScope.ai
+collecte et traite les données personnelles des utilisateurs.
+</p>
+
+<h2>1. Responsable du traitement</h2>
+<p>
+Le responsable du traitement est l’éditeur du site DailyScope.ai,
+projet personnel opéré par une personne physique.
+</p>
+<p>
+Pour toute question relative aux données personnelles, veuillez utiliser le
+<a href="/fr/contact">formulaire de contact</a>.
+</p>
+
+<h2>2. Objet du site</h2>
+<p>
+DailyScope.ai propose une analyse automatisée de la couverture médiatique internationale
+à l’aide d’algorithmes logiciels et de modèles d’intelligence artificielle.
+Le site fournit des signaux agrégés (thématiques, tendances, classements)
+issus de sources accessibles publiquement.
+</p>
+
+<h2>3. Données collectées</h2>
+
+<h3>3.1 Données fournies par l’utilisateur</h3>
+<p>
+Lorsque vous utilisez le formulaire de contact, les données suivantes peuvent être collectées :
+</p>
+<ul>
+  <li>Adresse email</li>
+  <li>Contenu du message</li>
+  <li>Données techniques liées à l’envoi (date et heure)</li>
+</ul>
+
+<h3>3.2 Données collectées automatiquement</h3>
+<p>
+Lors de la navigation sur le site, certaines données techniques peuvent être collectées :
+</p>
+<ul>
+  <li>Pages consultées et interactions</li>
+  <li>Localisation approximative (pays / ville, dérivée de l’adresse IP)</li>
+  <li>Type d’appareil et de navigateur</li>
+  <li>Source de provenance</li>
+  <li>Cookies ou technologies similaires, le cas échéant</li>
+</ul>
+
+<h2>4. Cookies et mesure d’audience</h2>
+<p>
+Le site utilise des outils de mesure d’audience et de gestion de balises
+(notamment Google Analytics 4 et Google Tag Manager)
+afin d’analyser l’utilisation du site et d’en améliorer le fonctionnement.
+</p>
+<p>
+Lorsque la réglementation l’exige, les cookies non strictement nécessaires
+ne sont déposés qu’après recueil du consentement de l’utilisateur.
+Les cookies peuvent également être gérés via les paramètres du navigateur.
+</p>
+
+<h2>5. Finalités du traitement</h2>
+<ul>
+  <li>Fonctionnement et amélioration du site</li>
+  <li>Réponse aux messages envoyés via le formulaire de contact</li>
+  <li>Analyse statistique de l’audience</li>
+  <li>Sécurité et prévention des abus</li>
+  <li>Respect des obligations légales</li>
+</ul>
+
+<h2>6. Base légale</h2>
+<ul>
+  <li>Intérêt légitime de l’éditeur (fonctionnement, sécurité, amélioration du site)</li>
+  <li>Consentement de l’utilisateur lorsque requis (cookies non essentiels)</li>
+  <li>Obligations légales</li>
+</ul>
+
+<h2>7. Durée de conservation</h2>
+<ul>
+  <li><strong>Messages de contact</strong> : jusqu’à 12 mois après le dernier échange</li>
+  <li><strong>Données d’audience</strong> : selon la configuration des outils utilisés</li>
+</ul>
+
+<h2>8. Droits des utilisateurs</h2>
+<p>
+Conformément au RGPD, vous disposez de droits d’accès, de rectification,
+d’effacement, de limitation, d’opposition et de portabilité.
+</p>
+<p>
+Pour exercer vos droits, veuillez utiliser le
+<a href="/fr/contact">formulaire de contact</a>.
+</p>
+
+<h2>9. Sécurité</h2>
+<p>
+Des mesures techniques et organisationnelles raisonnables sont mises en œuvre
+pour protéger les données personnelles.
+</p>
+
+<h2>10. Modification de la politique</h2>
+<p>
+La présente politique de confidentialité peut être modifiée à tout moment.
+La date de mise à jour fait foi.
+</p>
+
+</div></div>
+<!-- PRIVACY POLICY -->  
+</div>
+</div>
+</section>
+
+ <footer class="mt-5">
   <div class="container">
      <div class="row">
            <div class="left-footer">
@@ -171,99 +290,6 @@ EOT;
 </div>
 
 <script src="/assets/js/bootstrap.bundle.min.js"></script>
-EOT;
 
-  echo '
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>DailyScope.ai - Contact</title>
-'.$includes.'
-</head>
-<body>
-'.$header.'
-  <!-- Contenu -->
-  <main class="conatct-page py-5">
-    <div class="container" style="max-width: 860px;">
-      '.$inner_html.'
-    </div>
-  </main>
-'.$footer.'
 </body>
-</html>';
-exit;
-}
-
-// --- TRAITEMENT UNIQUEMENT EN POST ---
-if ($_SERVER["REQUEST_METHOD"] !== "POST") {
-  render_page("Contact", '<div class="alert alert-warning" role="alert">
-    Accès direct à cette page. Veuillez utiliser le formulaire de contact.
-  </div>');
-}
-
-// --- ANTI-SPAM HONEYPOT ---
-if (!empty($_POST['company'])) {
-  render_page("Contact", '<div class="alert alert-danger" role="alert">
-    Erreur : tentative de spam détectée.
-  </div>');
-}
-
-// --- RÉCUPÉRATION DES CHAMPS ---
-$email            = trim($_POST['email'] ?? "");
-$subject          = trim($_POST['subject'] ?? "");
-$message          = trim($_POST['message'] ?? "");
-$captcha_answer   = trim($_POST['captcha_answer'] ?? "");
-$captcha_expected = trim($_POST['captcha_expected'] ?? "");
-
-// --- VALIDATIONS ---
-$errors = [];
-
-if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-  $errors[] = "Adresse email invalide.";
-}
-if ($subject === "" || $message === "") {
-  $errors[] = "Sujet et message sont obligatoires.";
-}
-if ($captcha_answer === "" || $captcha_answer !== $captcha_expected) {
-  $errors[] = "Captcha incorrect.";
-}
-
-if ($errors) {
-  $lis = "";
-  foreach ($errors as $e) { $lis .= "<li>".e($e)."</li>"; }
-  render_page("Contact — Erreur", '<div class="alert alert-danger" role="alert">
-    <h4 class="alert-heading">Erreur lors de l\'envoi du message</h4>
-    <ul class="mb-0">'.$lis.'</ul>
-  </div>');
-}
-
-// --- ENVOI EMAIL ---
-$clean_subject = sanitize_header($subject);
-$clean_email   = sanitize_header($email);
-
-$headers  = "From: contact@dailyscope.ai\r\n";
-$headers .= "Reply-To: ".$clean_email."\r\n";
-$headers .= "Content-Type: text/plain; charset=utf-8\r\n";
-
-$body  = "Message envoyé depuis le site ".$site_name."\n";
-$body .= "---------------------------------------\n";
-$body .= "Email expéditeur : ".$clean_email."\n";
-$body .= "Sujet : ".$clean_subject."\n";
-$body .= "---------------------------------------\n";
-$body .= $message."\n";
-
-$ok = @mail($recipient, "[Contact] ".$clean_subject, $body, $headers);
-
-if ($ok) {
-  render_page("Contact — Merci", '<div class="alert alert-success" role="alert">
-    <h4 class="alert-heading">Merci !</h4>
-    <p class="mb-0">Votre message a bien été envoyé. Nous vous répondrons rapidement.</p>
-  </div>');
-} else {
-  render_page("Contact — Erreur technique", '<div class="alert alert-danger" role="alert">
-    <h4 class="alert-heading">Erreur technique</h4>
-    <p class="mb-0">Le message n’a pas pu être envoyé. Veuillez réessayer plus tard.</p>
-  </div>');
-}
-
-?>
+</html>

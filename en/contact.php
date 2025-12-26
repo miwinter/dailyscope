@@ -95,13 +95,13 @@ EOT;
               <a class="nav-link active" aria-current="page" href="/">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/en/2025-12-25/country_counts.html">Top Countries</a>
+              <a class="nav-link active" aria-current="page" href="/en/2025-12-26/country_counts.html">Top Countries</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/en/2025-12-25/labels.html">Top Themes</a>
+              <a class="nav-link active" aria-current="page" href="/en/2025-12-26/labels.html">Top Themes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/en/2025-12-25/c1.html">In Focus</a>
+              <a class="nav-link active" aria-current="page" href="/en/2025-12-26/c1.html">In Focus</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/en/about.html">About</a>
@@ -122,7 +122,10 @@ EOT;
   <div class="container">
      <div class="row">
            <div class="left-footer">
-              <p class="text-center"> 2025-2026 © DailyScope.ai</p>
+              <p class="text-center"> 2025-2026 © DailyScope.ai |
+                <a href="/en/privacy.html">Privacy Policy</a> |
+                <a href="/en/terms.html">Terms of Use</a>
+              </p>
            </div>
      </div>
   </div>
@@ -147,13 +150,13 @@ EOT;
                <a href="/">News </a>
             </li>
             <li>
-              <a href="/en/2025-12-25/country_counts.html">Top Countries</a>
+              <a href="/en/2025-12-26/country_counts.html">Top Countries</a>
             </li>
             <li>
-              <a href="/en/2025-12-25/labels.html">Top Themes</a>
+              <a href="/en/2025-12-26/labels.html">Top Themes</a>
             </li>
             <li>
-              <a href="/en/2025-12-25/c1.html">In Focus</a>
+              <a href="/en/2025-12-26/c1.html">In Focus</a>
             </li>
             <li>
               <a href="/en/about.html">About</a>

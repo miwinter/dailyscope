@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Today's News</title>
+<title>DailyScope.ai - About</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,7 +26,7 @@
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
         page_lang: 'en',
-        page_type: 'contact',
+        page_type: 'terms',
         
         
         
@@ -106,78 +106,116 @@
   </nav>
 </div>
 
-  <!-- Contact page body -->
-  <main class="conatct-page py-5"> <!-- note: class name follows site CSS -->
-    <div class="container">
-      <div class="row g-4 justify-content-center">
-        <div class="col-lg-7">
-          <h2 class="comon-sub-heading mb-4">Contact</h2>
-          <!-- Pure HTML form (PHP to be wired later) -->
-          <form id="contact-form" action="/en/contact.php" method="post" novalidate>
-            <!-- Honeypot (spam trap) -->
-            <div style="position:absolute; left:-5000px;" aria-hidden="true">
-              <label for="company">Company</label>
-              <input type="text" id="company" name="company" tabindex="-1" autocomplete="off" />
-            </div>
+<section class="about-ds py-5">
+  <div class="container">
+    <div class="row justify-content-center">
 
-            <div class="mb-3">
-              <label for="email" class="form-label"><strong>Your e-mail</strong></label>
-              <input type="email" class="form-control" id="email" name="email" placeholder="name@domain.com" required autocomplete="email" />
-            </div>
-
-            <div class="mb-3">
-              <label for="subject" class="form-label"><strong>Subject</strong></label>
-              <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject of your message" required maxlength="150" />
-            </div>
-
-            <div class="mb-3">
-              <label for="message" class="form-label"><strong>Message</strong></label>
-              <textarea class="form-control" id="message" name="message" rows="6" placeholder="Your message…" required></textarea>
-            </div>
-
-            <!-- Simple CAPTCHA (front only; validate in PHP later) -->
-            <div class="mb-3">
-              <label for="captcha_answer" class="form-label"><strong>Captcha</strong> <small class="text-muted">(anti-spam)</small></label>
-              <div class="input-group">
-                <span class="input-group-text" id="captcha_question" aria-live="polite">…</span>
-                <input type="number" class="form-control" id="captcha_answer" name="captcha_answer" inputmode="numeric" placeholder="Response" required aria-describedby="captcha_question" />
-              </div>
-              <input type="hidden" id="captcha_expected" name="captcha_expected" />
-            </div>
-
-            <button type="submit" class="btn btn-dark">Send</button>
-          </form>
-          <p class="mt-3 text-muted" style="font-size: 14px;">By submitting this form, you agree that your information will only be used to process your request.</p>
-        </div>
-      </div>
-    </div>
-  </main>
+<!-- TERMS OF USE -->    
+<div class="col-lg-7">
+  <div class="terms-content">
+<style>
+  .terms-content h1, .terms-content h2, .terms-content h3 {
+    margin-top: 1.5em;
+    font-weight: bold;
+    font-size: medium;
+  }
+  .terms-content p, .terms-content ul, .terms-content ol {
+    margin-bottom: 1em;
+    font-size: small;
+  }
+</style>
 
 
-  <!-- JS: Bootstrap + tiny captcha helper (front-end only) -->
-  <script src="/assets/js/bootstrap.bundle.min.js"></script>
-  <script>
-    // Front-only math captcha; real validation must be done in contact.php
-    (function() {
-      function rand(min, max) { return Math.floor(Math.random() * (max - min + 1)) + min; }
-      var a = rand(1, 9), b = rand(1, 9), op = ['+', '-'][rand(0,1)];
-      var expected = op === '+' ? (a + b) : (a - b);
-      document.getElementById('captcha_question').textContent = a + ' ' + op + ' ' + b + ' = ?';
-      document.getElementById('captcha_expected').value = expected;
+<h1>Terms of Use</h1>
+<p><em>Last updated: December 18, 2025</em></p>
 
-      // Light client-side check (progressive enhancement only)
-      var form = document.getElementById('contact-form');
-      form.addEventListener('submit', function(e) {
-        var ans = document.getElementById('captcha_answer').value;
-        var exp = document.getElementById('captcha_expected').value;
-        if (String(ans).trim() !== String(exp)) {
-          e.preventDefault();
-          alert('Captcha incorrect. Merci de réessayer.');
-        }
-      });
-    })();
-  </script>
+<p>
+These Terms of Use (“Terms”) govern your access to and use of DailyScope.ai (the “Service”).
+By using the Service, you agree to these Terms. If you do not agree, do not use the Service.
+</p>
 
+<h2>1. Operator</h2>
+<p>
+DailyScope.ai is a personal project operated by an individual (“Operator”).<br>
+Contact: <a href="/contact">Contact form</a>
+</p>
+
+<h2>2. Description of the Service</h2>
+<p>
+DailyScope.ai provides automated analysis of international news coverage using software algorithms and AI models.
+Outputs may include themes, aggregated rankings, and summaries.
+</p>
+
+<h2>3. Informational purpose and limitations</h2>
+<p>
+The Service is provided for informational purposes only and does not constitute legal, financial, medical,
+or other professional advice. You are solely responsible for how you interpret and use the information.
+</p>
+
+<h2>4. AI and automation disclaimer</h2>
+<p>
+Some outputs are generated or assisted by automated systems and may contain errors, omissions, or misinterpretations.
+You should verify important information using primary sources before relying on it.
+</p>
+
+<h2>5. Intellectual property</h2>
+<p>
+The Service (including branding, design, code, and original content created by the Operator) is protected by intellectual property laws.
+Third-party content referenced on the Service remains the property of its respective owners.
+</p>
+
+<h2>6. Acceptable use</h2>
+<p>You agree not to:</p>
+<ul>
+  <li>Use the Service in violation of any applicable law or regulation</li>
+  <li>Attempt to access or disrupt systems, servers, or data without authorization</li>
+  <li>Scrape/crawl the Service at scale or use automated requests that degrade performance, without prior written permission</li>
+  <li>Misrepresent the Service’s outputs as verified facts or as endorsements by DailyScope.ai</li>
+</ul>
+
+<h2>7. Third-party links</h2>
+<p>
+The Service may link to third-party websites. We are not responsible for third-party content or services.
+</p>
+
+<h2>8. Availability</h2>
+<p>
+The Service may be modified, suspended, or discontinued at any time.
+We do not guarantee uninterrupted availability.
+</p>
+
+<h2>9. Warranty disclaimer</h2>
+<p>
+To the maximum extent permitted by law, the Service is provided “as is” and “as available” without warranties of any kind.
+</p>
+
+<h2>10. Limitation of liability</h2>
+<p>
+To the maximum extent permitted by law, the Operator shall not be liable for indirect, incidental, special,
+consequential, or punitive damages, or loss of profits, revenues, data, or goodwill arising from your use of the Service.
+</p>
+
+<h2>11. Governing law</h2>
+<p>
+These Terms are governed by the laws of <strong>France</strong>, subject to mandatory consumer protection rules where applicable.
+</p>
+
+<h2>12. Changes to these Terms</h2>
+<p>
+We may update these Terms from time to time. The “Last updated” date indicates the latest revision.
+Your continued use of the Service after changes become effective constitutes acceptance of the updated Terms.
+</p>
+
+<h2>13. Contact</h2>
+<p>
+Questions about these Terms? Please use the <a href="/contact">contact form</a>.
+</p>
+
+</div></div>
+<!-- TERMS OF USE -->  
+</div>
+</div>
+</section>
 
  <footer class="mt-5">
   <div class="container">
