@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Labels & Categories — History + Tag Cloud</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/css/fontawesome-5.15.4.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<meta name="description"
+      content="DailyScope.ai automatically analyzes global news to highlight the most covered countries and themes.">
+<meta property="og:title" content="DailyScope.ai — Today’s global news signals">
+<meta property="og:description"
+      content="DailyScope.ai automatically analyzes global news to highlight the most covered countries and themes.">
+<meta property="og:image" content="https://www.dailyscope.ai/assets/images/dailyscope-carte.jpg">
+<meta property="og:url" content="https://www.dailyscope.ai/en/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DailyScope.ai">
+<link rel="canonical" href="https://www.dailyscope.ai/en/">
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+        page_lang: 'en',
+        page_type: 'topics_analysis',
+        
+        
+        
+});
+    (function(w,d,s,l,i){
+        w[l]=w[l]||[];
+        w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+        var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),
+            dl=l!='dataLayer'?'&l='+l:'';
+        j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+        f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KL7V4FQH');
+</script>
+  <script src="/assets/js/anychart-custom-build.js"></script>
+  <script src="/assets/js/world.js"></script>
+    <style>
+    
+    html, body {
+      width: 100%; height: 100%;
+      margin: 0; padding: 0;
+    }
+    .band { width: 100%; margin: 0; padding: 0; }
+    .band--title { background: #f8f9fa; border-top: 1px solid #eee; }
+    .band--chart { background: #fff; border-top: 1px solid #eee; }
+    .content-shell {
+      width: 100%;
+      max-width: 1400px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+    .band--title .content-shell { padding: 28px 16px 18px; }
+    .band--chart .content-shell { padding: 20px 16px 40px; }
+    .section-title {
+      margin: 0;
+      font: 600 20px/1.3 system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial;
+    }
+    .section-subtitle {
+      margin: 8px 0 0 0;
+      color: #666;
+      font: 400 14px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial;
+    }
+    .chart-frame {
+      width: min(100%, 800px);
+      margin: 0 auto;
+      height: clamp(320px, 56vw, 480px); /* min 320px, grandit avec la largeur */
+      position: relative;
+    }
+
+    /* le chart occupe 100% du cadre */
+    .chart-plot {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .content-shell--narrow {
+      max-width: 860px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  </style>
+</head>
+<body>
+  <header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/fra.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="Français" title="Français" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/en', '/fr');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>              
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/2026-01-02/country_counts.html">Top Countries</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/2026-01-02/labels.html">Top Themes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/2026-01-02/c1.html">In Focus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+  <!-- Section 1: Tag Cloud -->
+  <section class="band band--title">
+  <div class="content-shell content-shell--narrow">
+    <h2 class="section-title">Main Topics of the Day</h2>
+    <p class="section-subtitle">
+      <span class="legend-note">
+      Here’s the main set of topics identified in today’s collected articles.
+  In <span style="background-color: #9C74DE; color: white; font-style: normal;">&nbsp;purple&nbsp;</span> are the most frequent topics, already discussed in previous days;
+  in <span style="background-color: #D67883; color: white; font-style: normal;">&nbsp;red&nbsp;</span> are the topics that appeared today for the first time.
+      </span>
+    </p>
+  </div>
+</section>
+  <section class="band band--chart">
+    <div class="content-shell">
+      <div class="chart-frame">
+        <div id="chart-tagcloud" class="chart-plot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Labels History (stacked columns) -->
+  <section class="band band--title">
+  <div class="content-shell content-shell--narrow">
+    <h2 class="section-title">Topic History</h2>
+    <p class="section-subtitle">
+      <span class="legend-note">
+      Main topics identified over the past 7 days. 
+      Hover over a column to display the number of articles associated with a topic.
+      Click on a topic in the legend or on a bar to highlight the full trend for that topic.
+      </span>
+    </p>
+  </div>
+</section>
+  <section class="band band--chart">
+    <div class="content-shell">
+      <div class="chart-frame">
+        <div id="chart-labels" class="chart-plot"></div>
+      </div>
+    </div>
+  </section>
+  
+<script>
+anychart.onDocumentReady(function () {
+
+  // --- Data: [{ category, weight, remanent }, ...]
+  var raw = [{"category": "China Drills Near Taiwan", "remanent": 1, "weight": 26}, {"category": "Russia\u2013Ukraine Strikes and Drone Attacks", "remanent": 1, "weight": 45}, {"category": "Israel Bans Gaza NGOs", "remanent": 1, "weight": 21}, {"category": "US Anti-Drug Boat Strike", "remanent": 1, "weight": 15}, {"category": "Iran Economic Protests", "remanent": 1, "weight": 42}, {"category": "Ukraine\u2013Russia Peace Talks", "remanent": 1, "weight": 17}, {"category": "US\u2013Venezuela Military Anti-Drug Strikes", "remanent": 1, "weight": 14}, {"category": "Finland Cable Sabotage", "remanent": 1, "weight": 12}, {"category": "Putin Alleges Ukraine Attack", "remanent": 1, "weight": 38}, {"category": "Crans-Montana Explosion", "remanent": 0, "weight": 12}, {"category": "Zohran Mamdani Sworn In", "remanent": 0, "weight": 17}, {"category": "Swiss Ski Resort Deaths", "remanent": 0, "weight": 32}, {"category": "Crans-Montana Bar Fire", "remanent": 0, "weight": 32}, {"category": "Bulgaria Adopts Euro", "remanent": 0, "weight": 16}, {"category": "Xi Pledges Taiwan Reunification", "remanent": 0, "weight": 10}, {"category": "US\u2013Venezuela Dialogue", "remanent": 0, "weight": 17}] || [];
+
+  // --- Helpers
+  function escHtml(s){
+    s = String(s == null ? '' : s);
+    return s.replace(/&/g,'&amp;')
+            .replace(/</g,'&lt;')
+            .replace(/>/g,'&gt;')
+            .replace(/"/g,'&quot;')
+            .replace(/'/g,'&#39;');
+  }
+  function hexToRgb(h){
+    h = String(h||'').replace('#','');
+    if (h.length === 3) h = h.split('').map(function(x){return x+x;}).join('');
+    return { r:parseInt(h.slice(0,2),16)||0, g:parseInt(h.slice(2,4),16)||0, b:parseInt(h.slice(4,6),16)||0 };
+  }
+  function rgbToHex(r,g,b){
+    function c(v){ v=Math.max(0,Math.min(255,Math.round(v))); return v.toString(16).padStart(2,'0'); }
+    return '#'+c(r)+c(g)+c(b);
+  }
+  function lerp(a,b,t){ return a + (b-a)*t; }
+  function blend(c1,c2,t){ var A=hexToRgb(c1),B=hexToRgb(c2); return rgbToHex(lerp(A.r,B.r,t), lerp(A.g,B.g,t), lerp(A.b,B.b,t)); }
+
+  // --- min/max for weight
+  var minVal = Infinity, maxVal = -Infinity;
+  for (var i = 0; i < raw.length; i++) {
+    var wv = Number(raw[i].weight);
+    if (isFinite(wv)) { if (wv < minVal) minVal = wv; if (wv > maxVal) maxVal = wv; }
+  }
+  if (minVal === Infinity) { minVal = 0; maxVal = 0; }
+  function norm(v){
+    if (!isFinite(v) || maxVal === minVal) return 0.5;
+    var t = (v - minVal) / (maxVal - minVal);
+    return Math.max(0, Math.min(1, t));
+  }
+
+  // --- ramps
+  var RAMP_COLD  = { lo: '#F2D9DC', hi: '#D67883' };
+  var RAMP_HOT = { lo: '#E4DAF3', hi: '#9C74DE' };
+
+  // --- font scaling (adjust if you want larger/smaller)
+  var FS_MIN = 6, FS_MAX = 18;       // title line
+  var FS_SUB = function(fs){ return Math.max(9, Math.round(fs * 0.85)); }; // value line
+
+  function fontSizeFromValue(v){
+    if (!isFinite(v) || maxVal === minVal) return Math.round((FS_MIN + FS_MAX)/2);
+    var t = (v - minVal) / (maxVal - minVal); // 0..1
+    return Math.round(FS_MIN + t * (FS_MAX - FS_MIN));
+  }
+
+  // --- Build as-table nodes with per-point color + per-point HTML label
+  var nodes = [{ id: 'root', name: 'Categories' }];
+  for (var j = 0; j < raw.length; j++) {
+    var w = Number(raw[j].weight) || 0;
+    var r = Number(raw[j].remanent) || 0;
+    var t = norm(w);
+    var ramp = (r === 1) ? RAMP_HOT : RAMP_COLD;
+    var fill = blend(ramp.lo, ramp.hi, t);
+
+    var fs  = fontSizeFromValue(w);
+    var fs2 = FS_SUB(fs);
+    var nameHtml = escHtml(raw[j].category);
+    var valueHtml = isFinite(w) ? String(w) : '';
+
+    // Per-point HTML label (no callbacks, no tokens)
+    var pointLabelHtml =
+      '<div style="text-align:center; line-height:1.15; padding:2px 4px;">' +
+        '<span style="display:block; font-size:'+fs+'px;">'+ nameHtml +'</span>' +
+        (valueHtml ? '<span style="font-size:'+fs2+'px; opacity:.75;"><br>'+ valueHtml +'</span>' : '') +
+      '</div>';
+
+    nodes.push({
+      id: 'cat_' + j,
+      parent: 'root',
+      name: String(raw[j].category),
+      value: w,
+      remanent: r,
+      normal: { fill: fill },                  // color per point
+      label: { enabled: true, useHtml: true,   // label per point
+               fontColor: '#0f172a',
+               fontWeight: 600,
+               format: pointLabelHtml }
+    });
+  }
+
+  var tree  = anychart.data.tree(nodes, 'as-table');
+  var chart = anychart.treeMap(tree);
+
+  var credits = chart.credits();
+  credits.enabled(false);
+
+  // --- style
+  chart.background().fill('#ffffff');     // remets '#0f172a' + label fontColor '#e2e8f0' si thème sombre
+  chart.headers().enabled(false);
+  chart.margin(0); chart.padding(0);
+  chart.maxDepth(1);
+  chart.selectionMode('none');
+
+  // Keep our per-point colors (don’t apply global palette/scales)
+  // (Ne pas appeler palette()/colorScale() sur ta build)
+
+  // no borders
+  chart.normal().stroke('none');
+  chart.hovered().stroke('none');
+  chart.selected().stroke('none');
+
+  // Disable global labels (we use per-point labels above)
+  chart.labels().enabled(false);
+
+  chart.container('chart-tagcloud');
+  chart.draw();
+});
+</script>
+
+
+<script>
+
+  // ===== Chart 2: Labels History (from labels_template_en.html) =====
+  anychart.onDocumentReady(function () {
+    (function () {
+      var rawData = [["China Drills Near Taiwan", 0, 38, 49, 64, 25, 0, 0], ["Crans-Montana Bar Fire", 32, 0, 0, 0, 0, 0, 0], ["Iran Economic Protests", 42, 24, 0, 0, 0, 0, 0], ["Putin Alleges Ukraine Attack", 38, 0, 31, 0, 0, 0, 0], ["Russia\u2013Ukraine Strikes and Drone Attacks", 45, 32, 0, 0, 0, 0, 0], ["Swiss Ski Resort Deaths", 32, 0, 0, 0, 0, 0, 0], ["Thailand\u2013Cambodia Ceasefire Agreement", 0, 0, 0, 0, 34, 58, 29], ["Trump Ukraine Peace Talks", 0, 0, 0, 0, 148, 0, 0]];
+      var dates = ["2026-01-02", "2026-01-01", "2025-12-31", "2025-12-30", "2025-12-29", "2025-12-28", "2025-12-27"].reverse();
+
+      var chart = anychart.column();
+      var credits = chart.credits();
+      credits.enabled(false);
+      chart.yScale().stackMode('value');
+
+      var colors = ['#72e5ac','#72e5e3','#72b0e5','#7279e5','#a372e5','#da72e5','#e572b8','#e57281','#e59b72','#e5d272'];
+
+      var seriesList = [];
+      var lastHighlighted = null;
+
+      function setHighlighted(s, on) {
+        var orig = s.meta('origFill');
+        if (!orig) return;
+        if (on) {
+          s.normal().fill('#000000');
+          s.normal().stroke('2 #fff 1');
+          s.zIndex(10);
+          s.meta('isHighlighted', true);
+          lastHighlighted = s;
+        } else {
+          s.normal().fill(orig);
+          s.normal().stroke('2 #fff 1');
+          s.zIndex(1);
+          s.meta('isHighlighted', false);
+          if (lastHighlighted === s) lastHighlighted = null;
+        }
+      }
+
+      function toggleHighlight(s) {
+        if (lastHighlighted && lastHighlighted !== s) setHighlighted(lastHighlighted, false);
+        var isOn = !!s.meta('isHighlighted');
+        setHighlighted(s, !isOn);
+      }
+
+      for (var i = 0; i < rawData.length; i++) {
+        var labelData = [];
+        var values = rawData[i].slice(1).reverse();
+        for (var j = 0; j < dates.length; j++) {
+          labelData.push({ x: dates[j], value: values[j] });
+        }
+        var s = chart.column(labelData);
+        var color = colors[i % colors.length];
+
+        s.name(rawData[i][0]);
+        s.normal().stroke('2 #fff 1');
+        s.normal().fill(color);
+
+        s.meta('origFill', color);
+        s.meta('isHighlighted', false);
+        s.zIndex(1);
+
+        s.listen('pointClick', function(e) { toggleHighlight(e.series); });
+
+        seriesList.push(s);
+      }
+
+      var legend = chart.legend();
+      //legend.enabled(true).position('right').itemsLayout('vertical').padding([20,0,0,0]).fontSize(13);
+
+              // après avoir fait var legend = chart.legend(); ...
+      legend.enabled(true).padding([8,0,0,0]).fontSize(12);
+
+      function applyLegendLayout() {
+        if (window.innerWidth <= 640) {
+          legend.position('bottom')
+            .itemsLayout('horizontal')
+            .align('left');
+          chart.padding([10,10,48,10]);   // espace pour la légende en bas
+        } else {
+          legend.position('right')
+            .itemsLayout('vertical')
+            .align('center')
+            .padding([0,0,0,50]);
+          chart.padding([10,10,10,10]);
+        }
+      }
+      applyLegendLayout();
+      window.addEventListener('resize', applyLegendLayout);
+
+      chart.listen('legendItemClick', function (e) {
+        var s = seriesList[e.itemIndex];
+        if (s) toggleHighlight(s);
+        e.preventDefault();
+      });
+
+      chart.tooltip()
+        .displayMode('single')
+        .titleFormat(function () { return this.x + ' — ' + this.seriesName; })
+        .format(function () { return this.value + ' articles'; });
+
+      chart.xAxis().labels().rotation(-45);
+      chart.yAxis().title('Number of articles');
+
+      chart.container('chart-labels');
+      chart.draw();
+    })();
+  });
+
+
+</script>
+
+   <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai |
+                <a href="/en/privacy.html">Privacy Policy</a> |
+                <a href="/en/terms.html">Terms of Use</a>
+              </p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li>
+               <a href="/">News </a>
+            </li>
+            <li>
+              <a href="/en/2026-01-02/country_counts.html">Top Countries</a>
+            </li>
+            <li>
+              <a href="/en/2026-01-02/labels.html">Top Themes</a>
+            </li>
+            <li>
+              <a href="/en/2026-01-02/c1.html">In Focus</a>
+            </li>
+            <li>
+              <a href="/en/about.html">About</a>
+            </li>
+            <li>
+              <a href="/en/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
