@@ -95,13 +95,13 @@ EOT;
               <a class="nav-link active" aria-current="page" href="/fr/">Actus</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2026-01-04/country_counts.html">Pays</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2026-01-05/country_counts.html">Pays</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2026-01-04/labels.html">Thèmes</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2026-01-05/labels.html">Thèmes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2026-01-04/c1.html">France Focus</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2026-01-05/c1.html">France Focus</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
@@ -150,13 +150,13 @@ EOT;
                <a href="/">Actus </a>
             </li>
             <li>
-              <a href="/fr/2026-01-04/country_counts.html">Pays</a>
+              <a href="/fr/2026-01-05/country_counts.html">Pays</a>
             </li>
             <li>
-              <a href="/fr/2026-01-04/labels.html">Thèmes</a>
+              <a href="/fr/2026-01-05/labels.html">Thèmes</a>
             </li>
             <li>
-              <a href="/fr/2026-01-04/c1.html">France Focus</a>
+              <a href="/fr/2026-01-05/c1.html">France Focus</a>
             </li>
             <li>
               <a href="/fr/about.html">A Propos</a>
