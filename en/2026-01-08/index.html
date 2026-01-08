@@ -26,7 +26,7 @@
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
         page_lang: 'en',
-        page_type: 'contact',
+        page_type: 'old_news_home',
         
         
         
@@ -106,78 +106,117 @@
   </nav>
 </div>
 
-  <!-- Contact page body -->
-  <main class="conatct-page py-5"> <!-- note: class name follows site CSS -->
-    <div class="container">
-      <div class="row g-4 justify-content-center">
-        <div class="col-lg-7">
-          <h2 class="comon-sub-heading mb-4">Contact</h2>
-          <!-- Pure HTML form (PHP to be wired later) -->
-          <form id="contact-form" action="/en/contact.php" method="post" novalidate>
-            <!-- Honeypot (spam trap) -->
-            <div style="position:absolute; left:-5000px;" aria-hidden="true">
-              <label for="company">Company</label>
-              <input type="text" id="company" name="company" tabindex="-1" autocomplete="off" />
-            </div>
+<!-- Top story  --> 
+ <section class="total-body pt-3 d-block">
+   <div class="hilights-news mt-4">
+       <div class="container">
+          <div class="row g-lg-2">
+             <div class="col-lg-7">
+                 <div class="main-st-sec">
+                    <h2 class="comon-sub-heading">
+                        <b>Dominant Themes</b> 
+                        <span class="tooltip_mw">
+                        &nbsp;<img height="20" src="/assets/images/ic.png" style="vertical-align: text-top;">
+                        <span class="tooltiptext_mw">
+                        This section highlights today’s most talked-about topics — the ones that have been trending for several days or even weeks.  
+                        </span>
+                        </span>
+                    </h2>
+                    <div class="min-slider-st mt-4">
+                       <div class="main-news owl-carousel owl-theme owl-loaded owl-drag">
+                       
+                        <div class="owl-stage-outer">
+                        
+                        <div class="owl-stage" style="transform: translate3d(-1525px, 0px, 0px); transition: all; width: 4576px;">
 
-            <div class="mb-3">
-              <label for="email" class="form-label"><strong>Your e-mail</strong></label>
-              <input type="email" class="form-control" id="email" name="email" placeholder="name@domain.com" required autocomplete="email" />
-            </div>
+                          <div class="owl-item cloned" style="width: 752.664px; margin-right: 10px;"></div>
+                          <div class="owl-item cloned" style="width: 752.664px; margin-right: 10px;"></div>
+                
+                          <div class="owl-item" style="width: 752.664px; margin-right: 10px;">
+                            <a href="/en/2026-01-08/1.html" class="comon-slider-items">
+                            <figure>
+                               <img src="/illustrations/2026-01-08/2026-01-08-1.webp" alt="big1">
+                            </figure>                       
+                            <span class="titel-t d-block">
+                                <span class="nes-tags d-block limite-texte" style="white-space:nowrap">US–Venezuela Political and Sanctions Tensions</span>
+                                <p> Escalating US-Venezuela Conflict: Military Operations, Sanctions, and Geopolitical Tensions</p> 
+                                  <span class="date-t d-block"><b>130</b> related articles</span>
+                            </span>
+                          </a></div>
+                        
+                        </div></div>
 
-            <div class="mb-3">
-              <label for="subject" class="form-label"><strong>Subject</strong></label>
-              <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject of your message" required maxlength="150" />
-            </div>
+                          </div>
+                    </div>
+                 </div>
+             </div>
 
-            <div class="mb-3">
-              <label for="message" class="form-label"><strong>Message</strong></label>
-              <textarea class="form-control" id="message" name="message" rows="6" placeholder="Your message…" required></textarea>
-            </div>
-
-            <!-- Simple CAPTCHA (front only; validate in PHP later) -->
-            <div class="mb-3">
-              <label for="captcha_answer" class="form-label"><strong>Captcha</strong> <small class="text-muted">(anti-spam)</small></label>
-              <div class="input-group">
-                <span class="input-group-text" id="captcha_question" aria-live="polite">…</span>
-                <input type="number" class="form-control" id="captcha_answer" name="captcha_answer" inputmode="numeric" placeholder="Response" required aria-describedby="captcha_question" />
-              </div>
-              <input type="hidden" id="captcha_expected" name="captcha_expected" />
-            </div>
-
-            <button type="submit" class="btn btn-dark">Send</button>
-          </form>
-          <p class="mt-3 text-muted" style="font-size: 14px;">By submitting this form, you agree that your information will only be used to process your request.</p>
-        </div>
-      </div>
-    </div>
-  </main>
-
-
-  <!-- JS: Bootstrap + tiny captcha helper (front-end only) -->
-  <script src="/assets/js/bootstrap.bundle.min.js"></script>
-  <script>
-    // Front-only math captcha; real validation must be done in contact.php
-    (function() {
-      function rand(min, max) { return Math.floor(Math.random() * (max - min + 1)) + min; }
-      var a = rand(1, 9), b = rand(1, 9), op = ['+', '-'][rand(0,1)];
-      var expected = op === '+' ? (a + b) : (a - b);
-      document.getElementById('captcha_question').textContent = a + ' ' + op + ' ' + b + ' = ?';
-      document.getElementById('captcha_expected').value = expected;
-
-      // Light client-side check (progressive enhancement only)
-      var form = document.getElementById('contact-form');
-      form.addEventListener('submit', function(e) {
-        var ans = document.getElementById('captcha_answer').value;
-        var exp = document.getElementById('captcha_expected').value;
-        if (String(ans).trim() !== String(exp)) {
-          e.preventDefault();
-          alert('Captcha incorrect. Merci de réessayer.');
-        }
-      });
-    })();
-  </script>
-
+<!-- Secondary Stories -->
+             <div class="col-lg-5">
+                <div class="row shorts-news-d1 row-cols-1 row-cols-md-2 g-lg-2">
+                    
+                    <div class="col">
+                        <a href="/en/2026-01-08/2.html" class="comon-slider-items">
+                            <figure>
+                                <img src="/illustrations/2026-01-08/2026-01-08-2.webp" alt="Article secondaire">
+                            </figure>
+                            
+                            <span class="titel-t d-block">
+                                <span class="nes-tags d-block limite-texte">Denmark–US Greenland Dispute</span>
+                                <p>Tensions Rise Over US Interest in Greenland Amid Sovereignty and Security Concerns</p> 
+                                <span class="date-t d-block"><b>79</b> related articles</span>
+                            </span>
+                        </a>
+                    </div>
+                    
+                    <div class="col">
+                        <a href="/en/2026-01-08/3.html" class="comon-slider-items">
+                            <figure>
+                                <img src="/illustrations/2026-01-08/2026-01-08-3.webp" alt="Article secondaire">
+                            </figure>
+                            
+                            <span class="titel-t d-block">
+                                <span class="nes-tags d-block limite-texte">US Intercepts Russian Tanker</span>
+                                <p>US-Russia Maritime Confrontation Over Sanctioned Oil Tankers</p> 
+                                <span class="date-t d-block"><b>69</b> related articles</span>
+                            </span>
+                        </a>
+                    </div>
+                    
+                    <div class="col">
+                        <a href="/en/2026-01-08/4.html" class="comon-slider-items">
+                            <figure>
+                                <img src="/illustrations/2026-01-08/2026-01-08-4.webp" alt="Article secondaire">
+                            </figure>
+                            
+                            <span class="titel-t d-block">
+                                <span class="nes-tags d-block limite-texte">Russia–Ukraine Military Conflict and Diplomacy</span>
+                                <p>Ongoing Conflict and Diplomatic Efforts in the Russia-Ukraine War</p> 
+                                <span class="date-t d-block"><b>47</b> related articles</span>
+                            </span>
+                        </a>
+                    </div>
+                    
+                    <div class="col">
+                        <a href="/en/2026-01-08/5.html" class="comon-slider-items">
+                            <figure>
+                                <img src="/illustrations/2026-01-08/2026-01-08-5.webp" alt="Article secondaire">
+                            </figure>
+                            
+                            <span class="titel-t d-block">
+                                <span class="nes-tags d-block limite-texte">US Treaty Withdrawals</span>
+                                <p>US Withdrawals from International Organizations Mark Major Shift in Foreign Policy</p> 
+                                <span class="date-t d-block"><b>36</b> related articles</span>
+                            </span>
+                        </a>
+                    </div>
+                    
+                </div>
+             </div>
+          </div>
+       </div>
+   </div>
+</section>
 
  <footer class="mt-5">
   <div class="container">
