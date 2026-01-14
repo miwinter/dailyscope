@@ -202,7 +202,7 @@
 anychart.onDocumentReady(function () {
 
   // --- Data: [{ category, weight, remanent }, ...]
-  var raw = [] || [];
+  var raw = [{"category": "Iran Protests and Unrest Casualties", "remanent": 1, "weight": 121}, {"category": "Russia\u2013Ukraine Military Conflict and Diplomacy", "remanent": 1, "weight": 51}, {"category": "US\u2013Iran Military and Diplomatic Tensions", "remanent": 1, "weight": 69}, {"category": "US\u2013Venezuela Military and Political Tensions", "remanent": 1, "weight": 39}, {"category": "US Visa Revocations", "remanent": 1, "weight": 27}, {"category": "Black Sea Drone Strikes", "remanent": 1, "weight": 10}, {"category": "US Troop Withdrawal Middle East", "remanent": 0, "weight": 23}, {"category": "Thailand Train Derailment", "remanent": 0, "weight": 19}, {"category": "Arctic Defense Buildup", "remanent": 0, "weight": 11}, {"category": "Denmark\u2013US Greenland Strategic Tensions", "remanent": 1, "weight": 91}, {"category": "Venezuela Prisoner Release", "remanent": 0, "weight": 17}, {"category": "FBI Journalist Raid", "remanent": 0, "weight": 12}] || [];
 
   // --- Helpers
   function escHtml(s){
@@ -322,7 +322,7 @@ anychart.onDocumentReady(function () {
   // ===== Chart 2: Labels History (from labels_template_en.html) =====
   anychart.onDocumentReady(function () {
     (function () {
-      var rawData = [["Denmark\u2013US Greenland Dispute", 1, 36, 0, 50, 57, 55, 79], ["Iran Mass Protests Crackdown", 0, 0, 0, 109, 103, 53, 0], ["Iran Protests and Unrest Casualties", 1, 105, 131, 0, 0, 0, 0], ["Israel\u2013Palestinian Conflict Military Actions", 1, 0, 0, 0, 0, 0, 0], ["NATO Arctic Security", 1, 0, 0, 0, 0, 0, 0], ["NATO Greenland Security", 1, 0, 0, 0, 0, 0, 0], ["Russia\u2013Ukraine Military Conflict and Diplomacy", 0, 66, 73, 71, 97, 80, 47], ["US\u2013Venezuela Political and Military Tensions", 0, 0, 0, 0, 82, 124, 0]];
+      var rawData = [["Denmark\u2013US Greenland Dispute", 0, 36, 0, 50, 57, 55, 79], ["Denmark\u2013US Greenland Strategic Tensions", 91, 0, 0, 0, 0, 0, 0], ["Iran Mass Protests Crackdown", 0, 0, 0, 109, 103, 53, 0], ["Iran Protests and Unrest Casualties", 121, 105, 131, 0, 0, 0, 0], ["Russia\u2013Ukraine Military Conflict and Diplomacy", 51, 66, 73, 71, 97, 80, 47], ["US\u2013Iran Military and Diplomatic Tensions", 69, 0, 0, 0, 0, 0, 0], ["US\u2013Venezuela Military and Political Tensions", 39, 0, 0, 0, 0, 0, 0], ["US\u2013Venezuela Political and Military Tensions", 0, 0, 0, 0, 82, 124, 0]];
       var dates = ["2026-01-14", "2026-01-13", "2026-01-12", "2026-01-11", "2026-01-10", "2026-01-09", "2026-01-08"].reverse();
 
       var chart = anychart.column();
