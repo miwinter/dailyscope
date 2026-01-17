@@ -95,15 +95,6 @@ EOT;
               <a class="nav-link active" aria-current="page" href="/">News</a>
             </li>
             <li class="nav-item">
-<<<<<<< HEAD
-              <a class="nav-link active" aria-current="page" href="/en/2026-01-16/country_counts.html">Top Countries</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/en/2026-01-16/labels.html">Top Themes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/en/2026-01-16/c1.html">In Focus</a>
-=======
               <a class="nav-link active" aria-current="page" href="/en/2026-01-17/country_counts.html">Top Countries</a>
             </li>
             <li class="nav-item">
@@ -111,7 +102,6 @@ EOT;
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/en/2026-01-17/c1.html">In Focus</a>
->>>>>>> bd46573 (Build for 2026-01-17)
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/en/about.html">About</a>
@@ -160,15 +150,6 @@ EOT;
                <a href="/">News </a>
             </li>
             <li>
-<<<<<<< HEAD
-              <a href="/en/2026-01-16/country_counts.html">Top Countries</a>
-            </li>
-            <li>
-              <a href="/en/2026-01-16/labels.html">Top Themes</a>
-            </li>
-            <li>
-              <a href="/en/2026-01-16/c1.html">In Focus</a>
-=======
               <a href="/en/2026-01-17/country_counts.html">Top Countries</a>
             </li>
             <li>
@@ -176,7 +157,6 @@ EOT;
             </li>
             <li>
               <a href="/en/2026-01-17/c1.html">In Focus</a>
->>>>>>> bd46573 (Build for 2026-01-17)
             </li>
             <li>
               <a href="/en/about.html">About</a>
