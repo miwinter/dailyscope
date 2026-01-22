@@ -95,13 +95,13 @@ EOT;
               <a class="nav-link active" aria-current="page" href="/">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/en/2026-01-21/country_counts.html">Top Countries</a>
+              <a class="nav-link active" aria-current="page" href="/en/2026-01-22/country_counts.html">Top Countries</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/en/2026-01-21/labels.html">Top Themes</a>
+              <a class="nav-link active" aria-current="page" href="/en/2026-01-22/labels.html">Top Themes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/en/2026-01-21/c1.html">In Focus</a>
+              <a class="nav-link active" aria-current="page" href="/en/2026-01-22/c1.html">In Focus</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/en/about.html">About</a>
@@ -150,13 +150,13 @@ EOT;
                <a href="/">News </a>
             </li>
             <li>
-              <a href="/en/2026-01-21/country_counts.html">Top Countries</a>
+              <a href="/en/2026-01-22/country_counts.html">Top Countries</a>
             </li>
             <li>
-              <a href="/en/2026-01-21/labels.html">Top Themes</a>
+              <a href="/en/2026-01-22/labels.html">Top Themes</a>
             </li>
             <li>
-              <a href="/en/2026-01-21/c1.html">In Focus</a>
+              <a href="/en/2026-01-22/c1.html">In Focus</a>
             </li>
             <li>
               <a href="/en/about.html">About</a>
