@@ -95,6 +95,7 @@ EOT;
               <a class="nav-link active" aria-current="page" href="/fr/">Actus</a>
             </li>
             <li class="nav-item">
+<<<<<<< HEAD
               <a class="nav-link active" aria-current="page" href="/fr/2026-03-05/country_counts.html">Pays</a>
             </li>
             <li class="nav-item">
@@ -102,6 +103,15 @@ EOT;
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/fr/2026-03-05/c1.html">France Focus</a>
+=======
+              <a class="nav-link active" aria-current="page" href="/fr/2026-03-06/country_counts.html">Pays</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2026-03-06/labels.html">Thèmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2026-03-06/c1.html">France Focus</a>
+>>>>>>> dfb19b2 (Build for 2026-03-06)
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
@@ -150,6 +160,7 @@ EOT;
                <a href="/">Actus </a>
             </li>
             <li>
+<<<<<<< HEAD
               <a href="/fr/2026-03-05/country_counts.html">Pays</a>
             </li>
             <li>
@@ -157,6 +168,15 @@ EOT;
             </li>
             <li>
               <a href="/fr/2026-03-05/c1.html">France Focus</a>
+=======
+              <a href="/fr/2026-03-06/country_counts.html">Pays</a>
+            </li>
+            <li>
+              <a href="/fr/2026-03-06/labels.html">Thèmes</a>
+            </li>
+            <li>
+              <a href="/fr/2026-03-06/c1.html">France Focus</a>
+>>>>>>> dfb19b2 (Build for 2026-03-06)
             </li>
             <li>
               <a href="/fr/about.html">A Propos</a>
