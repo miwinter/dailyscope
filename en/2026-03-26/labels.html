@@ -135,13 +135,13 @@
               <a class="nav-link active" aria-current="page" href="/">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/en/2026-03-15/country_counts.html">Top Countries</a>
+              <a class="nav-link active" aria-current="page" href="/en/2026-03-26/country_counts.html">Top Countries</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/en/2026-03-15/labels.html">Top Themes</a>
+              <a class="nav-link active" aria-current="page" href="/en/2026-03-26/labels.html">Top Themes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/en/2026-03-15/c1.html">In Focus</a>
+              <a class="nav-link active" aria-current="page" href="/en/2026-03-26/c1.html">In Focus</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/en/about.html">About</a>
@@ -202,7 +202,7 @@
 anychart.onDocumentReady(function () {
 
   // --- Data: [{ category, weight, remanent }, ...]
-  var raw = [] || [];
+  var raw = [{"category": "US\u2013Iran Diplomacy", "remanent": 1, "weight": 165}, {"category": "Iran War", "remanent": 1, "weight": 67}, {"category": "Russo-Ukrainian War", "remanent": 1, "weight": 49}, {"category": "Middle East Spillover", "remanent": 1, "weight": 42}, {"category": "South-South Cooperation", "remanent": 1, "weight": 47}, {"category": "Israel Military Escalation", "remanent": 1, "weight": 35}, {"category": "US Allies Diplomacy", "remanent": 1, "weight": 32}, {"category": "Global Human Rights Diplomacy", "remanent": 1, "weight": 59}, {"category": "Migration Policy Enforcement", "remanent": 1, "weight": 38}, {"category": "Colombia Military Aircraft Crash", "remanent": 1, "weight": 10}, {"category": "Small State Diplomacy", "remanent": 1, "weight": 45}, {"category": "US War Policy Power", "remanent": 1, "weight": 22}, {"category": "US Politics: Trump Messaging", "remanent": 1, "weight": 16}, {"category": "Iran Maritime Policy", "remanent": 1, "weight": 19}, {"category": "Denmark Coalition Formation", "remanent": 1, "weight": 15}, {"category": "US Aviation Safety: LaGuardia Crash", "remanent": 1, "weight": 10}, {"category": "Strait of Hormuz Naval Coalition", "remanent": 1, "weight": 13}, {"category": "Tech Platform Accountability", "remanent": 1, "weight": 32}, {"category": "France: Ramadan Rape Verdict", "remanent": 0, "weight": 10}, {"category": "EU Geopolitics Alert", "remanent": 0, "weight": 32}, {"category": "US\u2013Russia Diplomacy", "remanent": 0, "weight": 10}, {"category": "Middle East Conflict Escalation", "remanent": 0, "weight": 20}] || [];
 
   // --- Helpers
   function escHtml(s){
@@ -322,8 +322,8 @@ anychart.onDocumentReady(function () {
   // ===== Chart 2: Labels History (from labels_template_en.html) =====
   anychart.onDocumentReady(function () {
     (function () {
-      var rawData = [["Belarus\u2013US Diplomatic Talks", 1, 0, 0, 0, 0, 0, 0], ["Chile Presidential Transition", 1, 0, 1, 0, 0, 0, 0], ["Climate Diplomacy", 1, 0, 0, 0, 0, 0, 0], ["Climate Disaster Response", 1, 0, 0, 0, 0, 0, 0], ["Digital Inclusion Initiatives", 1, 0, 0, 0, 0, 0, 0], ["Iran Political Leadership Shift", 0, 224, 0, 0, 0, 0, 0], ["Israel\u2013Lebanon Tensions", 0, 457, 0, 0, 0, 0, 0], ["US\u2013Iran Military and Diplomatic Tensions", 0, 0, 0, 0, 0, 0, 148]];
-      var dates = ["2026-03-15", "2026-03-14", "2026-03-13", "2026-03-12", "2026-03-11", "2026-03-10", "2026-03-05"].reverse();
+      var rawData = [["Global Human Rights Diplomacy", 59, 0, 0, 0, 0, 0, 0], ["Iran War", 67, 67, 105, 149, 196, 145, 183], ["Israel Military Escalation", 0, 42, 0, 69, 0, 0, 0], ["Middle East Spillover", 0, 53, 53, 58, 48, 56, 66], ["Russo-Ukrainian War", 49, 65, 58, 0, 44, 0, 54], ["South-South Cooperation", 47, 0, 0, 0, 0, 0, 0], ["US Allies Diplomacy", 0, 0, 0, 47, 66, 96, 108], ["US\u2013Iran Diplomacy", 165, 165, 132, 47, 72, 61, 0]];
+      var dates = ["2026-03-26", "2026-03-25", "2026-03-24", "2026-03-23", "2026-03-22", "2026-03-21", "2026-03-20"].reverse();
 
       var chart = anychart.column();
       var credits = chart.credits();
@@ -458,13 +458,13 @@ anychart.onDocumentReady(function () {
                <a href="/">News </a>
             </li>
             <li>
-              <a href="/en/2026-03-15/country_counts.html">Top Countries</a>
+              <a href="/en/2026-03-26/country_counts.html">Top Countries</a>
             </li>
             <li>
-              <a href="/en/2026-03-15/labels.html">Top Themes</a>
+              <a href="/en/2026-03-26/labels.html">Top Themes</a>
             </li>
             <li>
-              <a href="/en/2026-03-15/c1.html">In Focus</a>
+              <a href="/en/2026-03-26/c1.html">In Focus</a>
             </li>
             <li>
               <a href="/en/about.html">About</a>
