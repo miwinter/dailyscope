@@ -202,7 +202,7 @@
 anychart.onDocumentReady(function () {
 
   // --- Data: [{ category, weight, remanent }, ...]
-  var raw = [] || [];
+  var raw = [{"category": "US\u2013Iran Diplomacy", "remanent": 1, "weight": 77}, {"category": "Middle East Conflict Escalation", "remanent": 1, "weight": 132}, {"category": "South-South Cooperation", "remanent": 1, "weight": 42}, {"category": "Russo-Ukrainian War", "remanent": 1, "weight": 76}, {"category": "Global Human Rights Diplomacy", "remanent": 1, "weight": 59}, {"category": "Israel Military Escalation", "remanent": 1, "weight": 41}, {"category": "US Allies Diplomacy", "remanent": 1, "weight": 69}, {"category": "Iran War", "remanent": 1, "weight": 80}, {"category": "Small State Diplomacy", "remanent": 1, "weight": 50}, {"category": "US Politics: Trump Messaging", "remanent": 1, "weight": 38}, {"category": "Oil Markets: Iran Conflict", "remanent": 1, "weight": 22}, {"category": "Venezuela-US Diplomacy", "remanent": 1, "weight": 14}, {"category": "Migration Policy Enforcement", "remanent": 1, "weight": 24}, {"category": "US War Policy Power", "remanent": 1, "weight": 25}, {"category": "Tech Platform Accountability", "remanent": 1, "weight": 26}, {"category": "Middle East Spillover", "remanent": 1, "weight": 20}, {"category": "EU Geopolitics Alert", "remanent": 1, "weight": 21}, {"category": "Iran Maritime Policy", "remanent": 1, "weight": 21}, {"category": "Strait of Hormuz Naval Coalition", "remanent": 1, "weight": 10}, {"category": "US-Cuba Diplomacy", "remanent": 0, "weight": 21}, {"category": "FBI Director Email Hack", "remanent": 0, "weight": 17}, {"category": "Global Governance Forum", "remanent": 0, "weight": 12}] || [];
 
   // --- Helpers
   function escHtml(s){
@@ -322,7 +322,7 @@ anychart.onDocumentReady(function () {
   // ===== Chart 2: Labels History (from labels_template_en.html) =====
   anychart.onDocumentReady(function () {
     (function () {
-      var rawData = [["EU Geopolitics Alert", 1, 0, 0, 0, 0, 0, 0], ["Global Human Rights Diplomacy", 1, 44, 59, 0, 0, 0, 0], ["Iran Maritime Policy", 1, 0, 0, 0, 0, 0, 0], ["Iran War", 1, 0, 67, 67, 105, 149, 196], ["Israel Military Escalation", 1, 0, 0, 42, 0, 69, 0], ["Middle East Spillover", 0, 0, 0, 53, 53, 58, 48], ["Russo-Ukrainian War", 0, 51, 49, 65, 58, 0, 44], ["US\u2013Iran Diplomacy", 0, 162, 165, 165, 132, 47, 72]];
+      var rawData = [["Iran War", 80, 0, 67, 67, 105, 149, 196], ["Israel Military Escalation", 0, 0, 0, 42, 0, 69, 0], ["Middle East Conflict Escalation", 132, 81, 0, 0, 0, 0, 0], ["Middle East Spillover", 0, 0, 0, 53, 53, 58, 48], ["Russo-Ukrainian War", 76, 51, 49, 65, 58, 0, 44], ["South-South Cooperation", 0, 64, 47, 0, 0, 0, 0], ["US Allies Diplomacy", 69, 0, 0, 0, 0, 47, 66], ["US\u2013Iran Diplomacy", 77, 162, 165, 165, 132, 47, 72]];
       var dates = ["2026-03-28", "2026-03-27", "2026-03-26", "2026-03-25", "2026-03-24", "2026-03-23", "2026-03-22"].reverse();
 
       var chart = anychart.column();
