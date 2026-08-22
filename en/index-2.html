@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Today's News</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/css/fontawesome-5.15.4.min.css">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<meta name="description"
+      content="DailyScope.ai automatically analyzes global news to highlight the most covered countries and themes.">
+<meta property="og:title" content="DailyScope.ai — Today’s global news signals">
+<meta property="og:description"
+      content="DailyScope.ai automatically analyzes global news to highlight the most covered countries and themes.">
+<meta property="og:image" content="https://www.dailyscope.ai/assets/images/dailyscope-carte.jpg">
+<meta property="og:url" content="https://www.dailyscope.ai/en/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DailyScope.ai">
+<link rel="canonical" href="https://www.dailyscope.ai/en/">
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+        page_lang: 'en',
+        page_type: 'home-map',
+        
+        
+        
+});
+    (function(w,d,s,l,i){
+        w[l]=w[l]||[];
+        w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+        var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),
+            dl=l!='dataLayer'?'&l='+l:'';
+        j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+        f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KL7V4FQH');
+</script>
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/fra.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="Français" title="Français" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/en', '/fr');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>              
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/2026-08-22/country_counts.html">Top Countries</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/2026-08-22/labels.html">Top Themes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/2026-08-22/c1.html">In Focus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/en/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Dominant themes map -->
+<section class="total-body d-block">
+  <style>
+    .world-theme-map {
+      --map-bg: #ffffff;
+      --map-land: #0f3342;
+      --emerging-icon: #f4a11a;
+      --emerging-icon-hover: #ff7a1a;
+      position: relative;
+      width: 100%;
+      height: clamp(324px, 48.6vw, 612px);
+      overflow: hidden;
+      background: var(--map-bg);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .world-theme-map__ticker {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      z-index: 25;
+      padding: 10px 12px 0;
+      pointer-events: none;
+    }
+
+    .world-theme-map__ticker .container {
+      pointer-events: auto;
+    }
+
+    .world-theme-map__ticker .breaking-news-divs {
+      background: #fff;
+      border: 1px solid rgba(8, 24, 32, 0.14);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
+    }
+
+    .world-theme-map__ticker .ticker-wrapper {
+      background: #fff;
+    }
+
+    .world-theme-map__ticker .ticker span {
+      color: #090909;
+    }
+
+    .world-theme-map__base {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 111.111%;
+      background: var(--map-land);
+      -webkit-mask: url("/assets/images/world-map-low-resolution.svg") center top / 100% 100% no-repeat;
+      mask: url("/assets/images/world-map-low-resolution.svg") center top / 100% 100% no-repeat;
+      opacity: 0.9;
+    }
+
+    .world-theme-map__marker {
+      position: absolute;
+      left: var(--x);
+      top: calc(var(--y) * 1.111111);
+      width: 0;
+      height: 0;
+      color: #fff;
+      text-decoration: none;
+      filter: drop-shadow(0 12px 18px rgba(0, 0, 0, 0.32));
+      z-index: calc(20 - var(--rank));
+    }
+
+    .world-theme-map__marker:hover,
+    .world-theme-map__marker:focus {
+      color: #fff;
+      text-decoration: none;
+      z-index: 30;
+    }
+
+    .world-theme-map__image {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: clamp(76px, 8vw, 112px);
+      aspect-ratio: 1;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      border: 4px solid #fff;
+      overflow: hidden;
+      clip-path: circle(50%);
+      background: #fff;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.34);
+    }
+
+    .world-theme-map__image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 50%;
+    }
+
+    .world-theme-map__label {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: clamp(148px, 17vw, 230px);
+      padding: 7px 9px;
+      background: rgba(8, 24, 32, 0.88);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 8px;
+      font-size: clamp(0.72rem, 1vw, 0.92rem);
+      line-height: 1.22;
+      text-align: center;
+      backdrop-filter: blur(4px);
+    }
+
+    .world-theme-map__marker--label-e .world-theme-map__label {
+      transform: translate(48px, -50%);
+      text-align: left;
+    }
+
+    .world-theme-map__marker--label-w .world-theme-map__label {
+      transform: translate(calc(-100% - 48px), -50%);
+      text-align: right;
+    }
+
+    .world-theme-map__marker--label-s .world-theme-map__label {
+      transform: translate(-50%, 48px);
+    }
+
+    .world-theme-map__marker--label-n .world-theme-map__label {
+      transform: translate(-50%, calc(-100% - 48px));
+    }
+
+    .world-theme-map__marker--label-se .world-theme-map__label {
+      transform: translate(44px, 42px);
+      text-align: left;
+    }
+
+    .world-theme-map__marker--label-sw .world-theme-map__label {
+      transform: translate(calc(-100% - 44px), 42px);
+      text-align: right;
+    }
+
+    .world-theme-map__marker--label-ne .world-theme-map__label {
+      transform: translate(44px, calc(-100% - 42px));
+      text-align: left;
+    }
+
+    .world-theme-map__marker--label-nw .world-theme-map__label {
+      transform: translate(calc(-100% - 44px), calc(-100% - 42px));
+      text-align: right;
+    }
+
+    .world-theme-map__label b {
+      display: block;
+      font-weight: 700;
+      max-height: 2.44em;
+      overflow: hidden;
+    }
+
+    .world-theme-map__meta {
+      display: block;
+      margin-top: 4px;
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 0.76em;
+    }
+
+    .world-theme-map__emerging {
+      position: absolute;
+      left: var(--x);
+      top: calc(var(--y) * 1.111111);
+      width: clamp(24px, 2.6vw, 38px);
+      aspect-ratio: 1;
+      transform: translate(-50%, -50%);
+      text-decoration: none;
+      z-index: 22;
+    }
+
+    .world-theme-map__emerging:hover,
+    .world-theme-map__emerging:focus {
+      z-index: 31;
+    }
+
+    .world-theme-map__emerging-icon {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: var(--emerging-icon);
+      -webkit-mask: url("/assets/images/new-trend-icon.svg") center / contain no-repeat;
+      mask: url("/assets/images/new-trend-icon.svg") center / contain no-repeat;
+      filter: drop-shadow(0 5px 8px rgba(0, 0, 0, 0.32));
+    }
+
+    .world-theme-map__emerging:hover .world-theme-map__emerging-icon,
+    .world-theme-map__emerging:focus .world-theme-map__emerging-icon {
+      background: var(--emerging-icon-hover);
+    }
+
+    .world-theme-map__emerging-tooltip {
+      position: absolute;
+      left: 50%;
+      bottom: calc(100% + 8px);
+      width: clamp(150px, 18vw, 240px);
+      padding: 7px 9px;
+      background: rgba(8, 24, 32, 0.92);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 8px;
+      color: #fff;
+      font-size: clamp(0.72rem, 0.9vw, 0.88rem);
+      line-height: 1.25;
+      text-align: center;
+      opacity: 0;
+      pointer-events: none;
+      transform: translate(-50%, 4px);
+      transition: opacity 0.16s ease, transform 0.16s ease;
+    }
+
+    .world-theme-map__emerging-tooltip::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 100%;
+      transform: translateX(-50%);
+      border: 6px solid transparent;
+      border-top-color: rgba(8, 24, 32, 0.92);
+    }
+
+    .world-theme-map__emerging:hover .world-theme-map__emerging-tooltip,
+    .world-theme-map__emerging:focus .world-theme-map__emerging-tooltip {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+
+    @media (max-width: 767.98px) {
+      .world-theme-map {
+        height: 558px;
+      }
+
+      .world-theme-map__base {
+        width: 100%;
+        max-width: none;
+        height: 111.111%;
+      }
+
+      .world-theme-map__marker {
+        width: 0;
+      }
+
+      .world-theme-map__image {
+        width: 72px;
+      }
+
+      .world-theme-map__label {
+        width: 142px;
+        font-size: 0.72rem;
+      }
+
+      .world-theme-map__emerging {
+        width: 26px;
+      }
+
+      .world-theme-map__emerging-tooltip {
+        width: 150px;
+      }
+
+      .world-theme-map__marker--label-e .world-theme-map__label {
+        transform: translate(38px, -50%);
+      }
+
+      .world-theme-map__marker--label-w .world-theme-map__label {
+        transform: translate(calc(-100% - 38px), -50%);
+      }
+
+      .world-theme-map__marker--label-s .world-theme-map__label {
+        transform: translate(-50%, 38px);
+      }
+
+      .world-theme-map__marker--label-n .world-theme-map__label {
+        transform: translate(-50%, calc(-100% - 38px));
+      }
+
+      .world-theme-map__marker--label-se .world-theme-map__label {
+        transform: translate(34px, 34px);
+      }
+
+      .world-theme-map__marker--label-sw .world-theme-map__label {
+        transform: translate(calc(-100% - 34px), 34px);
+      }
+
+      .world-theme-map__marker--label-ne .world-theme-map__label {
+        transform: translate(34px, calc(-100% - 34px));
+      }
+
+      .world-theme-map__marker--label-nw .world-theme-map__label {
+        transform: translate(calc(-100% - 34px), calc(-100% - 34px));
+      }
+    }
+  </style>
+
+  <div class="hilights-news mt-0">
+    <div class="world-theme-map" aria-label="Dominant themes positioned on a world map">
+      <!-- World map source: Al MacDonald / @F1LT3R, CC BY-SA 3.0, Wikimedia Commons. -->
+      <span class="world-theme-map__base" role="img" aria-label="World map"></span>
+
+      
+      <div class="world-theme-map__ticker">
+        <div class="container">
+          <div class="breaking-news-divs d-flex justify-content-between">
+            <div class="letf">
+              <h5 class="m-0"><b>August 22, 2026</b></h5>
+            </div>
+            <div class="slide-section">
+              <div class="ticker-wrapper">
+                <div class="ticker">
+                  <span>&#11093; <b>1025</b> articles analyzed today &nbsp;&nbsp;</span>
+                  <span>&#11093; AI identified more than <b>201</b> distinct themes &nbsp;&nbsp;</span>
+                  <span>&#11093; <b>248</b> different sources reviewed, spanning <b>162</b> countries worldwide &nbsp;&nbsp;</span>
+                  <span>&#11093; <b>147</b> countries are covered by articles published abroad &nbsp;&nbsp;</span>
+                  <span>&#11093; <b>1025</b> articles analyzed today &nbsp;&nbsp;</span>
+                  <span>&#11093; AI identified more than <b>201</b> distinct themes &nbsp;&nbsp;</span>
+                  <span>&#11093; <b>248</b> different sources reviewed, spanning <b>162</b> countries worldwide &nbsp;&nbsp;</span>
+                  <span>&#11093; <b>147</b> countries are covered by articles published abroad &nbsp;&nbsp;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      
+      <a href="/en/2026-08-22/1.html" class="world-theme-map__marker world-theme-map__marker--label-s" style="--x: 42.6%; --y: 54.8%; --rank: 1;" aria-label="Bilateral momentum: investments, security pacts and diplomatic openings">
+        <span class="world-theme-map__image">
+          <img src="/illustrations/2026-08-22/2026-08-22-1.webp" alt="">
+        </span>
+        <span class="world-theme-map__label">
+          <b>Bilateral momentum: investments, security pacts and diplomatic openings</b>
+          <span class="world-theme-map__meta">109 related articles</span>
+        </span>
+      </a>
+      
+      <a href="/en/2026-08-22/2.html" class="world-theme-map__marker world-theme-map__marker--label-w" style="--x: 29.9%; --y: 52.0%; --rank: 2;" aria-label="Global relief and rescue: mines, quakes and maritime tragedies">
+        <span class="world-theme-map__image">
+          <img src="/illustrations/2026-08-22/2026-08-22-2.webp" alt="">
+        </span>
+        <span class="world-theme-map__label">
+          <b>Global relief and rescue: mines, quakes and maritime tragedies</b>
+          <span class="world-theme-map__meta">89 related articles</span>
+        </span>
+      </a>
+      
+      <a href="/en/2026-08-22/3.html" class="world-theme-map__marker world-theme-map__marker--label-e" style="--x: 54.7%; --y: 28.7%; --rank: 3;" aria-label="Escalating strikes, civilian toll and widening geopolitical fallout">
+        <span class="world-theme-map__image">
+          <img src="/illustrations/2026-08-22/2026-08-22-3.webp" alt="">
+        </span>
+        <span class="world-theme-map__label">
+          <b>Escalating strikes, civilian toll and widening geopolitical fallout</b>
+          <span class="world-theme-map__meta">78 related articles</span>
+        </span>
+      </a>
+      
+      <a href="/en/2026-08-22/4.html" class="world-theme-map__marker world-theme-map__marker--label-n" style="--x: 50.7%; --y: 52.8%; --rank: 4;" aria-label="Global diplomacy in flux: crisis management, leadership contests and strategic rivalry">
+        <span class="world-theme-map__image">
+          <img src="/illustrations/2026-08-22/2026-08-22-4.webp" alt="">
+        </span>
+        <span class="world-theme-map__label">
+          <b>Global diplomacy in flux: crisis management, leadership contests and strategic rivalry</b>
+          <span class="world-theme-map__meta">48 related articles</span>
+        </span>
+      </a>
+      
+      <a href="/en/2026-08-22/5.html" class="world-theme-map__marker world-theme-map__marker--label-e" style="--x: 52.8%; --y: 51.3%; --rank: 5;" aria-label="Sanctions diplomacy intensifies: U.S. pressure, partner exposure, and legal pushback">
+        <span class="world-theme-map__image">
+          <img src="/illustrations/2026-08-22/2026-08-22-5.webp" alt="">
+        </span>
+        <span class="world-theme-map__label">
+          <b>Sanctions diplomacy intensifies: U.S. pressure, partner exposure, and legal pushback</b>
+          <span class="world-theme-map__meta">45 related articles</span>
+        </span>
+      </a>
+      
+
+      
+      <a href="/en/2026-08-22/6.html" class="world-theme-map__emerging" style="--x: 51.5%; --y: 22.2%;" aria-label="Sword attack at Swedish high school leaves one dead; suspect held">
+        <span class="world-theme-map__emerging-icon" aria-hidden="true"></span>
+        <span class="world-theme-map__emerging-tooltip">Sword attack at Swedish high school leaves one dead; suspect held</span>
+      </a>
+      
+      <a href="/en/2026-08-22/7.html" class="world-theme-map__emerging" style="--x: 54.7%; --y: 28.7%;" aria-label="Global aviation crash probes and airport safety checks">
+        <span class="world-theme-map__emerging-icon" aria-hidden="true"></span>
+        <span class="world-theme-map__emerging-tooltip">Global aviation crash probes and airport safety checks</span>
+      </a>
+      
+      <a href="/en/2026-08-22/8.html" class="world-theme-map__emerging" style="--x: 25.8%; --y: 34.0%;" aria-label="TikTok COPPA settlement and U.S. enforcement">
+        <span class="world-theme-map__emerging-icon" aria-hidden="true"></span>
+        <span class="world-theme-map__emerging-tooltip">TikTok COPPA settlement and U.S. enforcement</span>
+      </a>
+      
+      <a href="/en/2026-08-22/9.html" class="world-theme-map__emerging" style="--x: 25.8%; --y: 34.0%;" aria-label="Supreme Court Allows Resumption of White House Ballroom Renovation">
+        <span class="world-theme-map__emerging-icon" aria-hidden="true"></span>
+        <span class="world-theme-map__emerging-tooltip">Supreme Court Allows Resumption of White House Ballroom Renovation</span>
+      </a>
+      
+    </div>
+  </div>
+</section>
+
+<section class="total-body pt-3 d-block">
+   <style>
+     .emerging-heading-icon {
+       display: inline-block;
+       width: 24px;
+       height: 24px;
+       margin-right: 8px;
+       vertical-align: -4px;
+       background: #f4a11a;
+       -webkit-mask: url("/assets/images/new-trend-icon.svg") center / contain no-repeat;
+       mask: url("/assets/images/new-trend-icon.svg") center / contain no-repeat;
+     }
+   </style>
+   <div class="populers-sec-news mt-4 mt-lg-0">
+      <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+            <h2 class="comon-sub-heading">
+              <span class="emerging-heading-icon" aria-hidden="true"></span><b>Emerging Trends</b> <span class="tooltip_mw">
+                      &nbsp;<img height="20" src="/assets/images/ic.png" style="vertical-align: text-top;">
+                        <span class="tooltiptext_mw">
+                       This section highlights the topics that have emerged today.
+                       </span>
+                      </span>
+            </h2>      
+        </div>
+        
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="new-themes-tab" role="tabpanel">
+            <div class="row mt-4 row-cols-1 row-cols-md-2 row-cols-lg-4 gy-4 gy-lg-0">
+              
+              <div class="col">
+                <a href="/en/2026-08-22/6.html" class="populer-sec1-news">
+                  <figure>
+                    <img src="/illustrations/2026-08-22/2026-08-22-6.webp" alt="theme">
+                    <span class="st-tags limite-texte">Sweden School Attack</span>
+                  </figure>
+                  <div class="content-div1">
+                    <h5> Sword attack at Swedish high school leaves one dead; suspect held </h5>
+                    <p><b> 31 </b>related articles</p>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="col">
+                <a href="/en/2026-08-22/7.html" class="populer-sec1-news">
+                  <figure>
+                    <img src="/illustrations/2026-08-22/2026-08-22-7.webp" alt="theme">
+                    <span class="st-tags limite-texte">Aviation Crash Probe</span>
+                  </figure>
+                  <div class="content-div1">
+                    <h5> Global aviation crash probes and airport safety checks </h5>
+                    <p><b> 14 </b>related articles</p>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="col">
+                <a href="/en/2026-08-22/8.html" class="populer-sec1-news">
+                  <figure>
+                    <img src="/illustrations/2026-08-22/2026-08-22-8.webp" alt="theme">
+                    <span class="st-tags limite-texte">TikTok COPPA Settlement</span>
+                  </figure>
+                  <div class="content-div1">
+                    <h5> TikTok COPPA settlement and U.S. enforcement </h5>
+                    <p><b> 11 </b>related articles</p>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="col">
+                <a href="/en/2026-08-22/9.html" class="populer-sec1-news">
+                  <figure>
+                    <img src="/illustrations/2026-08-22/2026-08-22-9.webp" alt="theme">
+                    <span class="st-tags limite-texte">White House Ballroom Renovation</span>
+                  </figure>
+                  <div class="content-div1">
+                    <h5> Supreme Court Allows Resumption of White House Ballroom Renovation </h5>
+                    <p><b> 8 </b>related articles</p>
+                  </div>
+                </a>
+              </div>
+               
+            </div>
+          </div>
+        </div> 
+      </div>
+   </div>
+</section>
+
+
+   <section class="total-body pt-3 d-block">
+
+   <div class="populers-sec-news mt-4 mt-lg-0">
+      <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+            <h2 class="comon-sub-heading">
+              <b>Top News History</b> 
+              <span class="tooltip_mw">
+              &nbsp;<img height="20" src="/assets/images/ic.png" style="vertical-align: text-top;">
+              <span class="tooltiptext_mw">
+              This section highlights the most talked-about topics from the past few days.
+              </span>
+              </span>
+            </h2>
+        </div>
+        
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pol-tabs1" role="tabpanel" aria-labelledby="pills-home-tab">
+
+            <div class="row mt-4 row-cols-1 row-cols-md-2 row-cols-lg-4 gy-4 gy-lg-0">
+              
+              <div class="col">
+                <a href="/en/2026-08-21/index.html" class="populer-sec1-news">
+                  <figure>
+                    <img src="/illustrations/2026-08-21/2026-08-21-1.webp" alt="big1">
+                    <span class="st-tags"> August 21, 2026 </span>
+                  </figure>
+                  <div class="content-div1">
+                    <h5> Global disaster relief: earthquakes, collapses, capsizes and strained humanitarian response </h5>
+                    <p><b> 110 </b>related articles</p>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="col">
+                <a href="/en/2026-08-20/index.html" class="populer-sec1-news">
+                  <figure>
+                    <img src="/illustrations/2026-08-20/2026-08-20-1.webp" alt="big1">
+                    <span class="st-tags"> August 20, 2026 </span>
+                  </figure>
+                  <div class="content-div1">
+                    <h5> Global emergency responses: earthquakes, mine collapses, crashes and strained humanitarian operations </h5>
+                    <p><b> 92 </b>related articles</p>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="col">
+                <a href="/en/2026-08-19/index.html" class="populer-sec1-news">
+                  <figure>
+                    <img src="/illustrations/2026-08-19/2026-08-19-1.webp" alt="big1">
+                    <span class="st-tags"> August 19, 2026 </span>
+                  </figure>
+                  <div class="content-div1">
+                    <h5> Global surge in shocks strains rescue, protection and recovery </h5>
+                    <p><b> 95 </b>related articles</p>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="col">
+                <a href="/en/2026-08-18/index.html" class="populer-sec1-news">
+                  <figure>
+                    <img src="/illustrations/2026-08-18/2026-08-18-1.webp" alt="big1">
+                    <span class="st-tags"> August 18, 2026 </span>
+                  </figure>
+                  <div class="content-div1">
+                    <h5> Leaders in Dialogue: Gaza diplomacy, Korea outreach and great-power friction </h5>
+                    <p><b> 114 </b>related articles</p>
+                  </div>
+                </a>
+              </div>
+               
+            </div>
+          </div>
+        </div> 
+      </div>
+   </div>
+ </section>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai |
+                <a href="/en/privacy.html">Privacy Policy</a> |
+                <a href="/en/terms.html">Terms of Use</a>
+              </p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li>
+               <a href="/">News </a>
+            </li>
+            <li>
+              <a href="/en/2026-08-22/country_counts.html">Top Countries</a>
+            </li>
+            <li>
+              <a href="/en/2026-08-22/labels.html">Top Themes</a>
+            </li>
+            <li>
+              <a href="/en/2026-08-22/c1.html">In Focus</a>
+            </li>
+            <li>
+              <a href="/en/about.html">About</a>
+            </li>
+            <li>
+              <a href="/en/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
