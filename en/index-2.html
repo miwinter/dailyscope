@@ -85,13 +85,13 @@
               <a class="nav-link active" aria-current="page" href="/">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/en/2026-08-22/country_counts.html">Top Countries</a>
+              <a class="nav-link active" aria-current="page" href="/en/2026-08-23/country_counts.html">Top Countries</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/en/2026-08-22/labels.html">Top Themes</a>
+              <a class="nav-link active" aria-current="page" href="/en/2026-08-23/labels.html">Top Themes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/en/2026-08-22/c1.html">In Focus</a>
+              <a class="nav-link active" aria-current="page" href="/en/2026-08-23/c1.html">In Focus</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/en/about.html">About</a>
@@ -116,7 +116,7 @@
       --emerging-icon-hover: #ff7a1a;
       position: relative;
       width: 100%;
-      height: clamp(324px, 48.6vw, 612px);
+      height: min(48.6vw, 612px);
       overflow: hidden;
       background: var(--map-bg);
       border-bottom: 1px solid rgba(255, 255, 255, 0.12);
@@ -150,13 +150,19 @@
       color: #090909;
     }
 
+    .world-theme-map__plane {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      height: 111.111%;
+      aspect-ratio: 1.85185;
+      transform: translateX(-50%);
+    }
+
     .world-theme-map__base {
       display: block;
       position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 111.111%;
+      inset: 0;
       background: var(--map-land);
       -webkit-mask: url("/assets/images/world-map-low-resolution.svg") center top / 100% 100% no-repeat;
       mask: url("/assets/images/world-map-low-resolution.svg") center top / 100% 100% no-repeat;
@@ -166,7 +172,7 @@
     .world-theme-map__marker {
       position: absolute;
       left: var(--x);
-      top: calc(var(--y) * 1.111111);
+      top: var(--y);
       width: 0;
       height: 0;
       color: #fff;
@@ -277,7 +283,7 @@
     .world-theme-map__emerging {
       position: absolute;
       left: var(--x);
-      top: calc(var(--y) * 1.111111);
+      top: var(--y);
       width: clamp(24px, 2.6vw, 38px);
       aspect-ratio: 1;
       transform: translate(-50%, -50%);
@@ -341,16 +347,6 @@
     }
 
     @media (max-width: 767.98px) {
-      .world-theme-map {
-        height: 558px;
-      }
-
-      .world-theme-map__base {
-        width: 100%;
-        max-width: none;
-        height: 111.111%;
-      }
-
       .world-theme-map__marker {
         width: 0;
       }
@@ -409,26 +405,102 @@
   <div class="hilights-news mt-0">
     <div class="world-theme-map" aria-label="Dominant themes positioned on a world map">
       <!-- World map source: Al MacDonald / @F1LT3R, CC BY-SA 3.0, Wikimedia Commons. -->
-      <span class="world-theme-map__base" role="img" aria-label="World map"></span>
+      <div class="world-theme-map__plane">
+        <span class="world-theme-map__base" role="img" aria-label="World map"></span>
+
+        
+        <a href="/en/2026-08-23/1.html" class="world-theme-map__marker world-theme-map__marker--label-e" style="--x: 42.6%; --y: 54.8%; --rank: 1;" aria-label="Bilateral Deals Advance Security, Trade and Development Globally">
+          <span class="world-theme-map__image">
+            <img src="/illustrations/2026-08-23/2026-08-23-1.webp" alt="">
+          </span>
+          <span class="world-theme-map__label">
+            <b>Bilateral Deals Advance Security, Trade and Development Globally</b>
+            <span class="world-theme-map__meta">101 related articles</span>
+          </span>
+        </a>
+        
+        <a href="/en/2026-08-23/2.html" class="world-theme-map__marker world-theme-map__marker--label-e" style="--x: 54.7%; --y: 28.7%; --rank: 2;" aria-label="Escalation and spillover: strikes, threats and international responses">
+          <span class="world-theme-map__image">
+            <img src="/illustrations/2026-08-23/2026-08-23-2.webp" alt="">
+          </span>
+          <span class="world-theme-map__label">
+            <b>Escalation and spillover: strikes, threats and international responses</b>
+            <span class="world-theme-map__meta">97 related articles</span>
+          </span>
+        </a>
+        
+        <a href="/en/2026-08-23/3.html" class="world-theme-map__marker world-theme-map__marker--label-e" style="--x: 56.1%; --y: 39.1%; --rank: 3;" aria-label="Escalating Sanctions and Retaliatory Trade Measures">
+          <span class="world-theme-map__image">
+            <img src="/illustrations/2026-08-23/2026-08-23-3.webp" alt="">
+          </span>
+          <span class="world-theme-map__label">
+            <b>Escalating Sanctions and Retaliatory Trade Measures</b>
+            <span class="world-theme-map__meta">86 related articles</span>
+          </span>
+        </a>
+        
+        <a href="/en/2026-08-23/4.html" class="world-theme-map__marker world-theme-map__marker--label-w" style="--x: 29.9%; --y: 52.0%; --rank: 4;" aria-label="Global surge in disasters strains rescue and relief efforts">
+          <span class="world-theme-map__image">
+            <img src="/illustrations/2026-08-23/2026-08-23-4.webp" alt="">
+          </span>
+          <span class="world-theme-map__label">
+            <b>Global surge in disasters strains rescue and relief efforts</b>
+            <span class="world-theme-map__meta">79 related articles</span>
+          </span>
+        </a>
+        
+        <a href="/en/2026-08-23/5.html" class="world-theme-map__marker world-theme-map__marker--label-nw" style="--x: 47.8%; --y: 44.7%; --rank: 5;" aria-label="High-stakes diplomacy: rivalries, regional security and multilateral processes">
+          <span class="world-theme-map__image">
+            <img src="/illustrations/2026-08-23/2026-08-23-5.webp" alt="">
+          </span>
+          <span class="world-theme-map__label">
+            <b>High-stakes diplomacy: rivalries, regional security and multilateral processes</b>
+            <span class="world-theme-map__meta">77 related articles</span>
+          </span>
+        </a>
+        
+
+        
+        <a href="/en/2026-08-23/6.html" class="world-theme-map__emerging" style="--x: 48.1%; --y: 28.3%;" aria-label="Record El Niño Warnings and Wide-ranging Impacts">
+          <span class="world-theme-map__emerging-icon" aria-hidden="true"></span>
+          <span class="world-theme-map__emerging-tooltip">Record El Niño Warnings and Wide-ranging Impacts</span>
+        </a>
+        
+        <a href="/en/2026-08-23/7.html" class="world-theme-map__emerging" style="--x: 48.75%; --y: 27.78%;" aria-label="Wrong-way driving and a deadly northeast England crash">
+          <span class="world-theme-map__emerging-icon" aria-hidden="true"></span>
+          <span class="world-theme-map__emerging-tooltip">Wrong-way driving and a deadly northeast England crash</span>
+        </a>
+        
+        <a href="/en/2026-08-23/8.html" class="world-theme-map__emerging" style="--x: 72.7%; --y: 34.3%;" aria-label="China's Humanoid Robots Shatter 100m Records, Sparking Market and Geopolitical Reactions">
+          <span class="world-theme-map__emerging-icon" aria-hidden="true"></span>
+          <span class="world-theme-map__emerging-tooltip">China's Humanoid Robots Shatter 100m Records, Sparking Market and Geopolitical Reactions</span>
+        </a>
+        
+        <a href="/en/2026-08-23/9.html" class="world-theme-map__emerging" style="--x: 50.4%; --y: 22.2%;" aria-label="Norway's air links under strain">
+          <span class="world-theme-map__emerging-icon" aria-hidden="true"></span>
+          <span class="world-theme-map__emerging-tooltip">Norway's air links under strain</span>
+        </a>
+        
+      </div>
 
       
       <div class="world-theme-map__ticker">
         <div class="container">
           <div class="breaking-news-divs d-flex justify-content-between">
             <div class="letf">
-              <h5 class="m-0"><b>August 22, 2026</b></h5>
+              <h5 class="m-0"><b>August 23, 2026</b></h5>
             </div>
             <div class="slide-section">
               <div class="ticker-wrapper">
                 <div class="ticker">
-                  <span>&#11093; <b>1025</b> articles analyzed today &nbsp;&nbsp;</span>
-                  <span>&#11093; AI identified more than <b>201</b> distinct themes &nbsp;&nbsp;</span>
-                  <span>&#11093; <b>248</b> different sources reviewed, spanning <b>162</b> countries worldwide &nbsp;&nbsp;</span>
-                  <span>&#11093; <b>147</b> countries are covered by articles published abroad &nbsp;&nbsp;</span>
-                  <span>&#11093; <b>1025</b> articles analyzed today &nbsp;&nbsp;</span>
-                  <span>&#11093; AI identified more than <b>201</b> distinct themes &nbsp;&nbsp;</span>
-                  <span>&#11093; <b>248</b> different sources reviewed, spanning <b>162</b> countries worldwide &nbsp;&nbsp;</span>
-                  <span>&#11093; <b>147</b> countries are covered by articles published abroad &nbsp;&nbsp;</span>
+                  <span>&#11093; <b>1023</b> articles analyzed today &nbsp;&nbsp;</span>
+                  <span>&#11093; AI identified more than <b>191</b> distinct themes &nbsp;&nbsp;</span>
+                  <span>&#11093; <b>245</b> different sources reviewed, spanning <b>161</b> countries worldwide &nbsp;&nbsp;</span>
+                  <span>&#11093; <b>142</b> countries are covered by articles published abroad &nbsp;&nbsp;</span>
+                  <span>&#11093; <b>1023</b> articles analyzed today &nbsp;&nbsp;</span>
+                  <span>&#11093; AI identified more than <b>191</b> distinct themes &nbsp;&nbsp;</span>
+                  <span>&#11093; <b>245</b> different sources reviewed, spanning <b>161</b> countries worldwide &nbsp;&nbsp;</span>
+                  <span>&#11093; <b>142</b> countries are covered by articles published abroad &nbsp;&nbsp;</span>
                 </div>
               </div>
             </div>
@@ -436,85 +508,11 @@
         </div>
       </div>
       
-
-      
-      <a href="/en/2026-08-22/1.html" class="world-theme-map__marker world-theme-map__marker--label-s" style="--x: 42.6%; --y: 54.8%; --rank: 1;" aria-label="Bilateral momentum: investments, security pacts and diplomatic openings">
-        <span class="world-theme-map__image">
-          <img src="/illustrations/2026-08-22/2026-08-22-1.webp" alt="">
-        </span>
-        <span class="world-theme-map__label">
-          <b>Bilateral momentum: investments, security pacts and diplomatic openings</b>
-          <span class="world-theme-map__meta">109 related articles</span>
-        </span>
-      </a>
-      
-      <a href="/en/2026-08-22/2.html" class="world-theme-map__marker world-theme-map__marker--label-w" style="--x: 29.9%; --y: 52.0%; --rank: 2;" aria-label="Global relief and rescue: mines, quakes and maritime tragedies">
-        <span class="world-theme-map__image">
-          <img src="/illustrations/2026-08-22/2026-08-22-2.webp" alt="">
-        </span>
-        <span class="world-theme-map__label">
-          <b>Global relief and rescue: mines, quakes and maritime tragedies</b>
-          <span class="world-theme-map__meta">89 related articles</span>
-        </span>
-      </a>
-      
-      <a href="/en/2026-08-22/3.html" class="world-theme-map__marker world-theme-map__marker--label-e" style="--x: 54.7%; --y: 28.7%; --rank: 3;" aria-label="Escalating strikes, civilian toll and widening geopolitical fallout">
-        <span class="world-theme-map__image">
-          <img src="/illustrations/2026-08-22/2026-08-22-3.webp" alt="">
-        </span>
-        <span class="world-theme-map__label">
-          <b>Escalating strikes, civilian toll and widening geopolitical fallout</b>
-          <span class="world-theme-map__meta">78 related articles</span>
-        </span>
-      </a>
-      
-      <a href="/en/2026-08-22/4.html" class="world-theme-map__marker world-theme-map__marker--label-n" style="--x: 50.7%; --y: 52.8%; --rank: 4;" aria-label="Global diplomacy in flux: crisis management, leadership contests and strategic rivalry">
-        <span class="world-theme-map__image">
-          <img src="/illustrations/2026-08-22/2026-08-22-4.webp" alt="">
-        </span>
-        <span class="world-theme-map__label">
-          <b>Global diplomacy in flux: crisis management, leadership contests and strategic rivalry</b>
-          <span class="world-theme-map__meta">48 related articles</span>
-        </span>
-      </a>
-      
-      <a href="/en/2026-08-22/5.html" class="world-theme-map__marker world-theme-map__marker--label-e" style="--x: 52.8%; --y: 51.3%; --rank: 5;" aria-label="Sanctions diplomacy intensifies: U.S. pressure, partner exposure, and legal pushback">
-        <span class="world-theme-map__image">
-          <img src="/illustrations/2026-08-22/2026-08-22-5.webp" alt="">
-        </span>
-        <span class="world-theme-map__label">
-          <b>Sanctions diplomacy intensifies: U.S. pressure, partner exposure, and legal pushback</b>
-          <span class="world-theme-map__meta">45 related articles</span>
-        </span>
-      </a>
-      
-
-      
-      <a href="/en/2026-08-22/6.html" class="world-theme-map__emerging" style="--x: 51.5%; --y: 22.2%;" aria-label="Sword attack at Swedish high school leaves one dead; suspect held">
-        <span class="world-theme-map__emerging-icon" aria-hidden="true"></span>
-        <span class="world-theme-map__emerging-tooltip">Sword attack at Swedish high school leaves one dead; suspect held</span>
-      </a>
-      
-      <a href="/en/2026-08-22/7.html" class="world-theme-map__emerging" style="--x: 54.7%; --y: 28.7%;" aria-label="Global aviation crash probes and airport safety checks">
-        <span class="world-theme-map__emerging-icon" aria-hidden="true"></span>
-        <span class="world-theme-map__emerging-tooltip">Global aviation crash probes and airport safety checks</span>
-      </a>
-      
-      <a href="/en/2026-08-22/8.html" class="world-theme-map__emerging" style="--x: 25.8%; --y: 34.0%;" aria-label="TikTok COPPA settlement and U.S. enforcement">
-        <span class="world-theme-map__emerging-icon" aria-hidden="true"></span>
-        <span class="world-theme-map__emerging-tooltip">TikTok COPPA settlement and U.S. enforcement</span>
-      </a>
-      
-      <a href="/en/2026-08-22/9.html" class="world-theme-map__emerging" style="--x: 25.8%; --y: 34.0%;" aria-label="Supreme Court Allows Resumption of White House Ballroom Renovation">
-        <span class="world-theme-map__emerging-icon" aria-hidden="true"></span>
-        <span class="world-theme-map__emerging-tooltip">Supreme Court Allows Resumption of White House Ballroom Renovation</span>
-      </a>
-      
     </div>
   </div>
 </section>
 
-<section class="total-body pt-3 d-block">
+<section class="total-body pt-0 d-block">
    <style>
      .emerging-heading-icon {
        display: inline-block;
@@ -527,7 +525,7 @@
        mask: url("/assets/images/new-trend-icon.svg") center / contain no-repeat;
      }
    </style>
-   <div class="populers-sec-news mt-4 mt-lg-0">
+   <div class="populers-sec-news mt-0">
       <div class="container">
         <div class="d-md-flex justify-content-between align-items-center">
             <h2 class="comon-sub-heading">
@@ -545,53 +543,53 @@
             <div class="row mt-4 row-cols-1 row-cols-md-2 row-cols-lg-4 gy-4 gy-lg-0">
               
               <div class="col">
-                <a href="/en/2026-08-22/6.html" class="populer-sec1-news">
+                <a href="/en/2026-08-23/6.html" class="populer-sec1-news">
                   <figure>
-                    <img src="/illustrations/2026-08-22/2026-08-22-6.webp" alt="theme">
-                    <span class="st-tags limite-texte">Sweden School Attack</span>
+                    <img src="/illustrations/2026-08-23/2026-08-23-6.webp" alt="theme">
+                    <span class="st-tags limite-texte">El Niño Climate Impact</span>
                   </figure>
                   <div class="content-div1">
-                    <h5> Sword attack at Swedish high school leaves one dead; suspect held </h5>
-                    <p><b> 31 </b>related articles</p>
+                    <h5> Record El Niño Warnings and Wide-ranging Impacts </h5>
+                    <p><b> 13 </b>related articles</p>
                   </div>
                 </a>
               </div>
               
               <div class="col">
-                <a href="/en/2026-08-22/7.html" class="populer-sec1-news">
+                <a href="/en/2026-08-23/7.html" class="populer-sec1-news">
                   <figure>
-                    <img src="/illustrations/2026-08-22/2026-08-22-7.webp" alt="theme">
-                    <span class="st-tags limite-texte">Aviation Crash Probe</span>
+                    <img src="/illustrations/2026-08-23/2026-08-23-7.webp" alt="theme">
+                    <span class="st-tags limite-texte">UK Car Crash Investigation</span>
                   </figure>
                   <div class="content-div1">
-                    <h5> Global aviation crash probes and airport safety checks </h5>
-                    <p><b> 14 </b>related articles</p>
+                    <h5> Wrong-way driving and a deadly northeast England crash </h5>
+                    <p><b> 6 </b>related articles</p>
                   </div>
                 </a>
               </div>
               
               <div class="col">
-                <a href="/en/2026-08-22/8.html" class="populer-sec1-news">
+                <a href="/en/2026-08-23/8.html" class="populer-sec1-news">
                   <figure>
-                    <img src="/illustrations/2026-08-22/2026-08-22-8.webp" alt="theme">
-                    <span class="st-tags limite-texte">TikTok COPPA Settlement</span>
+                    <img src="/illustrations/2026-08-23/2026-08-23-8.webp" alt="theme">
+                    <span class="st-tags limite-texte">China Robotics Breakthrough</span>
                   </figure>
                   <div class="content-div1">
-                    <h5> TikTok COPPA settlement and U.S. enforcement </h5>
-                    <p><b> 11 </b>related articles</p>
+                    <h5> China's Humanoid Robots Shatter 100m Records, Sparking Market and Geopolitical Reactions </h5>
+                    <p><b> 5 </b>related articles</p>
                   </div>
                 </a>
               </div>
               
               <div class="col">
-                <a href="/en/2026-08-22/9.html" class="populer-sec1-news">
+                <a href="/en/2026-08-23/9.html" class="populer-sec1-news">
                   <figure>
-                    <img src="/illustrations/2026-08-22/2026-08-22-9.webp" alt="theme">
-                    <span class="st-tags limite-texte">White House Ballroom Renovation</span>
+                    <img src="/illustrations/2026-08-23/2026-08-23-9.webp" alt="theme">
+                    <span class="st-tags limite-texte">Norway Aviation Diplomacy</span>
                   </figure>
                   <div class="content-div1">
-                    <h5> Supreme Court Allows Resumption of White House Ballroom Renovation </h5>
-                    <p><b> 8 </b>related articles</p>
+                    <h5> Norway's air links under strain </h5>
+                    <p><b> 3 </b>related articles</p>
                   </div>
                 </a>
               </div>
@@ -624,6 +622,19 @@
           <div class="tab-pane fade show active" id="pol-tabs1" role="tabpanel" aria-labelledby="pills-home-tab">
 
             <div class="row mt-4 row-cols-1 row-cols-md-2 row-cols-lg-4 gy-4 gy-lg-0">
+              
+              <div class="col">
+                <a href="/en/2026-08-22/index.html" class="populer-sec1-news">
+                  <figure>
+                    <img src="/illustrations/2026-08-22/2026-08-22-1.webp" alt="big1">
+                    <span class="st-tags"> August 22, 2026 </span>
+                  </figure>
+                  <div class="content-div1">
+                    <h5> Bilateral momentum: investments, security pacts and diplomatic openings </h5>
+                    <p><b> 109 </b>related articles</p>
+                  </div>
+                </a>
+              </div>
               
               <div class="col">
                 <a href="/en/2026-08-21/index.html" class="populer-sec1-news">
@@ -660,19 +671,6 @@
                   <div class="content-div1">
                     <h5> Global surge in shocks strains rescue, protection and recovery </h5>
                     <p><b> 95 </b>related articles</p>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="col">
-                <a href="/en/2026-08-18/index.html" class="populer-sec1-news">
-                  <figure>
-                    <img src="/illustrations/2026-08-18/2026-08-18-1.webp" alt="big1">
-                    <span class="st-tags"> August 18, 2026 </span>
-                  </figure>
-                  <div class="content-div1">
-                    <h5> Leaders in Dialogue: Gaza diplomacy, Korea outreach and great-power friction </h5>
-                    <p><b> 114 </b>related articles</p>
                   </div>
                 </a>
               </div>
@@ -716,13 +714,13 @@
                <a href="/">News </a>
             </li>
             <li>
-              <a href="/en/2026-08-22/country_counts.html">Top Countries</a>
+              <a href="/en/2026-08-23/country_counts.html">Top Countries</a>
             </li>
             <li>
-              <a href="/en/2026-08-22/labels.html">Top Themes</a>
+              <a href="/en/2026-08-23/labels.html">Top Themes</a>
             </li>
             <li>
-              <a href="/en/2026-08-22/c1.html">In Focus</a>
+              <a href="/en/2026-08-23/c1.html">In Focus</a>
             </li>
             <li>
               <a href="/en/about.html">About</a>
