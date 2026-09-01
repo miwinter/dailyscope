@@ -1,31 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-<title>Today's News</title>
+<title>L'actualité aujourd'hui</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/assets/css/fontawesome-5.15.4.min.css">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
 <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/fontawesome-5.15.4.min.css">
 <link href="/assets/css/style.css" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
 <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
 
 <meta name="description"
-      content="DailyScope.ai automatically analyzes global news to highlight the most covered countries and themes.">
+      content="DailyScope.ai analyse automatiquement les actualités mondiales pour mettre en lumière les pays et thèmes les plus couverts.">
 <meta property="og:title" content="DailyScope.ai — Today’s global news signals">
 <meta property="og:description"
-      content="DailyScope.ai automatically analyzes global news to highlight the most covered countries and themes.">
+      content="DailyScope.ai analyse automatiquement les actualités mondiales pour mettre en lumière les pays et thèmes les plus couverts.">
 <meta property="og:image" content="https://www.dailyscope.ai/assets/images/dailyscope-carte.jpg">
-<meta property="og:url" content="https://www.dailyscope.ai/en/">
+<meta property="og:url" content="https://www.dailyscope.ai/fr/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DailyScope.ai">
-<link rel="canonical" href="https://www.dailyscope.ai/en/">
+<link rel="canonical" href="https://www.dailyscope.ai/fr/">
 
 <script>
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
-        page_lang: 'en',
+        page_lang: 'fr',
         page_type: 'home-map',
         
         
@@ -54,12 +54,12 @@
                 <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
             </div>
             <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
-              <a id="lang-switch" href="#"><img src="/assets/images/flags/fra.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="Français" title="Français" class="flag-icon"></a>
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
               <script>
                 const currentUrl = window.location.href;
-                const englishUrl = currentUrl.replace('/en', '/fr');
+                const englishUrl = currentUrl.replace('/fr', '/en');
                 document.getElementById('lang-switch').setAttribute('href', englishUrl);
-              </script>              
+              </script>                 
             </div>
         </div>
       </div>
@@ -82,22 +82,22 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">News</a>
+              <a class="nav-link active" aria-current="page" href="/fr/">Actus</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/en/2026-09-01/country_counts.html">Top Countries</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2026-09-01/country_counts.html">Pays</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/en/2026-09-01/labels.html">Top Themes</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2026-09-01/labels.html">Thèmes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/en/2026-09-01/c1.html">In Focus</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2026-09-01/c1.html">France Focus</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/en/about.html">About</a>
+              <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/en/contact.html">Contact</a>
+              <a class="nav-link active" aria-current="page" href="/fr/contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -106,7 +106,7 @@
   </nav>
 </div>
 
-<!-- Dominant themes map -->
+<!-- Carte des thèmes dominants -->
 <section class="total-body d-block">
   <style>
     .world-theme-map {
@@ -503,83 +503,83 @@
   </style>
 
   <div class="hilights-news mt-0">
-    <div class="world-theme-map" aria-label="Dominant themes positioned on a world map">
+    <div class="world-theme-map" aria-label="Thèmes dominants positionnés sur une carte du monde">
       <!-- World map source: Al MacDonald / @F1LT3R, CC BY-SA 3.0, Wikimedia Commons. -->
-      <div class="world-theme-map__viewport" tabindex="0" aria-label="Scrollable world map">
+      <div class="world-theme-map__viewport" tabindex="0" aria-label="Carte du monde défilable">
         <div class="world-theme-map__plane">
-          <span class="world-theme-map__base" role="img" aria-label="World map"></span>
+          <span class="world-theme-map__base" role="img" aria-label="Carte du monde"></span>
 
           
-          <a href="/en/2026-09-01/1.html" class="world-theme-map__marker world-theme-map__marker--label-e" style="--x: 67.8%; --y: 40.5%; --rank: 1;" aria-label="Global emergency brief: Himalayan floods, maritime disasters, and flash floods" aria-haspopup="dialog" aria-expanded="false" data-map-item data-sheet-title="Global emergency brief: Himalayan floods, maritime disasters, and flash floods" data-sheet-meta="136 related articles" data-sheet-image="/illustrations/2026-09-01/2026-09-01-1.webp" data-sheet-url="/en/2026-09-01/1.html">
+          <a href="/fr/2026-09-01/1.html" class="world-theme-map__marker world-theme-map__marker--label-e" style="--x: 67.8%; --y: 40.5%; --rank: 1;" aria-label="Brief d&#39;urgence mondial : Inondations himalayennes, catastrophes maritimes et inondations éclair" aria-haspopup="dialog" aria-expanded="false" data-map-item data-sheet-title="Brief d&#39;urgence mondial : Inondations himalayennes, catastrophes maritimes et inondations éclair" data-sheet-meta="136 articles associés" data-sheet-image="/illustrations/2026-09-01/2026-09-01-1.webp" data-sheet-url="/fr/2026-09-01/1.html">
             <span class="world-theme-map__image">
               <img src="/illustrations/2026-09-01/2026-09-01-1.webp" alt="">
             </span>
             <span class="world-theme-map__label">
-              <b>Global emergency brief: Himalayan floods, maritime disasters, and flash floods</b>
-              <span class="world-theme-map__meta">136 related articles</span>
+              <b>Brief d'urgence mondial : Inondations himalayennes, catastrophes maritimes et inondations éclair</b>
+              <span class="world-theme-map__meta">136 articles associés</span>
             </span>
           </a>
           
-          <a href="/en/2026-09-01/2.html" class="world-theme-map__marker world-theme-map__marker--label-e" style="--x: 42.6%; --y: 54.8%; --rank: 2;" aria-label="Bilateral Momentum: deals span energy, security, investment and diplomacy" aria-haspopup="dialog" aria-expanded="false" data-map-item data-sheet-title="Bilateral Momentum: deals span energy, security, investment and diplomacy" data-sheet-meta="97 related articles" data-sheet-image="/illustrations/2026-09-01/2026-09-01-2.webp" data-sheet-url="/en/2026-09-01/2.html">
+          <a href="/fr/2026-09-01/2.html" class="world-theme-map__marker world-theme-map__marker--label-w" style="--x: 25.8%; --y: 34.0%; --rank: 2;" aria-label="Impulsion bilatérale : accords couvrant l&#39;énergie, la sécurité, l&#39;investissement et la diplomatie" aria-haspopup="dialog" aria-expanded="false" data-map-item data-sheet-title="Impulsion bilatérale : accords couvrant l&#39;énergie, la sécurité, l&#39;investissement et la diplomatie" data-sheet-meta="97 articles associés" data-sheet-image="/illustrations/2026-09-01/2026-09-01-2.webp" data-sheet-url="/fr/2026-09-01/2.html">
             <span class="world-theme-map__image">
               <img src="/illustrations/2026-09-01/2026-09-01-2.webp" alt="">
             </span>
             <span class="world-theme-map__label">
-              <b>Bilateral Momentum: deals span energy, security, investment and diplomacy</b>
-              <span class="world-theme-map__meta">97 related articles</span>
+              <b>Impulsion bilatérale : accords couvrant l'énergie, la sécurité, l'investissement et la diplomatie</b>
+              <span class="world-theme-map__meta">97 articles associés</span>
             </span>
           </a>
           
-          <a href="/en/2026-09-01/3.html" class="world-theme-map__marker world-theme-map__marker--label-w" style="--x: 47.8%; --y: 44.7%; --rank: 3;" aria-label="Summit Diplomacy, Shifting Alignments and Regional Tensions" aria-haspopup="dialog" aria-expanded="false" data-map-item data-sheet-title="Summit Diplomacy, Shifting Alignments and Regional Tensions" data-sheet-meta="85 related articles" data-sheet-image="/illustrations/2026-09-01/2026-09-01-3.webp" data-sheet-url="/en/2026-09-01/3.html">
+          <a href="/fr/2026-09-01/3.html" class="world-theme-map__marker world-theme-map__marker--label-w" style="--x: 47.8%; --y: 44.7%; --rank: 3;" aria-label="Diplomatie de Sommet, Alignements Changeants et Tensions Régionales" aria-haspopup="dialog" aria-expanded="false" data-map-item data-sheet-title="Diplomatie de Sommet, Alignements Changeants et Tensions Régionales" data-sheet-meta="85 articles associés" data-sheet-image="/illustrations/2026-09-01/2026-09-01-3.webp" data-sheet-url="/fr/2026-09-01/3.html">
             <span class="world-theme-map__image">
               <img src="/illustrations/2026-09-01/2026-09-01-3.webp" alt="">
             </span>
             <span class="world-theme-map__label">
-              <b>Summit Diplomacy, Shifting Alignments and Regional Tensions</b>
-              <span class="world-theme-map__meta">85 related articles</span>
+              <b>Diplomatie de Sommet, Alignements Changeants et Tensions Régionales</b>
+              <span class="world-theme-map__meta">85 articles associés</span>
             </span>
           </a>
           
-          <a href="/en/2026-09-01/4.html" class="world-theme-map__marker world-theme-map__marker--label-ne" style="--x: 56.1%; --y: 39.1%; --rank: 4;" aria-label="Rapid US–Iran exchanges, Gulf tensions and Israeli hard‑right pressure" aria-haspopup="dialog" aria-expanded="false" data-map-item data-sheet-title="Rapid US–Iran exchanges, Gulf tensions and Israeli hard‑right pressure" data-sheet-meta="65 related articles" data-sheet-image="/illustrations/2026-09-01/2026-09-01-4.webp" data-sheet-url="/en/2026-09-01/4.html">
+          <a href="/fr/2026-09-01/4.html" class="world-theme-map__marker world-theme-map__marker--label-s" style="--x: 56.1%; --y: 39.1%; --rank: 4;" aria-label="Échanges rapides entre les États-Unis et l&#39;Iran, tensions dans le Golfe et pression de l&#39;extrême droite israélienne" aria-haspopup="dialog" aria-expanded="false" data-map-item data-sheet-title="Échanges rapides entre les États-Unis et l&#39;Iran, tensions dans le Golfe et pression de l&#39;extrême droite israélienne" data-sheet-meta="65 articles associés" data-sheet-image="/illustrations/2026-09-01/2026-09-01-4.webp" data-sheet-url="/fr/2026-09-01/4.html">
             <span class="world-theme-map__image">
               <img src="/illustrations/2026-09-01/2026-09-01-4.webp" alt="">
             </span>
             <span class="world-theme-map__label">
-              <b>Rapid US–Iran exchanges, Gulf tensions and Israeli hard‑right pressure</b>
-              <span class="world-theme-map__meta">65 related articles</span>
+              <b>Échanges rapides entre les États-Unis et l'Iran, tensions dans le Golfe et pression de l'extrême droite israélienne</b>
+              <span class="world-theme-map__meta">65 articles associés</span>
             </span>
           </a>
           
-          <a href="/en/2026-09-01/5.html" class="world-theme-map__marker world-theme-map__marker--label-w" style="--x: 54.7%; --y: 28.7%; --rank: 5;" aria-label="Strikes, diplomacy and Kremlin pressure in the Russia–Ukraine war" aria-haspopup="dialog" aria-expanded="false" data-map-item data-sheet-title="Strikes, diplomacy and Kremlin pressure in the Russia–Ukraine war" data-sheet-meta="63 related articles" data-sheet-image="/illustrations/2026-09-01/2026-09-01-5.webp" data-sheet-url="/en/2026-09-01/5.html">
+          <a href="/fr/2026-09-01/5.html" class="world-theme-map__marker world-theme-map__marker--label-e" style="--x: 54.7%; --y: 28.7%; --rank: 5;" aria-label="Grèves, diplomatie et pression du Kremlin dans la guerre Russie-Ukraine" aria-haspopup="dialog" aria-expanded="false" data-map-item data-sheet-title="Grèves, diplomatie et pression du Kremlin dans la guerre Russie-Ukraine" data-sheet-meta="63 articles associés" data-sheet-image="/illustrations/2026-09-01/2026-09-01-5.webp" data-sheet-url="/fr/2026-09-01/5.html">
             <span class="world-theme-map__image">
               <img src="/illustrations/2026-09-01/2026-09-01-5.webp" alt="">
             </span>
             <span class="world-theme-map__label">
-              <b>Strikes, diplomacy and Kremlin pressure in the Russia–Ukraine war</b>
-              <span class="world-theme-map__meta">63 related articles</span>
+              <b>Grèves, diplomatie et pression du Kremlin dans la guerre Russie-Ukraine</b>
+              <span class="world-theme-map__meta">63 articles associés</span>
             </span>
           </a>
           
 
           
-          <a href="/en/2026-09-01/6.html" class="world-theme-map__emerging" style="--x: 25.8%; --y: 34.0%;" aria-label="US Army Secretary Driscoll Resigns Amid Pentagon Tensions" aria-haspopup="dialog" aria-expanded="false" data-map-item data-sheet-title="US Army Secretary Driscoll Resigns Amid Pentagon Tensions" data-sheet-meta="Emerging trend" data-sheet-url="/en/2026-09-01/6.html">
+          <a href="/fr/2026-09-01/6.html" class="world-theme-map__emerging" style="--x: 25.8%; --y: 34.0%;" aria-label="Le secrétaire de l&#39;armée américaine Driscoll démissionne en pleine tension au Pentagone" aria-haspopup="dialog" aria-expanded="false" data-map-item data-sheet-title="Le secrétaire de l&#39;armée américaine Driscoll démissionne en pleine tension au Pentagone" data-sheet-meta="Sujet émergent" data-sheet-url="/fr/2026-09-01/6.html">
             <span class="world-theme-map__emerging-icon" aria-hidden="true"></span>
-            <span class="world-theme-map__emerging-tooltip">US Army Secretary Driscoll Resigns Amid Pentagon Tensions</span>
+            <span class="world-theme-map__emerging-tooltip">Le secrétaire de l'armée américaine Driscoll démissionne en pleine tension au Pentagone</span>
           </a>
           
-          <a href="/en/2026-09-01/7.html" class="world-theme-map__emerging" style="--x: 48.6%; --y: 29.7%;" aria-label="Former French PM Édouard Balladur dies at 97" aria-haspopup="dialog" aria-expanded="false" data-map-item data-sheet-title="Former French PM Édouard Balladur dies at 97" data-sheet-meta="Emerging trend" data-sheet-url="/en/2026-09-01/7.html">
+          <a href="/fr/2026-09-01/7.html" class="world-theme-map__emerging" style="--x: 48.6%; --y: 29.7%;" aria-label="L&#39;ancien Premier ministre français Édouard Balladur décède à 97 ans" aria-haspopup="dialog" aria-expanded="false" data-map-item data-sheet-title="L&#39;ancien Premier ministre français Édouard Balladur décède à 97 ans" data-sheet-meta="Sujet émergent" data-sheet-url="/fr/2026-09-01/7.html">
             <span class="world-theme-map__emerging-icon" aria-hidden="true"></span>
-            <span class="world-theme-map__emerging-tooltip">Former French PM Édouard Balladur dies at 97</span>
+            <span class="world-theme-map__emerging-tooltip">L'ancien Premier ministre français Édouard Balladur décède à 97 ans</span>
           </a>
           
-          <a href="/en/2026-09-01/8.html" class="world-theme-map__emerging" style="--x: 56.2%; --y: 25.5%;" aria-label="Europe watch: Russian meddling, regional security strains and domestic controversies" aria-haspopup="dialog" aria-expanded="false" data-map-item data-sheet-title="Europe watch: Russian meddling, regional security strains and domestic controversies" data-sheet-meta="Emerging trend" data-sheet-url="/en/2026-09-01/8.html">
+          <a href="/fr/2026-09-01/8.html" class="world-theme-map__emerging" style="--x: 56.2%; --y: 25.5%;" aria-label="Europe en veille : ingérence russe, tensions sécuritaires régionales et controverses domestiques" aria-haspopup="dialog" aria-expanded="false" data-map-item data-sheet-title="Europe en veille : ingérence russe, tensions sécuritaires régionales et controverses domestiques" data-sheet-meta="Sujet émergent" data-sheet-url="/fr/2026-09-01/8.html">
             <span class="world-theme-map__emerging-icon" aria-hidden="true"></span>
-            <span class="world-theme-map__emerging-tooltip">Europe watch: Russian meddling, regional security strains and domestic controversies</span>
+            <span class="world-theme-map__emerging-tooltip">Europe en veille : ingérence russe, tensions sécuritaires régionales et controverses domestiques</span>
           </a>
           
-          <a href="/en/2026-09-01/9.html" class="world-theme-map__emerging" style="--x: 44.4%; --y: 49.1%;" aria-label="Contested referendum on presidential powers in Guinea-Bissau" aria-haspopup="dialog" aria-expanded="false" data-map-item data-sheet-title="Contested referendum on presidential powers in Guinea-Bissau" data-sheet-meta="Emerging trend" data-sheet-url="/en/2026-09-01/9.html">
+          <a href="/fr/2026-09-01/9.html" class="world-theme-map__emerging" style="--x: 44.4%; --y: 49.1%;" aria-label="Référendum contesté sur les pouvoirs présidentiels en Guinée-Bissau" aria-haspopup="dialog" aria-expanded="false" data-map-item data-sheet-title="Référendum contesté sur les pouvoirs présidentiels en Guinée-Bissau" data-sheet-meta="Sujet émergent" data-sheet-url="/fr/2026-09-01/9.html">
             <span class="world-theme-map__emerging-icon" aria-hidden="true"></span>
-            <span class="world-theme-map__emerging-tooltip">Contested referendum on presidential powers in Guinea-Bissau</span>
+            <span class="world-theme-map__emerging-tooltip">Référendum contesté sur les pouvoirs présidentiels en Guinée-Bissau</span>
           </a>
           
         </div>
@@ -590,19 +590,19 @@
         <div class="container">
           <div class="breaking-news-divs d-flex justify-content-between">
             <div class="letf">
-              <h5 class="m-0"><b>September 1, 2026</b></h5>
+              <h5 class="m-0"><b>1 septembre 2026</b></h5>
             </div>
             <div class="slide-section">
               <div class="ticker-wrapper">
                 <div class="ticker">
-                  <span>&#11093; <b>1029</b> articles analyzed today &nbsp;&nbsp;</span>
-                  <span>&#11093; AI identified more than <b>172</b> distinct themes &nbsp;&nbsp;</span>
-                  <span>&#11093; <b>253</b> different sources reviewed, spanning <b>173</b> countries worldwide &nbsp;&nbsp;</span>
-                  <span>&#11093; <b>134</b> countries are covered by articles published abroad &nbsp;&nbsp;</span>
-                  <span>&#11093; <b>1029</b> articles analyzed today &nbsp;&nbsp;</span>
-                  <span>&#11093; AI identified more than <b>172</b> distinct themes &nbsp;&nbsp;</span>
-                  <span>&#11093; <b>253</b> different sources reviewed, spanning <b>173</b> countries worldwide &nbsp;&nbsp;</span>
-                  <span>&#11093; <b>134</b> countries are covered by articles published abroad &nbsp;&nbsp;</span>
+                  <span>&#11093; <b>1029</b> articles analysés aujourd’hui &nbsp;&nbsp;</span>
+                  <span>&#11093; L’IA a identifié plus de <b>172</b> thèmes distincts &nbsp;&nbsp;</span>
+                  <span>&#11093; <b>253</b> sources différentes passées en revue, couvrant <b>173</b> pays &nbsp;&nbsp;</span>
+                  <span>&#11093; <b>134</b> pays sont couverts par des articles publiés à l’étranger &nbsp;&nbsp;</span>
+                  <span>&#11093; <b>1029</b> articles analysés aujourd’hui &nbsp;&nbsp;</span>
+                  <span>&#11093; L’IA a identifié plus de <b>172</b> thèmes distincts &nbsp;&nbsp;</span>
+                  <span>&#11093; <b>253</b> sources différentes passées en revue, couvrant <b>173</b> pays &nbsp;&nbsp;</span>
+                  <span>&#11093; <b>134</b> pays sont couverts par des articles publiés à l’étranger &nbsp;&nbsp;</span>
                 </div>
               </div>
             </div>
@@ -614,7 +614,7 @@
 
     <div class="world-theme-map__sheet-overlay" data-map-sheet-overlay></div>
     <div class="world-theme-map__sheet" role="dialog" aria-modal="true" aria-labelledby="world-theme-map-sheet-title" aria-hidden="true" data-map-sheet>
-      <button class="world-theme-map__sheet-close" type="button" aria-label="Close" data-map-sheet-close>&times;</button>
+      <button class="world-theme-map__sheet-close" type="button" aria-label="Fermer" data-map-sheet-close>&times;</button>
       <a class="world-theme-map__sheet-link" href="#" data-map-sheet-link>
         <img class="world-theme-map__sheet-image" alt="" data-map-sheet-image>
         <span class="world-theme-map__sheet-icon" aria-hidden="true" data-map-sheet-icon></span>
@@ -754,10 +754,10 @@
       <div class="container">
         <div class="d-md-flex justify-content-between align-items-center">
             <h2 class="comon-sub-heading">
-              <span class="emerging-heading-icon" aria-hidden="true"></span><b>Emerging Trends</b> <span class="tooltip_mw">
+              <span class="emerging-heading-icon" aria-hidden="true"></span><b>Sujets Emergents</b> <span class="tooltip_mw">
                       &nbsp;<img height="20" src="/assets/images/ic.png" style="vertical-align: text-top;">
                         <span class="tooltiptext_mw">
-                       This section highlights the topics that have emerged today.
+                       Cette rubrique présente les thématiques qui ont fait leur apparition aujourd’hui.
                        </span>
                       </span>
             </h2>      
@@ -768,53 +768,53 @@
             <div class="row mt-4 row-cols-1 row-cols-md-2 row-cols-lg-4 gy-4 gy-lg-0">
               
               <div class="col">
-                <a href="/en/2026-09-01/6.html" class="populer-sec1-news">
+                <a href="/fr/2026-09-01/6.html" class="populer-sec1-news">
                   <figure>
                     <img src="/illustrations/2026-09-01/2026-09-01-6.webp" alt="theme">
-                    <span class="st-tags limite-texte">US Army Secretary Resigns</span>
+                    <span class="st-tags limite-texte">Démission du secrétaire de l'armée américaine</span>
                   </figure>
                   <div class="content-div1">
-                    <h5> US Army Secretary Driscoll Resigns Amid Pentagon Tensions </h5>
-                    <p><b> 17 </b>related articles</p>
+                    <h5> Le secrétaire de l'armée américaine Driscoll démissionne en pleine tension au Pentagone </h5>
+                    <p><b> 17 </b>articles associés</p>
                   </div>
                 </a>
               </div>
               
               <div class="col">
-                <a href="/en/2026-09-01/7.html" class="populer-sec1-news">
+                <a href="/fr/2026-09-01/7.html" class="populer-sec1-news">
                   <figure>
                     <img src="/illustrations/2026-09-01/2026-09-01-7.webp" alt="theme">
-                    <span class="st-tags limite-texte">France: Balladur Obituary</span>
+                    <span class="st-tags limite-texte">France : Avis de décès de Balladur</span>
                   </figure>
                   <div class="content-div1">
-                    <h5> Former French PM Édouard Balladur dies at 97 </h5>
-                    <p><b> 12 </b>related articles</p>
+                    <h5> L'ancien Premier ministre français Édouard Balladur décède à 97 ans </h5>
+                    <p><b> 12 </b>articles associés</p>
                   </div>
                 </a>
               </div>
               
               <div class="col">
-                <a href="/en/2026-09-01/8.html" class="populer-sec1-news">
+                <a href="/fr/2026-09-01/8.html" class="populer-sec1-news">
                   <figure>
                     <img src="/illustrations/2026-09-01/2026-09-01-8.webp" alt="theme">
-                    <span class="st-tags limite-texte">Europe Watchlist</span>
+                    <span class="st-tags limite-texte">Liste de surveillance de l'Europe</span>
                   </figure>
                   <div class="content-div1">
-                    <h5> Europe watch: Russian meddling, regional security strains and domestic controversies </h5>
-                    <p><b> 8 </b>related articles</p>
+                    <h5> Europe en veille : ingérence russe, tensions sécuritaires régionales et controverses domestiques </h5>
+                    <p><b> 8 </b>articles associés</p>
                   </div>
                 </a>
               </div>
               
               <div class="col">
-                <a href="/en/2026-09-01/9.html" class="populer-sec1-news">
+                <a href="/fr/2026-09-01/9.html" class="populer-sec1-news">
                   <figure>
                     <img src="/illustrations/2026-09-01/2026-09-01-9.webp" alt="theme">
-                    <span class="st-tags limite-texte">Guinea-Bissau Referendum</span>
+                    <span class="st-tags limite-texte">Référendum en Guinée-Bissau</span>
                   </figure>
                   <div class="content-div1">
-                    <h5> Contested referendum on presidential powers in Guinea-Bissau </h5>
-                    <p><b> 7 </b>related articles</p>
+                    <h5> Référendum contesté sur les pouvoirs présidentiels en Guinée-Bissau </h5>
+                    <p><b> 7 </b>articles associés</p>
                   </div>
                 </a>
               </div>
@@ -833,14 +833,13 @@
       <div class="container">
         <div class="d-md-flex justify-content-between align-items-center">
             <h2 class="comon-sub-heading">
-              <b>Top News History</b> 
-              <span class="tooltip_mw">
-              &nbsp;<img height="20" src="/assets/images/ic.png" style="vertical-align: text-top;">
-              <span class="tooltiptext_mw">
-              This section highlights the most talked-about topics from the past few days.
-              </span>
-              </span>
-            </h2>
+              <b>Historique</b> <span class="tooltip_mw">
+                      &nbsp;<img height="20" src="/assets/images/ic.png" style="vertical-align: text-top;">
+                        <span class="tooltiptext_mw">
+                       Cette rubrique met en avant les thématiques les plus discutées au cours des derniers jours. 
+                       </span>
+                      </span>
+            </h2>      
         </div>
         
         <div class="tab-content" id="pills-tabContent">
@@ -849,53 +848,53 @@
             <div class="row mt-4 row-cols-1 row-cols-md-2 row-cols-lg-4 gy-4 gy-lg-0">
               
               <div class="col">
-                <a href="/en/2026-08-31/index.html" class="populer-sec1-news">
+                <a href="/fr/2026-08-31/index.html" class="populer-sec1-news">
                   <figure>
                     <img src="/illustrations/2026-08-31/2026-08-31-1.webp" alt="big1">
-                    <span class="st-tags"> August 31, 2026 </span>
+                    <span class="st-tags"> 31 août 2026 </span>
                   </figure>
                   <div class="content-div1">
-                    <h5> Global disaster relief: Himalayan floods, Mediterranean shipwrecks and US flash floods </h5>
-                    <p><b> 192 </b>related articles</p>
+                    <h5> Secours en cas de catastrophe mondiale : inondations dans l'Himalaya, naufrages en Méditerranée et inondations éclair aux États-Unis </h5>
+                    <p><b> 192 </b> articles associés</p>
                   </div>
                 </a>
               </div>
               
               <div class="col">
-                <a href="/en/2026-08-30/index.html" class="populer-sec1-news">
+                <a href="/fr/2026-08-30/index.html" class="populer-sec1-news">
                   <figure>
                     <img src="/illustrations/2026-08-30/2026-08-30-1.webp" alt="big1">
-                    <span class="st-tags"> August 30, 2026 </span>
+                    <span class="st-tags"> 30 août 2026 </span>
                   </figure>
                   <div class="content-div1">
-                    <h5> Global rescue and relief after Himalayan floods and other emergencies </h5>
-                    <p><b> 187 </b>related articles</p>
+                    <h5> Secours et assistance mondiale après les inondations himalayennes et autres urgences </h5>
+                    <p><b> 187 </b> articles associés</p>
                   </div>
                 </a>
               </div>
               
               <div class="col">
-                <a href="/en/2026-08-29/index.html" class="populer-sec1-news">
+                <a href="/fr/2026-08-29/index.html" class="populer-sec1-news">
                   <figure>
                     <img src="/illustrations/2026-08-29/2026-08-29-1.webp" alt="big1">
-                    <span class="st-tags"> August 29, 2026 </span>
+                    <span class="st-tags"> 29 août 2026 </span>
                   </figure>
                   <div class="content-div1">
-                    <h5> Surge in global disaster response, led by the Nepal–Tibet flood emergency </h5>
-                    <p><b> 174 </b>related articles</p>
+                    <h5> Augmentation des interventions mondiales en réponse aux catastrophes, dirigée par l'urgence des inondations entre le Népal et le Tibet </h5>
+                    <p><b> 174 </b> articles associés</p>
                   </div>
                 </a>
               </div>
               
               <div class="col">
-                <a href="/en/2026-08-28/index.html" class="populer-sec1-news">
+                <a href="/fr/2026-08-28/index.html" class="populer-sec1-news">
                   <figure>
                     <img src="/illustrations/2026-08-28/2026-08-28-1.webp" alt="big1">
-                    <span class="st-tags"> August 28, 2026 </span>
+                    <span class="st-tags"> 28 août 2026 </span>
                   </figure>
                   <div class="content-div1">
-                    <h5> Widespread humanitarian emergency after Himalayan floods, concurrent global disasters </h5>
-                    <p><b> 188 </b>related articles</p>
+                    <h5> Urgence humanitaire généralisée après les inondations himalayennes, catastrophes mondiales concomitantes </h5>
+                    <p><b> 188 </b> articles associés</p>
                   </div>
                 </a>
               </div>
@@ -912,8 +911,8 @@
      <div class="row">
            <div class="left-footer">
               <p class="text-center"> 2025-2026 © DailyScope.ai |
-                <a href="/en/privacy.html">Privacy Policy</a> |
-                <a href="/en/terms.html">Terms of Use</a>
+                <a href="/fr/privacy.html">Politique de confidentialité</a> |
+                <a href="/fr/terms.html">Mentions légales</a>
               </p>
            </div>
      </div>
@@ -925,7 +924,7 @@
 
 <div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
   <div class="offcanvas-header">
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
   </div>
   <div class="offcanvas-body">
     <div class="head-contact">
@@ -936,22 +935,22 @@
       <div class="mobile-menu-sec mt-3">
          <ul class="list-unstyled">
             <li>
-               <a href="/">News </a>
+               <a href="/">Actus </a>
             </li>
             <li>
-              <a href="/en/2026-09-01/country_counts.html">Top Countries</a>
+              <a href="/fr/2026-09-01/country_counts.html">Pays</a>
             </li>
             <li>
-              <a href="/en/2026-09-01/labels.html">Top Themes</a>
+              <a href="/fr/2026-09-01/labels.html">Thèmes</a>
             </li>
             <li>
-              <a href="/en/2026-09-01/c1.html">In Focus</a>
+              <a href="/fr/2026-09-01/c1.html">France Focus</a>
             </li>
             <li>
-              <a href="/en/about.html">About</a>
+              <a href="/fr/about.html">A Propos</a>
             </li>
             <li>
-              <a href="/en/contact.html">Contact</a>
+              <a href="/fr/contact.html">Contact</a>
             </li>
          </ul>
       </div>
