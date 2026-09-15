@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 <title>L'actualité aujourd'hui</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -26,7 +26,7 @@
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
         page_lang: 'fr',
-        page_type: 'home',
+        page_type: 'home-map-inverted',
         
         
         
@@ -42,6 +42,8 @@
         f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-KL7V4FQH');
 </script>
+<script src="/assets/js/anychart-custom-build.js"></script>
+<script src="/assets/js/world.js"></script>
 </head>
 <body>
 
@@ -85,13 +87,13 @@
               <a class="nav-link active" aria-current="page" href="/fr/">Actus</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2026-09-14/country_counts.html">Pays</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2026-09-15/country_counts.html">Pays</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2026-09-14/labels.html">Thèmes</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2026-09-15/labels.html">Thèmes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2026-09-14/c1.html">France Focus</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2026-09-15/c1.html">France Focus</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
@@ -106,36 +108,1511 @@
   </nav>
 </div>
 
+<!-- Carte des tendances émergentes avec icônes des thèmes dominants -->
+<section class="total-body d-block">
+  <style>
+    .world-theme-map {
+      --map-bg: #ffffff;
+      --map-land: #0f3342;
+      --emerging-icon: #f4a11a;
+      --emerging-icon-hover: #ff7a1a;
+      --dominant-icon: #f4a11a;
+      --dominant-icon-hover: #ff7a1a;
+      position: relative;
+      width: 100%;
+      height: min(48.6vw, 612px);
+      overflow: hidden;
+      background: var(--map-bg);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
 
-<section class="total-body pt-3 d-block">
-<div class="latest-updates">
-      <div class="container">
-        <div class="breaking-news-divs d-flex justify-content-between">
-           <div class="letf">
-              <h5 class="m-0"><b>14 septembre 2026</b></h5>
-           </div>
-           <div class="slide-section">
-            <div class="ticker-wrapper">
-              <div class="ticker">
-                <!-- Premier ensemble d'items -->
-                <span>&#11093;  <b>969</b> articles ont été analysés &nbsp;&nbsp;</span>
-                <span>&#11093;  <b>167</b> thématiques distinctes identifiées &nbsp;&nbsp;</span>
-                <span>&#11093;  <b>242</b> sources différentes consultées, issues de <b>165</b> pays à travers le monde &nbsp;&nbsp;</span>
-                <span>&#11093;  <b>136</b> pays sont l'objet d'articles etrangers &nbsp;&nbsp;</span>
-                <!-- Duplication des items pour assurer la continuité -->
-                <span>&#11093;  <b>969</b> articles ont été analysés &nbsp;&nbsp;</span>
-                <span>&#11093;  <b>167</b> thématiques distinctes identifiées &nbsp;&nbsp;</span>
-                <span>&#11093;  <b>242</b> sources différentes consultées, issues de <b>165</b> pays à travers le monde &nbsp;&nbsp;</span>
-                <span>&#11093;  <b>136</b> pays sont l'objet d'articles etrangers &nbsp;&nbsp;</span>
-             </div>
+    .world-theme-map__ticker {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      z-index: 25;
+      padding: 10px 12px 0;
+      pointer-events: none;
+    }
+
+    .world-theme-map__ticker .container {
+      pointer-events: auto;
+    }
+
+    .world-theme-map__ticker .breaking-news-divs {
+      background: #fff;
+      border: 1px solid rgba(8, 24, 32, 0.14);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
+    }
+
+    .world-theme-map__ticker .ticker-wrapper {
+      background: #fff;
+    }
+
+    .world-theme-map__ticker .ticker span {
+      color: #090909;
+    }
+
+    .world-theme-map__viewport {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+    }
+
+    .world-theme-map__plane {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      height: 111.111%;
+      aspect-ratio: 1.85185;
+      transform: translateX(-50%);
+    }
+
+    .world-theme-map__base {
+      display: block;
+      position: absolute;
+      inset: 0;
+      background: var(--map-land);
+      -webkit-mask: url("/assets/images/world-map-low-resolution.svg") center top / 100% 100% no-repeat;
+      mask: url("/assets/images/world-map-low-resolution.svg") center top / 100% 100% no-repeat;
+      opacity: 0.9;
+    }
+
+    .world-theme-map__marker {
+      position: absolute;
+      left: var(--x);
+      top: var(--y);
+      width: 0;
+      height: 0;
+      color: #fff;
+      text-decoration: none;
+      filter: drop-shadow(0 12px 18px rgba(0, 0, 0, 0.32));
+      z-index: calc(20 - var(--rank));
+    }
+
+    .world-theme-map__marker:hover,
+    .world-theme-map__marker:focus {
+      color: #fff;
+      text-decoration: none;
+      z-index: 30;
+    }
+
+    .world-theme-map__image {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: clamp(76px, 8vw, 112px);
+      aspect-ratio: 1;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      border: 4px solid #fff;
+      overflow: hidden;
+      clip-path: circle(50%);
+      background: #fff;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.34);
+    }
+
+    .world-theme-map__image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 50%;
+    }
+
+    .world-theme-map__label {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: clamp(148px, 17vw, 230px);
+      padding: 7px 9px;
+      background: rgba(8, 24, 32, 0.88);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 8px;
+      font-size: clamp(0.72rem, 1vw, 0.92rem);
+      line-height: 1.22;
+      text-align: center;
+      backdrop-filter: blur(4px);
+    }
+
+    .world-theme-map__marker--label-e .world-theme-map__label {
+      transform: translate(48px, -50%);
+      text-align: left;
+    }
+
+    .world-theme-map__marker--label-w .world-theme-map__label {
+      transform: translate(calc(-100% - 48px), -50%);
+      text-align: right;
+    }
+
+    .world-theme-map__marker--label-s .world-theme-map__label {
+      transform: translate(-50%, 48px);
+    }
+
+    .world-theme-map__marker--label-n .world-theme-map__label {
+      transform: translate(-50%, calc(-100% - 48px));
+    }
+
+    .world-theme-map__marker--label-se .world-theme-map__label {
+      transform: translate(44px, 42px);
+      text-align: left;
+    }
+
+    .world-theme-map__marker--label-sw .world-theme-map__label {
+      transform: translate(calc(-100% - 44px), 42px);
+      text-align: right;
+    }
+
+    .world-theme-map__marker--label-ne .world-theme-map__label {
+      transform: translate(44px, calc(-100% - 42px));
+      text-align: left;
+    }
+
+    .world-theme-map__marker--label-nw .world-theme-map__label {
+      transform: translate(calc(-100% - 44px), calc(-100% - 42px));
+      text-align: right;
+    }
+
+    .world-theme-map__label b {
+      display: block;
+      font-weight: 700;
+      max-height: 2.44em;
+      overflow: hidden;
+    }
+
+    .world-theme-map__meta {
+      display: block;
+      margin-top: 4px;
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 0.76em;
+    }
+
+    .world-theme-map__emerging {
+      position: absolute;
+      left: var(--x);
+      top: var(--y);
+      width: clamp(24px, 2.6vw, 38px);
+      aspect-ratio: 1;
+      transform: translate(-50%, -50%);
+      text-decoration: none;
+      z-index: 22;
+    }
+
+    .world-theme-map__emerging:hover,
+    .world-theme-map__emerging:focus {
+      z-index: 31;
+    }
+
+    .world-theme-map__emerging-icon {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: var(--emerging-icon);
+      -webkit-mask: url("/assets/images/new-trend-icon.svg") center / contain no-repeat;
+      mask: url("/assets/images/new-trend-icon.svg") center / contain no-repeat;
+      filter: drop-shadow(0 5px 8px rgba(0, 0, 0, 0.32));
+    }
+
+    .world-theme-map__emerging:hover .world-theme-map__emerging-icon,
+    .world-theme-map__emerging:focus .world-theme-map__emerging-icon {
+      background: var(--emerging-icon-hover);
+    }
+
+    .world-theme-map__emerging-tooltip {
+      position: absolute;
+      left: 50%;
+      bottom: calc(100% + 8px);
+      width: clamp(150px, 18vw, 240px);
+      padding: 7px 9px;
+      background: rgba(8, 24, 32, 0.92);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 8px;
+      color: #fff;
+      font-size: clamp(0.72rem, 0.9vw, 0.88rem);
+      line-height: 1.25;
+      text-align: center;
+      opacity: 0;
+      pointer-events: none;
+      transform: translate(-50%, 4px);
+      transition: opacity 0.16s ease, transform 0.16s ease;
+    }
+
+    .world-theme-map__emerging-tooltip::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 100%;
+      transform: translateX(-50%);
+      border: 6px solid transparent;
+      border-top-color: rgba(8, 24, 32, 0.92);
+    }
+
+    .world-theme-map__emerging:hover .world-theme-map__emerging-tooltip,
+    .world-theme-map__emerging:focus .world-theme-map__emerging-tooltip {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+
+    .world-theme-map__dominant-icon-link {
+      position: absolute;
+      left: var(--x);
+      top: var(--y);
+      width: clamp(24px, 2.6vw, 38px);
+      aspect-ratio: 1;
+      transform: translate(-50%, -50%);
+      text-decoration: none;
+      z-index: 22;
+    }
+
+    .world-theme-map__dominant-icon-link:hover,
+    .world-theme-map__dominant-icon-link:focus {
+      z-index: 31;
+    }
+
+    .world-theme-map__dominant-icon {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: var(--dominant-icon);
+      border-radius: 50%;
+      box-shadow:
+        0 0 0 3px #fff,
+        0 6px 12px rgba(0, 0, 0, 0.3);
+      position: relative;
+    }
+
+    .world-theme-map__dominant-icon::before {
+      content: "";
+      position: absolute;
+      inset: 22%;
+      border: 2px solid #fff;
+      border-radius: 50%;
+    }
+
+    .world-theme-map__dominant-icon::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 28%;
+      aspect-ratio: 1;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background: #fff;
+    }
+
+    .world-theme-map__dominant-icon-link:hover .world-theme-map__dominant-icon,
+    .world-theme-map__dominant-icon-link:focus .world-theme-map__dominant-icon {
+      background: var(--dominant-icon-hover);
+    }
+
+    .dominant-heading-icon {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+      vertical-align: -4px;
+      border-radius: 50%;
+      background: #f4a11a;
+      box-shadow: 0 0 0 2px #fff;
+      position: relative;
+    }
+
+    .dominant-heading-icon::before {
+      content: "";
+      position: absolute;
+      inset: 22%;
+      border: 2px solid #fff;
+      border-radius: 50%;
+    }
+
+    .dominant-heading-icon::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 28%;
+      aspect-ratio: 1;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background: #fff;
+    }
+
+    .world-theme-map__sheet-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 998;
+      display: none;
+      background: rgba(3, 12, 18, 0.5);
+    }
+
+    .world-theme-map__sheet {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 999;
+      display: none;
+      max-height: min(78vh, 420px);
+      padding: 18px 18px 22px;
+      color: #fff;
+      background: rgba(8, 24, 32, 0.97);
+      border-radius: 16px 16px 0 0;
+      box-shadow: 0 -16px 36px rgba(0, 0, 0, 0.34);
+      transform: translateY(100%);
+      transition: transform 0.2s ease;
+    }
+
+    .world-theme-map__sheet.is-open,
+    .world-theme-map__sheet-overlay.is-open {
+      display: block;
+    }
+
+    .world-theme-map__sheet.is-visible {
+      transform: translateY(0);
+    }
+
+    .world-theme-map__sheet-close {
+      position: absolute;
+      top: 10px;
+      right: 12px;
+      width: 36px;
+      height: 36px;
+      border: 0;
+      border-radius: 50%;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.12);
+      font-size: 24px;
+      line-height: 1;
+      cursor: pointer;
+    }
+
+    .world-theme-map__sheet-link {
+      display: grid;
+      grid-template-columns: 72px minmax(0, 1fr);
+      gap: 14px;
+      align-items: center;
+      padding-right: 38px;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .world-theme-map__sheet-link:hover,
+    .world-theme-map__sheet-link:focus {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .world-theme-map__sheet-image {
+      width: 72px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      object-fit: cover;
+      background: #fff;
+    }
+
+    .world-theme-map__sheet-icon {
+      width: 48px;
+      aspect-ratio: 1;
+      margin: 12px;
+      background: var(--emerging-icon);
+      -webkit-mask: url("/assets/images/new-trend-icon.svg") center / contain no-repeat;
+      mask: url("/assets/images/new-trend-icon.svg") center / contain no-repeat;
+    }
+
+    .world-theme-map__sheet-title {
+      margin: 0;
+      font-size: 1.02rem;
+      line-height: 1.24;
+      font-weight: 700;
+    }
+
+    .world-theme-map__sheet-meta {
+      display: block;
+      margin-top: 7px;
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 0.86rem;
+    }
+
+    .index3-map-carousel {
+      position: relative;
+      background: #fff;
+    }
+
+    .index3-map-carousel__viewport {
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .index3-map-carousel__track {
+      display: flex;
+      width: 100%;
+      transition: transform 0.28s ease;
+      will-change: transform;
+    }
+
+    .index3-map-carousel__slide {
+      position: relative;
+      flex: 0 0 100%;
+      min-width: 0;
+    }
+
+    .index3-map-carousel__title {
+      position: absolute;
+      left: 24px;
+      top: 72px;
+      z-index: 28;
+      margin: 0;
+      padding: 7px 12px;
+      color: #fff;
+      background: rgba(8, 24, 32, 0.82);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 8px;
+      font-size: clamp(1rem, 1.45vw, 1.35rem);
+      line-height: 1.2;
+      font-weight: 700;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
+      pointer-events: none;
+    }
+
+    .index3-map-carousel__title-link {
+      pointer-events: auto;
+      text-decoration: none;
+    }
+
+    .index3-map-carousel__title-link:hover,
+    .index3-map-carousel__title-link:focus {
+      color: #fff;
+      text-decoration: none;
+      background: rgba(8, 24, 32, 0.94);
+    }
+
+    .index3-map-carousel__title-link:focus-visible {
+      outline: 3px solid #f4a11a;
+      outline-offset: 3px;
+    }
+
+    .index3-country-map {
+      width: 100%;
+      height: min(48.6vw, 612px);
+      background: #fff;
+    }
+
+    .index3-country-map__chart {
+      width: 100%;
+      height: 100%;
+    }
+
+    .index3-topic-history {
+      width: 100%;
+      height: min(48.6vw, 612px);
+      padding: 70px 24px 54px;
+      box-sizing: border-box;
+      background: #fff;
+    }
+
+    .index3-topic-history__chart {
+      width: 100%;
+      height: 100%;
+    }
+
+    .index3-map-carousel__nav {
+      position: absolute;
+      left: 50%;
+      bottom: 16px;
+      z-index: 35;
+      display: flex;
+      gap: 8px;
+      transform: translateX(-50%);
+      padding: 5px;
+      border-radius: 999px;
+      background: rgba(8, 24, 32, 0.78);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
+    }
+
+    .index3-map-carousel__button {
+      border: 0;
+      border-radius: 999px;
+      padding: 6px 14px;
+      color: #fff;
+      background: transparent;
+      font-size: 0.82rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .index3-map-carousel__button[aria-selected="true"] {
+      color: #102f3d;
+      background: #fff;
+    }
+
+    .index3-map-carousel__button:focus-visible {
+      outline: 3px solid #f4a11a;
+      outline-offset: 2px;
+    }
+
+    @media (max-width: 767.98px) {
+      .index3-country-map {
+        height: clamp(380px, 72svh, 560px);
+      }
+
+      .index3-topic-history {
+        height: clamp(380px, 72svh, 560px);
+        padding: 70px 10px 56px;
+      }
+
+      .index3-map-carousel__title {
+        left: 10px;
+        top: 58px;
+        padding: 6px 9px;
+        max-width: calc(100% - 20px);
+        font-size: 0.96rem;
+      }
+
+      .index3-map-carousel__nav {
+        bottom: 10px;
+        gap: 4px;
+        padding: 4px;
+      }
+
+      .index3-map-carousel__button {
+        padding: 5px 9px;
+        font-size: 0.76rem;
+      }
+
+      .world-theme-map {
+        height: clamp(380px, 72svh, 560px);
+      }
+
+      .world-theme-map__viewport {
+        overflow: auto;
+        overscroll-behavior: contain;
+        -webkit-overflow-scrolling: touch;
+        touch-action: pan-x pan-y;
+        scrollbar-width: none;
+      }
+
+      .world-theme-map__viewport::-webkit-scrollbar {
+        display: none;
+      }
+
+      .world-theme-map__plane {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: max(680px, calc(clamp(380px, 72svh, 560px) * 1.85185));
+        min-width: 680px;
+        height: 100%;
+        transform: none;
+      }
+
+      .world-theme-map__ticker {
+        padding: 8px 8px 0;
+      }
+
+      .world-theme-map__marker {
+        width: 0;
+      }
+
+      .world-theme-map__image {
+        width: 48px;
+        border-width: 3px;
+      }
+
+      .world-theme-map__label {
+        display: none;
+      }
+
+      .world-theme-map__emerging {
+        width: 22px;
+      }
+
+      .world-theme-map__emerging-tooltip {
+        display: none;
+      }
+
+      .world-theme-map__dominant-icon-link {
+        width: 22px;
+      }
+    }
+  </style>
+
+  <div class="hilights-news mt-0">
+    <div class="index3-map-carousel" data-index3-map-carousel>
+      <div class="index3-map-carousel__viewport">
+        <div class="index3-map-carousel__track" data-index3-map-carousel-track>
+          <div class="index3-map-carousel__slide" id="index3-map-slide-themes" role="tabpanel" aria-labelledby="index3-map-tab-themes" aria-hidden="false">
+            <div class="world-theme-map" aria-label="Tendances émergentes et thèmes dominants positionnés sur une carte du monde">
+              <!-- World map source: Al MacDonald / @F1LT3R, CC BY-SA 3.0, Wikimedia Commons. -->
+              <div class="world-theme-map__viewport" tabindex="0" aria-label="Carte du monde défilable">
+                <div class="world-theme-map__plane">
+                  <span class="world-theme-map__base" role="img" aria-label="Carte du monde"></span>
+
+                  
+                  <a href="/fr/2026-09-15/6.html" class="world-theme-map__marker world-theme-map__marker--label-w" style="--x: 25.8%; --y: 34.0%; --rank: 1;" aria-label="Cour Suprême Maintient les Règles de Vote par Correspondance Intactes" aria-haspopup="dialog" aria-expanded="false" data-map-item data-sheet-title="Cour Suprême Maintient les Règles de Vote par Correspondance Intactes" data-sheet-meta="26 articles associés" data-sheet-image="/illustrations/2026-09-15/2026-09-15-6.webp" data-sheet-url="/fr/2026-09-15/6.html">
+                    <span class="world-theme-map__image">
+                      <img src="/illustrations/2026-09-15/2026-09-15-6.webp" alt="">
+                    </span>
+                    <span class="world-theme-map__label">
+                      <b>Cour Suprême Maintient les Règles de Vote par Correspondance Intactes</b>
+                      <span class="world-theme-map__meta">26 articles associés</span>
+                    </span>
+                  </a>
+                  
+                  <a href="/fr/2026-09-15/7.html" class="world-theme-map__marker world-theme-map__marker--label-s" style="--x: 25.8%; --y: 34.0%; --rank: 2;" aria-label="Les États-Unis confirment la présence d&#39;armes spatiales, suscitant des préoccupations diplomatiques" aria-haspopup="dialog" aria-expanded="false" data-map-item data-sheet-title="Les États-Unis confirment la présence d&#39;armes spatiales, suscitant des préoccupations diplomatiques" data-sheet-meta="10 articles associés" data-sheet-image="/illustrations/2026-09-15/2026-09-15-7.webp" data-sheet-url="/fr/2026-09-15/7.html">
+                    <span class="world-theme-map__image">
+                      <img src="/illustrations/2026-09-15/2026-09-15-7.webp" alt="">
+                    </span>
+                    <span class="world-theme-map__label">
+                      <b>Les États-Unis confirment la présence d'armes spatiales, suscitant des préoccupations diplomatiques</b>
+                      <span class="world-theme-map__meta">10 articles associés</span>
+                    </span>
+                  </a>
+                  
+                  <a href="/fr/2026-09-15/8.html" class="world-theme-map__marker world-theme-map__marker--label-s" style="--x: 53.4%; --y: 25.5%; --rank: 3;" aria-label="OTAN abat un drone au-dessus de la Lituanie ; origine contestée" aria-haspopup="dialog" aria-expanded="false" data-map-item data-sheet-title="OTAN abat un drone au-dessus de la Lituanie ; origine contestée" data-sheet-meta="9 articles associés" data-sheet-image="/illustrations/2026-09-15/2026-09-15-8.webp" data-sheet-url="/fr/2026-09-15/8.html">
+                    <span class="world-theme-map__image">
+                      <img src="/illustrations/2026-09-15/2026-09-15-8.webp" alt="">
+                    </span>
+                    <span class="world-theme-map__label">
+                      <b>OTAN abat un drone au-dessus de la Lituanie ; origine contestée</b>
+                      <span class="world-theme-map__meta">9 articles associés</span>
+                    </span>
+                  </a>
+                  
+                  <a href="/fr/2026-09-15/9.html" class="world-theme-map__marker world-theme-map__marker--label-e" style="--x: 56.2%; --y: 25.5%; --rank: 4;" aria-label="Espionnage russe déjoué et menaces hybrides en Allemagne" aria-haspopup="dialog" aria-expanded="false" data-map-item data-sheet-title="Espionnage russe déjoué et menaces hybrides en Allemagne" data-sheet-meta="6 articles associés" data-sheet-image="/illustrations/2026-09-15/2026-09-15-9.webp" data-sheet-url="/fr/2026-09-15/9.html">
+                    <span class="world-theme-map__image">
+                      <img src="/illustrations/2026-09-15/2026-09-15-9.webp" alt="">
+                    </span>
+                    <span class="world-theme-map__label">
+                      <b>Espionnage russe déjoué et menaces hybrides en Allemagne</b>
+                      <span class="world-theme-map__meta">6 articles associés</span>
+                    </span>
+                  </a>
+                  
+
+                  
+                  <a href="/fr/2026-09-15/1.html" class="world-theme-map__dominant-icon-link world-theme-map__emerging" style="--x: 47.8%; --y: 44.7%;" aria-label="Les dirigeants poursuivent la sécurité, le multilatéralisme et la désescalade régionale" aria-haspopup="dialog" aria-expanded="false" data-map-item data-sheet-title="Les dirigeants poursuivent la sécurité, le multilatéralisme et la désescalade régionale" data-sheet-meta="94 articles associés" data-sheet-url="/fr/2026-09-15/1.html">
+                    <span class="world-theme-map__dominant-icon" aria-hidden="true"></span>
+                    <span class="world-theme-map__emerging-tooltip">Les dirigeants poursuivent la sécurité, le multilatéralisme et la désescalade régionale</span>
+                  </a>
+                  
+                  <a href="/fr/2026-09-15/2.html" class="world-theme-map__dominant-icon-link world-theme-map__emerging" style="--x: 54.7%; --y: 28.7%;" aria-label="Escalade, incidents frontaliers et alliances changeantes dans la guerre russo-ukrainienne" aria-haspopup="dialog" aria-expanded="false" data-map-item data-sheet-title="Escalade, incidents frontaliers et alliances changeantes dans la guerre russo-ukrainienne" data-sheet-meta="92 articles associés" data-sheet-url="/fr/2026-09-15/2.html">
+                    <span class="world-theme-map__dominant-icon" aria-hidden="true"></span>
+                    <span class="world-theme-map__emerging-tooltip">Escalade, incidents frontaliers et alliances changeantes dans la guerre russo-ukrainienne</span>
+                  </a>
+                  
+                  <a href="/fr/2026-09-15/3.html" class="world-theme-map__dominant-icon-link world-theme-map__emerging" style="--x: 42.6%; --y: 54.8%;" aria-label="Impulsion Bilatérale : Sécurité, Commerce et Reconstruction dans les Régions" aria-haspopup="dialog" aria-expanded="false" data-map-item data-sheet-title="Impulsion Bilatérale : Sécurité, Commerce et Reconstruction dans les Régions" data-sheet-meta="73 articles associés" data-sheet-url="/fr/2026-09-15/3.html">
+                    <span class="world-theme-map__dominant-icon" aria-hidden="true"></span>
+                    <span class="world-theme-map__emerging-tooltip">Impulsion Bilatérale : Sécurité, Commerce et Reconstruction dans les Régions</span>
+                  </a>
+                  
+                  <a href="/fr/2026-09-15/4.html" class="world-theme-map__dominant-icon-link world-theme-map__emerging" style="--x: 77.1%; --y: 57.4%;" aria-label="Disasters de transport généralisés, réponse humanitaire tendue et chocs météorologiques" aria-haspopup="dialog" aria-expanded="false" data-map-item data-sheet-title="Disasters de transport généralisés, réponse humanitaire tendue et chocs météorologiques" data-sheet-meta="61 articles associés" data-sheet-url="/fr/2026-09-15/4.html">
+                    <span class="world-theme-map__dominant-icon" aria-hidden="true"></span>
+                    <span class="world-theme-map__emerging-tooltip">Disasters de transport généralisés, réponse humanitaire tendue et chocs météorologiques</span>
+                  </a>
+                  
+                  <a href="/fr/2026-09-15/5.html" class="world-theme-map__dominant-icon-link world-theme-map__emerging" style="--x: 56.1%; --y: 39.1%;" aria-label="Escalade régionale : Houthis, violence en Israël-Liban et risques maritimes" aria-haspopup="dialog" aria-expanded="false" data-map-item data-sheet-title="Escalade régionale : Houthis, violence en Israël-Liban et risques maritimes" data-sheet-meta="61 articles associés" data-sheet-url="/fr/2026-09-15/5.html">
+                    <span class="world-theme-map__dominant-icon" aria-hidden="true"></span>
+                    <span class="world-theme-map__emerging-tooltip">Escalade régionale : Houthis, violence en Israël-Liban et risques maritimes</span>
+                  </a>
+                  
+                </div>
+              </div>
+
             </div>
-           </div>
+          </div>
+
+          <div class="index3-map-carousel__slide" id="index3-map-slide-countries" role="tabpanel" aria-labelledby="index3-map-tab-countries" aria-hidden="true">
+            <a class="index3-map-carousel__title index3-map-carousel__title-link" href="/fr/2026-09-15/country_counts.html">Pays les plus cités</a>
+            <div class="index3-country-map" aria-label="Carte des pays les plus cités">
+              <div class="index3-country-map__chart" id="index3-country-map-container"></div>
+            </div>
+          </div>
+
+          <div class="index3-map-carousel__slide" id="index3-map-slide-topics" role="tabpanel" aria-labelledby="index3-map-tab-topics" aria-hidden="true">
+            <a class="index3-map-carousel__title index3-map-carousel__title-link" href="/fr/2026-09-15/labels.html">Historique des thématiques</a>
+            <div class="index3-topic-history" aria-label="Graphique historique des thématiques">
+              <div class="index3-topic-history__chart" id="index3-topic-history-container"></div>
+            </div>
+          </div>
         </div>
       </div>
-</div>
+
+      
+      <div class="world-theme-map__ticker">
+        <div class="container">
+          <div class="breaking-news-divs d-flex justify-content-between">
+            <div class="letf">
+              <h5 class="m-0"><b>15 septembre 2026</b></h5>
+            </div>
+            <div class="slide-section">
+              <div class="ticker-wrapper">
+                <div class="ticker">
+                  <span>&#11093; <b>987</b> articles analysés aujourd'hui &nbsp;&nbsp;</span>
+                  <span>&#11093; L'IA a identifié plus de <b>165</b> thématiques distinctes &nbsp;&nbsp;</span>
+                  <span>&#11093; <b>245</b> sources différentes analysées, couvrant <b>162</b> pays dans le monde &nbsp;&nbsp;</span>
+                  <span>&#11093; <b>138</b> pays sont couverts par des articles publiés à l'étranger &nbsp;&nbsp;</span>
+                  <span>&#11093; <b>987</b> articles analysés aujourd'hui &nbsp;&nbsp;</span>
+                  <span>&#11093; L'IA a identifié plus de <b>165</b> thématiques distinctes &nbsp;&nbsp;</span>
+                  <span>&#11093; <b>245</b> sources différentes analysées, couvrant <b>162</b> pays dans le monde &nbsp;&nbsp;</span>
+                  <span>&#11093; <b>138</b> pays sont couverts par des articles publiés à l'étranger &nbsp;&nbsp;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="index3-map-carousel__nav" role="tablist" aria-label="Vues de la carte">
+        <button id="index3-map-tab-themes" class="index3-map-carousel__button" type="button" role="tab" aria-selected="true" aria-controls="index3-map-slide-themes" data-index3-map-slide="0">Thèmes</button>
+        <button id="index3-map-tab-countries" class="index3-map-carousel__button" type="button" role="tab" aria-selected="false" aria-controls="index3-map-slide-countries" data-index3-map-slide="1">Pays</button>
+        <button id="index3-map-tab-topics" class="index3-map-carousel__button" type="button" role="tab" aria-selected="false" aria-controls="index3-map-slide-topics" data-index3-map-slide="2">Historique</button>
+      </div>
+    </div>
+
+    <div class="world-theme-map__sheet-overlay" data-map-sheet-overlay></div>
+    <div class="world-theme-map__sheet" role="dialog" aria-modal="true" aria-labelledby="world-theme-map-sheet-title" aria-hidden="true" data-map-sheet>
+      <button class="world-theme-map__sheet-close" type="button" aria-label="Fermer" data-map-sheet-close>&times;</button>
+      <a class="world-theme-map__sheet-link" href="#" data-map-sheet-link>
+        <img class="world-theme-map__sheet-image" alt="" data-map-sheet-image>
+        <span class="world-theme-map__sheet-icon" aria-hidden="true" data-map-sheet-icon></span>
+        <span>
+          <b class="world-theme-map__sheet-title" id="world-theme-map-sheet-title" data-map-sheet-title></b>
+          <span class="world-theme-map__sheet-meta" data-map-sheet-meta></span>
+        </span>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    (() => {
+      const root = document.currentScript.closest(".total-body");
+      if (!root) return;
+
+      const mediaQuery = window.matchMedia("(max-width: 767.98px)");
+      const viewport = root.querySelector(".world-theme-map__viewport");
+      const items = Array.from(root.querySelectorAll("[data-map-item]"));
+      const sheet = root.querySelector("[data-map-sheet]");
+      const overlay = root.querySelector("[data-map-sheet-overlay]");
+      const closeButton = root.querySelector("[data-map-sheet-close]");
+      const sheetLink = root.querySelector("[data-map-sheet-link]");
+      const sheetImage = root.querySelector("[data-map-sheet-image]");
+      const sheetIcon = root.querySelector("[data-map-sheet-icon]");
+      const sheetTitle = root.querySelector("[data-map-sheet-title]");
+      const sheetMeta = root.querySelector("[data-map-sheet-meta]");
+      let activeItem = null;
+      let pointerStart = null;
+
+      function centerViewport() {
+        if (!mediaQuery.matches || !viewport) return;
+        requestAnimationFrame(() => {
+          viewport.scrollLeft = Math.max(0, (viewport.scrollWidth - viewport.clientWidth) / 2);
+          viewport.scrollTop = Math.max(0, (viewport.scrollHeight - viewport.clientHeight) / 2);
+        });
+      }
+
+      function openSheet(item) {
+        activeItem = item;
+        items.forEach((entry) => entry.setAttribute("aria-expanded", entry === item ? "true" : "false"));
+        sheetTitle.textContent = item.dataset.sheetTitle || item.getAttribute("aria-label") || "";
+        sheetMeta.textContent = item.dataset.sheetMeta || "";
+        sheetLink.href = item.dataset.sheetUrl || item.href;
+
+        if (item.dataset.sheetImage) {
+          sheetImage.src = item.dataset.sheetImage;
+          sheetImage.hidden = false;
+          sheetIcon.hidden = true;
+        } else {
+          sheetImage.removeAttribute("src");
+          sheetImage.hidden = true;
+          sheetIcon.hidden = false;
+        }
+
+        overlay.classList.add("is-open");
+        sheet.classList.add("is-open");
+        sheet.setAttribute("aria-hidden", "false");
+        requestAnimationFrame(() => {
+          sheet.classList.add("is-visible");
+          closeButton.focus();
+        });
+      }
+
+      function closeSheet() {
+        if (!sheet.classList.contains("is-open")) return;
+        sheet.classList.remove("is-visible");
+        overlay.classList.remove("is-open");
+        sheet.setAttribute("aria-hidden", "true");
+        items.forEach((entry) => entry.setAttribute("aria-expanded", "false"));
+        window.setTimeout(() => sheet.classList.remove("is-open"), 200);
+        if (activeItem) activeItem.focus();
+        activeItem = null;
+      }
+
+      function keepFocusInSheet(event) {
+        if (event.key !== "Tab" || !sheet.classList.contains("is-open")) return;
+        const focusable = [closeButton, sheetLink].filter((element) => element && !element.hidden);
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (!first || !last) return;
+
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first.focus();
+        }
+      }
+
+      items.forEach((item) => {
+        item.addEventListener("pointerdown", (event) => {
+          pointerStart = { x: event.clientX, y: event.clientY };
+        }, { passive: true });
+
+        item.addEventListener("click", (event) => {
+          if (!mediaQuery.matches) return;
+          const moved = pointerStart && Math.hypot(event.clientX - pointerStart.x, event.clientY - pointerStart.y) > 8;
+          pointerStart = null;
+          if (moved) return;
+          event.preventDefault();
+          openSheet(item);
+        });
+      });
+
+      closeButton.addEventListener("click", closeSheet);
+      overlay.addEventListener("click", closeSheet);
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") closeSheet();
+        keepFocusInSheet(event);
+      });
+
+      centerViewport();
+      window.addEventListener("resize", centerViewport);
+      if (mediaQuery.addEventListener) {
+        mediaQuery.addEventListener("change", centerViewport);
+      }
+    })();
+  </script>
+
+  <script>
+    (() => {
+      const root = document.currentScript.closest(".total-body");
+      if (!root) return;
+
+      const carousel = root.querySelector("[data-index3-map-carousel]");
+      if (!carousel) return;
+
+      const track = carousel.querySelector("[data-index3-map-carousel-track]");
+      const buttons = Array.from(carousel.querySelectorAll("[data-index3-map-slide]"));
+      const slides = Array.from(carousel.querySelectorAll(".index3-map-carousel__slide"));
+      let countryMap = null;
+      let countryLegend = null;
+      let topicHistoryChart = null;
+      let topicHistoryLegend = null;
+      let activeIndex = 0;
+      let autoPlayTimer = null;
+      let autoPlayPaused = false;
+      let autoPlayLocked = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const autoPlayDelay = 3000;
+
+      function clearAutoPlayTimer() {
+        if (!autoPlayTimer) return;
+        window.clearTimeout(autoPlayTimer);
+        autoPlayTimer = null;
+      }
+
+      function scheduleAutoPlay() {
+        clearAutoPlayTimer();
+        if (autoPlayLocked || autoPlayPaused || buttons.length < 2 || document.hidden) return;
+        autoPlayTimer = window.setTimeout(() => {
+          showSlide((activeIndex + 1) % buttons.length, { auto: true });
+        }, autoPlayDelay);
+      }
+
+      function pauseAutoPlay() {
+        autoPlayPaused = true;
+        clearAutoPlayTimer();
+      }
+
+      function resumeAutoPlay() {
+        autoPlayPaused = false;
+        scheduleAutoPlay();
+      }
+
+      function lockAutoPlay() {
+        autoPlayLocked = true;
+        clearAutoPlayTimer();
+      }
+
+      function applyCountryLegendLayout() {
+        if (!countryMap || !countryLegend) return;
+        if (window.innerWidth <= 640) {
+          countryLegend.position("bottom");
+          countryLegend.itemsLayout("horizontal");
+          countryLegend.align("left");
+          countryMap.padding([0, 0, 0, 0]);
+        } else {
+          countryLegend.position("right");
+          countryLegend.itemsLayout("vertical");
+          countryLegend.align("center");
+          countryMap.padding([0, 0, 0, 0]);
+        }
+      }
+
+      function drawCountryMap() {
+        if (countryMap || !window.anychart) return;
+
+        countryMap = anychart.map();
+        countryMap.credits().enabled(false);
+        countryMap.geoData("anychart.maps.world");
+        countryMap.interactivity().selectionMode("none");
+        countryMap.unboundRegions()
+          .enabled(true)
+          .fill("#f0f0f0")
+          .stroke({
+            color: "#000000",
+            thickness: 0.5,
+            lineJoin: "round"
+          });
+
+        const seriesData = [
+          
+          {
+            name: "1-2 mentions",
+            color: "#FBE9D0",
+            data: [
+              
+              { id: "SO", name: "1" },
+              
+              { id: "GT", name: "1" },
+              
+              { id: "GH", name: "1" },
+              
+              { id: "CF", name: "1" },
+              
+              { id: "AG", name: "1" },
+              
+              { id: "LC", name: "1" },
+              
+              { id: "GY", name: "1" },
+              
+              { id: "BG", name: "1" },
+              
+              { id: "GE", name: "1" },
+              
+              { id: "LY", name: "1" },
+              
+              { id: "TM", name: "1" },
+              
+              { id: "AO", name: "1" },
+              
+              { id: "DO", name: "1" },
+              
+              { id: "BQ", name: "1" },
+              
+              { id: "TO", name: "1" },
+              
+              { id: "NA", name: "1" },
+              
+              { id: "TW", name: "1" },
+              
+              { id: "HK", name: "1" },
+              
+              { id: "BT", name: "1" },
+              
+              { id: "BI", name: "1" },
+              
+              { id: "SR", name: "1" },
+              
+              { id: "DZ", name: "1" },
+              
+              { id: "AT", name: "1" },
+              
+              { id: "WS", name: "1" },
+              
+              { id: "TK", name: "1" },
+              
+              { id: "TG", name: "1" },
+              
+              { id: "JO", name: "1" },
+              
+              { id: "LA", name: "1" },
+              
+              { id: "EE", name: "1" },
+              
+              { id: "SX", name: "1" },
+              
+              { id: "MY", name: "1" },
+              
+              { id: "AF", name: "1" },
+              
+              { id: "FJ", name: "1" },
+              
+              { id: "PG", name: "1" },
+              
+              { id: "SI", name: "1" },
+              
+              { id: "GR", name: "2" },
+              
+              { id: "NI", name: "2" },
+              
+              { id: "IS", name: "2" },
+              
+              { id: "CD", name: "2" },
+              
+              { id: "NO", name: "2" },
+              
+              { id: "DJ", name: "2" },
+              
+              { id: "LV", name: "2" },
+              
+              { id: "TJ", name: "2" },
+              
+              { id: "UZ", name: "2" },
+              
+              { id: "KG", name: "2" },
+              
+              { id: "RO", name: "2" },
+              
+              { id: "BF", name: "2" },
+              
+              { id: "GW", name: "2" },
+              
+              { id: "JP", name: "2" },
+              
+              { id: "BH", name: "2" },
+              
+              { id: "QA", name: "2" },
+              
+              { id: "BE", name: "2" },
+              
+              { id: "KZ", name: "2" },
+              
+              { id: "MD", name: "2" },
+              
+              { id: "JM", name: "2" },
+              
+              { id: "CY", name: "2" },
+              
+              { id: "CW", name: "2" },
+              
+              { id: "TZ", name: "2" },
+              
+              { id: "CL", name: "2" },
+              
+              { id: "GM", name: "2" },
+              
+              { id: "GN", name: "2" },
+              
+              { id: "MM", name: "2" },
+              
+              { id: "UY", name: "2" }
+              
+            ]
+          },
+          
+          {
+            name: "3-4 mentions",
+            color: "#F8CEB6",
+            data: [
+              
+              { id: "BB", name: "3" },
+              
+              { id: "XK", name: "3" },
+              
+              { id: "CM", name: "3" },
+              
+              { id: "SV", name: "3" },
+              
+              { id: "EC", name: "3" },
+              
+              { id: "KW", name: "3" },
+              
+              { id: "VU", name: "3" },
+              
+              { id: "VA", name: "3" },
+              
+              { id: "SD", name: "3" },
+              
+              { id: "BJ", name: "3" },
+              
+              { id: "PT", name: "3" },
+              
+              { id: "SY", name: "3" },
+              
+              { id: "AW", name: "3" },
+              
+              { id: "KH", name: "3" },
+              
+              { id: "MA", name: "3" },
+              
+              { id: "KE", name: "4" },
+              
+              { id: "PH", name: "4" },
+              
+              { id: "VN", name: "4" },
+              
+              { id: "IE", name: "4" },
+              
+              { id: "NE", name: "4" },
+              
+              { id: "SG", name: "4" }
+              
+            ]
+          },
+          
+          {
+            name: "5-6 mentions",
+            color: "#F4B39C",
+            data: [
+              
+              { id: "BS", name: "5" },
+              
+              { id: "NG", name: "5" },
+              
+              { id: "FI", name: "5" },
+              
+              { id: "PK", name: "5" },
+              
+              { id: "IQ", name: "5" },
+              
+              { id: "ML", name: "5" },
+              
+              { id: "CO", name: "5" },
+              
+              { id: "UG", name: "5" },
+              
+              { id: "TH", name: "5" },
+              
+              { id: "NP", name: "5" },
+              
+              { id: "PE", name: "5" },
+              
+              { id: "SN", name: "5" },
+              
+              { id: "NL", name: "5" },
+              
+              { id: "RS", name: "6" },
+              
+              { id: "EG", name: "6" },
+              
+              { id: "AE", name: "6" },
+              
+              { id: "HU", name: "6" },
+              
+              { id: "IT", name: "6" },
+              
+              { id: "ES", name: "6" },
+              
+              { id: "BY", name: "6" },
+              
+              { id: "AR", name: "6" }
+              
+            ]
+          },
+          
+          {
+            name: "7-11 mentions",
+            color: "#F19982",
+            data: [
+              
+              { id: "AU", name: "7" },
+              
+              { id: "OM", name: "8" },
+              
+              { id: "PA", name: "8" },
+              
+              { id: "KR", name: "9" },
+              
+              { id: "LB", name: "10" },
+              
+              { id: "KP", name: "10" },
+              
+              { id: "ZA", name: "10" },
+              
+              { id: "BR", name: "10" },
+              
+              { id: "CA", name: "10" },
+              
+              { id: "MX", name: "11" },
+              
+              { id: "UN", name: "11" },
+              
+              { id: "CI", name: "11" },
+              
+              { id: "VE", name: "11" }
+              
+            ]
+          },
+          
+          {
+            name: "13-252 mentions",
+            color: "#ED7E67",
+            data: [
+              
+              { id: "TR", name: "13" },
+              
+              { id: "DK", name: "14" },
+              
+              { id: "PS", name: "15" },
+              
+              { id: "ID", name: "15" },
+              
+              { id: "IN", name: "16" },
+              
+              { id: "LT", name: "18" },
+              
+              { id: "PL", name: "20" },
+              
+              { id: "DE", name: "22" },
+              
+              { id: "SE", name: "24" },
+              
+              { id: "FR", name: "25" },
+              
+              { id: "EU", name: "26" },
+              
+              { id: "YE", name: "31" },
+              
+              { id: "IL", name: "32" },
+              
+              { id: "SA", name: "41" },
+              
+              { id: "CN", name: "60" },
+              
+              { id: "GB", name: "62" },
+              
+              { id: "UA", name: "76" },
+              
+              { id: "IR", name: "76" },
+              
+              { id: "RU", name: "131" },
+              
+              { id: "US", name: "252" }
+              
+            ]
+          }
+          
+        ];
+
+        seriesData.forEach((seriesInfo) => {
+          const series = countryMap.choropleth(seriesInfo.data);
+          series.name(seriesInfo.name);
+          series.geoIdField("id");
+          series.color(seriesInfo.color);
+          series.stroke("#000000", 0.5, "round");
+          series.hovered().fill(anychart.color.lighten("#000", 0.2));
+          series.tooltip().format(function() {
+            return this.getData("name") + " mentions";
+          });
+        });
+
+        countryLegend = countryMap.legend();
+        countryLegend.enabled(true).fontSize(12).margin(0, 0, 0, 0).align("left");
+        applyCountryLegendLayout();
+
+        countryMap.container("index3-country-map-container");
+        countryMap.draw();
+      }
+
+      function applyTopicHistoryLegendLayout() {
+        if (!topicHistoryChart || !topicHistoryLegend) return;
+        if (window.innerWidth <= 640) {
+          topicHistoryLegend.position("bottom")
+            .itemsLayout("horizontal")
+            .align("left");
+          topicHistoryChart.padding([8, 8, 54, 8]);
+        } else {
+          topicHistoryLegend.position("right")
+            .itemsLayout("vertical")
+            .align("center")
+            .padding([0, 0, 0, 36]);
+          topicHistoryChart.padding([8, 8, 8, 8]);
+        }
+      }
+
+      function drawTopicHistoryChart() {
+        if (topicHistoryChart || !window.anychart) return;
+
+        const rawData = [["Disaster Relief Operations", 68, 89, 79, 75, 58, 80, 107, 114, 91, 87, 118], ["Global Energy Geopolitics", 60, 66, 49, 53, 36, 35, 15, 33, 23, 37, 33], ["Middle East Conflict Escalation", 67, 55, 73, 88, 76, 69, 88, 85, 49, 67, 87], ["Region: Bilateral Deals", 77, 63, 118, 149, 140, 122, 82, 106, 141, 109, 112], ["Russo-Ukrainian War", 100, 87, 62, 59, 68, 81, 59, 57, 50, 58, 45], ["Sweden Election Dynamics", 25, 49, 17, 0, 0, 0, 0, 0, 0, 0, 0], ["US Diplomacy Watch", 38, 52, 46, 36, 45, 61, 76, 66, 74, 72, 70], ["World Leaders Dialogue", 103, 156, 171, 79, 86, 62, 78, 142, 82, 79, 98]];
+        const dates = ["2026-09-15", "2026-09-14", "2026-09-13", "2026-09-12", "2026-09-11", "2026-09-08", "2026-09-07", "2026-09-06", "2026-09-05", "2026-09-04", "2026-09-03"].reverse();
+        const colors = ["#72e5ac", "#72e5e3", "#72b0e5", "#7279e5", "#a372e5", "#da72e5", "#e572b8", "#e57281", "#e59b72", "#e5d272"];
+
+        topicHistoryChart = anychart.area();
+        topicHistoryChart.credits().enabled(false);
+        topicHistoryChart.yScale().stackMode("value");
+        topicHistoryChart.crosshair().enabled(true).yLabel(false);
+        topicHistoryChart.background().fill("#ffffff");
+        topicHistoryChart.margin(0);
+
+        topicHistoryChart.yAxis().enabled(false);
+        topicHistoryChart.yAxis().labels().enabled(false);
+        topicHistoryChart.yAxis().ticks().enabled(false);
+        topicHistoryChart.yAxis().minorTicks().enabled(false);
+        topicHistoryChart.yGrid().enabled(false);
+        topicHistoryChart.yMinorGrid().enabled(false);
+
+        const seriesList = [];
+        let lastHighlighted = null;
+
+        function setHighlighted(series, on) {
+          const orig = series.meta("origFill");
+          if (!orig) return;
+          if (on) {
+            series.normal().fill("#000000", 0.76);
+            series.normal().stroke("2 #fff 1");
+            series.hovered().fill("#000000", 0.84);
+            series.hovered().stroke("2 #fff 1");
+            series.zIndex(10);
+            series.meta("isHighlighted", true);
+            lastHighlighted = series;
+          } else {
+            series.normal().fill(orig, 0.68);
+            series.normal().stroke("2 " + orig + " 1");
+            series.hovered().fill(orig, 0.82);
+            series.hovered().stroke("2 " + orig + " 1");
+            series.zIndex(1);
+            series.meta("isHighlighted", false);
+            if (lastHighlighted === series) lastHighlighted = null;
+          }
+        }
+
+        function toggleHighlight(series) {
+          if (lastHighlighted && lastHighlighted !== series) setHighlighted(lastHighlighted, false);
+          setHighlighted(series, !series.meta("isHighlighted"));
+        }
+
+        for (let i = 0; i < rawData.length; i += 1) {
+          const values = rawData[i].slice(1).reverse();
+          const labelData = dates.map((date, index) => ({ x: date, value: values[index] }));
+          const series = topicHistoryChart.splineArea(labelData);
+          const color = colors[i % colors.length];
+
+          series.name(rawData[i][0]);
+          series.normal().stroke("2 " + color + " 1");
+          series.normal().fill(color, 0.68);
+          series.hovered().stroke("2 " + color + " 1");
+          series.hovered().fill(color, 0.82);
+          series.meta("origFill", color);
+          series.meta("isHighlighted", false);
+          series.zIndex(1);
+          series.listen("pointClick", (event) => toggleHighlight(event.series));
+          seriesList.push(series);
+        }
+
+        topicHistoryLegend = topicHistoryChart.legend();
+        topicHistoryLegend.enabled(true).padding([8, 0, 0, 0]).fontSize(12);
+        applyTopicHistoryLegendLayout();
+
+        topicHistoryChart.listen("legendItemClick", (event) => {
+          const series = seriesList[event.itemIndex];
+          if (series) toggleHighlight(series);
+          event.preventDefault();
+        });
+
+        topicHistoryChart.tooltip()
+          .displayMode("single")
+          .titleFormat(function() { return this.x + " - " + this.seriesName; })
+          .format(function() { return this.value + " articles"; });
+
+        topicHistoryChart.xAxis().labels()
+          .rotation(-35)
+          .anchor("center-top")
+          .hAlign("center")
+          .offsetX(-30);
+        topicHistoryChart.xAxis().stroke("none");
+        topicHistoryChart.xAxis().ticks().enabled(false);
+        topicHistoryChart.xAxis().minorTicks().enabled(false);
+        topicHistoryChart.container("index3-topic-history-container");
+        topicHistoryChart.draw();
+      }
+
+      function showSlide(index, options = {}) {
+        activeIndex = index;
+        track.style.transform = `translateX(${-100 * index}%)`;
+        buttons.forEach((button, buttonIndex) => {
+          const selected = buttonIndex === index;
+          button.setAttribute("aria-selected", selected ? "true" : "false");
+          button.tabIndex = selected ? 0 : -1;
+        });
+        slides.forEach((slide, slideIndex) => {
+          slide.setAttribute("aria-hidden", slideIndex === index ? "false" : "true");
+        });
+
+        if (index === 1) {
+          anychart.onDocumentReady(() => {
+            drawCountryMap();
+            window.setTimeout(() => {
+              applyCountryLegendLayout();
+              if (countryMap) countryMap.resize();
+            }, 300);
+          });
+        } else if (index === 2) {
+          anychart.onDocumentReady(() => {
+            drawTopicHistoryChart();
+            window.setTimeout(() => {
+              applyTopicHistoryLegendLayout();
+              if (topicHistoryChart) topicHistoryChart.resize();
+            }, 300);
+          });
+        }
+
+        if (options.auto) {
+          scheduleAutoPlay();
+        }
+      }
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          lockAutoPlay();
+          showSlide(Number(button.dataset.index3MapSlide || 0));
+        });
+        button.addEventListener("keydown", (event) => {
+          if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+          event.preventDefault();
+          lockAutoPlay();
+          const direction = event.key === "ArrowRight" ? 1 : -1;
+          const nextIndex = (activeIndex + direction + buttons.length) % buttons.length;
+          showSlide(nextIndex);
+          buttons[nextIndex].focus();
+        });
+      });
+
+      carousel.addEventListener("pointerenter", pauseAutoPlay);
+      carousel.addEventListener("pointerleave", resumeAutoPlay);
+      carousel.addEventListener("pointerdown", lockAutoPlay);
+      carousel.addEventListener("focusin", pauseAutoPlay);
+      carousel.addEventListener("focusout", (event) => {
+        if (!carousel.contains(event.relatedTarget)) resumeAutoPlay();
+      });
+      carousel.addEventListener("keydown", (event) => {
+        if (event.key === "Tab") return;
+        lockAutoPlay();
+      });
+
+      document.addEventListener("visibilitychange", () => {
+        if (document.hidden) {
+          pauseAutoPlay();
+        } else if (!autoPlayLocked) {
+          resumeAutoPlay();
+        }
+      });
+
+      window.addEventListener("resize", () => {
+        applyCountryLegendLayout();
+        if (countryMap) countryMap.resize();
+        applyTopicHistoryLegendLayout();
+        if (topicHistoryChart) topicHistoryChart.resize();
+      });
+
+      scheduleAutoPlay();
+    })();
+  </script>
 </section>
-
-
 
 <!-- Top story  --> 
  <section class="total-body pt-3 d-block">
@@ -145,7 +1622,7 @@
              <div class="col-lg-7">
                  <div class="main-st-sec">
                     <h2 class="comon-sub-heading"> 
-                      <b>Thématiques Principales</b> 
+                      <span class="dominant-heading-icon" aria-hidden="true"></span><b>Thématiques Principales</b> 
                       <span class="tooltip_mw">
                       &nbsp;<img height="20" src="/assets/images/ic.png" style="vertical-align: text-top;">
                         <span class="tooltiptext_mw">
@@ -164,14 +1641,14 @@
                           <div class="owl-item cloned" style="width: 752.664px; margin-right: 10px;"></div>
                 
                           <div class="owl-item" style="width: 752.664px; margin-right: 10px;">
-                            <a href="/fr/2026-09-14/1.html" class="comon-slider-items">
+                            <a href="/fr/2026-09-15/1.html" class="comon-slider-items">
                             <figure>
-                               <img src="/illustrations/2026-09-14/2026-09-14-1.webp" alt="big1">
+                               <img src="/illustrations/2026-09-15/2026-09-15-1.webp" alt="big1">
                             </figure>                       
                             <span class="titel-t d-block">
                                 <span class="nes-tags d-block limite-texte" style="white-space:nowrap">Dialogue des dirigeants mondiaux</span>
-                                <p> Sommet, sommet et gestion de crise : Les dirigeants jonglent avec des ambitions multipolaires et la sécurité régionale</p> 
-                                  <span class="date-t d-block"><b>138</b> articles associés</span>
+                                <p> Les dirigeants poursuivent la sécurité, le multilatéralisme et la désescalade régionale</p> 
+                                  <span class="date-t d-block"><b>94</b> articles associés</span>
                             </span>
                           </a></div>
                         
@@ -189,57 +1666,57 @@
                 <div class="row shorts-news-d1 row-cols-1 row-cols-md-2 g-lg-2">
                     
                     <div class="col">
-                        <a href="/fr/2026-09-14/2.html" class="comon-slider-items">
+                        <a href="/fr/2026-09-15/2.html" class="comon-slider-items">
                             <figure>
-                                <img src="/illustrations/2026-09-14/2026-09-14-2.webp" alt="Article secondaire">
-                            </figure>
-                            
-                            <span class="titel-t d-block">
-                                <span class="nes-tags d-block limite-texte">Opérations de secours en cas de catastrophe</span>
-                                <p>Catastrophes maritimes régionales et crises humanitaires croissantes</p> 
-                                <span class="date-t d-block"><b>79</b> articles associés</span>
-                            </span>
-                        </a>
-                    </div>
-                    
-                    <div class="col">
-                        <a href="/fr/2026-09-14/3.html" class="comon-slider-items">
-                            <figure>
-                                <img src="/illustrations/2026-09-14/2026-09-14-3.webp" alt="Article secondaire">
+                                <img src="/illustrations/2026-09-15/2026-09-15-2.webp" alt="Article secondaire">
                             </figure>
                             
                             <span class="titel-t d-block">
                                 <span class="nes-tags d-block limite-texte">Guerre russo-ukrainienne</span>
-                                <p>Grèves transfrontalières, alarme occidentale et réactions internationales fracturées</p> 
-                                <span class="date-t d-block"><b>77</b> articles associés</span>
+                                <p>Escalade, incidents frontaliers et alliances changeantes dans la guerre russo-ukrainienne</p> 
+                                <span class="date-t d-block"><b>92</b> articles associés</span>
                             </span>
                         </a>
                     </div>
                     
                     <div class="col">
-                        <a href="/fr/2026-09-14/4.html" class="comon-slider-items">
+                        <a href="/fr/2026-09-15/3.html" class="comon-slider-items">
                             <figure>
-                                <img src="/illustrations/2026-09-14/2026-09-14-4.webp" alt="Article secondaire">
+                                <img src="/illustrations/2026-09-15/2026-09-15-3.webp" alt="Article secondaire">
                             </figure>
                             
                             <span class="titel-t d-block">
-                                <span class="nes-tags d-block limite-texte">Géopolitique mondiale de l'énergie</span>
-                                <p>Points stratégiques maritimes, frappes sur les pipelines et une diplomatie énergétique fracturée</p> 
-                                <span class="date-t d-block"><b>58</b> articles associés</span>
+                                <span class="nes-tags d-block limite-texte">Région : Accords Bilatéraux</span>
+                                <p>Impulsion Bilatérale : Sécurité, Commerce et Reconstruction dans les Régions</p> 
+                                <span class="date-t d-block"><b>73</b> articles associés</span>
                             </span>
                         </a>
                     </div>
                     
                     <div class="col">
-                        <a href="/fr/2026-09-14/5.html" class="comon-slider-items">
+                        <a href="/fr/2026-09-15/4.html" class="comon-slider-items">
                             <figure>
-                                <img src="/illustrations/2026-09-14/2026-09-14-5.webp" alt="Article secondaire">
+                                <img src="/illustrations/2026-09-15/2026-09-15-4.webp" alt="Article secondaire">
                             </figure>
                             
                             <span class="titel-t d-block">
-                                <span class="nes-tags d-block limite-texte">Région : Accords bilatéraux</span>
-                                <p>Les accords bilatéraux renforcent la sécurité régionale, le développement et les partenariats stratégiques</p> 
-                                <span class="date-t d-block"><b>54</b> articles associés</span>
+                                <span class="nes-tags d-block limite-texte">Opérations de secours en cas de catastrophe</span>
+                                <p>Disasters de transport généralisés, réponse humanitaire tendue et chocs météorologiques</p> 
+                                <span class="date-t d-block"><b>61</b> articles associés</span>
+                            </span>
+                        </a>
+                    </div>
+                    
+                    <div class="col">
+                        <a href="/fr/2026-09-15/5.html" class="comon-slider-items">
+                            <figure>
+                                <img src="/illustrations/2026-09-15/2026-09-15-5.webp" alt="Article secondaire">
+                            </figure>
+                            
+                            <span class="titel-t d-block">
+                                <span class="nes-tags d-block limite-texte">Escalade du conflit au Moyen-Orient</span>
+                                <p>Escalade régionale : Houthis, violence en Israël-Liban et risques maritimes</p> 
+                                <span class="date-t d-block"><b>61</b> articles associés</span>
                             </span>
                         </a>
                     </div>
@@ -271,53 +1748,53 @@
             <div class="row mt-4 row-cols-1 row-cols-md-2 row-cols-lg-4 gy-4 gy-lg-0">
               
               <div class="col">
-                <a href="/fr/2026-09-14/6.html" class="populer-sec1-news">
+                <a href="/fr/2026-09-15/6.html" class="populer-sec1-news">
                   <figure>
-                    <img src="/illustrations/2026-09-14/2026-09-14-6.webp" alt="theme">
-                    <span class="st-tags limite-texte">Impulsion pour la dévolution au Royaume-Uni</span>
+                    <img src="/illustrations/2026-09-15/2026-09-15-6.webp" alt="theme">
+                    <span class="st-tags limite-texte">Décisions de la Cour Suprême des États-Unis sur le Vote</span>
                   </figure>
                   <div class="content-div1">
-                    <h5> L'impulsion pour la dévolution au Royaume-Uni s'intensifie </h5>
-                    <p><b> 7 </b>articles associés</p>
+                    <h5> Cour Suprême Maintient les Règles de Vote par Correspondance Intactes </h5>
+                    <p><b> 26 </b>articles associés</p>
                   </div>
                 </a>
               </div>
               
               <div class="col">
-                <a href="/fr/2026-09-14/7.html" class="populer-sec1-news">
+                <a href="/fr/2026-09-15/7.html" class="populer-sec1-news">
                   <figure>
-                    <img src="/illustrations/2026-09-14/2026-09-14-7.webp" alt="theme">
-                    <span class="st-tags limite-texte">Élections en Allemagne : montée de l'extrême droite</span>
+                    <img src="/illustrations/2026-09-15/2026-09-15-7.webp" alt="theme">
+                    <span class="st-tags limite-texte">Diplomatie sur les armes spatiales</span>
                   </figure>
                   <div class="content-div1">
-                    <h5> La montée de l'extrême droite remodèle la politique des États allemands </h5>
+                    <h5> Les États-Unis confirment la présence d'armes spatiales, suscitant des préoccupations diplomatiques </h5>
+                    <p><b> 10 </b>articles associés</p>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="col">
+                <a href="/fr/2026-09-15/8.html" class="populer-sec1-news">
+                  <figure>
+                    <img src="/illustrations/2026-09-15/2026-09-15-8.webp" alt="theme">
+                    <span class="st-tags limite-texte">Abattage de drone par l'OTAN dans la région baltique</span>
+                  </figure>
+                  <div class="content-div1">
+                    <h5> OTAN abat un drone au-dessus de la Lituanie ; origine contestée </h5>
+                    <p><b> 9 </b>articles associés</p>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="col">
+                <a href="/fr/2026-09-15/9.html" class="populer-sec1-news">
+                  <figure>
+                    <img src="/illustrations/2026-09-15/2026-09-15-9.webp" alt="theme">
+                    <span class="st-tags limite-texte">Espionnage russe en Allemagne</span>
+                  </figure>
+                  <div class="content-div1">
+                    <h5> Espionnage russe déjoué et menaces hybrides en Allemagne </h5>
                     <p><b> 6 </b>articles associés</p>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="col">
-                <a href="/fr/2026-09-14/8.html" class="populer-sec1-news">
-                  <figure>
-                    <img src="/illustrations/2026-09-14/2026-09-14-8.webp" alt="theme">
-                    <span class="st-tags limite-texte">Répression des droits LGBTQ+ en Turquie</span>
-                  </figure>
-                  <div class="content-div1">
-                    <h5> L'élargissement de la répression en Turquie contre les groupes LGBTQ+ et VIH </h5>
-                    <p><b> 4 </b>articles associés</p>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="col">
-                <a href="/fr/2026-09-14/9.html" class="populer-sec1-news">
-                  <figure>
-                    <img src="/illustrations/2026-09-14/2026-09-14-9.webp" alt="theme">
-                    <span class="st-tags limite-texte">Recrutement d'espionnage russe</span>
-                  </figure>
-                  <div class="content-div1">
-                    <h5> Réseaux exposés et plans déjoués : recrutement russe en Allemagne </h5>
-                    <p><b> 2 </b>articles associés</p>
                   </div>
                 </a>
               </div>
@@ -351,10 +1828,23 @@
             <div class="row mt-4 row-cols-1 row-cols-md-2 row-cols-lg-4 gy-4 gy-lg-0">
               
               <div class="col">
+                <a href="/fr/2026-09-14/index.html" class="populer-sec1-news">
+                  <figure>
+                    <img src="/illustrations/2026-09-14/2026-09-14-1.webp" alt="big1">
+                    <span class="st-tags"> 14 septembre 2026 </span>
+                  </figure>
+                  <div class="content-div1">
+                    <h5> Sommet, sommet et gestion de crise : Les dirigeants jonglent avec des ambitions multipolaires et la sécurité régionale </h5>
+                    <p><b> 138 </b> articles associés</p>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="col">
                 <a href="/fr/2026-09-13/index.html" class="populer-sec1-news">
                   <figure>
                     <img src="/illustrations/2026-09-13/2026-09-13-1.webp" alt="big1">
-                    <span class="st-tags"> septembre 13, 2026 </span>
+                    <span class="st-tags"> 13 septembre 2026 </span>
                   </figure>
                   <div class="content-div1">
                     <h5> Diplomatie en mouvement : la paix par les BRICS, les discussions en Ukraine et la désescalade régionale </h5>
@@ -367,7 +1857,7 @@
                 <a href="/fr/2026-09-12/index.html" class="populer-sec1-news">
                   <figure>
                     <img src="/illustrations/2026-09-12/2026-09-12-1.webp" alt="big1">
-                    <span class="st-tags"> septembre 12, 2026 </span>
+                    <span class="st-tags"> 12 septembre 2026 </span>
                   </figure>
                   <div class="content-div1">
                     <h5> Diplomatie bilatérale : Accords, Visites et Réalignements stratégiques </h5>
@@ -380,24 +1870,11 @@
                 <a href="/fr/2026-09-11/index.html" class="populer-sec1-news">
                   <figure>
                     <img src="/illustrations/2026-09-11/2026-09-11-1.webp" alt="big1">
-                    <span class="st-tags"> septembre 11, 2026 </span>
+                    <span class="st-tags"> 11 septembre 2026 </span>
                   </figure>
                   <div class="content-div1">
                     <h5> Accords bilatéraux et changements diplomatiques : investissements, pactes de sécurité et ruptures </h5>
                     <p><b> 132 </b> articles associés</p>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="col">
-                <a href="/fr/2026-09-08/index.html" class="populer-sec1-news">
-                  <figure>
-                    <img src="/illustrations/2026-09-08/2026-09-08-1.webp" alt="big1">
-                    <span class="st-tags"> septembre 08, 2026 </span>
-                  </figure>
-                  <div class="content-div1">
-                    <h5> Les accords bilatéraux modifient les alignements régionaux et les investissements </h5>
-                    <p><b> 116 </b> articles associés</p>
                   </div>
                 </a>
               </div>
@@ -441,13 +1918,13 @@
                <a href="/">Actus </a>
             </li>
             <li>
-              <a href="/fr/2026-09-14/country_counts.html">Pays</a>
+              <a href="/fr/2026-09-15/country_counts.html">Pays</a>
             </li>
             <li>
-              <a href="/fr/2026-09-14/labels.html">Thèmes</a>
+              <a href="/fr/2026-09-15/labels.html">Thèmes</a>
             </li>
             <li>
-              <a href="/fr/2026-09-14/c1.html">France Focus</a>
+              <a href="/fr/2026-09-15/c1.html">France Focus</a>
             </li>
             <li>
               <a href="/fr/about.html">A Propos</a>
