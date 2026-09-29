@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<title>L'actualité aujourd'hui</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/assets/images/dailyscope-favicon.png">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/fontawesome-5.15.4.min.css">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+<meta name="description"
+      content="DailyScope.ai analyse automatiquement les actualités mondiales pour mettre en lumière les pays et thèmes les plus couverts.">
+<meta property="og:title" content="DailyScope.ai — Today’s global news signals">
+<meta property="og:description"
+      content="DailyScope.ai analyse automatiquement les actualités mondiales pour mettre en lumière les pays et thèmes les plus couverts.">
+<meta property="og:image" content="https://www.dailyscope.ai/assets/images/dailyscope-carte.jpg">
+<meta property="og:url" content="https://www.dailyscope.ai/fr/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DailyScope.ai">
+<link rel="canonical" href="https://www.dailyscope.ai/fr/">
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+        page_lang: 'fr',
+        page_type: 'home-map',
+        
+        
+        
+});
+    (function(w,d,s,l,i){
+        w[l]=w[l]||[];
+        w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+        var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),
+            dl=l!='dataLayer'?'&l='+l:'';
+        j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+        f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KL7V4FQH');
+</script>
+</head>
+<body>
+
+<header>  
+  <div class="middle-section py-2" style="background-color:#244855;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+            <div class="col order-3 order-lg-1"><!-- vide --></div>
+             <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+            </div>
+            <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
+              <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
+              <script>
+                const currentUrl = window.location.href;
+                const englishUrl = currentUrl.replace('/fr', '/en');
+                document.getElementById('lang-switch').setAttribute('href', englishUrl);
+              </script>                 
+            </div>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+<div class="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div id="menu-id">
+      <div class="container">
+        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+          <span>
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/">Actus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2026-09-14/country_counts.html">Pays</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2026-09-14/labels.html">Thèmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/2026-09-14/c1.html">France Focus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fr/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Carte des thèmes dominants -->
+<section class="total-body d-block">
+  <style>
+    .world-theme-map {
+      --map-bg: #ffffff;
+      --map-land: #0f3342;
+      --emerging-icon: #f4a11a;
+      --emerging-icon-hover: #ff7a1a;
+      position: relative;
+      width: 100%;
+      height: min(48.6vw, 612px);
+      overflow: hidden;
+      background: var(--map-bg);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .world-theme-map__ticker {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      z-index: 25;
+      padding: 10px 12px 0;
+      pointer-events: none;
+    }
+
+    .world-theme-map__ticker .container {
+      pointer-events: auto;
+    }
+
+    .world-theme-map__ticker .breaking-news-divs {
+      background: #fff;
+      border: 1px solid rgba(8, 24, 32, 0.14);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
+    }
+
+    .world-theme-map__ticker .ticker-wrapper {
+      background: #fff;
+    }
+
+    .world-theme-map__ticker .ticker span {
+      color: #090909;
+    }
+
+    .world-theme-map__viewport {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+    }
+
+    .world-theme-map__plane {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      height: 111.111%;
+      aspect-ratio: 1.85185;
+      transform: translateX(-50%);
+    }
+
+    .world-theme-map__base {
+      display: block;
+      position: absolute;
+      inset: 0;
+      background: var(--map-land);
+      -webkit-mask: url("/assets/images/world-map-low-resolution.svg") center top / 100% 100% no-repeat;
+      mask: url("/assets/images/world-map-low-resolution.svg") center top / 100% 100% no-repeat;
+      opacity: 0.9;
+    }
+
+    .world-theme-map__marker {
+      position: absolute;
+      left: var(--x);
+      top: var(--y);
+      width: 0;
+      height: 0;
+      color: #fff;
+      text-decoration: none;
+      filter: drop-shadow(0 12px 18px rgba(0, 0, 0, 0.32));
+      z-index: calc(20 - var(--rank));
+    }
+
+    .world-theme-map__marker:hover,
+    .world-theme-map__marker:focus {
+      color: #fff;
+      text-decoration: none;
+      z-index: 30;
+    }
+
+    .world-theme-map__image {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: clamp(76px, 8vw, 112px);
+      aspect-ratio: 1;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      border: 4px solid #fff;
+      overflow: hidden;
+      clip-path: circle(50%);
+      background: #fff;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.34);
+    }
+
+    .world-theme-map__image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 50%;
+    }
+
+    .world-theme-map__label {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: clamp(148px, 17vw, 230px);
+      padding: 7px 9px;
+      background: rgba(8, 24, 32, 0.88);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 8px;
+      font-size: clamp(0.72rem, 1vw, 0.92rem);
+      line-height: 1.22;
+      text-align: center;
+      backdrop-filter: blur(4px);
+    }
+
+    .world-theme-map__marker--label-e .world-theme-map__label {
+      transform: translate(48px, -50%);
+      text-align: left;
+    }
+
+    .world-theme-map__marker--label-w .world-theme-map__label {
+      transform: translate(calc(-100% - 48px), -50%);
+      text-align: right;
+    }
+
+    .world-theme-map__marker--label-s .world-theme-map__label {
+      transform: translate(-50%, 48px);
+    }
+
+    .world-theme-map__marker--label-n .world-theme-map__label {
+      transform: translate(-50%, calc(-100% - 48px));
+    }
+
+    .world-theme-map__marker--label-se .world-theme-map__label {
+      transform: translate(44px, 42px);
+      text-align: left;
+    }
+
+    .world-theme-map__marker--label-sw .world-theme-map__label {
+      transform: translate(calc(-100% - 44px), 42px);
+      text-align: right;
+    }
+
+    .world-theme-map__marker--label-ne .world-theme-map__label {
+      transform: translate(44px, calc(-100% - 42px));
+      text-align: left;
+    }
+
+    .world-theme-map__marker--label-nw .world-theme-map__label {
+      transform: translate(calc(-100% - 44px), calc(-100% - 42px));
+      text-align: right;
+    }
+
+    .world-theme-map__label b {
+      display: block;
+      font-weight: 700;
+      max-height: 2.44em;
+      overflow: hidden;
+    }
+
+    .world-theme-map__meta {
+      display: block;
+      margin-top: 4px;
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 0.76em;
+    }
+
+    .world-theme-map__emerging {
+      position: absolute;
+      left: var(--x);
+      top: var(--y);
+      width: clamp(24px, 2.6vw, 38px);
+      aspect-ratio: 1;
+      transform: translate(-50%, -50%);
+      text-decoration: none;
+      z-index: 22;
+    }
+
+    .world-theme-map__emerging:hover,
+    .world-theme-map__emerging:focus {
+      z-index: 31;
+    }
+
+    .world-theme-map__emerging-icon {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: var(--emerging-icon);
+      -webkit-mask: url("/assets/images/new-trend-icon.svg") center / contain no-repeat;
+      mask: url("/assets/images/new-trend-icon.svg") center / contain no-repeat;
+      filter: drop-shadow(0 5px 8px rgba(0, 0, 0, 0.32));
+    }
+
+    .world-theme-map__emerging:hover .world-theme-map__emerging-icon,
+    .world-theme-map__emerging:focus .world-theme-map__emerging-icon {
+      background: var(--emerging-icon-hover);
+    }
+
+    .world-theme-map__emerging-tooltip {
+      position: absolute;
+      left: 50%;
+      bottom: calc(100% + 8px);
+      width: clamp(150px, 18vw, 240px);
+      padding: 7px 9px;
+      background: rgba(8, 24, 32, 0.92);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 8px;
+      color: #fff;
+      font-size: clamp(0.72rem, 0.9vw, 0.88rem);
+      line-height: 1.25;
+      text-align: center;
+      opacity: 0;
+      pointer-events: none;
+      transform: translate(-50%, 4px);
+      transition: opacity 0.16s ease, transform 0.16s ease;
+    }
+
+    .world-theme-map__emerging-tooltip::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 100%;
+      transform: translateX(-50%);
+      border: 6px solid transparent;
+      border-top-color: rgba(8, 24, 32, 0.92);
+    }
+
+    .world-theme-map__emerging:hover .world-theme-map__emerging-tooltip,
+    .world-theme-map__emerging:focus .world-theme-map__emerging-tooltip {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+
+    .world-theme-map__sheet-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 998;
+      display: none;
+      background: rgba(3, 12, 18, 0.5);
+    }
+
+    .world-theme-map__sheet {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 999;
+      display: none;
+      max-height: min(78vh, 420px);
+      padding: 18px 18px 22px;
+      color: #fff;
+      background: rgba(8, 24, 32, 0.97);
+      border-radius: 16px 16px 0 0;
+      box-shadow: 0 -16px 36px rgba(0, 0, 0, 0.34);
+      transform: translateY(100%);
+      transition: transform 0.2s ease;
+    }
+
+    .world-theme-map__sheet.is-open,
+    .world-theme-map__sheet-overlay.is-open {
+      display: block;
+    }
+
+    .world-theme-map__sheet.is-visible {
+      transform: translateY(0);
+    }
+
+    .world-theme-map__sheet-close {
+      position: absolute;
+      top: 10px;
+      right: 12px;
+      width: 36px;
+      height: 36px;
+      border: 0;
+      border-radius: 50%;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.12);
+      font-size: 24px;
+      line-height: 1;
+      cursor: pointer;
+    }
+
+    .world-theme-map__sheet-link {
+      display: grid;
+      grid-template-columns: 72px minmax(0, 1fr);
+      gap: 14px;
+      align-items: center;
+      padding-right: 38px;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .world-theme-map__sheet-link:hover,
+    .world-theme-map__sheet-link:focus {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .world-theme-map__sheet-image {
+      width: 72px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      object-fit: cover;
+      background: #fff;
+    }
+
+    .world-theme-map__sheet-icon {
+      width: 48px;
+      aspect-ratio: 1;
+      margin: 12px;
+      background: var(--emerging-icon);
+      -webkit-mask: url("/assets/images/new-trend-icon.svg") center / contain no-repeat;
+      mask: url("/assets/images/new-trend-icon.svg") center / contain no-repeat;
+    }
+
+    .world-theme-map__sheet-title {
+      margin: 0;
+      font-size: 1.02rem;
+      line-height: 1.24;
+      font-weight: 700;
+    }
+
+    .world-theme-map__sheet-meta {
+      display: block;
+      margin-top: 7px;
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 0.86rem;
+    }
+
+    @media (max-width: 767.98px) {
+      .world-theme-map {
+        height: clamp(380px, 72svh, 560px);
+      }
+
+      .world-theme-map__viewport {
+        overflow: auto;
+        overscroll-behavior: contain;
+        -webkit-overflow-scrolling: touch;
+        touch-action: pan-x pan-y;
+        scrollbar-width: none;
+      }
+
+      .world-theme-map__viewport::-webkit-scrollbar {
+        display: none;
+      }
+
+      .world-theme-map__plane {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: max(680px, calc(clamp(380px, 72svh, 560px) * 1.85185));
+        min-width: 680px;
+        height: 100%;
+        transform: none;
+      }
+
+      .world-theme-map__ticker {
+        padding: 8px 8px 0;
+      }
+
+      .world-theme-map__marker {
+        width: 0;
+      }
+
+      .world-theme-map__image {
+        width: 48px;
+        border-width: 3px;
+      }
+
+      .world-theme-map__label {
+        display: none;
+      }
+
+      .world-theme-map__emerging {
+        width: 22px;
+      }
+
+      .world-theme-map__emerging-tooltip {
+        display: none;
+      }
+    }
+  </style>
+
+  <div class="hilights-news mt-0">
+    <div class="world-theme-map" aria-label="Thèmes dominants positionnés sur une carte du monde">
+      <!-- World map source: Al MacDonald / @F1LT3R, CC BY-SA 3.0, Wikimedia Commons. -->
+      <div class="world-theme-map__viewport" tabindex="0" aria-label="Carte du monde défilable">
+        <div class="world-theme-map__plane">
+          <span class="world-theme-map__base" role="img" aria-label="Carte du monde"></span>
+
+          
+          <a href="/fr/2026-09-14/1.html" class="world-theme-map__marker world-theme-map__marker--label-w" style="--x: 47.8%; --y: 44.7%; --rank: 1;" aria-label="Sommet, sommet et gestion de crise : Les dirigeants jonglent avec des ambitions multipolaires et la sécurité régionale" aria-haspopup="dialog" aria-expanded="false" data-map-item data-sheet-title="Sommet, sommet et gestion de crise : Les dirigeants jonglent avec des ambitions multipolaires et la sécurité régionale" data-sheet-meta="138 articles associés" data-sheet-image="/illustrations/2026-09-14/2026-09-14-1.webp" data-sheet-url="/fr/2026-09-14/1.html">
+            <span class="world-theme-map__image">
+              <img src="/illustrations/2026-09-14/2026-09-14-1.webp" alt="">
+            </span>
+            <span class="world-theme-map__label">
+              <b>Sommet, sommet et gestion de crise : Les dirigeants jonglent avec des ambitions multipolaires et la sécurité régionale</b>
+              <span class="world-theme-map__meta">138 articles associés</span>
+            </span>
+          </a>
+          
+          <a href="/fr/2026-09-14/2.html" class="world-theme-map__marker world-theme-map__marker--label-w" style="--x: 77.1%; --y: 57.4%; --rank: 2;" aria-label="Catastrophes maritimes régionales et crises humanitaires croissantes" aria-haspopup="dialog" aria-expanded="false" data-map-item data-sheet-title="Catastrophes maritimes régionales et crises humanitaires croissantes" data-sheet-meta="79 articles associés" data-sheet-image="/illustrations/2026-09-14/2026-09-14-2.webp" data-sheet-url="/fr/2026-09-14/2.html">
+            <span class="world-theme-map__image">
+              <img src="/illustrations/2026-09-14/2026-09-14-2.webp" alt="">
+            </span>
+            <span class="world-theme-map__label">
+              <b>Catastrophes maritimes régionales et crises humanitaires croissantes</b>
+              <span class="world-theme-map__meta">79 articles associés</span>
+            </span>
+          </a>
+          
+          <a href="/fr/2026-09-14/3.html" class="world-theme-map__marker world-theme-map__marker--label-w" style="--x: 54.7%; --y: 28.7%; --rank: 3;" aria-label="Grèves transfrontalières, alarme occidentale et réactions internationales fracturées" aria-haspopup="dialog" aria-expanded="false" data-map-item data-sheet-title="Grèves transfrontalières, alarme occidentale et réactions internationales fracturées" data-sheet-meta="77 articles associés" data-sheet-image="/illustrations/2026-09-14/2026-09-14-3.webp" data-sheet-url="/fr/2026-09-14/3.html">
+            <span class="world-theme-map__image">
+              <img src="/illustrations/2026-09-14/2026-09-14-3.webp" alt="">
+            </span>
+            <span class="world-theme-map__label">
+              <b>Grèves transfrontalières, alarme occidentale et réactions internationales fracturées</b>
+              <span class="world-theme-map__meta">77 articles associés</span>
+            </span>
+          </a>
+          
+          <a href="/fr/2026-09-14/4.html" class="world-theme-map__marker world-theme-map__marker--label-e" style="--x: 58.2%; --y: 42.4%; --rank: 4;" aria-label="Points stratégiques maritimes, frappes sur les pipelines et une diplomatie énergétique fracturée" aria-haspopup="dialog" aria-expanded="false" data-map-item data-sheet-title="Points stratégiques maritimes, frappes sur les pipelines et une diplomatie énergétique fracturée" data-sheet-meta="58 articles associés" data-sheet-image="/illustrations/2026-09-14/2026-09-14-4.webp" data-sheet-url="/fr/2026-09-14/4.html">
+            <span class="world-theme-map__image">
+              <img src="/illustrations/2026-09-14/2026-09-14-4.webp" alt="">
+            </span>
+            <span class="world-theme-map__label">
+              <b>Points stratégiques maritimes, frappes sur les pipelines et une diplomatie énergétique fracturée</b>
+              <span class="world-theme-map__meta">58 articles associés</span>
+            </span>
+          </a>
+          
+          <a href="/fr/2026-09-14/5.html" class="world-theme-map__marker world-theme-map__marker--label-e" style="--x: 72.7%; --y: 34.3%; --rank: 5;" aria-label="Les accords bilatéraux renforcent la sécurité régionale, le développement et les partenariats stratégiques" aria-haspopup="dialog" aria-expanded="false" data-map-item data-sheet-title="Les accords bilatéraux renforcent la sécurité régionale, le développement et les partenariats stratégiques" data-sheet-meta="54 articles associés" data-sheet-image="/illustrations/2026-09-14/2026-09-14-5.webp" data-sheet-url="/fr/2026-09-14/5.html">
+            <span class="world-theme-map__image">
+              <img src="/illustrations/2026-09-14/2026-09-14-5.webp" alt="">
+            </span>
+            <span class="world-theme-map__label">
+              <b>Les accords bilatéraux renforcent la sécurité régionale, le développement et les partenariats stratégiques</b>
+              <span class="world-theme-map__meta">54 articles associés</span>
+            </span>
+          </a>
+          
+
+          
+          <a href="/fr/2026-09-14/6.html" class="world-theme-map__emerging" style="--x: 48.1%; --y: 28.3%;" aria-label="L&#39;impulsion pour la dévolution au Royaume-Uni s&#39;intensifie" aria-haspopup="dialog" aria-expanded="false" data-map-item data-sheet-title="L&#39;impulsion pour la dévolution au Royaume-Uni s&#39;intensifie" data-sheet-meta="Sujet émergent" data-sheet-url="/fr/2026-09-14/6.html">
+            <span class="world-theme-map__emerging-icon" aria-hidden="true"></span>
+            <span class="world-theme-map__emerging-tooltip">L'impulsion pour la dévolution au Royaume-Uni s'intensifie</span>
+          </a>
+          
+          <a href="/fr/2026-09-14/7.html" class="world-theme-map__emerging" style="--x: 49.9%; --y: 28.6%;" aria-label="La montée de l&#39;extrême droite remodèle la politique des États allemands" aria-haspopup="dialog" aria-expanded="false" data-map-item data-sheet-title="La montée de l&#39;extrême droite remodèle la politique des États allemands" data-sheet-meta="Sujet émergent" data-sheet-url="/fr/2026-09-14/7.html">
+            <span class="world-theme-map__emerging-icon" aria-hidden="true"></span>
+            <span class="world-theme-map__emerging-tooltip">La montée de l'extrême droite remodèle la politique des États allemands</span>
+          </a>
+          
+          <a href="/fr/2026-09-14/8.html" class="world-theme-map__emerging" style="--x: 55.8%; --y: 35.2%;" aria-label="L&#39;élargissement de la répression en Turquie contre les groupes LGBTQ+ et VIH" aria-haspopup="dialog" aria-expanded="false" data-map-item data-sheet-title="L&#39;élargissement de la répression en Turquie contre les groupes LGBTQ+ et VIH" data-sheet-meta="Sujet émergent" data-sheet-url="/fr/2026-09-14/8.html">
+            <span class="world-theme-map__emerging-icon" aria-hidden="true"></span>
+            <span class="world-theme-map__emerging-tooltip">L'élargissement de la répression en Turquie contre les groupes LGBTQ+ et VIH</span>
+          </a>
+          
+          <a href="/fr/2026-09-14/9.html" class="world-theme-map__emerging" style="--x: 56.2%; --y: 25.5%;" aria-label="Réseaux exposés et plans déjoués : recrutement russe en Allemagne" aria-haspopup="dialog" aria-expanded="false" data-map-item data-sheet-title="Réseaux exposés et plans déjoués : recrutement russe en Allemagne" data-sheet-meta="Sujet émergent" data-sheet-url="/fr/2026-09-14/9.html">
+            <span class="world-theme-map__emerging-icon" aria-hidden="true"></span>
+            <span class="world-theme-map__emerging-tooltip">Réseaux exposés et plans déjoués : recrutement russe en Allemagne</span>
+          </a>
+          
+        </div>
+      </div>
+
+      
+      <div class="world-theme-map__ticker">
+        <div class="container">
+          <div class="breaking-news-divs d-flex justify-content-between">
+            <div class="letf">
+              <h5 class="m-0"><b>14 septembre 2026</b></h5>
+            </div>
+            <div class="slide-section">
+              <div class="ticker-wrapper">
+                <div class="ticker">
+                  <span>&#11093; <b>969</b> articles analysés aujourd’hui &nbsp;&nbsp;</span>
+                  <span>&#11093; L’IA a identifié plus de <b>167</b> thèmes distincts &nbsp;&nbsp;</span>
+                  <span>&#11093; <b>242</b> sources différentes passées en revue, couvrant <b>165</b> pays &nbsp;&nbsp;</span>
+                  <span>&#11093; <b>136</b> pays sont couverts par des articles publiés à l’étranger &nbsp;&nbsp;</span>
+                  <span>&#11093; <b>969</b> articles analysés aujourd’hui &nbsp;&nbsp;</span>
+                  <span>&#11093; L’IA a identifié plus de <b>167</b> thèmes distincts &nbsp;&nbsp;</span>
+                  <span>&#11093; <b>242</b> sources différentes passées en revue, couvrant <b>165</b> pays &nbsp;&nbsp;</span>
+                  <span>&#11093; <b>136</b> pays sont couverts par des articles publiés à l’étranger &nbsp;&nbsp;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="world-theme-map__sheet-overlay" data-map-sheet-overlay></div>
+    <div class="world-theme-map__sheet" role="dialog" aria-modal="true" aria-labelledby="world-theme-map-sheet-title" aria-hidden="true" data-map-sheet>
+      <button class="world-theme-map__sheet-close" type="button" aria-label="Fermer" data-map-sheet-close>&times;</button>
+      <a class="world-theme-map__sheet-link" href="#" data-map-sheet-link>
+        <img class="world-theme-map__sheet-image" alt="" data-map-sheet-image>
+        <span class="world-theme-map__sheet-icon" aria-hidden="true" data-map-sheet-icon></span>
+        <span>
+          <b class="world-theme-map__sheet-title" id="world-theme-map-sheet-title" data-map-sheet-title></b>
+          <span class="world-theme-map__sheet-meta" data-map-sheet-meta></span>
+        </span>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    (() => {
+      const root = document.currentScript.closest(".total-body");
+      if (!root) return;
+
+      const mediaQuery = window.matchMedia("(max-width: 767.98px)");
+      const viewport = root.querySelector(".world-theme-map__viewport");
+      const items = Array.from(root.querySelectorAll("[data-map-item]"));
+      const sheet = root.querySelector("[data-map-sheet]");
+      const overlay = root.querySelector("[data-map-sheet-overlay]");
+      const closeButton = root.querySelector("[data-map-sheet-close]");
+      const sheetLink = root.querySelector("[data-map-sheet-link]");
+      const sheetImage = root.querySelector("[data-map-sheet-image]");
+      const sheetIcon = root.querySelector("[data-map-sheet-icon]");
+      const sheetTitle = root.querySelector("[data-map-sheet-title]");
+      const sheetMeta = root.querySelector("[data-map-sheet-meta]");
+      let activeItem = null;
+      let pointerStart = null;
+
+      function centerViewport() {
+        if (!mediaQuery.matches || !viewport) return;
+        requestAnimationFrame(() => {
+          viewport.scrollLeft = Math.max(0, (viewport.scrollWidth - viewport.clientWidth) / 2);
+          viewport.scrollTop = Math.max(0, (viewport.scrollHeight - viewport.clientHeight) / 2);
+        });
+      }
+
+      function openSheet(item) {
+        activeItem = item;
+        items.forEach((entry) => entry.setAttribute("aria-expanded", entry === item ? "true" : "false"));
+        sheetTitle.textContent = item.dataset.sheetTitle || item.getAttribute("aria-label") || "";
+        sheetMeta.textContent = item.dataset.sheetMeta || "";
+        sheetLink.href = item.dataset.sheetUrl || item.href;
+
+        if (item.dataset.sheetImage) {
+          sheetImage.src = item.dataset.sheetImage;
+          sheetImage.hidden = false;
+          sheetIcon.hidden = true;
+        } else {
+          sheetImage.removeAttribute("src");
+          sheetImage.hidden = true;
+          sheetIcon.hidden = false;
+        }
+
+        overlay.classList.add("is-open");
+        sheet.classList.add("is-open");
+        sheet.setAttribute("aria-hidden", "false");
+        requestAnimationFrame(() => {
+          sheet.classList.add("is-visible");
+          closeButton.focus();
+        });
+      }
+
+      function closeSheet() {
+        if (!sheet.classList.contains("is-open")) return;
+        sheet.classList.remove("is-visible");
+        overlay.classList.remove("is-open");
+        sheet.setAttribute("aria-hidden", "true");
+        items.forEach((entry) => entry.setAttribute("aria-expanded", "false"));
+        window.setTimeout(() => sheet.classList.remove("is-open"), 200);
+        if (activeItem) activeItem.focus();
+        activeItem = null;
+      }
+
+      function keepFocusInSheet(event) {
+        if (event.key !== "Tab" || !sheet.classList.contains("is-open")) return;
+        const focusable = [closeButton, sheetLink].filter((element) => element && !element.hidden);
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (!first || !last) return;
+
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first.focus();
+        }
+      }
+
+      items.forEach((item) => {
+        item.addEventListener("pointerdown", (event) => {
+          pointerStart = { x: event.clientX, y: event.clientY };
+        }, { passive: true });
+
+        item.addEventListener("click", (event) => {
+          if (!mediaQuery.matches) return;
+          const moved = pointerStart && Math.hypot(event.clientX - pointerStart.x, event.clientY - pointerStart.y) > 8;
+          pointerStart = null;
+          if (moved) return;
+          event.preventDefault();
+          openSheet(item);
+        });
+      });
+
+      closeButton.addEventListener("click", closeSheet);
+      overlay.addEventListener("click", closeSheet);
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") closeSheet();
+        keepFocusInSheet(event);
+      });
+
+      centerViewport();
+      window.addEventListener("resize", centerViewport);
+      if (mediaQuery.addEventListener) {
+        mediaQuery.addEventListener("change", centerViewport);
+      }
+    })();
+  </script>
+</section>
+
+<section class="total-body pt-0 d-block">
+   <style>
+     .emerging-heading-icon {
+       display: inline-block;
+       width: 24px;
+       height: 24px;
+       margin-right: 8px;
+       vertical-align: -4px;
+       background: #f4a11a;
+       -webkit-mask: url("/assets/images/new-trend-icon.svg") center / contain no-repeat;
+       mask: url("/assets/images/new-trend-icon.svg") center / contain no-repeat;
+     }
+   </style>
+   <div class="populers-sec-news mt-0">
+      <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+            <h2 class="comon-sub-heading">
+              <span class="emerging-heading-icon" aria-hidden="true"></span><b>Sujets Emergents</b> <span class="tooltip_mw">
+                      &nbsp;<img height="20" src="/assets/images/ic.png" style="vertical-align: text-top;">
+                        <span class="tooltiptext_mw">
+                       Cette rubrique présente les thématiques qui ont fait leur apparition aujourd’hui.
+                       </span>
+                      </span>
+            </h2>      
+        </div>
+        
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="new-themes-tab" role="tabpanel">
+            <div class="row mt-4 row-cols-1 row-cols-md-2 row-cols-lg-4 gy-4 gy-lg-0">
+              
+              <div class="col">
+                <a href="/fr/2026-09-14/6.html" class="populer-sec1-news">
+                  <figure>
+                    <img src="/illustrations/2026-09-14/2026-09-14-6.webp" alt="theme">
+                    <span class="st-tags limite-texte">Impulsion pour la dévolution au Royaume-Uni</span>
+                  </figure>
+                  <div class="content-div1">
+                    <h5> L'impulsion pour la dévolution au Royaume-Uni s'intensifie </h5>
+                    <p><b> 7 </b>articles associés</p>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="col">
+                <a href="/fr/2026-09-14/7.html" class="populer-sec1-news">
+                  <figure>
+                    <img src="/illustrations/2026-09-14/2026-09-14-7.webp" alt="theme">
+                    <span class="st-tags limite-texte">Élections en Allemagne : montée de l'extrême droite</span>
+                  </figure>
+                  <div class="content-div1">
+                    <h5> La montée de l'extrême droite remodèle la politique des États allemands </h5>
+                    <p><b> 6 </b>articles associés</p>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="col">
+                <a href="/fr/2026-09-14/8.html" class="populer-sec1-news">
+                  <figure>
+                    <img src="/illustrations/2026-09-14/2026-09-14-8.webp" alt="theme">
+                    <span class="st-tags limite-texte">Répression des droits LGBTQ+ en Turquie</span>
+                  </figure>
+                  <div class="content-div1">
+                    <h5> L'élargissement de la répression en Turquie contre les groupes LGBTQ+ et VIH </h5>
+                    <p><b> 4 </b>articles associés</p>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="col">
+                <a href="/fr/2026-09-14/9.html" class="populer-sec1-news">
+                  <figure>
+                    <img src="/illustrations/2026-09-14/2026-09-14-9.webp" alt="theme">
+                    <span class="st-tags limite-texte">Recrutement d'espionnage russe</span>
+                  </figure>
+                  <div class="content-div1">
+                    <h5> Réseaux exposés et plans déjoués : recrutement russe en Allemagne </h5>
+                    <p><b> 2 </b>articles associés</p>
+                  </div>
+                </a>
+              </div>
+               
+            </div>
+          </div>
+        </div> 
+      </div>
+   </div>
+</section>
+
+
+   <section class="total-body pt-3 d-block">
+
+   <div class="populers-sec-news mt-4 mt-lg-0">
+      <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+            <h2 class="comon-sub-heading">
+              <b>Historique</b> <span class="tooltip_mw">
+                      &nbsp;<img height="20" src="/assets/images/ic.png" style="vertical-align: text-top;">
+                        <span class="tooltiptext_mw">
+                       Cette rubrique met en avant les thématiques les plus discutées au cours des derniers jours. 
+                       </span>
+                      </span>
+            </h2>      
+        </div>
+        
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pol-tabs1" role="tabpanel" aria-labelledby="pills-home-tab">
+
+            <div class="row mt-4 row-cols-1 row-cols-md-2 row-cols-lg-4 gy-4 gy-lg-0">
+              
+              <div class="col">
+                <a href="/fr/2026-09-13/index.html" class="populer-sec1-news">
+                  <figure>
+                    <img src="/illustrations/2026-09-13/2026-09-13-1.webp" alt="big1">
+                    <span class="st-tags"> 13 septembre 2026 </span>
+                  </figure>
+                  <div class="content-div1">
+                    <h5> Diplomatie en mouvement : la paix par les BRICS, les discussions en Ukraine et la désescalade régionale </h5>
+                    <p><b> 160 </b> articles associés</p>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="col">
+                <a href="/fr/2026-09-12/index.html" class="populer-sec1-news">
+                  <figure>
+                    <img src="/illustrations/2026-09-12/2026-09-12-1.webp" alt="big1">
+                    <span class="st-tags"> 12 septembre 2026 </span>
+                  </figure>
+                  <div class="content-div1">
+                    <h5> Diplomatie bilatérale : Accords, Visites et Réalignements stratégiques </h5>
+                    <p><b> 142 </b> articles associés</p>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="col">
+                <a href="/fr/2026-09-11/index.html" class="populer-sec1-news">
+                  <figure>
+                    <img src="/illustrations/2026-09-11/2026-09-11-1.webp" alt="big1">
+                    <span class="st-tags"> 11 septembre 2026 </span>
+                  </figure>
+                  <div class="content-div1">
+                    <h5> Accords bilatéraux et changements diplomatiques : investissements, pactes de sécurité et ruptures </h5>
+                    <p><b> 132 </b> articles associés</p>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="col">
+                <a href="/fr/2026-09-08/index.html" class="populer-sec1-news">
+                  <figure>
+                    <img src="/illustrations/2026-09-08/2026-09-08-1.webp" alt="big1">
+                    <span class="st-tags"> 8 septembre 2026 </span>
+                  </figure>
+                  <div class="content-div1">
+                    <h5> Les accords bilatéraux modifient les alignements régionaux et les investissements </h5>
+                    <p><b> 116 </b> articles associés</p>
+                  </div>
+                </a>
+              </div>
+               
+            </div>
+          </div>
+        </div> 
+      </div>
+   </div>
+ </section>
+
+ <footer class="mt-5">
+  <div class="container">
+     <div class="row">
+           <div class="left-footer">
+              <p class="text-center"> 2025-2026 © DailyScope.ai |
+                <a href="/fr/privacy.html">Politique de confidentialité</a> |
+                <a href="/fr/terms.html">Mentions légales</a>
+              </p>
+           </div>
+     </div>
+  </div>
+</footer>
+
+
+<!-- mobile menu -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="head-contact">
+      <a href="/" class="logo-side">
+      <img src="/assets/images/logo-3-50.png" alt="logo">
+      </a>
+      
+      <div class="mobile-menu-sec mt-3">
+         <ul class="list-unstyled">
+            <li>
+               <a href="/">Actus </a>
+            </li>
+            <li>
+              <a href="/fr/2026-09-14/country_counts.html">Pays</a>
+            </li>
+            <li>
+              <a href="/fr/2026-09-14/labels.html">Thèmes</a>
+            </li>
+            <li>
+              <a href="/fr/2026-09-14/c1.html">France Focus</a>
+            </li>
+            <li>
+              <a href="/fr/about.html">A Propos</a>
+            </li>
+            <li>
+              <a href="/fr/contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+  </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
