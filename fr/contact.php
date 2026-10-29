@@ -61,7 +61,7 @@ EOT;
         <div class="row row-cols-1 row-cols-lg-3 align-items-center">
             <div class="col order-3 order-lg-1"><!-- vide --></div>
              <div class="col order-1 order-lg-2 d-flex justify-content-center align-items-center">
-                <a href="/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
+                <a href="/fr/" class="logo d-table"><img src="/assets/images/logo-3-50.jpg" alt="logo"></a>
             </div>
             <div class="col d-flex justify-content-end align-self-start order-2 order-lg-3">
               <a id="lang-switch" href="#"><img src="/assets/images/flags/gbr.svg" style="width: 24px;height: 16px;object-fit: cover;border-radius: 2px;border: 1px solid #ddd;vertical-align: middle;" alt="English" title="English" class="flag-icon"></a>
@@ -82,7 +82,7 @@ EOT;
 
     <div id="menu-id">
       <div class="container">
-        <a class="navbar-brand d-block d-none" href="/">Navbar</a>
+        <a class="navbar-brand d-block d-none" href="/fr/">Navbar</a>
         <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
           <span>
             <i class="fas fa-bars"></i>
@@ -95,14 +95,16 @@ EOT;
               <a class="nav-link active" aria-current="page" href="/fr/">Actus</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2026-10-27/country_counts.html">Pays</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2026-10-29/country_counts.html">Pays</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2026-10-27/labels.html">Thèmes</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2026-10-29/labels.html">Thèmes</a>
             </li>
+            
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2026-10-27/c1.html">France Focus</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2026-10-29/c1.html">Focus FR</a>
             </li>
+            
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/fr/about.html">A Propos</a>
             </li>
@@ -140,23 +142,25 @@ EOT;
   </div>
   <div class="offcanvas-body">
     <div class="head-contact">
-      <a href="/" class="logo-side">
+      <a href="/fr/" class="logo-side">
       <img src="/assets/images/logo-3-50.png" alt="logo">
       </a>
       
       <div class="mobile-menu-sec mt-3">
          <ul class="list-unstyled">
             <li>
-               <a href="/">Actus </a>
+               <a href="/fr/">Actus </a>
             </li>
             <li>
-              <a href="/fr/2026-10-27/country_counts.html">Pays</a>
+              <a href="/fr/2026-10-29/country_counts.html">Pays</a>
             </li>
             <li>
-              <a href="/fr/2026-10-27/labels.html">Thèmes</a>
+              <a href="/fr/2026-10-29/labels.html">Thèmes</a>
             </li>
             <li>
-              <a href="/fr/2026-10-27/c1.html">France Focus</a>
+              
+              <a href="/fr/2026-10-29/c1.html">Focus FR</a>
+              
             </li>
             <li>
               <a href="/fr/about.html">A Propos</a>
