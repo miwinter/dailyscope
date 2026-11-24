@@ -27,10 +27,10 @@ function render_page($title, $inner_html) {
 <meta property="og:description"
       content="DailyScope.ai analyse automatiquement les actualités mondiales pour mettre en lumière les pays et thèmes les plus couverts.">
 <meta property="og:image" content="https://www.dailyscope.ai/assets/images/dailyscope-carte.jpg">
-<meta property="og:url" content="https://www.dailyscope.ai/fr/">
+<meta property="og:url" content="https://www.dailyscope.ai/fr/contact.php">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DailyScope.ai">
-<link rel="canonical" href="https://www.dailyscope.ai/fr/">
+<link rel="canonical" href="https://www.dailyscope.ai/fr/contact.php">
 
 <script>
     window.dataLayer = window.dataLayer || [];
@@ -95,14 +95,14 @@ EOT;
               <a class="nav-link active" aria-current="page" href="/fr/">Actus</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2026-11-23/country_counts.html">Pays</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2026-11-24/country_counts.html">Pays</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2026-11-23/labels.html">Thèmes</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2026-11-24/labels.html">Thèmes</a>
             </li>
             
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2026-11-23/c1.html">Focus FR</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2026-11-24/c1.html">Focus : États-Unis</a>
             </li>
             
             <li class="nav-item">
@@ -152,14 +152,14 @@ EOT;
                <a href="/fr/">Actus </a>
             </li>
             <li>
-              <a href="/fr/2026-11-23/country_counts.html">Pays</a>
+              <a href="/fr/2026-11-24/country_counts.html">Pays</a>
             </li>
             <li>
-              <a href="/fr/2026-11-23/labels.html">Thèmes</a>
+              <a href="/fr/2026-11-24/labels.html">Thèmes</a>
             </li>
             <li>
               
-              <a href="/fr/2026-11-23/c1.html">Focus FR</a>
+              <a href="/fr/2026-11-24/c1.html">Focus : États-Unis</a>
               
             </li>
             <li>
