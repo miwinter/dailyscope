@@ -95,14 +95,14 @@ EOT;
               <a class="nav-link active" aria-current="page" href="/fr/">Actus</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2026-11-24/country_counts.html">Pays</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2026-11-25/country_counts.html">Pays</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2026-11-24/labels.html">Thèmes</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2026-11-25/labels.html">Thèmes</a>
             </li>
             
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2026-11-24/c1.html">Focus : États-Unis</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2026-11-25/c1.html">Focus : Chine</a>
             </li>
             
             <li class="nav-item">
@@ -152,14 +152,14 @@ EOT;
                <a href="/fr/">Actus </a>
             </li>
             <li>
-              <a href="/fr/2026-11-24/country_counts.html">Pays</a>
+              <a href="/fr/2026-11-25/country_counts.html">Pays</a>
             </li>
             <li>
-              <a href="/fr/2026-11-24/labels.html">Thèmes</a>
+              <a href="/fr/2026-11-25/labels.html">Thèmes</a>
             </li>
             <li>
               
-              <a href="/fr/2026-11-24/c1.html">Focus : États-Unis</a>
+              <a href="/fr/2026-11-25/c1.html">Focus : Chine</a>
               
             </li>
             <li>
