@@ -95,14 +95,14 @@ EOT;
               <a class="nav-link active" aria-current="page" href="/fr/">Actus</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2026-11-26/country_counts.html">Pays</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2026-11-27/country_counts.html">Pays</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2026-11-26/labels.html">Thèmes</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2026-11-27/labels.html">Thèmes</a>
             </li>
             
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/fr/2026-11-26/c1.html">Focus : France</a>
+              <a class="nav-link active" aria-current="page" href="/fr/2026-11-27/c1.html">Focus : Russie</a>
             </li>
             
             <li class="nav-item">
@@ -152,14 +152,14 @@ EOT;
                <a href="/fr/">Actus </a>
             </li>
             <li>
-              <a href="/fr/2026-11-26/country_counts.html">Pays</a>
+              <a href="/fr/2026-11-27/country_counts.html">Pays</a>
             </li>
             <li>
-              <a href="/fr/2026-11-26/labels.html">Thèmes</a>
+              <a href="/fr/2026-11-27/labels.html">Thèmes</a>
             </li>
             <li>
               
-              <a href="/fr/2026-11-26/c1.html">Focus : France</a>
+              <a href="/fr/2026-11-27/c1.html">Focus : Russie</a>
               
             </li>
             <li>
